@@ -65,11 +65,11 @@ git clone https://github.com/PriscilaFabreteCandido/Resumo-AWS-Certified-Solutio
 | Domínio | Pastas preenchidas |
 |---|---|
 | 1 - Seguranca (30%) | **29 / 29** |
-| 2 - Resiliencia (26%) | **2 / 21** |
+| 2 - Resiliencia (26%) | **12 / 21** |
 | 3 - Performance (24%) | **2 / 29** |
 | 4 - Custo (20%) | **0 / 5** |
 | 9 - Fundamentos e apoio | **0 / 7** |
-| **Total** | **33 / 91** |
+| **Total** | **43 / 91** |
 
 ## Índice por domínio
 
