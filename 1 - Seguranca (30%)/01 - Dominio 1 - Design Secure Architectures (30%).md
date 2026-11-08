@@ -45,7 +45,6 @@ atualizado: 2026-11-08
 > - Determining the appropriate use of resource policies for AWS services
 > - Determining when to federate a directory service with IAM roles
 
-**Notas**: [[IAM, STS e Organizations]] · [[Identidade de aplicacao - Cognito e Directory Service]] · [[Well-Architected e responsabilidade compartilhada]]
 
 ## Task 1.2 — Design secure workloads and applications
 
@@ -63,7 +62,6 @@ atualizado: 2026-11-08
 > - Integrating AWS services to secure applications (for example, AWS Shield, AWS WAF, IAM Identity Center, AWS Secrets Manager)
 > - Securing external network connections to and from the AWS Cloud (for example, VPN, AWS Direct Connect)
 
-**Notas**: [[Rede segura - SG, NACL e endpoints]] · [[Protecao de borda - WAF, Shield e Firewall Manager]] · [[Deteccao - GuardDuty, Macie, Inspector, Security Hub e Detective]] · [[Secrets Manager e Parameter Store]]
 
 ## Task 1.3 — Determine appropriate data security controls
 
@@ -82,7 +80,6 @@ atualizado: 2026-11-08
 > - Implementing policies for data access, lifecycle, and protection
 > - Rotating encryption keys and renewing certificates
 
-**Notas**: [[Criptografia - KMS, CloudHSM e ACM]] · [[Protecao de dados no S3]] · [[Backup, retencao e AWS Backup]]
 
 ---
 
@@ -185,6 +182,42 @@ atualizado: 2026-11-08
 | Shield Standard precisa ser habilitado | Vem *"automatically and at no extra charge"* |
 | Security Hub detecta ameaças | **Agrega** achados e avalia postura. Detecção é GuardDuty/Inspector/Macie |
 | Cognito user pool dá acesso ao S3 | User pool **autentica**; identity pool entrega **credencial AWS temporária** |
+
+---
+
+## 🗂 Serviços e conceitos deste domínio
+
+Cada pasta tem **quatro notas**: `1 - O que e` · `2 - Decorar` · `3 - Detalhes` · `4 - Questoes`.
+
+- [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]]
+- [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]]
+- [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]]
+- [[1 - Seguranca (30%)/CloudHSM/1 - O que e|CloudHSM]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]]
+- [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|Config]]
+- [[1 - Seguranca (30%)/Detective/1 - O que e|Detective]]
+- [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]]
+- [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]]
+- [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]]
+- [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]]
+- [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]]
+- [[1 - Seguranca (30%)/Inspector/1 - O que e|Inspector]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]]
+- [[1 - Seguranca (30%)/Macie/1 - O que e|Macie]]
+- [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]]
+- [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]]
+- [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]]
+- [[1 - Seguranca (30%)/STS/1 - O que e|STS]]
+- [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]]
+- [[1 - Seguranca (30%)/Security Groups/1 - O que e|Security Groups]]
+- [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]]
+- [[1 - Seguranca (30%)/Shield/1 - O que e|Shield]]
+- [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]]
+- [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]]
+- [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]]
 
 ## Links
 

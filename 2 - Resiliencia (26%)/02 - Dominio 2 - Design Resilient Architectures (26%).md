@@ -46,7 +46,6 @@ atualizado: 2026-11-08
 > - When to use read replicas
 > - Workflow orchestration (for example, AWS Step Functions)
 
-**Notas**: [[Desacoplamento - SQS, SNS e EventBridge]] · [[Containers e serverless - ECS, EKS, Fargate, Lambda e Step Functions]] · [[API Gateway]] · [[Alta disponibilidade - ELB, Auto Scaling e Route 53]]
 
 ## Task 2.2 — Design highly available and/or fault-tolerant architectures
 
@@ -64,7 +63,6 @@ atualizado: 2026-11-08
 > - Storage options and characteristics (for example, durability, replication)
 > - Workload visibility (for example, AWS X-Ray)
 
-**Notas**: [[Disaster Recovery (RTO e RPO)]] · [[Bancos resilientes - RDS, Aurora e read replicas]] · [[Alta disponibilidade - ELB, Auto Scaling e Route 53]]
 
 > [!tip] Duas pistas escondidas nessa lista
 > **"AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"** — serviços de IA caem aqui, no domínio de **resiliência**, como "use o serviço gerenciado em vez de construir". Saiba a frase de uma linha de Comprehend (NLP, sentimento, entidades), Polly (texto → voz), Transcribe (voz → texto), Translate, Rekognition (imagem/vídeo), Textract (documento → texto estruturado), Lex (chatbot).
@@ -162,6 +160,34 @@ atualizado: 2026-11-08
 | Quota de serviço é automática no standby | O guia cita explicitamente configurar quota **no ambiente de standby**. Quota não migra com o desastre |
 | Escalar vertical é mais simples, então é a resposta | A prova premia **horizontal** + stateless |
 | Immutable infrastructure é jargão | É resposta real: trocar instância em vez de atualizar no lugar (AMI nova + ASG instance refresh) |
+
+---
+
+## 🗂 Serviços e conceitos deste domínio
+
+Cada pasta tem **quatro notas**: `1 - O que e` · `2 - Decorar` · `3 - Detalhes` · `4 - Questoes`.
+
+- [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]]
+- [[2 - Resiliencia (26%)/AWS Batch/1 - O que e|AWS Batch]]
+- [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]]
+- [[2 - Resiliencia (26%)/CloudFormation/1 - O que e|CloudFormation]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]]
+- [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]]
+- [[2 - Resiliencia (26%)/EKS/1 - O que e|EKS]]
+- [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]]
+- [[2 - Resiliencia (26%)/Elastic Beanstalk/1 - O que e|Elastic Beanstalk]]
+- [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]]
+- [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]]
+- [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]]
+- [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/1 - O que e|Mensageria gerenciada (Amazon MQ e MSK)]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]]
+- [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]]
+- [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]]
+- [[2 - Resiliencia (26%)/SNS/1 - O que e|SNS]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]]
+- [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]]
+- [[2 - Resiliencia (26%)/X-Ray/1 - O que e|X-Ray]]
 
 ## Links
 

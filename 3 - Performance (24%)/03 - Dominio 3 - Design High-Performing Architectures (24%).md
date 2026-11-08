@@ -33,7 +33,6 @@ atualizado: 2026-11-08
 > - Determining storage services and configurations that meet performance demands
 > - Determining storage services that can scale to accommodate future needs
 
-**Nota**: [[Armazenamento - S3, EBS, EFS e FSx]]
 
 ## Task 3.2 — Design high-performing and elastic compute solutions
 
@@ -51,7 +50,6 @@ atualizado: 2026-11-08
 > - Selecting the appropriate compute options and features (for example, EC2 instance types)
 > - Selecting the appropriate resource type and size (for example, the amount of Lambda memory)
 
-**Nota**: [[Computacao elastica - EC2 e placement groups]]
 
 ## Task 3.3 — Determine high-performing database solutions
 
@@ -65,7 +63,6 @@ atualizado: 2026-11-08
 > - Database replication (for example, read replicas)
 > - Database types and services (for example, serverless, relational compared with non-relational, in-memory)
 
-**Nota**: [[Bancos de alta performance - DynamoDB, DAX, ElastiCache e Redshift]]
 
 ## Task 3.4 — Determine high-performing and/or scalable network architectures
 
@@ -75,7 +72,6 @@ atualizado: 2026-11-08
 > - Load balancing concepts (for example, Application Load Balancer [ALB])
 > - Network connection options (for example, AWS VPN, AWS Direct Connect, AWS PrivateLink)
 
-**Nota**: [[Rede e borda - CloudFront, Global Accelerator e conectividade hibrida]]
 
 ## Task 3.5 — Determine high-performing data ingestion and transformation solutions
 
@@ -97,7 +93,6 @@ atualizado: 2026-11-08
 > - Selecting appropriate configurations for ingestion
 > - Transforming data between formats (for example, .csv to .parquet)
 
-**Nota**: [[Ingestao e transformacao - Kinesis, Glue, Athena e EMR]]
 
 > [!important] Task 3.5 é a mais subestimada da prova
 > Muita gente estuda SAA pensando em EC2, VPC e S3 e cai numa questão sobre **converter CSV para Parquet** ou **qual serviço transforma dado em trânsito**. O guia pede isso **literalmente**: *"Transforming data between formats (for example, .csv to .parquet)"*.
@@ -182,6 +177,42 @@ atualizado: 2026-11-08
 | S3 tem limite de requisições por bucket | O limite é **por prefixo** (3.500 escritas / 5.500 leituras por segundo), e prefixos são ilimitados |
 | Redshift serve para OLTP | É **OLAP** |
 | Athena precisa carregar os dados | Consulta o **S3 direto** |
+
+---
+
+## 🗂 Serviços e conceitos deste domínio
+
+Cada pasta tem **quatro notas**: `1 - O que e` · `2 - Decorar` · `3 - Detalhes` · `4 - Questoes`.
+
+- [[3 - Performance (24%)/Athena/1 - O que e|Athena]]
+- [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/1 - O que e|Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)]]
+- [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]]
+- [[3 - Performance (24%)/DAX/1 - O que e|DAX]]
+- [[3 - Performance (24%)/DataSync/1 - O que e|DataSync]]
+- [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]]
+- [[3 - Performance (24%)/EBS/1 - O que e|EBS]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]]
+- [[3 - Performance (24%)/EFS/1 - O que e|EFS]]
+- [[3 - Performance (24%)/EMR/1 - O que e|EMR]]
+- [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]]
+- [[3 - Performance (24%)/FSx/1 - O que e|FSx]]
+- [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]]
+- [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]]
+- [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|Kinesis Data Streams]]
+- [[3 - Performance (24%)/Lake Formation/1 - O que e|Lake Formation]]
+- [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]]
+- [[3 - Performance (24%)/Outposts/1 - O que e|Outposts]]
+- [[3 - Performance (24%)/Placement Groups/1 - O que e|Placement Groups]]
+- [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]]
+- [[3 - Performance (24%)/S3 Glacier/1 - O que e|S3 Glacier]]
+- [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]]
+- [[3 - Performance (24%)/Transfer Family/1 - O que e|Transfer Family]]
+- [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]]
+- [[3 - Performance (24%)/VPC Peering/1 - O que e|VPC Peering]]
+- [[3 - Performance (24%)/VPN (Site-to-Site)/1 - O que e|VPN (Site-to-Site)]]
 
 ## Links
 

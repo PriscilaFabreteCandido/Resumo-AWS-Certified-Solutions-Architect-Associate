@@ -54,7 +54,6 @@ atualizado: 2026-11-08
 > - Selecting the correct data lifecycle for storage
 > - Selecting the most cost-effective storage service for a workload
 
-**Nota**: [[Custo de armazenamento - classes do S3 e lifecycle]]
 
 ## Task 4.2 — Design cost-optimized compute solutions
 
@@ -75,7 +74,6 @@ atualizado: 2026-11-08
 > - Determining the required availability for different classes of workloads (production compared with non-production)
 > - Selecting the appropriate instance family e size for a workload
 
-**Nota**: [[Custo de computacao - Spot, RI e Savings Plans]]
 
 ## Task 4.3 — Design cost-optimized database solutions
 
@@ -96,7 +94,6 @@ atualizado: 2026-11-08
 > - Determining cost-effective AWS database types (time series format, columnar format)
 > - Migrating database schemas and data to different locations and/or different database engines
 
-**Nota**: [[Custo de banco de dados]]
 
 ## Task 4.4 — Design cost-optimized network architectures
 
@@ -117,7 +114,6 @@ atualizado: 2026-11-08
 > - Selecting an appropriate throttling strategy
 > - Selecting the appropriate bandwidth allocation for a network device (a single VPN compared with multiple VPNs, Direct Connect speed)
 
-**Nota**: [[Custo de rede e transferencia de dados]]
 
 ---
 
@@ -188,6 +184,18 @@ atualizado: 2026-11-08
 | Tag já aparece no relatório | Precisa ser **ativada** como cost allocation tag |
 | One Zone-IA é sempre a escolha barata | É **1 AZ**. Só para dado reproduzível |
 | Intelligent-Tiering é sempre mais barato | Cobra monitoramento por objeto |
+
+---
+
+## 🗂 Serviços e conceitos deste domínio
+
+Cada pasta tem **quatro notas**: `1 - O que e` · `2 - Decorar` · `3 - Detalhes` · `4 - Questoes`.
+
+- [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]]
+- [[4 - Custo (20%)/DMS (Database Migration Service)/1 - O que e|DMS (Database Migration Service)]]
+- [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]]
+- [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[4 - Custo (20%)/Snow Family/1 - O que e|Snow Family]]
 
 ## Links
 
