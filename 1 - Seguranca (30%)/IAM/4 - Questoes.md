@@ -79,6 +79,45 @@ atualizado: 2026-11-08
 > **C errada**: `aws:SourceArn` é o padrão para **serviços AWS** assumindo role, não para terceiros.
 > **D errada**: MFA é boa prática para humanos; não endereça o confused deputy de integração.
 
+> [!question]- Q-root 1. Quais destas são boas práticas da AWS para o usuário raiz? (escolha as que se aplicam)
+> **A)** **Usar uma senha forte para o acesso ao console em nível de conta** ✅
+> **B)** **Nunca compartilhar a senha nem as chaves de acesso do root** ✅
+> **C)** Criar uma chave de acesso para o root e guardá-la criptografada no S3
+> **D)** **Habilitar MFA na conta do usuário raiz** ✅
+> **E)** **Não criar chave de acesso para o root; se já existir, excluí-la** ✅
+>
+> **Por que C é a errada**: a orientação é **não criar** a chave. O título oficial atual é literal — *"Don't create access keys for the root user"* — e guardar credencial de longo prazo em bucket, criptografada ou não, é exatamente o anti-padrão.
+> ⚠️ Material antigo acrescenta *"se precisar manter a chave, altere-a regularmente"*. A doc atual **não dá orientação de rotação** para chave de root: ela diz para não criar.
+
+> [!question]- Q-root 2. Uma bucket policy foi gravada negando **todos os principais**. Nem o administrador consegue corrigi-la. O que fazer?
+> **A)** Criar uma role com `AdministratorAccess` e assumi-la
+> **B)** **Entrar como usuário raiz da conta e editar ou excluir a bucket policy** ✅
+> **C)** Abrir um caso no AWS Support para apagar o bucket
+> **D)** Anexar uma policy de identidade com `Allow` em `s3:PutBucketPolicy`
+>
+> **Por que B**: a tarefa está na lista oficial das que **exigem** o root. Ele é a única identidade **sem deny implícito** — *"all requests are implicitly denied with the exception of the AWS account root user"*. Uma policy de recurso que nega todos vence qualquer `Allow` de identidade.
+> **D errada**: um `Deny` explícito na policy do recurso **sempre** vence um `Allow`.
+> 💡 Numa **AWS Organizations** com **centralized root access** habilitado, a conta de gerenciamento faz isso de forma centralizada, sem usar o root da conta-membro.
+
+> [!question]- Q-root 3. Uma aplicação em EC2 precisa ler um bucket do S3. Qual a abordagem correta?
+> **A)** Criar um IAM user, gerar access key e colocar no arquivo de configuração
+> **B)** Usar a chave de acesso do root, que já tem permissão total
+> **C)** **Anexar uma IAM role à instância (instance profile) com permissão só naquele bucket** ✅
+> **D)** Criar um IAM user e guardar a access key no Secrets Manager
+>
+> **Por que C**: a boa prática nº 2 da doc é literal — *"Require workloads to use temporary credentials with IAM roles to access AWS"*. A role entrega credencial **temporária e rotacionada automaticamente**, sem segredo armazenado.
+> **D errada**: é melhor que A, mas continua sendo **credencial de longo prazo**; o Secrets Manager protege o segredo, não elimina a necessidade dele.
+> **B errada**: chave do root nunca.
+
+> [!question]- Q-root 4. Numa organização com 200 contas no AWS Organizations, como reduzir o risco das credenciais de root das contas-membro?
+> **A)** Habilitar MFA no root de cada uma das 200 contas manualmente
+> **B)** **Habilitar o centralized root access e remover as credenciais de root das contas-membro** ✅
+> **C)** Aplicar uma SCP negando `iam:*` ao root
+> **D)** Trocar a senha do root de cada conta a cada 90 dias
+>
+> **Por que B**: a doc recomenda — *"we recommend removing root user credentials from member accounts to help prevent unauthorized use"*. Sem credencial, a conta-membro não consegue nem fazer login no root nem recuperar a senha. Contas novas criadas na Organization já nascem **sem credencial de root**.
+> **A errada**: funciona, mas não escala e não remove o risco — só o mitiga.
+
 ## ⚠️ Armadilhas do IAM
 
 | Parece | É |

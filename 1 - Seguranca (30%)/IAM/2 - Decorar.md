@@ -79,6 +79,50 @@ Em política de **recurso** e **trust policy**, existe também o campo **`Princi
 | `aws:SecureTransport` | Exigir HTTPS |
 | `aws:SourceVpce` / `aws:SourceVpc` | Limitar a um VPC endpoint |
 
+## Usuário raiz (root) — decorar
+
+### A lista clássica, em 5 pontos
+
+| # | Prática |
+|---|---|
+| 1 | **Senha forte** para o console, em nível de conta |
+| 2 | **Nunca compartilhar** senha nem chaves de acesso do root |
+| 3 | Se **tem** chave de acesso do root → **excluir**. Se precisar manter → **alterar regularmente**. Nunca guardar no S3 |
+| 4 | Se **não tem** chave de acesso do root → **não criar**, salvo se absolutamente necessário |
+| 5 | **Habilitar MFA** no root |
+
+**Resumo em três palavras: senha forte · MFA · nenhuma chave de acesso.**
+
+> [!warning] O que mudou na doc atual
+> O título oficial hoje é **"Don't create access keys for the root user"** — a orientação não é mais rotacionar, é **não criar**. E **MFA no root é exigência**, não recomendação: *"require MFA to be configured for their root user"*, com registro em até **14 dias** do primeiro login.
+> Na prova, *"não criar chave de acesso para o root"* é a resposta mais segura — ela vale nas duas versões.
+
+### Tarefas que SÓ o root faz
+
+| Tarefa |
+|---|
+| Alterar e-mail, senha e chaves do root (conta **standalone**) |
+| **Encerrar** e **reabrir** a conta (standalone) |
+| **Restaurar permissões de IAM** quando o único admin se bloqueou |
+| **Ativar o acesso do IAM** ao console de Billing |
+| Configurar **MFA Delete** num bucket S3 |
+| Editar/excluir **bucket policy ou policy de SQS que nega todos os principais** |
+| Registrar-se como vendedor no **Reserved Instance Marketplace** |
+| Inscrever-se no **AWS GovCloud (US)** |
+
+**Por que o root resolve bucket policy que nega todos**: ele é a única identidade **sem deny implícito**.
+
+### A hierarquia de credencial (ordem da própria doc)
+
+```
+1. PESSOAS      → federação + credencial temporária (IAM Identity Center / IdP)
+2. WORKLOADS    → IAM role (EC2, ECS, Lambda)
+3. Access key de longo prazo → último recurso
+4. Access key do ROOT       → NUNCA
+```
+
+⚠️ Alternativa que cria **IAM user com access key** para uma aplicação = **errada**. A resposta é **role**.
+
 ## Fatos
 
 | Item | Valor |

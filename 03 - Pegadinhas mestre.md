@@ -168,6 +168,10 @@ atualizado: 2026-11-08
 | Shield Standard precisa ser contratado | *"provided automatically and at no extra charge."* |
 | Cognito user pool dá acesso ao S3 | **User pool autentica** (emite JWT). Quem troca token por **credencial AWS** é o **identity pool**. |
 | Secrets Manager e Parameter Store são iguais | **Secrets Manager**: rotação automática nativa, cobrado por secret. **Parameter Store**: sem rotação, tier Standard **grátis**. |
+| Rotacionar regularmente a chave de acesso do root é boa prática | A doc atual diz **"Don't create access keys for the root user"** — não criar. A rotação só aparece em material antigo |
+| MFA no root é recomendação | É **exigência**: *"require MFA to be configured for their root user"*, registro em até **14 dias** |
+| Um `Allow` de administrador destrava uma bucket policy que nega todos | **Não** — `Deny` explícito vence. Só o **root** (sem deny implícito) ou o **centralized root access** resolvem |
+| Guardar access key criptografada no S3 resolve | Continua sendo **credencial de longo prazo**. A resposta é **IAM role** |
 
 ## 10. Custo
 

@@ -37,7 +37,7 @@ Um catálogo, todos os engines.
 | Natureza | **ETL serverless** + catálogo | **Cluster** com frameworks | **Consulta SQL** serverless |
 | Infraestrutura | Nenhuma | Cluster (EC2/EKS/Serverless) | Nenhuma |
 | Engine | Spark, Ray | Hadoop, **Spark**, Hive, Presto, HBase | Presto (Trino) |
-| Controle do cluster | Não | **Total** |
+| Controle do cluster | Não | **Total** | — |
 | Spot | — | **Sim** (task nodes) | — |
 | Cobrança | **DPU-hora** | Instâncias | **TB escaneado** |
 

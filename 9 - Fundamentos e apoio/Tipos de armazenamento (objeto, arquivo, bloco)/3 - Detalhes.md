@@ -50,7 +50,7 @@ Um sistema de arquivos compartilhado, montado por **muitas** instâncias simulta
 
 Chave → dados + metadados, acessado por **API HTTPS**. Não existe "diretório" (o `/` é convenção), não existe escrita parcial: alterar um objeto é **substituí-lo**.
 
-**S3** — durabilidade de **11 noves**, capacidade ilimitada, objeto de até **5 TB**, versionamento, lifecycle, replicação, eventos, Object Lock. É o destino natural de backup, data lake, mídia, log e site estático.
+**S3** — durabilidade de **11 noves**, capacidade ilimitada, objeto de até **48,8 TiB** (a doc antiga dizia 5 TB), versionamento, lifecycle, replicação, eventos, Object Lock. É o destino natural de backup, data lake, mídia, log e site estático.
 
 Por que **não** usar S3 como se fosse disco:
 
