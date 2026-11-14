@@ -63,5 +63,5 @@ A lista de suportados é grande, mas **não é universal**. Serviços fora dela 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Disaster Recovery (RPO e RTO)]] · [[S3]] · [[EBS]] · [[RDS]] · [[DynamoDB]] · [[FSx]] · [[Organizations e Control Tower]]
+- [[1 - Seguranca (30%)/AWS Backup/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/AWS Backup/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/AWS Backup/4 - Questoes|4 - Questoes]]
+- [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]]

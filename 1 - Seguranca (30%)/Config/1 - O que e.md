@@ -47,6 +47,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[CloudTrail]] · [[Security Hub]] · [[Organizations e Control Tower]] · [[Systems Manager (e Parameter Store)]]
+- [[1 - Seguranca (30%)/Config/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Config/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Config/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]]
 - [O que é o AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)

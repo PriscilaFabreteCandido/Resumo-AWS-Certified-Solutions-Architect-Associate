@@ -72,5 +72,5 @@ Os três se complementam: o Config diz **o que** mudou, o CloudTrail diz **quem*
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Config]] · [[CloudWatch]] · [[GuardDuty]] · [[Detective]] · [[S3]] · [[Organizations e Control Tower]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/CloudTrail/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/CloudTrail/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[1 - Seguranca (30%)/Detective/1 - O que e|Detective]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]]

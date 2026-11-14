@@ -79,5 +79,5 @@ Padrão de prova: **ALB → ECS service em Fargate, em subnets privadas**, com o
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Fargate]] · [[EKS]] · [[ELB (Load Balancers)]] · [[Secrets Manager]] · [[Inspector]] · [[SQS]]
+- [[2 - Resiliencia (26%)/ECS/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/ECS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/ECS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[2 - Resiliencia (26%)/EKS/1 - O que e|EKS]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[1 - Seguranca (30%)/Inspector/1 - O que e|Inspector]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]]

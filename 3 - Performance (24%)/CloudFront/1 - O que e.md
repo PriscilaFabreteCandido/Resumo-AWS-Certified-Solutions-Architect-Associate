@@ -44,6 +44,6 @@ Servir 200 TB pelo CloudFront é **mais barato** que servir direto do S3.
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Global Accelerator]] · [[S3]] · [[ACM (Certificate Manager)]] · [[WAF]] · [[Route 53]] · [[Custo de rede e transferencia de dados]]
+- [[3 - Performance (24%)/CloudFront/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/CloudFront/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/CloudFront/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Como o CloudFront funciona](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html)

@@ -39,6 +39,6 @@ Dois caches independentes:
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[DynamoDB]] · [[ElastiCache]] · [[VPC]]
+- [[3 - Performance (24%)/DAX/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/DAX/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/DAX/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]]
 - [Conceitos do DAX](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.html)

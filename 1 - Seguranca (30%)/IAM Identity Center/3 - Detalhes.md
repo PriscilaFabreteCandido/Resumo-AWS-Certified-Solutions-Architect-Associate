@@ -56,5 +56,5 @@ Efeito: **um** permission set atende N times, em vez de um por time. É a respos
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[IAM]] · [[STS]] · [[Directory Service]] · [[Organizations e Control Tower]] · [[Cognito]]
+- [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/IAM Identity Center/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/IAM Identity Center/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/STS/1 - O que e|STS]] · [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]]

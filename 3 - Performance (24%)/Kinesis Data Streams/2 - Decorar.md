@@ -55,5 +55,5 @@ Troca de modo: **2 vezes em 24 horas**.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Kinesis Data Streams/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Kinesis Data Streams/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

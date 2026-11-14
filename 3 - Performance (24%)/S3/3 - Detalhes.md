@@ -127,7 +127,7 @@ Pontos que a prova explora:
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Criptografia em repouso e em transito]] · [[KMS]] · [[CloudFront]] · [[S3 Glacier]]
+- [[3 - Performance (24%)/S3/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/S3/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/S3/4 - Questoes|4 - Questoes]]
+- [[9 - Fundamentos e apoio/Criptografia em repouso e em transito/1 - O que e|Criptografia em repouso e em transito]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[3 - Performance (24%)/S3 Glacier/1 - O que e|S3 Glacier]]
 - [Classes de armazenamento](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)
 - [Transições de lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html)

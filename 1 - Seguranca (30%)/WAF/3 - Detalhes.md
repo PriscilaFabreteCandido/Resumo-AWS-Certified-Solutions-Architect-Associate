@@ -68,5 +68,5 @@ Logs da web ACL vão para **CloudWatch Logs**, **S3** ou **Data Firehose**. Dali
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Shield]] · [[Firewall Manager]] · [[CloudFront]] · [[API Gateway]] · [[Cognito]]
+- [[1 - Seguranca (30%)/WAF/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/WAF/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/WAF/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Shield/1 - O que e|Shield]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]]

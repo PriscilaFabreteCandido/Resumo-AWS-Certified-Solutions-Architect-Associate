@@ -39,6 +39,6 @@ Com granularidade:
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Glue]] · [[Athena]] · [[Redshift]] · [[EMR]] · [[S3]] · [[IAM]]
+- [[3 - Performance (24%)/Lake Formation/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Lake Formation/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Lake Formation/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]]
 - [O que é o Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)

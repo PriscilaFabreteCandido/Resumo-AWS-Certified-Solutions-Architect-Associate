@@ -58,4 +58,4 @@ Isso é o mecanismo de **segmentação**: route tables diferentes criam domínio
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Transit Gateway/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Transit Gateway/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Transit Gateway/4 - Questoes|4 - Questoes]]

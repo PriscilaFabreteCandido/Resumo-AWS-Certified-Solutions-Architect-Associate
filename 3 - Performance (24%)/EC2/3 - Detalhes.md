@@ -125,7 +125,7 @@ Outras alavancas:
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Auto Scaling (EC2)]] · [[Placement Groups]] · [[EBS]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[Systems Manager (e Parameter Store)]]
+- [[3 - Performance (24%)/EC2/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/EC2/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EC2/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[3 - Performance (24%)/Placement Groups/1 - O que e|Placement Groups]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]]
 - [Opções de compra](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
 - [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)

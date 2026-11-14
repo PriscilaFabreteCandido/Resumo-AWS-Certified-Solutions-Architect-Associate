@@ -50,5 +50,5 @@ Modelo **administrador/membro** via AWS Organizations, como GuardDuty, Macie e S
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Systems Manager (e Parameter Store)]] · [[Security Hub]] · [[GuardDuty]] · [[ECS]]
+- [[1 - Seguranca (30%)/Inspector/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Inspector/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Inspector/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]]

@@ -36,6 +36,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EBS]] · [[FSx]] · [[S3]] · [[Tipos de armazenamento (objeto, arquivo, bloco)]]
+- [[3 - Performance (24%)/EFS/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EFS/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/EFS/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[9 - Fundamentos e apoio/Tipos de armazenamento (objeto, arquivo, bloco)/1 - O que e|Tipos de armazenamento (objeto, arquivo, bloco)]]
 - [Performance do EFS](https://docs.aws.amazon.com/efs/latest/ug/performance.html)

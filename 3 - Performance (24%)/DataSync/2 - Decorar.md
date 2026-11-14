@@ -46,4 +46,4 @@ Na prática, transferências **de/para on-premises** usam um **agente** (VM no d
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/DataSync/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/DataSync/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/DataSync/4 - Questoes|4 - Questoes]]

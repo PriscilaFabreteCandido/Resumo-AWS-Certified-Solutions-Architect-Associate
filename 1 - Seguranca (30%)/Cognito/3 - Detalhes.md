@@ -61,5 +61,5 @@ A doc do **AWS WAF** lista **Amazon Cognito user pool** entre os recursos aos qu
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[IAM]] · [[STS]] · [[API Gateway]] · [[WAF]] · [[Directory Service]] · [[IAM Identity Center]]
+- [[1 - Seguranca (30%)/Cognito/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Cognito/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Cognito/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/STS/1 - O que e|STS]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]]

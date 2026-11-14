@@ -37,6 +37,6 @@ Para a conversão: *"DMS Schema Conversion"* no console, que *"automatically ass
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[RDS]] · [[Aurora]] · [[Estrategias de migracao (7 Rs)]] · [[Custo de banco de dados]]
+- [[4 - Custo (20%)/DMS (Database Migration Service)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/DMS (Database Migration Service)/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/DMS (Database Migration Service)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[9 - Fundamentos e apoio/Estrategias de migracao (7 Rs)/1 - O que e|Estrategias de migracao (7 Rs)]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [O que é o AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)

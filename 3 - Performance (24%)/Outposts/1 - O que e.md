@@ -38,5 +38,5 @@ Só três requisitos justificam Outposts. Fora deles, a resposta é a **região*
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EC2]] · [[Storage Gateway]] · [[Direct Connect]] · [[Regioes, AZs e infraestrutura global]]
+- [[3 - Performance (24%)/Outposts/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Outposts/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Outposts/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[9 - Fundamentos e apoio/Regioes, AZs e infraestrutura global/1 - O que e|Regioes, AZs e infraestrutura global]]

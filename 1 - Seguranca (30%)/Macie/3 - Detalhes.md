@@ -49,5 +49,5 @@ Como GuardDuty e Security Hub, o Macie tem modelo **administrador/membro** via A
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[S3]] · [[GuardDuty]] · [[Security Hub]] · [[Config]]
+- [[1 - Seguranca (30%)/Macie/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Macie/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Macie/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]]

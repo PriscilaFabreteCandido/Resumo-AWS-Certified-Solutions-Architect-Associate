@@ -78,7 +78,7 @@ Auto Scaling     → instance refresh troca a fleet  (immutable infrastructure)
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Secrets Manager]] · [[KMS]] · [[Inspector]] · [[Config]] · [[EC2]] · [[VPC Endpoints e PrivateLink]]
+- [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[1 - Seguranca (30%)/Inspector/1 - O que e|Inspector]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]]
 - [Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
 - [Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)

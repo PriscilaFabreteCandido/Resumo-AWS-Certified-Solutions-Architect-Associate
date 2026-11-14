@@ -42,6 +42,6 @@ A doc: *"A NAT gateway is for use with IPv4 or IPv6 traffic (using DNS64 and NAT
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[VPC]] · [[VPC Endpoints e PrivateLink]] · [[Security Groups]] · [[NACL (Network ACL)]]
+- [[1 - Seguranca (30%)/NAT Gateway/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/NAT Gateway/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/NAT Gateway/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[1 - Seguranca (30%)/Security Groups/1 - O que e|Security Groups]] · [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]]
 - [NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)

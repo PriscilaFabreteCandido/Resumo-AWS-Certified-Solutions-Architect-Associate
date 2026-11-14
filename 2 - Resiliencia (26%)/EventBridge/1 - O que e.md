@@ -43,6 +43,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[SNS]] · [[SQS]] · [[Step Functions]] · [[Lambda]] · [[CloudWatch]]
+- [[2 - Resiliencia (26%)/EventBridge/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/EventBridge/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/EventBridge/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SNS/1 - O que e|SNS]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]]
 - [O que é o EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)

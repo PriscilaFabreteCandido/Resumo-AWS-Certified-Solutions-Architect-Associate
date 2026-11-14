@@ -33,6 +33,6 @@ Cross-account e cross-Region são suportados. Tráfego inter-Region *"is encrypt
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Transit Gateway]] · [[VPC]] · [[VPC Endpoints e PrivateLink]] · [[Custo de rede e transferencia de dados]]
+- [[3 - Performance (24%)/VPC Peering/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/VPC Peering/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/VPC Peering/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [O que é VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)

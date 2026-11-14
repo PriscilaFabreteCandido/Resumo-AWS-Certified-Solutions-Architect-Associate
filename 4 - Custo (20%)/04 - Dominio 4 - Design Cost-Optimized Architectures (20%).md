@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 
 > [!important] Os quatro task statements repetem três itens idênticos
 > *AWS cost management service features (for example, cost allocation tags, multi-account billing)* e *AWS cost management tools with appropriate use cases (for example, AWS Cost Explorer, AWS Budgets, AWS Cost and Usage Report)* aparecem em **4.1, 4.2, 4.3 e 4.4**.
-> Tradução: **as ferramentas de custo são garantia de questão**. Veja [[Ferramentas de custo - Cost Explorer, Budgets e CUR]].
+> Tradução: **as ferramentas de custo são garantia de questão**. Veja [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]].
 
 ---
 

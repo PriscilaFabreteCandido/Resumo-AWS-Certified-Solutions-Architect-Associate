@@ -83,6 +83,6 @@ Para padrões que o DynamoDB não atende bem (agregação, busca textual), o pad
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[DAX]] · [[ElastiCache]] · [[OpenSearch Service]] · [[Lambda]] · [[AWS Backup]] · [[Custo de banco de dados]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/DynamoDB/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/DynamoDB/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DAX/1 - O que e|DAX]] · [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]] · [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Índices secundários](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)

@@ -46,4 +46,4 @@ A única menção a Identity Center na página do Directory Service está sob **
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Directory Service/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Directory Service/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Directory Service/4 - Questoes|4 - Questoes]]

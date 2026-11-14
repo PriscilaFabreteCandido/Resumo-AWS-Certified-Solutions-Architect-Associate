@@ -94,6 +94,6 @@ Na prova, a escolha é:
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[IAM]] · [[AWS RAM]] · [[Config]] · [[CloudTrail]] · [[IAM Identity Center]] · [[Governanca (Artifact, Trusted Advisor, Service Catalog)]]
+- [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Organizations e Control Tower/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Organizations e Control Tower/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]]
 - [SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)

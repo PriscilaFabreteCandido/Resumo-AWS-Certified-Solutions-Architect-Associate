@@ -39,6 +39,6 @@ Em **Task 1.3**, citado nominalmente: *"Encrypting data at rest (for example, AW
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[CloudHSM]] · [[ACM (Certificate Manager)]] · [[Criptografia em repouso e em transito]] · [[S3]]
+- [[1 - Seguranca (30%)/KMS/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/KMS/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/KMS/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudHSM/1 - O que e|CloudHSM]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]] · [[9 - Fundamentos e apoio/Criptografia em repouso e em transito/1 - O que e|Criptografia em repouso e em transito]] · [[3 - Performance (24%)/S3/1 - O que e|S3]]
 - [Conceitos do KMS](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html)

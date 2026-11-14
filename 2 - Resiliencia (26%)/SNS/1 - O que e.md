@@ -51,6 +51,6 @@ A fila intermediária dá **durabilidade** e **retry por consumidor**. A doc: *"
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[SQS]] · [[EventBridge]] · [[Lambda]] · [[Kinesis Data Firehose]]
+- [[2 - Resiliencia (26%)/SNS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/SNS/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/SNS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]]
 - [O que é o Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)

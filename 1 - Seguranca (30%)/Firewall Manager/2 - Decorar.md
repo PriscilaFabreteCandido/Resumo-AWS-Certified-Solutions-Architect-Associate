@@ -44,4 +44,4 @@ Cobrado por policy e por recurso protegido. Organizations e RAM são grátis; **
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Firewall Manager/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Firewall Manager/4 - Questoes|4 - Questoes]]

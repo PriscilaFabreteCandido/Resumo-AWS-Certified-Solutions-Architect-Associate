@@ -73,17 +73,28 @@ Regra: **não pode transicionar antes do mínimo da classe atual**. Glacier IR n
 | Latência típica | **100-200 ms** |
 | Erro de excesso de requisição | **503 Slow Down** |
 
-## Criptografia
+## Criptografia — o que cada opção faz
 
-| Sigla | Quem gerencia a chave |
+| Opção | Quem gerencia a chave | Quem criptografa | Auditoria do uso da chave | Quando usar |
+|---|---|---|---|---|
+| **SSE-S3** | A **AWS**, de forma transparente (chave gerenciada pelo S3) | O **S3**, no servidor | **Não** (a chave não é sua, não aparece no CloudTrail como uso de chave) | Criptografia básica, sem requisito especial — **é o padrão** desde 05/01/2023 |
+| **SSE-KMS** | **KMS**, com **controle seu** (key policy, rotação, desabilitar) | O **S3**, no servidor | **Sim** — cada `Decrypt` aparece no **CloudTrail** | Precisa de **controle de acesso à chave**, **auditoria**, **compliance** ou **compartilhar entre contas** |
+| **DSSE-KMS** | **KMS**, em **duas camadas** de criptografia | O **S3**, no servidor (duas vezes) | **Sim** | Requisito **regulatório de criptografia dupla** (ex.: certos contratos do setor público) |
+| **SSE-C** | **Você** — manda a chave **em cada requisição** (HTTPS obrigatório) | O **S3**, no servidor, com a **sua** chave (e **descarta** depois) | **Por sua conta** | A chave **não pode ficar armazenada na AWS**, mas você aceita que o S3 faça a cifragem |
+| **Client-side (CSE)** | **Você** | **Sua aplicação**, antes de enviar | **Por sua conta** | **Nem a AWS** pode ver o dado em claro em nenhum momento |
+
+### Os detalhes que viram pegadinha
+
+| Item | Detalhe |
 |---|---|
-| **SSE-S3** | S3 — **é o padrão** desde 05/01/2023 |
-| **SSE-KMS** | KMS (auditável, controlável, cross-account) |
-| **DSSE-KMS** | KMS, **dupla camada** |
-| **SSE-C** | **Você** manda a chave em cada requisição. Não pode ser padrão do bucket |
-| **Client-side** | Você criptografa antes de enviar |
+| **SSE-C** | **Não pode** ser criptografia padrão do bucket. Se você perder a chave, **o objeto é irrecuperável** — a AWS não guarda nenhuma cópia |
+| **SSE-KMS + muitos objetos** | Cada operação chama a KMS → custo e **quota de requisições**. Habilite **S3 Bucket Keys**: reduz drasticamente as chamadas |
+| **Compartilhar entre contas** | Só com **customer managed key** no SSE-KMS. Com a chave `aws/s3` (AWS managed) **não dá** |
+| **Mudar a criptografia depois** | A configuração vale para objetos **novos**. Para os antigos: **copiar o objeto sobre si mesmo** ou usar **S3 Batch Operations** |
+| **Em repouso × em trânsito** | Todas as opções acima são **em repouso**. Para **em trânsito**: bucket policy negando quando `aws:SecureTransport` é `false` |
 
-**S3 Bucket Keys** reduzem o custo do SSE-KMS (menos chamadas à KMS).
+> [!tip] Como a prova sinaliza cada uma
+> *"sem requisitos especiais"* → **SSE-S3** · *"auditar/controlar/rotacionar a chave"*, *"outra conta"* → **SSE-KMS** · *"dupla camada"* → **DSSE-KMS** · *"a chave não pode ficar na AWS"* → **SSE-C** · *"a AWS nunca pode ver o dado em claro"* → **client-side**.
 
 ## Proteção de dados
 
@@ -99,5 +110,5 @@ Regra: **não pode transicionar antes do mínimo da classe atual**. Glacier IR n
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/S3/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/S3/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

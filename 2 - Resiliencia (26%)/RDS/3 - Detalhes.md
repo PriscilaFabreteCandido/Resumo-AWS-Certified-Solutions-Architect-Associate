@@ -103,6 +103,6 @@ A arquitetura completa que a prova espera:
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Aurora]] · [[RDS Proxy]] · [[Secrets Manager]] · [[Directory Service]] · [[AWS Backup]] · [[Custo de banco de dados]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/RDS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/RDS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Read replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)

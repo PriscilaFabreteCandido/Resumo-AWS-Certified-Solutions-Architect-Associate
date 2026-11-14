@@ -38,6 +38,6 @@ O Transit Gateway é um **hub**: cada VPC tem **um** attachment, e o roteamento 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[VPC Peering]] · [[VPC]] · [[Direct Connect]] · [[VPN (Site-to-Site)]] · [[VPC Endpoints e PrivateLink]] · [[AWS RAM]]
+- [[3 - Performance (24%)/Transit Gateway/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Transit Gateway/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Transit Gateway/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/VPC Peering/1 - O que e|VPC Peering]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[3 - Performance (24%)/VPN (Site-to-Site)/1 - O que e|VPN (Site-to-Site)]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]]
 - [O que é o Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html)

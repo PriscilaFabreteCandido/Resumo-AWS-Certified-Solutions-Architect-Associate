@@ -74,6 +74,6 @@ Para fontes de **poll** (SQS, Kinesis, DynamoDB Streams, MSK, Amazon MQ), o Lamb
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[SQS]] · [[API Gateway]] · [[Step Functions]] · [[RDS Proxy]] · [[VPC Endpoints e PrivateLink]] · [[Fargate]]
+- [[2 - Resiliencia (26%)/Lambda/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Lambda/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Lambda/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]]
 - [Concorrência](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html)

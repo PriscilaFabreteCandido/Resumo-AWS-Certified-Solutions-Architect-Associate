@@ -79,5 +79,5 @@ Portfólios podem ser **compartilhados entre contas via AWS RAM**.
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Config]] · [[Security Hub]] · [[Compute Optimizer]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[Responsabilidade compartilhada]] · [[Well-Architected Framework]]
+- [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[9 - Fundamentos e apoio/Responsabilidade compartilhada/1 - O que e|Responsabilidade compartilhada]] · [[9 - Fundamentos e apoio/Well-Architected Framework/1 - O que e|Well-Architected Framework]]

@@ -78,5 +78,5 @@ A doc do EMR ajuda a separar: use EMR *"if you use custom code to process and an
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Glue]] · [[Lake Formation]] · [[Redshift]] · [[EMR]] · [[S3]] · [[Kinesis Data Firehose]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]]
+- [[3 - Performance (24%)/Athena/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Athena/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Athena/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Lake Formation/1 - O que e|Lake Formation]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]]

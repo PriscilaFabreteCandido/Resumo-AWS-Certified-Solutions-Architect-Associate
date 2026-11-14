@@ -38,6 +38,6 @@ E a distinção estrutural: *"Gateway endpoints do not use AWS PrivateLink, unli
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[VPC]] · [[NAT Gateway]] · [[S3]] · [[VPC Peering]] · [[Transit Gateway]]
+- [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/VPC Peering/1 - O que e|VPC Peering]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]]
 - [Conceitos do PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html)

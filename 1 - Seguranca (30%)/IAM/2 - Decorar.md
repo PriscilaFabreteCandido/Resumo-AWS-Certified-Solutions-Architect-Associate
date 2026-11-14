@@ -89,5 +89,5 @@ Em política de **recurso** e **trust policy**, existe também o campo **`Princi
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/IAM/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/IAM/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

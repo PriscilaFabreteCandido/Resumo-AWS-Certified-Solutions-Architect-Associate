@@ -54,4 +54,4 @@ Replicação propaga a mudança ruim. Backup guarda o estado anterior.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/AWS Backup/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/AWS Backup/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/AWS Backup/4 - Questoes|4 - Questoes]]

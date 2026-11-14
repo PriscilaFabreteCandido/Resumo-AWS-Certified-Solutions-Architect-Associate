@@ -47,4 +47,4 @@ Todos os quatro estão na lista de **serviços em escopo** da SAA-C03, na catego
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/4 - Questoes|4 - Questoes]]

@@ -60,4 +60,4 @@ Tempo ≈ Volume ÷ Banda útil
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[4 - Custo (20%)/Snow Family/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Snow Family/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/Snow Family/4 - Questoes|4 - Questoes]]

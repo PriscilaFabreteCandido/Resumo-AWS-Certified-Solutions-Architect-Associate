@@ -77,5 +77,5 @@ A prova testa **CloudFormation** (o conceito de IaC e o serviço), não as ferra
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Disaster Recovery (RPO e RTO)]] · [[Config]] · [[Organizations e Control Tower]] · [[Governanca (Artifact, Trusted Advisor, Service Catalog)]] · [[04 - Fora de escopo (nao estude isso)]]
+- [[2 - Resiliencia (26%)/CloudFormation/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/CloudFormation/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/CloudFormation/4 - Questoes|4 - Questoes]]
+- [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]] · [[04 - Fora de escopo (nao estude isso)]]

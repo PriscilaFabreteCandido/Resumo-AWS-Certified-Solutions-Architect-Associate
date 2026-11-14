@@ -40,6 +40,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[S3]] · [[Custo de armazenamento - classes do S3 e lifecycle]] · [[AWS Backup]]
+- [[3 - Performance (24%)/S3 Glacier/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/S3 Glacier/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/S3 Glacier/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/S3/2 - Decorar|S3 - classes e lifecycle]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]]
 - [Opções de recuperação de arquivo](https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects-retrieval-options.html)

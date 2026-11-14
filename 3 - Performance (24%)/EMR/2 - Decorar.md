@@ -53,4 +53,4 @@ Nota da doc: *"Amazon Athena supports many of the same data formats as Amazon EM
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/EMR/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/EMR/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/EMR/4 - Questoes|4 - Questoes]]

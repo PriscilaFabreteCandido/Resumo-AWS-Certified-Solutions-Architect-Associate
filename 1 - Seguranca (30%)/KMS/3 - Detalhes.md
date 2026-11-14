@@ -90,7 +90,7 @@ E lembre: **KMS = em repouso. ACM/TLS = em trânsito.** Essa confusão é explor
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudHSM]] · [[ACM (Certificate Manager)]] · [[Secrets Manager]] · [[Criptografia em repouso e em transito]] · [[IAM]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/KMS/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/KMS/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudHSM/1 - O que e|CloudHSM]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[9 - Fundamentos e apoio/Criptografia em repouso e em transito/1 - O que e|Criptografia em repouso e em transito]] · [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]]
 - [Rotação de chaves](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html)
 - [API Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html)

@@ -56,4 +56,4 @@ Título da página: **"AWS Security Hub Cloud Security Posture Management (AWS S
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Security Hub/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Security Hub/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Security Hub/4 - Questoes|4 - Questoes]]

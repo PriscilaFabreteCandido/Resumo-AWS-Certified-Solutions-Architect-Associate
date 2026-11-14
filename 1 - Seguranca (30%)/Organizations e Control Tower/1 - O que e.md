@@ -39,6 +39,6 @@ E o complemento: *"A user without any IAM permission policies has no access, eve
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[IAM]] · [[AWS RAM]] · [[IAM Identity Center]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]]
+- [[1 - Seguranca (30%)/Organizations e Control Tower/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Organizations e Control Tower/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Organizations e Control Tower/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]]
 - [Introdução ao Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)

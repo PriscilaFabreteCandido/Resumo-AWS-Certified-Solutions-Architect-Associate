@@ -76,5 +76,5 @@ Use quando a ordem precisa ser preservada **através** do fan-out — por exempl
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[SQS]] · [[EventBridge]] · [[Lambda]] · [[KMS]] · [[Mensageria gerenciada (Amazon MQ e MSK)]]
+- [[2 - Resiliencia (26%)/SNS/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/SNS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/SNS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/1 - O que e|Mensageria gerenciada (Amazon MQ e MSK)]]

@@ -69,5 +69,5 @@ Exclusivo da **REST API**. E vale repetir: **API key não é autenticação** �
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Lambda]] · [[Cognito]] · [[WAF]] · [[SQS]] · [[CloudFront]] · [[VPC Endpoints e PrivateLink]]
+- [[2 - Resiliencia (26%)/API Gateway/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/API Gateway/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/API Gateway/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]]

@@ -44,6 +44,6 @@ Modos: **MSK Provisioned** (brokers Standard ou Express) e **MSK Serverless**.
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[SQS]] · [[SNS]] · [[EventBridge]] · [[Kinesis Data Streams]]
+- [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/SNS/1 - O que e|SNS]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|Kinesis Data Streams]]
 - [O que é o Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html)

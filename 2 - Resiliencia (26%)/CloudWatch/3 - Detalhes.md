@@ -67,5 +67,5 @@ Eles se complementam: Config diz **o que** mudou, CloudTrail diz **quem** mudou,
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudTrail]] · [[Config]] · [[X-Ray]] · [[Auto Scaling (EC2)]] · [[SQS]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/CloudWatch/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/CloudWatch/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[2 - Resiliencia (26%)/X-Ray/1 - O que e|X-Ray]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]]

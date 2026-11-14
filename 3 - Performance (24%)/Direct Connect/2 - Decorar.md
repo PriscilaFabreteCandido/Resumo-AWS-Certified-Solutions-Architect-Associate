@@ -52,4 +52,4 @@ Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps;
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Direct Connect/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Direct Connect/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Direct Connect/4 - Questoes|4 - Questoes]]

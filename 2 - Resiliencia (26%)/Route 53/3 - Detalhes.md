@@ -86,6 +86,6 @@ Uso de prova: dar nomes estáveis a recursos internos (`db.interno.exemplo.com` 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[ELB (Load Balancers)]] · [[CloudFront]] · [[Global Accelerator]] · [[Disaster Recovery (RPO e RTO)]] · [[VPC]] · [[AWS RAM]]
+- [[2 - Resiliencia (26%)/Route 53/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Route 53/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Route 53/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]]
 - [Alias × non-alias](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)

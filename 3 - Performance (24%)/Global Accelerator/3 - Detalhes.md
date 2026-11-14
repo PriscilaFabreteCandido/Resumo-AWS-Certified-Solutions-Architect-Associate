@@ -92,5 +92,5 @@ Combinações típicas:
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudFront]] · [[ELB (Load Balancers)]] · [[Route 53]] · [[Shield]] · [[Disaster Recovery (RPO e RTO)]]
+- [[3 - Performance (24%)/Global Accelerator/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Global Accelerator/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Global Accelerator/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]] · [[1 - Seguranca (30%)/Shield/1 - O que e|Shield]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]]

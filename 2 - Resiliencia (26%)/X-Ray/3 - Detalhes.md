@@ -69,5 +69,5 @@ Na prova: *"identificar os traces de um cliente específico"* → **annotation**
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudWatch]] · [[Lambda]] · [[API Gateway]] · [[ECS]] · [[04 - Fora de escopo (nao estude isso)]]
+- [[2 - Resiliencia (26%)/X-Ray/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/X-Ray/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/X-Ray/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]] · [[04 - Fora de escopo (nao estude isso)]]

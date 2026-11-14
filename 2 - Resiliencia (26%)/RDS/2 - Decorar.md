@@ -50,5 +50,5 @@ Reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"*, e o do
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/RDS/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/RDS/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

@@ -82,5 +82,5 @@ Se o tempo calculado não cabe no prazo, a resposta é **Snow Family** (disposit
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Storage Gateway]] · [[Transfer Family]] · [[Snow Family]] · [[S3]] · [[S3 Glacier]] · [[EFS]] · [[FSx]] · [[Estrategias de migracao (7 Rs)]]
+- [[3 - Performance (24%)/DataSync/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/DataSync/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/DataSync/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[3 - Performance (24%)/Transfer Family/1 - O que e|Transfer Family]] · [[4 - Custo (20%)/Snow Family/1 - O que e|Snow Family]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/S3 Glacier/1 - O que e|S3 Glacier]] · [[3 - Performance (24%)/EFS/1 - O que e|EFS]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[9 - Fundamentos e apoio/Estrategias de migracao (7 Rs)/1 - O que e|Estrategias de migracao (7 Rs)]]

@@ -65,4 +65,4 @@ Fórmula: **N(N-1)/2**. É a razão de existir do Transit Gateway.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/VPC Peering/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/VPC Peering/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/VPC Peering/4 - Questoes|4 - Questoes]]

@@ -69,4 +69,4 @@ Para registro **alias**, em vez de anexar health check você liga **Evaluate Tar
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[2 - Resiliencia (26%)/Route 53/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Route 53/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Route 53/4 - Questoes|4 - Questoes]]

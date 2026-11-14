@@ -46,6 +46,6 @@ E a regra de fechamento: *"An explicit deny overrides an explicit allow."* Um `D
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[STS]] · [[Organizations e Control Tower]] · [[IAM Identity Center]] · [[KMS]]
+- [[1 - Seguranca (30%)/IAM/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/IAM/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/IAM/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/STS/1 - O que e|STS]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]]
 - [Documentação oficial do IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)

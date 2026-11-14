@@ -36,6 +36,6 @@ E a latência: *"the put-to-get delay is typically less than 1 second"*.
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Kinesis Data Firehose]] · [[Lambda]] · [[SQS]] · [[Mensageria gerenciada (Amazon MQ e MSK)]]
+- [[3 - Performance (24%)/Kinesis Data Streams/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Kinesis Data Streams/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Kinesis Data Streams/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/1 - O que e|Mensageria gerenciada (Amazon MQ e MSK)]]
 - [Introdução ao Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)

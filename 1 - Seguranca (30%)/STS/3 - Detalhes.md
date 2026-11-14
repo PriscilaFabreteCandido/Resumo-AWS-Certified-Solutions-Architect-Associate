@@ -73,5 +73,5 @@ O STS tem um endpoint global (`sts.amazonaws.com`) e endpoints **regionais** (`s
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[IAM]] · [[Cognito]] · [[IAM Identity Center]] · [[KMS]]
+- [[1 - Seguranca (30%)/STS/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/STS/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/STS/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]]

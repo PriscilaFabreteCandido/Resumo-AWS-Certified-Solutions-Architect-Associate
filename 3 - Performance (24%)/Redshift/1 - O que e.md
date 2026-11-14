@@ -39,6 +39,6 @@ Tradução para a prova: o Redshift **consegue** fazer INSERT e DELETE, mas é *
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Athena]] · [[Glue]] · [[EMR]] · [[OpenSearch Service]] · [[DynamoDB]]
+- [[3 - Performance (24%)/Redshift/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Redshift/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Redshift/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]]
 - [Arquitetura do Redshift](https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html)

@@ -40,6 +40,6 @@ Suporta **VPC endpoints**, para transferir sem passar pela internet.
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Storage Gateway]] · [[Transfer Family]] · [[Snow Family]] · [[S3]] · [[EFS]] · [[FSx]]
+- [[3 - Performance (24%)/DataSync/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/DataSync/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/DataSync/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[3 - Performance (24%)/Transfer Family/1 - O que e|Transfer Family]] · [[4 - Custo (20%)/Snow Family/1 - O que e|Snow Family]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/EFS/1 - O que e|EFS]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]]
 - [O que é o DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html)

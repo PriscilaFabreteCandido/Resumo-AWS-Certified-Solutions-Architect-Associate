@@ -34,6 +34,6 @@ A doc: *"AWS Certificate Manager (ACM) handles the complexity of creating, stori
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[KMS]] · [[CloudFront]] · [[ELB (Load Balancers)]] · [[Criptografia em repouso e em transito]]
+- [[1 - Seguranca (30%)/ACM (Certificate Manager)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[9 - Fundamentos e apoio/Criptografia em repouso e em transito/1 - O que e|Criptografia em repouso e em transito]]
 - [Visão geral do ACM](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)

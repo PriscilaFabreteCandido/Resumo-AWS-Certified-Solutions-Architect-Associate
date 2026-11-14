@@ -83,5 +83,5 @@ Cross-Region também: *"The VPCs can be in different Regions (also known as an i
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Transit Gateway]] · [[VPC]] · [[VPC Endpoints e PrivateLink]] · [[AWS RAM]] · [[NAT Gateway]] · [[Custo de rede e transferencia de dados]]
+- [[3 - Performance (24%)/VPC Peering/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/VPC Peering/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/VPC Peering/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]] · [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]

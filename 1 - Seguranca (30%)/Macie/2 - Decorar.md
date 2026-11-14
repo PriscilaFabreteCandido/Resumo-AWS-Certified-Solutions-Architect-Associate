@@ -46,4 +46,4 @@ E se conecta a **Task 1.3**: *"Data retention and classification"*.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Macie/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Macie/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Macie/4 - Questoes|4 - Questoes]]

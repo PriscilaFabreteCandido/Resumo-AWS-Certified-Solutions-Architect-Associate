@@ -63,5 +63,5 @@ Target tracking e step *"can initiate a scale-out activity immediately without w
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

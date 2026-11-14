@@ -102,5 +102,5 @@ Functions roda em **submilissegundo** com **2 MB** de memória e **10 KB** de c�
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[S3]] · [[ACM (Certificate Manager)]] · [[WAF]] · [[Shield]] · [[Global Accelerator]] · [[Route 53]] · [[Custo de rede e transferencia de dados]]
+- [[3 - Performance (24%)/CloudFront/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/CloudFront/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/CloudFront/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[1 - Seguranca (30%)/Shield/1 - O que e|Shield]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]

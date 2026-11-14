@@ -35,6 +35,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[IAM]] · [[STS]] · [[IAM Identity Center]] · [[API Gateway]]
+- [[1 - Seguranca (30%)/Cognito/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Cognito/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Cognito/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/STS/1 - O que e|STS]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]]
 - [O que é o Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)

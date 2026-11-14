@@ -91,7 +91,7 @@ Troca de Standard para I/O-Optimized: *"once every 30 days"*.
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[RDS]] · [[RDS Proxy]] · [[Disaster Recovery (RPO e RTO)]] · [[Custo de banco de dados]] · [[Secrets Manager]]
+- [[2 - Resiliencia (26%)/Aurora/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Aurora/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Aurora/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]]
 - [Alta disponibilidade no Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
 - [Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)

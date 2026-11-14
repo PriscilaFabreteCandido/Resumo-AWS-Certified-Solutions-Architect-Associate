@@ -50,4 +50,4 @@ Os **standard accelerators** estão na lista de recursos protegidos pelo **Shiel
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Global Accelerator/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Global Accelerator/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Global Accelerator/4 - Questoes|4 - Questoes]]

@@ -77,4 +77,4 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[3 - Detalhes]]
+- [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Kinesis Data Streams/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Kinesis Data Streams/3 - Detalhes|3 - Detalhes]]

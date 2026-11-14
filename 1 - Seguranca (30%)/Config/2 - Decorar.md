@@ -45,4 +45,4 @@ Consolida **multi-conta e multi-região** numa visão só. É a resposta para "v
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Config/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Config/4 - Questoes|4 - Questoes]]

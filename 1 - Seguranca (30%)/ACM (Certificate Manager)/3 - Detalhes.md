@@ -69,6 +69,6 @@ O guia pede, em **Task 1.3**: *"Rotating encryption keys and renewing certificat
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[KMS]] · [[CloudFront]] · [[ELB (Load Balancers)]] · [[API Gateway]] · [[Criptografia em repouso e em transito]]
+- [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[9 - Fundamentos e apoio/Criptografia em repouso e em transito/1 - O que e|Criptografia em repouso e em transito]]
 - [Serviços integrados ao ACM](https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html)

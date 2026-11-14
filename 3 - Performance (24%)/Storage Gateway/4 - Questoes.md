@@ -69,4 +69,4 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[3 - Detalhes]]
+- [[3 - Performance (24%)/Storage Gateway/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Storage Gateway/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Storage Gateway/3 - Detalhes|3 - Detalhes]]

@@ -53,4 +53,4 @@ O **change set** mostra qual será o caso **antes** de aplicar.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[2 - Resiliencia (26%)/CloudFormation/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/CloudFormation/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/CloudFormation/4 - Questoes|4 - Questoes]]

@@ -66,4 +66,4 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[3 - Detalhes]]
+- [[1 - Seguranca (30%)/Cognito/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Cognito/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Cognito/3 - Detalhes|3 - Detalhes]]

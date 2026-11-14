@@ -82,5 +82,5 @@ A doc do Glue descreve o Lake Formation como *"an authorization layer that provi
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Glue]] · [[Athena]] · [[Redshift]] · [[EMR]] · [[S3]] · [[IAM]] · [[Macie]] · [[Protecao de dados no S3]]
+- [[3 - Performance (24%)/Lake Formation/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Lake Formation/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Lake Formation/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/Macie/1 - O que e|Macie]] · [[3 - Performance (24%)/S3/2 - Decorar|S3 - protecao de dados]]

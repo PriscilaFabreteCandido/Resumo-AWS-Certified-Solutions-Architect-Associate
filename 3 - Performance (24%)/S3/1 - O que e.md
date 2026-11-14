@@ -49,6 +49,6 @@ Três coisas definem o S3 na prova:
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/S3/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/S3/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/S3/4 - Questoes|4 - Questoes]]
 - [[00 - START HERE (indice da prova)]]
 - [Documentação oficial do S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)

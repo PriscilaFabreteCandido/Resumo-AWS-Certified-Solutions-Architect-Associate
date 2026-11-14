@@ -81,5 +81,5 @@ O padrão é descrever o **problema de negócio** sem nomear o serviço, e ofere
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[DynamoDB]] · [[RDS]] · [[Aurora]] · [[Redshift]] · [[OpenSearch Service]] · [[ElastiCache]] · [[AWS Backup]] · [[Custo de banco de dados]]
+- [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]] · [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]

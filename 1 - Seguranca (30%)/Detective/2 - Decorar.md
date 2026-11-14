@@ -51,4 +51,4 @@ Detective entra **depois** da detecção. Ele não gera achado — ele explica o
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Detective/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Detective/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Detective/4 - Questoes|4 - Questoes]]

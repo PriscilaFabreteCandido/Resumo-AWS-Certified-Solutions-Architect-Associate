@@ -46,6 +46,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[ELB (Load Balancers)]] · [[CloudFront]] · [[Global Accelerator]] · [[Disaster Recovery (RPO e RTO)]]
+- [[2 - Resiliencia (26%)/Route 53/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Route 53/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Route 53/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]]
 - [Políticas de roteamento](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)

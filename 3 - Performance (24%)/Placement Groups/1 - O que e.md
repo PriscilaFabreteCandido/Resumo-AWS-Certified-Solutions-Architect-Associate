@@ -41,6 +41,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EC2]] · [[Auto Scaling (EC2)]] · [[AWS Batch]]
+- [[3 - Performance (24%)/Placement Groups/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Placement Groups/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Placement Groups/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/AWS Batch/1 - O que e|AWS Batch]]
 - [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)

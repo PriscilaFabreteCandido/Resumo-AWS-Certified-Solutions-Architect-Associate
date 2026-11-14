@@ -34,5 +34,5 @@ Tradução: quando uma alternativa usa o serviço **feito para aquilo** e outra 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[DynamoDB]] · [[RDS]] · [[Aurora]] · [[Redshift]] · [[Custo de banco de dados]]
+- [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Bancos especializados (Neptune, DocumentDB, Keyspaces, Timestream)/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]

@@ -47,6 +47,6 @@ Por isso, na prova, **EC2 quase nunca é a resposta quando o enunciado pede "lea
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Auto Scaling (EC2)]] · [[Placement Groups]] · [[EBS]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[3 - Performance (24%)/EC2/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EC2/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/EC2/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[3 - Performance (24%)/Placement Groups/1 - O que e|Placement Groups]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
 - [Documentação oficial do EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)

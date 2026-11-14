@@ -72,5 +72,5 @@ Carga sensível a **latência ou residência** fica no Outpost; **analytics, bac
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EC2]] · [[EBS]] · [[Storage Gateway]] · [[Direct Connect]] · [[Regioes, AZs e infraestrutura global]]
+- [[3 - Performance (24%)/Outposts/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Outposts/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Outposts/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[9 - Fundamentos e apoio/Regioes, AZs e infraestrutura global/1 - O que e|Regioes, AZs e infraestrutura global]]

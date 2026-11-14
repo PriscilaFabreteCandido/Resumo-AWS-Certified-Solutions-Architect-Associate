@@ -47,4 +47,4 @@ Para as portas **22 (SSH)** e **3389 (RDP)**: *"authorize only specific IP addre
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Security Groups/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Security Groups/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Security Groups/4 - Questoes|4 - Questoes]]

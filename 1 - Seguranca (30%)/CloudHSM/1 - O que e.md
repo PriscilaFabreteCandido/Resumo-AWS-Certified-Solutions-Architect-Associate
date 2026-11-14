@@ -29,6 +29,6 @@ Um quarto gatilho: a aplicação usa **PKCS #11, JCE, CNG ou KSP** — a doc diz
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[KMS]] · [[Criptografia em repouso e em transito]]
+- [[1 - Seguranca (30%)/CloudHSM/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/CloudHSM/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/CloudHSM/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[9 - Fundamentos e apoio/Criptografia em repouso e em transito/1 - O que e|Criptografia em repouso e em transito]]
 - [Introdução ao CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)

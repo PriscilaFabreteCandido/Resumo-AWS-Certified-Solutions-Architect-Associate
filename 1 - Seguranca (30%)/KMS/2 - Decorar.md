@@ -63,5 +63,5 @@ Tipos assimétricos: **RSA** (cifrar **ou** assinar, não ambos) · **ECC** (ass
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/KMS/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/KMS/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

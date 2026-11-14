@@ -46,6 +46,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[DAX]] · [[ElastiCache]] · [[RDS]] · [[Aurora]] · [[Custo de banco de dados]]
+- [[3 - Performance (24%)/DynamoDB/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/DynamoDB/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/DynamoDB/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DAX/1 - O que e|DAX]] · [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Componentes do DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html)

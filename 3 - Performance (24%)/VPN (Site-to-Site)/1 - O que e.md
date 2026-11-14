@@ -39,6 +39,6 @@ E o número que mais cai:
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Direct Connect]] · [[Transit Gateway]] · [[VPC]] · [[Disaster Recovery (RPO e RTO)]]
+- [[3 - Performance (24%)/VPN (Site-to-Site)/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/VPN (Site-to-Site)/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/VPN (Site-to-Site)/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]]
 - [Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)

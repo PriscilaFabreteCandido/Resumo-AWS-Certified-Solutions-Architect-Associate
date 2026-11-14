@@ -79,5 +79,5 @@ O Config cobra por **configuration item registrado** e por **avaliação de regr
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudTrail]] · [[Security Hub]] · [[Firewall Manager]] · [[Systems Manager (e Parameter Store)]] · [[Governanca (Artifact, Trusted Advisor, Service Catalog)]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Config/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Config/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]]

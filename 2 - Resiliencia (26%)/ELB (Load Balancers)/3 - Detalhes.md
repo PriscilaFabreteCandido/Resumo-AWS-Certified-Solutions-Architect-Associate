@@ -85,5 +85,5 @@ O ALB suporta sessões persistentes por cookie (gerado por ele ou da aplicação
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Auto Scaling (EC2)]] · [[Route 53]] · [[WAF]] · [[CloudFront]] · [[Global Accelerator]] · [[ElastiCache]]
+- [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]]

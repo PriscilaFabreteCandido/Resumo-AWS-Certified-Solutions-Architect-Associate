@@ -59,5 +59,5 @@ Cache local para um **FSx for Windows File Server** na AWS, via **SMB**. Serve q
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[S3]] · [[FSx]] · [[DataSync]] · [[Transfer Family]] · [[Snow Family]] · [[AWS Backup]] · [[Athena]]
+- [[3 - Performance (24%)/Storage Gateway/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Storage Gateway/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Storage Gateway/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[3 - Performance (24%)/DataSync/1 - O que e|DataSync]] · [[3 - Performance (24%)/Transfer Family/1 - O que e|Transfer Family]] · [[4 - Custo (20%)/Snow Family/1 - O que e|Snow Family]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]]

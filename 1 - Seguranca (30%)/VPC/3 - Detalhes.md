@@ -94,6 +94,6 @@ São a resposta para "descobrir por que o tráfego está sendo bloqueado" e são
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Security Groups]] · [[NACL (Network ACL)]] · [[NAT Gateway]] · [[VPC Endpoints e PrivateLink]] · [[AWS RAM]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/VPC/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/VPC/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Security Groups/1 - O que e|Security Groups]] · [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]] · [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[1 - Seguranca (30%)/AWS RAM/1 - O que e|AWS RAM]]
 - [Sizing de subnet](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-sizing.html)

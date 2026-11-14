@@ -59,6 +59,6 @@ Implicação de segurança: o **IMDS** (`169.254.169.254`) não pode ser bloquea
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[NACL (Network ACL)]] · [[VPC]] · [[Firewall Manager]] · [[WAF]]
+- [[1 - Seguranca (30%)/Security Groups/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Security Groups/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Security Groups/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]]
 - [Comparação oficial SG × NACL](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html)

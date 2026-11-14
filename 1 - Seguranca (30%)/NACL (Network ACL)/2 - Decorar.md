@@ -75,4 +75,4 @@ A doc: *"Be sure to give the deny rule a lower number than the rule that allows 
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/NACL (Network ACL)/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/NACL (Network ACL)/4 - Questoes|4 - Questoes]]

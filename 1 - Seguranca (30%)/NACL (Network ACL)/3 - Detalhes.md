@@ -75,7 +75,7 @@ Para inspeção de conteúdo (não só permitir/negar por porta e IP), a camada 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Security Groups]] · [[VPC]] · [[Firewall Manager]] · [[VPC Endpoints e PrivateLink]]
+- [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/NACL (Network ACL)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/NACL (Network ACL)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Security Groups/1 - O que e|Security Groups]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]]
 - [Regras de NACL](https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html)
 - [Comparação oficial](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html)

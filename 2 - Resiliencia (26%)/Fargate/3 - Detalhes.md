@@ -75,5 +75,5 @@ Para consumidor de fila em Fargate, a métrica certa é a **profundidade da fila
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[ECS]] · [[EKS]] · [[Lambda]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[SQS]]
+- [[2 - Resiliencia (26%)/Fargate/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Fargate/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Fargate/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]] · [[2 - Resiliencia (26%)/EKS/1 - O que e|EKS]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]]

@@ -41,6 +41,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Fargate]] · [[EKS]] · [[ELB (Load Balancers)]] · [[Lambda]]
+- [[2 - Resiliencia (26%)/ECS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/ECS/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/ECS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[2 - Resiliencia (26%)/EKS/1 - O que e|EKS]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]]
 - [O que é o Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)

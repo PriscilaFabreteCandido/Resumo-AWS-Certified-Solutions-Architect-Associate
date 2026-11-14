@@ -37,5 +37,5 @@ A recomendação oficial: *"For secrets such as database credentials, API keys, 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Systems Manager (e Parameter Store)]] · [[KMS]] · [[RDS]] · [[RDS Proxy]]
+- [[1 - Seguranca (30%)/Secrets Manager/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Secrets Manager/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Secrets Manager/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]]

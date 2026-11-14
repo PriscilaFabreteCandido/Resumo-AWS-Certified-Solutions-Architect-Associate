@@ -31,5 +31,5 @@ A prova de SAA raramente pede detalhe de configuração destes cinco serviços. 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[GuardDuty]] · [[Macie]] · [[Inspector]] · [[Security Hub]] · [[Detective]]
+- [[1 - Seguranca (30%)/Inspector/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Inspector/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Inspector/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[1 - Seguranca (30%)/Macie/1 - O que e|Macie]] · [[1 - Seguranca (30%)/Inspector/1 - O que e|Inspector]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/Detective/1 - O que e|Detective]]

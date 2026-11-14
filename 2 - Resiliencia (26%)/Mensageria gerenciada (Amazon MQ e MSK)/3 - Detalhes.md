@@ -69,5 +69,5 @@ A escolha "lift and shift para MQ/MSK **agora**, refatorar para SQS/SNS **depois
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[SQS]] · [[SNS]] · [[EventBridge]] · [[Kinesis Data Streams]] · [[Estrategias de migracao (7 Rs)]]
+- [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Mensageria gerenciada (Amazon MQ e MSK)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/SNS/1 - O que e|SNS]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|Kinesis Data Streams]] · [[9 - Fundamentos e apoio/Estrategias de migracao (7 Rs)/1 - O que e|Estrategias de migracao (7 Rs)]]

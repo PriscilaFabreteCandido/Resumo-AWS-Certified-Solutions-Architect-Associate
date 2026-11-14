@@ -36,6 +36,6 @@ Ganhos: menos VPCs, menos **NAT gateways**, menos conexões (peering/TGW/DX), e 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Organizations e Control Tower]] · [[VPC]] · [[Transit Gateway]] · [[NAT Gateway]]
+- [[1 - Seguranca (30%)/AWS RAM/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/AWS RAM/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/AWS RAM/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]] · [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]]
 - [O que é o AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)

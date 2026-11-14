@@ -51,4 +51,4 @@ SCP negando cloudtrail:StopLogging e cloudtrail:DeleteTrail
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/CloudTrail/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/CloudTrail/4 - Questoes|4 - Questoes]]

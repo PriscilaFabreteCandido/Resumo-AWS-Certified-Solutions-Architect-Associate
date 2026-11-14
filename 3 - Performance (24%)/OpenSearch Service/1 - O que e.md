@@ -35,5 +35,5 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[CloudWatch]] · [[Athena]] · [[Kinesis Data Firehose]] · [[DynamoDB]] · [[Redshift]]
+- [[3 - Performance (24%)/OpenSearch Service/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/OpenSearch Service/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/OpenSearch Service/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]]

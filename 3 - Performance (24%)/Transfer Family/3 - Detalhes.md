@@ -78,5 +78,5 @@ A alternativa é **S3 Event Notification → Lambda / EventBridge / Step Functio
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[DataSync]] · [[Storage Gateway]] · [[Snow Family]] · [[S3]] · [[EFS]] · [[Directory Service]] · [[Lambda]]
+- [[3 - Performance (24%)/Transfer Family/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Transfer Family/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Transfer Family/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DataSync/1 - O que e|DataSync]] · [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[4 - Custo (20%)/Snow Family/1 - O que e|Snow Family]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/EFS/1 - O que e|EFS]] · [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]]

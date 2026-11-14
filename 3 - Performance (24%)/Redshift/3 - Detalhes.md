@@ -90,7 +90,7 @@ Restrições: node types `rg.*` e `ra3.*` (**máx. 32** compute nodes), e **não
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Athena]] · [[Glue]] · [[EMR]] · [[OpenSearch Service]] · [[Kinesis Data Firehose]] · [[S3]] · [[Custo de banco de dados]]
+- [[3 - Performance (24%)/Redshift/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Redshift/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Redshift/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]] · [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-using-spectrum.html)
 - [Concurrency scaling](https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html)

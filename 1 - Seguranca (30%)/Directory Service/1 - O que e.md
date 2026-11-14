@@ -39,6 +39,6 @@ Ou seja: para **RDS SQL Server com Windows Auth**, só **AWS Managed Microsoft A
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[IAM Identity Center]] · [[FSx]] · [[RDS]] · [[Cognito]]
+- [[1 - Seguranca (30%)/Directory Service/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Directory Service/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Directory Service/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]]
 - [O que é o Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html)

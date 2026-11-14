@@ -90,7 +90,7 @@ Não é sobre billing — é sobre raio de explosão.
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[STS]] · [[Organizations e Control Tower]] · [[IAM Identity Center]] · [[Cognito]] · [[KMS]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/IAM/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/IAM/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/STS/1 - O que e|STS]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]]
 - [Lógica de avaliação](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
 - [Cross-account](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic-cross-account.html)

@@ -85,6 +85,6 @@ Para consumidor **Lambda**, o *event source mapping* escala automaticamente conf
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[SNS]] · [[EventBridge]] · [[Lambda]] · [[Auto Scaling (EC2)]] · [[API Gateway]] · [[S3]]
+- [[2 - Resiliencia (26%)/SQS/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/SQS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/SQS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SNS/1 - O que e|SNS]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[3 - Performance (24%)/S3/1 - O que e|S3]]
 - [Visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html)

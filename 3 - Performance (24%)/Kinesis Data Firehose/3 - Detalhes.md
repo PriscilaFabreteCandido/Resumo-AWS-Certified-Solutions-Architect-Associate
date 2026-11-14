@@ -79,5 +79,5 @@ Assim você tem tempo real **e** arquivamento barato, com replay garantido pelo 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Kinesis Data Streams]] · [[S3]] · [[Redshift]] · [[OpenSearch Service]] · [[Glue]] · [[Athena]] · [[Lambda]]
+- [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Kinesis Data Firehose/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Kinesis Data Firehose/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|Kinesis Data Streams]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]] · [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]]

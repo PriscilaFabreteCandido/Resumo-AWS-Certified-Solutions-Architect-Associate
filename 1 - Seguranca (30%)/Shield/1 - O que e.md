@@ -33,6 +33,6 @@ A doc: *"AWS automatically mitigates network and transport layer (layer 3 and la
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[WAF]] · [[Firewall Manager]] · [[CloudFront]] · [[Global Accelerator]]
+- [[1 - Seguranca (30%)/Shield/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Shield/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Shield/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]]
 - [Proteção DDoS na AWS](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html)

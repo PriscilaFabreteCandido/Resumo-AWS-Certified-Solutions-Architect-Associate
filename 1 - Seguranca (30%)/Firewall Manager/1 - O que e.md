@@ -41,5 +41,5 @@ Uma palavra decide: **"várias contas"**, **"toda a organização"**, **"automat
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[WAF]] · [[Shield]] · [[Security Groups]] · [[NACL (Network ACL)]] · [[Config]] · [[Organizations e Control Tower]]
+- [[1 - Seguranca (30%)/Firewall Manager/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Firewall Manager/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Firewall Manager/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[1 - Seguranca (30%)/Shield/1 - O que e|Shield]] · [[1 - Seguranca (30%)/Security Groups/1 - O que e|Security Groups]] · [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]]

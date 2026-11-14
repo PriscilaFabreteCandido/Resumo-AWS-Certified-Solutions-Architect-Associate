@@ -78,5 +78,5 @@ O ASG aceita placement group no launch template — mas lembre que **spread limi
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EC2]] · [[Auto Scaling (EC2)]] · [[AWS Batch]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[3 - Performance (24%)/Placement Groups/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Placement Groups/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Placement Groups/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/AWS Batch/1 - O que e|AWS Batch]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]

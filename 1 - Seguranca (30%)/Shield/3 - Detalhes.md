@@ -69,5 +69,5 @@ Em organização, a cobrança vai para a **payer account**.
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[WAF]] · [[Firewall Manager]] · [[CloudFront]] · [[Global Accelerator]] · [[Route 53]]
+- [[1 - Seguranca (30%)/Shield/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Shield/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Shield/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]]

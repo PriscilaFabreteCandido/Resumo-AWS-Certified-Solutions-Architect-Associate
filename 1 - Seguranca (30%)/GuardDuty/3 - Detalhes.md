@@ -52,5 +52,5 @@ Os achados fluem naturalmente para o **Security Hub** (consolidação) e para o 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Security Hub]] · [[Detective]] · [[CloudTrail]] · [[Config]]
+- [[1 - Seguranca (30%)/GuardDuty/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/GuardDuty/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/GuardDuty/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/Detective/1 - O que e|Detective]] · [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]]

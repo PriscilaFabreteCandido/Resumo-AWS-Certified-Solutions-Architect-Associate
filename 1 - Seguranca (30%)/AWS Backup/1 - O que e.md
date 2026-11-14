@@ -35,6 +35,6 @@ Se é um serviço só e o mecanismo nativo basta (snapshot de EBS, PITR do Dynam
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[S3]] · [[EBS]] · [[RDS]] · [[DynamoDB]] · [[Disaster Recovery (RPO e RTO)]] · [[Organizations e Control Tower]]
+- [[1 - Seguranca (30%)/AWS Backup/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/AWS Backup/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/AWS Backup/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]]
 - [O que é o AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)

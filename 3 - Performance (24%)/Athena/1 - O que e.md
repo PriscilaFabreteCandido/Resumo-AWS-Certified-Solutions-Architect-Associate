@@ -45,6 +45,6 @@ Athena cobra por **TB escaneado** (o exemplo oficial usa **US$ 5/TB**). As três
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Glue]] · [[Redshift]] · [[EMR]] · [[Lake Formation]] · [[S3]]
+- [[3 - Performance (24%)/Athena/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Athena/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Athena/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/Lake Formation/1 - O que e|Lake Formation]] · [[3 - Performance (24%)/S3/1 - O que e|S3]]
 - [O que é o Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)

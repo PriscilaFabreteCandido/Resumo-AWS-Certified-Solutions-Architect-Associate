@@ -94,5 +94,5 @@ Budgets **avisa depois**; SCP **impede antes**. Quando o enunciado diz *"preveni
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Compute Optimizer]] · [[Organizations e Control Tower]] · [[Athena]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[Governanca (Artifact, Trusted Advisor, Service Catalog)]]
+- [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/4 - Questoes|4 - Questoes]]
+- [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]]

@@ -41,6 +41,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Config]] · [[CloudWatch]] · [[GuardDuty]] · [[Detective]]
+- [[1 - Seguranca (30%)/CloudTrail/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/CloudTrail/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/CloudTrail/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[1 - Seguranca (30%)/Detective/1 - O que e|Detective]]
 - [Guia do CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)

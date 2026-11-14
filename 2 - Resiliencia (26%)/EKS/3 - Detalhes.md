@@ -77,5 +77,5 @@ Daí o padrão híbrido: cargas regulares em **Fargate**, cargas que precisam de
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[ECS]] · [[Fargate]] · [[ELB (Load Balancers)]] · [[VPC]] · [[IAM]] · [[STS]]
+- [[2 - Resiliencia (26%)/EKS/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/EKS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/EKS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]] · [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/STS/1 - O que e|STS]]

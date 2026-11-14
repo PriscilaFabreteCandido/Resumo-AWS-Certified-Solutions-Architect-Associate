@@ -78,5 +78,5 @@ O Secrets Manager continua sendo a resposta quando a aplicação **não** pode m
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Systems Manager (e Parameter Store)]] · [[KMS]] · [[RDS Proxy]] · [[RDS]]
+- [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Secrets Manager/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Secrets Manager/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]]

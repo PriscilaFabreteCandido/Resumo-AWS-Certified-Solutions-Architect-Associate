@@ -51,4 +51,4 @@ O produtor publica um **endpoint service** apoiado num **NLB** (ou GWLB). O cons
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/4 - Questoes|4 - Questoes]]

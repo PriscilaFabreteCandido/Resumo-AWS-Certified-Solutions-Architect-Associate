@@ -84,5 +84,5 @@ Sessão externa no **ElastiCache for Redis** (ou **DynamoDB**) é a resposta arq
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[DAX]] · [[DynamoDB]] · [[RDS]] · [[Aurora]] · [[ELB (Load Balancers)]] · [[CloudFront]] · [[API Gateway]]
+- [[3 - Performance (24%)/ElastiCache/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/ElastiCache/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/ElastiCache/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DAX/1 - O que e|DAX]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]]

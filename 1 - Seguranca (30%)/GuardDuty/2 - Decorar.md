@@ -47,4 +47,4 @@ Usa **threat intelligence feeds** e **modelos de machine learning**.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/GuardDuty/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/GuardDuty/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/GuardDuty/4 - Questoes|4 - Questoes]]

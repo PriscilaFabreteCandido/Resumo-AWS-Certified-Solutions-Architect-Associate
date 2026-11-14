@@ -33,6 +33,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Lambda]] · [[Cognito]] · [[WAF]] · [[SQS]] · [[CloudFront]]
+- [[2 - Resiliencia (26%)/API Gateway/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/API Gateway/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/API Gateway/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/WAF/1 - O que e|WAF]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]]
 - [REST × HTTP API](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)

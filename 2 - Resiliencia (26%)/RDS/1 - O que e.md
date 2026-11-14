@@ -40,6 +40,6 @@ Escalar leitura = **read replica** (ou Multi-AZ **DB cluster**).
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Aurora]] · [[RDS Proxy]] · [[DynamoDB]] · [[AWS Backup]] · [[Custo de banco de dados]]
+- [[2 - Resiliencia (26%)/RDS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/RDS/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/RDS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Multi-AZ no RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)

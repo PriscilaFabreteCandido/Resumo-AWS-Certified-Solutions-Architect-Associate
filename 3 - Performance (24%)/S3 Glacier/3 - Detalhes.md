@@ -79,5 +79,5 @@ A classe de armazenamento é **custo**; a imutabilidade é **Object Lock**. Conf
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[S3]] · [[Protecao de dados no S3]] · [[Custo de armazenamento - classes do S3 e lifecycle]] · [[AWS Backup]]
+- [[3 - Performance (24%)/S3 Glacier/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/S3 Glacier/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/S3 Glacier/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/S3/2 - Decorar|S3 - protecao de dados]] · [[3 - Performance (24%)/S3/2 - Decorar|S3 - classes e lifecycle]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]]

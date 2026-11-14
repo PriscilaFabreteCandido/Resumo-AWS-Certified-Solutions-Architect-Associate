@@ -31,6 +31,6 @@ E a recomendação: **"We recommend Savings Plans over Reserved Instances."**
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EC2]] · [[Auto Scaling (EC2)]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[Compute Optimizer]]
+- [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]]
 - [Opções de compra](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)

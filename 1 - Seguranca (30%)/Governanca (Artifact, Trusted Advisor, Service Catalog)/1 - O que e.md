@@ -41,5 +41,5 @@ Artifact é sobre a conformidade **da AWS**, não a sua. É o lado da AWS no **m
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Config]] · [[Security Hub]] · [[Organizations e Control Tower]] · [[Responsabilidade compartilhada]]
+- [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[9 - Fundamentos e apoio/Responsabilidade compartilhada/1 - O que e|Responsabilidade compartilhada]]

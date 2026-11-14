@@ -36,6 +36,6 @@ Associa-se a **recursos**, não a subnets: instância EC2 (na verdade, à ENI), 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[NACL (Network ACL)]] · [[VPC]]
+- [[1 - Seguranca (30%)/Security Groups/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Security Groups/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Security Groups/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]]
 - [Documentação oficial](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)

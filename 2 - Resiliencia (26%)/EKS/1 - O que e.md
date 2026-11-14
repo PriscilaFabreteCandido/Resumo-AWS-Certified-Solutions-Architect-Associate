@@ -45,5 +45,5 @@ Se o enunciado diz apenas "containers na AWS" **com menor esforço operacional**
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[ECS]] · [[Fargate]] · [[EC2]] · [[ELB (Load Balancers)]]
+- [[2 - Resiliencia (26%)/EKS/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/EKS/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/EKS/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]] · [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]]

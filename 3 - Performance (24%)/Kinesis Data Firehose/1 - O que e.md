@@ -45,6 +45,6 @@ E ele pode **transformar** os dados antes de entregar (formato, compressão, Lam
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Kinesis Data Streams]] · [[S3]] · [[Redshift]] · [[OpenSearch Service]] · [[Glue]]
+- [[3 - Performance (24%)/Kinesis Data Firehose/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Kinesis Data Firehose/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Kinesis Data Firehose/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|Kinesis Data Streams]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/OpenSearch Service/1 - O que e|OpenSearch Service]] · [[3 - Performance (24%)/Glue/1 - O que e|Glue]]
 - [O que é o Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)

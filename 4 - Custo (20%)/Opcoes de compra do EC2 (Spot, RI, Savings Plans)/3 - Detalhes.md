@@ -109,5 +109,5 @@ Comprometer-se com capacidade **ociosa** é o pior dos mundos: primeiro dimensio
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EC2]] · [[Auto Scaling (EC2)]] · [[Compute Optimizer]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[Fargate]] · [[Lambda]] · [[AWS Batch]] · [[EMR]]
+- [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/AWS Batch/1 - O que e|AWS Batch]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]]

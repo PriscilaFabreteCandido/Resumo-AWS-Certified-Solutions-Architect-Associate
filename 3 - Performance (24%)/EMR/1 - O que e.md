@@ -44,6 +44,6 @@ Separar compute de storage é o que permite **cluster transiente** — e é a re
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Glue]] · [[Athena]] · [[Redshift]] · [[S3]] · [[FSx]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[3 - Performance (24%)/EMR/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EMR/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/EMR/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
 - [O que é o EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html)

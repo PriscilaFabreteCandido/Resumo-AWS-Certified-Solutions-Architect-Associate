@@ -51,5 +51,5 @@ Essa última distinção cai: **Artifact** entrega a conformidade **da AWS**; **
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Config]] · [[GuardDuty]] · [[Inspector]] · [[Macie]] · [[Detective]] · [[Governanca (Artifact, Trusted Advisor, Service Catalog)]]
+- [[1 - Seguranca (30%)/Security Hub/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Security Hub/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Security Hub/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[1 - Seguranca (30%)/Inspector/1 - O que e|Inspector]] · [[1 - Seguranca (30%)/Macie/1 - O que e|Macie]] · [[1 - Seguranca (30%)/Detective/1 - O que e|Detective]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]]

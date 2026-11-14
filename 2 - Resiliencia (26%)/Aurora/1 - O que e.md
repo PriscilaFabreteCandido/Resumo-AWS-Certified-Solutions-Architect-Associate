@@ -36,6 +36,6 @@ Consequências:
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[RDS]] · [[RDS Proxy]] · [[Disaster Recovery (RPO e RTO)]] · [[Custo de banco de dados]]
+- [[2 - Resiliencia (26%)/Aurora/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Aurora/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Aurora/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]
 - [Visão geral do Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html)

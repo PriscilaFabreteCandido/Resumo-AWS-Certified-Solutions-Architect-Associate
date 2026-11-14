@@ -84,5 +84,5 @@ Cost Explorer confirma a economia
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudWatch]] · [[Auto Scaling (EC2)]] · [[EC2]] · [[Lambda]] · [[EBS]] · [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[4 - Custo (20%)/Compute Optimizer/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Compute Optimizer/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Compute Optimizer/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]

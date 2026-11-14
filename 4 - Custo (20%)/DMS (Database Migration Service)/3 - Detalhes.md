@@ -96,5 +96,5 @@ O destino **S3** é útil para alimentar um data lake continuamente a partir de 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[RDS]] · [[Aurora]] · [[S3]] · [[Redshift]] · [[DataSync]] · [[Snow Family]] · [[Estrategias de migracao (7 Rs)]] · [[Custo de banco de dados]] · [[Secrets Manager]]
+- [[4 - Custo (20%)/DMS (Database Migration Service)/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/DMS (Database Migration Service)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/DMS (Database Migration Service)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/DataSync/1 - O que e|DataSync]] · [[4 - Custo (20%)/Snow Family/1 - O que e|Snow Family]] · [[9 - Fundamentos e apoio/Estrategias de migracao (7 Rs)/1 - O que e|Estrategias de migracao (7 Rs)]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]]

@@ -58,5 +58,5 @@ Casos típicos:
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[KMS]] · [[ACM (Certificate Manager)]] · [[Secrets Manager]]
+- [[1 - Seguranca (30%)/CloudHSM/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/CloudHSM/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/CloudHSM/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]]

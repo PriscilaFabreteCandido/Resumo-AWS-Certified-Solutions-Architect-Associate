@@ -95,5 +95,5 @@ Ou seja: o **Glue** guarda o metadado; o **Lake Formation** controla **quem vê 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Athena]] · [[EMR]] · [[Lake Formation]] · [[Redshift]] · [[Kinesis Data Firehose]] · [[S3]] · [[DMS (Database Migration Service)]]
+- [[3 - Performance (24%)/Glue/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Glue/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Glue/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[3 - Performance (24%)/Lake Formation/1 - O que e|Lake Formation]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[4 - Custo (20%)/DMS (Database Migration Service)/1 - O que e|DMS (Database Migration Service)]]

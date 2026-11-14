@@ -38,6 +38,6 @@ Na prática, isso exige três coisas: **SSM Agent** instalado, **instance profil
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Secrets Manager]] · [[EC2]] · [[VPC Endpoints e PrivateLink]] · [[Config]] · [[Inspector]]
+- [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/Inspector/1 - O que e|Inspector]]
 - [O que é o Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)

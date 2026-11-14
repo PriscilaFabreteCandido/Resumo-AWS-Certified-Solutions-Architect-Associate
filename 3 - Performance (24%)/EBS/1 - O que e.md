@@ -40,6 +40,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EC2]] · [[S3]] · [[EFS]] · [[AWS Backup]] · [[Tipos de armazenamento (objeto, arquivo, bloco)]]
+- [[3 - Performance (24%)/EBS/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EBS/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/EBS/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/EFS/1 - O que e|EFS]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[9 - Fundamentos e apoio/Tipos de armazenamento (objeto, arquivo, bloco)/1 - O que e|Tipos de armazenamento (objeto, arquivo, bloco)]]
 - [Tipos de volume EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)

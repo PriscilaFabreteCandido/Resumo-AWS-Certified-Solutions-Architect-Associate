@@ -38,5 +38,5 @@ Ou seja: CDK, CodeBuild, CodeDeploy e CodeCommit estão **fora**; X-Ray está **
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[CloudWatch]] · [[Lambda]] · [[API Gateway]] · [[ECS]]
+- [[2 - Resiliencia (26%)/X-Ray/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/X-Ray/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/X-Ray/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]]

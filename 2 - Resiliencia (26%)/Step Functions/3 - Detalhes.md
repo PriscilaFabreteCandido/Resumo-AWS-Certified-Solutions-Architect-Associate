@@ -71,5 +71,5 @@ Combinação frequente em prova: **EventBridge** dispara → **Step Functions** 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Lambda]] · [[EventBridge]] · [[SQS]] · [[ECS]] · [[Glue]] · [[EMR]]
+- [[2 - Resiliencia (26%)/Step Functions/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Step Functions/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Step Functions/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]] · [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]]

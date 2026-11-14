@@ -37,6 +37,6 @@ E os IPs: *"Global Accelerator provides you with static IP addresses... The stat
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[CloudFront]] · [[ELB (Load Balancers)]] · [[Route 53]] · [[Disaster Recovery (RPO e RTO)]]
+- [[3 - Performance (24%)/Global Accelerator/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Global Accelerator/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Global Accelerator/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]] · [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]]
 - [O que é o Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html)

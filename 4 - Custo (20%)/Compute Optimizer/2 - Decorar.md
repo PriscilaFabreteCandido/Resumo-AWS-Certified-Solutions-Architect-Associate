@@ -43,4 +43,4 @@ E identifica **recursos ociosos**, além de recomendar tamanho.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[4 - Custo (20%)/Compute Optimizer/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Compute Optimizer/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/Compute Optimizer/4 - Questoes|4 - Questoes]]

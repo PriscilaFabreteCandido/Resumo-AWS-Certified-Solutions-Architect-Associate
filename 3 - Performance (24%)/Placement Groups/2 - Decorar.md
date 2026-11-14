@@ -51,4 +51,4 @@ Para HPC de verdade: **cluster placement group** + família **Hpc** (ou C/M otim
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Placement Groups/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Placement Groups/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Placement Groups/4 - Questoes|4 - Questoes]]

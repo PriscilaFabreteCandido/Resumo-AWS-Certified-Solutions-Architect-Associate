@@ -38,4 +38,4 @@ Tradução para a prova: **sem gatilho explícito de HSM dedicado/FIPS nível 3,
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudHSM/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/CloudHSM/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/CloudHSM/4 - Questoes|4 - Questoes]]

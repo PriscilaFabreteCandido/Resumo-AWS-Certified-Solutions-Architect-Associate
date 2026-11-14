@@ -81,5 +81,5 @@ O SG do **mount target** precisa liberar **NFS (2049)** vindo do SG dos clientes
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EBS]] · [[FSx]] · [[S3]] · [[ECS]] · [[Direct Connect]] · [[KMS]]
+- [[3 - Performance (24%)/EFS/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/EFS/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EFS/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]] · [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]]

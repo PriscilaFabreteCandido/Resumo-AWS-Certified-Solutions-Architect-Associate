@@ -42,6 +42,6 @@ Se o enunciado nomeia **SFTP, FTPS, FTP ou AS2**, a resposta é **Transfer Famil
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[DataSync]] · [[Storage Gateway]] · [[S3]] · [[EFS]]
+- [[3 - Performance (24%)/Transfer Family/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/Transfer Family/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Transfer Family/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DataSync/1 - O que e|DataSync]] · [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/EFS/1 - O que e|EFS]]
 - [O que é o Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html)

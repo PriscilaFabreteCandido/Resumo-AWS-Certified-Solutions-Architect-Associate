@@ -62,5 +62,5 @@ Amazon DNS (Route 53 Resolver, o VPC+2), DHCP, **metadados da instância (IMDS)*
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/VPC/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/VPC/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

@@ -66,4 +66,4 @@ O limite de **1.500 MiBps** por cliente exige `amazon-efs-utils` v2.0+ ou o **EF
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/EFS/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/EFS/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/EFS/4 - Questoes|4 - Questoes]]

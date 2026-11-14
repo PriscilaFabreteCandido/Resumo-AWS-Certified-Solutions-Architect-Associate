@@ -84,5 +84,5 @@ Para HA no modo provisioned: **3 nós master dedicados** e nós de dados distrib
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[CloudWatch]] · [[Kinesis Data Firehose]] · [[DynamoDB]] · [[Athena]] · [[Lake Formation]] · [[Cognito]] · [[ACM (Certificate Manager)]]
+- [[3 - Performance (24%)/OpenSearch Service/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/OpenSearch Service/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/OpenSearch Service/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[3 - Performance (24%)/Kinesis Data Firehose/1 - O que e|Kinesis Data Firehose]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Lake Formation/1 - O que e|Lake Formation]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/ACM (Certificate Manager)/1 - O que e|ACM (Certificate Manager)]]

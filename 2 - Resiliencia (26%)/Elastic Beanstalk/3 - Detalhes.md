@@ -70,5 +70,5 @@ Para produção, **sempre fora**. É pergunta direta de prova.
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EC2]] · [[Auto Scaling (EC2)]] · [[ELB (Load Balancers)]] · [[SQS]] · [[CloudFormation]] · [[RDS]]
+- [[2 - Resiliencia (26%)/Elastic Beanstalk/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Elastic Beanstalk/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Elastic Beanstalk/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/CloudFormation/1 - O que e|CloudFormation]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]]

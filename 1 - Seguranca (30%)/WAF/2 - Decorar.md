@@ -46,4 +46,4 @@ A assinatura do **Shield Advanced** cobre o custo padrão do WAF nos recursos pr
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/WAF/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/WAF/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/WAF/4 - Questoes|4 - Questoes]]

@@ -36,6 +36,6 @@ Uma credencial do STS tem **três** partes (a de longo prazo tem duas):
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[IAM]] · [[Cognito]] · [[IAM Identity Center]]
+- [[1 - Seguranca (30%)/STS/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/STS/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/STS/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]]
 - [Documentação oficial do STS](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html)

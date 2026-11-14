@@ -43,6 +43,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[CloudTrail]] · [[Config]] · [[X-Ray]] · [[Auto Scaling (EC2)]] · [[SQS]]
+- [[2 - Resiliencia (26%)/CloudWatch/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/CloudWatch/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/CloudWatch/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[2 - Resiliencia (26%)/X-Ray/1 - O que e|X-Ray]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|Auto Scaling (EC2)]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]]
 - [O que é o CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)

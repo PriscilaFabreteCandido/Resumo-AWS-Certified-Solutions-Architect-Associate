@@ -40,5 +40,5 @@ Precisa de arquivo compartilhado?
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EFS]] · [[EBS]] · [[S3]] · [[Directory Service]] · [[Storage Gateway]]
+- [[3 - Performance (24%)/FSx/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/FSx/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/FSx/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EFS/1 - O que e|EFS]] · [[3 - Performance (24%)/EBS/1 - O que e|EBS]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]] · [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]]

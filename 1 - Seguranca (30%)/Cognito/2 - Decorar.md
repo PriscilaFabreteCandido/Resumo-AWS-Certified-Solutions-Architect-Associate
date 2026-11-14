@@ -52,4 +52,4 @@ Usuário  ──login──>  USER POOL  ──JWT──>  IDENTITY POOL  ──
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Cognito/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Cognito/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Cognito/4 - Questoes|4 - Questoes]]

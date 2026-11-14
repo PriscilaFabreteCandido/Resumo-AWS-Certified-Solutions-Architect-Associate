@@ -49,6 +49,6 @@ Sem o **ELB health check**, a instância cujo processo da aplicação morreu con
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[ELB (Load Balancers)]] · [[EC2]] · [[CloudWatch]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
 - [Escalar o grupo](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scale-your-group.html)

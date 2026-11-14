@@ -68,5 +68,5 @@ Snapshots são **incrementais**: só os blocos alterados desde o último são gr
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EC2]] · [[EFS]] · [[FSx]] · [[AWS Backup]] · [[KMS]] · [[Compute Optimizer]]
+- [[3 - Performance (24%)/EBS/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/EBS/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EBS/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[3 - Performance (24%)/EFS/1 - O que e|EFS]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[1 - Seguranca (30%)/AWS Backup/1 - O que e|AWS Backup]] · [[1 - Seguranca (30%)/KMS/1 - O que e|KMS]] · [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]]

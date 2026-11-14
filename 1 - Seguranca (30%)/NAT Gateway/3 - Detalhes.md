@@ -62,6 +62,6 @@ O tipo **Private** não tem Elastic IP e não alcança a internet. Serve para qu
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[VPC]] · [[VPC Endpoints e PrivateLink]] · [[Systems Manager (e Parameter Store)]]
+- [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/NAT Gateway/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/NAT Gateway/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[1 - Seguranca (30%)/Systems Manager (e Parameter Store)/1 - O que e|Systems Manager (e Parameter Store)]]
 - [NAT gateway × NAT instance](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html)

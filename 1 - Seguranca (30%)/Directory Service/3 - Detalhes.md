@@ -65,5 +65,5 @@ Essa é a ligação que a prova faz: a questão parece ser sobre **FSx** ou **RD
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[FSx]] · [[RDS]] · [[IAM Identity Center]] · [[Cognito]]
+- [[1 - Seguranca (30%)/Directory Service/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Directory Service/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Directory Service/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[1 - Seguranca (30%)/IAM Identity Center/1 - O que e|IAM Identity Center]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]]

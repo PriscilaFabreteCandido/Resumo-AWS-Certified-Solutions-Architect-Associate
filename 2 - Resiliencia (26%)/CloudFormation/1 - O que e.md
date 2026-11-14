@@ -38,5 +38,5 @@ E o pilar de **Operational Excellence** do Well-Architected se apoia nisso: ambi
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Disaster Recovery (RPO e RTO)]] · [[Organizations e Control Tower]] · [[Governanca (Artifact, Trusted Advisor, Service Catalog)]]
+- [[2 - Resiliencia (26%)/CloudFormation/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/CloudFormation/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/CloudFormation/4 - Questoes|4 - Questoes]]
+- [[9 - Fundamentos e apoio/Disaster Recovery (RPO e RTO)/1 - O que e|Disaster Recovery (RPO e RTO)]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/Governanca (Artifact, Trusted Advisor, Service Catalog)/1 - O que e|Governanca (Artifact, Trusted Advisor, Service Catalog)]]

@@ -59,5 +59,5 @@ Se o enunciado nomeia **Spark** ou **Hadoop**, é **EMR**. Se é "nosso código 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[EC2]] · [[Fargate]] · [[EMR]] · [[Step Functions]] · [[FSx]] · [[S3]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[2 - Resiliencia (26%)/AWS Batch/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/AWS Batch/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/AWS Batch/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]

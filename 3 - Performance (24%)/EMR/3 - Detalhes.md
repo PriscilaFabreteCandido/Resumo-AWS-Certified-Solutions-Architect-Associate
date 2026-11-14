@@ -99,5 +99,5 @@ Para a prova, o essencial é **EMR on EC2** com o padrão de Spot nos task nodes
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Glue]] · [[Athena]] · [[Redshift]] · [[S3]] · [[FSx]] · [[Lake Formation]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[AWS Batch]]
+- [[3 - Performance (24%)/EMR/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/EMR/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/EMR/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Glue/1 - O que e|Glue]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[3 - Performance (24%)/Redshift/1 - O que e|Redshift]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/FSx/1 - O que e|FSx]] · [[3 - Performance (24%)/Lake Formation/1 - O que e|Lake Formation]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[2 - Resiliencia (26%)/AWS Batch/1 - O que e|AWS Batch]]

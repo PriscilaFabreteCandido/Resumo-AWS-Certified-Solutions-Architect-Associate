@@ -39,5 +39,5 @@ O Batch é o serviço onde **Spot** faz mais sentido: job em lote é, por defini
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[EC2]] · [[Fargate]] · [[Lambda]] · [[EMR]] · [[Step Functions]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[2 - Resiliencia (26%)/AWS Batch/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/AWS Batch/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/AWS Batch/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[3 - Performance (24%)/EMR/1 - O que e|EMR]] · [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]

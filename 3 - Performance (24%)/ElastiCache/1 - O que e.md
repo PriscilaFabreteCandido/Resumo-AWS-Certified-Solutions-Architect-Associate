@@ -38,5 +38,5 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[DAX]] · [[RDS]] · [[Aurora]] · [[ELB (Load Balancers)]] · [[Custo de banco de dados]]
+- [[3 - Performance (24%)/ElastiCache/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/ElastiCache/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/ElastiCache/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DAX/1 - O que e|DAX]] · [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]

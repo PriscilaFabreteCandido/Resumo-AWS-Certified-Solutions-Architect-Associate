@@ -45,6 +45,6 @@ Critérios disponíveis: **IP de origem**, **país**, valores de **header**, str
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Shield]] · [[Firewall Manager]] · [[CloudFront]] · [[ELB (Load Balancers)]]
+- [[1 - Seguranca (30%)/WAF/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/WAF/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/WAF/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Shield/1 - O que e|Shield]] · [[1 - Seguranca (30%)/Firewall Manager/1 - O que e|Firewall Manager]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]]
 - [O que é o AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)

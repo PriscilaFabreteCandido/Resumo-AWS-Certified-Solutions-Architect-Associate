@@ -77,5 +77,5 @@ Usos de prova: reprocessar um dia de eventos depois de corrigir um bug no consum
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[SNS]] · [[SQS]] · [[Step Functions]] · [[Lambda]] · [[Kinesis Data Streams]] · [[Config]] · [[GuardDuty]]
+- [[2 - Resiliencia (26%)/EventBridge/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/EventBridge/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/EventBridge/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/SNS/1 - O que e|SNS]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[3 - Performance (24%)/Kinesis Data Streams/1 - O que e|Kinesis Data Streams]] · [[1 - Seguranca (30%)/Config/1 - O que e|Config]] · [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]]

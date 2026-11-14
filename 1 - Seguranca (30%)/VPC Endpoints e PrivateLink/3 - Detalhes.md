@@ -75,6 +75,6 @@ Subnet de workload  → GWLB endpoint → GWLB → appliances → volta e segue
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[VPC]] · [[NAT Gateway]] · [[S3]] · [[ELB (Load Balancers)]] · [[VPC Peering]] · [[Transit Gateway]]
+- [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[3 - Performance (24%)/VPC Peering/1 - O que e|VPC Peering]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]]
 - [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)

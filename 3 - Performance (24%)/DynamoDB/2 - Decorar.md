@@ -78,5 +78,5 @@ Atributos projetados: **100** no total para todos os índices (projeção INCLUD
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/DynamoDB/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/DynamoDB/4 - Questoes|4 - Questoes]]
 - [[02 - Numeros para decorar]]

@@ -65,5 +65,5 @@ O DAX **não** lida com APIs de gerenciamento de tabela: `CreateTable`, `UpdateT
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[DynamoDB]] · [[ElastiCache]] · [[VPC]] · [[Lambda]] · [[API Gateway]] · [[CloudFront]]
+- [[3 - Performance (24%)/DAX/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/DAX/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/DAX/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]] · [[3 - Performance (24%)/ElastiCache/1 - O que e|ElastiCache]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[3 - Performance (24%)/CloudFront/1 - O que e|CloudFront]]

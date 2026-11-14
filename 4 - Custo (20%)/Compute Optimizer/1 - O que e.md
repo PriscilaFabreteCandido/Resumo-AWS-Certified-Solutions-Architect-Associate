@@ -35,6 +35,6 @@ Ele **não aplica** nada. Gera recomendações que você avalia e executa.
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[EC2]] · [[CloudWatch]]
+- [[4 - Custo (20%)/Compute Optimizer/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Compute Optimizer/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/Compute Optimizer/4 - Questoes|4 - Questoes]]
+- [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|Ferramentas de custo (Cost Explorer, Budgets, CUR)]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]]
 - [O que é o Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html)

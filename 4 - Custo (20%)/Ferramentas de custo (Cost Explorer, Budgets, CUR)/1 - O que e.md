@@ -34,6 +34,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Compute Optimizer]] · [[Organizations e Control Tower]] · [[Athena]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/4 - Questoes|4 - Questoes]]
+- [[4 - Custo (20%)/Compute Optimizer/1 - O que e|Compute Optimizer]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[3 - Performance (24%)/Athena/1 - O que e|Athena]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
 - [Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)

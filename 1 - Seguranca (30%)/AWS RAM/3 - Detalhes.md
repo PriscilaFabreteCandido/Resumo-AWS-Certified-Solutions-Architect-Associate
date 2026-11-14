@@ -55,5 +55,5 @@ Dentro da organização: *"you can share resources with all the other accounts i
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[VPC]] · [[Transit Gateway]] · [[Organizations e Control Tower]] · [[IAM]] · [[Route 53]]
+- [[1 - Seguranca (30%)/AWS RAM/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/AWS RAM/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/AWS RAM/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]] · [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[2 - Resiliencia (26%)/Route 53/1 - O que e|Route 53]]

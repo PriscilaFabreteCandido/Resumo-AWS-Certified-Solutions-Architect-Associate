@@ -36,6 +36,6 @@ E o número: reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databa
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[RDS]] · [[Aurora]] · [[Lambda]] · [[Secrets Manager]] · [[IAM]]
+- [[2 - Resiliencia (26%)/RDS Proxy/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/RDS Proxy/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/RDS Proxy/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]]
 - [RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)

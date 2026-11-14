@@ -53,4 +53,4 @@ Ou seja: você paga o **S3** pelo armazenamento e o **Athena** pelo escaneamento
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Athena/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Athena/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Athena/4 - Questoes|4 - Questoes]]

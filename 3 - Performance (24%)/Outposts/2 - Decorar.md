@@ -48,4 +48,4 @@ No Outpost, o **gp3** vai até **16 TiB, 16.000 IOPS e 1.000 MiB/s** — contra 
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/Outposts/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/Outposts/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/Outposts/4 - Questoes|4 - Questoes]]

@@ -75,5 +75,5 @@ Em prova isso aparece como "o proxy não está reduzindo as conexões": a causa 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[RDS]] · [[Aurora]] · [[Lambda]] · [[Secrets Manager]] · [[DynamoDB]]
+- [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/RDS Proxy/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/RDS Proxy/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/RDS/1 - O que e|RDS]] · [[2 - Resiliencia (26%)/Aurora/1 - O que e|Aurora]] · [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[1 - Seguranca (30%)/Secrets Manager/1 - O que e|Secrets Manager]] · [[3 - Performance (24%)/DynamoDB/1 - O que e|DynamoDB]]

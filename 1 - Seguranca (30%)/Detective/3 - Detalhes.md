@@ -53,5 +53,5 @@ Também tem modelo **administrador/membro** via AWS Organizations.
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[GuardDuty]] · [[Security Hub]] · [[CloudTrail]] · [[VPC]]
+- [[1 - Seguranca (30%)/Detective/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Detective/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/Detective/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/GuardDuty/1 - O que e|GuardDuty]] · [[1 - Seguranca (30%)/Security Hub/1 - O que e|Security Hub]] · [[1 - Seguranca (30%)/CloudTrail/1 - O que e|CloudTrail]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]]

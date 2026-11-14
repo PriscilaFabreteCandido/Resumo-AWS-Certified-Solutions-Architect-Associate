@@ -58,4 +58,4 @@ Controls em três sabores: **preventive** (SCP), **detective** (Config rule) e *
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/Organizations e Control Tower/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/Organizations e Control Tower/4 - Questoes|4 - Questoes]]

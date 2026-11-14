@@ -41,6 +41,6 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Fargate]] · [[Step Functions]] · [[SQS]] · [[API Gateway]] · [[RDS Proxy]]
+- [[2 - Resiliencia (26%)/Lambda/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Lambda/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Lambda/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Fargate/1 - O que e|Fargate]] · [[2 - Resiliencia (26%)/Step Functions/1 - O que e|Step Functions]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/API Gateway/1 - O que e|API Gateway]] · [[2 - Resiliencia (26%)/RDS Proxy/1 - O que e|RDS Proxy]]
 - [Quotas do Lambda](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html)

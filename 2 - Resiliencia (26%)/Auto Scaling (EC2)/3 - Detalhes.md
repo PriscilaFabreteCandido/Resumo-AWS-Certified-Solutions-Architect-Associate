@@ -83,7 +83,7 @@ Usos: baixar configuração, aquecer cache, registrar no ELB só depois do boots
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[ELB (Load Balancers)]] · [[EC2]] · [[CloudWatch]] · [[SQS]] · [[Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
+- [[2 - Resiliencia (26%)/Auto Scaling (EC2)/1 - O que e|1 - O que e]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Auto Scaling (EC2)/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/ELB (Load Balancers)/1 - O que e|ELB (Load Balancers)]] · [[3 - Performance (24%)/EC2/1 - O que e|EC2]] · [[2 - Resiliencia (26%)/CloudWatch/1 - O que e|CloudWatch]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[4 - Custo (20%)/Opcoes de compra do EC2 (Spot, RI, Savings Plans)/1 - O que e|Opcoes de compra do EC2 (Spot, RI, Savings Plans)]]
 - [Health checks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html)
 - [Políticas de terminação](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-termination-policies.html)

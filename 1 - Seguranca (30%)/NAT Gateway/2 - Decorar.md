@@ -49,4 +49,4 @@ O guia pede literalmente: *"Configuring appropriate NAT gateway types for a netw
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/NAT Gateway/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/NAT Gateway/4 - Questoes|4 - Questoes]]

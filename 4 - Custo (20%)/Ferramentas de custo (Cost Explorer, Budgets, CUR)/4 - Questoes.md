@@ -82,4 +82,4 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[3 - Detalhes]]
+- [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Ferramentas de custo (Cost Explorer, Budgets, CUR)/3 - Detalhes|3 - Detalhes]]

@@ -39,5 +39,5 @@ O guia cita o serviço nominalmente em **Task 1.1** (*"AWS federated access and 
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[IAM]] · [[STS]] · [[Directory Service]] · [[Cognito]] · [[Organizations e Control Tower]]
+- [[1 - Seguranca (30%)/IAM Identity Center/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/IAM Identity Center/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/IAM Identity Center/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] · [[1 - Seguranca (30%)/STS/1 - O que e|STS]] · [[1 - Seguranca (30%)/Directory Service/1 - O que e|Directory Service]] · [[1 - Seguranca (30%)/Cognito/1 - O que e|Cognito]] · [[1 - Seguranca (30%)/Organizations e Control Tower/1 - O que e|Organizations e Control Tower]]

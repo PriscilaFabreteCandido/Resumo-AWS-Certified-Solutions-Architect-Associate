@@ -39,6 +39,6 @@ Uma subnet é **pública** se a route table dela tem uma rota `0.0.0.0/0` aponta
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Security Groups]] · [[NACL (Network ACL)]] · [[NAT Gateway]] · [[VPC Endpoints e PrivateLink]] · [[VPC Peering]] · [[Transit Gateway]]
+- [[1 - Seguranca (30%)/VPC/2 - Decorar|2 - Decorar]] · [[1 - Seguranca (30%)/VPC/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/VPC/4 - Questoes|4 - Questoes]]
+- [[1 - Seguranca (30%)/Security Groups/1 - O que e|Security Groups]] · [[1 - Seguranca (30%)/NACL (Network ACL)/1 - O que e|NACL (Network ACL)]] · [[1 - Seguranca (30%)/NAT Gateway/1 - O que e|NAT Gateway]] · [[1 - Seguranca (30%)/VPC Endpoints e PrivateLink/1 - O que e|VPC Endpoints e PrivateLink]] · [[3 - Performance (24%)/VPC Peering/1 - O que e|VPC Peering]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]]
 - [Documentação oficial da VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)

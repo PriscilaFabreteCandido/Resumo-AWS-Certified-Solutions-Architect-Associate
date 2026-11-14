@@ -57,4 +57,4 @@ A doc: *"replicate ongoing changes to keep sources and targets in sync"*. (O ter
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[4 - Custo (20%)/DMS (Database Migration Service)/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/DMS (Database Migration Service)/3 - Detalhes|3 - Detalhes]] · [[4 - Custo (20%)/DMS (Database Migration Service)/4 - Questoes|4 - Questoes]]

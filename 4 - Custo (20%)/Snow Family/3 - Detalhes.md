@@ -96,5 +96,5 @@ O dado é criptografado **no dispositivo**, com chave do **KMS** — a AWS não 
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[DataSync]] · [[Storage Gateway]] · [[Transfer Family]] · [[S3]] · [[Direct Connect]] · [[Outposts]] · [[Estrategias de migracao (7 Rs)]] · [[04 - Fora de escopo (nao estude isso)]]
+- [[4 - Custo (20%)/Snow Family/1 - O que e|1 - O que e]] · [[4 - Custo (20%)/Snow Family/2 - Decorar|2 - Decorar]] · [[4 - Custo (20%)/Snow Family/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/DataSync/1 - O que e|DataSync]] · [[3 - Performance (24%)/Storage Gateway/1 - O que e|Storage Gateway]] · [[3 - Performance (24%)/Transfer Family/1 - O que e|Transfer Family]] · [[3 - Performance (24%)/S3/1 - O que e|S3]] · [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[3 - Performance (24%)/Outposts/1 - O que e|Outposts]] · [[9 - Fundamentos e apoio/Estrategias de migracao (7 Rs)/1 - O que e|Estrategias de migracao (7 Rs)]] · [[04 - Fora de escopo (nao estude isso)]]

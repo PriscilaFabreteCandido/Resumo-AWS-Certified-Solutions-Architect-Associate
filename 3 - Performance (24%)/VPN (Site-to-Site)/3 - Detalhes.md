@@ -83,5 +83,5 @@ Com **vários** customer gateways conectados ao mesmo virtual private gateway, o
 
 ## Links
 
-- [[1 - O que e]] · [[2 - Decorar]] · [[4 - Questoes]]
-- [[Direct Connect]] · [[Transit Gateway]] · [[VPC]] · [[Global Accelerator]] · [[Custo de rede e transferencia de dados]]
+- [[3 - Performance (24%)/VPN (Site-to-Site)/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/VPN (Site-to-Site)/2 - Decorar|2 - Decorar]] · [[3 - Performance (24%)/VPN (Site-to-Site)/4 - Questoes|4 - Questoes]]
+- [[3 - Performance (24%)/Direct Connect/1 - O que e|Direct Connect]] · [[3 - Performance (24%)/Transit Gateway/1 - O que e|Transit Gateway]] · [[1 - Seguranca (30%)/VPC/1 - O que e|VPC]] · [[3 - Performance (24%)/Global Accelerator/1 - O que e|Global Accelerator]] · [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Custo (dominio 4)]]

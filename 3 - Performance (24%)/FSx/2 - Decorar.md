@@ -48,4 +48,4 @@ atualizado: 2026-11-08
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[3 - Performance (24%)/FSx/1 - O que e|1 - O que e]] · [[3 - Performance (24%)/FSx/3 - Detalhes|3 - Detalhes]] · [[3 - Performance (24%)/FSx/4 - Questoes|4 - Questoes]]

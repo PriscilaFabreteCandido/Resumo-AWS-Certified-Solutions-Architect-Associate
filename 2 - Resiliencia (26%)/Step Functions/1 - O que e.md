@@ -38,6 +38,6 @@ Com Step Functions, isso é **configuração** (ASL, Amazon States Language) e v
 
 ## Links
 
-- [[2 - Decorar]] · [[3 - Detalhes]] · [[4 - Questoes]]
-- [[Lambda]] · [[EventBridge]] · [[SQS]] · [[ECS]]
+- [[2 - Resiliencia (26%)/Step Functions/2 - Decorar|2 - Decorar]] · [[2 - Resiliencia (26%)/Step Functions/3 - Detalhes|3 - Detalhes]] · [[2 - Resiliencia (26%)/Step Functions/4 - Questoes|4 - Questoes]]
+- [[2 - Resiliencia (26%)/Lambda/1 - O que e|Lambda]] · [[2 - Resiliencia (26%)/EventBridge/1 - O que e|EventBridge]] · [[2 - Resiliencia (26%)/SQS/1 - O que e|SQS]] · [[2 - Resiliencia (26%)/ECS/1 - O que e|ECS]]
 - [Escolhendo o tipo de workflow](https://docs.aws.amazon.com/step-functions/latest/dg/choosing-workflow-type.html)

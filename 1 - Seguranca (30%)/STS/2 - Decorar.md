@@ -55,4 +55,4 @@ E na origem: policy permitindo `sts:AssumeRole` naquele ARN.
 
 ## Links
 
-- [[1 - O que e]] · [[3 - Detalhes]] · [[4 - Questoes]]
+- [[1 - Seguranca (30%)/STS/1 - O que e|1 - O que e]] · [[1 - Seguranca (30%)/STS/3 - Detalhes|3 - Detalhes]] · [[1 - Seguranca (30%)/STS/4 - Questoes|4 - Questoes]]

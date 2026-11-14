@@ -18,7 +18,7 @@ atualizado: 2026-11-08
 
 | Semana | Foco | Notas |
 |---|---|---|
-| **1** | Fundamentos: Well-Architected, responsabilidade compartilhada, regiões/AZs, IAM | [[Well-Architected e responsabilidade compartilhada]], [[IAM, STS e Organizations]] |
+| **1** | Fundamentos: Well-Architected, responsabilidade compartilhada, regiões/AZs, IAM | [[9 - Fundamentos e apoio/Well-Architected Framework/1 - O que e|Well-Architected Framework]], [[1 - Seguranca (30%)/IAM/1 - O que e|IAM]] |
 | **2** | Segurança: KMS/ACM, rede segura, WAF/Shield, detecção | pasta `1 - Seguranca (30%)` |
 | **3** | Resiliência: ELB + Auto Scaling + Route 53, desacoplamento, DR | pasta `2 - Resiliencia (26%)` |
 | **4** | Bancos: RDS, Aurora, DynamoDB, ElastiCache, Redshift | notas de banco nas pastas 2 e 3 |
