@@ -55,23 +55,14 @@ Cobra **monitoramento por objeto**, **sem** taxa de retrieval. Objeto **< 128 KB
 
 A regra visual: **cada classe só desce**, nunca sobe. E ela pode pular etapas — Standard vai **direto** para Deep Archive se você quiser.
 
-```
-S3 Standard ──────────┬────┬────┬────┬────┬────┐
-                      ▼    │    │    │    │    │
-  S3 Standard-IA ─────┼────┼────┼────┼────┼────┤
-                      ▼    ▼    │    │    │    │
-    S3 Intelligent-Tiering ┼╌╌╌╌┼╌╌╌╌┼╌╌╌╌┼╌╌╌╌┤   (tracejado: depende do access tier)
-                      ▼    ▼    ╎    │    │    │
-      S3 One Zone-IA ─┼────┼────┼────┼────┼────┤
-                      ▼    ▼    ╎    ▼    │    │
-        S3 Glacier Instant Retrieval ─────┼────┤
-                      ▼    ▼    ╎    ▼    ▼    │
-          S3 Glacier Flexible Retrieval ──────-┤
-                      ▼    ▼    ╎    ▼    ▼    ▼
-            S3 Glacier Deep Archive   ◄── (entra de TODAS)
-                           │
-                           └──► SAÍDA NENHUMA
-```
+![Diagrama em cascata das transições de classe de armazenamento do S3](../../anexos/s3-lifecycle-waterfall.png)
+
+Como ler o diagrama:
+
+- **Cada caixa manda setas para todas as classes abaixo dela** que aceitam a transição. Por isso saem **seis** setas roxas do S3 Standard.
+- **As setas verdes tracejadas** (Intelligent-Tiering) são condicionais: dependem do **access tier** em que o objeto está.
+- **Repare no que falta**: não há seta vermelha (One Zone-IA) chegando no Glacier Instant Retrieval.
+- **Deep Archive recebe de todas** e não manda para ninguém.
 
 ### A matriz — de onde para onde
 

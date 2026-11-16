@@ -42,6 +42,8 @@ Sem ela, *"Expedited retrievals might not be accepted during periods of high dem
 
 ## Lifecycle — o modelo cascata (waterfall)
 
+![Diagrama em cascata das transições de classe de armazenamento do S3](../../anexos/s3-lifecycle-waterfall.png)
+
 Quem **entra** em cada classe de arquivamento:
 
 | Classe | Pode receber de |

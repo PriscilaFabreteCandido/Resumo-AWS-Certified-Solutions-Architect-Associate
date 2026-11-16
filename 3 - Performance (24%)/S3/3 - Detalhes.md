@@ -43,6 +43,9 @@ O lifecycle move ou apaga objetos automaticamente por idade. Duas regras governa
 
 Cada classe desce na lista e **pode pular etapas** — mas nunca sobe. O que é permitido, classe por classe (texto oficial):
 
+![Diagrama em cascata das transições de classe de armazenamento do S3](../../anexos/s3-lifecycle-waterfall.png)
+
+
 | De | Pode ir para |
 |---|---|
 | **S3 Standard** | *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* — **todas** |
