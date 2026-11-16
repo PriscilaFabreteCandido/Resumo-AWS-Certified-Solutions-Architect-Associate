@@ -83,6 +83,42 @@ atualizado: 2026-11-08
 > **C errada**: viola o requisito.
 > **D errada**: dá acesso direto ao S3, não "via CloudFront".
 
+> [!question]- Q-lc 1. Objetos em **S3 One Zone-IA** precisam ir para arquivamento com acesso em **milissegundos**. Qual regra de lifecycle usar?
+> **A)** One Zone-IA → S3 Glacier Instant Retrieval
+> **B)** **Nenhuma: One Zone-IA só transiciona para Glacier Flexible Retrieval ou Deep Archive. Para chegar a Glacier IR seria preciso copiar o objeto** ✅
+> **C)** One Zone-IA → Standard-IA → Glacier Instant Retrieval
+> **D)** One Zone-IA → Intelligent-Tiering, que arquiva sozinho
+>
+> **Por que B**: a doc lista, para One Zone-IA, apenas *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage classes"*. **Glacier Instant Retrieval não está na lista** — é a seta que falta no meio do waterfall.
+> **C e D erradas**: o modelo é **cascata**, só desce. Não dá para subir de One Zone-IA para Standard-IA nem para Intelligent-Tiering.
+
+> [!question]- Q-lc 2. Objetos em **S3 Standard** devem ir para **Deep Archive** após 30 dias. Quantas transições a regra precisa?
+> **A)** Três: Standard → IA → Glacier FR → Deep Archive
+> **B)** **Uma: Standard transiciona direto para Deep Archive** ✅
+> **C)** Duas: Standard → Glacier FR → Deep Archive
+> **D)** Não é possível pular classes
+>
+> **Por que B**: o texto oficial lista, para S3 Standard, *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* — **todas**. A cascata permite **pular etapas**; o que ela proíbe é **subir**.
+> ⚠️ Passar por classes intermediárias seria **mais caro**: cada transição cobra por objeto, e cada classe tem mínimo de dias.
+
+> [!question]- Q-lc 3. Uma regra manda objetos para **Glacier Instant Retrieval no dia 4** e para **Deep Archive no dia 20**. O que acontece?
+> **A)** Funciona normalmente
+> **B)** **A regra é inválida: Glacier IR tem mínimo de 90 dias, então a transição para Deep Archive tem de ser no dia 94 ou depois** ✅
+> **C)** Funciona, mas cobra o dobro
+> **D)** O objeto fica preso em Glacier IR
+>
+> **Por que B**: é o exemplo literal da doc — *"In this case the S3 Glacier Deep Archive transition must occur after at least 94 days."*
+> 💡 A doc acrescenta uma saída: *"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."*
+
+> [!question]- Q-lc 4. Um objeto está no **Deep Archive Access tier** do Intelligent-Tiering. Para onde o lifecycle pode movê-lo?
+> **A)** Qualquer classe, como qualquer objeto em Intelligent-Tiering
+> **B)** Glacier IR, Glacier FR ou Deep Archive
+> **C)** **Só para S3 Glacier Deep Archive** ✅
+> **D)** Para nenhuma — Intelligent-Tiering não transiciona
+>
+> **Por que C**: as transições para fora do Intelligent-Tiering **dependem do access tier**, e o Deep Archive Access é o mais frio — só resta o Deep Archive. É por isso que, no diagrama oficial, as setas do Intelligent-Tiering são **tracejadas**: elas são condicionais.
+> **D errada**: Intelligent-Tiering transiciona, sim — e pode ser **origem** e **destino** de lifecycle.
+
 ## ⚠️ Armadilhas do S3
 
 | Parece | É |
@@ -92,7 +128,6 @@ atualizado: 2026-11-08
 | Glacier Instant Retrieval precisa de restore | **Não.** `GET` direto em ms |
 | Deep Archive tem Expedited | **Não existe** |
 | Intelligent-Tiering é sempre mais barato | Cobra monitoramento **por objeto**; objeto < 128 KB nunca sai do Frequent Access |
-| Lifecycle move qualquer classe para qualquer | É cascata; Glacier FR → só Deep Archive; de Deep Archive não sai |
 | Apagar antes do mínimo economiza | **Cobra o período inteiro** |
 | Replicação cobre o acervo | Só o que vem **depois**. Acervo = Batch Replication |
 | Replicação precisa de versionamento só na origem | **Nos dois** |
@@ -106,6 +141,10 @@ atualizado: 2026-11-08
 | Requester Pays transfere o custo de armazenamento | Transfere **requisição e download**; e **proíbe acesso anônimo** |
 | Multipart incompleto não custa | **Custa** até ser completado ou abortado |
 | Limite de requisição é por bucket | É **por prefixo** |
+| A cascata obriga a passar classe por classe | **Pode pular**: Standard vai **direto** para Deep Archive |
+| One Zone-IA transiciona para Glacier Instant Retrieval | **Não.** Só **Glacier FR** e **Deep Archive** |
+| Intelligent-Tiering transiciona para qualquer classe sempre | Depende do **access tier** atual; no Deep Archive Access só resta **Deep Archive** |
+| Dá para voltar de Glacier para Standard com lifecycle | **Não.** Só **restore + copy**, que é operação sua |
 
 ## Links
 

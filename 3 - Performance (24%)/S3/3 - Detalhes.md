@@ -39,7 +39,41 @@ A decisão depende de **três** perguntas, nesta ordem:
 
 O lifecycle move ou apaga objetos automaticamente por idade. Duas regras governam tudo:
 
-**Regra 1 — é cascata, só de quente para frio.** Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."*
+**Regra 1 — é um modelo cascata (waterfall), só de quente para frio.** A doc é explícita: *"Amazon S3 supports a waterfall model for transitioning between storage classes."*
+
+Cada classe desce na lista e **pode pular etapas** — mas nunca sobe. O que é permitido, classe por classe (texto oficial):
+
+| De | Pode ir para |
+|---|---|
+| **S3 Standard** | *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* — **todas** |
+| **S3 Standard-IA** | *"the S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* |
+| **S3 Intelligent-Tiering** | depende do **access tier** — ver abaixo |
+| **S3 One Zone-IA** | *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* — **note que Glacier Instant Retrieval não está na lista** |
+| **S3 Glacier Instant Retrieval** | *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* |
+| **S3 Glacier Flexible Retrieval** | **só** Deep Archive |
+| **S3 Glacier Deep Archive** | **nenhuma** |
+
+> [!important] Os três pontos que a prova explora nessa tabela
+> **1. Standard vai direto para qualquer classe.** Não existe obrigação de passar por Standard-IA. Uma única regra pode levar de Standard a Deep Archive.
+> **2. One Zone-IA NÃO transiciona para Glacier Instant Retrieval.** É a única "seta faltando" no meio do diagrama, e é fácil de errar porque Glacier IR é mais quente que Glacier FR — parece que deveria dar.
+> **3. Nada volta.** Para "esquentar" um objeto você precisa de **restore** (nas classes de arquivo) seguido de **copy** — a doc diz: *"you must use the restore operation to make a temporary copy of the object first. Then use the copy operation..."*. Isso é uma operação sua, não lifecycle.
+
+#### Por que as setas do Intelligent-Tiering aparecem tracejadas no diagrama da AWS
+
+Porque a transição para fora dele **depende do access tier interno** em que o objeto está naquele momento:
+
+| Access tier atual | Destinos possíveis |
+|---|---|
+| **Frequent Access** ou **Infrequent Access** | One Zone-IA · Glacier IR · Glacier FR · Deep Archive |
+| **Archive Instant Access** | Glacier IR · Glacier FR · Deep Archive |
+| **Archive Access** | Glacier FR · Deep Archive |
+| **Deep Archive Access** | **só** Deep Archive |
+
+O waterfall, portanto, vale **duas vezes**: entre classes, e dentro do Intelligent-Tiering. Quanto mais frio o tier interno, menos destinos sobram.
+
+E uma ressalva de replicação que vale anotar: *"For versioning enabled or versioning suspended buckets, you can't transition objects with a `Pending` or `Failed` replication status."*
+
+Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."*
 
 **Regra 2 — respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* O exemplo da própria doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94** (4 + 90).
 

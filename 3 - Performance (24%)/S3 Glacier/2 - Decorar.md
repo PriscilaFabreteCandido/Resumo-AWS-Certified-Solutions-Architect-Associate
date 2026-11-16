@@ -40,13 +40,28 @@ Sem ela, *"Expedited retrievals might not be accepted during periods of high dem
 > [!warning] Objeto pequeno no Deep Archive pode não compensar
 > 40 KB de overhead por objeto. Arquivar milhões de objetos de 10 KB custa mais em overhead que em dado.
 
-## Lifecycle — a cascata
+## Lifecycle — o modelo cascata (waterfall)
+
+Quem **entra** em cada classe de arquivamento:
+
+| Classe | Pode receber de |
+|---|---|
+| **Glacier Instant Retrieval** | Standard · Standard-IA · Intelligent-Tiering ⚠️ · **(não de One Zone-IA)** |
+| **Glacier Flexible Retrieval** | Standard · Standard-IA · Intelligent-Tiering ⚠️ · One Zone-IA · Glacier IR |
+| **Glacier Deep Archive** | **todas as classes** |
+
+Para onde cada uma **sai**:
 
 ```
 Glacier Instant Retrieval ──> Glacier Flexible Retrieval / Deep Archive
 Glacier Flexible Retrieval ──> SÓ Deep Archive
-Deep Archive ──> SAÍDA NENHUMA
+Deep Archive ──> SAÍDA NENHUMA (só restore + copy)
 ```
+
+⚠️ As transições do **Intelligent-Tiering** dependem do access tier em que o objeto está. Ver [[3 - Performance (24%)/S3/2 - Decorar|S3 - Decorar]].
+
+> [!warning] A seta que falta
+> **One Zone-IA não transiciona para Glacier Instant Retrieval** — só para **Glacier FR** e **Deep Archive**. Engana porque Glacier IR é a mais "quente" das três de arquivamento.
 
 E o mínimo manda: Glacier IR no dia 4 → Deep Archive só no dia **94**.
 

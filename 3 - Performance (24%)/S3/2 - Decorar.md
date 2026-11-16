@@ -49,16 +49,74 @@ Deep Archive Access
 
 Cobra **monitoramento por objeto**, **sem** taxa de retrieval. Objeto **< 128 KB nunca sai** do Frequent Access.
 
-## Lifecycle — a cascata
+## Lifecycle — o modelo cascata (waterfall)
+
+> *"Amazon S3 supports a waterfall model for transitioning between storage classes."*
+
+A regra visual: **cada classe só desce**, nunca sobe. E ela pode pular etapas — Standard vai **direto** para Deep Archive se você quiser.
 
 ```
-Standard ──> IA ──> Intelligent-Tiering / One Zone-IA
-                ──> Glacier IR ──> Glacier FR ──> Deep Archive
-Glacier FR ──> SÓ Deep Archive
-Deep Archive ──> SAÍDA NENHUMA
+S3 Standard ──────────┬────┬────┬────┬────┬────┐
+                      ▼    │    │    │    │    │
+  S3 Standard-IA ─────┼────┼────┼────┼────┼────┤
+                      ▼    ▼    │    │    │    │
+    S3 Intelligent-Tiering ┼╌╌╌╌┼╌╌╌╌┼╌╌╌╌┼╌╌╌╌┤   (tracejado: depende do access tier)
+                      ▼    ▼    ╎    │    │    │
+      S3 One Zone-IA ─┼────┼────┼────┼────┼────┤
+                      ▼    ▼    ╎    ▼    │    │
+        S3 Glacier Instant Retrieval ─────┼────┤
+                      ▼    ▼    ╎    ▼    ▼    │
+          S3 Glacier Flexible Retrieval ──────-┤
+                      ▼    ▼    ╎    ▼    ▼    ▼
+            S3 Glacier Deep Archive   ◄── (entra de TODAS)
+                           │
+                           └──► SAÍDA NENHUMA
 ```
 
-Regra: **não pode transicionar antes do mínimo da classe atual**. Glacier IR no dia 4 → Deep Archive só no dia **94**.
+### A matriz — de onde para onde
+
+| **De ↓ / Para →** | Std-IA | Int-Tiering | One Zone-IA | Glacier IR | Glacier FR | Deep Archive |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **S3 Standard** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **S3 Standard-IA** | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **S3 Intelligent-Tiering** | ❌ | — | ⚠️ | ⚠️ | ⚠️ | ⚠️ |
+| **S3 One Zone-IA** | ❌ | ❌ | — | **❌** | ✅ | ✅ |
+| **S3 Glacier IR** | ❌ | ❌ | ❌ | — | ✅ | ✅ |
+| **S3 Glacier FR** | ❌ | ❌ | ❌ | ❌ | — | ✅ |
+| **S3 Glacier Deep Archive** | ❌ | ❌ | ❌ | ❌ | ❌ | — |
+
+⚠️ = permitido, **mas depende do access tier** em que o objeto está (ver abaixo).
+
+### As três linhas que mais caem
+
+| Fato | Detalhe |
+|---|---|
+| **Standard vai direto para qualquer classe** | Não precisa passar por IA. Pode ir de Standard a Deep Archive numa regra só |
+| **One Zone-IA NÃO vai para Glacier Instant Retrieval** | Só para **Glacier FR** e **Deep Archive**. É a seta que falta no diagrama |
+| **Deep Archive não tem saída** | *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."* Para sair: **restore** + **copy** |
+
+### Por que as setas do Intelligent-Tiering são tracejadas
+
+Porque a transição depende de **em qual access tier** o objeto está naquele momento:
+
+| Access tier atual | Pode transicionar para |
+|---|---|
+| **Frequent Access** ou **Infrequent Access** | One Zone-IA · Glacier IR · Glacier FR · Deep Archive |
+| **Archive Instant Access** | Glacier IR · Glacier FR · Deep Archive |
+| **Archive Access** | Glacier FR · Deep Archive |
+| **Deep Archive Access** | **só** Deep Archive |
+
+Ou seja: quanto mais frio o tier interno, **menos destinos** restam. O waterfall vale também **dentro** do Intelligent-Tiering.
+
+### As duas regras que invalidam uma regra de lifecycle
+
+**1. Respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."*
+O exemplo da própria doc: Glacier IR (mínimo **90 dias**) no dia 4 → Deep Archive só a partir do dia **94**.
+*"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."*
+
+**2. Objeto menor que 128 KB não transiciona por padrão.** *"Amazon S3 applies a default behavior to S3 Lifecycle configurations that prevents objects smaller than 128 KB from being transitioned to any storage class."* O motivo é econômico: *"you are charged a transition request for each object"*.
+Para forçar: filtro `ObjectSizeGreaterThan` / `ObjectSizeLessThan`, ou o header `x-amz-transition-default-minimum-object-size`.
+⚠️ Antes de **setembro de 2024** o padrão permitia objetos < 128 KB irem para **Glacier FR e Deep Archive**. Configurações antigas mantêm o comportamento velho até serem modificadas.
 
 ## Performance
 

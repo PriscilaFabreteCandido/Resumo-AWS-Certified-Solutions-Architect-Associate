@@ -31,7 +31,9 @@ atualizado: 2026-11-08
 | One Zone-IA é só "IA mais barato" | É **1 AZ**. *"Not resilient to the loss of the Availability Zone."* Só para dado **reproduzível**. |
 | Intelligent-Tiering é sempre a resposta mais barata | Cobra **taxa de monitoramento por objeto**. Para padrão de acesso **conhecido**, classe fixa é mais barata. E objeto **< 128 KB nunca sai** do Frequent Access. |
 | Glacier Deep Archive tem Expedited | **Não tem.** Standard até 12 h, Bulk até 48 h. |
-| Lifecycle pode mover qualquer classe para qualquer classe | É **cascata, só de quente para frio**. Glacier FR → só Deep Archive. De Deep Archive **não sai**. |
+| Lifecycle pode mover qualquer classe para qualquer classe | É **cascata (waterfall), só de quente para frio**. Glacier FR → só Deep Archive. De Deep Archive **não sai**. |
+| A cascata obriga a passar por cada classe | **Não.** Pode **pular**: Standard vai **direto** para Deep Archive numa regra só. O proibido é **subir**. |
+| One Zone-IA transiciona para Glacier Instant Retrieval | **Não.** Só **Glacier FR** e **Deep Archive** — é a seta que falta no meio do diagrama. |
 | Posso mover para Deep Archive no dia 10 depois de ter ido para Glacier IR no dia 4 | **Não.** O mínimo de 90 dias do Glacier IR vale: só a partir do dia **94**. |
 | Replicação replica o que já estava no bucket | **Não.** CRR/SRR replica só objetos **novos**. Para o acervo existente: **S3 Batch Replication**. |
 | Replicação precisa de versionamento só na origem | **Nos dois.** *"Both source and destination buckets must have versioning enabled."* |

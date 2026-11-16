@@ -71,6 +71,8 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 
 > [!warning] Caminho de transição do lifecycle é "cascata", de quente para frio
 > Glacier **Flexible Retrieval** só transiciona para **Deep Archive**. E de **Deep Archive não sai** por lifecycle para nenhuma outra classe.
+> Mas atenção: cascata **não** significa passar por todas. **S3 Standard transiciona direto para qualquer classe**, Deep Archive inclusive. O que a cascata proíbe é **subir**.
+> E a seta que mais engana: **One Zone-IA não vai para Glacier Instant Retrieval** — só para Glacier FR e Deep Archive.
 > Você também **não pode** criar uma regra que mova o objeto antes do mínimo da classe atual: se foi para Glacier IR no dia 4, a transição para Deep Archive precisa ser no dia **94** ou depois (4 + 90).
 
 ## 2. EBS
