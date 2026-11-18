@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 | Habilitar versionamento é reversível | Pode **suspender**, mas **nunca volta** ao estado unversioned. |
 | Mudar a criptografia padrão do bucket recriptografa o que já existe | **Não.** Só vale para objetos **novos**. Para os antigos: S3 Batch Operations (Copy). |
 | Transfer Acceleration é para download | É para **upload** de longe (usa a borda do CloudFront). Para download é CloudFront. |
-| Requester Pays faz o requisitante pagar o armazenamento | **Não.** *"The bucket owner always pays the cost of storing data."* O requisitante paga **requisição e download**. E **acesso anônimo fica proibido**. |
+| Requester Pays faz o requisitante pagar o armazenamento | **Não.** *"The bucket owner always pays the cost of storing data."* (o dono do bucket sempre paga o custo de armazenar os dados) O requisitante paga **requisição e download**. E **acesso anônimo fica proibido**. |
 | Bucket público é liberado por bucket policy | Block Public Access tem **4 configurações** e vence: *"S3 applies the most restrictive combination"* (o S3 aplica a combinação mais restritiva) entre conta, bucket e access point. |
 
 ## 2. EBS, EFS, FSx
@@ -154,7 +154,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | SCP concede permissão | *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) É **teto**, não concessão. |
-| SCP afeta a conta de gerenciamento | *"SCPs don't affect users or roles in the management account."* |
+| SCP afeta a conta de gerenciamento | *"SCPs don't affect users or roles in the management account."* (SCPs não afetam usuários nem roles da conta de gerenciamento) |
 | SCP afeta service-linked role | *"SCPs do not affect any service-linked role."* (SCPs não afetam nenhuma service-linked role) |
 | Policy de recurso sozinha resolve cross-account | Em **cross-account** precisa dos **dois lados**: policy de identidade na conta A **e** policy de recurso na conta B. Exceções: **trust policy de role** e **key policy do KMS**, que precisam liberar o principal explicitamente. |
 | Permissions boundary concede acesso | Boundary é **interseção**, nunca concessão. |

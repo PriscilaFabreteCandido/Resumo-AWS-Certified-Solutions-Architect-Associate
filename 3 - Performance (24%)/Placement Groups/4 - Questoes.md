@@ -55,7 +55,7 @@ atualizado: 2026-11-08
 
 > [!question]- Q6. Quanto custa um placement group?
 > **A)** Por instância no grupo
-> **B)** **Nada: *"There is no charge for creating a placement group"*** ✅
+> **B)** **Nada: *"There is no charge for creating a placement group"* (não há cobrança para criar um placement group)** ✅
 > **C)** Por hora de grupo
 > **D)** Só o cluster é cobrado
 >

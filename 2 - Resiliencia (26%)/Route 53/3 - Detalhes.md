@@ -33,13 +33,13 @@ Distinções que a prova explora:
 Quatro vantagens sobre CNAME:
 
 1. **Funciona no ápice** — `exemplo.com` pode apontar para um ALB ou CloudFront
-2. **É grátis** — *"Route 53 doesn't charge for alias queries to AWS resources"*
+2. **É grátis** — *"Route 53 doesn't charge for alias queries to AWS resources"* (o Route 53 não cobra por consultas de alias a recursos da AWS)
 3. **Acompanha o recurso** — se o ALB troca de IP, o alias segue
 4. **Evaluate Target Health** — health check implícito, sem configurar
 
 A limitação: o alias só aponta para **recursos AWS** (a lista oficial) ou para outro registro da mesma hosted zone. Para um host externo, é CNAME.
 
-E o TTL não é seu: *"Route 53 uses the default TTL for the resource"*. Se apontar para outro registro da mesma zona, usa o TTL do registro alvo.
+E o TTL não é seu: *"Route 53 uses the default TTL for the resource"* (o Route 53 usa o TTL padrão daquele recurso). Se apontar para outro registro da mesma zona, usa o TTL do registro alvo.
 
 ## 3. Failover e DR
 

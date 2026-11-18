@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** CloudFront com dois origins
 > **D)** Um NLB com dois target groups
 >
-> **Por que B**: *"Support for Path conditions"* é recurso do ALB (camada 7).
+> **Por que B**: *"Support for Path conditions"* (suporte a condições de Path) é recurso do ALB (camada 7).
 > **D errada**: NLB não entende path.
 > **C errada**: CloudFront **consegue** rotear por path behavior e é válido se houver requisito de CDN — mas introduz cache e borda sem o enunciado pedir.
 

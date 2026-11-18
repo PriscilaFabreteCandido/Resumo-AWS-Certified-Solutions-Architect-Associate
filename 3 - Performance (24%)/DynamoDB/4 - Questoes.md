@@ -89,7 +89,7 @@ atualizado: 2026-11-08
 | PITR de 35 dias custa mais que de 7 | O preço vem do **tamanho** da tabela |
 | TTL apaga na hora | *"within a few days"* (dentro de poucos dias) — filtre os expirados |
 | Global Tables é ativo-passivo | É **multi-ativo** |
-| Posso mudar MREC para MRSC depois | *"You cannot change a global table's consistency mode after creation"* |
+| Posso mudar MREC para MRSC depois | *"You cannot change a global table's consistency mode after creation"* (não é possível mudar o modo de consistência de uma global table depois de criada) |
 | Item de 1 MB cabe | **400 KB** |
 
 ## Links

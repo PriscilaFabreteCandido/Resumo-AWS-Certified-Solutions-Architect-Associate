@@ -37,7 +37,7 @@ atualizado: 2026-11-08
 > **Por que B**: a replicação "live" não alcança objetos anteriores à regra; o acervo exige Batch Replication.
 > **A errada**: é exatamente a suposição que a prova testa.
 > **C errada**: resolveria a cópia, mas é esforço a mais havendo recurso nativo e contínuo.
-> **D errada**: RTC adiciona SLA de 15 min aos objetos **novos**, e *"S3 RTC does not apply to Batch Replication"*.
+> **D errada**: RTC adiciona SLA de 15 min aos objetos **novos**, e *"S3 RTC does not apply to Batch Replication"* (o S3 RTC não se aplica à Batch Replication).
 
 > [!question]- Q4. Uma regra de lifecycle move para Glacier Instant Retrieval no dia 5 e para Deep Archive no dia 30. A AWS rejeita. Por quê?
 > **A)** Glacier IR não transiciona para Deep Archive

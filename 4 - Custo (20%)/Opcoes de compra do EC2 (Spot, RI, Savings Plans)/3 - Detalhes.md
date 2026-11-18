@@ -39,7 +39,7 @@ A razão é a flexibilidade: a RI compromete-se com **configuração** (tipo, re
 
 **Database Savings Plans** (até **35%**) é o tipo que material antigo não menciona: cobre **Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS e OpenSearch**, *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"* (independentemente de engine, família de instância, tamanho, Zona de Disponibilidade ou Região).
 
-⚠️ Dois detalhes: *"The terms of the commitment can't be changed after purchase"*, e no EKS *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be"* (as cobranças do Amazon EKS não são cobertas por Savings Plans, mas as instâncias EC2 subjacentes são).
+⚠️ Dois detalhes: *"The terms of the commitment can't be changed after purchase"* (os termos do compromisso não podem ser alterados depois da compra), e no EKS *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be"* (as cobranças do Amazon EKS não são cobertas por Savings Plans, mas as instâncias EC2 subjacentes são).
 
 ## 3. Reserved Instances — e a confusão desconto × capacidade
 

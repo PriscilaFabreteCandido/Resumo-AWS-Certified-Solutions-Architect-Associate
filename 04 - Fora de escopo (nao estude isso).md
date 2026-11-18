@@ -8,7 +8,7 @@ fonte: guia oficial SAA-C03, listas in-scope e out-of-scope
 
 > [!important] Por que esta nota existe
 > O guia oficial publica **duas listas**: serviços em escopo e serviços **fora** de escopo. Saber o que não cai economiza semanas.
-> Aviso da própria AWS nas duas listas: *"This list is non-exhaustive and is subject to change."* Serviços fora de escopo podem aparecer como **distrator** (alternativa errada) — você precisa reconhecer o nome, não dominar o serviço.
+> Aviso da própria AWS nas duas listas: *"This list is non-exhaustive and is subject to change."* (esta lista não é exaustiva e está sujeita a mudanças) Serviços fora de escopo podem aparecer como **distrator** (alternativa errada) — você precisa reconhecer o nome, não dominar o serviço.
 
 ## 🧩 Em 30 segundos
 
@@ -46,7 +46,7 @@ Fora de escopo, por categoria oficial:
 > [!question]- Quais serviços de ML caem?
 > Os de **alto nível, prontos para usar**: Comprehend, Lex, Polly, Rekognition, SageMaker AI, Textract, Transcribe, Translate.
 > Não caem os de **infraestrutura de ML**: DLAMI, Deep Learning Containers, PyTorch/TensorFlow/MXNet on AWS, Inferentia, Personalize, HealthLake.
-> Padrão da prova: *"Task 2.2 — AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"*. Ou seja: **reconhecer qual serviço de IA resolve qual problema**, não treinar modelo.
+> Padrão da prova: *"Task 2.2 — AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"* (Task 2.2 — serviços gerenciados da AWS e seus casos de uso apropriados (por exemplo, Amazon Comprehend, Amazon Polly)). Ou seja: **reconhecer qual serviço de IA resolve qual problema**, não treinar modelo.
 
 ---
 

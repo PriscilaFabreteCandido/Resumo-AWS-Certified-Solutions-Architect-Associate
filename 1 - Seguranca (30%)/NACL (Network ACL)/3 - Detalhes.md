@@ -31,7 +31,7 @@ Isso tem duas consequências:
 
 **Deixe espaço entre os números.** *"increments (for example, increments of 10 or 100)"* — assim você insere regras depois sem renumerar tudo.
 
-A regra `*` (asterisco) é o DENY final implícito, e *"You can't delete a rule where the rule number is an asterisk."*
+A regra `*` (asterisco) é o DENY final implícito, e *"You can't delete a rule where the rule number is an asterisk."* (não é possível apagar uma regra cujo número seja um asterisco)
 
 ## 3. Default × customizada
 
@@ -63,7 +63,7 @@ A doc resume o papel: a NACL *"provide[s] stateless, coarse-grain network contro
 
 Avaliação só na **fronteira** da subnet: *"not as it is routed within a subnet"*. Duas instâncias na mesma subnet não são filtradas pela NACL (mas são pelos SGs).
 
-**Não** é possível referenciar prefix lists: *"You can't reference prefix lists in network ACL rules."* Isso importa para gateway endpoints — a doc do endpoint avisa que *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço, e você precisa listar os CIDRs na mão (ou liberar amplamente).
+**Não** é possível referenciar prefix lists: *"You can't reference prefix lists in network ACL rules."* (não é possível referenciar prefix lists em regras de network ACL) Isso importa para gateway endpoints — a doc do endpoint avisa que *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço, e você precisa listar os CIDRs na mão (ou liberar amplamente).
 
 **Não** passa pelo filtro: Route 53 Resolver (VPC+2) — *"use Route 53 Resolver DNS Firewall instead"* (use o Route 53 Resolver DNS Firewall em vez disso) —, o **IMDS**, DHCP, Amazon Time Sync, ativação de licença Windows e metadados de task do ECS.
 

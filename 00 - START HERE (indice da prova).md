@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 | Total que você vê | 65 |
 | Nota mínima | **720** (escala de 100 a 1.000) |
 | Modelo de nota | **Compensatório** — não precisa passar em cada domínio, só no total |
-| Questão em branco | Conta como **errada**. *"Unanswered questions are scored as incorrect; there is no penalty for guessing."* |
+| Questão em branco | Conta como **errada**. *"Unanswered questions are scored as incorrect; there is no penalty for guessing."* (questões não respondidas contam como erradas; não há penalidade por chutar) |
 | Tipos de questão | *Multiple choice* (1 certa de 4) e *multiple response* (2+ certas de 5+) |
 | Experiência esperada | *"at least 1 year of hands-on experience designing cloud solutions"* |
 

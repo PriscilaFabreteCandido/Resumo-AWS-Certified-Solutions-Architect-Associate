@@ -15,8 +15,8 @@ atualizado: 2026-11-08
 
 | Termo | Definição |
 |---|---|
-| **Task definition** | *"The blueprint for the application"* — JSON com imagem, portas, volumes, parâmetros |
-| **Cluster** | *"The infrastructure your application runs on"* |
+| **Task definition** | *"The blueprint for the application"* (a planta da aplicação) — JSON com imagem, portas, volumes, parâmetros |
+| **Cluster** | *"The infrastructure your application runs on"* (a infraestrutura em que sua aplicação roda) |
 | **Task** | *"An application such as a batch job that performs work, and then stops"* (uma aplicação como um job em lote, que faz o trabalho e depois para) |
 | **Service** | *"A long running stateless application"* (uma aplicação sem estado, de execução longa) — o scheduler mantém o *desired count*, substituindo tasks que falham |
 | **Capacity provider** | Liga o service à capacidade (Fargate, Fargate Spot, ASG de EC2) |

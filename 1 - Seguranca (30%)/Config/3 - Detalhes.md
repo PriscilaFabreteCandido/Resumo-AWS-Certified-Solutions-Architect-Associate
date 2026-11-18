@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. O que ele grava
 
-Para cada recurso suportado, o Config grava um **configuration item** — um retrato com os atributos, as tags e as **relações** com outros recursos (esta instância usa este SG, que pertence a esta VPC). A doc destaca justamente isso: *"This includes how the resources are related to one another and how they were configured in the past."*
+Para cada recurso suportado, o Config grava um **configuration item** — um retrato com os atributos, as tags e as **relações** com outros recursos (esta instância usa este SG, que pertence a esta VPC). A doc destaca justamente isso: *"This includes how the resources are related to one another and how they were configured in the past."* (isso inclui como os recursos se relacionam entre si e como estavam configurados no passado)
 
 A linha do tempo resultante responde perguntas que nem o CloudTrail nem o CloudWatch respondem:
 - "Este security group já teve a porta 22 aberta?"

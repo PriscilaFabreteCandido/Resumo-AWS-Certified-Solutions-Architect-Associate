@@ -67,7 +67,7 @@ Dois efeitos práticos de custo:
 - O uso **agregado** das contas atinge faixas de desconto por volume mais cedo
 - **Savings Plans** e **Reserved Instances** podem ser compartilhados entre contas da organização
 
-E as **cost allocation tags** das contas membro aparecem na fatura consolidada: *"You can use cost allocation tags in individual AWS accounts... this allocation will be visible in the consolidated bill."*
+E as **cost allocation tags** das contas membro aparecem na fatura consolidada: *"You can use cost allocation tags in individual AWS accounts... this allocation will be visible in the consolidated bill."* (você pode usar tags de alocação de custo em contas individuais... essa alocação fica visível na fatura consolidada)
 
 ## 5. AWS RAM — compartilhar recursos
 
@@ -79,7 +79,7 @@ Compartilhar dentro da organização precisa que o sharing esteja ativado; fora 
 
 ## 6. Control Tower
 
-É a landing zone opinativa: *"Use AWS Control Tower to apply pre-packaged governance rules for security, operations, and compliance for your AWS workloads."*
+É a landing zone opinativa: *"Use AWS Control Tower to apply pre-packaged governance rules for security, operations, and compliance for your AWS workloads."* (use o AWS Control Tower para aplicar regras de governança prontas, de segurança, operação e conformidade, às suas cargas de trabalho)
 
 Ele provisiona as contas de **Log Archive** e **Audit**, habilita Config e CloudTrail em toda a organização, configura o **IAM Identity Center** e oferece o **Account Factory**.
 

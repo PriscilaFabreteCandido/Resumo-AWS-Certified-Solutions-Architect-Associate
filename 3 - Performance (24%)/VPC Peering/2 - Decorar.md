@@ -16,7 +16,7 @@ atualizado: 2026-11-08
 
 ## Custo (citação oficial)
 
-> *"There is no charge to create a VPC peering connection. All data transfer over a VPC peering connection that stays within an Availability Zone is free, even if it's between different accounts. Charges apply for data transfer... that cross Availability Zones and Regions."*
+> *"There is no charge to create a VPC peering connection. All data transfer over a VPC peering connection that stays within an Availability Zone is free, even if it's between different accounts. Charges apply for data transfer... that cross Availability Zones and Regions."* (não há cobrança para criar uma conexão de peering; toda transferência por ela que fica dentro de uma mesma Zona de Disponibilidade é gratuita, mesmo entre contas diferentes. Há cobrança para a transferência... que cruza Zonas de Disponibilidade e Regiões)
 
 | Tráfego | Custo |
 |---|---|
@@ -60,7 +60,7 @@ Fórmula: **N(N-1)/2**. É a razão de existir do Transit Gateway.
 
 - **Security group** de uma VPC **pode referenciar** o SG da VPC pareada (mesma região; cross-region com restrições) — mantém o padrão SG-para-SG.
 - Inter-Region: tráfego *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
-- Não há gateway nem hardware: *"There is no single point of failure for communication or a bandwidth bottleneck."*
+- Não há gateway nem hardware: *"There is no single point of failure for communication or a bandwidth bottleneck."* (não há ponto único de falha na comunicação, nem gargalo de banda)
 - É preciso **aceitar** a solicitação de peering e **criar rotas nas duas** VPCs.
 
 ## Links

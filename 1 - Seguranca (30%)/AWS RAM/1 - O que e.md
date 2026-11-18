@@ -30,7 +30,7 @@ Ganhos: menos VPCs, menos **NAT gateways**, menos conexões (peering/TGW/DX), e 
 
 ## Custo
 
-> *"There are no additional charges for using AWS RAM or for creating resource shares."*
+> *"There are no additional charges for using AWS RAM or for creating resource shares."* (não há cobrança adicional por usar o AWS RAM nem por criar compartilhamentos de recurso)
 
 (Você paga o uso dos recursos, normalmente.)
 

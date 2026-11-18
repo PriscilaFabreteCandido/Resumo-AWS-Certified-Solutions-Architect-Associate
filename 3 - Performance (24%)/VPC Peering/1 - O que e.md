@@ -27,7 +27,7 @@ Ou seja: não há appliance, não há gargalo de banda, não há ponto único de
 
 ## Escopo
 
-> *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)."*
+> *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)."* (as VPCs podem estar em Regiões diferentes (o chamado peering entre Regiões))
 
 Cross-account e cross-Region são suportados. Tráfego inter-Region *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
 

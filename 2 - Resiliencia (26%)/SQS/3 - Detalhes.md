@@ -28,7 +28,7 @@ O limite máximo é **12 horas**, e a doc avisa: *"the visibility timeout has a 
 
 **Standard** é *at-least-once*: *"there's no absolute guarantee that a message won't be delivered more than once"*. Em troca, o throughput é praticamente ilimitado.
 
-**FIFO** é *exactly-once* e ordenado — mas com teto: **300 TPS** por ação de API, ou **3.000 msg/s** com batch de 10 (*"The 3,000 messages per second represent 300 API calls, each with a batch of 10 messages"*).
+**FIFO** é *exactly-once* e ordenado — mas com teto: **300 TPS** por ação de API, ou **3.000 msg/s** com batch de 10 (*"The 3,000 messages per second represent 300 API calls, each with a batch of 10 messages"* (as 3.000 mensagens por segundo correspondem a 300 chamadas de API, cada uma com um lote de 10 mensagens)).
 
 **MessageGroupId** é a chave do paralelismo em FIFO: a ordem é garantida **dentro** do grupo, e grupos diferentes são processados em paralelo. Enquanto uma mensagem de um grupo está em voo, as seguintes **daquele grupo** esperam.
 

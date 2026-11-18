@@ -107,7 +107,7 @@ O escalonamento *"happens gradually and is not instantaneous"*, então os 503 ap
 
 **Multipart upload**: recomendado a partir de **100 MB**; partes de **5 MiB a 5 GiB** (a última parte não tem mínimo); até **10.000** partes. As partes podem subir em paralelo e fora de ordem — é o que dá throughput.
 
-**Transfer Acceleration**: usa a borda do CloudFront para **upload**. A doc diz para usar quando *"Your customers upload to a centralized general purpose bucket from all over the world"*, quando você transfere *"gigabytes to terabytes of data on a regular basis across continents"*, ou quando *"You can't use all of your available bandwidth over the internet"*. Requer nome de bucket sem ponto, e o efeito pode levar *"up to 20 minutes"* para aparecer.
+**Transfer Acceleration**: usa a borda do CloudFront para **upload**. A doc diz para usar quando *"Your customers upload to a centralized general purpose bucket from all over the world"* (seus clientes fazem upload para um bucket central de uso geral, do mundo inteiro), quando você transfere *"gigabytes to terabytes of data on a regular basis across continents"*, ou quando *"You can't use all of your available bandwidth over the internet"* (você não consegue aproveitar toda a sua banda disponível pela internet). Requer nome de bucket sem ponto, e o efeito pode levar *"up to 20 minutes"* para aparecer.
 
 Para centenas de milhares de requisições por segundo com latência de **único dígito de milissegundo**, a classe indicada é **S3 Express One Zone** (*"up to 10x faster and with request costs 50 percent lower than S3 Standard"*).
 
@@ -129,7 +129,7 @@ Pontos que a prova explora:
 
 **Object Lock** implementa WORM e *"works only in buckets that have S3 Versioning enabled"*. Dois mecanismos independentes:
 
-- **Retention period** em modo **Compliance** — *"can't be overwritten or deleted by any user, including the root user in your AWS account"*. O período não encurta. *"The only way to delete an object under the compliance mode before its retention date expires is to delete the associated AWS account."*
+- **Retention period** em modo **Compliance** — *"can't be overwritten or deleted by any user, including the root user in your AWS account"*. O período não encurta. *"The only way to delete an object under the compliance mode before its retention date expires is to delete the associated AWS account."* (a única forma de apagar um objeto em modo compliance antes do fim da retenção é encerrar a conta AWS associada)
 - **Retention period** em modo **Governance** — quem tiver `s3:BypassGovernanceRetention` **e** enviar `x-amz-bypass-governance-retention:true` consegue apagar.
 - **Legal hold** — *"has no expiration date... remains in place until you explicitly remove it"*.
 
@@ -157,7 +157,7 @@ Pontos que a prova explora:
 |---|---|
 | **Access Points** | Endpoint nomeado por aplicação, com policy e BPA próprios. Evita bucket policy gigante |
 | **Bucket owner enforced** (Object Ownership) | Desativa ACLs. **Pré-requisito do OAC do CloudFront** |
-| **Requester Pays** | *"the requester pays the cost of the request and the data download"*; *"The bucket owner always pays the cost of storing data"*. ⚠️ **Proíbe acesso anônimo** |
+| **Requester Pays** | *"the requester pays the cost of the request and the data download"*; *"The bucket owner always pays the cost of storing data"* (o dono do bucket sempre paga o custo de armazenar os dados). ⚠️ **Proíbe acesso anônimo** |
 | **Storage Class Analysis** | *"analyze storage access patterns to help you decide when to transition"*. ⚠️ Só recomenda **Standard → Standard-IA**, e precisa de **30 dias ou mais** |
 | **Storage Lens** | Painel de uso e atividade, com recomendações, em toda a organização |
 | **Site estático** | Website endpoint. ⚠️ Com CloudFront, vira *custom origin* e **não** aceita OAC/OAI |

@@ -18,11 +18,11 @@ atualizado: 2026-11-08
 | HTTP endpoint | 1-64 (5) | 0-900 (**60**) |
 | Snowflake | 1-128 (**1**) | 0-900 (**0**) |
 
-**Regra**: *"The first buffer condition that is satisfied triggers Firehose to deliver the data."*
+**Regra**: *"The first buffer condition that is satisfied triggers Firehose to deliver the data."* (a primeira condição de buffer satisfeita faz o Firehose entregar os dados)
 
 ## Latência mínima
 
-> *"To meet lower latencies of real-time use cases, you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds."*
+> *"To meet lower latencies of real-time use cases, you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds."* (para atender às latências menores de casos de uso em tempo real, você pode usar o hint de intervalo de buffer zero... o Firehose não faz buffer e entrega os dados em poucos segundos)
 
 ⚠️ Zero buffering *"is only available for the application destinations and is not available for Amazon S3 backup destination"*.
 ⚠️ Para S3 com intervalo **menor que 60 s**, o Firehose usa **multipart upload** — *"you will see some increase in S3 PUT API costs"* (você verá algum aumento nos custos de requisições PUT do S3).

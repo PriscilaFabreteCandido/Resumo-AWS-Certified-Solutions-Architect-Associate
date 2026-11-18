@@ -66,7 +66,7 @@ atualizado: 2026-11-08
 
 > [!tip] Duas pistas escondidas nessa lista
 > **"AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"** (serviços gerenciados da AWS e seus casos de uso apropriados (por exemplo, Amazon Comprehend, Amazon Polly)) — serviços de IA caem aqui, no domínio de **resiliência**, como "use o serviço gerenciado em vez de construir". Saiba a frase de uma linha de Comprehend (NLP, sentimento, entidades), Polly (texto → voz), Transcribe (voz → texto), Translate, Rekognition (imagem/vídeo), Textract (documento → texto estruturado), Lex (chatbot).
-> **"Service quotas and throttling"** — a prova pergunta sobre **aumentar quota antes do evento** e sobre configurar quota no ambiente de **standby** (o guia diz literalmente: *"how to configure the service quotas for a workload in a standby environment"*). Isso é pegadinha de DR: o standby precisa ter quota suficiente **antes** do desastre.
+> **"Service quotas and throttling"** (cotas de serviço e throttling) — a prova pergunta sobre **aumentar quota antes do evento** e sobre configurar quota no ambiente de **standby** (o guia diz literalmente: *"how to configure the service quotas for a workload in a standby environment"*). Isso é pegadinha de DR: o standby precisa ter quota suficiente **antes** do desastre.
 
 ---
 

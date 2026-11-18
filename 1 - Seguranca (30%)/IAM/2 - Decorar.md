@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 
 | Não afeta | Citação |
 |---|---|
-| **Conta de gerenciamento** | *"SCPs don't affect users or roles in the management account"* |
+| **Conta de gerenciamento** | *"SCPs don't affect users or roles in the management account"* (SCPs não afetam usuários nem roles da conta de gerenciamento) |
 | **Service-linked roles** | *"SCPs do not affect any service-linked role"* (SCPs não afetam nenhuma service-linked role) |
 | Principals **fora** da organização | — |
 

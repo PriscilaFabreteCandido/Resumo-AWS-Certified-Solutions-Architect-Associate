@@ -73,9 +73,9 @@ Resultado: topologia e route tables sob governança do time de rede; autonomia d
 
 ## 7. Custo — o trade-off explícito
 
-> *"You are charged hourly for each attachment on a transit gateway, and you are charged for the amount of traffic processed."*
+> *"You are charged hourly for each attachment on a transit gateway, and you are charged for the amount of traffic processed."* (você é cobrado por hora por cada attachment no transit gateway, e também pelo volume de tráfego processado)
 
-Compare com o peering: *"There is no charge to create a VPC peering connection. All data transfer over a VPC peering connection that stays within an Availability Zone is free."*
+Compare com o peering: *"There is no charge to create a VPC peering connection. All data transfer over a VPC peering connection that stays within an Availability Zone is free."* (não há cobrança para criar uma conexão de peering; toda transferência por ela que fica dentro de uma mesma Zona de Disponibilidade é gratuita)
 
 | | **Peering** | **TGW** |
 |---|---|---|

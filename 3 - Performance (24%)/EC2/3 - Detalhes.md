@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Escolhendo família e tamanho
 
-A prova pede *"Selecting the appropriate compute options and features (for example, EC2 instance types) to meet business requirements"*. O raciocínio é sempre: **qual recurso é o gargalo?**
+A prova pede *"Selecting the appropriate compute options and features (for example, EC2 instance types) to meet business requirements"* (selecionar as opções e recursos de computação apropriados (por exemplo, tipos de instância EC2) para atender aos requisitos de negócio). O raciocínio é sempre: **qual recurso é o gargalo?**
 
 - Gargalo de **CPU** → família **C**
 - Gargalo de **memória** → **R**, **X** ou **z**

@@ -24,7 +24,7 @@ A evicção é **LRU** nos dois e *"not user-configurable"* (não é configuráv
 
 ## 3. Write-through — e o que isso implica
 
-As escritas passam pelo DAX, que grava na tabela **e** no cache: *"The operation is successful only if the data is successfully written to both the table and to DAX."*
+As escritas passam pelo DAX, que grava na tabela **e** no cache: *"The operation is successful only if the data is successfully written to both the table and to DAX."* (a operação só é bem-sucedida se o dado for gravado com sucesso tanto na tabela quanto no DAX)
 
 Vantagem: o cache fica **consistente** com a tabela para os itens escritos por ali.
 Custo: a escrita ganha um **hop** adicional de latência.

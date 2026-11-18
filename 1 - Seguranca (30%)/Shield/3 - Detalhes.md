@@ -18,7 +18,7 @@ Três requisitos o puxam:
 
 **Acesso ao SRT.** Durante um ataque de camada 7, casos críticos de clientes do Advanced *"are routed directly to DDoS experts"*.
 
-**Engajamento proativo.** *"When AWS Shield Advanced detects a large application layer attack against one of your applications, the SRT can proactively contact you. The SRT triages the DDoS event and creates AWS WAF mitigations. The SRT contacts you and, with your consent, can apply the AWS WAF rules."*
+**Engajamento proativo.** *"When AWS Shield Advanced detects a large application layer attack against one of your applications, the SRT can proactively contact you. The SRT triages the DDoS event and creates AWS WAF mitigations. The SRT contacts you and, with your consent, can apply the AWS WAF rules."* (quando o Shield Advanced detecta um ataque grande na camada de aplicação contra uma das suas aplicações, a SRT pode entrar em contato proativamente; ela triagem o evento de DDoS e cria mitigações no AWS WAF, entra em contato com você e, com o seu consentimento, aplica as regras)
 
 **Mitigação automática na camada 7.** O Advanced adiciona ao WAF um rule group de anti-DDoS de camada 7 (**150 WCUs**) que se ajusta ao padrão de tráfego.
 

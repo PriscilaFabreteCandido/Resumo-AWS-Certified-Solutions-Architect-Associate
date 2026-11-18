@@ -18,7 +18,7 @@ atualizado: 2026-11-08
 | **Core** | Processa **e guarda HDFS** | ⚠️ **Evite** (perder HDFS arrisca o dado) |
 | **Task** | **Só processa** | ✅ **Sim — é o lugar do Spot** |
 
-A doc sobre Spot: *"Spot Instances can offer significant savings—as low as a tenth of on-demand pricing in some cases"*, e recomenda *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo).
+A doc sobre Spot: *"Spot Instances can offer significant savings—as low as a tenth of on-demand pricing in some cases"* (instâncias Spot podem trazer economia expressiva — em alguns casos, até um décimo do preço sob demanda), e recomenda *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo).
 
 ## Cluster transiente × long-running
 

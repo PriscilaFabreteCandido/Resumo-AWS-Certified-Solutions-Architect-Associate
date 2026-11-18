@@ -53,7 +53,7 @@ Mecânica: *"AD Connector uses Kerberos for authentication and authorization of 
 
 | Requisito | Detalhe |
 |---|---|
-| **Conectividade** | *"The VPC must be connected to your existing network through a virtual private network (VPN) connection or Direct Connect."* |
+| **Conectividade** | *"The VPC must be connected to your existing network through a virtual private network (VPN) connection or Direct Connect."* (a VPC precisa estar conectada à sua rede existente por uma conexão VPN ou por Direct Connect) |
 | **Subnets** | **Duas**, em **AZs diferentes**, do mesmo tipo de rede |
 | **Portas** | **TCP/UDP 53** (DNS) · **88** (Kerberos) · **389** (LDAP) |
 | **Conta de serviço** | No AD existente, com **"Read users and groups"** (ler usuários e grupos). Join/criação de objetos de computador só para Seamless Domain Join e WorkSpaces |
@@ -84,7 +84,7 @@ O texto oficial de cada elo:
 
 | Elo | Citação |
 |---|---|
-| Identity Center aceita AD self-managed | *"With AWS IAM Identity Center, you can connect a self-managed directory in Active Directory (AD) or a directory in AWS Managed Microsoft AD by using AWS Directory Service."* |
+| Identity Center aceita AD self-managed | *"With AWS IAM Identity Center, you can connect a self-managed directory in Active Directory (AD) or a directory in AWS Managed Microsoft AD by using AWS Directory Service."* (com o IAM Identity Center você pode conectar um diretório autogerenciado no Active Directory ou um diretório no AWS Managed Microsoft AD, usando o AWS Directory Service) |
 | Como autentica | *"IAM Identity Center uses the connection provided by Directory Service to perform pass-through authentication to the source AD instance."* (o IAM Identity Center usa a conexão fornecida pelo Directory Service para fazer autenticação pass-through contra a instância de AD de origem) |
 | A senha não é sincronizada | *"No password information is synchronized to IAM Identity Center, because user authentication takes place directly from the source directory in Active Directory."* (nenhuma informação de senha é sincronizada para o IAM Identity Center, porque a autenticação do usuário acontece diretamente no diretório de origem, no Active Directory) |
 | Atribuição por grupo | *"After connecting your corporate directory to IAM Identity Center, you can then grant your AD users or groups access to AWS accounts, applications, or both."* (depois de conectar seu diretório corporativo ao IAM Identity Center, você pode conceder aos usuários ou grupos do AD acesso a contas AWS, a aplicações, ou a ambos) |

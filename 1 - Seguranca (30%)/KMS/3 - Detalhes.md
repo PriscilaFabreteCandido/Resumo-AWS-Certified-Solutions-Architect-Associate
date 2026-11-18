@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 A API `Encrypt` *"Encrypts plaintext of up to 4,096 bytes using a KMS key"* (criptografa texto em claro de até 4.096 bytes usando uma chave do KMS), e o próprio parâmetro tem a restrição: *"Length Constraints: Minimum length of 1. Maximum length of 4096."* (restrições de tamanho: mínimo de 1, máximo de 4096)
 
-A doc orienta o uso pretendido: *"You can use this operation to encrypt small amounts of arbitrary data, such as a personal identifier or database password."* E para o resto: *"The GenerateDataKey and GenerateDataKeyPair operations return a plaintext data key and an encrypted copy of that data key."*
+A doc orienta o uso pretendido: *"You can use this operation to encrypt small amounts of arbitrary data, such as a personal identifier or database password."* (você pode usar essa operação para criptografar pequenas quantidades de dados arbitrários, como um identificador pessoal ou uma senha de banco) E para o resto: *"The GenerateDataKey and GenerateDataKeyPair operations return a plaintext data key and an encrypted copy of that data key."* (as operações GenerateDataKey e GenerateDataKeyPair devolvem uma data key em texto claro e uma cópia criptografada dessa mesma chave)
 
 O fluxo:
 
@@ -54,7 +54,7 @@ Dois pontos que a prova explora:
 
 **Rotação não toca nos dados.** *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."* (a rotação de chave não tem efeito sobre os dados que a chave do KMS protege: ela não rotaciona as data keys geradas por essa chave nem recriptografa nenhum dado protegido por ela) A KMS retém **todas** as versões do material: *"AWS KMS retains all key material for a KMS key with AWS_KMS origin, even if key rotation is disabled. AWS KMS deletes key material only when you delete the KMS key."* (o AWS KMS mantém todo o material de chave de uma chave com origem AWS_KMS, mesmo que a rotação esteja desabilitada; ele só apaga o material quando você apaga a chave)
 
-**O decrypt escolhe a versão certa automaticamente.** *"When you use the rotated KMS key to decrypt ciphertext, AWS KMS uses the same version of the key material that was used to encrypt it."*
+**O decrypt escolhe a versão certa automaticamente.** *"When you use the rotated KMS key to decrypt ciphertext, AWS KMS uses the same version of the key material that was used to encrypt it."* (quando você usa a chave rotacionada para descriptografar, o AWS KMS usa a mesma versão do material de chave que foi usada para criptografar)
 
 Monitoramento: evento **"KMS CMK Rotation"** no EventBridge e **`RotateKey`** no CloudTrail.
 

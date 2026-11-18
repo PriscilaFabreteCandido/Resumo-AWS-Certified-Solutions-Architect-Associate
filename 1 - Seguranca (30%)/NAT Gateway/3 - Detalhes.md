@@ -8,12 +8,12 @@ atualizado: 2026-11-08
 
 ## 1. Por que ele não aceita security group
 
-O NAT gateway é um serviço gerenciado, não uma ENI sua. A doc: *"You cannot associate security groups with NAT gateways. You can associate them with the resources behind the NAT gateway to control inbound and outbound traffic."*
+O NAT gateway é um serviço gerenciado, não uma ENI sua. A doc: *"You cannot associate security groups with NAT gateways. You can associate them with the resources behind the NAT gateway to control inbound and outbound traffic."* (não é possível associar security groups a NAT gateways; você pode associá-los aos recursos atrás do NAT gateway para controlar o tráfego de entrada e saída)
 
 Isso tem três consequências práticas:
 
 1. **O controle fica nos recursos atrás** — o SG das instâncias privadas define o que elas podem alcançar.
-2. **A NACL da subnet do NAT** é o único filtro de rede no caminho: *"Use a network ACL to control the traffic to and from the subnet in which your NAT gateway resides."*
+2. **A NACL da subnet do NAT** é o único filtro de rede no caminho: *"Use a network ACL to control the traffic to and from the subnet in which your NAT gateway resides."* (use uma network ACL para controlar o tráfego de entrada e saída da subnet onde está o seu NAT gateway)
 3. **Se o requisito é filtrar o que sai por domínio ou por inspeção profunda**, o NAT gateway não serve — a resposta é **AWS Network Firewall** ou um appliance atrás de um **Gateway Load Balancer**.
 
 ## 2. Alta disponibilidade

@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 O SSM *"helps you centrally view, manage, and operate nodes at scale"*. Mas só funciona em **managed nodes**, e a definição é precisa:
 
-> *"SSM Agent is installed on the machine and the agent can communicate with the Systems Manager service."*
+> *"SSM Agent is installed on the machine and the agent can communicate with the Systems Manager service."* (o SSM Agent está instalado na máquina e consegue se comunicar com o serviço Systems Manager)
 
 Na prática, isso exige três coisas: **SSM Agent** instalado, **instance profile** com a policy do SSM, e **rota** até o serviço (NAT gateway ou **interface endpoints** do SSM).
 
@@ -32,7 +32,7 @@ Na prática, isso exige três coisas: **SSM Agent** instalado, **instance profil
 
 ## A frase do Session Manager
 
-> *"Session Manager provides secure node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys."*
+> *"Session Manager provides secure node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys."* (o Session Manager oferece gestão segura de nós sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH)
 
 É a resposta para qualquer enunciado que peça acesso administrativo sem porta 22, sem bastion e sem chave.
 

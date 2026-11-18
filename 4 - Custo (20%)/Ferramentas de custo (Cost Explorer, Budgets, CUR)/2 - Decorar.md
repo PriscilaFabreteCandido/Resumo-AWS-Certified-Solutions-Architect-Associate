@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 
 | Tipo | O que monitora |
 |---|---|
-| **Cost budgets** | *"Set spending limits for services and receive alerts"* |
+| **Cost budgets** | *"Set spending limits for services and receive alerts"* (definir limites de gasto por serviço e receber alertas) |
 | **Usage budgets** | *"Establish usage limits for one or more services"* (estabeleça limites de uso para um ou mais serviços) |
 | **RI utilization budgets** | Alerta quando a **utilização** das RIs cai abaixo do limiar |
 | **RI coverage budgets** | Alerta quando a **cobertura** por RI cai |
@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 | Natureza | *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível) |
 | Destino | *"an Amazon S3 bucket that you own"* |
 | Formato | **CSV** — *"AWS updates the report in your bucket once a day"* (a AWS atualiza o relatório no seu bucket uma vez por dia) |
-| Frequência | *"Update the report up to three times a day"*; *"at least once a day"* (pelo menos uma vez por dia) |
+| Frequência | *"Update the report up to three times a day"* (atualizar o relatório até três vezes por dia); *"at least once a day"* (pelo menos uma vez por dia) |
 | **Granularidade** | **hora, dia ou mês** |
 | Integrações | *"Amazon Athena, Amazon Redshift, or Quick"* |
 
@@ -53,9 +53,9 @@ atualizado: 2026-11-08
 | Item | Citação |
 |---|---|
 | Fatura única | *"Organizations provides you with a single consolidated bill"* (o Organizations entrega uma fatura única consolidada) |
-| Quem paga | *"The owner of the management account is responsible for paying for all usage"* |
+| Quem paga | *"The owner of the management account is responsible for paying for all usage"* (o dono da conta de gerenciamento é responsável por pagar todo o uso) |
 | Custo do serviço | *"AWS Organizations is offered at no additional charge"* (o AWS Organizations é oferecido sem cobrança adicional) |
-| Tags | *"You can use cost allocation tags in individual AWS accounts... this allocation will be visible in the consolidated bill"* |
+| Tags | *"You can use cost allocation tags in individual AWS accounts... this allocation will be visible in the consolidated bill"* (você pode usar tags de alocação de custo em contas individuais... essa alocação fica visível na fatura consolidada) |
 
 > [!warning] A pegadinha das tags
 > Aplicar a tag **não basta**: ela precisa ser **ativada como cost allocation tag** no console de **Billing**. E a ativação **não é retroativa**.

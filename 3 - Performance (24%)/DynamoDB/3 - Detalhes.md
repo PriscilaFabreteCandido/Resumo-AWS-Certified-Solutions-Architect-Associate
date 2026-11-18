@@ -57,12 +57,12 @@ Regras de troca: provisionado → on-demand **4 vezes** em 24 h rolantes; on-dem
 
 **Streams** capturam as mudanças da tabela; os registros *"have a lifetime of 24 hours"*. São a base de: replicação, invalidação de cache, materialização de views, e integração com **Lambda** e **EventBridge Pipes**.
 
-**PITR** retém de **1 a 35 dias** (`RecoveryPeriodInDays`), restaurando *"to any point in time"* até `LatestRestorableDateTime`, que é *"typically five minutes before the current time"*. E o ponto crítico: *"The point-in-time recovery process always restores to a new table."*
-Detalhe de custo: *"The configured maximum recovery period doesn't impact the price"* — o preço vem do **tamanho** da tabela. Tabela deletada mantém um backup de sistema por **35 dias**, sem custo.
+**PITR** retém de **1 a 35 dias** (`RecoveryPeriodInDays`), restaurando *"to any point in time"* até `LatestRestorableDateTime`, que é *"typically five minutes before the current time"*. E o ponto crítico: *"The point-in-time recovery process always restores to a new table."* (a recuperação point-in-time sempre restaura para uma tabela nova)
+Detalhe de custo: *"The configured maximum recovery period doesn't impact the price"* (o período máximo de recuperação configurado não afeta o preço) — o preço vem do **tamanho** da tabela. Tabela deletada mantém um backup de sistema por **35 dias**, sem custo.
 
-**TTL** é *"a cost-effective method for deleting items that are no longer relevant"*. O atributo precisa ser **Number** em epoch de **segundos**; a exclusão ocorre *"within a few days after their expiration"*, e a primeira exclusão **não consome WCU**. ⚠️ Itens expirados mas não apagados **ainda aparecem** — *"Use filter expressions to remove expired items from Scan and Query results."*
+**TTL** é *"a cost-effective method for deleting items that are no longer relevant"* (um método econômico de apagar itens que não são mais relevantes). O atributo precisa ser **Number** em epoch de **segundos**; a exclusão ocorre *"within a few days after their expiration"*, e a primeira exclusão **não consome WCU**. ⚠️ Itens expirados mas não apagados **ainda aparecem** — *"Use filter expressions to remove expired items from Scan and Query results."* (use expressões de filtro para remover itens expirados dos resultados de Scan e Query)
 
-**Global Tables** é *"multi-Region, and multi-active"* (multi-Região e multi-ativo) — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas). Dois modos: **MREC** (eventual, **padrão**) e **MRSC** (forte). Resolução de conflito **last-writer-wins**. E: *"You cannot change a global table's consistency mode after creation."*
+**Global Tables** é *"multi-Region, and multi-active"* (multi-Região e multi-ativo) — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas). Dois modos: **MREC** (eventual, **padrão**) e **MRSC** (forte). Resolução de conflito **last-writer-wins**. E: *"You cannot change a global table's consistency mode after creation."* (não é possível mudar o modo de consistência de uma global table depois de criada)
 
 ## 6. Performance e cache
 

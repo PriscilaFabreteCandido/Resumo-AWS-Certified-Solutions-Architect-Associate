@@ -58,7 +58,7 @@ atualizado: 2026-11-08
 | "Highly available" sempre vence | Se o enunciado diz *"menor custo"*, Cost Optimization vence |
 | Trusted Advisor faz a revisão Well-Architected | A ferramenta é a **Well-Architected Tool** |
 | Sustainability é só marketing | Tem área própria de **Region selection** e reforça rightsizing |
-| Serviço genérico adaptado é aceitável | *"Using purpose-built AWS services"* é citado **duas vezes** no guia |
+| Serviço genérico adaptado é aceitável | *"Using purpose-built AWS services"* (usar serviços da AWS feitos sob medida) é citado **duas vezes** no guia |
 
 ## Links
 

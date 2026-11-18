@@ -27,13 +27,13 @@ Quando a aplicação **depende de Active Directory**, não quando você quer ape
 |---|---|---|
 | **AWS Managed Microsoft AD** | *"powered by an actual Microsoft Windows Server Active Directory (AD), managed by AWS in the AWS Cloud"* | Precisa de AD real na AWS, com trust para o AD on-premises |
 | **AD Connector** | *"a proxy service that provides an easy way to connect compatible AWS applications... to your existing on-premises Microsoft Active Directory"* | Quer usar o AD on-premises sem replicar usuários para a AWS |
-| **Simple AD** | *"a Microsoft Active Directory–compatible directory from AWS Directory Service that is powered by Samba 4"* | Diretório *"low-scale, low-cost"* (de pequena escala e baixo custo), sem recursos avançados |
+| **Simple AD** | *"a Microsoft Active Directory–compatible directory from AWS Directory Service that is powered by Samba 4"* (um diretório compatível com o Microsoft Active Directory, do AWS Directory Service, baseado em Samba 4) | Diretório *"low-scale, low-cost"* (de pequena escala e baixo custo), sem recursos avançados |
 
 ## As duas incompatibilidades que caem
 
 > **AD Connector**: *"AD Connector is not compatible with RDS SQL Server."* (o AD Connector não é compatível com o RDS SQL Server)
 
-> **Simple AD**: *"Simple AD does not support multi-factor authentication (MFA), trust relationships, DNS dynamic update, schema extensions, communication over LDAPS, PowerShell AD cmdlets, or FSMO role transfer. Simple AD is not compatible with RDS SQL Server."*
+> **Simple AD**: *"Simple AD does not support multi-factor authentication (MFA), trust relationships, DNS dynamic update, schema extensions, communication over LDAPS, PowerShell AD cmdlets, or FSMO role transfer. Simple AD is not compatible with RDS SQL Server."* (o Simple AD não oferece suporte a MFA, relações de trust, atualização dinâmica de DNS, extensões de schema, comunicação por LDAPS, cmdlets do PowerShell para AD nem transferência de funções FSMO — e não é compatível com o RDS SQL Server)
 
 Ou seja: para **RDS SQL Server com Windows Auth**, só **AWS Managed Microsoft AD**.
 

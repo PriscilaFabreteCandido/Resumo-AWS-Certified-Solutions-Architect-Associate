@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** EMR com Spark Streaming
 > **D)** DataSync agendado
 >
-> **Por que B**: *"You don't need to write applications or manage resources"*, converte formato nativamente, e o buffer padrão do S3 (5 MB / **300 s**) encaixa na latência.
+> **Por que B**: *"You don't need to write applications or manage resources"* (você não precisa escrever aplicações nem gerenciar recursos), converte formato nativamente, e o buffer padrão do S3 (5 MB / **300 s**) encaixa na latência.
 > **A errada**: funciona, mas você escreve e opera o consumidor.
 > **C errada**: cluster para gerenciar.
 > **D errada**: DataSync move arquivos entre storages; não consome stream.

@@ -14,14 +14,14 @@ atualizado: 2026-11-08
 
 O pilar de Segurança do Well-Architected:
 
-> *"The AWS Shared Responsibility Model helps organizations that adopt the cloud to achieve their security and compliance goals. Because AWS physically secures the infrastructure that supports our cloud services, as an AWS customer you can focus on using services to accomplish your goals."*
+> *"The AWS Shared Responsibility Model helps organizations that adopt the cloud to achieve their security and compliance goals. Because AWS physically secures the infrastructure that supports our cloud services, as an AWS customer you can focus on using services to accomplish your goals."* (o modelo de responsabilidade compartilhada da AWS ajuda as organizações que adotam a nuvem a atingir seus objetivos de segurança e conformidade; como a AWS protege fisicamente a infraestrutura que sustenta nossos serviços, você, como cliente, pode se concentrar em usar os serviços para atingir seus objetivos)
 
 > [!note] Sobre a frase "security OF the cloud / IN the cloud"
 > É a formulação consagrada do modelo, mas **não aparece** nas páginas de documentação que conferi. Use-a como mnemônico, não como citação.
 
 ## O guia cita nominalmente
 
-**Task 1.1**, no Knowledge of: *"The AWS shared responsibility model"*.
+**Task 1.1**, no Knowledge of: *"The AWS shared responsibility model"* (o modelo de responsabilidade compartilhada da AWS).
 
 ## A fronteira **se move** com o serviço
 

@@ -56,7 +56,7 @@ A aplicação chama `GetSecretValue` sem especificar versão e recebe o `AWSCURR
 
 O Secrets Manager replica o secret para outras regiões, mantendo as réplicas sincronizadas com a primária. É o que permite que uma aplicação em DR (pilot light, warm standby) leia a credencial na região secundária sem chamada cross-region.
 
-⚠️ Detalhe de prova: a doc do **Aurora Global Database** avisa que *"Secrets Manager doesn't support Aurora Global Database. When you add a Region to a global database, you must first turn off Secrets Manager integration for the DB instance."*
+⚠️ Detalhe de prova: a doc do **Aurora Global Database** avisa que *"Secrets Manager doesn't support Aurora Global Database. When you add a Region to a global database, you must first turn off Secrets Manager integration for the DB instance."* (o Secrets Manager não oferece suporte ao Aurora Global Database; ao adicionar uma Região a um banco global, você precisa primeiro desligar a integração com o Secrets Manager na instância)
 
 ## 6. Custo — por que não usar para tudo
 

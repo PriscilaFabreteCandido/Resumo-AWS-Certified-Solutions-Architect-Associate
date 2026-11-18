@@ -20,7 +20,7 @@ O AWS Backup resolve os três: um **plan** aplicado por **tag**, **Audit Manager
 
 ## 2. Vault Lock — o WORM do backup
 
-> *"You can use AWS Backup Vault Lock to prevent anyone (including you) from deleting backups or altering their retention period. AWS Backup Vault Lock helps you enforce a write-once-read-many (WORM) model."*
+> *"You can use AWS Backup Vault Lock to prevent anyone (including you) from deleting backups or altering their retention period. AWS Backup Vault Lock helps you enforce a write-once-read-many (WORM) model."* (use o AWS Backup Vault Lock para impedir que qualquer pessoa (inclusive você) apague backups ou altere o período de retenção; ele ajuda a impor um modelo WORM, de escrever uma vez e ler muitas)
 
 O "including you" é o ponto. É o equivalente, no mundo de backup, do **S3 Object Lock em modo Compliance**.
 

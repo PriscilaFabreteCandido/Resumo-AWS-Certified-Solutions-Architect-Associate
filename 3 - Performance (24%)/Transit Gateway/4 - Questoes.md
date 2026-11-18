@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Falta um NAT gateway
 > **D)** O MTU está errado
 >
-> **Por que B**: *"With a VPC, you must create static routes to send traffic to the transit gateway."* São **dois** lados: a route table da subnet **e** a do TGW.
+> **Por que B**: *"With a VPC, you must create static routes to send traffic to the transit gateway."* (com uma VPC, você precisa criar rotas estáticas para enviar tráfego ao transit gateway) São **dois** lados: a route table da subnet **e** a do TGW.
 
 > [!question]- Q4. Duas VPCs com **CIDR sobreposto** precisam que uma consuma uma API da outra.
 > **A)** Transit Gateway

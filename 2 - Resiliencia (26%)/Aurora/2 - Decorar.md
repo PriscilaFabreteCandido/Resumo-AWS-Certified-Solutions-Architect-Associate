@@ -56,7 +56,7 @@ atualizado: 2026-11-08
 | **Custom** | Subconjunto de instâncias (ex.: só as grandes, para relatório) | — |
 | **Instance** | Uma instância específica, para diagnóstico | **Não** |
 
-> *"Unlike the instance endpoints, the writer and reader endpoints automatically change which DB instance they connect to if a DB instance in your cluster becomes unavailable."*
+> *"Unlike the instance endpoints, the writer and reader endpoints automatically change which DB instance they connect to if a DB instance in your cluster becomes unavailable."* (ao contrário dos endpoints de instância, os endpoints de escrita e de leitura mudam automaticamente a qual instância se conectam se alguma do cluster ficar indisponível)
 
 ## Links
 

@@ -21,7 +21,7 @@ Se a alternativa oferece "usar KMS para criptografar em trânsito", está errada
 
 ## 2. Onde o certificado tem que morar
 
-Certificado ACM é **recurso regional**: *"To use a certificate with Elastic Load Balancing for the same fully qualified domain name (FQDN) or set of FQDNs in more than one AWS region, you must request or import a certificate for each region."* E não há atalho: *"You cannot copy a certificate between regions."* (não é possível copiar um certificado entre Regiões)
+Certificado ACM é **recurso regional**: *"To use a certificate with Elastic Load Balancing for the same fully qualified domain name (FQDN) or set of FQDNs in more than one AWS region, you must request or import a certificate for each region."* (para usar um certificado com o Elastic Load Balancing para o mesmo FQDN, ou conjunto de FQDNs, em mais de uma Região, você precisa solicitar ou importar um certificado em cada Região) E não há atalho: *"You cannot copy a certificate between regions."* (não é possível copiar um certificado entre Regiões)
 
 A exceção importante é o **CloudFront**, que é global e lê certificados apenas de `us-east-1`:
 

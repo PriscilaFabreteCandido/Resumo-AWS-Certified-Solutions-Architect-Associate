@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 A doc dá o critério:
 
-> *"You should use Amazon EMR if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase."*
+> *"You should use Amazon EMR if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase."* (use o Amazon EMR se você processa e analisa conjuntos de dados extremamente grandes com código próprio, usando frameworks recentes de big data como Spark, Hadoop, Presto ou HBase)
 
 E o diferencial:
 

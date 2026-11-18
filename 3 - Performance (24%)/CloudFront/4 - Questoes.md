@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 > **C)** Geo restriction
 > **D)** OAC
 >
-> **Por que B**: *"You want to provide access to multiple restricted files, for example, all of the files for a video in HLS format"* e *"You don't want to change your current URLs"*.
+> **Por que B**: *"You want to provide access to multiple restricted files, for example, all of the files for a video in HLS format"* (você quer dar acesso a vários arquivos restritos — por exemplo, todos os arquivos de um vídeo em formato HLS) e *"You don't want to change your current URLs"* (você não quer mudar suas URLs atuais).
 > **A errada**: exigiria assinar centenas de URLs e mudar os manifests.
 
 > [!question]- Q5. Reescrever a URL e normalizar headers em **milhões de requisições por segundo**, com custo mínimo.

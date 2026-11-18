@@ -73,7 +73,7 @@ E a alternativa de arquitetura: quando os times precisam de isolamento forte (n�
 
 ## 6. Organizations — consolidated billing
 
-> *"Organizations provides you with a single consolidated bill"* (o Organizations entrega uma fatura única consolidada), e *"The owner of the management account is responsible for paying for all usage, data, and resources used by the accounts in the organization."*
+> *"Organizations provides you with a single consolidated bill"* (o Organizations entrega uma fatura única consolidada), e *"The owner of the management account is responsible for paying for all usage, data, and resources used by the accounts in the organization."* (o dono da conta de gerenciamento é responsável por pagar todo o uso, dados e recursos consumidos pelas contas da organização)
 
 O serviço é *"offered at no additional charge"* (oferecido sem cobrança adicional).
 

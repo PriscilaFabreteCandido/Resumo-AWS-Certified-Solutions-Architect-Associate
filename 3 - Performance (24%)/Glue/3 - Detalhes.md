@@ -29,7 +29,7 @@ Um catálogo, uma definição de schema, permissões num lugar só. É isso que 
 
 ## 2. Crawlers
 
-> *"Use AWS Glue crawlers to automatically infer schema information and integrate it into your AWS Glue Data Catalog."*
+> *"Use AWS Glue crawlers to automatically infer schema information and integrate it into your AWS Glue Data Catalog."* (use os crawlers do AWS Glue para inferir automaticamente as informações de schema e integrá-las ao seu AWS Glue Data Catalog)
 
 O crawler varre o S3 (ou outras fontes), detecta formato e schema, cria/atualiza a tabela e registra as **partições**. Pode rodar agendado.
 

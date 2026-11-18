@@ -228,7 +228,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 | Shield Advanced | assinatura cobre custos padrão do WAF até **1.500 WCUs** e **50 bilhões** de requisições/mês |
 | CloudTrail: event history grátis | **90 dias** de management events |
 | Compute Optimizer: janela de análise | **14 dias** (93 dias com enhanced infrastructure metrics) |
-| **MFA no root: prazo de registro** | **14 dias** do primeiro login no console. *"Users must register MFA within 14 days of their first sign-in attempt"* |
+| **MFA no root: prazo de registro** | **14 dias** do primeiro login no console. *"Users must register MFA within 14 days of their first sign-in attempt"* (os usuários precisam registrar o MFA em até 14 dias da primeira tentativa de login) |
 | KMS: espera para excluir uma chave | **7 a 30 dias** (padrão **30**). Irreversível ao fim |
 | IAM: boas práticas oficiais | **14** itens; as duas primeiras são **federação para pessoas** e **role para workloads** |
 | Boas práticas do root | **9** itens; a nº 4 é **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) |

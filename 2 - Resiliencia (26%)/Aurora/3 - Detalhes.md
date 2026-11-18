@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 
 Duas consequências que a prova explora:
 
-**A quantidade de cópias não depende das instâncias.** *"The amount of replication is independent of the number of DB instances in your cluster."* Um cluster com **uma** instância já tem as 6 cópias — e *"an Aurora configuration with only a single DB instance is still a cluster"* (uma configuração do Aurora com uma única instância ainda é um cluster).
+**A quantidade de cópias não depende das instâncias.** *"The amount of replication is independent of the number of DB instances in your cluster."* (o volume de replicação independe da quantidade de instâncias no seu cluster) Um cluster com **uma** instância já tem as 6 cópias — e *"an Aurora configuration with only a single DB instance is still a cluster"* (uma configuração do Aurora com uma única instância ainda é um cluster).
 
 **As réplicas não copiam dados.** As Aurora Replicas leem o **mesmo** cluster volume. Por isso adicionar réplica é rápido e o lag é mínimo (ao contrário do read replica do RDS, que replica logicamente).
 
@@ -74,9 +74,9 @@ Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` ace
 
 **1 ACU ≈ 2 GiB** de memória. Mínimo **0,5 ACU**; com **0 ACU** o cluster **pausa automaticamente**.
 
-A escala é fina e sem interrupção: *"Aurora serverless can add half an ACU when only a little more capacity is needed"* (o Aurora Serverless consegue adicionar meia ACU quando só um pouco mais de capacidade é necessário), *"Scaling can change capacity by as little as 0.5 ACUs, instead of doubling or halving"*, e *"Scaling typically happens with no pause in processing at all"* — inclusive *"while SQL statements are running and transactions are open"*.
+A escala é fina e sem interrupção: *"Aurora serverless can add half an ACU when only a little more capacity is needed"* (o Aurora Serverless consegue adicionar meia ACU quando só um pouco mais de capacidade é necessário), *"Scaling can change capacity by as little as 0.5 ACUs, instead of doubling or halving"* (a escala pode variar a capacidade em apenas 0,5 ACU, em vez de dobrar ou reduzir pela metade), e *"Scaling typically happens with no pause in processing at all"* (a escala normalmente acontece sem nenhuma pausa no processamento) — inclusive *"while SQL statements are running and transactions are open"*.
 
-Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling up requires adding a whole new DB instance."* (num cluster provisionado, escalar para cima exige adicionar uma instância inteira nova) E a conversão é sem recriar: *"You can modify existing DB instances from provisioned to Aurora serverless or from Aurora serverless to provisioned."*
+Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling up requires adding a whole new DB instance."* (num cluster provisionado, escalar para cima exige adicionar uma instância inteira nova) E a conversão é sem recriar: *"You can modify existing DB instances from provisioned to Aurora serverless or from Aurora serverless to provisioned."* (você pode modificar instâncias existentes de provisionadas para Aurora Serverless, e vice-versa)
 
 ⚠️ `max_connections` é derivado do **máximo de ACU** e é **estático** — mudar o máximo exige reboot.
 

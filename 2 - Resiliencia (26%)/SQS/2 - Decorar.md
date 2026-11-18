@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 | **MessageGroupId (FIFO)** | **128** caracteres |
 
 > [!warning] O tamanho da mensagem mudou
-> A página de quotas atual diz **1 MiB**. Material antigo diz **256 KB**. Para payload maior, use a **Extended Client Library** com S3 — até **2 GB**, e **só em Java**: *"You can't do this with the AWS CLI, the Amazon SQS console, the Amazon SQS HTTP API, or any of the other AWS SDKs."*
+> A página de quotas atual diz **1 MiB**. Material antigo diz **256 KB**. Para payload maior, use a **Extended Client Library** com S3 — até **2 GB**, e **só em Java**: *"You can't do this with the AWS CLI, the Amazon SQS console, the Amazon SQS HTTP API, or any of the other AWS SDKs."* (isso não é possível pela CLI da AWS, pelo console do Amazon SQS, pela API HTTP do SQS, nem por nenhum dos outros SDKs)
 
 ## FIFO — throughput
 

@@ -19,9 +19,9 @@ A doc: *"AWS Certificate Manager (ACM) handles the complexity of creating, stori
 
 ## Duas regras que decidem questões
 
-**1. Certificado público é grátis.** *"You are not subject to an additional charge for SSL/TLS certificates that you manage with AWS Certificate Manager. You pay only for the AWS resources that you create to run your website or application."*
+**1. Certificado público é grátis.** *"You are not subject to an additional charge for SSL/TLS certificates that you manage with AWS Certificate Manager. You pay only for the AWS resources that you create to run your website or application."* (você não paga nada a mais pelos certificados SSL/TLS gerenciados pelo AWS Certificate Manager; paga apenas pelos recursos da AWS que criar para rodar seu site ou aplicação)
 
-**2. O certificado é regional, e para CloudFront tem que estar em `us-east-1`.** *"Certificates in ACM are regional resources"* (certificados no ACM são recursos regionais), *"You cannot copy a certificate between regions"* e *"To use an ACM certificate with Amazon CloudFront, you must request or import the certificate in the US East (N. Virginia) region."*
+**2. O certificado é regional, e para CloudFront tem que estar em `us-east-1`.** *"Certificates in ACM are regional resources"* (certificados no ACM são recursos regionais), *"You cannot copy a certificate between regions"* (não é possível copiar um certificado entre Regiões) e *"To use an ACM certificate with Amazon CloudFront, you must request or import the certificate in the US East (N. Virginia) region."* (para usar um certificado do ACM com o Amazon CloudFront, você precisa solicitar ou importar o certificado na Região Norte da Virgínia)
 
 ## Público × privado
 

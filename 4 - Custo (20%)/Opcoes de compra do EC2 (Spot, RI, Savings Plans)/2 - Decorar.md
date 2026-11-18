@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 | **Database** | até **35%** | Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS, OpenSearch | *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"* (independentemente de engine, família de instância, tamanho, Zona de Disponibilidade ou Região) |
 | **SageMaker AI** | até **64%** | SageMaker AI | *"regardless of your instance family, instance size, component, or AWS Region"* |
 
-Claim geral: *"You can save up to 72% on your AWS compute workloads."*
+Claim geral: *"You can save up to 72% on your AWS compute workloads."* (você pode economizar até 72% nas suas cargas de computação na AWS)
 Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfront**.
 ⚠️ *"The terms of the commitment can't be changed after purchase."* (os termos do compromisso não podem ser alterados depois da compra)
 ⚠️ **EKS**: *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be."* (as cobranças do Amazon EKS não são cobertas por Savings Plans, mas as instâncias EC2 subjacentes são)

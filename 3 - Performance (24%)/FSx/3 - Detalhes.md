@@ -26,11 +26,11 @@ Lustre é o file system paralelo de HPC. A doc posiciona para *"workloads where 
 
 **A integração com S3 é o diferencial de prova:**
 
-> *"When linked to an Amazon S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files."*
+> *"When linked to an Amazon S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files."* (quando vinculado a um bucket do Amazon S3, um sistema de arquivos FSx for Lustre apresenta os objetos do S3 como arquivos, de forma transparente)
 
 > *"Amazon FSx imports listings of all existing files in your S3 bucket at file system creation. Amazon FSx can also import listings of files added to the data repository after the file system is created."* (o Amazon FSx importa a listagem de todos os arquivos já existentes no seu bucket S3 na criação do sistema de arquivos, e também pode importar a listagem de arquivos adicionados ao repositório depois disso)
 
-> *"The file system also makes it possible for you to write file system data back to S3."*
+> *"The file system also makes it possible for you to write file system data back to S3."* (o sistema de arquivos também permite gravar os dados de volta no S3)
 
 O padrão: o dataset vive no **S3** (barato, durável); quando o cluster precisa processá-lo com throughput de HPC, você cria um FSx for Lustre **vinculado ao bucket**, processa, escreve o resultado de volta no S3, e **apaga o file system**.
 

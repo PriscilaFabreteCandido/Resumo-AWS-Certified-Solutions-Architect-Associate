@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 
 ## O fato de custo
 
-> *"The data transfer from your origin to CloudFront is always free when using AWS origins like Amazon Simple Storage Service (Amazon S3), Elastic Load Balancing, or Amazon API Gateway."*
+> *"The data transfer from your origin to CloudFront is always free when using AWS origins like Amazon Simple Storage Service (Amazon S3), Elastic Load Balancing, or Amazon API Gateway."* (a transferência da sua origem para o CloudFront é sempre gratuita quando a origem é um serviço da AWS, como Amazon S3, Elastic Load Balancing ou Amazon API Gateway)
 
 Servir 200 TB pelo CloudFront é **mais barato** que servir direto do S3.
 

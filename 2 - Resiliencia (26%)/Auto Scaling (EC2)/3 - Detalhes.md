@@ -16,7 +16,7 @@ atualizado: 2026-11-08
 
 **Scheduled** — para padrão de calendário conhecido. Também pode *"start scaling immediately without waiting for the cooldown period"*.
 
-**Predictive** — usa histórico para provisionar **antes** do pico: *"Scale proactively... in advance of daily and weekly patterns."* Combina com dynamic (predictive dimensiona a base, dynamic cobre o imprevisto).
+**Predictive** — usa histórico para provisionar **antes** do pico: *"Scale proactively... in advance of daily and weekly patterns."* (escalar de forma proativa... antecipando padrões diários e semanais) Combina com dynamic (predictive dimensiona a base, dynamic cobre o imprevisto).
 
 ## 2. Health check — a pegadinha completa
 

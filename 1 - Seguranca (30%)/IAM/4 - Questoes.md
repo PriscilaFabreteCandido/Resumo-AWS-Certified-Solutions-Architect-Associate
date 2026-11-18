@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 > **C)** Permissions boundary em todos os roles
 > **D)** AWS Config rule que reativa o CloudTrail
 >
-> **Por que B**: SCP é o único controle que alcança o **root de uma conta membro** — *"SCPs affect the root user of member accounts"*.
+> **Por que B**: SCP é o único controle que alcança o **root de uma conta membro** — *"SCPs affect the root user of member accounts"* (SCPs afetam o usuário raiz das contas-membro).
 > **A errada**: policy IAM não se aplica ao root.
 > **C errada**: boundary se aplica a users e roles, não ao root.
 > **D errada**: Config **detecta e remedia depois**; o enunciado pede prevenção.

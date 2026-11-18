@@ -14,7 +14,7 @@ Não existe appliance no caminho. Consequências:
 
 - **Sem custo de criação** nem de hora
 - **Sem gargalo de banda**: *"no... bandwidth bottleneck"*
-- **Sem ponto único de falha**: *"There is no single point of failure for communication"*
+- **Sem ponto único de falha**: *"There is no single point of failure for communication"* (não há ponto único de falha na comunicação)
 - Dados na **mesma AZ são grátis**, *"even if it's between different accounts"* (mesmo que seja entre contas diferentes)
 
 Isso faz do peering a opção **mais econômica** para poucas VPCs — e é exatamente o que a prova testa contra o TGW.
@@ -35,7 +35,7 @@ Isso elimina, de uma vez, a ideia de "centralizar o NAT gateway via peering" —
 
 O peering **não** faz NAT, então faixas sobrepostas tornam o roteamento ambíguo e a conexão não é permitida.
 
-O whitepaper de conectividade recomenda, para toda arquitetura: *"VPC connectivity to remote customer networks is best achieved when using non-overlapping IP ranges for each network being connected... We recommend allocating a single, contiguous, non-overlapping CIDR block to be used by each VPC."*
+O whitepaper de conectividade recomenda, para toda arquitetura: *"VPC connectivity to remote customer networks is best achieved when using non-overlapping IP ranges for each network being connected... We recommend allocating a single, contiguous, non-overlapping CIDR block to be used by each VPC."* (a conectividade da VPC com redes remotas funciona melhor quando cada rede conectada usa faixas de IP sem sobreposição... Recomendamos alocar, para cada VPC, um único bloco CIDR contíguo e sem sobreposição)
 
 Quando as faixas **já** se sobrepõem e renumerar é inviável, a saída é **PrivateLink**: ele expõe **um serviço** por uma ENI na VPC consumidora, sem rotear as redes — então o CIDR é irrelevante.
 
@@ -67,7 +67,7 @@ Esquecer o passo 3 num dos lados é a causa mais comum de "o peering está ativo
 
 Cross-account é suportado — e o detalhe de custo importa: dados na **mesma AZ** são grátis *"even if it's between different accounts"* (mesmo que seja entre contas diferentes).
 
-Cross-Region também: *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)"*, e o tráfego *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
+Cross-Region também: *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)"* (as VPCs podem estar em Regiões diferentes (o chamado peering entre Regiões)), e o tráfego *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
 
 ⚠️ Mas referência de **security group** entre VPCs pareadas tem restrições em cenário cross-region.
 

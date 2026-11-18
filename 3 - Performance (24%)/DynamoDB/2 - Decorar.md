@@ -14,7 +14,7 @@ atualizado: 2026-11-08
 | **1 WCU** | 1 escrita de **1 KB** |
 
 Exemplo oficial: item de **3 KB** ÷ 4 KB = 0,75 → arredonda para **1 RCU**.
-*"Strongly consistent reads consume twice as many database resources as eventually consistent reads."*
+*"Strongly consistent reads consume twice as many database resources as eventually consistent reads."* (leituras fortemente consistentes consomem o dobro de recursos do banco em relação às de consistência eventual)
 
 ## Limites de item e chave
 

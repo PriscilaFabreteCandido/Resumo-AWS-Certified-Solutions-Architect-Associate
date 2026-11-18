@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Os protocolos (lista oficial)
 
-> *"SFTP, AS2, FTPS, FTP, and web browser-based transfers"*
+> *"SFTP, AS2, FTPS, FTP, and web browser-based transfers"* (SFTP, AS2, FTPS, FTP e transferências pelo navegador)
 
 E o **SFTP** é *"version 3"*.
 

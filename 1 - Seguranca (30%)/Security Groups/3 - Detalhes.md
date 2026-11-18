@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Stateful, e o que isso significa na prática
 
-A doc: *"Security groups are stateful. For example, if you send a request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules. Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules."*
+A doc: *"Security groups are stateful. For example, if you send a request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules. Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules."* (security groups são stateful: se você envia uma requisição a partir de uma instância, o tráfego de resposta pode chegar a ela independentemente das regras de entrada; e as respostas ao tráfego de entrada permitido podem sair, independentemente das regras de saída)
 
 Consequência: **você nunca precisa pensar em portas efêmeras com SG**. Libere a porta do serviço na entrada, e a resposta volta sozinha. Essa é a diferença mais testada entre SG e NACL.
 

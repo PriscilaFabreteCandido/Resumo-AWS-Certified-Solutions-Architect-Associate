@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 | NACLs por subnet | **1** |
 | Subnets por NACL | várias |
 | Incremento recomendado | **de 10 em 10 ou de 100 em 100** |
-| Custo | *"There is no additional charge for using network ACLs"* |
+| Custo | *"There is no additional charge for using network ACLs"* (não há cobrança adicional pelo uso de network ACLs) |
 
 ## A NACL **default** (vem liberada)
 

@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 |---|---|
 | *"More predictable network performance"* (desempenho de rede mais previsível) | Banda e latência consistentes |
 | *"Reduced bandwidth costs"* (custos de banda reduzidos) | Egress por GB mais barato que pela internet |
-| *"Supports BGP peering and routing policies"* | Roteamento dinâmico |
+| *"Supports BGP peering and routing policies"* (oferece suporte a peering BGP e políticas de roteamento) | Roteamento dinâmico |
 
 Limitação: *"Might require additional telecom and hosting provider relationships or new network circuits to be provisioned."* (pode exigir contratos adicionais com operadoras e provedores de hospedagem, ou o provisionamento de novos circuitos de rede)
 

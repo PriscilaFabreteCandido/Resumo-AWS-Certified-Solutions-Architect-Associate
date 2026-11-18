@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. O que o buffer significa
 
-O Firehose acumula registros até atingir **tamanho** ou **tempo** — *"The first buffer condition that is satisfied triggers Firehose to deliver the data"* — e então entrega em lote.
+O Firehose acumula registros até atingir **tamanho** ou **tempo** — *"The first buffer condition that is satisfied triggers Firehose to deliver the data"* (a primeira condição de buffer satisfeita faz o Firehose entregar os dados) — e então entrega em lote.
 
 Para S3: **1-128 MB** (padrão **5 MB**) e **0-900 s** (padrão **300 s**). Ou seja, com a configuração padrão, o dado chega no S3 em **até 5 minutos**.
 

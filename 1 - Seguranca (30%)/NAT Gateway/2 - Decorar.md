@@ -10,8 +10,8 @@ atualizado: 2026-11-08
 
 | Atributo | **NAT gateway** | **NAT instance** |
 |---|---|---|
-| Disponibilidade | *"Highly available... implemented with redundancy"* (dentro da AZ) | *"Use a script to manage failover between instances"* |
-| Banda | *"Scale up to 100 Gbps"* | Depende do tipo de instância |
+| Disponibilidade | *"Highly available... implemented with redundancy"* (dentro da AZ) | *"Use a script to manage failover between instances"* (usar um script para gerenciar o failover entre instâncias) |
+| Banda | *"Scale up to 100 Gbps"* (escalar até 100 Gbps) | Depende do tipo de instância |
 | Manutenção | *"Managed by AWS"* (gerenciado pela AWS) | **Você** patcheia |
 | Custo | nº de gateways + duração + **GB processado** | nº de instâncias + duração + tipo/tamanho |
 | **Security group** | **Não aceita** | Aceita |
@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 | Timeout | Devolve **RST** | Devolve **FIN** |
 | Fragmentação IP | UDP sim; **TCP e ICMP são descartados** | UDP, TCP e ICMP |
 
-Recomendação oficial: *"We recommend that you use NAT gateways because they provide better availability and bandwidth and require less effort on your part to administer."*
+Recomendação oficial: *"We recommend that you use NAT gateways because they provide better availability and bandwidth and require less effort on your part to administer."* (recomendamos usar NAT gateways, porque oferecem melhor disponibilidade e banda e exigem menos esforço de administração da sua parte)
 
 ## Números
 

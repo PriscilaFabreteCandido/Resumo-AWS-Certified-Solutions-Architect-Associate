@@ -18,7 +18,7 @@ atualizado: 2026-11-08
 | **ALB** (Application) | **7** | HTTP/HTTPS, roteamento por **host e path**, WAF, Lambda como target |
 | **NLB** (Network) | **4** | TCP/UDP/TLS/QUIC, **IP estático**, latência mínima, milhões de req/s |
 | **GWLB** (Gateway) | **3** | Enviar tráfego para **appliances de inspeção** de terceiro (GENEVE) |
-| **CLB** (Classic) | — | Geração anterior. *"We recommend that you migrate to a current generation load balancer"* |
+| **CLB** (Classic) | — | Geração anterior. *"We recommend that you migrate to a current generation load balancer"* (recomendamos migrar para um load balancer da geração atual) |
 
 ## A regra de decisão
 
@@ -31,8 +31,8 @@ atualizado: 2026-11-08
 
 ## Dois fatos que decidem questões
 
-1. **O ALB exige 2+ AZs**: *"With an Application Load Balancer however, it is a requirement that you enable at least two or more Availability Zones."*
-2. **Cross-zone load balancing**: *"With Application Load Balancers, cross-zone load balancing is always enabled at the load balancer level"*; já *"With Network Load Balancers and Gateway Load Balancers, cross-zone load balancing is disabled by default."*
+1. **O ALB exige 2+ AZs**: *"With an Application Load Balancer however, it is a requirement that you enable at least two or more Availability Zones."* (já num Application Load Balancer, é obrigatório habilitar pelo menos duas Zonas de Disponibilidade)
+2. **Cross-zone load balancing**: *"With Application Load Balancers, cross-zone load balancing is always enabled at the load balancer level"* (em Application Load Balancers, o balanceamento entre zonas está sempre habilitado no nível do load balancer); já *"With Network Load Balancers and Gateway Load Balancers, cross-zone load balancing is disabled by default."* (em Network Load Balancers e Gateway Load Balancers, o balanceamento entre zonas vem desabilitado por padrão)
 
 ## Links
 

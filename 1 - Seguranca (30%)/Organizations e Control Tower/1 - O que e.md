@@ -33,7 +33,7 @@ A **conta** é o limite de isolamento mais forte da AWS. Separar não é sobre b
 
 ## A frase que resolve metade das questões de SCP
 
-> *"SCPs do not grant permissions to the IAM users and IAM roles in your organization. No permissions are granted by an SCP."*
+> *"SCPs do not grant permissions to the IAM users and IAM roles in your organization. No permissions are granted by an SCP."* (SCPs não concedem permissões aos usuários e roles do IAM da sua organização; uma SCP não concede permissão nenhuma)
 
 E o complemento: *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* (um usuário sem nenhuma policy de permissão do IAM não tem acesso, mesmo que as SCPs aplicáveis liberem todos os serviços e todas as ações)
 

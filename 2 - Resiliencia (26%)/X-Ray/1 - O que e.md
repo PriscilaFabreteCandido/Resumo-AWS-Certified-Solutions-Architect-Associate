@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 O X-Ray é o **único** serviço da categoria "Developer Tools" na lista oficial de serviços **em escopo** da SAA-C03. O guia o cita nominalmente em **Task 2.2**:
 
-> *"Workload visibility (for example, AWS X-Ray)"*
+> *"Workload visibility (for example, AWS X-Ray)"* (visibilidade da carga de trabalho (por exemplo, AWS X-Ray))
 
 Ou seja: CDK, CodeBuild, CodeDeploy e CodeCommit estão **fora**; X-Ray está **dentro**.
 

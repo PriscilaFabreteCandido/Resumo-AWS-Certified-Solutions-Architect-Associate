@@ -84,7 +84,7 @@ Resultado: login com o usuário de rede, **credencial temporária**, zero usuár
 | **Funcionários** acessando contas AWS com SSO | **IAM Identity Center** (que pode usar o Directory Service como fonte) |
 | **Usuários finais** do seu app | **Cognito** |
 
-A única menção a Identity Center na página do Directory Service está sob **AWS Managed Microsoft AD**: *"With AWS IAM Identity Center, you can also obtain short-term credentials for use with the AWS SDK and CLI, and use preconfigured SAML integrations to sign in to many cloud applications."*
+A única menção a Identity Center na página do Directory Service está sob **AWS Managed Microsoft AD**: *"With AWS IAM Identity Center, you can also obtain short-term credentials for use with the AWS SDK and CLI, and use preconfigured SAML integrations to sign in to many cloud applications."* (com o IAM Identity Center você também obtém credenciais de curta duração para usar com o SDK e a CLI da AWS, e usa integrações SAML pré-configuradas para entrar em muitas aplicações de nuvem)
 
 ## Links
 

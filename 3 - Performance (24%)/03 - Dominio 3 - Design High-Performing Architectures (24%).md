@@ -135,7 +135,7 @@ atualizado: 2026-11-08
 > **C)** EBS io2 Block Express com Multi-Attach
 > **D)** Montar o S3 com um cliente FUSE
 >
-> **Por que B**: Lustre é o file system de HPC/ML da AWS, com latência sub-milissegundo, e *"When linked to an Amazon S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files"* — exatamente o cenário.
+> **Por que B**: Lustre é o file system de HPC/ML da AWS, com latência sub-milissegundo, e *"When linked to an Amazon S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files"* (quando vinculado a um bucket do Amazon S3, um sistema de arquivos FSx for Lustre apresenta os objetos do S3 como arquivos, de forma transparente) — exatamente o cenário.
 > **A errada**: EFS escala bem (Elastic chega a dezenas de GiBps), mas Lustre é o serviço posicionado para *"machine learning, high performance computing (HPC), video processing, and financial modeling"* com esse perfil de throughput.
 > **C errada**: Multi-Attach existe só em io1/io2, é limitado a poucas instâncias **na mesma AZ** e não é file system compartilhado POSIX.
 > **D errada**: não entrega throughput de HPC e adiciona esforço operacional.
@@ -157,7 +157,7 @@ atualizado: 2026-11-08
 > **C)** S3 Transfer Acceleration
 > **D)** Global Accelerator na frente do bucket
 >
-> **Por que B**: conteúdo estático consumido globalmente é o caso canônico de CDN — cache na borda, e *"The data transfer from your origin to CloudFront is always free when using AWS origins like Amazon S3"*.
+> **Por que B**: conteúdo estático consumido globalmente é o caso canônico de CDN — cache na borda, e *"The data transfer from your origin to CloudFront is always free when using AWS origins like Amazon S3"* (a transferência da sua origem para o CloudFront é sempre gratuita quando a origem é um serviço da AWS, como o Amazon S3).
 > **A errada**: funciona, mas triplica armazenamento e exige sincronização. Muito mais custo e esforço.
 > **C errada**: Transfer Acceleration é para **upload** de longe, não download.
 > **D errada**: Global Accelerator **não cacheia**; para conteúdo estático o ganho é muito menor que o do CloudFront.

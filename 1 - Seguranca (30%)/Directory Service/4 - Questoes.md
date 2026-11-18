@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 > **C)** Simple AD como fonte de identidade do Identity Center
 > **D)** AWS Managed Microsoft AD replicando os usuários do AD on-premises
 >
-> **Por que B**: é a cadeia padrão. O AD Connector é *"a directory gateway... without caching any information in the cloud"*, o Identity Center faz *"pass-through authentication to the source AD instance"* (autenticação pass-through contra a instância de AD de origem), e os permission sets atribuem acesso por grupo.
+> **Por que B**: é a cadeia padrão. O AD Connector é *"a directory gateway... without caching any information in the cloud"* (um gateway de diretório... sem fazer cache de nenhuma informação na nuvem), o Identity Center faz *"pass-through authentication to the source AD instance"* (autenticação pass-through contra a instância de AD de origem), e os permission sets atribuem acesso por grupo.
 > **C errada**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4)
 > **D errada**: atende, mas **replica** identidade para a AWS — o enunciado proibiu.
 

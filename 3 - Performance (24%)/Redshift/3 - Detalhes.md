@@ -36,7 +36,7 @@ O catálogo vem do **Glue Data Catalog** (ou do catálogo do Athena, ou de um Hi
 
 Quando muitas queries chegam juntas, elas entram em **fila** no WLM. O concurrency scaling resolve isso: *"automatically adds additional cluster capacity"*, e *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila).
 
-Cobrança: *"You're charged for concurrency-scaling clusters only for the time they're actively running queries."*
+Cobrança: *"You're charged for concurrency-scaling clusters only for the time they're actively running queries."* (os clusters de concurrency scaling são cobrados apenas pelo tempo em que estão de fato executando consultas)
 
 Configuração: por **fila do WLM**, com *"Concurrency Scaling mode"* (modo Concurrency Scaling) em `auto`. O padrão é **um** cluster adicional (`max_concurrency_scaling_clusters`).
 

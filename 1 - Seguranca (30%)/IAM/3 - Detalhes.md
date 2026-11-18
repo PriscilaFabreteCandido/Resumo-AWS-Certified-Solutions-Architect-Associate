@@ -26,11 +26,11 @@ Mas há exceção: *"IAM role trust policies and KMS key policies are exceptions
 
 **6. Permissions boundary.** *"If the policy that is used to set the permissions boundary does not allow the requested action, then the request is implicitly denied."* (se a policy usada para definir o permissions boundary não permite a ação solicitada, a requisição é negada implicitamente)
 
-**7. Session policy.** Se o principal não é uma sessão, a decisão final é Allow. Se nenhuma session policy foi passada, *"a default session policy is created."*
+**7. Session policy.** Se o principal não é uma sessão, a decisão final é Allow. Se nenhuma session policy foi passada, *"a default session policy is created."* (uma session policy padrão é criada)
 
 ## 2. Cross-account — por que precisa dos dois lados
 
-Dentro do **mesmo** account, identity-based e resource-based se **somam**: *"The resulting permissions are the union of the permissions of the two types."*
+Dentro do **mesmo** account, identity-based e resource-based se **somam**: *"The resulting permissions are the union of the permissions of the two types."* (as permissões resultantes são a união das permissões dos dois tipos)
 
 **Cross-account é diferente.** A doc é explícita: *"For cross-account requests, the requester in the trusted AccountA must have an identity-based policy. That policy must allow them to make a request to the resource in the trusting AccountB. Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* (em requisições entre contas, quem requisita na Conta A (confiada) precisa de uma policy de identidade que permita a requisição ao recurso na Conta B (que confia); além disso, a policy de recurso na Conta B precisa permitir que o requisitante da Conta A acesse o recurso) E conclui: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
 
@@ -104,18 +104,18 @@ A página oficial de boas práticas do root hoje tem **nove** recomendações, n
 
 | # | Recomendação (título oficial) |
 |---|---|
-| 1 | *"Secure your root user credentials to prevent unauthorized use"* |
-| 2 | *"Use a strong root user password to help protect access"* |
-| 3 | *"Secure your root user sign-in with multi-factor authentication (MFA)"* |
+| 1 | *"Secure your root user credentials to prevent unauthorized use"* (proteja as credenciais do usuário raiz para evitar uso não autorizado) |
+| 2 | *"Use a strong root user password to help protect access"* (use uma senha forte no usuário raiz para ajudar a proteger o acesso) |
+| 3 | *"Secure your root user sign-in with multi-factor authentication (MFA)"* (proteja o login do usuário raiz com autenticação multifator (MFA)) |
 | 4 | **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) |
-| 5 | *"Use multi-person approval for root user sign-in wherever possible"* |
-| 6 | *"Use a group email address for root user credentials"* |
+| 5 | *"Use multi-person approval for root user sign-in wherever possible"* (use aprovação por mais de uma pessoa no login do usuário raiz sempre que possível) |
+| 6 | *"Use a group email address for root user credentials"* (use um endereço de e-mail de grupo para as credenciais do usuário raiz) |
 | 7 | *"Restrict access to account recovery mechanisms"* (restrinja o acesso aos mecanismos de recuperação de conta) |
-| 8 | *"Secure your AWS Organizations account root user credentials"* |
+| 8 | *"Secure your AWS Organizations account root user credentials"* (proteja as credenciais de usuário raiz da sua conta do AWS Organizations) |
 | 9 | *"Monitor access and usage"* (monitore o acesso e o uso) |
 
 > [!warning] Três pontos em que a lista clássica está desatualizada
-> **1. Chave de acesso do root: a orientação não é mais "rotacionar", é "não criar".** O título atual é literal — *"Don't create access keys for the root user"* (não crie chaves de acesso para o usuário raiz) — e o texto diz: *"We strongly recommend that you do not create access keys for your root user because the root user has full access to all AWS services and resources in the account, including billing information."* Para acesso programático, a doc hoje aponta para o comando `aws login` com as credenciais do root, **não** para criar chaves. **A doc atual não dá nenhuma orientação de rotação para chaves de root.**
+> **1. Chave de acesso do root: a orientação não é mais "rotacionar", é "não criar".** O título atual é literal — *"Don't create access keys for the root user"* (não crie chaves de acesso para o usuário raiz) — e o texto diz: *"We strongly recommend that you do not create access keys for your root user because the root user has full access to all AWS services and resources in the account, including billing information."* (recomendamos enfaticamente que você não crie chaves de acesso para o usuário raiz, porque ele tem acesso total a todos os serviços e recursos da conta, inclusive às informações de faturamento) Para acesso programático, a doc hoje aponta para o comando `aws login` com as credenciais do root, **não** para criar chaves. **A doc atual não dá nenhuma orientação de rotação para chaves de root.**
 >
 > **2. A frase "não criptografe as chaves nem as salve no S3" não existe mais** nas páginas atuais de boas práticas do IAM nem do root. Ela vem de material antigo. A ideia por trás continua certa (credencial de longo prazo não se guarda em bucket), mas não cite como texto oficial.
 >
@@ -169,17 +169,17 @@ A página de boas práticas do IAM tem esta ordem — e os **dois primeiros** it
 | **1** | ***"Require human users to use federation with an identity provider to access AWS using temporary credentials"** (exija que usuários humanos usem federação com um provedor de identidade para acessar a AWS com credenciais temporárias)* |
 | **2** | ***"Require workloads to use temporary credentials with IAM roles to access AWS"** (exija que as cargas de trabalho usem credenciais temporárias, com roles do IAM, para acessar a AWS)* |
 | 3 | *"Require multi-factor authentication (MFA)"* (exija autenticação multifator (MFA)) |
-| 4 | *"Update access keys when needed for use cases that require long-term credentials"* |
+| 4 | *"Update access keys when needed for use cases that require long-term credentials"* (atualize as chaves de acesso quando necessário, nos casos que exigem credenciais de longo prazo) |
 | 5 | *"Follow best practices to protect your root user credentials"* (siga as boas práticas para proteger as credenciais do usuário raiz) |
 | 6 | *"Apply least-privilege permissions"* (aplique permissões de menor privilégio) |
 | 7 | *"Get started with AWS managed policies and move toward least-privilege permissions"* (comece pelas políticas gerenciadas pela AWS e caminhe para permissões de menor privilégio) |
-| 8 | *"Use IAM Access Analyzer to generate least-privilege policies based on access activity"* |
+| 8 | *"Use IAM Access Analyzer to generate least-privilege policies based on access activity"* (use o IAM Access Analyzer para gerar políticas de menor privilégio a partir da atividade de acesso real) |
 | 9 | *"Regularly review and remove unused users, roles, permissions, policies, and credentials"* (revise e remova periodicamente usuários, roles, permissões, policies e credenciais sem uso) |
-| 10 | *"Use conditions in IAM policies to further restrict access"* |
-| 11 | *"Verify public and cross-account access to resources with IAM Access Analyzer"* |
-| 12 | *"Use IAM Access Analyzer to validate your IAM policies for secure and functional permissions"* |
+| 10 | *"Use conditions in IAM policies to further restrict access"* (use condições nas policies do IAM para restringir ainda mais o acesso) |
+| 11 | *"Verify public and cross-account access to resources with IAM Access Analyzer"* (verifique o acesso público e entre contas aos recursos com o IAM Access Analyzer) |
+| 12 | *"Use IAM Access Analyzer to validate your IAM policies for secure and functional permissions"* (use o IAM Access Analyzer para validar suas policies do IAM quanto a permissões seguras e funcionais) |
 | 13 | *"Establish permissions guardrails across multiple accounts"* (estabeleça guardrails de permissão em várias contas) |
-| 14 | *"Use permissions boundaries to delegate permissions management within an account"* |
+| 14 | *"Use permissions boundaries to delegate permissions management within an account"* (use permissions boundaries para delegar a gestão de permissões dentro de uma conta) |
 
 > [!important] A hierarquia que resolve as questões de identidade
 > A ordem da própria doc é a ordem de preferência:

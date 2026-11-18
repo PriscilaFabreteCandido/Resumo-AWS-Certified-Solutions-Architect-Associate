@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| Custo | *"There is no additional charge for using security groups"* |
+| Custo | *"There is no additional charge for using security groups"* (não há cobrança adicional pelo uso de security groups) |
 | SGs por recurso | Vários (as regras se somam) |
 | Regra de negação | **Não existe** |
 | Source possível | CIDR · **prefix list** · **outro security group** |

@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"You don't need to write applications or manage resources."*
+> *"You don't need to write applications or manage resources."* (você não precisa escrever aplicações nem gerenciar recursos)
 
 E ele pode **transformar** os dados antes de entregar (formato, compressão, Lambda).
 

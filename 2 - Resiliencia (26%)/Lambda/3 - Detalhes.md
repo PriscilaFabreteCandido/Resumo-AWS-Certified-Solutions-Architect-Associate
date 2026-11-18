@@ -12,7 +12,7 @@ Você configura **só memória** (128 MB a 10.240 MB); a CPU vem proporcional, e
 
 Consequência que a prova explora: **mais memória pode custar menos**. Uma função CPU-bound com 512 MB que leva 10 s pode levar 2 s com 2.048 MB. O custo é `memória × tempo`, então 2.048 × 2 pode ser menor que 512 × 10 — e a latência cai 5×.
 
-O guia pede isso literalmente em **Task 3.2**: *"Selecting the appropriate resource type and size (for example, the amount of Lambda memory) to meet business requirements."*
+O guia pede isso literalmente em **Task 3.2**: *"Selecting the appropriate resource type and size (for example, the amount of Lambda memory) to meet business requirements."* (selecionar o tipo e o tamanho de recurso apropriados (por exemplo, a quantidade de memória do Lambda) para atender aos requisitos de negócio)
 
 ## 2. Concorrência — reserved × provisioned
 
