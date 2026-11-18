@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** 4, correspondendo aos domínios da prova
 > **D)** 7
 >
-> **Por que B**: *"operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability"*. Material antigo lista cinco.
+> **Por que B**: *"operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability"* (excelência operacional, segurança, confiabilidade, eficiência de performance, otimização de custo e sustentabilidade). Material antigo lista cinco.
 
 > [!question]- Q2. Uma aplicação precisa armazenar métricas de sensores, consultadas por janela de tempo.
 > **A)** RDS PostgreSQL com índice no timestamp

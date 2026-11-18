@@ -28,7 +28,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Simple** | *"a single resource that performs a given function for your domain"* (um único recurso que executa determinada função para o seu domínio). ⚠️ **Não faz health check** |
 | **Failover** | *"active-passive failover"* |
-| **Geolocation** | *"route traffic based on the location of your users"* |
+| **Geolocation** | *"route traffic based on the location of your users"* (rotear o tráfego com base na localização dos seus usuários) |
 | **Geoproximity** | *"based on the location of your resources"* (com base na localização dos seus recursos), com **bias** |
 | **Latency** | *"the Region that provides the best latency"* (a Região que oferece a melhor latência) |
 | **IP-based** | Por **faixa de IP** de origem |

@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 > **C)** Adicionar read replicas
 > **D)** Reserved concurrency na Lambda
 >
-> **Por que B**: o proxy faz *"pool and share database connections"* e faz load shedding no excesso.
+> **Por que B**: o proxy faz *"pool and share database connections"* (agrupar e compartilhar conexões de banco) e faz load shedding no excesso.
 > **A errada**: empurra o problema; conexões consomem memória do banco.
 > **C errada**: ajuda em leitura, não no esgotamento de conexões de escrita.
 > **D errada**: estrangula a aplicação em vez de resolver.
@@ -80,7 +80,7 @@ atualizado: 2026-11-08
 | Backup automático sobrevive à exclusão | **Só o snapshot manual** |
 | Instância parada não custa nada | O **storage continua cobrando** |
 | Dá para habilitar criptografia depois | Só via **snapshot → cópia criptografada → restore** |
-| RDS Proxy funciona com read replica | *"only with the writer DB instance, not a read replica"* |
+| RDS Proxy funciona com read replica | *"only with the writer DB instance, not a read replica"* (apenas com a instância de escrita, não com uma réplica de leitura) |
 
 ## Links
 

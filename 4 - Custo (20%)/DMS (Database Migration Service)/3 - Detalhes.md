@@ -62,7 +62,7 @@ Dimensionar a **replication instance** importa: carga grande com muitas mudança
 
 ## 5. Origens e destinos
 
-O DMS cobre *"relational databases, data warehouses, NoSQL databases, and other types of data stores"*. Combinações que aparecem em prova:
+O DMS cobre *"relational databases, data warehouses, NoSQL databases, and other types of data stores"* (bancos relacionais, data warehouses, bancos NoSQL e outros tipos de repositório de dados). Combinações que aparecem em prova:
 
 | Origem | Destino |
 |---|---|

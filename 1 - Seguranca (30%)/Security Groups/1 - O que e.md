@@ -17,7 +17,7 @@ Um security group é uma lista de "quem pode falar comigo e em qual porta". A do
 
 Duas propriedades definem tudo:
 
-**1. É stateful.** Se a conexão saiu, a resposta volta — não importa a regra de entrada. *"if you send a request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules."* O contrário também vale.
+**1. É stateful.** Se a conexão saiu, a resposta volta — não importa a regra de entrada. *"if you send a request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules."* (se você envia uma requisição a partir de uma instância, o tráfego de resposta pode chegar a ela independentemente das regras de entrada do security group) O contrário também vale.
 
 **2. Só tem allow.** Não existe regra de negação. Para bloquear um IP específico, você precisa de **NACL** (rede) ou **WAF** (camada 7).
 

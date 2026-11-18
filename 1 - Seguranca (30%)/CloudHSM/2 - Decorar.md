@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 |---|---|
 | Modos de cluster | **FIPS mode** (só algoritmos validados FIPS) e **non-FIPS mode** (todos os suportados) |
 | Alta disponibilidade | Cluster de HSMs; você distribui entre AZs |
-| O que você faz | *"generate, store, import, export, manage, and use cryptographic keys"* |
+| O que você faz | *"generate, store, import, export, manage, and use cryptographic keys"* (gerar, armazenar, importar, exportar, gerenciar e usar chaves criptográficas) |
 | Integração com KMS | **Custom key store** — a KMS usa o seu cluster CloudHSM como backing |
 | Alternativa para pagamentos | **AWS Payment Cryptography** |
 

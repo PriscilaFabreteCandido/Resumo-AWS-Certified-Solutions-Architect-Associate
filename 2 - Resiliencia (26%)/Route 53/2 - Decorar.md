@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 - **CloudFront distribution**
 - **App Runner service**
 - **Elastic Beanstalk environment**
-- **Elastic Load Balancing** (*"includes Application Load Balancer, Classic Load Balancer and, Network Load Balancer"*)
+- **Elastic Load Balancing** (*"includes Application Load Balancer, Classic Load Balancer and, Network Load Balancer"* (inclui Application Load Balancer, Classic Load Balancer e Network Load Balancer))
 - **AWS Global Accelerator accelerator**
 - **OpenSearch Service custom domain**
 - **S3 bucket configurado como site estático**

@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 > **D)** Aumentar o número de shards
 >
 > **Por que B**: *"you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds"*.
-> ⚠️ Mas note: zero buffering não vale para o **destino de backup no S3**, e intervalo abaixo de 60 s no S3 usa multipart upload, com *"some increase in S3 PUT API costs"*.
+> ⚠️ Mas note: zero buffering não vale para o **destino de backup no S3**, e intervalo abaixo de 60 s no S3 usa multipart upload, com *"some increase in S3 PUT API costs"* (algum aumento nos custos de requisições PUT do S3).
 > **C**: é a resposta se a exigência fosse **sub-segundo** ou replay.
 
 > [!question]- Q3. Depois de um bug no consumidor, o time precisa reprocessar as últimas 24 horas. O pipeline usa Firehose.

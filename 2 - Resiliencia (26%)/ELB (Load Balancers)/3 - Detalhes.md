@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. ALB — camada 7
 
-O ALB *"functions at the application layer, the seventh layer of the OSI model"*. Por entender HTTP, ele pode rotear pelo **conteúdo da requisição**:
+O ALB *"functions at the application layer, the seventh layer of the OSI model"* (opera na camada de aplicação, a sétima camada do modelo OSI). Por entender HTTP, ele pode rotear pelo **conteúdo da requisição**:
 
 | Condição | Exemplo |
 |---|---|
@@ -21,7 +21,7 @@ O ALB *"functions at the application layer, the seventh layer of the OSI model"*
 
 Também faz **redirect** (HTTP → HTTPS) e **fixed response** (devolver 503 de manutenção) sem tocar no backend.
 
-Protocolos: front-end *"HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2"* (HTTP/0.9, HTTP/1.0, HTTP/1.1 e HTTP/2), e *"You can use HTTP/2 only with HTTPS listeners"* (você só pode usar HTTP/2 com listeners HTTPS). Backend em HTTP/1.1 por padrão, com HTTP/2 ou **gRPC** opcionais. WebSocket é suportado via upgrade — mas atenção: *"if there is a connection upgrade, Application Load Balancer listener routing rules and AWS WAF integrations no longer apply"*.
+Protocolos: front-end *"HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2"* (HTTP/0.9, HTTP/1.0, HTTP/1.1 e HTTP/2), e *"You can use HTTP/2 only with HTTPS listeners"* (você só pode usar HTTP/2 com listeners HTTPS). Backend em HTTP/1.1 por padrão, com HTTP/2 ou **gRPC** opcionais. WebSocket é suportado via upgrade — mas atenção: *"if there is a connection upgrade, Application Load Balancer listener routing rules and AWS WAF integrations no longer apply"* (se houver upgrade de conexão, as regras de roteamento do listener do Application Load Balancer e as integrações com o AWS WAF deixam de valer).
 
 Headers que ele adiciona: **`X-Forwarded-For`**, **`X-Forwarded-Proto`**, **`X-Forwarded-Port`** — é assim que o backend sabe o IP real do cliente.
 
@@ -29,7 +29,7 @@ Headers que ele adiciona: **`X-Forwarded-For`**, **`X-Forwarded-Proto`**, **`X-F
 
 ## 2. NLB — camada 4
 
-O NLB *"functions at the fourth layer"*. Não entende HTTP: roteia por **hash de fluxo**, e *"Each individual TCP connection is routed to a single target for the life of the connection."* (cada conexão TCP individual é roteada para um único alvo durante toda a vida da conexão)
+O NLB *"functions at the fourth layer"* (opera na quarta camada). Não entende HTTP: roteia por **hash de fluxo**, e *"Each individual TCP connection is routed to a single target for the life of the connection."* (cada conexão TCP individual é roteada para um único alvo durante toda a vida da conexão)
 
 A característica decisiva é o **IP estático**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address."* (o Elastic Load Balancing cria uma interface de rede para cada Zona de Disponibilidade habilitada, e a usa para obter um endereço IP estático) E opcionalmente *"you can optionally associate one Elastic IP address with each network interface."*
 
@@ -37,13 +37,13 @@ Isso resolve dois problemas de prova:
 - Clientes que precisam **liberar IPs em firewall**
 - Protocolos que não são HTTP (jogos, VoIP, MQTT, bancos de dados)
 
-Targets: *"instance IDs, IP addresses, or an Application Load Balancer"* — colocar um ALB atrás de um NLB é o padrão para ter IP estático **e** roteamento de camada 7.
+Targets: *"instance IDs, IP addresses, or an Application Load Balancer"* (IDs de instância, endereços IP ou um Application Load Balancer) — colocar um ALB atrás de um NLB é o padrão para ter IP estático **e** roteamento de camada 7.
 
 Preservação do IP de origem depende do **target type**: a doc diz *"The target type also affects whether the client IP addresses are preserved."* (o tipo de alvo também determina se os endereços IP do cliente são preservados) Com target por **instance ID**, o IP do cliente chega preservado.
 
 ## 3. GWLB — camada 3
 
-O GWLB *"operates at the third layer... the network layer"* e *"listens for all IP packets across all ports"*. Encapsula o tráfego em **GENEVE na porta 6081** e o entrega a um fleet de appliances (firewall, IDS/IPS de terceiro), que inspecionam e devolvem.
+O GWLB *"operates at the third layer... the network layer"* (opera na terceira camada... a camada de rede) e *"listens for all IP packets across all ports"* (escuta todos os pacotes IP, em todas as portas). Encapsula o tráfego em **GENEVE na porta 6081** e o entrega a um fleet de appliances (firewall, IDS/IPS de terceiro), que inspecionam e devolvem.
 
 Mantém **flow stickiness** *"to a specific target appliance using 5-tuple (default), 3-tuple, or 2-tuple"* — importante porque appliances de inspeção são *stateful*.
 

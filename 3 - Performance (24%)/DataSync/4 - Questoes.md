@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Snow Family
 > **D)** Storage Gateway
 >
-> **Por que B**: *"high-speed file transfer service"* com *"automatic encryption and data integrity validation"* (criptografia automática e validação de integridade dos dados) e arquitetura paralela multi-thread.
+> **Por que B**: *"high-speed file transfer service"* (serviço de transferência de arquivos de alta velocidade) com *"automatic encryption and data integrity validation"* (criptografia automática e validação de integridade dos dados) e arquitetura paralela multi-thread.
 > **A errada**: sequencial, sem validação nem preservação de metadados.
 > **C errada**: 20 TB em 1 Gbps cabe em ~2 dias — não precisa de dispositivo físico.
 > **D errada**: Gateway é **acesso contínuo**, não migração.

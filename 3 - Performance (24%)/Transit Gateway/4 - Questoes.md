@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** PrivateLink entre todas as VPCs
 > **D)** VPN entre cada VPC e o datacenter
 >
-> **Por que B**: é o *"network transit hub used to interconnect VPCs and on-premises networks"*, com roteamento transitivo e *"up to 5,000 attachments"* (até 5.000 attachments).
+> **Por que B**: é o *"network transit hub used to interconnect VPCs and on-premises networks"* (hub de trânsito de rede usado para interligar VPCs e redes on-premises), com roteamento transitivo e *"up to 5,000 attachments"* (até 5.000 attachments).
 > **A errada**: peering **não é transitivo** e 50 VPCs em malha = **1.225** conexões.
 > **C errada**: PrivateLink expõe **serviço**, não conecta redes inteiras.
 > **D errada**: 50 VPNs para gerenciar, e as VPCs não se falariam.

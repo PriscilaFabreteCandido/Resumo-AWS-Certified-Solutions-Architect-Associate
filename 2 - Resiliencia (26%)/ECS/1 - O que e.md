@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Amazon ECS — O que é
 
 > [!info] Em uma frase
-> *"fully managed container orchestration service"* da AWS: você descreve a aplicação numa **task definition** e o ECS a roda num **cluster**, sobre **Fargate** (serverless) ou **EC2** (você gerencia).
+> *"fully managed container orchestration service"* (serviço totalmente gerenciado de orquestração de contêineres) da AWS: você descreve a aplicação numa **task definition** e o ECS a roda num **cluster**, sobre **Fargate** (serverless) ou **EC2** (você gerencia).
 
 ## O vocabulário (definições oficiais)
 

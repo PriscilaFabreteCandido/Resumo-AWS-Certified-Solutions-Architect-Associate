@@ -40,9 +40,9 @@ Consequências de prova:
 | *"we must control who can use the key"* | **Customer managed key** (tem **key policy**) |
 | *"audit every use of the key"* (auditar cada uso da chave) | **SSE-KMS** / CMK → **CloudTrail** registra cada `Decrypt` |
 | *"rotate keys annually"* | **AWS managed** já faz; CMK com rotação **habilitada** |
-| *"rotate on our own schedule"* / *"revoke"* | **Customer managed key** |
-| *"share encrypted snapshot with another account"* | **Customer managed key** (não é possível com AWS managed) |
-| *"keys must never leave hardware we control"*, *"FIPS 140-3 Level 3"* (FIPS 140-3 nível 3), *"single-tenant HSM"* (HSM de inquilino único) | **CloudHSM** |
+| *"rotate on our own schedule"* (rotacionar no nosso próprio calendário) / *"revoke"* | **Customer managed key** |
+| *"share encrypted snapshot with another account"* (compartilhar um snapshot criptografado com outra conta) | **Customer managed key** (não é possível com AWS managed) |
+| *"keys must never leave hardware we control"* (as chaves nunca podem sair de um hardware que nós controlamos), *"FIPS 140-3 Level 3"* (FIPS 140-3 nível 3), *"single-tenant HSM"* (HSM de inquilino único) | **CloudHSM** |
 | *"AWS must never have access to the plaintext"* (a AWS nunca pode ter acesso ao texto em claro) | **Client-side encryption** (ou **SSE-C**) |
 | *"double encryption"* | **DSSE-KMS** |
 

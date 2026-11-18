@@ -66,7 +66,7 @@ atualizado: 2026-11-08
 | Peering é transitivo | **Não é** |
 | Dá para usar o NAT/IGW da VPC pareada | **Não dá** |
 | CIDR sobreposto se resolve com NAT | **Impede** a conexão. Contorno: **PrivateLink** |
-| Peering tem gargalo de banda | *"no single point of failure for communication or a bandwidth bottleneck"* |
+| Peering tem gargalo de banda | *"no single point of failure for communication or a bandwidth bottleneck"* (sem ponto único de falha na comunicação e sem gargalo de banda) |
 | Peering é cobrado por hora | **Criação grátis**; dados na mesma AZ **grátis** |
 | Basta aceitar o peering | Precisa de **rotas nas duas** VPCs |
 | Peering não funciona entre contas/regiões | Funciona nos dois casos |

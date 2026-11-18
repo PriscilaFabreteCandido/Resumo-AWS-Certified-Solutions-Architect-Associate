@@ -61,7 +61,7 @@ Exemplo oficial: item de **3 KB** ÷ 4 KB = 0,75 → arredonda para **1 RCU**.
 | Consistência | *"eventual consistency only"* (somente consistência eventual) | **eventual ou forte** |
 | Capacidade | **própria** | consome a da **tabela base** |
 | Atributo não projetado | **não** devolve | **busca na tabela** |
-| Escopo da query | *"across all partitions"* (em todas as partições) | *"over a single partition"* |
+| Escopo da query | *"across all partitions"* (em todas as partições) | *"over a single partition"* (sobre uma única partição) |
 
 Atributos projetados: **100** no total para todos os índices (projeção INCLUDE).
 

@@ -14,7 +14,7 @@ atualizado: 2026-11-08
 
 **Simple scaling** — uma ação por alarme, com **cooldown** bloqueando a próxima. A AWS recomenda **não usar**: *"we recommend that you do not use simple scaling policies and scaling cooldowns."*
 
-**Scheduled** — para padrão de calendário conhecido. Também pode *"start scaling immediately without waiting for the cooldown period"*.
+**Scheduled** — para padrão de calendário conhecido. Também pode *"start scaling immediately without waiting for the cooldown period"* (começar a escalar imediatamente, sem esperar o período de cooldown).
 
 **Predictive** — usa histórico para provisionar **antes** do pico: *"Scale proactively... in advance of daily and weekly patterns."* (escalar de forma proativa... antecipando padrões diários e semanais) Combina com dynamic (predictive dimensiona a base, dynamic cobre o imprevisto).
 
@@ -44,13 +44,13 @@ Grace period curto demais → o ASG mata instâncias que ainda estão inicializa
 
 ## 4. Terminação e equilíbrio entre AZs
 
-A **ordem padrão** começa pela AZ com mais instâncias, depois pela configuração mais antiga, e por fim pela mais próxima da próxima hora de cobrança (a doc nota que *"most EC2 usage is now billed per second, so this optimization provides less benefit"*).
+A **ordem padrão** começa pela AZ com mais instâncias, depois pela configuração mais antiga, e por fim pela mais próxima da próxima hora de cobrança (a doc nota que *"most EC2 usage is now billed per second, so this optimization provides less benefit"* (a maior parte do uso do EC2 hoje é cobrada por segundo, então essa otimização traz menos benefício)).
 
 Duas regras que sobrepõem a política:
 - *"Maintaining Zonal balance takes precedence over the termination policy."* (manter o equilíbrio entre as zonas tem precedência sobre a política de encerramento)
 - Instância **unhealthy** salta a avaliação e é substituída direto.
 
-No **rebalanceamento**, o ASG *"launches new instances before terminating the old ones"*, e pode exceder o máximo em **10%** (ou uma instância) temporariamente.
+No **rebalanceamento**, o ASG *"launches new instances before terminating the old ones"* (sobe as instâncias novas antes de encerrar as antigas), e pode exceder o máximo em **10%** (ou uma instância) temporariamente.
 
 ## 5. Lifecycle hooks
 

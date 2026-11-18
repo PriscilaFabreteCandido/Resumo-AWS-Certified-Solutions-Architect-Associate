@@ -61,7 +61,7 @@ Restrições: node types `rg.*` e `ra3.*` (**máx. 32** compute nodes), e **não
 | Origem | Como |
 |---|---|
 | **S3** | `COPY` (a forma mais eficiente; paralelo entre slices) |
-| **Kinesis Data Firehose** | Entrega no **S3 primeiro**, depois o Firehose *"issues an Amazon Redshift COPY command"* |
+| **Kinesis Data Firehose** | Entrega no **S3 primeiro**, depois o Firehose *"issues an Amazon Redshift COPY command"* (emite um comando COPY do Amazon Redshift) |
 | **DMS** | Migração de outro banco |
 | **Glue** | ETL antes de carregar |
 | **Spectrum** | Sem carregar |

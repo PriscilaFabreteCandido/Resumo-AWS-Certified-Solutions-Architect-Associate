@@ -27,9 +27,9 @@ atualizado: 2026-11-08
 
 | Conceito | O que é |
 |---|---|
-| **Table** | A tabela. *"no limit to the number of items you can store"* |
+| **Table** | A tabela. *"no limit to the number of items you can store"* (sem limite para a quantidade de itens que você pode armazenar) |
 | **Item** | O registro. Máximo **400 KB** |
-| **Partition key** | Define **onde** o item mora. Com ela só, *"no two items can have the same partition key value"* |
+| **Partition key** | Define **onde** o item mora. Com ela só, *"no two items can have the same partition key value"* (dois itens não podem ter o mesmo valor de partition key) |
 | **Sort key** | Opcional. Com ela, vários itens compartilham a partition key, com sort keys diferentes |
 | **Atributo** | Campo. Chave só aceita **string, number ou binary** (escalar) |
 

@@ -27,7 +27,7 @@ A prova de SAA raramente pede detalhe de configuração destes cinco serviços. 
 
 ## Fonte de dados deste serviço
 
-Extrai eventos temporais (*"login attempts, API calls, and network traffic"*) do **CloudTrail** e dos **VPC Flow Logs**, e ingere **achados do GuardDuty**. Retém **até um ano** de histórico.
+Extrai eventos temporais (*"login attempts, API calls, and network traffic"* (tentativas de login, chamadas de API e tráfego de rede)) do **CloudTrail** e dos **VPC Flow Logs**, e ingere **achados do GuardDuty**. Retém **até um ano** de histórico.
 
 ## Links
 

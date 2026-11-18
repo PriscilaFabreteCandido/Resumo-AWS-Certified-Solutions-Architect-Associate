@@ -32,7 +32,7 @@ A decisão depende de **três** perguntas, nesta ordem:
 ### Quando Intelligent-Tiering **não** é econômico
 
 1. **Padrão de acesso conhecido** — a taxa de monitoramento por objeto vira desperdício.
-2. **Muitos objetos pequenos** — a taxa é **por objeto**, e objeto abaixo de 128 KB *"is not monitored and not eligible for auto-tiering"*, ficando eternamente no Frequent Access (o tier mais caro).
+2. **Muitos objetos pequenos** — a taxa é **por objeto**, e objeto abaixo de 128 KB *"is not monitored and not eligible for auto-tiering"* (não é monitorado nem elegível a mudança automática de camada), ficando eternamente no Frequent Access (o tier mais caro).
 3. **Dado que já nasce frio** — vá direto para a classe de arquivo.
 
 ## 2. Lifecycle
@@ -103,11 +103,11 @@ O S3 escala por **prefixo**: *"your application can achieve at least 3,500 PUT/C
 
 Consequência prática: 10 prefixos de leitura = **55.000 requisições por segundo**. Se a aplicação recebe **503 Slow Down**, a resposta é **distribuir as chaves em mais prefixos** e aplicar retry com backoff — não "pedir aumento de limite".
 
-O escalonamento *"happens gradually and is not instantaneous"*, então os 503 aparecem durante a subida.
+O escalonamento *"happens gradually and is not instantaneous"* (acontece de forma gradual, não instantânea), então os 503 aparecem durante a subida.
 
 **Multipart upload**: recomendado a partir de **100 MB**; partes de **5 MiB a 5 GiB** (a última parte não tem mínimo); até **10.000** partes. As partes podem subir em paralelo e fora de ordem — é o que dá throughput.
 
-**Transfer Acceleration**: usa a borda do CloudFront para **upload**. A doc diz para usar quando *"Your customers upload to a centralized general purpose bucket from all over the world"* (seus clientes fazem upload para um bucket central de uso geral, do mundo inteiro), quando você transfere *"gigabytes to terabytes of data on a regular basis across continents"*, ou quando *"You can't use all of your available bandwidth over the internet"* (você não consegue aproveitar toda a sua banda disponível pela internet). Requer nome de bucket sem ponto, e o efeito pode levar *"up to 20 minutes"* para aparecer.
+**Transfer Acceleration**: usa a borda do CloudFront para **upload**. A doc diz para usar quando *"Your customers upload to a centralized general purpose bucket from all over the world"* (seus clientes fazem upload para um bucket central de uso geral, do mundo inteiro), quando você transfere *"gigabytes to terabytes of data on a regular basis across continents"* (de gigabytes a terabytes de dados, regularmente, entre continentes), ou quando *"You can't use all of your available bandwidth over the internet"* (você não consegue aproveitar toda a sua banda disponível pela internet). Requer nome de bucket sem ponto, e o efeito pode levar *"up to 20 minutes"* para aparecer.
 
 Para centenas de milhares de requisições por segundo com latência de **único dígito de milissegundo**, a classe indicada é **S3 Express One Zone** (*"up to 10x faster and with request costs 50 percent lower than S3 Standard"*).
 
@@ -131,7 +131,7 @@ Pontos que a prova explora:
 
 - **Retention period** em modo **Compliance** — *"can't be overwritten or deleted by any user, including the root user in your AWS account"* (não pode ser sobrescrito nem apagado por nenhum usuário, inclusive o usuário raiz da sua conta). O período não encurta. *"The only way to delete an object under the compliance mode before its retention date expires is to delete the associated AWS account."* (a única forma de apagar um objeto em modo compliance antes do fim da retenção é encerrar a conta AWS associada)
 - **Retention period** em modo **Governance** — quem tiver `s3:BypassGovernanceRetention` **e** enviar `x-amz-bypass-governance-retention:true` consegue apagar.
-- **Legal hold** — *"has no expiration date... remains in place until you explicitly remove it"*.
+- **Legal hold** — *"has no expiration date... remains in place until you explicitly remove it"* (não tem data de expiração... permanece até você removê-lo explicitamente).
 
 **Block Public Access** tem quatro flags independentes e é avaliado assim: *"S3 applies the most restrictive combination"* (o S3 aplica a combinação mais restritiva) entre access point, bucket e conta. Pode ser aplicado no nível de **organização** (as quatro juntas), conta, bucket ou access point. Não altera policies nem ACLs existentes — apenas neutraliza o efeito público delas.
 

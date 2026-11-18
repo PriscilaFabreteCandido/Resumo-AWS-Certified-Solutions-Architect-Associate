@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 O desenho tradicional de acesso administrativo tem três fraquezas: uma **porta 22 aberta** (mesmo que restrita), um **bastion host** para patchear e monitorar, e **chaves SSH** para distribuir e rotacionar.
 
-A doc coloca o problema assim: deixar *"inbound SSH ports and remote PowerShell ports open... greatly increases the risk"*.
+A doc coloca o problema assim: deixar *"inbound SSH ports and remote PowerShell ports open... greatly increases the risk"* (manter portas de SSH de entrada e de PowerShell remoto abertas... aumenta muito o risco).
 
 O Session Manager inverte: o **agente** na instância abre uma conexão **de saída** para o serviço, e a sessão trafega por ali. Resultado:
 

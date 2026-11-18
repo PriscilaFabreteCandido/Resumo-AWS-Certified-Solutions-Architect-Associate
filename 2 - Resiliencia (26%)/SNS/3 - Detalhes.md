@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 O SNS é **push** e **não armazena**. Se o assinante está indisponível, o SNS tenta conforme a política de retry e depois desiste (ou manda para a DLQ).
 
-Para **SQS e Lambda** o retry é generoso — *"retries delivery up to 100,015 times, over 23 days"*. Para **SMS, push e e-mail**, é *"50 times over 6 hours"* (50 vezes ao longo de 6 horas). Para **HTTP/HTTPS**, a política é sua.
+Para **SQS e Lambda** o retry é generoso — *"retries delivery up to 100,015 times, over 23 days"* (tenta entregar até 100.015 vezes, ao longo de 23 dias). Para **SMS, push e e-mail**, é *"50 times over 6 hours"* (50 vezes ao longo de 6 horas). Para **HTTP/HTTPS**, a política é sua.
 
 Mas erro de **cliente** (4xx) **não é retentado**: a mensagem é descartada, a menos que haja DLQ.
 

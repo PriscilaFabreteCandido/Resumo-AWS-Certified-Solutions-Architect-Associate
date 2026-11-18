@@ -26,7 +26,7 @@ Distinções que a prova explora:
 
 **Weighted** é o mecanismo de **canary** e de **migração gradual**: 95% para o ambiente antigo, 5% para o novo, e você vai mudando.
 
-**Multivalue answer × simple com vários IPs**: o simple devolve vários valores *"in random order"* mas **sem health check**. O multivalue devolve *"up to eight healthy records selected at random"* (até oito registros saudáveis, escolhidos aleatoriamente) — ou seja, **com** health check. Para balanceamento rudimentar com detecção de falha, é multivalue.
+**Multivalue answer × simple com vários IPs**: o simple devolve vários valores *"in random order"* (em ordem aleatória) mas **sem health check**. O multivalue devolve *"up to eight healthy records selected at random"* (até oito registros saudáveis, escolhidos aleatoriamente) — ou seja, **com** health check. Para balanceamento rudimentar com detecção de falha, é multivalue.
 
 ## 2. Alias — por que sempre preferir
 
@@ -51,7 +51,7 @@ exemplo.com (A, alias)
 └── SECONDARY → ALB em sa-east-1   (ou site estático no S3, para "modo degradado")
 ```
 
-O Route 53 *"includes only the healthy primary resources"* nas respostas; quando o primário falha no health check, passa a responder com o secundário.
+O Route 53 *"includes only the healthy primary resources"* (inclui apenas os recursos primários saudáveis) nas respostas; quando o primário falha no health check, passa a responder com o secundário.
 
 ⚠️ O failover por DNS **não é instantâneo**: depende do **TTL** e do cache dos resolvers. Se o requisito é failover em segundos, a resposta é **AWS Global Accelerator** (IP anycast, *"reacts instantly to changes in health or configuration"* (reage instantaneamente a mudanças de saúde ou configuração)) ou **CloudFront origin failover**.
 

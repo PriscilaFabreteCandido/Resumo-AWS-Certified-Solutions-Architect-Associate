@@ -22,7 +22,7 @@ O volume **cresce e encolhe** automaticamente: *"Aurora cluster volume can grow 
 
 | Cenário | Tempo |
 |---|---|
-| **Com** Aurora Replica | *"service is typically restored in less than 60 seconds, and often less than 30 seconds"* |
+| **Com** Aurora Replica | *"service is typically restored in less than 60 seconds, and often less than 30 seconds"* (o serviço normalmente é restabelecido em menos de 60 segundos, e frequentemente em menos de 30) |
 | **Sem** réplica | *"the primary instance is recreated in the same AZ... typically takes less than 10 minutes"* (a instância primária é recriada na mesma AZ... normalmente leva menos de 10 minutos) |
 
 A doc acrescenta: *"Promoting an Aurora Replica to the primary instance is much faster than creating a new primary instance."* (promover uma réplica do Aurora a instância primária é muito mais rápido do que criar uma instância primária nova)
@@ -49,9 +49,9 @@ E uma dica operacional da própria doc: *"the fastest path to recovery is often 
 
 ## 4. Aurora Global Database
 
-Estrutura: *"one primary AWS Region where your data is written, and up to 10 read-only secondary AWS Regions"*. O lag é *"typically under a second"* (normalmente abaixo de um segundo), com *"dedicated infrastructure"*.
+Estrutura: *"one primary AWS Region where your data is written, and up to 10 read-only secondary AWS Regions"* (uma Região primária, onde seus dados são gravados, e até 10 Regiões secundárias somente de leitura). O lag é *"typically under a second"* (normalmente abaixo de um segundo), com *"dedicated infrastructure"*.
 
-Cada cluster secundário suporta **16** instâncias de leitura — *"rather than the usual limit of 15 for a single Aurora cluster"*, porque não precisa de writer.
+Cada cluster secundário suporta **16** instâncias de leitura — *"rather than the usual limit of 15 for a single Aurora cluster"* (em vez do limite usual de 15 de um único cluster do Aurora), porque não precisa de writer.
 
 **Switchover × failover** — a distinção mais importante:
 
@@ -62,11 +62,11 @@ Cada cluster secundário suporta **16** instâncias de leitura — *"rather than
 
 RTO geral: *"can be in the order of minutes"* (pode ser da ordem de minutos). Em versões qualificadas, o switchover leva *"typically under 30 seconds"* (normalmente abaixo de 30 segundos).
 
-**Write forwarding**: *"secondary clusters in an Aurora global database forward SQL statements that perform write operations to the primary cluster."* Ou seja: **não é multi-master** — a escrita sempre acaba na primária.
+**Write forwarding**: *"secondary clusters in an Aurora global database forward SQL statements that perform write operations to the primary cluster."* (os clusters secundários de um banco global do Aurora encaminham ao cluster primário as instruções SQL que fazem operações de escrita) Ou seja: **não é multi-master** — a escrita sempre acaba na primária.
 
 Limitações documentadas: sem **Aurora Auto Scaling** nas secundárias, sem **Backtrack**, não dá para parar/iniciar clusters individualmente, e *"Secrets Manager doesn't support Aurora Global Database"* (o Secrets Manager não oferece suporte ao Aurora Global Database).
 
-Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` aceita *"from 20 seconds to 2,147,483,647 seconds"* e **bloqueia a transação** se o lag das secundárias exceder o RPO definido.
+Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` aceita *"from 20 seconds to 2,147,483,647 seconds"* (de 20 segundos a 2.147.483.647 segundos) e **bloqueia a transação** se o lag das secundárias exceder o RPO definido.
 
 ## 5. Aurora Serverless v2
 
@@ -87,7 +87,7 @@ Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling u
 | **Aurora Standard** | *"best choice when your I/O spending is less than 25%"* (melhor escolha quando seu gasto com I/O é menor que 25%) da fatura |
 | **Aurora I/O-Optimized** | *"best choice when your I/O spending is 25% or more"* (melhor escolha quando seu gasto com I/O é de 25% ou mais) — sem cobrança por I/O |
 
-Troca de Standard para I/O-Optimized: *"once every 30 days"*.
+Troca de Standard para I/O-Optimized: *"once every 30 days"* (uma vez a cada 30 dias).
 
 ## Links
 

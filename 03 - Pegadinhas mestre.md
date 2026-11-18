@@ -94,7 +94,7 @@ atualizado: 2026-11-08
 | ALB tem IP estático | **Não.** ALB tem **DNS name**. IP estático é **NLB** (e Elastic IP opcional por AZ). |
 | Cross-zone load balancing vem ligado em tudo | **ALB**: sempre ligado no nível do LB. **NLB e GWLB**: *"disabled by default"*. |
 | WAF funciona com NLB | **ALB**, CloudFront, API Gateway REST, AppSync, Cognito user pool, App Runner, Verified Access, Amplify. **Não NLB.** |
-| ALB pode rodar em 1 AZ | *"it is a requirement that you enable at least two or more Availability Zones."* |
+| ALB pode rodar em 1 AZ | *"it is a requirement that you enable at least two or more Availability Zones."* (é obrigatório habilitar pelo menos duas Zonas de Disponibilidade) |
 | Lambda pode ser target de NLB | **Lambda é target de ALB.** NLB aceita instance ID, IP e **ALB**. |
 
 ## 6. EC2, Auto Scaling, Spot
@@ -167,7 +167,7 @@ atualizado: 2026-11-08
 | Certificado ACM funciona em qualquer região | É **regional**, não copia entre regiões — e para **CloudFront tem que ser us-east-1**. |
 | GuardDuty escaneia vulnerabilidade | GuardDuty detecta **ameaça/comportamento** (CloudTrail + VPC Flow + DNS). **Vulnerabilidade/CVE é Inspector.** **PII no S3 é Macie.** |
 | Security Hub detecta ameaça | Security Hub **agrega e avalia postura**. Quem detecta é GuardDuty/Inspector/Macie. Quem **investiga** é Detective. |
-| Shield Standard precisa ser contratado | *"provided automatically and at no extra charge."* |
+| Shield Standard precisa ser contratado | *"provided automatically and at no extra charge."* (fornecido automaticamente e sem custo extra) |
 | Cognito user pool dá acesso ao S3 | **User pool autentica** (emite JWT). Quem troca token por **credencial AWS** é o **identity pool**. |
 | Secrets Manager e Parameter Store são iguais | **Secrets Manager**: rotação automática nativa, cobrado por secret. **Parameter Store**: sem rotação, tier Standard **grátis**. |
 | Rotacionar regularmente a chave de acesso do root é boa prática | A doc atual diz **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) — não criar. A rotação só aparece em material antigo |

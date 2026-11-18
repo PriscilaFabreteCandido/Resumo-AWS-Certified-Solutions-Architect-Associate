@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 | **Event bus** | O canal. O barramento **default** recebe os eventos dos serviços AWS; você cria **custom** para os seus; **partner** para SaaS |
 | **Rule** | Padrão de evento (*event pattern*) + **targets** |
 | **Target** | Lambda, SQS, SNS, Step Functions, ECS task, API destination (HTTP), outro bus… |
-| **EventBridge Pipes** | *"intended for point-to-point integrations; each pipe receives events from a single source... to a single target"*, com filtro e **enriquecimento** |
+| **EventBridge Pipes** | *"intended for point-to-point integrations; each pipe receives events from a single source... to a single target"* (pensado para integrações ponto a ponto; cada pipe recebe eventos de uma única origem... para um único destino), com filtro e **enriquecimento** |
 | **EventBridge Scheduler** | *"create schedules using cron and rate expressions for recurring patterns, or configure one-time invocations"* (criar agendamentos com expressões cron e rate para padrões recorrentes, ou configurar invocações únicas) |
 | **Schema registry** | Descobre e versiona o schema dos eventos |
 

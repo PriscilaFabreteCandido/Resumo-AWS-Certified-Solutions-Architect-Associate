@@ -15,7 +15,7 @@ Viewer → POP (edge location) → REGIONAL EDGE CACHE → Origem
 Os **POPs** são a primeira camada. Os **regional edge caches** ficam entre eles e a origem, com cache maior — *"bring more of your content closer to your viewers, even when the content is not popular enough to stay at a POP"* (trazer mais conteúdo para perto dos seus visitantes, mesmo quando ele não é popular o bastante para permanecer num POP).
 
 O caminho é **pulado** em três casos:
-- Métodos **PUT, POST, PATCH, OPTIONS, DELETE** — *"go directly to the origin from the POPs"*
+- Métodos **PUT, POST, PATCH, OPTIONS, DELETE** — *"go directly to the origin from the POPs"* (vão direto dos POPs para a origem)
 - Requisições **dinâmicas**
 - Origem **S3 na mesma região** do regional edge cache ótimo
 

@@ -80,7 +80,7 @@ atualizado: 2026-11-08
 | OAI e OAC são equivalentes | OAC suporta **SSE-KMS**, PUT/DELETE e todas as regiões |
 | Website endpoint do S3 funciona com OAC | **Não.** Vira custom origin |
 | Regional edge cache acelera tudo | **Não** para PUT/POST/PATCH/OPTIONS/DELETE nem conteúdo dinâmico |
-| Origin failover é sticky | *"routes all incoming requests to the primary origin, even when a previous request failed over"* |
+| Origin failover é sticky | *"routes all incoming requests to the primary origin, even when a previous request failed over"* (roteia todas as requisições que chegam para a origem primária, mesmo quando uma requisição anterior sofreu failover) |
 | Signed URL e signed cookie são iguais | URL = arquivo individual; cookie = vários sem mudar URL. **URL tem precedência** |
 | CloudFront serve UDP | HTTP/HTTPS só. UDP = **Global Accelerator** |
 | CloudFront encarece | Origem AWS → CloudFront é **grátis**; egress pela borda é mais barato |

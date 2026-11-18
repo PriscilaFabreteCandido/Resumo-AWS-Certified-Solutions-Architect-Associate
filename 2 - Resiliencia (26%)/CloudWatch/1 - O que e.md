@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Amazon CloudWatch — O que é
 
 > [!info] Em uma frase
-> *"monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time"* — métricas, logs, alarmes e dashboards.
+> *"monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time"* (monitora em tempo real seus recursos da AWS e as aplicações que você executa nela) — métricas, logs, alarmes e dashboards.
 
 ## A pergunta que ele responde
 

@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 | **Trigger** | Agendado, on-demand ou **por evento** |
 | **Streaming ETL** | *"Clean and transform streaming data in transit"* (limpar e transformar dados de streaming em trânsito) |
 
-Conecta a *"more than 70 diverse data sources"*.
+Conecta a *"more than 70 diverse data sources"* (mais de 70 fontes de dados diferentes).
 
 ## Glue × EMR
 

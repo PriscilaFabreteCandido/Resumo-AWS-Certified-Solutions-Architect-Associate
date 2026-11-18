@@ -56,8 +56,8 @@ Termos: **1 ou 3 anos**. Pagamento: All upfront, Partial upfront, No upfront. *"
 
 *"are not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account"* (não são instâncias físicas, e sim um desconto de faturamento aplicado ao uso de instâncias sob demanda na sua conta). O preço depende de **instance type, Region, tenancy e platform**.
 
-- **Standard**: *"provide the most significant discount, but can only be modified. Standard Reserved Instances can't be exchanged."*
-- **Convertible**: *"provide a lower discount... but can be exchanged for another Convertible Reserved Instance with different instance attributes."*
+- **Standard**: *"provide the most significant discount, but can only be modified. Standard Reserved Instances can't be exchanged."* (oferecem o desconto mais expressivo, mas só podem ser modificadas; Instâncias Reservadas Standard não podem ser trocadas)
+- **Convertible**: *"provide a lower discount... but can be exchanged for another Convertible Reserved Instance with different instance attributes."* (oferecem um desconto menor... mas podem ser trocadas por outra Convertible Reserved Instance com atributos diferentes)
 
 Não renovam automaticamente e **não podem ser canceladas**. A opção **No Upfront** exige *"a successful billing history"* (um histórico de pagamentos em dia).
 
@@ -67,7 +67,7 @@ Não renovam automaticamente e **não podem ser canceladas**. A opção **No Upf
 
 *"available for less than the On-Demand price"* (disponível por menos que o preço sob demanda), com *"steep discounts"* (descontos expressivos) — a doc não publica um percentual fixo.
 
-A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."* (um sinal de recomendação de rebalanceamento, para avisar que uma instância Spot está sob risco elevado de interrupção)
+A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* (dá à instância um aviso de dois minutos antes de ser interrompida) Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."* (um sinal de recomendação de rebalanceamento, para avisar que uma instância Spot está sob risco elevado de interrupção)
 
 A requisição é **one-time** ou **persistent** — *"Amazon EC2 automatically resubmits a persistent Spot Instance request after the Spot Instance associated with the request is interrupted."* (o Amazon EC2 reenvia automaticamente uma requisição Spot persistente depois que a instância associada a ela é interrompida)
 
@@ -109,7 +109,7 @@ Casos de uso que a doc cita: *"data analysis, batch jobs, background processing,
 ## 5. Segurança e acesso
 
 - **Nunca** coloque access key na instância. Use **IAM role** (instance profile) — a credencial é temporária e rotacionada.
-- **Acesso administrativo**: use **SSM Session Manager**, que *"provides secure node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"*.
+- **Acesso administrativo**: use **SSM Session Manager**, que *"provides secure node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* (oferece gestão segura de nós sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH).
 - **IMDS** (`169.254.169.254`) entrega credenciais da role e metadados. **Não** é filtrado por security group nem NACL — use **IMDSv2** para mitigar SSRF.
 - **Criptografia**: volumes EBS criptografados com KMS; você pode ativar criptografia por padrão na região.
 

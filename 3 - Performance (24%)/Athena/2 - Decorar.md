@@ -17,11 +17,11 @@ Partindo de **3 TB** de dados e **US$ 5/TB**:
 | **Parquet (3:1), lendo 1 de 4 colunas** | 0,25 TB | **US$ 1,25** |
 
 Outros preços citados: Spark **US$ 0,35 por DPU-hora**; Capacity Reservations **US$ 0,30 por DPU-hora**.
-Consultas **federadas** (fora do S3): *"rounded up to the nearest megabyte with a 10 megabyte minimum per query"*.
+Consultas **federadas** (fora do S3): *"rounded up to the nearest megabyte with a 10 megabyte minimum per query"* (arredondado para cima até o megabyte mais próximo, com mínimo de 10 megabytes por consulta).
 
 ## Particionamento
 
-> *"restrict the amount of data scanned by each query, thus improving performance and reducing cost."*
+> *"restrict the amount of data scanned by each query, thus improving performance and reducing cost."* (restringir o volume de dados varrido por cada consulta, melhorando o desempenho e reduzindo o custo)
 > *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition."* (se você consulta uma tabela particionada e indica a partição na cláusula `WHERE`, o Athena varre apenas os dados daquela partição)
 
 **Partition projection**: *"can significantly reduce query runtimes"* (pode reduzir significativamente o tempo de execução das consultas) — útil quando há muitas partições e o `MSCK REPAIR` fica lento.

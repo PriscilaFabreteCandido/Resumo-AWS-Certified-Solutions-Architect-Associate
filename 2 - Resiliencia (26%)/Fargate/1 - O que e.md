@@ -13,14 +13,14 @@ atualizado: 2026-11-08
 
 ## O que ele elimina
 
-A doc do ECS descreve o Fargate como: *"pay-as-you-go... you don't need to manage servers, handle capacity planning, or isolate container workloads for security."*
+A doc do ECS descreve o Fargate como: *"pay-as-you-go... you don't need to manage servers, handle capacity planning, or isolate container workloads for security."* (pague pelo que usar... você não precisa gerenciar servidores, planejar capacidade nem isolar cargas de contêiner por segurança)
 
 | Com EC2 | Com Fargate |
 |---|---|
 | Você escolhe o tipo e a quantidade de instâncias | Você declara **vCPU e memória da task** |
 | Você patcheia o SO e a AMI | A AWS cuida |
 | Você dimensiona o cluster (e sobra capacidade ociosa) | Paga só o que a task consome |
-| Você isola workloads | *"isolate container workloads for security"* vem pronto |
+| Você isola workloads | *"isolate container workloads for security"* (isolar cargas de contêiner por segurança) vem pronto |
 
 ## Fargate não é um serviço separado
 

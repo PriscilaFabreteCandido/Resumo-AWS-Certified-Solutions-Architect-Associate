@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Gateway endpoint — como funciona
 
-A doc: ele *"provide[s] reliable connectivity to Amazon S3 and DynamoDB without requiring an internet gateway or a NAT device for your VPC."*
+A doc: ele *"provide[s] reliable connectivity to Amazon S3 and DynamoDB without requiring an internet gateway or a NAT device for your VPC."* (oferece conectividade confiável ao Amazon S3 e ao DynamoDB sem exigir um internet gateway nem um dispositivo NAT na sua VPC)
 
 Quando você cria, a AWS adiciona uma rota em cada route table que você selecionar: destino = **prefix list** do serviço, target = o endpoint. Essas rotas são gerenciadas pela AWS — você não as edita.
 

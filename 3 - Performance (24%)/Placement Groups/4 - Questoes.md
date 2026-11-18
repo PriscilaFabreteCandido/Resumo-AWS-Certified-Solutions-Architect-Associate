@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 > **C)** Falta habilitar cross-zone
 > **D)** O launch template está errado
 >
-> **Por que B**: *"it supports a maximum of seven running instances in each Availability Zone"*.
+> **Por que B**: *"it supports a maximum of seven running instances in each Availability Zone"* (suporta no máximo sete instâncias em execução em cada Zona de Disponibilidade).
 
 > [!question]- Q5. O enunciado exige **Dedicated Hosts** (licença por socket) e latência mínima entre nós.
 > **A)** Cluster placement group com Dedicated Hosts

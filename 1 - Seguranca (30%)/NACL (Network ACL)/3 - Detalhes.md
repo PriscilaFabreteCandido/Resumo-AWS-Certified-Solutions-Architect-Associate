@@ -29,7 +29,7 @@ Isso tem duas consequências:
 
 **Deny específico antes de allow amplo.** A doc recomenda: *"Be sure to give the deny rule a lower number than the rule that allows the wider range of port traffic."* (dê à regra de deny um número menor que o da regra que permite a faixa mais ampla de portas)
 
-**Deixe espaço entre os números.** *"increments (for example, increments of 10 or 100)"* — assim você insere regras depois sem renumerar tudo.
+**Deixe espaço entre os números.** *"increments (for example, increments of 10 or 100)"* (incrementos (por exemplo, de 10 ou de 100)) — assim você insere regras depois sem renumerar tudo.
 
 A regra `*` (asterisco) é o DENY final implícito, e *"You can't delete a rule where the rule number is an asterisk."* (não é possível apagar uma regra cujo número seja um asterisco)
 
@@ -61,7 +61,7 @@ A doc resume o papel: a NACL *"provide[s] stateless, coarse-grain network contro
 
 ## 5. Limites e o que escapa do filtro
 
-Avaliação só na **fronteira** da subnet: *"not as it is routed within a subnet"*. Duas instâncias na mesma subnet não são filtradas pela NACL (mas são pelos SGs).
+Avaliação só na **fronteira** da subnet: *"not as it is routed within a subnet"* (e não enquanto ele é roteado dentro da subnet). Duas instâncias na mesma subnet não são filtradas pela NACL (mas são pelos SGs).
 
 **Não** é possível referenciar prefix lists: *"You can't reference prefix lists in network ACL rules."* (não é possível referenciar prefix lists em regras de network ACL) Isso importa para gateway endpoints — a doc do endpoint avisa que *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço, e você precisa listar os CIDRs na mão (ou liberar amplamente).
 

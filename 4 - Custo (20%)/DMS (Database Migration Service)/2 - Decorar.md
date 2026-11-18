@@ -29,7 +29,7 @@ atualizado: 2026-11-08
 | **Full load + CDC** | Carga inicial **e** replicação contínua → **downtime mínimo** |
 | **CDC only** | Só as mudanças |
 
-A doc: *"replicate ongoing changes to keep sources and targets in sync"*. (O termo **CDC** não aparece nessa página de visão geral, mas é o nome do mecanismo.)
+A doc: *"replicate ongoing changes to keep sources and targets in sync"* (replicar as mudanças continuamente para manter origem e destino sincronizados). (O termo **CDC** não aparece nessa página de visão geral, mas é o nome do mecanismo.)
 
 ## Outros componentes citados
 
@@ -41,7 +41,7 @@ A doc: *"replicate ongoing changes to keep sources and targets in sync"*. (O ter
 
 ## O que a doc lida NÃO afirma
 
-- Os termos *"homogeneous"* e *"heterogeneous"* **não são definidos** nessa página (ela diz apenas *"fully heterogeneous data migrations between the supported engines"*)
+- Os termos *"homogeneous"* e *"heterogeneous"* **não são definidos** nessa página (ela diz apenas *"fully heterogeneous data migrations between the supported engines"* (migrações de dados totalmente heterogêneas entre os engines compatíveis))
 - O termo **CDC** não é usado
 - Se a **origem permanece disponível** durante a migração não é afirmado explicitamente — mas é o que a replicação contínua implica
 

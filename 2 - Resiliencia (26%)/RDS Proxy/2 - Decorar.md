@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 | **Proxies por conta** | **20** |
 | **Secrets do Secrets Manager por proxy** | **200** (*"thus limiting connections to up to 200 different user accounts"*) |
 | Endpoints adicionais por proxy | até **20** |
-| AZs do endpoint padrão | *"only two Availability Zones"* |
+| AZs do endpoint padrão | *"only two Availability Zones"* (apenas duas Zonas de Disponibilidade) |
 | Redução do tempo de failover (Aurora Multi-AZ) | *"by up to 66%"* (em até 66%) |
 | Downtime de upgrade minor (Multi-AZ DB cluster) | *"one second or less"* (um segundo ou menos) |
 | Statement que fixa a sessão (*pinning*) | maior que **16 KB** |

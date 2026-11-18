@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 
 > *"To meet lower latencies of real-time use cases, you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds."* (para atender às latências menores de casos de uso em tempo real, você pode usar o hint de intervalo de buffer zero... o Firehose não faz buffer e entrega os dados em poucos segundos)
 
-⚠️ Zero buffering *"is only available for the application destinations and is not available for Amazon S3 backup destination"*.
+⚠️ Zero buffering *"is only available for the application destinations and is not available for Amazon S3 backup destination"* (está disponível apenas para os destinos de aplicação, não para o destino de backup no Amazon S3).
 ⚠️ Para S3 com intervalo **menor que 60 s**, o Firehose usa **multipart upload** — *"you will see some increase in S3 PUT API costs"* (você verá algum aumento nos custos de requisições PUT do S3).
 
 ## Outros números
@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Registro máximo** | *"as large as 1,000 KB"* (de até 1.000 KB) |
 | Semântica | *"at-least-once"* — duplicatas possíveis, **exceto** em S3, Iceberg e Snowflake |
-| Buffer hints | aplicam-se *"on a shard or partition level"* |
+| Buffer hints | aplicam-se *"on a shard or partition level"* (no nível de shard ou de partição) |
 | Dynamic partitioning | usa nível de stream/tópico; **incompatível** com zero buffering |
 
 ## O que ele faz além de entregar

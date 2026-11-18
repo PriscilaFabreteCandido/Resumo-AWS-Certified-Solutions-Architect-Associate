@@ -66,7 +66,7 @@ atualizado: 2026-11-08
 |---|---|
 | Athena precisa carregar os dados | Consulta o **S3 direto** |
 | Athena cobra por consulta | Cobra por **TB escaneado** |
-| Athena cobra storage | *"no additional storage charges"* — o storage é do S3 |
+| Athena cobra storage | *"no additional storage charges"* (sem cobranças adicionais de armazenamento) — o storage é do S3 |
 | Compressão basta para otimizar | **Parquet + partição** vai muito além (US$ 15 → US$ 1,25) |
 | Athena e Redshift são intercambiáveis | Athena = **ad-hoc serverless**; Redshift = **warehouse** com joins e concorrência |
 | Spectrum dispensa cluster | É **feature do Redshift** |

@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. O que você não precisa fazer
 
-O Standard *"is provided automatically and at no extra charge when you use AWS"*. Não há o que habilitar, configurar ou pagar. Ele mitiga as camadas 3 e 4 e vetores conhecidos e zero-day na camada 7.
+O Standard *"is provided automatically and at no extra charge when you use AWS"* (é fornecido automaticamente e sem custo extra quando você usa a AWS). Não há o que habilitar, configurar ou pagar. Ele mitiga as camadas 3 e 4 e vetores conhecidos e zero-day na camada 7.
 
 Isso significa que, numa questão de DDoS **volumétrico simples**, a resposta pode ser "nada a fazer, o Shield Standard já cobre" — e a alternativa que oferece Advanced é um upsell desnecessário.
 

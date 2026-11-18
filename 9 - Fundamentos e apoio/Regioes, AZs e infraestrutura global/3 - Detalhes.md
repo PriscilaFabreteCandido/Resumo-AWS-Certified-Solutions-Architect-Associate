@@ -31,7 +31,7 @@ Como escolher (o que a prova cobra):
 
 ## 2. Zona de Disponibilidade
 
-> *"one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region"*
+> *"one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region"* (um ou mais data centers distintos, com energia, rede e conectividade redundantes, dentro de uma Região)
 
 E a geografia:
 

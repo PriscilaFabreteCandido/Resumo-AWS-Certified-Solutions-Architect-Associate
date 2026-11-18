@@ -43,7 +43,7 @@ A razão é a flexibilidade: a RI compromete-se com **configuração** (tipo, re
 
 ## 3. Reserved Instances — e a confusão desconto × capacidade
 
-A RI *"not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account"*. Os atributos que definem o preço: **instance type, Region, tenancy, platform**.
+A RI *"not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account"* (não são instâncias físicas, e sim um desconto de faturamento aplicado ao uso de instâncias sob demanda na sua conta). Os atributos que definem o preço: **instance type, Region, tenancy, platform**.
 
 **Standard × Convertible**:
 
@@ -77,13 +77,13 @@ Casos de uso citados: *"data analysis, batch jobs, background processing, and op
 | **price capacity optimized** | **Recomendada** — capacidade primeiro, preço depois |
 | **capacity optimized** | Menor chance de interrupção |
 | **diversified** | Espalha o risco |
-| **lowest price** | **"(not recommended)"**, *"highest risk of interruption"* — e é o **default da CLI** |
+| **lowest price** | **"(not recommended)"**, *"highest risk of interruption"* (maior risco de interrupção) — e é o **default da CLI** |
 
 **Capacity Rebalancing** lança o substituto **antes** da interrupção: `launch-before-terminate` (delay de **120 a 7.200 s**) ou `launch`. Só em fleet **maintain**, e **imutável** depois de criado.
 
 ## 5. Dedicated Hosts × Dedicated Instances — o gatilho de licença
 
-A doc do Dedicated Host: *"bring your existing per-socket, per-core, or per-VM software licenses to reduce costs"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM, para reduzir custos). O Dedicated Instance é só *"instances that run on single-tenant hardware"*, por hora.
+A doc do Dedicated Host: *"bring your existing per-socket, per-core, or per-VM software licenses to reduce costs"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM, para reduzir custos). O Dedicated Instance é só *"instances that run on single-tenant hardware"* (instâncias que rodam em hardware de inquilino único), por hora.
 
 | Gatilho no enunciado | Resposta |
 |---|---|

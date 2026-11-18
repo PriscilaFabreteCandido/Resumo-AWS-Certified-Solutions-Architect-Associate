@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # AWS Direct Connect — O que é
 
 > [!info] Em uma frase
-> Link **privado e dedicado** entre o seu datacenter e a AWS, por fibra: *"links your internal network to a Direct Connect location over a standard Ethernet fiber-optic cable"*, **sem passar pela internet**.
+> Link **privado e dedicado** entre o seu datacenter e a AWS, por fibra: *"links your internal network to a Direct Connect location over a standard Ethernet fiber-optic cable"* (liga sua rede interna a um ponto do Direct Connect por um cabo de fibra óptica Ethernet padrão), **sem passar pela internet**.
 
 ## O que ele entrega
 

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** AWS Config aggregator
 > **D)** CloudTrail organization trail
 >
-> **Por que B**: *"helps you assess your AWS environment against security industry standards and best practices"*, com modelo administrador/membro.
+> **Por que B**: *"helps you assess your AWS environment against security industry standards and best practices"* (ajuda a avaliar seu ambiente AWS em relação a padrões e boas práticas de segurança do setor), com modelo administrador/membro.
 > **A errada**: GuardDuty detecta ameaça; não avalia padrões de conformidade.
 > **C errada**: Config aggregator dá visão multi-conta de **configuração e regras**, mas não agrega achados de GuardDuty/Inspector/Macie nem traz os padrões prontos.
 > **D errada**: CloudTrail registra chamadas de API.

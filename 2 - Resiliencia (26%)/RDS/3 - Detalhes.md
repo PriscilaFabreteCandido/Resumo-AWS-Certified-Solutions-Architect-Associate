@@ -26,7 +26,7 @@ Três vantagens sobre o Multi-AZ instance:
 
 1. **Os readers leem** — capacidade de leitura adicional sem read replica separada
 2. **Failover < 35 s**
-3. **Menor latência de escrita** — *"lower write latency when compared to Multi-AZ DB instance deployments"*, porque o commit espera **um** reader, não todos
+3. **Menor latência de escrita** — *"lower write latency when compared to Multi-AZ DB instance deployments"* (menor latência de escrita em comparação com implantações Multi-AZ de instância), porque o commit espera **um** reader, não todos
 
 O failover escolhe o reader *"with the most recent change record"*.
 

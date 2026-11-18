@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 | Objetivo | **HA** | HA + leitura + menor latência de escrita | **Escala de leitura** / DR |
 | Engines | MariaDB, MySQL, Oracle, PostgreSQL, SQL Server, RDS Custom for SQL Server | MySQL e PostgreSQL | Db2, MariaDB, MySQL, Oracle, PostgreSQL, SQL Server |
 
-**Semi-síncrono** (cluster): *"requires acknowledgment from at least one reader DB instance in order for a change to be committed. It doesn't require acknowledgment that events have been fully executed and committed on all replicas."*
+**Semi-síncrono** (cluster): *"requires acknowledgment from at least one reader DB instance in order for a change to be committed. It doesn't require acknowledgment that events have been fully executed and committed on all replicas."* (exige confirmação de pelo menos uma instância de leitura para que uma mudança seja efetivada; não exige confirmação de que os eventos foram totalmente executados e efetivados em todas as réplicas)
 
 ## Read replicas — detalhes
 

@@ -55,7 +55,7 @@ Regras de troca: provisionado → on-demand **4 vezes** em 24 h rolantes; on-dem
 
 ## 5. Features de dado
 
-**Streams** capturam as mudanças da tabela; os registros *"have a lifetime of 24 hours"*. São a base de: replicação, invalidação de cache, materialização de views, e integração com **Lambda** e **EventBridge Pipes**.
+**Streams** capturam as mudanças da tabela; os registros *"have a lifetime of 24 hours"* (têm vida útil de 24 horas). São a base de: replicação, invalidação de cache, materialização de views, e integração com **Lambda** e **EventBridge Pipes**.
 
 **PITR** retém de **1 a 35 dias** (`RecoveryPeriodInDays`), restaurando *"to any point in time"* até `LatestRestorableDateTime`, que é *"typically five minutes before the current time"*. E o ponto crítico: *"The point-in-time recovery process always restores to a new table."* (a recuperação point-in-time sempre restaura para uma tabela nova)
 Detalhe de custo: *"The configured maximum recovery period doesn't impact the price"* (o período máximo de recuperação configurado não afeta o preço) — o preço vem do **tamanho** da tabela. Tabela deletada mantém um backup de sistema por **35 dias**, sem custo.

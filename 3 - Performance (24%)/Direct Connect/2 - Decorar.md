@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 Detalhes das **dedicated**: *"It can take up to 72 business hours for AWS to review your request and provision a port"* (pode levar até 72 horas úteis para a AWS revisar seu pedido e provisionar uma porta); o **LOA-CFA** precisa ser respondido em **7 dias** ou a conexão é deletada; a velocidade **não muda** depois (é nova conexão).
 
-Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps; as de **25 Gbps** existem *"only in Direct Connect locations where 100 Gbps port speeds are available"*; você precisa **aceitar** a conexão; a AWS aplica **traffic policing**.
+Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps; as de **25 Gbps** existem *"only in Direct Connect locations where 100 Gbps port speeds are available"* (apenas em pontos do Direct Connect onde há portas de 100 Gbps disponíveis); você precisa **aceitar** a conexão; a AWS aplica **traffic policing**.
 
 ## Os três tipos de virtual interface (VIF)
 

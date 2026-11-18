@@ -66,7 +66,7 @@ Para consumidor de fila em Fargate, a métrica certa é a **profundidade da fila
 |---|---|
 | **Dimensionar a task corretamente** | O desperdício agora é na task, não na instância |
 | **Fargate Spot** | Desconto, para workload interrompível |
-| **Compute Savings Plans** | **Cobrem Fargate** (e Lambda) — *"regardless of instance family... Also covers Fargate and Lambda usage"* |
+| **Compute Savings Plans** | **Cobrem Fargate** (e Lambda) — *"regardless of instance family... Also covers Fargate and Lambda usage"* (independentemente da família de instância... cobre também o uso de Fargate e Lambda) |
 | **Graviton** | Fargate suporta arquitetura ARM |
 | **EC2 com RI** | Alternativa para carga constante e densa |
 

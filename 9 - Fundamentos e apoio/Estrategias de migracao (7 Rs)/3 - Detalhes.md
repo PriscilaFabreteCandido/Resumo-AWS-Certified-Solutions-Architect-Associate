@@ -63,8 +63,8 @@ Exemplos exatos:
 Quando é a resposta: *"sem reescrever a aplicação"* **junto com** *"reduzir a sobrecarga operacional"*.
 
 > [!tip] A combinação que define o replatform
-> *"minimal changes to the application"* + *"reduce operational overhead"* = **replatform**.
-> Se dissesse *"no changes at all"* e *"as fast as possible"* (o mais rápido possível) → **rehost**. Se dissesse *"take full advantage of cloud-native"* → **refactor**.
+> *"minimal changes to the application"* (alterações mínimas na aplicação) + *"reduce operational overhead"* = **replatform**.
+> Se dissesse *"no changes at all"* (nenhuma alteração) e *"as fast as possible"* (o mais rápido possível) → **rehost**. Se dissesse *"take full advantage of cloud-native"* → **refactor**.
 
 ### Refactor / Re-architect
 **Reescreve** a arquitetura. Monólito → microsserviços; servidor → **Lambda + API Gateway**; banco relacional forçado → **DynamoDB**; batch em cron → **Step Functions** + **EventBridge**.

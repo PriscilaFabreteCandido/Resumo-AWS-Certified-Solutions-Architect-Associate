@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Security Hub
 > **D)** CloudWatch Logs Insights
 >
-> **Por que B**: *"helps you analyze, investigate, and quickly identify the root cause"*, correlacionando CloudTrail + VPC Flow Logs + achados do GuardDuty num grafo, com até **1 ano** de histórico.
+> **Por que B**: *"helps you analyze, investigate, and quickly identify the root cause"* (ajuda a analisar, investigar e identificar rapidamente a causa raiz), correlacionando CloudTrail + VPC Flow Logs + achados do GuardDuty num grafo, com até **1 ano** de histórico.
 > **A errada**: dá para fazer, mas você escreve as consultas e monta a correlação — mais esforço operacional.
 > **C errada**: Security Hub mostra o **achado**, não a investigação.
 > **D errada**: consulta logs; não correlaciona entidades de segurança.

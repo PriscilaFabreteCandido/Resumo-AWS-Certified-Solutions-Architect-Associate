@@ -11,8 +11,8 @@ atualizado: 2026-11-08
 | Item | Valor |
 |---|---|
 | **Histórico** | *"view data for up to the last 13 months"* |
-| **Forecast** | *"forecast how much you're likely to spend for the next 18 months"* |
-| Atualização | *"refreshes your cost data at least once every 24 hours"*; mês corrente *"in about 24 hours"* (em cerca de 24 horas) |
+| **Forecast** | *"forecast how much you're likely to spend for the next 18 months"* (projetar quanto você provavelmente vai gastar nos próximos 18 meses) |
+| Atualização | *"refreshes your cost data at least once every 24 hours"* (atualiza seus dados de custo pelo menos uma vez a cada 24 horas); mês corrente *"in about 24 hours"* (em cerca de 24 horas) |
 | Recomendações | *"get recommendations for what Reserved Instances to purchase"* (receber recomendações de quais Instâncias Reservadas comprar) |
 | **Custo da API** | *"Each paginated API request incurs a charge of $0.01"* (o console é grátis) |
 | Granularidade (hora/dia/mês) | **A doc não informa** nessa página |

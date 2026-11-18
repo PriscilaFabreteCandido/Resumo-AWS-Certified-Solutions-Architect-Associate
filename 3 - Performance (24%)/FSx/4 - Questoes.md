@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 > **D)** S3 montado com cliente FUSE
 >
 > **Por que B**: Lustre é o FS de HPC/ML da AWS, com latência sub-ms, e *"transparently presents S3 objects as files"* (apresenta os objetos do S3 como arquivos, de forma transparente).
-> **A errada**: EFS escala bem, mas Lustre é o posicionado para *"machine learning, high performance computing (HPC), video processing"*.
+> **A errada**: EFS escala bem, mas Lustre é o posicionado para *"machine learning, high performance computing (HPC), video processing"* (machine learning, computação de alto desempenho (HPC), processamento de vídeo).
 > **C errada**: Multi-Attach é limitado a poucas instâncias **na mesma AZ** e não é FS compartilhado POSIX.
 
 > [!question]- Q2. Um compartilhamento de arquivos para usuários Windows, autenticado no AD corporativo.

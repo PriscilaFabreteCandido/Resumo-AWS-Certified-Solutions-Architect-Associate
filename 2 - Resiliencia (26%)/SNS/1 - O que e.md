@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Como funciona
 
-> *"publishers send messages to a topic, which is a logical access point and communication channel."*
+> *"publishers send messages to a topic, which is a logical access point and communication channel."* (os publicadores enviam mensagens a um tópico, que é um ponto de acesso lógico e um canal de comunicação)
 
 E o fan-out: *"a message published to an SNS topic is replicated and pushed to multiple endpoints... This allows for parallel asynchronous processing."* (uma mensagem publicada num tópico SNS é replicada e enviada a vários endpoints... o que permite processamento assíncrono em paralelo)
 

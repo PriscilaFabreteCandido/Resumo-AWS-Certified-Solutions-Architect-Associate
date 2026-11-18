@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição e pré-requisito
 
-O SSM *"helps you centrally view, manage, and operate nodes at scale"*. Mas só funciona em **managed nodes**, e a definição é precisa:
+O SSM *"helps you centrally view, manage, and operate nodes at scale"* (ajuda a visualizar, gerenciar e operar nós em escala, de forma centralizada). Mas só funciona em **managed nodes**, e a definição é precisa:
 
 > *"SSM Agent is installed on the machine and the agent can communicate with the Systems Manager service."* (o SSM Agent está instalado na máquina e consegue se comunicar com o serviço Systems Manager)
 

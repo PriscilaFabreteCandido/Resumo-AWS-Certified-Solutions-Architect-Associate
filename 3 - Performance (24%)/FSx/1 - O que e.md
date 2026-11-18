@@ -35,8 +35,8 @@ Precisa de arquivo compartilhado?
 
 | Deployment | Citação oficial |
 |---|---|
-| **Scratch** | *"ideal for temporary storage and shorter-term processing of data. Data is not replicated and does not persist if a file server fails."* |
-| **Persistent** | *"ideal for longer-term storage and throughput-focused workloads. In persistent file systems, data is replicated, and file servers are replaced if they fail."* |
+| **Scratch** | *"ideal for temporary storage and shorter-term processing of data. Data is not replicated and does not persist if a file server fails."* (ideal para armazenamento temporário e processamento de curto prazo; os dados não são replicados e não persistem se um servidor de arquivos falhar) |
+| **Persistent** | *"ideal for longer-term storage and throughput-focused workloads. In persistent file systems, data is replicated, and file servers are replaced if they fail."* (ideal para armazenamento de prazo mais longo e cargas focadas em throughput; em sistemas de arquivos persistentes, os dados são replicados e os servidores são substituídos se falharem) |
 
 ## Links
 

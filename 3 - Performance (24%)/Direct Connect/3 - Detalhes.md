@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 
 ## 2. Os três VIFs — e o Direct Connect gateway
 
-**Private VIF** alcança a VPC por **IP privado**, mas *"directly to a single VPC per private virtual interface"* (diretamente a uma única VPC por interface virtual privada). Para alcançar **várias** VPCs, associe a um **Direct Connect gateway**, que liga a *"multiple virtual private gateways across any account and AWS Region (except the AWS China Regions)"*.
+**Private VIF** alcança a VPC por **IP privado**, mas *"directly to a single VPC per private virtual interface"* (diretamente a uma única VPC por interface virtual privada). Para alcançar **várias** VPCs, associe a um **Direct Connect gateway**, que liga a *"multiple virtual private gateways across any account and AWS Region (except the AWS China Regions)"* (vários virtual private gateways, em qualquer conta e Região (exceto as Regiões da China)).
 
 **Public VIF** alcança os **serviços públicos** da AWS (S3, DynamoDB, APIs) por IP público, **sem** passar pela internet. É a resposta quando o requisito é "alcançar o S3 pelo link privado" — embora **interface endpoint** sobre o DX também sirva, com IP privado.
 

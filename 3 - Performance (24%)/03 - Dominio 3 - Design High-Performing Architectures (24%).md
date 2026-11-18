@@ -136,7 +136,7 @@ atualizado: 2026-11-08
 > **D)** Montar o S3 com um cliente FUSE
 >
 > **Por que B**: Lustre é o file system de HPC/ML da AWS, com latência sub-milissegundo, e *"When linked to an Amazon S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files"* (quando vinculado a um bucket do Amazon S3, um sistema de arquivos FSx for Lustre apresenta os objetos do S3 como arquivos, de forma transparente) — exatamente o cenário.
-> **A errada**: EFS escala bem (Elastic chega a dezenas de GiBps), mas Lustre é o serviço posicionado para *"machine learning, high performance computing (HPC), video processing, and financial modeling"* com esse perfil de throughput.
+> **A errada**: EFS escala bem (Elastic chega a dezenas de GiBps), mas Lustre é o serviço posicionado para *"machine learning, high performance computing (HPC), video processing, and financial modeling"* (machine learning, computação de alto desempenho (HPC), processamento de vídeo e modelagem financeira) com esse perfil de throughput.
 > **C errada**: Multi-Attach existe só em io1/io2, é limitado a poucas instâncias **na mesma AZ** e não é file system compartilhado POSIX.
 > **D errada**: não entrega throughput de HPC e adiciona esforço operacional.
 

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Lambda com pandas
 > **D)** Athena CTAS manual
 >
-> **Por que B**: *"serverless data integration service"* — ETL agendado sem cluster.
+> **Por que B**: *"serverless data integration service"* (serviço serverless de integração de dados) — ETL agendado sem cluster.
 > **A errada**: funciona, mas você gerencia o cluster (ainda que transiente).
 > **C errada**: Lambda tem teto de 15 min e 10 GB; não escala para ETL grande.
 > **D errada**: CTAS funciona, mas é manual e menos adequado para pipeline recorrente.
@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Glue Studio
 > **D)** Athena Spark
 >
-> **Por que B**: EMR *"gives you full control over the configuration of your clusters and the software installed on them"*, e roda HBase.
+> **Por que B**: EMR *"gives you full control over the configuration of your clusters and the software installed on them"* (dá a você controle total sobre a configuração dos clusters e sobre o software instalado neles), e roda HBase.
 > **A errada**: o Glue não dá controle do cluster nem instala HBase.
 
 > [!question]- Q4. Analistas de negócio precisam limpar e normalizar planilhas **sem escrever código**.

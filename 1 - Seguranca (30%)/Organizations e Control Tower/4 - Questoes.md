@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** CloudFormation StackSets
 > **D)** Service Catalog
 >
-> **Por que B**: é a landing zone pronta — *"pre-packaged governance rules for security, operations, and compliance"*.
+> **Por que B**: é a landing zone pronta — *"pre-packaged governance rules for security, operations, and compliance"* (regras de governança prontas, de segurança, operação e conformidade).
 > **C errada**: StackSets distribui stacks (e o Control Tower os usa internamente), mas não traz a estrutura opinativa pronta.
 > **D errada**: Service Catalog é catálogo de produtos para os times consumirem.
 

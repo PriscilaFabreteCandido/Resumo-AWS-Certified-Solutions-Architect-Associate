@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 
 ## Rate-based rule
 
-> *"rules can block or count web requests that not only meet the specified criteria, but also exceed a specified number of requests in a minute or in five minutes."*
+> *"rules can block or count web requests that not only meet the specified criteria, but also exceed a specified number of requests in a minute or in five minutes."* (as regras podem bloquear ou contar requisições web que, além de atenderem aos critérios definidos, ultrapassem um número determinado de requisições em um ou em cinco minutos)
 
 Janela: **1 minuto** ou **5 minutos** — **não** por segundo.
 

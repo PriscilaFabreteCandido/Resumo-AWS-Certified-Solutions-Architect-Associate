@@ -38,7 +38,7 @@ Ele é o único que faz **tudo** — porque é um broker tradicional.
 
 > *"a fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data."* (um serviço totalmente gerenciado que permite construir e executar aplicações que usam Apache Kafka para processar dados de streaming)
 
-E o ponto decisivo: *"runs open-source versions of Apache Kafka"*, então as aplicações e ferramentas existentes funcionam *"without requiring changes to application code"* (sem exigir mudanças no código da aplicação).
+E o ponto decisivo: *"runs open-source versions of Apache Kafka"* (executa versões open source do Apache Kafka), então as aplicações e ferramentas existentes funcionam *"without requiring changes to application code"* (sem exigir mudanças no código da aplicação).
 
 Modos: **MSK Provisioned** (brokers Standard ou Express) e **MSK Serverless**.
 

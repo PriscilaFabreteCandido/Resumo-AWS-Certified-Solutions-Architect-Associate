@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Athena, separadamente
 > **D)** Glue para copiar para o Redshift
 >
-> **Por que B**: *"query and retrieve... data from files in Amazon S3 without having to load the data into Amazon Redshift tables"* — e permite **join** entre tabela interna e externa.
+> **Por que B**: *"query and retrieve... data from files in Amazon S3 without having to load the data into Amazon Redshift tables"* (consultar e recuperar... dados de arquivos no Amazon S3 sem precisar carregá-los em tabelas do Amazon Redshift) — e permite **join** entre tabela interna e externa.
 > **A errada**: paga storage de nó para dado frio.
 > **C errada**: Athena não faz join com as tabelas internas do cluster.
 
@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 > **D)** Redshift com concurrency scaling
 >
 > **Por que B**: Redshift é **OLAP**. Transação é OLTP.
-> ⚠️ A pegadinha é a frase da doc: o Redshift **tem** funções OLTP, mas é *"optimized for... analysis and reporting"*.
+> ⚠️ A pegadinha é a frase da doc: o Redshift **tem** funções OLTP, mas é *"optimized for... analysis and reporting"* (otimizado para... análise e relatórios).
 
 > [!question]- Q6. Um cluster de **nó único** precisa de concurrency scaling.
 > **A)** Habilitar no WLM

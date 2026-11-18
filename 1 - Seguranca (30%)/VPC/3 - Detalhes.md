@@ -52,7 +52,7 @@ Em IPv6, as máscaras vão de **/44 a /64** em incrementos de /4; são reservado
 
 Três princípios nesse desenho:
 
-1. **Duas AZs no mínimo** — o ALB *"it is a requirement that you enable at least two or more Availability Zones"*.
+1. **Duas AZs no mínimo** — o ALB *"it is a requirement that you enable at least two or more Availability Zones"* (é obrigatório habilitar pelo menos duas Zonas de Disponibilidade).
 2. **SG referenciando SG**, nunca CIDR — acompanha o Auto Scaling automaticamente e é o menor privilégio. A doc: *"Security groups are more versatile than network ACLs, due to their ability to perform stateful packet filtering and create rules that reference other security groups."* (security groups são mais versáteis que network ACLs, por conseguirem filtrar pacotes de forma stateful e criar regras que referenciam outros security groups)
 3. **Camada de dados sem rota de saída** — o banco não precisa alcançar a internet.
 
@@ -70,7 +70,7 @@ Destinos possíveis de uma rota: internet gateway, NAT gateway, egress-only IGW,
 
 **NAT Gateway** — só saída, para subnets privadas. Fica numa subnet **pública** com Elastic IP. Escala *"up to 100 Gbps"*. É **zonal**: *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona) **Não aceita security group.** Não suporta port forwarding nem bastion.
 
-**Egress-only Internet Gateway** — *"allows outbound communication over IPv6 from instances in your VPC to the internet, and prevents the internet from initiating an IPv6 connection with your instances"* (permite comunicação de saída em IPv6 das instâncias da sua VPC para a internet, e impede que a internet inicie uma conexão IPv6 com elas). É *"for use with IPv6 traffic only"*, stateful, sem SG, e o gateway em si não é cobrado.
+**Egress-only Internet Gateway** — *"allows outbound communication over IPv6 from instances in your VPC to the internet, and prevents the internet from initiating an IPv6 connection with your instances"* (permite comunicação de saída em IPv6 das instâncias da sua VPC para a internet, e impede que a internet inicie uma conexão IPv6 com elas). É *"for use with IPv6 traffic only"* (serve apenas para tráfego IPv6), stateful, sem SG, e o gateway em si não é cobrado.
 
 **NAT privado** — variante sem Elastic IP, para alcançar on-premises sem passar pela internet.
 

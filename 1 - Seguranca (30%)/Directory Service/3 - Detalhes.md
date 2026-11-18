@@ -105,7 +105,7 @@ O texto oficial de cada elo:
 | **Conta de gerenciamento** | *"make sure your AD Connector or directory in AWS Managed Microsoft AD in Directory Service resides within your AWS Organizations management account."* | E na **mesma Região** do Identity Center |
 | **Um por vez** | *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* (você pode conectar apenas um diretório do AD Connector ou um do AWS Managed Microsoft AD por vez) | — |
 | **Relação 1-para-1** | *"AD Connectors and your on-premises Active Directory domains have a 1-to-1 relationship."* (a relação entre AD Connectors e seus domínios de Active Directory on-premises é de um para um) | — |
-| **Não compartilha** | *"AD Connector cannot be shared with other AWS accounts."* (o AD Connector não pode ser compartilhado com outras contas AWS) e *"is also not multi-VPC aware"* | Apps como WorkSpaces têm de estar na **mesma VPC** |
+| **Não compartilha** | *"AD Connector cannot be shared with other AWS accounts."* (o AD Connector não pode ser compartilhado com outras contas AWS) e *"is also not multi-VPC aware"* (também não funciona entre múltiplas VPCs) | Apps como WorkSpaces têm de estar na **mesma VPC** |
 | **Trusts transitivos** | *"AD Connector does not support Active Directory transitive trusts."* (o AD Connector não oferece suporte a trusts transitivos do Active Directory) | — |
 | **Simple AD não serve** | *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4) | — |
 
@@ -117,7 +117,7 @@ O texto oficial de cada elo:
 
 Compatível com AD, implementado sobre **Samba 4**. Serve para *"a low-scale, low-cost directory"* (um diretório de pequena escala e baixo custo).
 
-A lista do que **não** suporta é o que a prova cobra: *"multi-factor authentication (MFA), trust relationships, DNS dynamic update, schema extensions, communication over LDAPS, PowerShell AD cmdlets, or FSMO role transfer"*. E também *"not compatible with RDS SQL Server"* (não é compatível com o RDS SQL Server).
+A lista do que **não** suporta é o que a prova cobra: *"multi-factor authentication (MFA), trust relationships, DNS dynamic update, schema extensions, communication over LDAPS, PowerShell AD cmdlets, or FSMO role transfer"* (MFA, relações de trust, atualização dinâmica de DNS, extensões de schema, comunicação por LDAPS, cmdlets do PowerShell para AD ou transferência de funções FSMO). E também *"not compatible with RDS SQL Server"* (não é compatível com o RDS SQL Server).
 
 Se o enunciado menciona **qualquer** item dessa lista, Simple AD está errado.
 

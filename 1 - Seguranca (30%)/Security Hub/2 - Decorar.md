@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 
 Título da página: **"AWS Security Hub Cloud Security Posture Management (AWS Security Hub CSPM)"**.
 
-> *"provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices."*
+> *"provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices."* (oferece uma visão abrangente da sua postura de segurança na AWS e ajuda a avaliar seu ambiente em relação a padrões e boas práticas do setor)
 
 > *"collects security data across AWS accounts, AWS services, and supported third-party products."*
 

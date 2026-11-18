@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 | **Compute** | até **66%** | EC2 + **Fargate** + **Lambda** | *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região) |
 | **EC2 Instance** | até **72%** | Só EC2 | Amarrado a *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida); flexível em tamanho, SO e tenancy |
 | **Database** | até **35%** | Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS, OpenSearch | *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"* (independentemente de engine, família de instância, tamanho, Zona de Disponibilidade ou Região) |
-| **SageMaker AI** | até **64%** | SageMaker AI | *"regardless of your instance family, instance size, component, or AWS Region"* |
+| **SageMaker AI** | até **64%** | SageMaker AI | *"regardless of your instance family, instance size, component, or AWS Region"* (independentemente de família, tamanho de instância, componente ou Região) |
 
 Claim geral: *"You can save up to 72% on your AWS compute workloads."* (você pode economizar até 72% nas suas cargas de computação na AWS)
 Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfront**.
@@ -26,7 +26,7 @@ Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfro
 
 | Item | Detalhe |
 |---|---|
-| Natureza | *"not physical instances, but rather a billing discount applied to the use of On-Demand Instances"* |
+| Natureza | *"not physical instances, but rather a billing discount applied to the use of On-Demand Instances"* (não são instâncias físicas, e sim um desconto de faturamento aplicado ao uso de instâncias sob demanda) |
 | Atributos que definem o preço | **Instance type · Region · Tenancy · Platform** |
 | Termos | **1 ano** = 31.536.000 s (365 dias) · **3 anos** = 94.608.000 s (1.095 dias) |
 | Pagamento | **All Upfront · Partial Upfront · No Upfront** (este exige *"a successful billing history"* (um histórico de pagamentos em dia)) |

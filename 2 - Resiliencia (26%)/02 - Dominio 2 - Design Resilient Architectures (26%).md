@@ -66,7 +66,7 @@ atualizado: 2026-11-08
 
 > [!tip] Duas pistas escondidas nessa lista
 > **"AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"** (serviços gerenciados da AWS e seus casos de uso apropriados (por exemplo, Amazon Comprehend, Amazon Polly)) — serviços de IA caem aqui, no domínio de **resiliência**, como "use o serviço gerenciado em vez de construir". Saiba a frase de uma linha de Comprehend (NLP, sentimento, entidades), Polly (texto → voz), Transcribe (voz → texto), Translate, Rekognition (imagem/vídeo), Textract (documento → texto estruturado), Lex (chatbot).
-> **"Service quotas and throttling"** (cotas de serviço e throttling) — a prova pergunta sobre **aumentar quota antes do evento** e sobre configurar quota no ambiente de **standby** (o guia diz literalmente: *"how to configure the service quotas for a workload in a standby environment"*). Isso é pegadinha de DR: o standby precisa ter quota suficiente **antes** do desastre.
+> **"Service quotas and throttling"** (cotas de serviço e throttling) — a prova pergunta sobre **aumentar quota antes do evento** e sobre configurar quota no ambiente de **standby** (o guia diz literalmente: *"how to configure the service quotas for a workload in a standby environment"* (como configurar as cotas de serviço para uma carga de trabalho num ambiente de standby)). Isso é pegadinha de DR: o standby precisa ter quota suficiente **antes** do desastre.
 
 ---
 
@@ -85,7 +85,7 @@ atualizado: 2026-11-08
 > | **Warm standby** | Cópia **reduzida mas funcional**, sempre ligada | Minutos | Médio |
 > | **Multi-site active/active** | Todas as regiões servindo tráfego | Quase zero | Mais alto |
 >
-> Citações: pilot light *"minimizes the ongoing cost of disaster recovery"* mas *"cannot process requests without additional action taken first"* (não consegue processar requisições sem que uma ação adicional seja tomada antes). Warm standby *"can handle traffic (at reduced capacity levels) immediately"* (consegue atender tráfego imediatamente (em capacidade reduzida)). Active/active *"is the most complex and costly approach... but it can reduce your recovery time to near zero"*.
+> Citações: pilot light *"minimizes the ongoing cost of disaster recovery"* (minimiza o custo contínuo da recuperação de desastre) mas *"cannot process requests without additional action taken first"* (não consegue processar requisições sem que uma ação adicional seja tomada antes). Warm standby *"can handle traffic (at reduced capacity levels) immediately"* (consegue atender tráfego imediatamente (em capacidade reduzida)). Active/active *"is the most complex and costly approach... but it can reduce your recovery time to near zero"* (é a abordagem mais complexa e mais cara... mas pode reduzir seu tempo de recuperação a quase zero).
 
 > [!question]- Qual a diferença entre "highly available" e "fault tolerant" para a prova?
 > **HA**: o sistema **volta rápido** depois de uma falha (failover de Multi-AZ, substituição de instância pelo ASG). Existe uma janela de indisponibilidade.

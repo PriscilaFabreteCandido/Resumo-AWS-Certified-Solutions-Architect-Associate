@@ -55,7 +55,7 @@ Você configura **endpoint groups** por região, com:
 - **Traffic dial** — percentual do tráfego para aquele grupo (migração gradual, teste)
 - **Endpoint weight** — distribuição dentro do grupo
 
-**Custom routing accelerator** *"map one or more users to a specific destination among many destinations"* (mapear um ou mais usuários para um destino específico entre vários destinos), e *"only support Amazon VPC subnet endpoint types and route traffic to private IP addresses in that subnet"*.
+**Custom routing accelerator** *"map one or more users to a specific destination among many destinations"* (mapear um ou mais usuários para um destino específico entre vários destinos), e *"only support Amazon VPC subnet endpoint types and route traffic to private IP addresses in that subnet"* (só suportam endpoints do tipo subnet da VPC, e roteiam tráfego para endereços IP privados dessa subnet).
 
 Caso de uso: multiplayer de jogos e VoIP, onde cada sessão precisa ir para uma **instância específica** (a sala, a partida), não para qualquer instância saudável.
 

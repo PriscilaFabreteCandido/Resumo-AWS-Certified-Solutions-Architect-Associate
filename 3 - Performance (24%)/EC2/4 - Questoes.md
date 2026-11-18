@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 > **C)** Partition placement group
 > **D)** Instâncias em AZs diferentes atrás de um NLB
 >
-> **Por que B**: cluster *"packs instances close together inside an Availability Zone"*, com 10 Gbps de fluxo único; EFA é o adaptador para MPI.
+> **Por que B**: cluster *"packs instances close together inside an Availability Zone"* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade), com 10 Gbps de fluxo único; EFA é o adaptador para MPI.
 > **A errada**: spread **distribui** (o oposto) e limita a 7 por AZ.
 > **C errada**: partition separa em racks — serve para dado distribuído, não para latência mínima.
 > **D errada**: tráfego entre AZs adiciona latência; NLB não participa de comunicação MPI.

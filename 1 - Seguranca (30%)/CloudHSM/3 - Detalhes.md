@@ -22,7 +22,7 @@ Consequências práticas:
 
 | Modo | O que muda |
 |---|---|
-| **FIPS mode** | *"only Federal Information Processing Standard (FIPS) validated keys and algorithms can be used"* |
+| **FIPS mode** | *"only Federal Information Processing Standard (FIPS) validated keys and algorithms can be used"* (apenas chaves e algoritmos validados pelo FIPS podem ser usados) |
 | **Non-FIPS mode** | *"all the keys and algorithms that are supported by AWS CloudHSM, regardless of FIPS approval"* (todas as chaves e algoritmos suportados pelo AWS CloudHSM, independentemente de aprovação FIPS) |
 
 Se o requisito regulatório cita **FIPS 140-2/140-3 nível 3**, o cluster precisa estar em FIPS mode. Esse é o cenário em que o KMS **não** basta.

@@ -61,7 +61,7 @@ As SCPs que aparecem em prova nessa estrutura:
 
 ## 4. Consolidated billing
 
-O dono da management account *"is responsible for paying for all usage, data, and resources used by the accounts in the organization"*, e a organização produz *"a single consolidated bill"* (uma fatura única consolidada).
+O dono da management account *"is responsible for paying for all usage, data, and resources used by the accounts in the organization"* (é responsável por pagar todo o uso, dados e recursos consumidos pelas contas da organização), e a organização produz *"a single consolidated bill"* (uma fatura única consolidada).
 
 Dois efeitos práticos de custo:
 - O uso **agregado** das contas atinge faixas de desconto por volume mais cedo
@@ -71,7 +71,7 @@ E as **cost allocation tags** das contas membro aparecem na fatura consolidada: 
 
 ## 5. AWS RAM — compartilhar recursos
 
-O Organizations compartilha **permissão**; o **AWS RAM** compartilha **recursos**: *"helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs), and with IAM roles and users"*.
+O Organizations compartilha **permissão**; o **AWS RAM** compartilha **recursos**: *"helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs), and with IAM roles and users"* (ajuda a compartilhar recursos com segurança entre contas AWS, dentro da sua organização ou de unidades organizacionais (OUs), e com roles e usuários do IAM).
 
 O caso de uso de prova é **VPC sharing**: a conta de rede compartilha **subnets** com as contas de workload. Isso reduz número de VPCs, NAT gateways e conexões — é resposta de custo e de simplificação.
 

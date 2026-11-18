@@ -86,7 +86,7 @@ atualizado: 2026-11-08
 | Rehost aproveita a nuvem | É o que **menos** aproveita — leva os desperdícios junto |
 | DMS converte o schema | **DMS = dados**; **SCT = schema** (só em migração heterogênea) |
 | Retain é erro de planejamento | É uma **decisão válida** (licença, hardware, aposentadoria próxima) |
-| Replatform exige reescrever | É *"lift, tinker and shift"* — mudança **mínima** |
+| Replatform exige reescrever | É *"lift, tinker and shift"* (levantar, ajustar um pouco e mover) — mudança **mínima** |
 | DataSync serve para qualquer volume | Se o tempo pela rede estoura o prazo → **offline (Snow)** |
 | Snowball é a resposta moderna para bulk | **Indisponível para novos clientes**, suporte até **31/12/2026** |
 | Migration Hub migra os dados | É o **painel** de acompanhamento; quem migra é MGN/DMS/DataSync |

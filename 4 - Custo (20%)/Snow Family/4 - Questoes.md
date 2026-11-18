@@ -63,7 +63,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | Snow é a resposta para "muitos TB" | Só quando o **link** não dá conta no prazo |
-| O Snowball continua disponível para novos clientes | *"no longer available to new customers"*; suporte até **31/12/2026** |
+| O Snowball continua disponível para novos clientes | *"no longer available to new customers"* (não está mais disponível para novos clientes); suporte até **31/12/2026** |
 | Snowball Edge serve para edge computing permanente | A AWS aponta **Outposts** |
 | Storage Optimized tem 80 TB | **210 TB** usáveis |
 | Compute Optimized tem 210 TB | **28 TB** de NVMe para as instâncias |

@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 | **Failover sem réplica** | *"typically takes less than 10 minutes"* (recria a instância) |
 | **Prioridade de failover** | **tier 0** (maior) a **15** (menor) |
 | Empate de prioridade | promove a **maior** instância; se empatar de novo, arbitrária |
-| Após 5 tentativas falhas | *"promotion tiers are no longer considered"* |
+| Após 5 tentativas falhas | *"promotion tiers are no longer considered"* (os níveis de promoção deixam de ser considerados) |
 | **I/O-Optimized** | vale quando I/O ≥ **25%** da fatura; troca permitida **1× a cada 30 dias** |
 
 ## Aurora Global Database
@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 |---|---|
 | **1 ACU** | ≈ **2 GiB** de memória |
 | Mínimo | **0,5 ACU** (instância sempre ligada) ou **0 ACU** (**pausa automática**) |
-| Granularidade de escala | **0,5 ACU** — *"instead of doubling or halving"* |
+| Granularidade de escala | **0,5 ACU** — *"instead of doubling or halving"* (em vez de dobrar ou reduzir pela metade) |
 | Cobrança | **por segundo** |
 | Mínimos recomendados | **2 ACUs** com Performance Insights · **8 ACUs** para Global Database (região primária) |
 | `max_connections` | derivado do **máximo de ACU**; parâmetro **estático** (reboot ao mudar o máximo) |

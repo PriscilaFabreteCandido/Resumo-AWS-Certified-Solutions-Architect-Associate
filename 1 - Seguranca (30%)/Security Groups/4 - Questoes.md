@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Remover o IP do SG
 > **D)** Security group com `0.0.0.0/0` exceto aquele IP
 >
-> **Por que B**: SG **não tem deny**. A NACL tem, e avalia *"in ascending order until a match for the traffic is found"* — por isso o deny precisa ter número **menor**.
+> **Por que B**: SG **não tem deny**. A NACL tem, e avalia *"in ascending order until a match for the traffic is found"* (em ordem crescente, até encontrar uma correspondência para o tráfego) — por isso o deny precisa ter número **menor**.
 > **A errada**: *"Allow rules only"* (somente regras de allow).
 > **C errada**: não há o que remover; o IP nunca foi listado individualmente.
 > **D errada**: SG não permite exceção — não existe "exceto".

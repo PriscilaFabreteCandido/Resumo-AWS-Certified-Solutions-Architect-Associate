@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** IAM policy com condição de tag
 > **D)** Criar uma cópia da tabela só com as colunas permitidas
 >
-> **Por que B**: *"granular controls at the column, row, and cell-levels"*, respeitados por *"Amazon Athena, Amazon Quick, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue"*.
+> **Por que B**: *"granular controls at the column, row, and cell-levels"* (controles granulares nos níveis de coluna, linha e célula), respeitados por *"Amazon Athena, Amazon Quick, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue"*.
 > **A errada**: S3 controla **objeto/prefixo**, não coluna.
 > **C errada**: IAM não entende schema de tabela.
 > **D errada**: duplica storage, cria defasagem e multiplica manutenção.

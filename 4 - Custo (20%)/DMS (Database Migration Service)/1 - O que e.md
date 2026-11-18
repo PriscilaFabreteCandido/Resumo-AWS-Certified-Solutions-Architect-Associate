@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"migrate relational databases, data warehouses, NoSQL databases, and other types of data stores."*
+> *"migrate relational databases, data warehouses, NoSQL databases, and other types of data stores."* (migrar bancos relacionais, data warehouses, bancos NoSQL e outros tipos de repositório de dados)
 
 E o modo de operação:
 
