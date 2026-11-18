@@ -39,7 +39,7 @@ atualizado: 2026-11-08
 > **C)** Criar um segundo túnel
 > **D)** Usar Accelerated VPN
 >
-> **Por que B**: *"IPv6 traffic is not supported for VPN connections on a virtual private gateway."*
+> **Por que B**: *"IPv6 traffic is not supported for VPN connections on a virtual private gateway."* (tráfego IPv6 não é suportado em conexões VPN sobre um virtual private gateway)
 
 > [!question]- Q5. O failover entre os dois túneis está levando muito tempo, com roteamento estático.
 > **A)** Reduzir o MTU

@@ -32,7 +32,7 @@ Tráfego para o serviço em **outra região** continua saindo pelo internet gate
 | Prefix list em NACL | *"You can't reference prefix lists in network ACL rules"* (não é possível referenciar prefix lists em regras de network ACL) |
 | Subnet sem a rota | Continua usando o endpoint **público** do serviço |
 | Rotas do gateway endpoint | A AWS as cria; você **não pode** modificar nem deletar diretamente |
-| Interface endpoint: ENI | *"For each subnet that you specify when you create a VPC endpoint, we create an endpoint network interface in the subnet"* |
+| Interface endpoint: ENI | *"For each subnet that you specify when you create a VPC endpoint, we create an endpoint network interface in the subnet"* (para cada subnet que você indica ao criar um VPC endpoint, criamos nela uma interface de rede do endpoint) |
 
 ## PrivateLink — expor o seu serviço
 

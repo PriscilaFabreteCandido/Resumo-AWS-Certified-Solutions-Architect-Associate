@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Envelope encryption, passo a passo
 
-A API `Encrypt` *"Encrypts plaintext of up to 4,096 bytes using a KMS key"*, e o próprio parâmetro tem a restrição: *"Length Constraints: Minimum length of 1. Maximum length of 4096."*
+A API `Encrypt` *"Encrypts plaintext of up to 4,096 bytes using a KMS key"* (criptografa texto em claro de até 4.096 bytes usando uma chave do KMS), e o próprio parâmetro tem a restrição: *"Length Constraints: Minimum length of 1. Maximum length of 4096."* (restrições de tamanho: mínimo de 1, máximo de 4096)
 
 A doc orienta o uso pretendido: *"You can use this operation to encrypt small amounts of arbitrary data, such as a personal identifier or database password."* E para o resto: *"The GenerateDataKey and GenerateDataKeyPair operations return a plaintext data key and an encrypted copy of that data key."*
 
@@ -33,11 +33,11 @@ Para ler: envia a data key criptografada para `Decrypt`, recebe a versão em tex
 
 ## 2. Os três tipos de chave, em detalhe
 
-**Customer managed key** — *"Exclusively controlled by the customer"*. Você define key policy, IAM, grants, rotação, localização regional e deleção. Tem tarifa mensal **mais** tarifa por uso. Rotação automática é **opcional**.
+**Customer managed key** — *"Exclusively controlled by the customer"* (controlado exclusivamente pelo cliente). Você define key policy, IAM, grants, rotação, localização regional e deleção. Tem tarifa mensal **mais** tarifa por uso. Rotação automática é **opcional**.
 
-**AWS managed key** — alias no formato `aws/{service-name}` (`aws/s3`, `aws/rds`, `aws/ebs`). *"Controlled by service; viewable by customer"* (controlado pelo serviço; visível para o cliente). *"AWS KMS manages rotation (annual)"* (o AWS KMS gerencia a rotação (anual)) e a rotação é *"Required. Every year (approximately 365 days)"* — você **não** pode ligar nem desligar. **Sem tarifa mensal.** A doc nota que, desde 2021, novos serviços AWS não criam mais esse tipo (é legado).
+**AWS managed key** — alias no formato `aws/{service-name}` (`aws/s3`, `aws/rds`, `aws/ebs`). *"Controlled by service; viewable by customer"* (controlado pelo serviço; visível para o cliente). *"AWS KMS manages rotation (annual)"* (o AWS KMS gerencia a rotação (anual)) e a rotação é *"Required. Every year (approximately 365 days)"* (obrigatória; todo ano (aproximadamente 365 dias)) — você **não** pode ligar nem desligar. **Sem tarifa mensal.** A doc nota que, desde 2021, novos serviços AWS não criam mais esse tipo (é legado).
 
-**AWS owned key** — *"Exclusively controlled and only viewable by the AWS service"*. *"Not viewable by the customer"* para fins de log. E o ponto decisivo: *"you cannot change their policies, you cannot audit activities on these keys, and you cannot delete them."* Sem custo.
+**AWS owned key** — *"Exclusively controlled and only viewable by the AWS service"* (controlado exclusivamente pelo serviço da AWS, e visível apenas para ele). *"Not viewable by the customer"* (não visível para o cliente) para fins de log. E o ponto decisivo: *"you cannot change their policies, you cannot audit activities on these keys, and you cannot delete them."* Sem custo.
 
 > [!important] A regra de decisão
 > Precisa de **auditoria**, **controle de acesso próprio**, **compartilhamento cross-account** ou **rotação definida por você** → **customer managed key**.
@@ -46,7 +46,7 @@ Para ler: envia a data key criptografada para `Decrypt`, recebe a versão em tex
 
 ## 3. Rotação
 
-A rotação automática é *"supported only on symmetric encryption KMS keys with key material that AWS KMS generates (AWS_KMS origin)"* (suportado apenas em chaves simétricas do KMS cujo material de chave é gerado pelo próprio AWS KMS (origem AWS_KMS)). O período padrão: *"If you do not specify a value for RotationPeriodInDays when you enable automatic key rotation, the default value is 365 days."*
+A rotação automática é *"supported only on symmetric encryption KMS keys with key material that AWS KMS generates (AWS_KMS origin)"* (suportado apenas em chaves simétricas do KMS cujo material de chave é gerado pelo próprio AWS KMS (origem AWS_KMS)). O período padrão: *"If you do not specify a value for RotationPeriodInDays when you enable automatic key rotation, the default value is 365 days."* (se você não especificar um valor para RotationPeriodInDays ao habilitar a rotação automática, o padrão é 365 dias)
 
 Não suportam rotação automática (só manual): **assimétricas**, **HMAC** e chaves em **custom key store**.
 

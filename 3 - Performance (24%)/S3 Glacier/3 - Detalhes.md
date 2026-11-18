@@ -30,7 +30,7 @@ O **Standard** é o tier padrão quando você não especifica.
 
 ## 3. Provisioned capacity — quando garantir o Expedited
 
-O Expedited pode ser **recusado** em períodos de alta demanda: *"Expedited retrievals might not be accepted during periods of high demand."*
+O Expedited pode ser **recusado** em períodos de alta demanda: *"Expedited retrievals might not be accepted during periods of high demand."* (recuperações Expedited podem não ser aceitas em períodos de alta demanda)
 
 Para garantir, você compra **provisioned capacity**, e cada unidade garante *"at least three Expedited retrievals can be performed every 5 minutes"* com até **300 MB/s**.
 
@@ -54,7 +54,7 @@ Os mínimos de armazenamento são cobrados **integralmente** mesmo se você apag
 
 E a regra de transição: *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento) O exemplo da doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94**.
 
-A cascata também é restrita: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class"*, e de Deep Archive **não sai** por lifecycle.
+A cascata também é restrita: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class"* (objetos armazenados na classe S3 Glacier Flexible Retrieval só podem ser transicionados para o S3 Glacier Deep Archive), e de Deep Archive **não sai** por lifecycle.
 
 ## 6. Escala de recuperação
 

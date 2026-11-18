@@ -21,7 +21,7 @@ O proxy enfileira ou estrangula: *"If connection requests exceed the limits you 
 
 ## O segundo benefício: failover
 
-> *"RDS Proxy makes applications more resilient to database failures by automatically connecting to a standby DB instance while preserving application connections."*
+> *"RDS Proxy makes applications more resilient to database failures by automatically connecting to a standby DB instance while preserving application connections."* (o RDS Proxy torna as aplicações mais resilientes a falhas de banco, conectando automaticamente a uma instância standby e preservando as conexões da aplicação)
 
 E o número: reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"* (porque *"bypasses Domain Name System (DNS) caches"*), e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 

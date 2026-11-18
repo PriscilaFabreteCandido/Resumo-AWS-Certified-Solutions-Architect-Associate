@@ -56,7 +56,7 @@ Mecânica: *"AD Connector uses Kerberos for authentication and authorization of 
 | **Conectividade** | *"The VPC must be connected to your existing network through a virtual private network (VPN) connection or Direct Connect."* |
 | **Subnets** | **Duas**, em **AZs diferentes**, do mesmo tipo de rede |
 | **Portas** | **TCP/UDP 53** (DNS) · **88** (Kerberos) · **389** (LDAP) |
-| **Conta de serviço** | No AD existente, com **"Read users and groups"**. Join/criação de objetos de computador só para Seamless Domain Join e WorkSpaces |
+| **Conta de serviço** | No AD existente, com **"Read users and groups"** (ler usuários e grupos). Join/criação de objetos de computador só para Seamless Domain Join e WorkSpaces |
 | **Functional level** | Windows Server 2003 ou superior |
 | **Tenancy da VPC** | **Default** |
 | Pré-autenticação Kerberos | Habilitada nas contas de usuário |
@@ -85,22 +85,22 @@ O texto oficial de cada elo:
 | Elo | Citação |
 |---|---|
 | Identity Center aceita AD self-managed | *"With AWS IAM Identity Center, you can connect a self-managed directory in Active Directory (AD) or a directory in AWS Managed Microsoft AD by using AWS Directory Service."* |
-| Como autentica | *"IAM Identity Center uses the connection provided by Directory Service to perform pass-through authentication to the source AD instance."* |
-| A senha não é sincronizada | *"No password information is synchronized to IAM Identity Center, because user authentication takes place directly from the source directory in Active Directory."* |
+| Como autentica | *"IAM Identity Center uses the connection provided by Directory Service to perform pass-through authentication to the source AD instance."* (o IAM Identity Center usa a conexão fornecida pelo Directory Service para fazer autenticação pass-through contra a instância de AD de origem) |
+| A senha não é sincronizada | *"No password information is synchronized to IAM Identity Center, because user authentication takes place directly from the source directory in Active Directory."* (nenhuma informação de senha é sincronizada para o IAM Identity Center, porque a autenticação do usuário acontece diretamente no diretório de origem, no Active Directory) |
 | Atribuição por grupo | *"After connecting your corporate directory to IAM Identity Center, you can then grant your AD users or groups access to AWS accounts, applications, or both."* (depois de conectar seu diretório corporativo ao IAM Identity Center, você pode conceder aos usuários ou grupos do AD acesso a contas AWS, a aplicações, ou a ambos) |
 
 **O resultado**: a pessoa entra com o usuário de rede de sempre e recebe **credencial temporária** nas contas que o grupo dela permite. Sem usuário IAM, sem access key, e o desligamento no AD corta o acesso à AWS automaticamente.
 
 > [!warning] "Não armazena nada na nuvem" vale para a SENHA, não para tudo
 > O Identity Center **sincroniza metadados** — usuário, grupo e participação — para o identity store dele:
-> *"IAM Identity Center uses the connection provided by Directory Service to synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."*
+> *"IAM Identity Center uses the connection provided by Directory Service to synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."* (o IAM Identity Center usa a conexão fornecida pelo Directory Service para sincronizar informações de usuário, grupo e participação do seu diretório de origem no Active Directory para o identity store do Identity Center)
 > O que nunca sai do seu domain controller é a **credencial**. A distinção é fina e dá alternativa de prova.
 
 ### 3c. Os limites dessa montagem
 
 | Limitação | Texto oficial | Consequência |
 |---|---|---|
-| **Um domínio só** | *"IAM Identity Center only has access to the users and groups of the single domain to which AD Connector attaches. If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."* | Várias florestas → **Managed Microsoft AD** com trust |
+| **Um domínio só** | *"IAM Identity Center only has access to the users and groups of the single domain to which AD Connector attaches. If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."* (o IAM Identity Center só tem acesso aos usuários e grupos do único domínio ao qual o AD Connector se conecta; se você precisa atender vários domínios ou florestas, use o Directory Service for Microsoft Active Directory) | Várias florestas → **Managed Microsoft AD** com trust |
 | **Reset de senha** | *"any future user password resets must be done from within AD... users will not be able to reset their passwords from the AWS access portal."* | Se pedirem autoatendimento de senha pelo portal, não serve |
 | **Conta de gerenciamento** | *"make sure your AD Connector or directory in AWS Managed Microsoft AD in Directory Service resides within your AWS Organizations management account."* | E na **mesma Região** do Identity Center |
 | **Um por vez** | *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* (você pode conectar apenas um diretório do AD Connector ou um do AWS Managed Microsoft AD por vez) | — |

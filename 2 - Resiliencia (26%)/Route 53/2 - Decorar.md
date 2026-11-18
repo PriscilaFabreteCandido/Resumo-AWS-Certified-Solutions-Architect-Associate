@@ -26,8 +26,8 @@ atualizado: 2026-11-08
 |---|---|
 | Alias no ápice | *"Unlike a CNAME record, you can create an alias record at the top node of a DNS namespace, also known as the zone apex."* |
 | CNAME no ápice | *"You can't create a CNAME record that has the same name as the hosted zone (the zone apex)."* |
-| Custo | *"Route 53 doesn't charge for alias queries to AWS resources."* (o Route 53 não cobra por consultas de alias a recursos da AWS) / *"Route 53 charges for CNAME queries."* |
-| TTL do alias | *"If an alias record points to an AWS resource, you can't set the time to live (TTL); Route 53 uses the default TTL for the resource."* |
+| Custo | *"Route 53 doesn't charge for alias queries to AWS resources."* (o Route 53 não cobra por consultas de alias a recursos da AWS) / *"Route 53 charges for CNAME queries."* (o Route 53 cobra por consultas a registros CNAME) |
+| TTL do alias | *"If an alias record points to an AWS resource, you can't set the time to live (TTL); Route 53 uses the default TTL for the resource."* (se um registro de alias aponta para um recurso da AWS, você não define o TTL: o Route 53 usa o TTL padrão daquele recurso) |
 | Simple sem health check | *"although you can specify multiple IP addresses, they are not health checked"* |
 
 ## Health checks — os três tipos
@@ -38,7 +38,7 @@ atualizado: 2026-11-08
 | **Calculated** | **Outros health checks** combinados |
 | **CloudWatch alarm** | Um alarme do CloudWatch |
 
-Limitações do tipo CloudWatch alarm: só métrica de **resolução padrão**; estatísticas Average, Minimum, Maximum, Sum, SampleCount; **sem** *"M out of N"*; **sem** metric math; **mesma conta**. E: *"Route 53 doesn't wait for the CloudWatch alarm to go into the ALARM state."*
+Limitações do tipo CloudWatch alarm: só métrica de **resolução padrão**; estatísticas Average, Minimum, Maximum, Sum, SampleCount; **sem** *"M out of N"* (M de N); **sem** metric math; **mesma conta**. E: *"Route 53 doesn't wait for the CloudWatch alarm to go into the ALARM state."*
 
 Para registro **alias**, em vez de anexar health check você liga **Evaluate Target Health**.
 

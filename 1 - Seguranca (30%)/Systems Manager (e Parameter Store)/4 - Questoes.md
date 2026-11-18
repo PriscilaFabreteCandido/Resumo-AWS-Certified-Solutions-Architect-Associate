@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** Run Command com `apt upgrade`
 > **D)** Automation com documento de upgrade
 >
-> **Por que B**: *"Patch Manager... doesn't support upgrading major versions of operating systems."* A troca de versão maior é substituição imutável.
+> **Por que B**: *"Patch Manager... doesn't support upgrading major versions of operating systems."* (o Patch Manager... não oferece suporte a upgrade de versões maiores de sistema operacional) A troca de versão maior é substituição imutável.
 > **C errada**: `apt upgrade` não faz release upgrade, e fazê-lo in-place em escala é frágil.
 
 ## ⚠️ Armadilhas
@@ -61,7 +61,7 @@ atualizado: 2026-11-08
 | Session Manager precisa da porta 22 | **Nenhuma porta de entrada** |
 | Session Manager loga tudo | **Não** loga sessões via port forwarding ou SSH |
 | Parameter Store rotaciona SecureString | **"None"** — não rotaciona |
-| Advanced tier pode voltar para Standard | *"Not downgradeable"* |
+| Advanced tier pode voltar para Standard | *"Not downgradeable"* (não permite rebaixamento) |
 | Patch Manager faz upgrade de versão do SO | *"doesn't support upgrading major versions"* |
 | A AWS testa os patches | *"AWS doesn't test patches before making them available"* (a AWS não testa os patches antes de disponibilizá-los) |
 | SSM funciona sem instance profile | Precisa de role com a policy do SSM |

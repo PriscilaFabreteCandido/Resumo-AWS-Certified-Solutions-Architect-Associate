@@ -19,7 +19,7 @@ E não ajuda no que o CloudFront resolve melhor: entregar o **mesmo** arquivo a 
 
 ## 2. Os IPs estáticos anycast
 
-> *"For IPv4, Global Accelerator provides two static IPv4 addresses. For dual-stack, Global Accelerator provides a total of four addresses."*
+> *"For IPv4, Global Accelerator provides two static IPv4 addresses. For dual-stack, Global Accelerator provides a total of four addresses."* (para IPv4, o Global Accelerator fornece dois endereços IPv4 estáticos; para dual-stack, fornece quatro no total)
 
 **Anycast** significa que os mesmos dois IPs são anunciados de **vários** POPs no mundo; o roteamento BGP leva o cliente ao mais próximo.
 
@@ -49,7 +49,7 @@ Para requisito de **"failover em segundos"**, a resposta é **Global Accelerator
 
 ## 4. Standard × custom routing
 
-**Standard accelerator** *"directs traffic over the AWS global network to endpoints in the nearest Region to the client"* (direciona o tráfego pela rede global da AWS até endpoints na Região mais próxima do cliente). Endpoints: *"Network Load Balancers, Application Load Balancers, Amazon EC2 instances, or Elastic IP addresses"*.
+**Standard accelerator** *"directs traffic over the AWS global network to endpoints in the nearest Region to the client"* (direciona o tráfego pela rede global da AWS até endpoints na Região mais próxima do cliente). Endpoints: *"Network Load Balancers, Application Load Balancers, Amazon EC2 instances, or Elastic IP addresses"* (Network Load Balancers, Application Load Balancers, instâncias EC2 ou endereços IP elásticos).
 
 Você configura **endpoint groups** por região, com:
 - **Traffic dial** — percentual do tráfego para aquele grupo (migração gradual, teste)

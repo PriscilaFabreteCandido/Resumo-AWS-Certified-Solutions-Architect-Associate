@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 
 ## O guia oficial cita
 
-**Task 1.3** — *"Knowledge of: ... AWS managed encryption, data at rest, data in transit"* e pede *"Choosing data security options based on requirements"* (escolher opções de segurança de dados com base nos requisitos).
+**Task 1.3** — *"Knowledge of: ... AWS managed encryption, data at rest, data in transit"* (conhecimento de: ... criptografia gerenciada pela AWS, dados em repouso, dados em trânsito) e pede *"Choosing data security options based on requirements"* (escolher opções de segurança de dados com base nos requisitos).
 
 ## O essencial do KMS
 

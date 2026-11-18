@@ -14,7 +14,7 @@ Para S3: **1-128 MB** (padrão **5 MB**) e **0-900 s** (padrão **300 s**). Ou s
 
 Isso é a diferença essencial com o **Kinesis Data Streams** (put-to-get *"typically less than 1 second"*): o Firehose é **near-real-time** por desenho.
 
-Para baixar a latência, existe o **zero buffering**: *"Firehose will not buffer data and will deliver data within a few seconds"*. Mas há duas ressalvas documentadas:
+Para baixar a latência, existe o **zero buffering**: *"Firehose will not buffer data and will deliver data within a few seconds"* (o Firehose não faz buffer dos dados e os entrega em poucos segundos). Mas há duas ressalvas documentadas:
 - *"only available for the application destinations and is not available for Amazon S3 backup destination"*
 - Com intervalo menor que 60 s no S3, usa **multipart upload** e *"you will see some increase in S3 PUT API costs"* (você verá algum aumento nos custos de requisições PUT do S3)
 

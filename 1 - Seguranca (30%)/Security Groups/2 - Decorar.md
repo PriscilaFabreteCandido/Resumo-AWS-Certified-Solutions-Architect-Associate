@@ -43,7 +43,7 @@ Amazon DNS (Route 53 Resolver, o VPC+2), DHCP, **metadados da instância (IMDS)*
 
 ## Boa prática citada na doc
 
-Para as portas **22 (SSH)** e **3389 (RDP)**: *"authorize only specific IP address ranges"*. E o alerta: *"If you specify 0.0.0.0/0 (IPv4) and ::/ (IPv6), this enables anyone to access your instances."*
+Para as portas **22 (SSH)** e **3389 (RDP)**: *"authorize only specific IP address ranges"*. E o alerta: *"If you specify 0.0.0.0/0 (IPv4) and ::/ (IPv6), this enables anyone to access your instances."* (se você especificar 0.0.0.0/0 (IPv4) e ::/ (IPv6), qualquer pessoa poderá acessar suas instâncias)
 
 ## Links
 

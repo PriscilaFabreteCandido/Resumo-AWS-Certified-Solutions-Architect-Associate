@@ -21,7 +21,7 @@ E a latência: *"the put-to-get delay is typically less than 1 second"*.
 
 | Capacidade | Por quê importa |
 |---|---|
-| **Múltiplos consumidores** | *"Multiple Kinesis Data Streams applications can consume data from a stream"* — cada um no seu ritmo |
+| **Múltiplos consumidores** | *"Multiple Kinesis Data Streams applications can consume data from a stream"* (várias aplicações do Kinesis Data Streams podem consumir dados do mesmo stream) — cada um no seu ritmo |
 | **Replay** | Retenção de **24 h a 365 dias**: dá para reprocessar |
 | **Ordem por shard** | Registros com a mesma partition key mantêm a ordem |
 

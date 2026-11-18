@@ -25,15 +25,15 @@ O volume **cresce e encolhe** automaticamente: *"Aurora cluster volume can grow 
 | **Com** Aurora Replica | *"service is typically restored in less than 60 seconds, and often less than 30 seconds"* |
 | **Sem** réplica | *"the primary instance is recreated in the same AZ... typically takes less than 10 minutes"* (a instância primária é recriada na mesma AZ... normalmente leva menos de 10 minutos) |
 
-A doc acrescenta: *"Promoting an Aurora Replica to the primary instance is much faster than creating a new primary instance."*
+A doc acrescenta: *"Promoting an Aurora Replica to the primary instance is much faster than creating a new primary instance."* (promover uma réplica do Aurora a instância primária é muito mais rápido do que criar uma instância primária nova)
 
-**Prioridade (promotion tier)**: *"Priorities range from 0 for the highest priority to 15 for the lowest priority."* Empate → a **maior** instância; empate de novo → arbitrária. E: *"After five unsuccessful failover attempts, promotion tiers are no longer considered."* (depois de cinco tentativas de failover malsucedidas, os níveis de promoção deixam de ser considerados) Mudar a prioridade **não** dispara failover.
+**Prioridade (promotion tier)**: *"Priorities range from 0 for the highest priority to 15 for the lowest priority."* (as prioridades vão de 0, a mais alta, até 15, a mais baixa) Empate → a **maior** instância; empate de novo → arbitrária. E: *"After five unsuccessful failover attempts, promotion tiers are no longer considered."* (depois de cinco tentativas de failover malsucedidas, os níveis de promoção deixam de ser considerados) Mudar a prioridade **não** dispara failover.
 
 As Aurora Replicas usam replicação **assíncrona** para servir leitura: *"Aurora Replicas use asynchronous replication to support high availability without affecting primary instance performance."* (as réplicas do Aurora usam replicação assíncrona para dar alta disponibilidade sem afetar o desempenho da instância primária)
 
 Durante o failover em **Aurora MySQL**: *"Aurora restarts only the writer DB instance and the reader instance to which it fails over. Other reader instances in the cluster remain available."* (o Aurora reinicia apenas a instância de escrita e a de leitura para a qual o failover ocorre; as demais instâncias de leitura do cluster continuam disponíveis)
 
-⚠️ Nuance do reader endpoint: *"During a failover, the reader endpoint might direct connections to the new primary DB instance of a DB cluster for a short time after an Aurora Replica is promoted."*
+⚠️ Nuance do reader endpoint: *"During a failover, the reader endpoint might direct connections to the new primary DB instance of a DB cluster for a short time after an Aurora Replica is promoted."* (durante um failover, o endpoint de leitura pode direcionar conexões para a nova instância primária do cluster por um curto período depois que uma réplica do Aurora é promovida)
 
 E uma dica operacional da própria doc: *"the fastest path to recovery is often to restart or to fail over to the same DB instance. Restarting is faster and involves less overhead than failover."*
 
@@ -41,11 +41,11 @@ E uma dica operacional da própria doc: *"the fastest path to recovery is often 
 
 **Cluster endpoint** (writer): *"Connect to the primary instance of your cluster to develop and test applications, and perform transformations like INSERT statements and DDL, DML, and ETL operations."* (conectar à instância primária do cluster para desenvolver e testar aplicações, e executar transformações como INSERT e operações de DDL, DML e ETL) Sempre representa a primária atual.
 
-**Reader endpoint**: *"Perform queries. Aurora automatically performs connection-balancing among all the Aurora Replicas."*
+**Reader endpoint**: *"Perform queries. Aurora automatically performs connection-balancing among all the Aurora Replicas."* (executar consultas; o Aurora faz automaticamente o balanceamento de conexões entre todas as réplicas)
 
 **Custom endpoint**: *"Connect to different subsets of DB instances on the DB cluster. This is useful when you have different instance capacities and configurations within your DB cluster."* (conectar a subconjuntos diferentes de instâncias do cluster; é útil quando você tem capacidades e configurações diferentes dentro do mesmo cluster) O caso clássico: duas instâncias grandes dedicadas a relatórios pesados, sem afetar as que servem a aplicação.
 
-**Instance endpoint**: *"Examine details about a specific DB instance for diagnosis or tuning."* **Não** redireciona no failover — se a aplicação usa instance endpoint, você gerencia a descoberta.
+**Instance endpoint**: *"Examine details about a specific DB instance for diagnosis or tuning."* (examinar detalhes de uma instância específica, para diagnóstico ou ajuste) **Não** redireciona no failover — se a aplicação usa instance endpoint, você gerencia a descoberta.
 
 ## 4. Aurora Global Database
 
@@ -76,7 +76,7 @@ Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` ace
 
 A escala é fina e sem interrupção: *"Aurora serverless can add half an ACU when only a little more capacity is needed"* (o Aurora Serverless consegue adicionar meia ACU quando só um pouco mais de capacidade é necessário), *"Scaling can change capacity by as little as 0.5 ACUs, instead of doubling or halving"*, e *"Scaling typically happens with no pause in processing at all"* — inclusive *"while SQL statements are running and transactions are open"*.
 
-Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling up requires adding a whole new DB instance."* E a conversão é sem recriar: *"You can modify existing DB instances from provisioned to Aurora serverless or from Aurora serverless to provisioned."*
+Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling up requires adding a whole new DB instance."* (num cluster provisionado, escalar para cima exige adicionar uma instância inteira nova) E a conversão é sem recriar: *"You can modify existing DB instances from provisioned to Aurora serverless or from Aurora serverless to provisioned."*
 
 ⚠️ `max_connections` é derivado do **máximo de ACU** e é **estático** — mudar o máximo exige reboot.
 

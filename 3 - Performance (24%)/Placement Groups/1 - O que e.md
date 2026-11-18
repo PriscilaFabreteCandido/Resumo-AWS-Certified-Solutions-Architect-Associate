@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 
 ## Fatos gerais
 
-> *"Placement groups are optional."* · *"There is no charge for creating a placement group."* (não há cobrança para criar um placement group)
+> *"Placement groups are optional."* (placement groups são opcionais) · *"There is no charge for creating a placement group."* (não há cobrança para criar um placement group)
 
 - Uma instância pertence a **um** grupo só
 - Grupos **não** se fundem

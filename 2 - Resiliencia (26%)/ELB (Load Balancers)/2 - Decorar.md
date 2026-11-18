@@ -28,7 +28,7 @@ atualizado: 2026-11-08
 | **GENEVE** (GWLB) | porta **6081** |
 | **Connection draining** (deregistration delay) | **300 s** por padrão |
 | Algoritmo padrão do ALB | round robin (ou *least outstanding requests*) |
-| NLB: conexão TCP | *"Each individual TCP connection is routed to a single target for the life of the connection"* |
+| NLB: conexão TCP | *"Each individual TCP connection is routed to a single target for the life of the connection"* (cada conexão TCP individual é roteada para um único alvo durante toda a vida da conexão) |
 
 ## Alvos de alias no Route 53
 

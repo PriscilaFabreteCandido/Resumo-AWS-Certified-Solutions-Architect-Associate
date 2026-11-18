@@ -71,7 +71,7 @@ atualizado: 2026-11-08
 > **C)** Criar um GSI com consistência forte
 > **D)** Habilitar DAX
 >
-> **Por que B**: *"Local secondary indexes are created at the same time that you create a table"*, e *"Queries on global secondary indexes support eventual consistency only"* (consultas em índices secundários globais só oferecem consistência eventual).
+> **Por que B**: *"Local secondary indexes are created at the same time that you create a table"* (índices secundários locais são criados no mesmo momento em que você cria a tabela), e *"Queries on global secondary indexes support eventual consistency only"* (consultas em índices secundários globais só oferecem consistência eventual).
 
 ## ⚠️ Armadilhas
 

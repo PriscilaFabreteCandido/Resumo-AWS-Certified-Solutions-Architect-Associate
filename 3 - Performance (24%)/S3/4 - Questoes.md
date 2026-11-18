@@ -107,7 +107,7 @@ atualizado: 2026-11-08
 > **C)** Funciona, mas cobra o dobro
 > **D)** O objeto fica preso em Glacier IR
 >
-> **Por que B**: é o exemplo literal da doc — *"In this case the S3 Glacier Deep Archive transition must occur after at least 94 days."*
+> **Por que B**: é o exemplo literal da doc — *"In this case the S3 Glacier Deep Archive transition must occur after at least 94 days."* (nesse caso, a transição para o S3 Glacier Deep Archive precisa ocorrer depois de pelo menos 94 dias)
 > 💡 A doc acrescenta uma saída: *"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."* (você pode usar duas regras para conseguir isso, mas paga as cobranças de duração mínima de armazenamento)
 
 > [!question]- Q-lc 4. Um objeto está no **Deep Archive Access tier** do Intelligent-Tiering. Para onde o lifecycle pode movê-lo?

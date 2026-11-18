@@ -52,7 +52,7 @@ O Timestream resolve com **storage em camadas** (memória para o recente, magné
 
 Gatilho: **sensores, IoT, métricas de aplicação, telemetria, DevOps monitoring**.
 
-O guia cita em **Task 4.3**: *"Determining cost-effective AWS database types (for example, **time series format**, columnar format)"*. A versão suportada pelo AWS Backup é **Timestream for LiveAnalytics**.
+O guia cita em **Task 4.3**: *"Determining cost-effective AWS database types (for example, **time series format**, columnar format)"* (determinar os tipos de banco da AWS mais econômicos (por exemplo, **formato de série temporal**, formato colunar)). A versão suportada pelo AWS Backup é **Timestream for LiveAnalytics**.
 
 ## 5. A tabela de decisão completa
 

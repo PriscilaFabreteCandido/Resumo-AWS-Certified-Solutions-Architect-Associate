@@ -50,7 +50,7 @@ atualizado: 2026-11-08
 > **C)** Associar um Elastic IP adicional
 > **D)** Usar NAT instance em modo bastion
 >
-> **Por que B**: a tabela oficial marca **bastion** e **port forwarding** como *"Not supported"* no NAT gateway. A solução moderna é Session Manager, *"without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* (sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH).
+> **Por que B**: a tabela oficial marca **bastion** e **port forwarding** como *"Not supported"* (não suportado) no NAT gateway. A solução moderna é Session Manager, *"without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* (sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH).
 > **D errada**: funciona tecnicamente (NAT instance suporta bastion), mas é a resposta pior — você volta a gerenciar HA, patch e chave SSH.
 
 ## ⚠️ Armadilhas

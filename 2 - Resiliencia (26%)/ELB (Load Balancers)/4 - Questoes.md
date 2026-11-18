@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Classic Load Balancer
 > **D)** ALB atrás do Global Accelerator
 >
-> **Por que B**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address"*, com EIP opcional. Camada 4, latência mínima.
+> **Por que B**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address"* (o Elastic Load Balancing cria uma interface de rede para cada Zona de Disponibilidade habilitada, e a usa para obter um endereço IP estático), com EIP opcional. Camada 4, latência mínima.
 > **A errada**: ALB expõe **DNS name**, e camada 7 é overhead para TCP puro.
 > **C errada**: geração anterior.
 > **D errada**: Global Accelerator **também** dá IPs estáticos e é válido em cenário global — mas aqui adiciona custo sem necessidade.

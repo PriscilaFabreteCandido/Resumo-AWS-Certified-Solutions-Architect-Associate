@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** Mudar para Deep Archive
 > **D)** Usar S3 Batch Operations
 >
-> **Por que B**: *"Provisioned capacity helps ensure that your retrieval capacity for Expedited retrievals... is available when you need it."*
+> **Por que B**: *"Provisioned capacity helps ensure that your retrieval capacity for Expedited retrievals... is available when you need it."* (a capacidade provisionada ajuda a garantir que sua capacidade de recuperação Expedited... esteja disponível quando você precisar)
 
 > [!question]- Q5. Arquivar 20 milhões de arquivos de log de ~15 KB cada no Deep Archive. Qual o problema?
 > **A)** Deep Archive não aceita objetos pequenos

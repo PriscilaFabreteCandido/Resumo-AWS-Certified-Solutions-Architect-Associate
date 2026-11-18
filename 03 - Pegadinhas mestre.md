@@ -124,7 +124,7 @@ atualizado: 2026-11-08
 | Aurora Serverless v2 pausa automaticamente | Só se o mínimo for **0 ACU**. Com 0,5 ACU, fica sempre ligado. |
 | Aurora Global Database é multi-master | É **1 primária escrevendo + até 10 secundárias só leitura**. Escrita de secundária só com **write forwarding** (que encaminha para a primária). |
 | Aurora Global Database tem RPO 0 | **Falha**: RPO em segundos. **Switchover planejado**: RPO 0. |
-| GSI pode fazer leitura forte | *"Queries on global secondary indexes support eventual consistency only."* **LSI** faz leitura forte. |
+| GSI pode fazer leitura forte | *"Queries on global secondary indexes support eventual consistency only."* (consultas em índices secundários globais só oferecem consistência eventual) **LSI** faz leitura forte. |
 | GSI consome capacidade da tabela | GSI tem **capacidade própria**. **LSI** consome a da tabela base. |
 | GSI devolve atributo não projetado | **Não.** GSI só devolve o que foi projetado. **LSI** busca o resto na tabela. |
 | DAX acelera leitura forte | **Não.** Leitura forte **passa direto** para o DynamoDB e **não é cacheada**. |
@@ -160,7 +160,7 @@ atualizado: 2026-11-08
 | Permissions boundary concede acesso | Boundary é **interseção**, nunca concessão. |
 | Deny implícito e deny explícito são iguais | Deny **explícito** não pode ser revertido por nada. Deny **implícito** (ausência de allow) pode ser resolvido por uma policy de recurso no mesmo account. |
 | KMS criptografa qualquer arquivo | `Encrypt` aceita **4.096 bytes**. Para arquivo: **envelope encryption**. |
-| Rotação do KMS recriptografa os dados | *"It does not rotate the data keys that the KMS key generated or re-encrypt any data."* |
+| Rotação do KMS recriptografa os dados | *"It does not rotate the data keys that the KMS key generated or re-encrypt any data."* (ela não rotaciona as data keys geradas pela chave do KMS nem recriptografa nenhum dado) |
 | Posso rotacionar chave assimétrica automaticamente | **Não.** Só simétrica com material gerado pela KMS. |
 | CloudHSM e KMS são equivalentes | CloudHSM é **single-tenant**, **FIPS nível 3**, você gerencia usuários e as chaves não são visíveis à AWS. KMS é gerenciado e integrado com os serviços. |
 | ACM emite certificado para EC2 | Só com **Nitro Enclaves**. *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* (associar um certificado gerenciado pelo ACM diretamente a uma instância EC2 exige um Nitro Enclave) |

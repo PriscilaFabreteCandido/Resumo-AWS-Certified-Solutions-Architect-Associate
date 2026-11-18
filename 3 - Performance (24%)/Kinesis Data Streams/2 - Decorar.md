@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 
 | | **Compartilhado** | **Enhanced fan-out** |
 |---|---|---|
-| Throughput | *"Fixed at a total of 2 MB/sec per shard"* **dividido** entre todos | *"up to 2 MB of data per second per shard"* **por consumidor** |
+| Throughput | *"Fixed at a total of 2 MB/sec per shard"* (fixo num total de 2 MB/s por shard) **dividido** entre todos | *"up to 2 MB of data per second per shard"* **por consumidor** |
 | Latência (1 consumidor) | *"An average of around 200 ms"* (uma média de cerca de 200 ms) | *"Typically an average of 70 ms"* |
 | Latência (5 consumidores) | *"around 1000 ms"* (cerca de 1000 ms) | *"70 ms whether you have one consumer or five"* (70 ms, tanto com um consumidor quanto com cinco) |
 | Entrega | Pull (`GetRecords`) | **Push** via HTTP/2 (`SubscribeToShard`) |

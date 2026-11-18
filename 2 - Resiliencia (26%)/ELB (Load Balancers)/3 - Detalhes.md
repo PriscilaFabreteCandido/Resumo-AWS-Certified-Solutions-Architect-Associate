@@ -21,7 +21,7 @@ O ALB *"functions at the application layer, the seventh layer of the OSI model"*
 
 Também faz **redirect** (HTTP → HTTPS) e **fixed response** (devolver 503 de manutenção) sem tocar no backend.
 
-Protocolos: front-end *"HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2"*, e *"You can use HTTP/2 only with HTTPS listeners"*. Backend em HTTP/1.1 por padrão, com HTTP/2 ou **gRPC** opcionais. WebSocket é suportado via upgrade — mas atenção: *"if there is a connection upgrade, Application Load Balancer listener routing rules and AWS WAF integrations no longer apply"*.
+Protocolos: front-end *"HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2"* (HTTP/0.9, HTTP/1.0, HTTP/1.1 e HTTP/2), e *"You can use HTTP/2 only with HTTPS listeners"*. Backend em HTTP/1.1 por padrão, com HTTP/2 ou **gRPC** opcionais. WebSocket é suportado via upgrade — mas atenção: *"if there is a connection upgrade, Application Load Balancer listener routing rules and AWS WAF integrations no longer apply"*.
 
 Headers que ele adiciona: **`X-Forwarded-For`**, **`X-Forwarded-Proto`**, **`X-Forwarded-Port`** — é assim que o backend sabe o IP real do cliente.
 
@@ -29,9 +29,9 @@ Headers que ele adiciona: **`X-Forwarded-For`**, **`X-Forwarded-Proto`**, **`X-F
 
 ## 2. NLB — camada 4
 
-O NLB *"functions at the fourth layer"*. Não entende HTTP: roteia por **hash de fluxo**, e *"Each individual TCP connection is routed to a single target for the life of the connection."*
+O NLB *"functions at the fourth layer"*. Não entende HTTP: roteia por **hash de fluxo**, e *"Each individual TCP connection is routed to a single target for the life of the connection."* (cada conexão TCP individual é roteada para um único alvo durante toda a vida da conexão)
 
-A característica decisiva é o **IP estático**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address."* E opcionalmente *"you can optionally associate one Elastic IP address with each network interface."*
+A característica decisiva é o **IP estático**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address."* (o Elastic Load Balancing cria uma interface de rede para cada Zona de Disponibilidade habilitada, e a usa para obter um endereço IP estático) E opcionalmente *"you can optionally associate one Elastic IP address with each network interface."*
 
 Isso resolve dois problemas de prova:
 - Clientes que precisam **liberar IPs em firewall**

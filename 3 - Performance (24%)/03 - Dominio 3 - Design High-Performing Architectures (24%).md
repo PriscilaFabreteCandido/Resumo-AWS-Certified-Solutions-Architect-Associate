@@ -117,7 +117,7 @@ atualizado: 2026-11-08
 > **Global Accelerator** → latência de **rede** para tráfego TCP/UDP, sem cachear nada.
 
 > [!question]- Qual métrica usar para escalar?
-> O guia pede *"Identifying metrics and conditions to perform scaling actions"*. A resposta não é sempre CPU:
+> O guia pede *"Identifying metrics and conditions to perform scaling actions"* (identificar métricas e condições para executar ações de escala). A resposta não é sempre CPU:
 > - Web síncrona → **CPU** ou **RequestCountPerTarget** do ALB
 > - Consumidor de fila → **ApproximateNumberOfMessagesVisible** (ou backlog por instância)
 > - Aplicação com conexão longa → **ActiveConnectionCount**

@@ -42,7 +42,7 @@ Consequências de prova:
 | *"rotate keys annually"* | **AWS managed** já faz; CMK com rotação **habilitada** |
 | *"rotate on our own schedule"* / *"revoke"* | **Customer managed key** |
 | *"share encrypted snapshot with another account"* | **Customer managed key** (não é possível com AWS managed) |
-| *"keys must never leave hardware we control"*, *"FIPS 140-3 Level 3"*, *"single-tenant HSM"* (HSM de inquilino único) | **CloudHSM** |
+| *"keys must never leave hardware we control"*, *"FIPS 140-3 Level 3"* (FIPS 140-3 nível 3), *"single-tenant HSM"* (HSM de inquilino único) | **CloudHSM** |
 | *"AWS must never have access to the plaintext"* (a AWS nunca pode ter acesso ao texto em claro) | **Client-side encryption** (ou **SSE-C**) |
 | *"double encryption"* | **DSSE-KMS** |
 

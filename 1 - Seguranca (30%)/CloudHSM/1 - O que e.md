@@ -21,7 +21,7 @@ A diferença essencial em relação ao KMS está numa frase: *"Because your data
 
 Só três frases no enunciado puxam CloudHSM. Fora delas, a resposta é **KMS**:
 
-1. **"FIPS 140-2 / 140-3 level 3"**
+1. **"FIPS 140-2 / 140-3 level 3"** (FIPS 140-2 / 140-3 nível 3)
 2. **"single-tenant HSM"** (HSM de inquilino único) / "HSM dedicado"
 3. **"a AWS não pode ter acesso nenhum ao material da chave"**
 

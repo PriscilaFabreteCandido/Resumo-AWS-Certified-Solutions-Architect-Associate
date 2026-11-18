@@ -33,7 +33,7 @@ A tabela oficial da doc do Parameter Store coloca assim:
 | "replicar o secret para outra região" | **Secrets Manager** |
 | "menor custo" + é **configuração**, não secret | **Parameter Store** (tier Standard é grátis) |
 
-A recomendação oficial: *"For secrets such as database credentials, API keys, or tokens, we recommend AWS Secrets Manager, which provides purpose built security controls including automatic rotation and cross-region replication."*
+A recomendação oficial: *"For secrets such as database credentials, API keys, or tokens, we recommend AWS Secrets Manager, which provides purpose built security controls including automatic rotation and cross-region replication."* (para segredos como credenciais de banco, chaves de API ou tokens, recomendamos o AWS Secrets Manager, que oferece controles de segurança feitos sob medida, incluindo rotação automática e replicação entre Regiões)
 
 ## Links
 

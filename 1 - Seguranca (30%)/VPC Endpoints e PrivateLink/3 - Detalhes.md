@@ -22,7 +22,7 @@ Três pontos de atenção:
 
 ## 2. Interface endpoint — como funciona
 
-A AWS cria uma **ENI** com IP privado em cada subnet que você escolher: *"For each subnet that you specify when you create a VPC endpoint, we create an endpoint network interface in the subnet."* As ENIs são *"requester-managed"*.
+A AWS cria uma **ENI** com IP privado em cada subnet que você escolher: *"For each subnet that you specify when you create a VPC endpoint, we create an endpoint network interface in the subnet."* (para cada subnet que você indica ao criar um VPC endpoint, criamos nela uma interface de rede do endpoint) As ENIs são *"requester-managed"*.
 
 Com **DNS privado** habilitado, o nome público do serviço (`secretsmanager.sa-east-1.amazonaws.com`) resolve para o IP privado da ENI — então a aplicação não muda nada. Para isso, a VPC precisa de `enableDnsSupport` e `enableDnsHostnames`.
 

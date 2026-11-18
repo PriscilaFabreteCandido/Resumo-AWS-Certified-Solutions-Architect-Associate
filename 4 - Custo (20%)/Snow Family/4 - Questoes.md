@@ -40,7 +40,7 @@ atualizado: 2026-11-08
 > **C)** Snowcone
 > **D)** DataSync
 >
-> **Por que B**: a própria doc aponta: *"For edge computing, explore AWS Outposts."* E o suporte ao Snowball encerra em **31/12/2026** — não serve para necessidade **permanente**.
+> **Por que B**: a própria doc aponta: *"For edge computing, explore AWS Outposts."* (para computação na borda, considere o AWS Outposts) E o suporte ao Snowball encerra em **31/12/2026** — não serve para necessidade **permanente**.
 
 > [!question]- Q5. Quantos dispositivos num cluster Snowball Edge, e para quê?
 > **A)** 2 a 8, para velocidade

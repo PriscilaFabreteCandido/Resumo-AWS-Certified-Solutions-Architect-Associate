@@ -14,7 +14,7 @@ A documentação do Snowball Edge abre com:
 
 E a página do produto:
 
-> *"On December 31, 2026, AWS will discontinue support for AWS Snowball devices in all AWS commercial Regions. This includes both the AWS Snowball Edge Storage Optimized and Compute Optimized devices."*
+> *"On December 31, 2026, AWS will discontinue support for AWS Snowball devices in all AWS commercial Regions. This includes both the AWS Snowball Edge Storage Optimized and Compute Optimized devices."* (em 31 de dezembro de 2026, a AWS vai encerrar o suporte aos dispositivos Snowball em todas as Regiões comerciais, incluindo os modelos Snowball Edge Storage Optimized e Compute Optimized)
 
 (GovCloud e ADC Regions com jobs ativos não são afetados.)
 

@@ -27,7 +27,7 @@ Fora das Regiões:
 
 ## As definições oficiais
 
-> *"Each AWS Region consists of multiple, isolated, and physically separate AZs within a geographic area."*
+> *"Each AWS Region consists of multiple, isolated, and physically separate AZs within a geographic area."* (cada Região da AWS é formada por várias AZs isoladas e fisicamente separadas, dentro de uma área geográfica)
 
 > *"An Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region."* (uma Zona de Disponibilidade (AZ) é um ou mais data centers distintos, com energia, rede e conectividade redundantes, dentro de uma Região)
 

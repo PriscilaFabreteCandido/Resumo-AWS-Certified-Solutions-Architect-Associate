@@ -16,7 +16,7 @@ A AWS *"automatically provisions and maintains a synchronous standby replica in 
 
 ⚠️ A doc **não informa** um tempo típico de failover para o Multi-AZ **instance**. Se a questão pedir número, o número documentado é o do **cluster**: *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
 
-Tecnologia de failover por engine: *"Multi-AZ deployments for MariaDB, MySQL, Oracle, PostgreSQL, and RDS Custom for SQL Server DB instances use the Amazon failover technology. Microsoft SQL Server DB instances use SQL Server Database Mirroring (DBM) or Always On Availability Groups (AGs)."*
+Tecnologia de failover por engine: *"Multi-AZ deployments for MariaDB, MySQL, Oracle, PostgreSQL, and RDS Custom for SQL Server DB instances use the Amazon failover technology. Microsoft SQL Server DB instances use SQL Server Database Mirroring (DBM) or Always On Availability Groups (AGs)."* (implantações Multi-AZ de MariaDB, MySQL, Oracle, PostgreSQL e RDS Custom for SQL Server usam a tecnologia de failover da Amazon; instâncias do Microsoft SQL Server usam Database Mirroring (DBM) ou Always On Availability Groups (AGs))
 
 ## 2. Multi-AZ DB cluster — HA + leitura
 
@@ -42,11 +42,11 @@ Replicação **assíncrona**, o que significa **lag**. Consequências:
 - A réplica tem **endpoint próprio** — a aplicação precisa direcionar as leituras para ele
 - **Não** faz failover automático; a promoção é **manual** (e é por isso que read replica cross-Region é estratégia de DR, não de HA)
 
-A doc é explícita sobre a diferença: *"Replication with the standby replica is synchronous. Unlike a read replica, a standby replica can't serve read traffic."*
+A doc é explícita sobre a diferença: *"Replication with the standby replica is synchronous. Unlike a read replica, a standby replica can't serve read traffic."* (a replicação com a réplica standby é síncrona; ao contrário de uma réplica de leitura, a standby não atende tráfego de leitura)
 
 Pontos operacionais:
 - *"RDS doesn't support autoscaling of read replicas"* (o RDS não oferece escalabilidade automática de réplicas de leitura) — você adiciona e remove manualmente (ou automatiza)
-- **Cascata** só em MariaDB, MySQL e certas versões de PostgreSQL. *"For RDS for Db2, RDS for Oracle, and RDS for SQL Server, you can't create a read replica from an existing read replica."*
+- **Cascata** só em MariaDB, MySQL e certas versões de PostgreSQL. *"For RDS for Db2, RDS for Oracle, and RDS for SQL Server, you can't create a read replica from an existing read replica."* (no RDS for Db2, Oracle e SQL Server, não é possível criar uma réplica de leitura a partir de outra réplica de leitura)
 - Deletar a origem **promove** as réplicas da mesma região a instâncias autônomas
 - Transferência de dados de replicação **na mesma região** é grátis; cross-Region é cobrada
 

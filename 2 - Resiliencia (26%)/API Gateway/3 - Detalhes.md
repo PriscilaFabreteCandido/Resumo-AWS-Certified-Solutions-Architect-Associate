@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. REST × HTTP — a decisão
 
-A doc coloca assim: as duas são *"RESTful API products. REST APIs support more features than HTTP APIs, while HTTP APIs are designed with minimal features so that they can be offered at a lower price."*
+A doc coloca assim: as duas são *"RESTful API products. REST APIs support more features than HTTP APIs, while HTTP APIs are designed with minimal features so that they can be offered at a lower price."* (produtos de API RESTful; as REST APIs têm mais recursos que as HTTP APIs, enquanto as HTTP APIs foram projetadas com o mínimo de recursos para serem oferecidas a um preço menor)
 
 Escolha **HTTP API** quando: só precisa de proxy para Lambda ou HTTP, autenticação JWT, e o critério é **custo e simplicidade**.
 

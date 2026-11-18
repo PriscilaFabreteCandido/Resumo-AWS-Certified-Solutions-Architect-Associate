@@ -14,7 +14,7 @@ atualizado: 2026-11-08
 > [!warning] Fim de suporte anunciado
 > A doc do Snowball Edge avisa: *"AWS Snowball Edge is no longer available to new customers. New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."* (o AWS Snowball Edge não está mais disponível para novos clientes; novos clientes devem considerar o AWS DataSync para transferências online, o AWS Data Transfer Terminal para transferências físicas seguras, ou soluções de parceiros da AWS — e, para computação na borda, o AWS Outposts)
 >
-> E: *"On December 31, 2026, AWS will discontinue support for AWS Snowball devices in all AWS commercial Regions."*
+> E: *"On December 31, 2026, AWS will discontinue support for AWS Snowball devices in all AWS commercial Regions."* (em 31 de dezembro de 2026, a AWS vai encerrar o suporte aos dispositivos Snowball em todas as Regiões comerciais)
 >
 > **Para a prova**: a **AWS Snow Family** continua na lista oficial de serviços **em escopo** do SAA-C03, então reconheça o cenário. Mas se **DataSync** estiver entre as alternativas e o enunciado **não** falar de link insuficiente, DataSync é a resposta moderna.
 

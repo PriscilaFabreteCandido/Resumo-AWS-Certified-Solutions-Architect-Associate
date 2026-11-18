@@ -19,15 +19,15 @@ Ela existe porque o security group tem duas limitações: não consegue **negar*
 
 Três propriedades definem tudo:
 
-**1. É stateless.** *"NACLs are stateless, which means that information about previously sent or received traffic is not saved... responses to that traffic are not automatically allowed."* Se você libera a saída na porta 443, ainda precisa liberar a **entrada nas portas efêmeras** para a resposta chegar. Essa é a pegadinha mais antiga da certificação.
+**1. É stateless.** *"NACLs are stateless, which means that information about previously sent or received traffic is not saved... responses to that traffic are not automatically allowed."* (NACLs são stateless: a informação sobre tráfego enviado ou recebido antes não é guardada... então as respostas a esse tráfego não são permitidas automaticamente) Se você libera a saída na porta 443, ainda precisa liberar a **entrada nas portas efêmeras** para a resposta chegar. Essa é a pegadinha mais antiga da certificação.
 
-**2. Tem allow e deny.** *"Each rule can either allow or deny traffic."*
+**2. Tem allow e deny.** *"Each rule can either allow or deny traffic."* (cada regra pode permitir ou negar o tráfego)
 
-**3. É ordenada.** *"Each rule has a number from 1 to 32766"*, e *"Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (as regras são avaliadas começando pela de menor número; assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la)
+**3. É ordenada.** *"Each rule has a number from 1 to 32766"* (cada regra tem um número de 1 a 32766), e *"Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (as regras são avaliadas começando pela de menor número; assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la)
 
 ## Onde se aplica
 
-Em **subnets**. *"Each subnet in your VPC must be associated with a network ACL."* Uma subnet tem **uma** NACL por vez; uma NACL pode cobrir **várias** subnets. Subnet sem associação explícita fica com a NACL **default**.
+Em **subnets**. *"Each subnet in your VPC must be associated with a network ACL."* (cada subnet da sua VPC precisa estar associada a uma network ACL) Uma subnet tem **uma** NACL por vez; uma NACL pode cobrir **várias** subnets. Subnet sem associação explícita fica com a NACL **default**.
 
 A avaliação acontece na **fronteira** da subnet: *"We evaluate the network ACL rules when traffic enters and leaves the subnet, not as it is routed within a subnet."* (avaliamos as regras da network ACL quando o tráfego entra e sai da subnet, não enquanto ele é roteado dentro dela) Ou seja: duas instâncias na **mesma** subnet conversam sem passar pela NACL.
 

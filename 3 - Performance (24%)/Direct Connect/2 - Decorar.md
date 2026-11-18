@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 | **Dedicated connection** | **1, 10, 100 e 400 Gbps** | **Você** (console/CLI/API) |
 | **Hosted connection** | **50, 100, 200, 300, 400, 500 Mbps, 1, 2, 5, 10 e 25 Gbps** | **Parceiro** (AWS Direct Connect Partner) |
 
-Detalhes das **dedicated**: *"It can take up to 72 business hours for AWS to review your request and provision a port"*; o **LOA-CFA** precisa ser respondido em **7 dias** ou a conexão é deletada; a velocidade **não muda** depois (é nova conexão).
+Detalhes das **dedicated**: *"It can take up to 72 business hours for AWS to review your request and provision a port"* (pode levar até 72 horas úteis para a AWS revisar seu pedido e provisionar uma porta); o **LOA-CFA** precisa ser respondido em **7 dias** ou a conexão é deletada; a velocidade **não muda** depois (é nova conexão).
 
 Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps; as de **25 Gbps** existem *"only in Direct Connect locations where 100 Gbps port speeds are available"*; você precisa **aceitar** a conexão; a AWS aplica **traffic policing**.
 

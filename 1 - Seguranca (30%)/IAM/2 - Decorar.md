@@ -28,7 +28,7 @@ atualizado: 2026-11-08
 
 | Combinação | Resultado |
 |---|---|
-| Identity-based **+** resource-based (mesmo account) | **União** — *"If an action is allowed by an identity-based policy, a resource-based policy, or both, then AWS allows the action"* |
+| Identity-based **+** resource-based (mesmo account) | **União** — *"If an action is allowed by an identity-based policy, a resource-based policy, or both, then AWS allows the action"* (se uma ação é permitida por uma policy de identidade, por uma de recurso, ou por ambas, a AWS permite a ação) |
 | Identity-based **+** permissions boundary | **Interseção** |
 | Identity-based **+** SCP **+** RCP | **Interseção** — *"an action must be allowed by all three policy types"* |
 

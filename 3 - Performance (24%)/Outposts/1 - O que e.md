@@ -23,7 +23,7 @@ Só três requisitos justificam Outposts. Fora deles, a resposta é a **região*
 
 ## Onde o guia cita
 
-**Task 4.2**, no Knowledge of: *"Hybrid compute options (for example, AWS Outposts)"*.
+**Task 4.2**, no Knowledge of: *"Hybrid compute options (for example, AWS Outposts)"* (opções de computação híbrida (por exemplo, AWS Outposts)).
 
 ## A família híbrida
 

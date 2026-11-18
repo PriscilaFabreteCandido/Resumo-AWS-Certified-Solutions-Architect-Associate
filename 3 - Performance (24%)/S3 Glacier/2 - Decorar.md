@@ -20,11 +20,11 @@ atualizado: 2026-11-08
 
 ## Expedited — os números
 
-> *"Objects under 250 megabytes in size are typically made available within 1–5 minutes, and objects 250 megabytes or larger ... up to 300 megabytes per second of retrieval throughput."*
+> *"Objects under 250 megabytes in size are typically made available within 1–5 minutes, and objects 250 megabytes or larger ... up to 300 megabytes per second of retrieval throughput."* (objetos com menos de 250 megabytes costumam ficar disponíveis em 1 a 5 minutos; os de 250 megabytes ou mais... até 300 megabytes por segundo de throughput de recuperação)
 
 **Provisioned capacity** (só Glacier Flexible Retrieval):
-> *"Each unit of capacity provides that at least three Expedited retrievals can be performed every 5 minutes, and it provides up to 300 megabytes per second of retrieval throughput."*
-Sem ela, *"Expedited retrievals might not be accepted during periods of high demand"*.
+> *"Each unit of capacity provides that at least three Expedited retrievals can be performed every 5 minutes, and it provides up to 300 megabytes per second of retrieval throughput."* (cada unidade de capacidade garante pelo menos três recuperações Expedited a cada 5 minutos, e oferece até 300 megabytes por segundo de throughput de recuperação)
+Sem ela, *"Expedited retrievals might not be accepted during periods of high demand"* (recuperações Expedited podem não ser aceitas em períodos de alta demanda).
 ⚠️ As unidades são da **conta**, então *"the requester... should purchase the provisioned capacity unit, not the bucket owner"* (quem faz a requisição... é que deve comprar a unidade de capacidade provisionada, não o dono do bucket).
 
 ## Mínimos e overhead

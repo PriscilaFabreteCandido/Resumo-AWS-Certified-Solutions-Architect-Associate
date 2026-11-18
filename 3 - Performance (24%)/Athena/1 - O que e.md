@@ -25,7 +25,7 @@ Athena cobra por **TB escaneado** (o exemplo oficial usa **US$ 5/TB**). As três
 |---|---|
 | **Compressão** | 3 TB de texto = US$ 15 → GZIP 3:1 = 1 TB = **US$ 5** |
 | **Formato colunar** | Parquet 3:1, lendo **1 de 4** colunas = 0,25 TB = **US$ 1,25** |
-| **Particionamento** | *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition"* |
+| **Particionamento** | *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition"* (se você consulta uma tabela particionada e indica a partição na cláusula `WHERE`, o Athena varre apenas os dados daquela partição) |
 
 > *"there are no additional storage charges for querying your data with Athena"* (não há cobrança adicional de armazenamento para consultar seus dados com o Athena)
 

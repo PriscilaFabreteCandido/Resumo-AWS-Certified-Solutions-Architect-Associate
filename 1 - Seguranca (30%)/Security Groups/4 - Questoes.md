@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** Porque o SG opera na camada 7
 > **D)** Porque o NAT gateway faz a tradução
 >
-> **Por que B**: *"Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules."*
+> **Por que B**: *"Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules."* (as respostas ao tráfego de entrada permitido podem sair da instância, independentemente das regras de saída)
 > **A errada**: não há liberação implícita de faixa — há **rastreamento de estado**.
 > **C errada**: SG opera em protocolo/porta/endereço.
 > **D errada**: o NAT não tem papel nisso (e o comportamento vale também sem NAT).

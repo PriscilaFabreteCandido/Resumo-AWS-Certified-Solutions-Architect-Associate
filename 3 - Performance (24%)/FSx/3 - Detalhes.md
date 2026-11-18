@@ -64,7 +64,7 @@ Três deployments, com tempos documentados:
 |---|---|
 | **Multi-AZ (HA)** | *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos) |
 | **Single-AZ (HA)** | *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos) |
-| **Single-AZ (non-HA)** | *"Recovery typically completes within 30 minutes"* |
+| **Single-AZ (non-HA)** | *"Recovery typically completes within 30 minutes"* (a recuperação normalmente se completa em até 30 minutos) |
 
 ## 5. FSx × EFS — a decisão
 

@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Onde isso cai na prova
 
-Não há um domínio "migração", mas o tema aparece em **Task 4.1** (*"Design cost-optimized storage solutions"*) e sobretudo nos enunciados que descrevem **uma empresa saindo do data center**. A pergunta real é: *"qual a abordagem que atende este requisito com o menor esforço?"*
+Não há um domínio "migração", mas o tema aparece em **Task 4.1** (*"Design cost-optimized storage solutions"* (projetar soluções de armazenamento otimizadas em custo)) e sobretudo nos enunciados que descrevem **uma empresa saindo do data center**. A pergunta real é: *"qual a abordagem que atende este requisito com o menor esforço?"*
 
 E os 7 Rs são a resposta estruturada para isso.
 

@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 
 > *"There is no additional charge for using gateway endpoints."* (não há cobrança adicional pelo uso de gateway endpoints)
 
-E a distinção estrutural: *"Gateway endpoints do not use AWS PrivateLink, unlike the other types of VPC endpoints."*
+E a distinção estrutural: *"Gateway endpoints do not use AWS PrivateLink, unlike the other types of VPC endpoints."* (gateway endpoints não usam AWS PrivateLink, ao contrário dos outros tipos de VPC endpoint)
 
 ## Quando usar cada um
 

@@ -8,23 +8,23 @@ atualizado: 2026-11-08
 
 ## 1. A lógica de avaliação, passo a passo
 
-A doc divide o processamento de uma requisição em três fases: autenticação, montagem do **request context**, e *"How AWS enforcement code logic evaluates requests to allow or deny access."*
+A doc divide o processamento de uma requisição em três fases: autenticação, montagem do **request context**, e *"How AWS enforcement code logic evaluates requests to allow or deny access."* (como a lógica de aplicação da AWS avalia as requisições para permitir ou negar acesso)
 
 A terceira fase segue esta ordem:
 
-**1. Deny explícito.** O motor verifica **todas** as políticas aplicáveis (SCPs, RCPs, resource-based, identity-based, permissions boundaries, session policies) procurando um `Deny`. *"If the enforcement code finds even one explicit deny that applies, the enforcement code returns a final decision of Deny."*
+**1. Deny explícito.** O motor verifica **todas** as políticas aplicáveis (SCPs, RCPs, resource-based, identity-based, permissions boundaries, session policies) procurando um `Deny`. *"If the enforcement code finds even one explicit deny that applies, the enforcement code returns a final decision of Deny."* (se o código de aplicação encontra sequer um deny explícito aplicável, a decisão final é Deny)
 
-**2. RCPs.** *"If the enforcement code does not find any applicable Allow statements in the RCPs, the enforcement code returns a final decision of Deny."* Quando RCPs são ativadas, a política `RCPFullAWSAccess` é anexada automaticamente e **não pode ser removida**.
+**2. RCPs.** *"If the enforcement code does not find any applicable Allow statements in the RCPs, the enforcement code returns a final decision of Deny."* (se o código de aplicação não encontra nenhuma declaração de Allow aplicável nas RCPs, a decisão final é Deny) Quando RCPs são ativadas, a política `RCPFullAWSAccess` é anexada automaticamente e **não pode ser removida**.
 
 **3. SCPs.** Mesma lógica: sem Allow aplicável, Deny.
 
-**4. Resource-based policy.** Aqui está a sutileza mais testada: para principal do **mesmo account** (usuário IAM, sessão de role, sessão de usuário federado), a política de recurso **pode permitir sozinha**, mesmo com deny **implícito** na política de identidade. *"For most resources, you only need an explicit Allow for the principal in either an identity-based policy or a resource-based policy to grant access."*
+**4. Resource-based policy.** Aqui está a sutileza mais testada: para principal do **mesmo account** (usuário IAM, sessão de role, sessão de usuário federado), a política de recurso **pode permitir sozinha**, mesmo com deny **implícito** na política de identidade. *"For most resources, you only need an explicit Allow for the principal in either an identity-based policy or a resource-based policy to grant access."* (na maioria dos recursos, basta um Allow explícito para o principal, numa policy de identidade ou numa de recurso, para conceder acesso)
 
 Mas há exceção: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."* (as trust policies de role do IAM e as key policies do KMS são exceções... elas precisam permitir o acesso explicitamente para os principais)
 
-**5. Identity-based policy.** *"If there are no identity-based policies or no statements... that allow the requested action, then the request is implicitly denied."*
+**5. Identity-based policy.** *"If there are no identity-based policies or no statements... that allow the requested action, then the request is implicitly denied."* (se não houver policies de identidade, nem declarações... que permitam a ação solicitada, a requisição é negada implicitamente)
 
-**6. Permissions boundary.** *"If the policy that is used to set the permissions boundary does not allow the requested action, then the request is implicitly denied."*
+**6. Permissions boundary.** *"If the policy that is used to set the permissions boundary does not allow the requested action, then the request is implicitly denied."* (se a policy usada para definir o permissions boundary não permite a ação solicitada, a requisição é negada implicitamente)
 
 **7. Session policy.** Se o principal não é uma sessão, a decisão final é Allow. Se nenhuma session policy foi passada, *"a default session policy is created."*
 
@@ -32,12 +32,12 @@ Mas há exceção: *"IAM role trust policies and KMS key policies are exceptions
 
 Dentro do **mesmo** account, identity-based e resource-based se **somam**: *"The resulting permissions are the union of the permissions of the two types."*
 
-**Cross-account é diferente.** A doc é explícita: *"For cross-account requests, the requester in the trusted AccountA must have an identity-based policy. That policy must allow them to make a request to the resource in the trusting AccountB. Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* E conclui: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
+**Cross-account é diferente.** A doc é explícita: *"For cross-account requests, the requester in the trusted AccountA must have an identity-based policy. That policy must allow them to make a request to the resource in the trusting AccountB. Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* (em requisições entre contas, quem requisita na Conta A (confiada) precisa de uma policy de identidade que permita a requisição ao recurso na Conta B (que confia); além disso, a policy de recurso na Conta B precisa permitir que o requisitante da Conta A acesse o recurso) E conclui: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
 
 > [!warning] A pegadinha
 > "Dar acesso a um bucket de outra conta" **não** se resolve só com bucket policy. O role na conta de origem também precisa da permissão. A exceção é a **trust policy de role** (que é o que permite a outra conta *assumir* a role) e a **key policy do KMS**.
 
-Para serviços que não são IAM nem KMS, a doc acrescenta: *"Resource-based policies for services other than IAM and AWS KMS may also require an explicit Allow statement within the same account to grant access."*
+Para serviços que não são IAM nem KMS, a doc acrescenta: *"Resource-based policies for services other than IAM and AWS KMS may also require an explicit Allow statement within the same account to grant access."* (policies de recurso de serviços que não sejam o IAM e o AWS KMS também podem exigir um Allow explícito dentro da mesma conta para conceder acesso)
 
 ## 3. Roles — as quatro situações
 
@@ -110,9 +110,9 @@ A página oficial de boas práticas do root hoje tem **nove** recomendações, n
 | 4 | **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) |
 | 5 | *"Use multi-person approval for root user sign-in wherever possible"* |
 | 6 | *"Use a group email address for root user credentials"* |
-| 7 | *"Restrict access to account recovery mechanisms"* |
+| 7 | *"Restrict access to account recovery mechanisms"* (restrinja o acesso aos mecanismos de recuperação de conta) |
 | 8 | *"Secure your AWS Organizations account root user credentials"* |
-| 9 | *"Monitor access and usage"* |
+| 9 | *"Monitor access and usage"* (monitore o acesso e o uso) |
 
 > [!warning] Três pontos em que a lista clássica está desatualizada
 > **1. Chave de acesso do root: a orientação não é mais "rotacionar", é "não criar".** O título atual é literal — *"Don't create access keys for the root user"* (não crie chaves de acesso para o usuário raiz) — e o texto diz: *"We strongly recommend that you do not create access keys for your root user because the root user has full access to all AWS services and resources in the account, including billing information."* Para acesso programático, a doc hoje aponta para o comando `aws login` com as credenciais do root, **não** para criar chaves. **A doc atual não dá nenhuma orientação de rotação para chaves de root.**
@@ -127,14 +127,14 @@ A página oficial de boas práticas do root hoje tem **nove** recomendações, n
 
 Para quem usa **AWS Organizations**, a doc recomenda **remover as credenciais de root das contas-membro**:
 
-> *"For multiple AWS accounts managed through AWS Organizations, we recommend removing root user credentials from member accounts to help prevent unauthorized use. You can remove the root user password, access keys, signing certificates, and deactivate and delete multi-factor authentication (MFA). Member accounts can't sign in to their root user or perform password recovery for their root user."*
+> *"For multiple AWS accounts managed through AWS Organizations, we recommend removing root user credentials from member accounts to help prevent unauthorized use. You can remove the root user password, access keys, signing certificates, and deactivate and delete multi-factor authentication (MFA). Member accounts can't sign in to their root user or perform password recovery for their root user."* (em várias contas AWS gerenciadas pelo Organizations, recomendamos remover as credenciais de usuário raiz das contas-membro, para ajudar a evitar uso não autorizado; você pode remover a senha, as chaves de acesso e os certificados de assinatura do root, além de desativar e excluir o MFA. As contas-membro não conseguem fazer login no usuário raiz nem recuperar a senha dele)
 
-E, importante: *"New accounts you create in Organizations have no root user credentials by default."*
+E, importante: *"New accounts you create in Organizations have no root user credentials by default."* (contas novas criadas no Organizations não têm credenciais de usuário raiz por padrão)
 
 Com o **centralized root access** habilitado, a conta de gerenciamento pode executar, de forma centralizada, três tarefas privilegiadas que antes exigiam o root da conta-membro:
 
 - remover as credenciais de root da conta-membro (e permitir a recuperação de senha quando necessário);
-- *"Remove a misconfigured bucket policy that denies all principals from accessing an Amazon S3 bucket."*
+- *"Remove a misconfigured bucket policy that denies all principals from accessing an Amazon S3 bucket."* (remover uma bucket policy mal configurada que impede todos os principais de acessar um bucket do Amazon S3)
 - *"Delete an Amazon Simple Queue Service resource-based policy that denies all principals from accessing an Amazon SQS queue."*
 
 > [!tip] Por que essas duas tarefas precisavam do root
@@ -166,19 +166,19 @@ A página de boas práticas do IAM tem esta ordem — e os **dois primeiros** it
 
 | # | Título oficial |
 |---|---|
-| **1** | ***"Require human users to use federation with an identity provider to access AWS using temporary credentials"*** |
+| **1** | ***"Require human users to use federation with an identity provider to access AWS using temporary credentials"** (exija que usuários humanos usem federação com um provedor de identidade para acessar a AWS com credenciais temporárias)* |
 | **2** | ***"Require workloads to use temporary credentials with IAM roles to access AWS"** (exija que as cargas de trabalho usem credenciais temporárias, com roles do IAM, para acessar a AWS)* |
-| 3 | *"Require multi-factor authentication (MFA)"* |
+| 3 | *"Require multi-factor authentication (MFA)"* (exija autenticação multifator (MFA)) |
 | 4 | *"Update access keys when needed for use cases that require long-term credentials"* |
-| 5 | *"Follow best practices to protect your root user credentials"* |
+| 5 | *"Follow best practices to protect your root user credentials"* (siga as boas práticas para proteger as credenciais do usuário raiz) |
 | 6 | *"Apply least-privilege permissions"* (aplique permissões de menor privilégio) |
-| 7 | *"Get started with AWS managed policies and move toward least-privilege permissions"* |
+| 7 | *"Get started with AWS managed policies and move toward least-privilege permissions"* (comece pelas políticas gerenciadas pela AWS e caminhe para permissões de menor privilégio) |
 | 8 | *"Use IAM Access Analyzer to generate least-privilege policies based on access activity"* |
-| 9 | *"Regularly review and remove unused users, roles, permissions, policies, and credentials"* |
+| 9 | *"Regularly review and remove unused users, roles, permissions, policies, and credentials"* (revise e remova periodicamente usuários, roles, permissões, policies e credenciais sem uso) |
 | 10 | *"Use conditions in IAM policies to further restrict access"* |
 | 11 | *"Verify public and cross-account access to resources with IAM Access Analyzer"* |
 | 12 | *"Use IAM Access Analyzer to validate your IAM policies for secure and functional permissions"* |
-| 13 | *"Establish permissions guardrails across multiple accounts"* |
+| 13 | *"Establish permissions guardrails across multiple accounts"* (estabeleça guardrails de permissão em várias contas) |
 | 14 | *"Use permissions boundaries to delegate permissions management within an account"* |
 
 > [!important] A hierarquia que resolve as questões de identidade

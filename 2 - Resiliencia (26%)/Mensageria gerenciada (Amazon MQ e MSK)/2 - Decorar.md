@@ -34,7 +34,7 @@ atualizado: 2026-11-08
 |---|---|
 | Natureza | **Apache Kafka** gerenciado, versões open-source |
 | Modos | **Provisioned** (brokers Standard / **Express**) e **Serverless** |
-| MSK Serverless | *"MSK manages the broker nodes... you only provision your Kafka server resources at a cluster level"* |
+| MSK Serverless | *"MSK manages the broker nodes... you only provision your Kafka server resources at a cluster level"* (o MSK gerencia os nós de broker... você só provisiona os recursos do servidor Kafka no nível do cluster) |
 | Extras | **MSK Connect** (conectores), **MSK Replicator** (replicação entre clusters) |
 | Controllers | **KRaft** *"included at no additional cost"* (incluído sem custo adicional) |
 | Compatibilidade | *"without requiring changes to application code"* (sem exigir mudanças no código da aplicação) |

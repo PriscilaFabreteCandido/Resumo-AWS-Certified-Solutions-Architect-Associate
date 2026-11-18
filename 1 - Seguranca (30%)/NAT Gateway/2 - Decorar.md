@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|---|
 | Disponibilidade | *"Highly available... implemented with redundancy"* (dentro da AZ) | *"Use a script to manage failover between instances"* |
 | Banda | *"Scale up to 100 Gbps"* | Depende do tipo de instância |
-| Manutenção | *"Managed by AWS"* | **Você** patcheia |
+| Manutenção | *"Managed by AWS"* (gerenciado pela AWS) | **Você** patcheia |
 | Custo | nº de gateways + duração + **GB processado** | nº de instâncias + duração + tipo/tamanho |
 | **Security group** | **Não aceita** | Aceita |
 | **Port forwarding** | **Não suportado** | Suportado |

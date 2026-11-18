@@ -41,7 +41,7 @@ O **OAC** é o mecanismo atual para que o bucket seja acessível **só** pelo Cl
 
 1. *"All Amazon S3 buckets in all AWS Regions, including opt-in Regions launched after December 2022"*
 2. **SSE-KMS**
-3. *"Dynamic requests (PUT and DELETE) to Amazon S3"*
+3. *"Dynamic requests (PUT and DELETE) to Amazon S3"* (requisições dinâmicas (PUT e DELETE) para o Amazon S3)
 
 O **OAI** é *"legacy, not recommended"* (geração antiga, não recomendado) e não suporta nada disso (nem regiões lançadas após jan/2023).
 

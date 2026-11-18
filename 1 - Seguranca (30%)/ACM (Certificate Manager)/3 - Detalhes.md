@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 O guia oficial separa as duas skills em **Task 1.3**:
 - *"Encrypting data at rest (for example, AWS KMS)"* (criptografar dados em repouso (por exemplo, com o AWS KMS))
-- *"Encrypting data in transit (for example, AWS Certificate Manager [ACM] using TLS)"*
+- *"Encrypting data in transit (for example, AWS Certificate Manager [ACM] using TLS)"* (criptografar dados em trânsito (por exemplo, com o AWS Certificate Manager [ACM], usando TLS))
 
 Se a alternativa oferece "usar KMS para criptografar em trânsito", está errada.
 

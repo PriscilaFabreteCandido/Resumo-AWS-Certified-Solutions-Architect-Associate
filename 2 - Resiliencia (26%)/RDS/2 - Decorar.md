@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 | **Cascata** (réplica de réplica) | MariaDB, MySQL e **certas versões** de PostgreSQL: **sim**. **Db2, Oracle e SQL Server: não** |
 | Replicação circular | **Não** suportada |
 | Se deletar a origem | Réplicas **na mesma região** são **promovidas** automaticamente |
-| Billing | *"Read replicas are billed as standard DB instances"* |
+| Billing | *"Read replicas are billed as standard DB instances"* (réplicas de leitura são cobradas como instâncias de banco comuns) |
 | Storage | Pode ter tipo diferente; aumento mínimo de **10%** |
 | Db2 standby / Oracle mounted | *"don't accept user connections"* — só DR cross-Region |
 
@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 | **Backup automático** (janela de retenção) | **❌ Não** |
 | **Snapshot manual** | **✅ Sim** |
 
-Multi-AZ DB cluster: *"RDS creates a storage volume snapshot of your DB cluster, backing up the entire cluster."*
+Multi-AZ DB cluster: *"RDS creates a storage volume snapshot of your DB cluster, backing up the entire cluster."* (o RDS cria um snapshot do volume de armazenamento do cluster, fazendo backup do cluster inteiro)
 
 ## RDS Proxy — o número
 

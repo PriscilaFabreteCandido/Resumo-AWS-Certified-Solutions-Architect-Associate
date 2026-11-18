@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Warm standby
 > **D)** Multi-site active/active
 >
-> **Por que B**: é exatamente a definição — *"Resources required to support data replication and backup, such as databases and object storage, are always on. Other elements, such as application servers, are loaded with application code and configurations, but are switched off."*
+> **Por que B**: é exatamente a definição — *"Resources required to support data replication and backup, such as databases and object storage, are always on. Other elements, such as application servers, are loaded with application code and configurations, but are switched off."* (os recursos necessários para sustentar a replicação e o backup, como bancos de dados e armazenamento de objetos, ficam sempre ligados; os demais, como servidores de aplicação, ficam com o código e as configurações carregados, mas desligados)
 > **A errada**: RTO em horas.
 > **C e D erradas**: atendem, mas mantêm computação ligada — contrariam a restrição de custo.
 

@@ -13,10 +13,10 @@ A doc diz: *"The allowed IPv4 CIDR block size for a subnet is between a `/28` ne
 **Cinco** endereços são reservados em cada subnet: *"The first four IP addresses and the last IP address in each subnet CIDR block are not available for your use."* O exemplo oficial para `10.0.0.0/24`:
 
 - `10.0.0.0` — Network address
-- `10.0.0.1` — *"Reserved by AWS for the VPC router"*
-- `10.0.0.2` — *"Reserved by AWS. The IP address of the DNS server is the base of the VPC network range plus two."* E a doc complementa: *"We also reserve the base of each subnet range plus two for all CIDR blocks in the VPC."*
-- `10.0.0.3` — *"Reserved by AWS for future use"*
-- `10.0.0.255` — *"Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address."*
+- `10.0.0.1` — *"Reserved by AWS for the VPC router"* (reservado pela AWS para o roteador da VPC)
+- `10.0.0.2` — *"Reserved by AWS. The IP address of the DNS server is the base of the VPC network range plus two."* (reservado pela AWS; o IP do servidor DNS é o início da faixa de rede da VPC mais dois) E a doc complementa: *"We also reserve the base of each subnet range plus two for all CIDR blocks in the VPC."*
+- `10.0.0.3` — *"Reserved by AWS for future use"* (reservado pela AWS para uso futuro)
+- `10.0.0.255` — *"Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address."* (endereço de broadcast da rede; não oferecemos suporte a broadcast numa VPC, por isso reservamos esse endereço)
 
 Para **BYOIP**, a regra muda: *"you can use all of the IP addresses in the range, including the first address... and the last address."*
 

@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** **Nada: a KMS mantém as versões antigas e usa a correta no decrypt** ✅
 > **D)** Precisam ser migrados para uma chave nova
 >
-> **Por que C**: *"Key rotation has no effect on the data that the KMS key protects"* e *"AWS KMS uses the same version of the key material that was used to encrypt it."* (o AWS KMS usa a mesma versão do material de chave que foi usada para criptografar)
+> **Por que C**: *"Key rotation has no effect on the data that the KMS key protects"* (a rotação de chave não tem efeito sobre os dados que a chave do KMS protege) e *"AWS KMS uses the same version of the key material that was used to encrypt it."* (o AWS KMS usa a mesma versão do material de chave que foi usada para criptografar)
 
 > [!question]- Q5. Um time precisa de uma chave para criptografar objetos no S3, com rotação anual, **sem tarifa mensal de chave**, e não precisa auditar o uso nem compartilhar entre contas.
 > **A)** Customer managed key com rotação habilitada

@@ -118,7 +118,7 @@ Toda nota segue a mesma ordem, desenhada para você **recuperar** a informação
 - [Serviços fora de escopo](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-out-of-scope-services.html)
 - [Revisões do guia](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-revisions.html)
 
-> [!note] O guia avisa: *"Exam guide updates will be published approximately one month before updates will be reflected on your exam."*
+> [!note] O guia avisa: *"Exam guide updates will be published approximately one month before updates will be reflected on your exam."* (as atualizações do guia do exame são publicadas aproximadamente um mês antes de aparecerem na prova)
 > Vale reconferir o guia **um mês antes** da sua data.
 >
 > Todo conteúdo deste vault foi conferido contra `docs.aws.amazon.com` em **08/11/2026**. Onde a documentação oficial não afirma um número, a nota diz isso em vez de inventar.

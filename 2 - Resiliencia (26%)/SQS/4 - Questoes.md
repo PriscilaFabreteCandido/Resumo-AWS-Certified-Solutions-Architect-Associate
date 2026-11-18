@@ -83,7 +83,7 @@ atualizado: 2026-11-08
 | Mensagem máxima é 256 KB | A página de quotas atual diz **1 MiB** |
 | Escalar consumidor é por CPU | É pela **profundidade da fila** |
 | DLQ pode ser de outra conta | **Mesma conta e região**, e mesmo tipo |
-| DLQ com FIFO é sempre boa ideia | *"Don't use a dead-letter queue with a FIFO queue if you don't want to break the exact order"* |
+| DLQ com FIFO é sempre boa ideia | *"Don't use a dead-letter queue with a FIFO queue if you don't want to break the exact order"* (não use dead-letter queue com fila FIFO se você não quiser quebrar a ordem exata) |
 
 ## Links
 

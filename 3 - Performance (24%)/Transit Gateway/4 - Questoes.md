@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Dois Transit Gateways
 > **D)** Security groups referenciando SGs
 >
-> **Por que B**: *"Each attachment is associated with exactly one route table"* — é o mecanismo de segmentação do TGW.
+> **Por que B**: *"Each attachment is associated with exactly one route table"* (cada attachment está associado a exatamente uma route table) — é o mecanismo de segmentação do TGW.
 > **C errada**: funciona, mas dobra o custo de attachment e perde o compartilhamento dos serviços comuns.
 
 > [!question]- Q3. O attachment da VPC ao TGW existe, as route tables do TGW estão corretas, mas o tráfego não sai da subnet.

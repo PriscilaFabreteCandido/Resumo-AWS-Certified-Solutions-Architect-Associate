@@ -74,15 +74,15 @@ Porque a transição para fora dele **depende do access tier interno** em que o 
 
 O waterfall, portanto, vale **duas vezes**: entre classes, e dentro do Intelligent-Tiering. Quanto mais frio o tier interno, menos destinos sobram.
 
-E uma ressalva de replicação que vale anotar: *"For versioning enabled or versioning suspended buckets, you can't transition objects with a `Pending` or `Failed` replication status."*
+E uma ressalva de replicação que vale anotar: *"For versioning enabled or versioning suspended buckets, you can't transition objects with a `Pending` or `Failed` replication status."* (em buckets com versionamento habilitado ou suspenso, não é possível transicionar objetos com status de replicação `Pending` ou `Failed`)
 
-Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."* (não é possível usar uma regra de lifecycle do S3 para converter a classe de um objeto que está no S3 Glacier Deep Archive para qualquer outra classe)
+Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* (objetos armazenados na classe S3 Glacier Flexible Retrieval só podem ser transicionados para o S3 Glacier Deep Archive) E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."* (não é possível usar uma regra de lifecycle do S3 para converter a classe de um objeto que está no S3 Glacier Deep Archive para qualquer outra classe)
 
 **Regra 2 — respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento) O exemplo da própria doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94** (4 + 90).
 
 ### Objetos pequenos
 
-Desde setembro de 2024, *"Objects smaller than 128 KB will not transition by default to any storage class"*. Para forçar, use filtro de tamanho (`ObjectSizeGreaterThan` / `ObjectSizeLessThan`) ou o header `x-amz-transition-default-minimum-object-size`.
+Desde setembro de 2024, *"Objects smaller than 128 KB will not transition by default to any storage class"* (objetos menores que 128 KB não transicionam, por padrão, para nenhuma classe de armazenamento). Para forçar, use filtro de tamanho (`ObjectSizeGreaterThan` / `ObjectSizeLessThan`) ou o header `x-amz-transition-default-minimum-object-size`.
 
 E atenção: *"you are charged a transition request for each object"* (você é cobrado por uma requisição de transição para cada objeto) — mover milhões de objetos minúsculos pode custar mais do que a economia.
 

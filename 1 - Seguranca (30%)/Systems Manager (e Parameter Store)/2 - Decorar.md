@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 | Mudança de tier | Upgradeable | **Não downgradeable** |
 | Custo | **Sem cobrança adicional** | **Cobrado** |
 
-Tipos: **`String`**, **`StringList`**, **`SecureString`** (*"Parameter Store encrypts the values using AWS Key Management Service"*).
+Tipos: **`String`**, **`StringList`**, **`SecureString`** (*"Parameter Store encrypts the values using AWS Key Management Service"* (o Parameter Store criptografa os valores usando o AWS Key Management Service)).
 Versionamento: guarda as **100** versões mais recentes.
 
 ## Parameter Store × Secrets Manager (oficial)
@@ -27,7 +27,7 @@ Versionamento: guarda as **100** versões mais recentes.
 | **Rotação de credencial** | **"None"** | **"Automatic, with native database integrations"** (automático, com integrações nativas ao banco) |
 | **Custo** | *"Standard tier free; advanced tier and higher throughput billed"* (camada Standard gratuita; camada Advanced e throughput maior são cobrados) | *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API) |
 
-> Recomendação oficial: *"For secrets such as database credentials, API keys, or tokens, we recommend AWS Secrets Manager."*
+> Recomendação oficial: *"For secrets such as database credentials, API keys, or tokens, we recommend AWS Secrets Manager."* (para segredos como credenciais de banco, chaves de API ou tokens, recomendamos o AWS Secrets Manager)
 
 ## Session Manager
 

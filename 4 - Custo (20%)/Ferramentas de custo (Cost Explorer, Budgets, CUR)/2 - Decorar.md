@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 | Tipo | O que monitora |
 |---|---|
 | **Cost budgets** | *"Set spending limits for services and receive alerts"* |
-| **Usage budgets** | *"Establish usage limits for one or more services"* |
+| **Usage budgets** | *"Establish usage limits for one or more services"* (estabeleça limites de uso para um ou mais serviços) |
 | **RI utilization budgets** | Alerta quando a **utilização** das RIs cai abaixo do limiar |
 | **RI coverage budgets** | Alerta quando a **cobertura** por RI cai |
 | **Savings Plans utilization budgets** | Utilização dos Savings Plans |

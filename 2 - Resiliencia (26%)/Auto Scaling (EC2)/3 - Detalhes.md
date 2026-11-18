@@ -36,7 +36,7 @@ E a regra de contenção: acima de 90% da capacidade desejada, no máximo **10%*
 
 ## 3. Grace period
 
-> *"In the console, by default, the health check grace period is 300 seconds when you create an Auto Scaling group. Its default value is 0 seconds when you create an Auto Scaling group using the AWS CLI or an SDK. A value of 0 turns off the health check grace period."*
+> *"In the console, by default, the health check grace period is 300 seconds when you create an Auto Scaling group. Its default value is 0 seconds when you create an Auto Scaling group using the AWS CLI or an SDK. A value of 0 turns off the health check grace period."* (no console, o período de carência do health check é de 300 segundos por padrão ao criar um Auto Scaling group; pela CLI ou por um SDK, o padrão é 0 segundos — e 0 desliga o período de carência)
 
 Aplica-se a instâncias **recém-lançadas**, voltando de **Standby**, ou **anexadas manualmente**. Se a instância sair do estado `running` durante o grace period, é marcada Unhealthy **na hora**.
 

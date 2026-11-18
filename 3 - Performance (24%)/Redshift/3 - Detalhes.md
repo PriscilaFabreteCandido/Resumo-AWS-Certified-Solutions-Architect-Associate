@@ -12,7 +12,7 @@ Num banco **por linha** (OLTP), ler uma coluna de 500 milhões de registros sign
 
 Para analítico — `SUM`, `AVG`, `GROUP BY` sobre bilhões de linhas e poucas colunas — isso muda a ordem de magnitude. É a mesma lógica que faz o **Parquet** ser mais barato no Athena.
 
-A doc resume o posicionamento: *"optimized for high-performance analysis and reporting of very large datasets"* (otimizado para análise e relatórios de alta performance sobre conjuntos de dados muito grandes) — mesmo tendo *"OLTP functions such as inserting and deleting data"*.
+A doc resume o posicionamento: *"optimized for high-performance analysis and reporting of very large datasets"* (otimizado para análise e relatórios de alta performance sobre conjuntos de dados muito grandes) — mesmo tendo *"OLTP functions such as inserting and deleting data"* (funções de OLTP, como inserir e apagar dados).
 
 ## 2. Arquitetura e Redshift Managed Storage
 

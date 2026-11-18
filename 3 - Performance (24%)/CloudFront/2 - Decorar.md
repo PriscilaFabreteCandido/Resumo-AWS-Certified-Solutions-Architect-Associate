@@ -30,8 +30,8 @@ atualizado: 2026-11-08
 
 Ficam **entre a origem e os POPs**, com cache maior. **Não** passam por eles:
 
-- *"Proxy HTTP methods (`PUT`, `POST`, `PATCH`, `OPTIONS`, and `DELETE`) go directly to the origin from the POPs"*
-- *"Dynamic requests, as determined at request time, do not flow through regional edge caches"*
+- *"Proxy HTTP methods (`PUT`, `POST`, `PATCH`, `OPTIONS`, and `DELETE`) go directly to the origin from the POPs"* (os métodos HTTP de proxy (`PUT`, `POST`, `PATCH`, `OPTIONS` e `DELETE`) vão direto dos POPs para a origem)
+- *"Dynamic requests, as determined at request time, do not flow through regional edge caches"* (requisições dinâmicas, determinadas no momento da requisição, não passam pelos regional edge caches)
 - Origem **S3 na mesma região** do regional edge cache ótimo: *"the POP skips the regional edge cache"*
 
 ## OAC × OAI

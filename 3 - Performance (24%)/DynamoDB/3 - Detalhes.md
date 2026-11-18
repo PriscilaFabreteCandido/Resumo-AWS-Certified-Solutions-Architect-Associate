@@ -36,7 +36,7 @@ Ambos devolvem no máximo **1 MB** por chamada (com paginação).
 | Tamanho | *"no size restrictions"* (sem restrição de tamanho) | **10 GB** por valor de partition key |
 | Consistência | *"Queries on global secondary indexes support eventual consistency only"* (consultas em índices secundários globais só oferecem consistência eventual) | **eventual ou forte** |
 | Capacidade | **própria** (RCU/WCU do índice) | consome a da **tabela base** |
-| Atributo fora da projeção | **não devolve** — *"DynamoDB does not fetch any attributes from the table"* | **busca na tabela** automaticamente |
+| Atributo fora da projeção | **não devolve** — *"DynamoDB does not fetch any attributes from the table"* (o DynamoDB não busca nenhum atributo na tabela) | **busca na tabela** automaticamente |
 
 Na prática: **GSI** resolve "preciso consultar por outro atributo" e é o que você vai usar em 90% dos casos. **LSI** só faz sentido quando você precisa de **leitura forte** num sort key alternativo — e tem que decidir isso **antes de criar a tabela**.
 

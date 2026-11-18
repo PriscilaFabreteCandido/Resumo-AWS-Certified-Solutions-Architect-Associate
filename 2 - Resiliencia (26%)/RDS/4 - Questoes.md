@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 >
 > **Por que B**: 1 writer + 2 readers **legíveis** em 3 AZs, failover *"typically under 35 seconds"* (normalmente abaixo de 35 segundos), e menor latência de escrita.
 > **A errada**: funciona, mas o standby não lê e o tempo de failover não é documentado.
-> **C errada**: Aurora é outra arquitetura — resposta válida se o enunciado aceitar migrar, mas *"Multi-AZ DB clusters aren't the same as Aurora DB clusters"*.
+> **C errada**: Aurora é outra arquitetura — resposta válida se o enunciado aceitar migrar, mas *"Multi-AZ DB clusters aren't the same as Aurora DB clusters"* (clusters de banco Multi-AZ não são a mesma coisa que clusters do Aurora).
 > **D errada**: promoção manual, RTO alto.
 
 > [!question]- Q3. Uma instância RDS foi deletada e não havia snapshot manual. Os backups automáticos servem?

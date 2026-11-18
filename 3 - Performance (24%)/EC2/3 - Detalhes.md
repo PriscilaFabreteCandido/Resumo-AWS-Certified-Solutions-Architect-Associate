@@ -96,7 +96,7 @@ Casos de uso que a doc cita: *"data analysis, batch jobs, background processing,
 
 ## 4. Placement groups
 
-*"Placement groups are optional"* e *"There is no charge for creating a placement group."* (não há cobrança para criar um placement group) Uma instância pertence a **um** grupo; grupos não se fundem; **Dedicated Hosts não podem lançar em placement group**.
+*"Placement groups are optional"* (placement groups são opcionais) e *"There is no charge for creating a placement group."* (não há cobrança para criar um placement group) Uma instância pertence a **um** grupo; grupos não se fundem; **Dedicated Hosts não podem lançar em placement group**.
 
 **Cluster** — *"Packs instances close together inside an Availability Zone."* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade) **Uma AZ só.** Fluxo único de **10 Gbps** dentro do grupo (5 Gbps fora, e 5 Gbps também para internet e Direct Connect). Recomendado usar o mesmo tipo de instância. Não disponível para T2, Mac1 e M7i-flex.
 

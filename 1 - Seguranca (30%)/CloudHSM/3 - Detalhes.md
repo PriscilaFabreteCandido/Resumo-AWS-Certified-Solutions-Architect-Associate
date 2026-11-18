@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. O que "single-tenant" muda
 
-No KMS, o HSM por trás é compartilhado entre clientes (com isolamento criptográfico). No CloudHSM, o HSM é **seu**: *"HSMs are general purpose, single tenant, and either FIPS 140-2 level-3 or FIPS 140-3 level-3 validated for clusters in FIPS mode."*
+No KMS, o HSM por trás é compartilhado entre clientes (com isolamento criptográfico). No CloudHSM, o HSM é **seu**: *"HSMs are general purpose, single tenant, and either FIPS 140-2 level-3 or FIPS 140-3 level-3 validated for clusters in FIPS mode."* (os HSMs são de uso geral, de inquilino único, e validados em FIPS 140-2 nível 3 ou FIPS 140-3 nível 3 para clusters em modo FIPS)
 
 Consequências práticas:
 

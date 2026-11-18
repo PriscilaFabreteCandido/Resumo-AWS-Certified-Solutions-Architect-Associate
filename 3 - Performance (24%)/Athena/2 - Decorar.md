@@ -22,7 +22,7 @@ Consultas **federadas** (fora do S3): *"rounded up to the nearest megabyte with 
 ## Particionamento
 
 > *"restrict the amount of data scanned by each query, thus improving performance and reducing cost."*
-> *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition."*
+> *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition."* (se você consulta uma tabela particionada e indica a partição na cláusula `WHERE`, o Athena varre apenas os dados daquela partição)
 
 **Partition projection**: *"can significantly reduce query runtimes"* (pode reduzir significativamente o tempo de execução das consultas) — útil quando há muitas partições e o `MSCK REPAIR` fica lento.
 

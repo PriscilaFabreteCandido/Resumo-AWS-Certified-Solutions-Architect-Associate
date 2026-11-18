@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Dedicated × hosted — a escolha de entrada
 
-**Dedicated connection** é uma **porta física** inteira para você: **1, 10, 100 ou 400 Gbps**. Você solicita pela console, recebe o **LOA-CFA** (a carta de autorização para cruzar o cabo no datacenter) e contrata um parceiro ou operadora para levar a fibra até lá. *"It can take up to 72 business hours"* só para a AWS provisionar a porta.
+**Dedicated connection** é uma **porta física** inteira para você: **1, 10, 100 ou 400 Gbps**. Você solicita pela console, recebe o **LOA-CFA** (a carta de autorização para cruzar o cabo no datacenter) e contrata um parceiro ou operadora para levar a fibra até lá. *"It can take up to 72 business hours"* (pode levar até 72 horas úteis) só para a AWS provisionar a porta.
 
 **Hosted connection** é uma fatia de uma porta do parceiro: de **50 Mbps a 25 Gbps**. O parceiro provisiona e você **aceita**; o tempo de entrega é muito menor e o degrau de entrada é mais baixo. A AWS aplica **traffic policing** (corta o excedente).
 

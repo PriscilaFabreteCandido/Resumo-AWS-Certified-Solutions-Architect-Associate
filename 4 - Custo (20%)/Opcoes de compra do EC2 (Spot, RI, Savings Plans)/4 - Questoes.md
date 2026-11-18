@@ -70,7 +70,7 @@ atualizado: 2026-11-08
 > **C)** Fargate Spot para toda a carga
 > **D)** Reduzir a memória das tasks
 >
-> **Por que B**: Compute SP cobre *"Fargate and Lambda usage"*.
+> **Por que B**: Compute SP cobre *"Fargate and Lambda usage"* (uso de Fargate e Lambda).
 > **A errada**: RI é para instâncias EC2.
 > **C errada**: Spot não serve para produção que não tolera interrupção (embora parte da capacidade possa ser Spot).
 
@@ -81,7 +81,7 @@ atualizado: 2026-11-08
 | Savings Plans tem 3 tipos | **Quatro**: Compute, **Database**, EC2 Instance, SageMaker AI |
 | Compute SP dá o maior desconto | **EC2 Instance SP** chega a **72%**; Compute vai a 66% com mais flexibilidade |
 | Savings Plans cobre Spot | *"Spot Instances are not covered by Savings Plans"* (instâncias Spot não são cobertas por Savings Plans) |
-| Savings Plans cobre os encargos do EKS | *"EKS charges will not be covered... but the underlying EC2 instances will be"* |
+| Savings Plans cobre os encargos do EKS | *"EKS charges will not be covered... but the underlying EC2 instances will be"* (as cobranças do EKS não são cobertas... mas as instâncias EC2 subjacentes são) |
 | RI reserva capacidade | Só a **zonal**. A regional é **desconto** |
 | RI pode ser cancelada | **Não.** Standard: modificar ou vender. Convertible: trocar |
 | Convertible dá mais desconto | Dá **menos** |

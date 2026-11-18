@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 > *"service in which you create accelerators to improve the performance of your applications for local and global users."*
 
-E os IPs: *"Global Accelerator provides you with static IP addresses... The static IP addresses are anycast from the AWS edge network. For IPv4, Global Accelerator provides two static IPv4 addresses. For dual-stack, Global Accelerator provides a total of four addresses."*
+E os IPs: *"Global Accelerator provides you with static IP addresses... The static IP addresses are anycast from the AWS edge network. For IPv4, Global Accelerator provides two static IPv4 addresses. For dual-stack, Global Accelerator provides a total of four addresses."* (o Global Accelerator fornece endereços IP estáticos... anunciados em anycast pela rede de borda da AWS. Para IPv4 são dois endereços estáticos; para dual-stack, quatro no total)
 
 ## Os três motivos para usá-lo
 

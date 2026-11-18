@@ -18,7 +18,7 @@ Isso tem três consequências práticas:
 
 ## 2. Alta disponibilidade
 
-O NAT gateway é *"Highly available. NAT gateways in each Availability Zone are implemented with redundancy"* — ou seja, redundante **dentro** da AZ, não entre AZs.
+O NAT gateway é *"Highly available. NAT gateways in each Availability Zone are implemented with redundancy"* (altamente disponível: os NAT gateways de cada Zona de Disponibilidade são implementados com redundância) — ou seja, redundante **dentro** da AZ, não entre AZs.
 
 Arquitetura correta:
 

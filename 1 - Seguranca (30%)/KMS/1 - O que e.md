@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que é, em palavras simples
 
-A KMS não criptografa seus arquivos. Ela guarda a **chave que criptografa chaves**. A doc chama isso de *wrapping key*: *"KMS keys are most often used as wrapping keys, also known as key-encryption keys. Instead of encrypting data, wrapping keys encrypt the data keys that encrypt your data."*
+A KMS não criptografa seus arquivos. Ela guarda a **chave que criptografa chaves**. A doc chama isso de *wrapping key*: *"KMS keys are most often used as wrapping keys, also known as key-encryption keys. Instead of encrypting data, wrapping keys encrypt the data keys that encrypt your data."* (as chaves do KMS são usadas na maior parte das vezes como wrapping keys, também chamadas de chaves de criptografia de chave: em vez de criptografar dados, elas criptografam as data keys que criptografam seus dados)
 
 Esse padrão tem nome: **envelope encryption**.
 
@@ -35,7 +35,7 @@ Esse padrão tem nome: **envelope encryption**.
 
 ## Onde aparece na prova
 
-Em **Task 1.3**, citado nominalmente: *"Encrypting data at rest (for example, AWS KMS)"* (criptografar dados em repouso (por exemplo, com o AWS KMS)), *"Implementing access policies for encryption keys"* e *"Rotating encryption keys and renewing certificates"* (rotacionar chaves de criptografia e renovar certificados).
+Em **Task 1.3**, citado nominalmente: *"Encrypting data at rest (for example, AWS KMS)"* (criptografar dados em repouso (por exemplo, com o AWS KMS)), *"Implementing access policies for encryption keys"* (implementar políticas de acesso para chaves de criptografia) e *"Rotating encryption keys and renewing certificates"* (rotacionar chaves de criptografia e renovar certificados).
 
 ## Links
 
