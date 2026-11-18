@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Quando o EMR vence o Glue e o Athena
 
-O critério está na doc: EMR para *"custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"*, com *"full control over the configuration of your clusters and the software installed on them"*.
+O critério está na doc: EMR para *"custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"*, com *"full control over the configuration of your clusters and the software installed on them"* (controle total sobre a configuração dos seus clusters e sobre o software instalado neles).
 
 Traduzindo para os gatilhos que a prova usa:
 
@@ -91,7 +91,7 @@ Para a prova, o essencial é **EMR on EC2** com o padrão de Spot nos task nodes
 | Alavanca | Efeito |
 |---|---|
 | **Cluster transiente** | Paga só o processamento |
-| **Spot em task nodes** | *"as low as a tenth of on-demand pricing"* |
+| **Spot em task nodes** | *"as low as a tenth of on-demand pricing"* (até um décimo do preço sob demanda) |
 | **Reserved / Savings Plans** | Para master e core de cluster long-running |
 | **EMRFS (S3)** em vez de HDFS grande | Storage muito mais barato |
 | **Graviton** | Melhor preço/performance |

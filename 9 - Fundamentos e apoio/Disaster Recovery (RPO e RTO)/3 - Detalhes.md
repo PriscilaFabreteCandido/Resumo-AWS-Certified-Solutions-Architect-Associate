@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 | Ação | **automática** (ELB, ASG, failover Multi-AZ) | **plano** — pode ter passo manual |
 | Exemplo | RDS Multi-AZ, ASG em 3 AZs | Aurora Global Database, S3 CRR, DRS |
 
-**Multi-AZ não é DR.** Se o enunciado fala em *"regional outage"*, *"disaster"* ou *"another Region"*, descarte toda alternativa que só adiciona AZs.
+**Multi-AZ não é DR.** Se o enunciado fala em *"regional outage"* (indisponibilidade regional), *"disaster"* ou *"another Region"*, descarte toda alternativa que só adiciona AZs.
 
 ## 2. RPO e RTO, com rigor
 

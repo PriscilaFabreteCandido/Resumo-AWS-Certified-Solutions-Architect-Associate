@@ -66,7 +66,7 @@ atualizado: 2026-11-08
 | Cada túnel entrega 5 Gbps | **1,25 Gbps** padrão; 5 Gbps só com **Large Bandwidth Tunnel + TGW** |
 | VPN dá banda previsível | Trafega pela **internet** |
 | VGW alcança várias VPCs | **Uma**. Várias = **Transit Gateway** |
-| IPv6 funciona no VGW | *"not supported for VPN connections on a virtual private gateway"* |
+| IPv6 funciona no VGW | *"not supported for VPN connections on a virtual private gateway"* (não é suportado em conexões VPN sobre um virtual private gateway) |
 | VPN suporta Path MTU Discovery | *"does not support Path MTU Discovery"* |
 | A AWS garante a redundância dos dois lados | O lado AWS vem redundante; o **seu** lado é sua responsabilidade |
 | Accelerated VPN aumenta a banda | Melhora **latência e estabilidade** |

@@ -15,9 +15,9 @@ atualizado: 2026-11-08
 
 | Serviço | Protocolo | Para quê (texto oficial) |
 |---|---|---|
-| **FSx for Windows File Server** | **SMB** (2.0 a 3.1.1) | *"business applications, home directories, web serving, content management, data analytics, software build setups, and media processing workloads"*. Integra com **Active Directory** |
+| **FSx for Windows File Server** | **SMB** (2.0 a 3.1.1) | *"business applications, home directories, web serving, content management, data analytics, software build setups, and media processing workloads"* (aplicações corporativas, diretórios de usuário, servidores web, gestão de conteúdo, análise de dados, ambientes de build e processamento de mídia). Integra com **Active Directory** |
 | **FSx for Lustre** | **Lustre**, POSIX | *"workloads where speed matters, such as machine learning, high performance computing (HPC), video processing, and financial modeling"*. Latência sub-ms |
-| **FSx for NetApp ONTAP** | **NFS, SMB, iSCSI, NVMe** | Multiprotocolo. *"migrate, back up, or burst your file-based applications from on-premises to AWS"* |
+| **FSx for NetApp ONTAP** | **NFS, SMB, iSCSI, NVMe** | Multiprotocolo. *"migrate, back up, or burst your file-based applications from on-premises to AWS"* (migrar, fazer backup ou expandir suas aplicações baseadas em arquivo do on-premises para a AWS) |
 | **FSx for OpenZFS** | **NFS** v3, v4.0, 4.1, 4.2 | *"easy to move data to AWS from on-premises ZFS or other Linux-based file servers"* (facilita mover dados para a AWS a partir de servidores de arquivos ZFS ou outros baseados em Linux, on-premises) |
 
 ## A árvore de decisão

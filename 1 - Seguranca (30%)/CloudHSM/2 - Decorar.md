@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | | **AWS KMS** | **AWS CloudHSM** |
 |---|---|---|
-| Tenancy | Multi-tenant gerenciado | *"general purpose, single tenant"* |
+| Tenancy | Multi-tenant gerenciado | *"general purpose, single tenant"* (uso geral, single tenant) |
 | FIPS | — | **140-2 ou 140-3 nível 3** (em FIPS mode) |
 | Gestão de usuários | **IAM** | **Você**, fora do IAM |
 | AWS vê o material? | Não vê, mas gerencia o serviço | *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS) |

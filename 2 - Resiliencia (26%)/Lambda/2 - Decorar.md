@@ -30,10 +30,10 @@ atualizado: 2026-11-08
 
 | | **Reserved** | **Provisioned** |
 |---|---|---|
-| O que faz | *"sets both the maximum and minimum number of concurrent instances"* | *"the number of pre-initialized execution environments"* |
-| Custo | *"incurs no additional charges"* (não gera cobrança adicional) | *"incurs additional charges"* |
+| O que faz | *"sets both the maximum and minimum number of concurrent instances"* (define, ao mesmo tempo, o número máximo e o mínimo de instâncias concorrentes) | *"the number of pre-initialized execution environments"* |
+| Custo | *"incurs no additional charges"* (não gera cobrança adicional) | *"incurs additional charges"* (gera cobranças adicionais) |
 | Resolve | **Cota garantida** e **estrangulamento** (valor **0** desliga a função) | **Cold start** — *"double-digit millisecond response times"* |
-| Limite | Até *"Unreserved account concurrency value minus 100"* | — |
+| Limite | Até *"Unreserved account concurrency value minus 100"* (o valor de concorrência não reservada da conta, menos 100) | — |
 
 > [!warning] A troca mais comum da prova
 > **Cold start → provisioned.** **Garantir/limitar cota → reserved.**

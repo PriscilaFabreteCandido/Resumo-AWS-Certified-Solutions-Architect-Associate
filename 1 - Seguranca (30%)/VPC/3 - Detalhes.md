@@ -23,7 +23,7 @@ Para **BYOIP**, a regra muda: *"you can use all of the IP addresses in the range
 Em IPv6, as máscaras vão de **/44 a /64** em incrementos de /4; são reservados os quatro primeiros e o último endereço, mais `FE80::/10` (link-local) e `FE80:ec2::1` (router da VPC).
 
 > [!tip] Planejamento de CIDR é decisão difícil de reverter
-> Escolha uma faixa **ampla e não sobreposta** com o on-premises e com as outras VPCs. O whitepaper de conectividade recomenda: *"We recommend allocating a single, contiguous, non-overlapping CIDR block to be used by each VPC."*
+> Escolha uma faixa **ampla e não sobreposta** com o on-premises e com as outras VPCs. O whitepaper de conectividade recomenda: *"We recommend allocating a single, contiguous, non-overlapping CIDR block to be used by each VPC."* (recomendamos alocar, para cada VPC, um único bloco CIDR contíguo e sem sobreposição)
 > CIDR sobreposto impede peering e Transit Gateway. O único contorno é **PrivateLink**, que expõe serviço em vez de rotear redes.
 
 ## 2. Arquitetura em camadas (o desenho que a prova espera)
@@ -53,7 +53,7 @@ Em IPv6, as máscaras vão de **/44 a /64** em incrementos de /4; são reservado
 Três princípios nesse desenho:
 
 1. **Duas AZs no mínimo** — o ALB *"it is a requirement that you enable at least two or more Availability Zones"*.
-2. **SG referenciando SG**, nunca CIDR — acompanha o Auto Scaling automaticamente e é o menor privilégio. A doc: *"Security groups are more versatile than network ACLs, due to their ability to perform stateful packet filtering and create rules that reference other security groups."*
+2. **SG referenciando SG**, nunca CIDR — acompanha o Auto Scaling automaticamente e é o menor privilégio. A doc: *"Security groups are more versatile than network ACLs, due to their ability to perform stateful packet filtering and create rules that reference other security groups."* (security groups são mais versáteis que network ACLs, por conseguirem filtrar pacotes de forma stateful e criar regras que referenciam outros security groups)
 3. **Camada de dados sem rota de saída** — o banco não precisa alcançar a internet.
 
 ## 3. Roteamento

@@ -30,10 +30,10 @@ atualizado: 2026-11-08
 | **Failover** | *"active-passive failover"* |
 | **Geolocation** | *"route traffic based on the location of your users"* |
 | **Geoproximity** | *"based on the location of your resources"*, com **bias** |
-| **Latency** | *"the Region that provides the best latency"* |
+| **Latency** | *"the Region that provides the best latency"* (a Região que oferece a melhor latência) |
 | **IP-based** | Por **faixa de IP** de origem |
-| **Multivalue answer** | *"up to eight healthy records selected at random"* |
-| **Weighted** | *"in proportions that you specify"* |
+| **Multivalue answer** | *"up to eight healthy records selected at random"* (até oito registros saudáveis, escolhidos aleatoriamente) |
+| **Weighted** | *"in proportions that you specify"* (nas proporções que você especificar) |
 
 ## Alias × CNAME — a regra que mais cai
 

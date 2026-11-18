@@ -47,7 +47,7 @@ Sobre a distância entre AZs:
 | Processar no local, no seu data center | **Outposts** |
 
 > [!warning] A pegadinha nº 1
-> **Multi-AZ ≠ Multi-Region.** Multi-AZ protege contra falha de data center ou de AZ — não contra um evento regional. Se o enunciado fala em *"another AWS Region"*, *"regional outage"* ou *"disaster recovery"*, Multi-AZ **não** é a resposta.
+> **Multi-AZ ≠ Multi-Region.** Multi-AZ protege contra falha de data center ou de AZ — não contra um evento regional. Se o enunciado fala em *"another AWS Region"*, *"regional outage"* (indisponibilidade regional) ou *"disaster recovery"*, Multi-AZ **não** é a resposta.
 
 ## Links
 

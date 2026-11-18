@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 >
 > **Por que B**: é o padrão mais econômico — a VPN assume (com banda degradada) se o DX cair.
 > **A errada**: é o desenho **mais robusto**, mas o enunciado pede **menor custo**.
-> **C errada**: LAG exige conexões *"on the same AWS device"* — não protege contra falha do dispositivo ou do local.
+> **C errada**: LAG exige conexões *"on the same AWS device"* (no mesmo dispositivo da AWS) — não protege contra falha do dispositivo ou do local.
 
 > [!question]- Q3. Um private VIF precisa alcançar **12 VPCs** em 3 regiões e 4 contas.
 > **A)** Um private VIF por VPC
@@ -33,8 +33,8 @@ atualizado: 2026-11-08
 > **C)** Public VIF
 > **D)** VPC peering entre as 12
 >
-> **Por que B**: o DX gateway liga a *"multiple virtual private gateways across any account and AWS Region"* — e *"There are no additional charges to use a multi-account AWS Direct Connect gateway."*
-> **A errada**: *"directly to a single VPC per private virtual interface"* — 12 VIFs para manter.
+> **Por que B**: o DX gateway liga a *"multiple virtual private gateways across any account and AWS Region"* (vários virtual private gateways, em qualquer conta e Região) — e *"There are no additional charges to use a multi-account AWS Direct Connect gateway."* (não há cobrança adicional para usar um Direct Connect gateway multi-conta)
+> **A errada**: *"directly to a single VPC per private virtual interface"* (diretamente a uma única VPC por interface virtual privada) — 12 VIFs para manter.
 > ⚠️ Se as VPCs já estiverem atrás de um **Transit Gateway**, a resposta é **transit VIF** + DX gateway.
 
 > [!question]- Q4. Precisa alcançar o **S3** pelo link privado, sem internet.
@@ -60,7 +60,7 @@ atualizado: 2026-11-08
 |---|---|
 | Direct Connect é criptografado | A doc **não afirma** isso. Use **IPsec sobre DX** (ou MACsec) |
 | Uma conexão DX é HA | **Ponto único de falha** |
-| LAG dá HA de local | Exige conexões *"on the same AWS device"* |
+| LAG dá HA de local | Exige conexões *"on the same AWS device"* (no mesmo dispositivo da AWS) |
 | Dedicated começa em 50 Mbps | **Dedicated: 1/10/100/400 Gbps.** Hosted: 50 Mbps a 25 Gbps |
 | Um private VIF alcança várias VPCs | **Uma** por VIF — várias só via **DX gateway** |
 | Gateway endpoint funciona de on-premises | **Não.** Só de dentro da VPC. Use **interface endpoint** |

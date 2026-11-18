@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 |---|---|
 | **AWS Fargate** | **A AWS** — *"you don't need to manage servers, handle capacity planning, or isolate container workloads for security"* |
 | **ECS Managed Instances** | A AWS gerencia provisionamento, patch e escala das EC2 |
-| **Amazon EC2 instances** | **Você** — *"You choose the instance type, the number of instances, and manage the capacity"* |
+| **Amazon EC2 instances** | **Você** — *"You choose the instance type, the number of instances, and manage the capacity"* (você escolhe o tipo de instância, a quantidade, e gerencia a capacidade) |
 | **ECS Anywhere** | Seus servidores/VMs **on-premises** |
 
 ## ECS × EKS — o divisor

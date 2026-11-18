@@ -21,11 +21,11 @@ Se a alternativa oferece "usar KMS para criptografar em trânsito", está errada
 
 ## 2. Onde o certificado tem que morar
 
-Certificado ACM é **recurso regional**: *"To use a certificate with Elastic Load Balancing for the same fully qualified domain name (FQDN) or set of FQDNs in more than one AWS region, you must request or import a certificate for each region."* E não há atalho: *"You cannot copy a certificate between regions."*
+Certificado ACM é **recurso regional**: *"To use a certificate with Elastic Load Balancing for the same fully qualified domain name (FQDN) or set of FQDNs in more than one AWS region, you must request or import a certificate for each region."* E não há atalho: *"You cannot copy a certificate between regions."* (não é possível copiar um certificado entre Regiões)
 
 A exceção importante é o **CloudFront**, que é global e lê certificados apenas de `us-east-1`:
 
-> *"To use a certificate in AWS Certificate Manager (ACM) to require HTTPS between viewers and CloudFront, make sure you request (or import) the certificate in the US East (N. Virginia) Region (`us-east-1`)."*
+> *"To use a certificate in AWS Certificate Manager (ACM) to require HTTPS between viewers and CloudFront, make sure you request (or import) the certificate in the US East (N. Virginia) Region (`us-east-1`)."* (para usar um certificado do ACM e exigir HTTPS entre os visitantes e o CloudFront, solicite (ou importe) o certificado na Região Norte da Virgínia (`us-east-1`))
 
 E o contraexemplo, igualmente importante:
 
@@ -59,7 +59,7 @@ Casos típicos de prova: **mutual TLS** no API Gateway, autenticação de client
 
 ## 6. Renovação e rotação
 
-O guia pede, em **Task 1.3**: *"Rotating encryption keys and renewing certificates"* — as duas coisas na mesma skill. Vale fixar o contraste:
+O guia pede, em **Task 1.3**: *"Rotating encryption keys and renewing certificates"* (rotacionar chaves de criptografia e renovar certificados) — as duas coisas na mesma skill. Vale fixar o contraste:
 
 | | **Chave KMS** | **Certificado ACM** |
 |---|---|---|

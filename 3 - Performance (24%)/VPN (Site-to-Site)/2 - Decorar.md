@@ -29,7 +29,7 @@ atualizado: 2026-11-08
 
 ## Accelerated VPN
 
-> *"When you create an accelerated VPN connection, we create and manage two accelerators on your behalf."*
+> *"When you create an accelerated VPN connection, we create and manage two accelerators on your behalf."* (quando você cria uma conexão VPN acelerada, criamos e gerenciamos dois aceleradores em seu nome)
 
 Os accelerators são cobrados pelo **AWS Global Accelerator**. O tráfego entra pela borda da AWS, melhorando a latência e a estabilidade do túnel.
 
@@ -39,7 +39,7 @@ Modelo **hub-and-spoke** para conectar **vários escritórios remotos** entre si
 
 ## Redundância
 
-> *"The virtual private gateway also supports and encourages multiple user gateway connections so that you can implement redundancy and failover on your side."*
+> *"The virtual private gateway also supports and encourages multiple user gateway connections so that you can implement redundancy and failover on your side."* (o virtual private gateway também suporta, e incentiva, múltiplas conexões de gateway do cliente, para que você implemente redundância e failover do seu lado)
 
 Ou seja: a AWS entrega **2 túneis**; a redundância do **seu** lado (dois roteadores, dois links) é sua responsabilidade.
 

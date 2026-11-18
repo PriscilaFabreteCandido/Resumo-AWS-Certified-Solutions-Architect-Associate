@@ -46,7 +46,7 @@ Multi-AZ DB cluster: *"RDS creates a storage volume snapshot of your DB cluster,
 
 ## RDS Proxy — o número
 
-Reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"*, e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
+Reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"* (em até 66% para bancos Aurora Multi-AZ), e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 
 ## Links
 

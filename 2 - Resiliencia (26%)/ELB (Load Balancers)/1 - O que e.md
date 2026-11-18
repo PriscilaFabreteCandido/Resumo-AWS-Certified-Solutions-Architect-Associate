@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Elastic Load Balancing — O que é
 
 > [!info] Em uma frase
-> Distribui tráfego entre vários destinos em **várias AZs**, verifica a saúde deles e *"routes traffic only to the healthy targets"*. Escala automaticamente.
+> Distribui tráfego entre vários destinos em **várias AZs**, verifica a saúde deles e *"routes traffic only to the healthy targets"* (roteia o tráfego somente para os alvos saudáveis). Escala automaticamente.
 
 ## Os quatro tipos
 

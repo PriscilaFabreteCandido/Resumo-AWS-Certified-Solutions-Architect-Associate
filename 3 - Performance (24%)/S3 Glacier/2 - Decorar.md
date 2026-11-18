@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 **Provisioned capacity** (só Glacier Flexible Retrieval):
 > *"Each unit of capacity provides that at least three Expedited retrievals can be performed every 5 minutes, and it provides up to 300 megabytes per second of retrieval throughput."*
 Sem ela, *"Expedited retrievals might not be accepted during periods of high demand"*.
-⚠️ As unidades são da **conta**, então *"the requester... should purchase the provisioned capacity unit, not the bucket owner"*.
+⚠️ As unidades são da **conta**, então *"the requester... should purchase the provisioned capacity unit, not the bucket owner"* (quem faz a requisição... é que deve comprar a unidade de capacidade provisionada, não o dono do bucket).
 
 ## Mínimos e overhead
 
@@ -72,9 +72,9 @@ E o mínimo manda: Glacier IR no dia 4 → Deep Archive só no dia **94**.
 | Item | Valor |
 |---|---|
 | Taxa de requisição de restore | **1.000 transações/s** |
-| Throughput | *"up to 1–2 petabytes per day per customer account"* |
+| Throughput | *"up to 1–2 petabytes per day per customer account"* (até 1–2 petabytes por dia por conta de cliente) |
 | Objeto > 5 TB | mais devagar, a até 300 MB/s |
-| Exemplo oficial | *"a 50-terabyte S3 Glacier Flexible Retrieval object could take up to 48 hours"* |
+| Exemplo oficial | *"a 50-terabyte S3 Glacier Flexible Retrieval object could take up to 48 hours"* (um objeto de 50 terabytes no S3 Glacier Flexible Retrieval pode levar até 48 horas) |
 
 ## Links
 

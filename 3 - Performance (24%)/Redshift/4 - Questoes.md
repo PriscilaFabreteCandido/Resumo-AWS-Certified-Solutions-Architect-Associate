@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Mudar o distribution style para EVEN
 > **D)** Migrar para Athena
 >
-> **Por que B**: *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila), e você paga *"only for the time they're actively running queries"*.
+> **Por que B**: *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila), e você paga *"only for the time they're actively running queries"* (somente pelo tempo em que estão de fato executando consultas).
 > **A errada**: paga capacidade de pico 24/7.
 
 > [!question]- Q3. Dados históricos de 3 anos estão no S3 e precisam ser consultados **junto** com os dados quentes do Redshift.

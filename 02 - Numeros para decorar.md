@@ -45,7 +45,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 > [!question]- Failover: RDS Multi-AZ cluster, Aurora com réplica, Aurora sem réplica?
 > Multi-AZ **DB cluster**: *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
 > Aurora **com** Aurora Replica: *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30).
-> Aurora **sem** réplica: recria a instância, *"typically takes less than 10 minutes"*.
+> Aurora **sem** réplica: recria a instância, *"typically takes less than 10 minutes"* (normalmente leva menos de 10 minutos).
 > Multi-AZ **DB instance**: a doc da AWS **não informa** um tempo típico.
 
 ---

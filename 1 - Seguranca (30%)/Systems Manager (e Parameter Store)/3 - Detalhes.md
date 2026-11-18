@@ -48,7 +48,7 @@ Recursos do Parameter Store que aparecem:
 
 Automatiza o ciclo de patch, mas com duas ressalvas que a prova explora:
 
-**Não faz upgrade de versão maior de SO**: *"doesn't support upgrading major versions of operating systems"*. Migrar de Ubuntu 20 para 22 não é Patch Manager.
+**Não faz upgrade de versão maior de SO**: *"doesn't support upgrading major versions of operating systems"* (não oferece suporte a upgrade de versões maiores de sistema operacional). Migrar de Ubuntu 20 para 22 não é Patch Manager.
 
 **A AWS não testa os patches**: *"AWS doesn't test patches before making them available in Patch Manager."* A validação é sua, via **patch baseline** com janela de aprovação (aprovar patches com N dias de idade).
 

@@ -23,7 +23,7 @@ Consequências:
 | **Réplicas** | Até **15 Aurora Replicas**, que compartilham o **mesmo** storage (não copiam dados) |
 | **Storage elástico** | Cresce e **encolhe** automaticamente, até **128 TiB** (256 TiB em versões específicas) |
 | **Failover rápido** | *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30) com réplica |
-| **Multi-AZ por desenho** | *"an Aurora configuration with only a single DB instance is still a cluster"* |
+| **Multi-AZ por desenho** | *"an Aurora configuration with only a single DB instance is still a cluster"* (uma configuração do Aurora com uma única instância ainda é um cluster) |
 
 ## As variantes
 

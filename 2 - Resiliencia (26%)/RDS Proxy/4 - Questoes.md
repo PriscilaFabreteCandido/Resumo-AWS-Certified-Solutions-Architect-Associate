@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Adicionar read replicas
 > **D)** Reserved concurrency na Lambda
 >
-> **Por que B**: *"allow your applications to pool and share database connections"*, com load shedding no excesso. Bônus: reduz o failover *"by up to 66%"* (em até 66%).
+> **Por que B**: *"allow your applications to pool and share database connections"* (permitem que suas aplicações agrupem e compartilhem conexões de banco), com load shedding no excesso. Bônus: reduz o failover *"by up to 66%"* (em até 66%).
 > **A errada**: conexões consomem memória do banco; só adia o problema.
 > **C errada**: ajuda em leitura, não no esgotamento de conexões.
 > **D errada**: limita a aplicação em vez de resolver.
@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Multi-AZ DB cluster
 > **D)** Read replica promovida
 >
-> **Por que B**: *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66%"* e *"automatically connecting to a standby DB instance while preserving application connections"*.
+> **Por que B**: *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66%"* e *"automatically connecting to a standby DB instance while preserving application connections"* (conectando automaticamente a uma instância standby, preservando as conexões da aplicação).
 > **A errada**: o endpoint do Aurora não é gerenciado por você no Route 53, e o cache pode ser do cliente/JVM.
 
 > [!question]- Q3. O time quer apontar o RDS Proxy para as read replicas, para escalar leitura.

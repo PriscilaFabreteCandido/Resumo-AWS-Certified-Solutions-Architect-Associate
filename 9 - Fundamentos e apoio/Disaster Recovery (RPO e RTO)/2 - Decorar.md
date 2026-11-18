@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 | Glacier Flexible — recuperação | **1–5 min** (expedited) · **3–5 h** (standard) · **5–12 h** (bulk) |
 
 > [!warning] Os dois testes que a prova cobra
-> 1. **Teste o failover.** O pilar Reliability inclui *"the ability to operate and test the workload through its total lifecycle"*.
+> 1. **Teste o failover.** O pilar Reliability inclui *"the ability to operate and test the workload through its total lifecycle"* (a capacidade de operar e testar a carga de trabalho ao longo de todo o seu ciclo de vida).
 > 2. **Confira as quotas na Região de DR.** Limites de serviço são **por conta e por Região**. Um plano perfeito falha se a Região de DR não permite subir o número de instâncias necessário.
 
 ## Links

@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 > **C)** Um, replicado automaticamente
 > **D)** Um por AZ
 >
-> **Por que B**: *"you must request or import a certificate for each region"* e *"You cannot copy a certificate between regions."*
+> **Por que B**: *"you must request or import a certificate for each region"* e *"You cannot copy a certificate between regions."* (não é possível copiar um certificado entre Regiões)
 > **A errada**: us-east-1 é regra do **CloudFront**, não do ELB.
 
 > [!question]- Q4. Qual mecanismo criptografa os dados **em trânsito** entre o cliente e a aplicação?
@@ -65,7 +65,7 @@ atualizado: 2026-11-08
 | ACM cobra pelo certificado público | **Grátis** |
 | Certificado importado renova sozinho | **Você** renova e reimporta |
 | KMS criptografa em trânsito | Em trânsito é **TLS/ACM** |
-| Certificado ACME funciona no ALB | *"cannot be used with AWS integrated services"* |
+| Certificado ACME funciona no ALB | *"cannot be used with AWS integrated services"* (não pode ser usado com os serviços integrados da AWS) |
 
 ## Links
 

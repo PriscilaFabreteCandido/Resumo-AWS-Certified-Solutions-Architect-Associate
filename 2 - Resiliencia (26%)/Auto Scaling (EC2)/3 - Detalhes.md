@@ -67,7 +67,7 @@ Pausam a instância num estado de espera para você executar algo antes de ela e
 Usos: baixar configuração, aquecer cache, registrar no ELB só depois do bootstrap, drenar conexões antes de terminar.
 
 ⚠️ Com hook de launch, *"the health check grace period starts as soon as the instance reaches the InService state"*.
-⚠️ Em interrupção de **Spot**, o hook *"does not prevent an instance from terminating"* — use **Capacity Rebalancing**.
+⚠️ Em interrupção de **Spot**, o hook *"does not prevent an instance from terminating"* (não impede que uma instância seja encerrada) — use **Capacity Rebalancing**.
 
 ## 6. Launch template e immutable infrastructure
 

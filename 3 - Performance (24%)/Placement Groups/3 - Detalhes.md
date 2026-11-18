@@ -22,7 +22,7 @@ O par natural é o **EFA (Elastic Fabric Adapter)**: adaptador que faz bypass do
 
 ## 2. Spread — separar para não cair junto
 
-*"a group of instances that are each placed on distinct hardware."* Cada instância vai para um hardware diferente, reduzindo a chance de uma falha física derrubar várias.
+*"a group of instances that are each placed on distinct hardware."* (um grupo de instâncias em que cada uma fica num hardware distinto) Cada instância vai para um hardware diferente, reduzindo a chance de uma falha física derrubar várias.
 
 O limite é o ponto de prova: **7 instâncias por AZ**. Com 3 AZs, o máximo é **21**.
 

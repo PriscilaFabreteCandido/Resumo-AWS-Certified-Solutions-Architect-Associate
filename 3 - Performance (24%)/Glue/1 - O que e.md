@@ -23,9 +23,9 @@ atualizado: 2026-11-08
 | Componente | Para quê |
 |---|---|
 | **Data Catalog** | Metadado: bancos, tabelas, schemas, partições |
-| **Crawler** | *"automatically infer schema information and integrate it into your AWS Glue Data Catalog"* |
+| **Crawler** | *"automatically infer schema information and integrate it into your AWS Glue Data Catalog"* (inferir automaticamente as informações de schema e integrá-las ao seu AWS Glue Data Catalog) |
 | **Job** | O ETL (Spark ou Ray) |
-| **Glue Studio** | *"a graphical interface that makes it easy to create, run, and monitor data integration jobs"* |
+| **Glue Studio** | *"a graphical interface that makes it easy to create, run, and monitor data integration jobs"* (uma interface gráfica que facilita criar, executar e monitorar jobs de integração de dados) |
 | **DataBrew** | *"A visual data preparation tool... without writing any code"* (uma ferramenta visual de preparação de dados... sem escrever código) |
 | **Trigger** | Agendado, on-demand ou **por evento** |
 | **Streaming ETL** | *"Clean and transform streaming data in transit"* (limpar e transformar dados de streaming em trânsito) |

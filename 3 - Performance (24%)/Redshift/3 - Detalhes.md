@@ -18,7 +18,7 @@ A doc resume o posicionamento: *"optimized for high-performance analysis and rep
 
 **Leader node** recebe a query, monta o plano e distribui — e existe *"If a cluster is provisioned with two or more compute nodes"* (se um cluster é provisionado com dois ou mais nós de computação). **Compute nodes** executam, divididos em **node slices** (o número depende do tamanho do nó).
 
-**Redshift Managed Storage** é o que torna o Redshift moderno: *"scale your storage to petabytes using Amazon S3 storage"*, com cache local em SSD. O efeito prático é que **compute e storage escalam independentemente** — você dimensiona nós pela carga de query, não pelo volume de dados.
+**Redshift Managed Storage** é o que torna o Redshift moderno: *"scale your storage to petabytes using Amazon S3 storage"* (escalar seu armazenamento para petabytes usando o Amazon S3), com cache local em SSD. O efeito prático é que **compute e storage escalam independentemente** — você dimensiona nós pela carga de query, não pelo volume de dados.
 
 ## 3. Spectrum — alcançar o data lake
 
@@ -26,7 +26,7 @@ A doc resume o posicionamento: *"optimized for high-performance analysis and rep
 
 O desenho típico: dados **quentes** carregados em tabelas do Redshift; dados **históricos** ficam no S3 e são consultados por **tabelas externas** via Spectrum. A query pode fazer **join** entre as duas.
 
-Onde roda: em **RA3**, *"a dedicated server fleet outside of the cluster"*; em **RG** e **Serverless**, *"an integrated data lake query engine that runs on the cluster's own compute resources"*. Escala: *"can potentially use thousands of instances"*.
+Onde roda: em **RA3**, *"a dedicated server fleet outside of the cluster"* (uma frota de servidores dedicada, fora do cluster); em **RG** e **Serverless**, *"an integrated data lake query engine that runs on the cluster's own compute resources"* (um motor de consulta de data lake integrado, que roda nos próprios recursos de computação do cluster). Escala: *"can potentially use thousands of instances"* (pode chegar a usar milhares de instâncias).
 
 O catálogo vem do **Glue Data Catalog** (ou do catálogo do Athena, ou de um Hive metastore) — o mesmo catálogo que o Athena e o EMR usam, o que permite **um** metadado para o data lake inteiro.
 

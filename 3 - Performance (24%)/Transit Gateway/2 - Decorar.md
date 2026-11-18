@@ -29,7 +29,7 @@ Isso é o mecanismo de **segmentação**: route tables diferentes criam domínio
 
 | Attachment | Como as rotas chegam |
 |---|---|
-| **VPC** | **Estática** — *"With a VPC, you must create static routes to send traffic to the transit gateway"* |
+| **VPC** | **Estática** — *"With a VPC, you must create static routes to send traffic to the transit gateway"* (com uma VPC, você precisa criar rotas estáticas para enviar tráfego ao transit gateway) |
 | **Peering** de TGW | **Estática** |
 | **VPN** | **BGP** (propagação dinâmica) |
 | **Direct Connect gateway** | **BGP** |

@@ -18,7 +18,7 @@ Fala **SMB** (*"supporting versions 2.0 to 3.1.1"*) e precisa de **Active Direct
 | Criptografia | KMS em repouso |
 | Extras | Shadow copies, DFS Namespaces, quotas de usuário |
 
-Casos citados: *"business applications, home directories, web serving, content management, data analytics, software build setups, and media processing workloads"*.
+Casos citados: *"business applications, home directories, web serving, content management, data analytics, software build setups, and media processing workloads"* (aplicações corporativas, diretórios de usuário, servidores web, gestão de conteúdo, análise de dados, ambientes de build e processamento de mídia).
 
 ## 2. FSx for Lustre — e a integração com S3
 
@@ -50,7 +50,7 @@ O **multiprotocolo**: **NFS, SMB, iSCSI e NVMe** no mesmo file system. É a resp
 
 Features do ecossistema NetApp que a doc cita: **snapshots**, **cloning** (cópia instantânea para dev/teste), **SnapMirror** (replicação), **tiering** (dado frio para storage mais barato) e **SnapLock WORM** (imutabilidade).
 
-Posicionamento oficial: *"migrate, back up, or burst your file-based applications from on-premises to AWS"*. Deployment **Multi-AZ** e **Single-AZ**.
+Posicionamento oficial: *"migrate, back up, or burst your file-based applications from on-premises to AWS"* (migrar, fazer backup ou expandir suas aplicações baseadas em arquivo do on-premises para a AWS). Deployment **Multi-AZ** e **Single-AZ**.
 
 Gatilho de prova: o enunciado menciona **NetApp**, **ONTAP**, **SnapMirror**, ou exige **NFS e SMB juntos**.
 

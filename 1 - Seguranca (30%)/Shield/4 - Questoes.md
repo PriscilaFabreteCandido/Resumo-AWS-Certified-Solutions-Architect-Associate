@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Sim, é preciso Shield Advanced
 > **D)** Sim, é preciso WAF
 >
-> **Por que B**: *"provided automatically and at no extra charge when you use AWS"* e *"AWS automatically mitigates network and transport layer (layer 3 and layer 4) DDoS attacks"* (a AWS mitiga automaticamente ataques DDoS nas camadas de rede e transporte (camadas 3 e 4)).
+> **Por que B**: *"provided automatically and at no extra charge when you use AWS"* (fornecido automaticamente e sem custo extra quando você usa a AWS) e *"AWS automatically mitigates network and transport layer (layer 3 and layer 4) DDoS attacks"* (a AWS mitiga automaticamente ataques DDoS nas camadas de rede e transporte (camadas 3 e 4)).
 
 > [!question]- Q3. Quais recursos o Shield Advanced protege?
 > **A)** Qualquer recurso da conta

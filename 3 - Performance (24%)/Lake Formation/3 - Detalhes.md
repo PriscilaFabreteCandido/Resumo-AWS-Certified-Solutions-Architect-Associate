@@ -20,7 +20,7 @@ O Lake Formation resolve na camada de **autorização da consulta**: *"enforced 
 
 > *"Lake Formation provides its own permissions model that augments the IAM permissions model."* (o Lake Formation tem um modelo de permissões próprio, que complementa o do IAM)
 
-O modelo é de banco de dados — *"a grant or revoke mechanism"*:
+O modelo é de banco de dados — *"a grant or revoke mechanism"* (um mecanismo de conceder ou revogar):
 
 ```
 GRANT SELECT (nome, email) ON TABLE clientes TO ROLE marketing

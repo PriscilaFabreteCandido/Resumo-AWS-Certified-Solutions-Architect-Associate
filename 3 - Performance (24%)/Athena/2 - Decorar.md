@@ -47,7 +47,7 @@ A doc: *"Athena can read only the column that is relevant for the query being ru
 
 ## As citações sobre storage
 
-> *"there are no additional storage charges for querying your data with Athena"*
+> *"there are no additional storage charges for querying your data with Athena"* (não há cobrança adicional de armazenamento para consultar seus dados com o Athena)
 
 Ou seja: você paga o **S3** pelo armazenamento e o **Athena** pelo escaneamento. Não há duplicação.
 

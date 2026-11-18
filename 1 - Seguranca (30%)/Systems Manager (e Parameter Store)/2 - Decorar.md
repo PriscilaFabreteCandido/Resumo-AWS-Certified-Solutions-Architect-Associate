@@ -25,7 +25,7 @@ Versionamento: guarda as **100** versões mais recentes.
 | | **Parameter Store** | **Secrets Manager** |
 |---|---|---|
 | **Rotação de credencial** | **"None"** | **"Automatic, with native database integrations"** (automático, com integrações nativas ao banco) |
-| **Custo** | *"Standard tier free; advanced tier and higher throughput billed"* | *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API) |
+| **Custo** | *"Standard tier free; advanced tier and higher throughput billed"* (camada Standard gratuita; camada Advanced e throughput maior são cobrados) | *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API) |
 
 > Recomendação oficial: *"For secrets such as database credentials, API keys, or tokens, we recommend AWS Secrets Manager."*
 
@@ -48,7 +48,7 @@ Versionamento: guarda as **100** versões mais recentes.
 |---|---|
 | O que faz | *"automates the process of patching managed nodes with both security-related updates and other types of updates"* |
 | Modos | **Scan** (só relatório) ou **Scan and install** |
-| ⚠️ Limite | *"doesn't support upgrading major versions of operating systems"* |
+| ⚠️ Limite | *"doesn't support upgrading major versions of operating systems"* (não oferece suporte a upgrade de versões maiores de sistema operacional) |
 | ⚠️ Teste | *"AWS doesn't test patches before making them available in Patch Manager"* |
 | Compliance | Definida pelo **patch baseline**, não pela AWS |
 | Métodos | Patch policy (Quick Setup, recomendado) · Host Management (**só scan**) · maintenance window · "Patch now" |

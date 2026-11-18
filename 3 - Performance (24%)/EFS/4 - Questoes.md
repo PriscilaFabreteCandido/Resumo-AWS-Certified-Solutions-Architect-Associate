@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Bursting
 > **D)** Max I/O
 >
-> **Por que B**: o critério oficial é *"average-to-peak ratio of 5% or less"* → **Elastic**.
+> **Por que B**: o critério oficial é *"average-to-peak ratio of 5% or less"* (razão entre média e pico de 5% ou menos) → **Elastic**.
 > **A errada**: Provisioned é para *"5% or more"* (carga constante) e você pagaria o pico 24 h.
 
 > [!question]- Q4. Um file system One Zone precisa de Max I/O para mais throughput agregado.
@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 > **C)** Migrar para Provisioned primeiro
 > **D)** Criar um segundo mount target
 >
-> **Por que B**: *"One Zone file systems always use the General Purpose performance mode"* (sistemas de arquivos One Zone sempre usam o modo de performance General Purpose) e Max I/O é *"not supported for One Zone file systems or file systems that use Elastic throughput"*.
+> **Por que B**: *"One Zone file systems always use the General Purpose performance mode"* (sistemas de arquivos One Zone sempre usam o modo de performance General Purpose) e Max I/O é *"not supported for One Zone file systems or file systems that use Elastic throughput"* (não é suportado em sistemas de arquivos One Zone nem nos que usam throughput Elastic).
 
 > [!question]- Q5. As instâncias não conseguem montar o EFS.
 > **A)** Falta um Elastic IP

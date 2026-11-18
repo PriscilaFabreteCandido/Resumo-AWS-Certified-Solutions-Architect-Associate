@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | Modo | Quando usar (critério oficial) |
 |---|---|
-| **Elastic** (recomendado) | *"average-to-peak ratio of 5% or less"* — carga irregular, com picos |
+| **Elastic** (recomendado) | *"average-to-peak ratio of 5% or less"* (razão entre média e pico de 5% ou menos) — carga irregular, com picos |
 | **Provisioned** | *"average-to-peak ratio of 5% or more"* — carga constante e previsível |
 | **Bursting** | Throughput *"that scales with the amount of storage"* |
 
@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 | Modo | Detalhe |
 |---|---|
 | **General Purpose** | **Padrão**, menor latência por operação. *"One Zone file systems always use the General Purpose performance mode"* (sistemas de arquivos One Zone sempre usam o modo de performance General Purpose) |
-| **Max I/O** | *"previous generation performance type"*; **não** suportado em One Zone nem com **Elastic** |
+| **Max I/O** | *"previous generation performance type"* (tipo de performance da geração anterior); **não** suportado em One Zone nem com **Elastic** |
 
 ## Latência
 

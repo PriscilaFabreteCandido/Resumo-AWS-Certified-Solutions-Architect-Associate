@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 | **Manual** | Você muda o desired capacity |
 | **Scheduled** | Padrão previsível por hora/dia ("todo dia útil às 8h, sobe para 10") |
 | **Dynamic** | Reage a métrica: **target tracking**, **step scaling**, **simple scaling** |
-| **Predictive** | *"in advance of daily and weekly patterns"* — provisiona **antes** do pico |
+| **Predictive** | *"in advance of daily and weekly patterns"* (antecipando padrões diários e semanais) — provisiona **antes** do pico |
 
 ## A recomendação oficial
 

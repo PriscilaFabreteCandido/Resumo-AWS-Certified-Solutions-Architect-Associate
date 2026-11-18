@@ -18,9 +18,9 @@ A questão típica oferece as três e descreve **um** verbo. Se o enunciado diz 
 
 ## 2. Cost Explorer
 
-Mostra gasto e uso por serviço, conta, região, tag e tipo de uso, com **13 meses** de histórico e **18 meses** de forecast. Atualiza *"at least once every 24 hours"*, e o mês corrente aparece *"in about 24 hours"*.
+Mostra gasto e uso por serviço, conta, região, tag e tipo de uso, com **13 meses** de histórico e **18 meses** de forecast. Atualiza *"at least once every 24 hours"*, e o mês corrente aparece *"in about 24 hours"* (em cerca de 24 horas).
 
-Também *"get recommendations for what Reserved Instances to purchase"* — baseadas no uso real.
+Também *"get recommendations for what Reserved Instances to purchase"* (receber recomendações de quais Instâncias Reservadas comprar) — baseadas no uso real.
 
 Dois detalhes de prova:
 - O **console é grátis**; a **API** cobra *"$0.01"* por requisição paginada
@@ -39,7 +39,7 @@ Todo mundo lembra de **cost** e **usage**. Os outros quatro são sobre **eficiê
 
 Esses quatro existem porque comprometer-se e **não usar** é desperdício — e você só descobre monitorando.
 
-Alertas vão *"to an Amazon SNS topic, to an email address, or to both"*, tanto em valor **real** quanto **previsto**. O alerta de **previsto** é o que permite reagir **antes** do fim do mês.
+Alertas vão *"to an Amazon SNS topic, to an email address, or to both"* (para um tópico do Amazon SNS, para um endereço de e-mail, ou para ambos), tanto em valor **real** quanto **previsto**. O alerta de **previsto** é o que permite reagir **antes** do fim do mês.
 
 **Budget actions** podem aplicar uma **policy IAM** — por exemplo, negar `ec2:RunInstances` ao atingir 100% do orçamento.
 

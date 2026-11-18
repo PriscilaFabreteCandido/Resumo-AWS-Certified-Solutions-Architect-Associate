@@ -23,13 +23,13 @@ Três propriedades definem tudo:
 
 **2. Tem allow e deny.** *"Each rule can either allow or deny traffic."*
 
-**3. É ordenada.** *"Each rule has a number from 1 to 32766"*, e *"Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."*
+**3. É ordenada.** *"Each rule has a number from 1 to 32766"*, e *"Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (as regras são avaliadas começando pela de menor número; assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la)
 
 ## Onde se aplica
 
 Em **subnets**. *"Each subnet in your VPC must be associated with a network ACL."* Uma subnet tem **uma** NACL por vez; uma NACL pode cobrir **várias** subnets. Subnet sem associação explícita fica com a NACL **default**.
 
-A avaliação acontece na **fronteira** da subnet: *"We evaluate the network ACL rules when traffic enters and leaves the subnet, not as it is routed within a subnet."* Ou seja: duas instâncias na **mesma** subnet conversam sem passar pela NACL.
+A avaliação acontece na **fronteira** da subnet: *"We evaluate the network ACL rules when traffic enters and leaves the subnet, not as it is routed within a subnet."* (avaliamos as regras da network ACL quando o tráfego entra e sai da subnet, não enquanto ele é roteado dentro dela) Ou seja: duas instâncias na **mesma** subnet conversam sem passar pela NACL.
 
 ## Links
 

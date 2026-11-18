@@ -29,7 +29,7 @@ atualizado: 2026-11-08
 |---|---|---|
 | Throughput | *"Fixed at a total of 2 MB/sec per shard"* **dividido** entre todos | *"up to 2 MB of data per second per shard"* **por consumidor** |
 | Latência (1 consumidor) | *"An average of around 200 ms"* (uma média de cerca de 200 ms) | *"Typically an average of 70 ms"* |
-| Latência (5 consumidores) | *"around 1000 ms"* | *"70 ms whether you have one consumer or five"* |
+| Latência (5 consumidores) | *"around 1000 ms"* (cerca de 1000 ms) | *"70 ms whether you have one consumer or five"* |
 | Entrega | Pull (`GetRecords`) | **Push** via HTTP/2 (`SubscribeToShard`) |
 | Consumidores registrados | — | **20** por stream (50 com On-demand Advantage em regiões selecionadas) |
 

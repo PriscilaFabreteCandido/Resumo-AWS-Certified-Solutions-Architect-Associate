@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Cost Explorer
 > **D)** CloudWatch dashboards
 >
-> **Por que B**: *"analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing recommendations and identify idle resources."*
+> **Por que B**: *"analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing recommendations and identify idle resources."* (analisa a configuração e as métricas de uso dos seus recursos AWS para dar recomendações de dimensionamento e identificar recursos ociosos)
 > **A errada**: Trusted Advisor sinaliza instância ociosa, mas o rightsizing por utilização com recomendação de tipo é do Compute Optimizer.
 > **C errada**: Cost Explorer mostra **gasto**, não adequação de tamanho.
 

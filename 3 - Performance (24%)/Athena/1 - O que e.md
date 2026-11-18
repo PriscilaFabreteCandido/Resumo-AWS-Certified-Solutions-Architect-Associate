@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 > *"Athena SQL and Apache Spark on Amazon Athena are serverless, so there is no infrastructure to set up or manage, and you pay only for the queries you run."*
 
-E o escopo: *"analyze data directly in Amazon S3"* com *"standard SQL"*.
+E o escopo: *"analyze data directly in Amazon S3"* (analisar dados diretamente no Amazon S3) com *"standard SQL"*.
 
 ## O modelo de cobrança — e as três alavancas
 
@@ -27,7 +27,7 @@ Athena cobra por **TB escaneado** (o exemplo oficial usa **US$ 5/TB**). As três
 | **Formato colunar** | Parquet 3:1, lendo **1 de 4** colunas = 0,25 TB = **US$ 1,25** |
 | **Particionamento** | *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition"* |
 
-> *"there are no additional storage charges for querying your data with Athena"*
+> *"there are no additional storage charges for querying your data with Athena"* (não há cobrança adicional de armazenamento para consultar seus dados com o Athena)
 
 ## Formatos suportados
 

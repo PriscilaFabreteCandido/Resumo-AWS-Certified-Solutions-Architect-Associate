@@ -18,7 +18,7 @@ A vantagem sobre montar um cache genérico é a **compatibilidade de API**: voc�
 
 **Query cache** guarda resultados de `Query` e `Scan` — ou seja, o **conjunto de resultados**, não os itens individuais. O TTL é definido na criação do cluster, e **zero desativa** esse cache.
 
-A evicção é **LRU** nos dois e *"not user-configurable"*.
+A evicção é **LRU** nos dois e *"not user-configurable"* (não é configurável pelo usuário).
 
 ⚠️ Consequência do query cache: uma escrita que deveria alterar o resultado de uma Query **não invalida** o query cache automaticamente. Quem depende de resultados de Query sempre frescos precisa de TTL curto — ou não usar o query cache.
 
@@ -41,7 +41,7 @@ Isso significa que "adicionar DAX" só resolve latência se a aplicação tolera
 
 ## 5. Arquitetura
 
-O DAX é um **cluster** de nós **dentro da VPC** (*"designed to run within an Amazon Virtual Private Cloud"*), com:
+O DAX é um **cluster** de nós **dentro da VPC** (*"designed to run within an Amazon Virtual Private Cloud"* (projetado para rodar dentro de uma Amazon Virtual Private Cloud)), com:
 
 - **Nó primário** (escritas) e **réplicas de leitura**
 - Distribuição entre **AZs** para disponibilidade

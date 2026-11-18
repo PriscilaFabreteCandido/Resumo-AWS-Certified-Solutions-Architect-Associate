@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Event history × trail
 
-O **event history** existe sem você fazer nada: *"the past 90 days of management events in an AWS Region"*, visível na console, sem custo. É suficiente para investigar algo recente.
+O **event history** existe sem você fazer nada: *"the past 90 days of management events in an AWS Region"* (os últimos 90 dias de eventos de gerenciamento numa Região), visível na console, sem custo. É suficiente para investigar algo recente.
 
 Mas ele tem três limitações que a prova explora:
 - **90 dias** apenas

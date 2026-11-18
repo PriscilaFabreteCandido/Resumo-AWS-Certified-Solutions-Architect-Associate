@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** DynamoDB com sort key de timestamp
 > **D)** S3 com Athena
 >
-> **Por que B**: série temporal é o caso de uso — storage em camadas e funções de série temporal nativas. O guia cita *"time series format"* em Task 4.3.
+> **Por que B**: série temporal é o caso de uso — storage em camadas e funções de série temporal nativas. O guia cita *"time series format"* (formato de série temporal) em Task 4.3.
 > **A errada**: relacional genérico fica caro e lento nesse volume.
 > **C errada**: é um padrão real, mas sem compressão de série temporal nem funções de janela.
 > **D errada**: bom para análise em lote, não para consulta operacional.

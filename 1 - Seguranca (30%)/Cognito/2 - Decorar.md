@@ -11,7 +11,7 @@ atualizado: 2026-11-08
 | | **User pool** | **Identity pool** |
 |---|---|---|
 | Função | **Autenticação** | **Autorização na AWS** |
-| Pergunta | *"Who is this user?"* | *"What AWS resources may this user reach?"* |
+| Pergunta | *"Who is this user?"* (quem é este usuário?) | *"What AWS resources may this user reach?"* (que recursos da AWS este usuário pode alcançar?) |
 | Entrega | **JWT** (OIDC) | **Credencial AWS temporária** (via STS) |
 | Guest / não autenticado | Não | **Sim** |
 | Federação social/SAML | Sim (Google, Facebook, Apple, SAML, OIDC) | Aceita token de provedor confiável |

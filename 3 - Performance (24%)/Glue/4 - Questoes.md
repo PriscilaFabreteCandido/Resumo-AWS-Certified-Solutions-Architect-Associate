@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Athena `MSCK REPAIR TABLE`
 > **D)** Lake Formation
 >
-> **Por que B**: *"automatically infer schema information and integrate it into your AWS Glue Data Catalog"*.
+> **Por que B**: *"automatically infer schema information and integrate it into your AWS Glue Data Catalog"* (inferir automaticamente as informações de schema e integrá-las ao seu AWS Glue Data Catalog).
 > **C errada**: atualiza **partições**, não o schema.
 
 > [!question]- Q3. O time precisa de uma versão específica do **HBase** e de bibliotecas customizadas no cluster.

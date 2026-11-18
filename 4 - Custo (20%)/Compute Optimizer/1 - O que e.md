@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # AWS Compute Optimizer — O que é
 
 > [!info] Em uma frase
-> *"analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing recommendations and identify idle resources."*
+> *"analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing recommendations and identify idle resources."* (analisa a configuração e as métricas de uso dos seus recursos AWS para dar recomendações de dimensionamento e identificar recursos ociosos)
 
 ## O verbo: **recomendar**
 

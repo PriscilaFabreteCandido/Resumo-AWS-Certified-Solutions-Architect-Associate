@@ -12,7 +12,7 @@ Toda conexão vem com **dois túneis**, cada um terminando num endpoint diferent
 
 A AWS descreve o serviço como *"AWS-managed VPN endpoint that includes automated redundancy and failover built into the AWS side"* — ou seja, a redundância do **lado AWS** vem pronta.
 
-Mas o **seu** lado é sua responsabilidade: *"The virtual private gateway also supports and encourages multiple user gateway connections so that you can implement redundancy and failover on your side."* Um único roteador on-premises continua sendo ponto único de falha.
+Mas o **seu** lado é sua responsabilidade: *"The virtual private gateway also supports and encourages multiple user gateway connections so that you can implement redundancy and failover on your side."* (o virtual private gateway também suporta, e incentiva, múltiplas conexões de gateway do cliente, para que você implemente redundância e failover do seu lado) Um único roteador on-premises continua sendo ponto único de falha.
 
 ## 2. Banda — o teto que decide a arquitetura
 
@@ -32,7 +32,7 @@ Duas consequências de prova:
 |---|---|---|
 | VPCs alcançadas | *"a single VPC"* | **Muitas** |
 | Large Bandwidth Tunnel | Não | **Sim** |
-| IPv6 | *"not supported for VPN connections on a virtual private gateway"* | **Sim** (inclusive IP externo IPv6) |
+| IPv6 | *"not supported for VPN connections on a virtual private gateway"* (não é suportado em conexões VPN sobre um virtual private gateway) | **Sim** (inclusive IP externo IPv6) |
 | ECMP com várias VPNs | — | **Sim** |
 | MTU | — | **1.500** sobre VPN |
 
@@ -48,7 +48,7 @@ Com BGP você também controla preferência de caminho, o que é exatamente o qu
 
 ## 5. Accelerated VPN
 
-> *"When you create an accelerated VPN connection, we create and manage two accelerators on your behalf."*
+> *"When you create an accelerated VPN connection, we create and manage two accelerators on your behalf."* (quando você cria uma conexão VPN acelerada, criamos e gerenciamos dois aceleradores em seu nome)
 
 O tráfego entra pela **borda da AWS** (anycast) e viaja pela rede privada da AWS até a região, em vez de atravessar a internet pública inteira. Resultado: latência menor e mais estável.
 

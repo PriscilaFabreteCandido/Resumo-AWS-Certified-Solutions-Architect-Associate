@@ -55,7 +55,7 @@ A configuração completa:
 
 ## 4. HTTPS e certificado
 
-> *"To use a certificate in AWS Certificate Manager (ACM) to require HTTPS between viewers and CloudFront, make sure you request (or import) the certificate in the US East (N. Virginia) Region (`us-east-1`)."*
+> *"To use a certificate in AWS Certificate Manager (ACM) to require HTTPS between viewers and CloudFront, make sure you request (or import) the certificate in the US East (N. Virginia) Region (`us-east-1`)."* (para usar um certificado do ACM e exigir HTTPS entre os visitantes e o CloudFront, solicite (ou importe) o certificado na Região Norte da Virgínia (`us-east-1`))
 
 E a exceção que também cai: *"If you want to require HTTPS between CloudFront and your origin, and you're using a load balancer in Elastic Load Balancing as your origin, you can request or import the certificate in any AWS Region."* (se você quer exigir HTTPS entre o CloudFront e a origem, e está usando um load balancer do Elastic Load Balancing como origem, pode solicitar ou importar o certificado em qualquer Região)
 
@@ -65,13 +65,13 @@ Outros detalhes: formato **X.509 PEM**; chave privada de terceiro *"cannot be en
 
 Um **origin group** tem *"two origins: a primary and a secondary"*. O failover dispara nos status **400, 403, 404, 416, 429, 500, 502, 503, 504** (você escolhe quais), e só para métodos **`GET`, `HEAD`, `OPTIONS`**.
 
-Timeouts: conexão **10 s** (1-10), **3** tentativas (1-3), resposta **30 s** (1-120). O delay típico é *"as long as 30 seconds (3 connection attempts of 10 seconds each)"*.
+Timeouts: conexão **10 s** (1-10), **3** tentativas (1-3), resposta **30 s** (1-120). O delay típico é *"as long as 30 seconds (3 connection attempts of 10 seconds each)"* (até 30 segundos (3 tentativas de conexão de 10 segundos cada)).
 
 ⚠️ E não é sticky: *"CloudFront routes all incoming requests to the primary origin, even when a previous request failed over."*
 
 ## 6. Conteúdo restrito
 
-**Signed URL** para *"individual files"* ou cliente sem cookie. **Signed cookie** para *"multiple restricted files"* (HLS, área de assinante) sem mudar as URLs. *"Signed URLs take precedence over signed cookies."*
+**Signed URL** para *"individual files"* ou cliente sem cookie. **Signed cookie** para *"multiple restricted files"* (HLS, área de assinante) sem mudar as URLs. *"Signed URLs take precedence over signed cookies."* (URLs assinadas têm precedência sobre cookies assinados)
 
 A recomendação é **trusted key groups** (em vez de trusted signers legados).
 

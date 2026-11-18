@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 
 Duas consequências que a prova explora:
 
-**A quantidade de cópias não depende das instâncias.** *"The amount of replication is independent of the number of DB instances in your cluster."* Um cluster com **uma** instância já tem as 6 cópias — e *"an Aurora configuration with only a single DB instance is still a cluster"*.
+**A quantidade de cópias não depende das instâncias.** *"The amount of replication is independent of the number of DB instances in your cluster."* Um cluster com **uma** instância já tem as 6 cópias — e *"an Aurora configuration with only a single DB instance is still a cluster"* (uma configuração do Aurora com uma única instância ainda é um cluster).
 
 **As réplicas não copiam dados.** As Aurora Replicas leem o **mesmo** cluster volume. Por isso adicionar réplica é rápido e o lag é mínimo (ao contrário do read replica do RDS, que replica logicamente).
 
@@ -23,7 +23,7 @@ O volume **cresce e encolhe** automaticamente: *"Aurora cluster volume can grow 
 | Cenário | Tempo |
 |---|---|
 | **Com** Aurora Replica | *"service is typically restored in less than 60 seconds, and often less than 30 seconds"* |
-| **Sem** réplica | *"the primary instance is recreated in the same AZ... typically takes less than 10 minutes"* |
+| **Sem** réplica | *"the primary instance is recreated in the same AZ... typically takes less than 10 minutes"* (a instância primária é recriada na mesma AZ... normalmente leva menos de 10 minutos) |
 
 A doc acrescenta: *"Promoting an Aurora Replica to the primary instance is much faster than creating a new primary instance."*
 
@@ -57,10 +57,10 @@ Cada cluster secundário suporta **16** instâncias de leitura — *"rather than
 
 | Operação | Quando | RPO |
 |---|---|---|
-| **Switchover** (antes *"managed planned failover"*) | Operação **planejada** (rotação regional, teste de DR) | **0** — *"synchronizes secondary DB clusters with the primary before making any other changes"* |
+| **Switchover** (antes *"managed planned failover"*) | Operação **planejada** (rotação regional, teste de DR) | **0** — *"synchronizes secondary DB clusters with the primary before making any other changes"* (sincroniza os clusters secundários com o primário antes de fazer qualquer outra mudança) |
 | **Failover** | **Desastre** na região primária | *"a non-zero value measured in seconds"* (CLI exige `--allow-data-loss`) |
 
-RTO geral: *"can be in the order of minutes"*. Em versões qualificadas, o switchover leva *"typically under 30 seconds"*.
+RTO geral: *"can be in the order of minutes"* (pode ser da ordem de minutos). Em versões qualificadas, o switchover leva *"typically under 30 seconds"* (normalmente abaixo de 30 segundos).
 
 **Write forwarding**: *"secondary clusters in an Aurora global database forward SQL statements that perform write operations to the primary cluster."* Ou seja: **não é multi-master** — a escrita sempre acaba na primária.
 
@@ -85,7 +85,7 @@ Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling u
 | Configuração | Quando |
 |---|---|
 | **Aurora Standard** | *"best choice when your I/O spending is less than 25%"* da fatura |
-| **Aurora I/O-Optimized** | *"best choice when your I/O spending is 25% or more"* — sem cobrança por I/O |
+| **Aurora I/O-Optimized** | *"best choice when your I/O spending is 25% or more"* (melhor escolha quando seu gasto com I/O é de 25% ou mais) — sem cobrança por I/O |
 
 Troca de Standard para I/O-Optimized: *"once every 30 days"*.
 

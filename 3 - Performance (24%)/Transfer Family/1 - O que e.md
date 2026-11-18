@@ -37,7 +37,7 @@ Se o enunciado nomeia **SFTP, FTPS, FTP ou AS2**, a resposta é **Transfer Famil
 
 | Item | Detalhe |
 |---|---|
-| Rede | *"supports up to 3 Availability Zones"* |
+| Rede | *"supports up to 3 Availability Zones"* (oferece suporte a até 3 Zonas de Disponibilidade) |
 | Workflows | **Managed File Transfer Workflows (MFTW)**, serverless, para pós-processamento |
 
 ## Links

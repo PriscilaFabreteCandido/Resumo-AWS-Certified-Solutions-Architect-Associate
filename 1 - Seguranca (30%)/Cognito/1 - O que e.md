@@ -19,8 +19,8 @@ atualizado: 2026-11-08
 
 | Peça | Pergunta | O que entrega |
 |---|---|---|
-| **User pool** | *"Who is this user?"* | **JWT** (ID, access e refresh token) |
-| **Identity pool** | *"What AWS resources may this user reach?"* | **Credencial AWS temporária** |
+| **User pool** | *"Who is this user?"* (quem é este usuário?) | **JWT** (ID, access e refresh token) |
+| **Identity pool** | *"What AWS resources may this user reach?"* (que recursos da AWS este usuário pode alcançar?) | **Credencial AWS temporária** |
 
 **User pool** — *"a user directory that draws from the OpenID Connect (OIDC) standard to authenticate users and issue JSON web tokens (JWTs) to your app or API."*
 

@@ -34,7 +34,7 @@ O Expedited pode ser **recusado** em períodos de alta demanda: *"Expedited retr
 
 Para garantir, você compra **provisioned capacity**, e cada unidade garante *"at least three Expedited retrievals can be performed every 5 minutes"* com até **300 MB/s**.
 
-⚠️ Detalhe fino: aplica-se **só ao Glacier Flexible Retrieval** (porque Deep Archive não tem Expedited). E as unidades pertencem à **conta do requisitante**: *"the requester... should purchase the provisioned capacity unit, not the bucket owner"* — relevante em bucket com **Requester Pays**.
+⚠️ Detalhe fino: aplica-se **só ao Glacier Flexible Retrieval** (porque Deep Archive não tem Expedited). E as unidades pertencem à **conta do requisitante**: *"the requester... should purchase the provisioned capacity unit, not the bucket owner"* (quem faz a requisição... é que deve comprar a unidade de capacidade provisionada, não o dono do bucket) — relevante em bucket com **Requester Pays**.
 
 ## 4. O overhead de 40 KB
 
@@ -61,9 +61,9 @@ A cascata também é restrita: *"Objects that are stored in the S3 Glacier Flexi
 | Item | Valor |
 |---|---|
 | Taxa de requisição | **1.000 transações/s** |
-| Throughput por conta | *"up to 1–2 petabytes per day per customer account"* |
+| Throughput por conta | *"up to 1–2 petabytes per day per customer account"* (até 1–2 petabytes por dia por conta de cliente) |
 | Objetos > 5 TB | até **300 MB/s** |
-| Exemplo oficial | *"a 50-terabyte S3 Glacier Flexible Retrieval object could take up to 48 hours"* |
+| Exemplo oficial | *"a 50-terabyte S3 Glacier Flexible Retrieval object could take up to 48 hours"* (um objeto de 50 terabytes no S3 Glacier Flexible Retrieval pode levar até 48 horas) |
 
 Para restaurar **muitos** objetos de uma vez, use **S3 Batch Operations** com uma operação de restore — e note que o Standard com Batch Operations aparece na tabela como *"Minutes–5 hours"*.
 

@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Standard — para workflow longo e não idempotente
 
-A doc posiciona o Standard para *"long-running, auditable workflows"* e cita explicitamente os casos **não idempotentes**: *"starting an Amazon EMR cluster or processing payments"*.
+A doc posiciona o Standard para *"long-running, auditable workflows"* (fluxos de trabalho longos e auditáveis) e cita explicitamente os casos **não idempotentes**: *"starting an Amazon EMR cluster or processing payments"* (iniciar um cluster do Amazon EMR ou processar pagamentos).
 
 A razão é a semântica **exactly-once**: o Step Functions garante que cada passo execute uma vez. Num workflow de pagamento, "executar duas vezes" é inaceitável — e é exatamente o que o Express (**at-least-once**) pode fazer.
 
@@ -20,7 +20,7 @@ Além da semântica, o Standard dá:
 
 ## 2. Express — para volume alto e idempotente
 
-Express é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes): ingestão de IoT, processamento de stream, backend mobile. Até **100.000 execuções/s** e transições *"nearly unlimited"*.
+Express é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes): ingestão de IoT, processamento de stream, backend mobile. Até **100.000 execuções/s** e transições *"nearly unlimited"* (praticamente ilimitado).
 
 O preço muda de modelo: Standard cobra por **transição de estado** (caro em workflow com muitos passos e muitas execuções); Express cobra por **número e duração** de execuções mais memória (barato em alto volume, curto).
 

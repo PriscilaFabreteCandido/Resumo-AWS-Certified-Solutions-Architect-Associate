@@ -25,7 +25,7 @@ Tradução para a prova: o Redshift **consegue** fazer INSERT e DELETE, mas é *
 |---|---|
 | **Leader node** | Coordena. Existe *"If a cluster is provisioned with two or more compute nodes"* (se um cluster é provisionado com dois ou mais nós de computação) |
 | **Compute nodes** | Fazem o trabalho, divididos em **node slices** |
-| **Redshift Managed Storage (RMS)** | *"scale your storage to petabytes using Amazon S3 storage"*, com cache local em SSD. **Compute e storage escalam independentemente** |
+| **Redshift Managed Storage (RMS)** | *"scale your storage to petabytes using Amazon S3 storage"* (escalar seu armazenamento para petabytes usando o Amazon S3), com cache local em SSD. **Compute e storage escalam independentemente** |
 
 ## Redshift × as alternativas analíticas
 

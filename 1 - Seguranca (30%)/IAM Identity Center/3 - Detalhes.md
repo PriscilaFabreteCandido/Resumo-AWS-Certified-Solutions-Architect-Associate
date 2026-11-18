@@ -20,7 +20,7 @@ Identity Center centraliza: a identidade vive **num lugar** (seu diretório), o 
 
 | Situação | Identity source |
 |---|---|
-| Empresa já tem **Active Directory** on-premises | **AD Connector** (um domínio) ou **trust** com AWS Managed Microsoft AD (várias florestas). Em ambos: *"pass-through authentication to the source AD instance"*, e a senha **não** é sincronizada. |
+| Empresa já tem **Active Directory** on-premises | **AD Connector** (um domínio) ou **trust** com AWS Managed Microsoft AD (várias florestas). Em ambos: *"pass-through authentication to the source AD instance"* (autenticação pass-through contra a instância de AD de origem), e a senha **não** é sincronizada. |
 | Empresa usa **Okta / Entra ID / Ping** | **IdP externo** via SAML 2.0 + SCIM |
 | Empresa pequena, sem diretório | Diretório **do próprio Identity Center** |
 

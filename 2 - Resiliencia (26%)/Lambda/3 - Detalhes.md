@@ -16,14 +16,14 @@ O guia pede isso literalmente em **Task 3.2**: *"Selecting the appropriate resou
 
 ## 2. Concorrência — reserved × provisioned
 
-**Reserved concurrency** *"sets both the maximum and minimum number of concurrent instances"* e *"incurs no additional charges"* (não gera cobrança adicional). Dois usos:
+**Reserved concurrency** *"sets both the maximum and minimum number of concurrent instances"* (define, ao mesmo tempo, o número máximo e o mínimo de instâncias concorrentes) e *"incurs no additional charges"* (não gera cobrança adicional). Dois usos:
 
 - **Garantir cota**: reservar 200 para a função crítica, para que outras funções não consumam toda a cota da conta
 - **Estrangular**: reserved = **0** desliga a função; um valor baixo protege um backend frágil (um RDS, uma API de terceiro com rate limit)
 
-Você pode reservar até *"Unreserved account concurrency value minus 100"* — a AWS mantém 100 de folga.
+Você pode reservar até *"Unreserved account concurrency value minus 100"* (o valor de concorrência não reservada da conta, menos 100) — a AWS mantém 100 de folga.
 
-**Provisioned concurrency** *"the number of pre-initialized execution environments... designed to make functions available with double-digit millisecond response times"* e *"incurs additional charges"*. É o remédio para **cold start** em carga interativa.
+**Provisioned concurrency** *"the number of pre-initialized execution environments... designed to make functions available with double-digit millisecond response times"* e *"incurs additional charges"* (gera cobranças adicionais). É o remédio para **cold start** em carga interativa.
 
 A doc nota que *"asynchronous workloads usually do not need it"* — processamento em background tolera o cold start.
 

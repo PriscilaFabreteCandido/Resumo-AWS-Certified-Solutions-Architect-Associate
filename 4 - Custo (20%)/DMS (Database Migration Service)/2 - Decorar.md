@@ -36,7 +36,7 @@ A doc: *"replicate ongoing changes to keep sources and targets in sync"*. (O ter
 | Componente | Para quê |
 |---|---|
 | **DMS Fleet Advisor** | **Descoberta** do inventário de bancos antes de migrar |
-| **Failover automático** | *"automatic failover"* com servidor de replicação de backup |
+| **Failover automático** | *"automatic failover"* (failover automático) com servidor de replicação de backup |
 | Criptografia | **KMS** em repouso, **SSL** em trânsito |
 
 ## O que a doc lida NÃO afirma

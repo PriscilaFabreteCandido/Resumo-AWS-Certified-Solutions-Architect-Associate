@@ -37,7 +37,7 @@ atualizado: 2026-11-08
 > **C)** Backup and restore
 > **D)** Warm standby
 >
-> **Por que B**: quando os pilares conflitam, o **qualificador do enunciado** decide. "A mais econômica que atende" é Cost Optimization vencendo — e o active/active é *"the most complex and costly approach"*.
+> **Por que B**: quando os pilares conflitam, o **qualificador do enunciado** decide. "A mais econômica que atende" é Cost Optimization vencendo — e o active/active é *"the most complex and costly approach"* (a abordagem mais complexa e mais cara).
 > **C errada**: o enunciado diz que pilot light **atende**; backup and restore pode não atender.
 
 > [!question]- Q5. Qual ferramenta conduz a revisão Well-Architected?

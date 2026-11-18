@@ -16,7 +16,7 @@ Sem Batch, você construiria isso com ASG + SQS + lógica própria de orquestra�
 
 ## 2. Spot — onde o Batch brilha
 
-Job em lote é o caso de uso canônico do **Spot**: a doc do EC2 lista *"data analysis, batch jobs, background processing, and optional tasks"* como workloads adequados.
+Job em lote é o caso de uso canônico do **Spot**: a doc do EC2 lista *"data analysis, batch jobs, background processing, and optional tasks"* (análise de dados, jobs em lote, processamento em segundo plano e tarefas opcionais) como workloads adequados.
 
 O compute environment pode ser **EC2 Spot** ou **Fargate Spot**, com **allocation strategy** (prefira **price capacity optimized**, a recomendada; evite `lowest-price`, marcada *"(not recommended)"*).
 

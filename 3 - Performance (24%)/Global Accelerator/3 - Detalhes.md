@@ -49,7 +49,7 @@ Para requisito de **"failover em segundos"**, a resposta é **Global Accelerator
 
 ## 4. Standard × custom routing
 
-**Standard accelerator** *"directs traffic over the AWS global network to endpoints in the nearest Region to the client"*. Endpoints: *"Network Load Balancers, Application Load Balancers, Amazon EC2 instances, or Elastic IP addresses"*.
+**Standard accelerator** *"directs traffic over the AWS global network to endpoints in the nearest Region to the client"* (direciona o tráfego pela rede global da AWS até endpoints na Região mais próxima do cliente). Endpoints: *"Network Load Balancers, Application Load Balancers, Amazon EC2 instances, or Elastic IP addresses"*.
 
 Você configura **endpoint groups** por região, com:
 - **Traffic dial** — percentual do tráfego para aquele grupo (migração gradual, teste)

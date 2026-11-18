@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 
 ## 2. Os três VIFs — e o Direct Connect gateway
 
-**Private VIF** alcança a VPC por **IP privado**, mas *"directly to a single VPC per private virtual interface"*. Para alcançar **várias** VPCs, associe a um **Direct Connect gateway**, que liga a *"multiple virtual private gateways across any account and AWS Region (except the AWS China Regions)"*.
+**Private VIF** alcança a VPC por **IP privado**, mas *"directly to a single VPC per private virtual interface"* (diretamente a uma única VPC por interface virtual privada). Para alcançar **várias** VPCs, associe a um **Direct Connect gateway**, que liga a *"multiple virtual private gateways across any account and AWS Region (except the AWS China Regions)"*.
 
 **Public VIF** alcança os **serviços públicos** da AWS (S3, DynamoDB, APIs) por IP público, **sem** passar pela internet. É a resposta quando o requisito é "alcançar o S3 pelo link privado" — embora **interface endpoint** sobre o DX também sirva, com IP privado.
 
@@ -56,11 +56,11 @@ Uma conexão DX é **ponto único de falha**: a porta, o roteador, o cabo, o dat
 
 O padrão **DX + VPN** é o mais citado em prova por ser o mais econômico: o DX carrega o tráfego normal, e a VPN (sobre internet) assume se ele cair. Com **BGP**, o failover é automático; o **BFD** acelera a detecção.
 
-**LAG** agrega várias conexões para somar banda e redundância de porta — mas todas *"must be on the same AWS device and must use the same bandwidth as the LAG"*, então **não** protege contra falha do dispositivo ou do local.
+**LAG** agrega várias conexões para somar banda e redundância de porta — mas todas *"must be on the same AWS device and must use the same bandwidth as the LAG"* (precisam estar no mesmo dispositivo da AWS e usar a mesma largura de banda do LAG), então **não** protege contra falha do dispositivo ou do local.
 
 ## 5. Custo
 
-> *"two billing elements: port hours and outbound data transfer."*
+> *"two billing elements: port hours and outbound data transfer."* (dois elementos de cobrança: horas de porta e transferência de dados de saída)
 
 A alavanca de custo: o **egress** pelo DX tem tarifa **por GB menor** que pela internet. O whitepaper lista *"Reduced bandwidth costs"* (custos de banda reduzidos) entre as vantagens. A partir de certo volume constante de saída para on-premises, o DX **se paga** — abaixo disso, a VPN é mais econômica (sem port hours).
 

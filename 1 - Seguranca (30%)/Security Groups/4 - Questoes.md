@@ -73,7 +73,7 @@ atualizado: 2026-11-08
 | SG pode ser usado em outra VPC | É **por VPC** (mas pode ser **referenciado** via peering) |
 | SG default nega tudo | Nega entrada **de fora do próprio SG**, mas libera **todo** o outbound |
 | SG default pode ser deletado | **Não pode** |
-| SG custa dinheiro | *"no additional charge"* |
+| SG custa dinheiro | *"no additional charge"* (sem cobrança adicional) |
 
 ## Links
 

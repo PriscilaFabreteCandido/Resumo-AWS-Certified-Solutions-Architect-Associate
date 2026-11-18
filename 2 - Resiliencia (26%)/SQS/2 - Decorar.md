@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 | **Normal** | **300 TPS** por ação de API | **3.000 msg/s** |
 | **High throughput** | 70.000 TPS (us-east-1, us-west-2, eu-west-1) · 2.400 em outras regiões | 700.000 msg/s (idem) |
 
-Recomendação da doc para escalar FIFO: *"increasing the number of message groups is recommended."*
+Recomendação da doc para escalar FIFO: *"increasing the number of message groups is recommended."* (recomenda-se aumentar a quantidade de message groups)
 
 ## Deduplicação FIFO
 
@@ -56,7 +56,7 @@ Recomendação da doc para escalar FIFO: *"increasing the number of message grou
 | | **Short polling** (padrão) | **Long polling** |
 |---|---|---|
 | `WaitTimeSeconds` | **0** | **1 a 20** |
-| Como consulta | *"a subset of its servers (based on a weighted random distribution)"* | **Todos** os servidores |
+| Como consulta | *"a subset of its servers (based on a weighted random distribution)"* (um subconjunto dos seus servidores (com base numa distribuição aleatória ponderada)) | **Todos** os servidores |
 | Resposta vazia | Comum | Rara |
 | Custo | **Maior** | **Menor** |
 

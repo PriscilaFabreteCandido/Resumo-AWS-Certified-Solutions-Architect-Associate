@@ -105,7 +105,7 @@ atualizado: 2026-11-08
 > **C)** **Anexar uma IAM role à instância (instance profile) com permissão só naquele bucket** ✅
 > **D)** Criar um IAM user e guardar a access key no Secrets Manager
 >
-> **Por que C**: a boa prática nº 2 da doc é literal — *"Require workloads to use temporary credentials with IAM roles to access AWS"*. A role entrega credencial **temporária e rotacionada automaticamente**, sem segredo armazenado.
+> **Por que C**: a boa prática nº 2 da doc é literal — *"Require workloads to use temporary credentials with IAM roles to access AWS"* (exija que as cargas de trabalho usem credenciais temporárias, com roles do IAM, para acessar a AWS). A role entrega credencial **temporária e rotacionada automaticamente**, sem segredo armazenado.
 > **D errada**: é melhor que A, mas continua sendo **credencial de longo prazo**; o Secrets Manager protege o segredo, não elimina a necessidade dele.
 > **B errada**: chave do root nunca.
 
@@ -124,7 +124,7 @@ atualizado: 2026-11-08
 |---|---|
 | SCP concede permissão | *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) É teto |
 | SCP alcança a conta de gerenciamento | **Não alcança** |
-| SCP limita service-linked role | *"SCPs do not affect any service-linked role"* |
+| SCP limita service-linked role | *"SCPs do not affect any service-linked role"* (SCPs não afetam nenhuma service-linked role) |
 | Bucket policy resolve cross-account sozinha | Só **na mesma conta**. Cross-account exige os dois lados |
 | Trust policy funciona por união | Trust policy e key policy do KMS **precisam** de Allow explícito ao principal |
 | Permissions boundary concede acesso | É **interseção** |

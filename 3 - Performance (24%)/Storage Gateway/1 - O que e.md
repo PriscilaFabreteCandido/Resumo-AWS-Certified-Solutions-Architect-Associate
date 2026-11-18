@@ -37,8 +37,8 @@ A palavra-chave é **"continuar acessando"**:
 
 | Modo | Citação oficial |
 |---|---|
-| **Cached** | *"You store your data in Amazon S3 and retain a copy of frequently accessed data subsets locally."* |
-| **Stored** | *"configure your on-premises gateway to store all your data locally. Then asynchronously back up point-in-time snapshots of this data to Amazon S3."* |
+| **Cached** | *"You store your data in Amazon S3 and retain a copy of frequently accessed data subsets locally."* (você armazena seus dados no Amazon S3 e mantém localmente uma cópia dos subconjuntos acessados com frequência) |
+| **Stored** | *"configure your on-premises gateway to store all your data locally. Then asynchronously back up point-in-time snapshots of this data to Amazon S3."* (configure seu gateway on-premises para guardar todos os dados localmente e, de forma assíncrona, fazer backup de snapshots pontuais desses dados no Amazon S3) |
 
 **Cached** = dado principal na AWS, cache local. **Stored** = dado principal local, backup na AWS.
 

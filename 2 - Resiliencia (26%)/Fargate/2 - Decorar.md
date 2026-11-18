@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|
 | **AWS Fargate** (serverless) | **A AWS.** *"you don't need to manage servers, handle capacity planning, or isolate container workloads for security"* |
 | **Amazon ECS Managed Instances** | A AWS gerencia provisionamento, patch e escala das instâncias EC2 |
-| **Amazon EC2 instances** | **Você**: *"You choose the instance type, the number of instances, and manage the capacity"* |
+| **Amazon EC2 instances** | **Você**: *"You choose the instance type, the number of instances, and manage the capacity"* (você escolhe o tipo de instância, a quantidade, e gerencia a capacidade) |
 | **Amazon ECS Anywhere** | Seus servidores/VMs **on-premises** |
 
 ## Lambda × Fargate × EC2

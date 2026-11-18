@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 > **C)** AD Connector
 > **D)** Managed Microsoft AD Standard
 >
-> **Por que B**: é a opção *"low-scale, low-cost"*, e o enunciado dispensa justamente o que ela não suporta.
+> **Por que B**: é a opção *"low-scale, low-cost"* (de pequena escala e baixo custo), e o enunciado dispensa justamente o que ela não suporta.
 > **C errada**: AD Connector exige um AD on-premises existente, que o enunciado não menciona.
 > **D errada**: atende, mas custa mais do que o necessário.
 
@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 > **C)** Simple AD como fonte de identidade do Identity Center
 > **D)** AWS Managed Microsoft AD replicando os usuários do AD on-premises
 >
-> **Por que B**: é a cadeia padrão. O AD Connector é *"a directory gateway... without caching any information in the cloud"*, o Identity Center faz *"pass-through authentication to the source AD instance"*, e os permission sets atribuem acesso por grupo.
+> **Por que B**: é a cadeia padrão. O AD Connector é *"a directory gateway... without caching any information in the cloud"*, o Identity Center faz *"pass-through authentication to the source AD instance"* (autenticação pass-through contra a instância de AD de origem), e os permission sets atribuem acesso por grupo.
 > **C errada**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4)
 > **D errada**: atende, mas **replica** identidade para a AWS — o enunciado proibiu.
 

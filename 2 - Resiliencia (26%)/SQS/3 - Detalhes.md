@@ -36,7 +36,7 @@ Padrão de prova: usar o **ID do cliente** (ou do pedido, ou da conta) como `Mes
 
 ## 3. Long polling — sempre ligue
 
-Short polling consulta *"a subset of its servers (based on a weighted random distribution)"*, então pode devolver vazio mesmo havendo mensagem. Long polling (até **20 s**) consulta todos e espera.
+Short polling consulta *"a subset of its servers (based on a weighted random distribution)"* (um subconjunto dos seus servidores (com base numa distribuição aleatória ponderada)), então pode devolver vazio mesmo havendo mensagem. Long polling (até **20 s**) consulta todos e espera.
 
 Benefícios: menos respostas vazias, **menos custo** (você paga por requisição), e menor latência de entrega. É resposta para "reduzir custo de polling" e "a aplicação recebe muitas respostas vazias".
 

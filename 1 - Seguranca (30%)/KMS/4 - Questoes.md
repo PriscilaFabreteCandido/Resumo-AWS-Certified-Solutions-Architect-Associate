@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** KMS com multi-Region key
 > **D)** Secrets Manager com chave própria
 >
-> **Por que B**: três gatilhos juntos — *"general purpose, single tenant"*, FIPS nível 3, e *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS).
+> **Por que B**: três gatilhos juntos — *"general purpose, single tenant"* (uso geral, single tenant), FIPS nível 3, e *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS).
 > **A e C erradas**: KMS é multi-tenant e gerenciado pela AWS. Customer managed dá controle de **política**, não de hardware dedicado.
 > **D errada**: Secrets Manager guarda secret de aplicação, não é cofre de chave em HSM.
 
@@ -62,7 +62,7 @@ atualizado: 2026-11-08
 > **C)** Chave simétrica com material importado
 > **D)** Multi-Region key primária
 >
-> **Por que B**: automática é *"supported only on symmetric encryption KMS keys with key material that AWS KMS generates (AWS_KMS origin)"*. Assimétrica, HMAC e custom key store só manual.
+> **Por que B**: automática é *"supported only on symmetric encryption KMS keys with key material that AWS KMS generates (AWS_KMS origin)"* (suportado apenas em chaves simétricas do KMS cujo material de chave é gerado pelo próprio AWS KMS (origem AWS_KMS)). Assimétrica, HMAC e custom key store só manual.
 > **C errada**: material importado (`EXTERNAL`) suporta rotação **on-demand**.
 > **D errada**: suporta — e a rotação se configura justamente **na primária**.
 

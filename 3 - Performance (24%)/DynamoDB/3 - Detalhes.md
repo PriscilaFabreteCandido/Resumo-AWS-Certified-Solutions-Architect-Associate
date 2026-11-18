@@ -33,8 +33,8 @@ Ambos devolvem no máximo **1 MB** por chamada (com paginação).
 | Partition key | **qualquer** atributo | **a mesma** da tabela base |
 | Quando criar | **na criação ou depois** | **só na criação** |
 | Deletar | **sim** | **não** |
-| Tamanho | *"no size restrictions"* | **10 GB** por valor de partition key |
-| Consistência | *"Queries on global secondary indexes support eventual consistency only"* | **eventual ou forte** |
+| Tamanho | *"no size restrictions"* (sem restrição de tamanho) | **10 GB** por valor de partition key |
+| Consistência | *"Queries on global secondary indexes support eventual consistency only"* (consultas em índices secundários globais só oferecem consistência eventual) | **eventual ou forte** |
 | Capacidade | **própria** (RCU/WCU do índice) | consome a da **tabela base** |
 | Atributo fora da projeção | **não devolve** — *"DynamoDB does not fetch any attributes from the table"* | **busca na tabela** automaticamente |
 
@@ -62,7 +62,7 @@ Detalhe de custo: *"The configured maximum recovery period doesn't impact the pr
 
 **TTL** é *"a cost-effective method for deleting items that are no longer relevant"*. O atributo precisa ser **Number** em epoch de **segundos**; a exclusão ocorre *"within a few days after their expiration"*, e a primeira exclusão **não consome WCU**. ⚠️ Itens expirados mas não apagados **ainda aparecem** — *"Use filter expressions to remove expired items from Scan and Query results."*
 
-**Global Tables** é *"multi-Region, and multi-active"* — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas). Dois modos: **MREC** (eventual, **padrão**) e **MRSC** (forte). Resolução de conflito **last-writer-wins**. E: *"You cannot change a global table's consistency mode after creation."*
+**Global Tables** é *"multi-Region, and multi-active"* (multi-Região e multi-ativo) — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas). Dois modos: **MREC** (eventual, **padrão**) e **MRSC** (forte). Resolução de conflito **last-writer-wins**. E: *"You cannot change a global table's consistency mode after creation."*
 
 ## 6. Performance e cache
 

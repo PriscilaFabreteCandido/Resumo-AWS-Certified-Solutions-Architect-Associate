@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Migrar para Glue
 > **D)** Todos os nós em Spot
 >
-> **Por que B**: cluster transiente paga só o processamento; Spot nos **task nodes** dá *"as low as a tenth of on-demand pricing"* sem arriscar o HDFS nem o master.
+> **Por que B**: cluster transiente paga só o processamento; Spot nos **task nodes** dá *"as low as a tenth of on-demand pricing"* (até um décimo do preço sob demanda) sem arriscar o HDFS nem o master.
 > **A errada**: paga 24/7 para um job noturno.
 > **C errada**: o enunciado diz **código Spark customizado** — critério da doc para EMR.
 > **D errada**: perder o **master** derruba o cluster; perder **core** arrisca o HDFS.
@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 > **C)** Athena Spark
 > **D)** AWS Batch
 >
-> **Por que B**: *"full control over the configuration of your clusters and the software installed on them"*, e HBase está entre os frameworks suportados.
+> **Por que B**: *"full control over the configuration of your clusters and the software installed on them"* (controle total sobre a configuração dos seus clusters e sobre o software instalado neles), e HBase está entre os frameworks suportados.
 
 > [!question]- Q4. Por que usar **EMRFS** em vez de HDFS para os dados de entrada e saída?
 > **A)** É mais rápido que HDFS

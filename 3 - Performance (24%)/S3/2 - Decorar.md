@@ -84,7 +84,7 @@ Como ler o diagrama:
 |---|---|
 | **Standard vai direto para qualquer classe** | Não precisa passar por IA. Pode ir de Standard a Deep Archive numa regra só |
 | **One Zone-IA NÃO vai para Glacier Instant Retrieval** | Só para **Glacier FR** e **Deep Archive**. É a seta que falta no diagrama |
-| **Deep Archive não tem saída** | *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."* Para sair: **restore** + **copy** |
+| **Deep Archive não tem saída** | *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."* (não é possível usar uma regra de lifecycle do S3 para converter a classe de um objeto que está no S3 Glacier Deep Archive para qualquer outra classe) Para sair: **restore** + **copy** |
 
 ### Por que as setas do Intelligent-Tiering são tracejadas
 
@@ -103,7 +103,7 @@ Ou seja: quanto mais frio o tier interno, **menos destinos** restam. O waterfall
 
 **1. Respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento)
 O exemplo da própria doc: Glacier IR (mínimo **90 dias**) no dia 4 → Deep Archive só a partir do dia **94**.
-*"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."*
+*"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."* (você pode usar duas regras para conseguir isso, mas paga as cobranças de duração mínima de armazenamento)
 
 **2. Objeto menor que 128 KB não transiciona por padrão.** *"Amazon S3 applies a default behavior to S3 Lifecycle configurations that prevents objects smaller than 128 KB from being transitioned to any storage class."* O motivo é econômico: *"you are charged a transition request for each object"*.
 Para forçar: filtro `ObjectSizeGreaterThan` / `ObjectSizeLessThan`, ou o header `x-amz-transition-default-minimum-object-size`.

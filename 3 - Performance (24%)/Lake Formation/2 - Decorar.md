@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 
 > *"Lake Formation provides its own permissions model that augments the IAM permissions model."* (o Lake Formation tem um modelo de permissões próprio, que complementa o do IAM)
 
-Com mecanismo de *"a grant or revoke mechanism"* — estilo banco de dados (`GRANT SELECT ON tabela TO role`), em vez de JSON de policy.
+Com mecanismo de *"a grant or revoke mechanism"* (um mecanismo de conceder ou revogar) — estilo banco de dados (`GRANT SELECT ON tabela TO role`), em vez de JSON de policy.
 
 ## LF-Tags (tag-based access control)
 

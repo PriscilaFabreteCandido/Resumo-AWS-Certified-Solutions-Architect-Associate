@@ -36,13 +36,13 @@ Consequências de prova:
 
 | Requisito do enunciado | Resposta |
 |---|---|
-| *"encrypted at rest"*, sem mais nada | A opção **padrão** do serviço já serve |
+| *"encrypted at rest"* (criptografado em repouso), sem mais nada | A opção **padrão** do serviço já serve |
 | *"we must control who can use the key"* | **Customer managed key** (tem **key policy**) |
 | *"audit every use of the key"* | **SSE-KMS** / CMK → **CloudTrail** registra cada `Decrypt` |
 | *"rotate keys annually"* | **AWS managed** já faz; CMK com rotação **habilitada** |
 | *"rotate on our own schedule"* / *"revoke"* | **Customer managed key** |
 | *"share encrypted snapshot with another account"* | **Customer managed key** (não é possível com AWS managed) |
-| *"keys must never leave hardware we control"*, *"FIPS 140-3 Level 3"*, *"single-tenant HSM"* | **CloudHSM** |
+| *"keys must never leave hardware we control"*, *"FIPS 140-3 Level 3"*, *"single-tenant HSM"* (HSM de inquilino único) | **CloudHSM** |
 | *"AWS must never have access to the plaintext"* | **Client-side encryption** (ou **SSE-C**) |
 | *"double encryption"* | **DSSE-KMS** |
 

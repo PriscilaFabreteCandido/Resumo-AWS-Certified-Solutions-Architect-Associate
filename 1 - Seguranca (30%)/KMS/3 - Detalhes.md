@@ -46,7 +46,7 @@ Para ler: envia a data key criptografada para `Decrypt`, recebe a versão em tex
 
 ## 3. Rotação
 
-A rotação automática é *"supported only on symmetric encryption KMS keys with key material that AWS KMS generates (AWS_KMS origin)"*. O período padrão: *"If you do not specify a value for RotationPeriodInDays when you enable automatic key rotation, the default value is 365 days."*
+A rotação automática é *"supported only on symmetric encryption KMS keys with key material that AWS KMS generates (AWS_KMS origin)"* (suportado apenas em chaves simétricas do KMS cujo material de chave é gerado pelo próprio AWS KMS (origem AWS_KMS)). O período padrão: *"If you do not specify a value for RotationPeriodInDays when you enable automatic key rotation, the default value is 365 days."*
 
 Não suportam rotação automática (só manual): **assimétricas**, **HMAC** e chaves em **custom key store**.
 
@@ -68,7 +68,7 @@ O erro prático mais comum: criar um snapshot de EBS ou uma AMI criptografada co
 
 **Grants** são delegação temporária e granular, com escopo por operação e por encryption context. É o mecanismo que serviços AWS usam internamente.
 
-**Encryption context** é um par chave-valor que entra no AAD: se não for apresentado igual no decrypt, a operação falha. Só funciona em chave **simétrica**, e a doc diz que é *"strongly recommended"* — além de aparecer no CloudTrail, o que ajuda auditoria.
+**Encryption context** é um par chave-valor que entra no AAD: se não for apresentado igual no decrypt, a operação falha. Só funciona em chave **simétrica**, e a doc diz que é *"strongly recommended"* (fortemente recomendado) — além de aparecer no CloudTrail, o que ajuda auditoria.
 
 ## 5. Multi-Region keys
 

@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 > **D)** Cross-zone está desligado
 >
 > **Por que B**: o EC2 status check valida hipervisor e SO, não a aplicação. O **ELB health check** precisa ser ativado no ASG.
-> **A errada**: *"does not wait for the cooldown period to end before replacing the unhealthy instance"*.
+> **A errada**: *"does not wait for the cooldown period to end before replacing the unhealthy instance"* (não espera o período de cooldown terminar para substituir a instância não saudável).
 
 > [!question]- Q5. Um NLB distribui desigualmente: a AZ com 2 instâncias recebe metade do tráfego, a AZ com 8 recebe a outra metade.
 > **A)** Mudar para ALB

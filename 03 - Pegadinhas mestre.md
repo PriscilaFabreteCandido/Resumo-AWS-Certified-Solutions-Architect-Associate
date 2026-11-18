@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 | Mudar a criptografia padrão do bucket recriptografa o que já existe | **Não.** Só vale para objetos **novos**. Para os antigos: S3 Batch Operations (Copy). |
 | Transfer Acceleration é para download | É para **upload** de longe (usa a borda do CloudFront). Para download é CloudFront. |
 | Requester Pays faz o requisitante pagar o armazenamento | **Não.** *"The bucket owner always pays the cost of storing data."* O requisitante paga **requisição e download**. E **acesso anônimo fica proibido**. |
-| Bucket público é liberado por bucket policy | Block Public Access tem **4 configurações** e vence: *"S3 applies the most restrictive combination"* entre conta, bucket e access point. |
+| Bucket público é liberado por bucket policy | Block Public Access tem **4 configurações** e vence: *"S3 applies the most restrictive combination"* (o S3 aplica a combinação mais restritiva) entre conta, bucket e access point. |
 
 ## 2. EBS, EFS, FSx
 
@@ -79,8 +79,8 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| CNAME pode apontar o ápice (example.com) | **Não pode.** *"You can't create a CNAME record that has the same name as the hosted zone."* Use **alias**. |
-| Alias e CNAME custam igual | *"Route 53 doesn't charge for alias queries to AWS resources."* CNAME é cobrado. |
+| CNAME pode apontar o ápice (example.com) | **Não pode.** *"You can't create a CNAME record that has the same name as the hosted zone."* (não é possível criar um registro CNAME com o mesmo nome da hosted zone) Use **alias**. |
+| Alias e CNAME custam igual | *"Route 53 doesn't charge for alias queries to AWS resources."* (o Route 53 não cobra por consultas de alias a recursos da AWS) CNAME é cobrado. |
 | Posso definir TTL no alias | Não, se apontar para recurso AWS: o Route 53 usa o TTL do recurso. |
 | Simple routing faz health check | **Não faz.** *"although you can specify multiple IP addresses, they are not health checked."* Para health check com múltiplos valores: **multivalue answer**. |
 | Latency routing escolhe o mais perto geograficamente | Escolhe a **menor latência medida**, que não é sempre o mais perto. Para geografia, é **geolocation**. |
@@ -171,7 +171,7 @@ atualizado: 2026-11-08
 | Cognito user pool dá acesso ao S3 | **User pool autentica** (emite JWT). Quem troca token por **credencial AWS** é o **identity pool**. |
 | Secrets Manager e Parameter Store são iguais | **Secrets Manager**: rotação automática nativa, cobrado por secret. **Parameter Store**: sem rotação, tier Standard **grátis**. |
 | Rotacionar regularmente a chave de acesso do root é boa prática | A doc atual diz **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) — não criar. A rotação só aparece em material antigo |
-| MFA no root é recomendação | É **exigência**: *"require MFA to be configured for their root user"*, registro em até **14 dias** |
+| MFA no root é recomendação | É **exigência**: *"require MFA to be configured for their root user"* (exigem que o MFA esteja configurado para o usuário raiz), registro em até **14 dias** |
 | Um `Allow` de administrador destrava uma bucket policy que nega todos | **Não** — `Deny` explícito vence. Só o **root** (sem deny implícito) ou o **centralized root access** resolvem |
 | Guardar access key criptografada no S3 resolve | Continua sendo **credencial de longo prazo**. A resposta é **IAM role** |
 

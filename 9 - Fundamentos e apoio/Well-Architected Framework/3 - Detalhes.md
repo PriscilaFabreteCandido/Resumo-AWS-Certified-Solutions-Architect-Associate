@@ -22,13 +22,13 @@ Por isso vale ler os seis pilares como **critérios de desempate**:
 
 ## 2. Os pilares, com o que cada um cobra na prática
 
-**Operational Excellence** — *"a commitment to build software correctly while consistently delivering a great customer experience"*. Áreas: Organization, Prepare, Operate, Evolve.
+**Operational Excellence** — *"a commitment to build software correctly while consistently delivering a great customer experience"* (o compromisso de construir software corretamente, entregando de forma consistente uma ótima experiência ao cliente). Áreas: Organization, Prepare, Operate, Evolve.
 Na prova: **IaC** (CloudFormation), automação (SSM Automation, EventBridge), observabilidade (CloudWatch, X-Ray), **immutable infrastructure** (AMI nova + instance refresh).
 
 **Security** — *"the ability to protect data, systems, and assets"*. Sete áreas, incluindo **Detection** e **Data protection**.
 Na prova: é o domínio 1 inteiro — IAM, SCP, KMS, ACM, SG/NACL, WAF/Shield, GuardDuty/Macie/Inspector.
 
-**Reliability** — *"perform its intended function correctly and consistently when it's expected to"*, incluindo *"the ability to operate and test the workload through its total lifecycle"*. Áreas: Foundations, Workload architecture, Change management, **Failure management**.
+**Reliability** — *"perform its intended function correctly and consistently when it's expected to"*, incluindo *"the ability to operate and test the workload through its total lifecycle"* (a capacidade de operar e testar a carga de trabalho ao longo de todo o seu ciclo de vida). Áreas: Foundations, Workload architecture, Change management, **Failure management**.
 Na prova: Multi-AZ, desacoplamento, Auto Scaling, DR com RPO/RTO, **quota conferida no standby**.
 
 **Performance Efficiency** — *"use cloud resources efficiently... and to maintain that efficiency as demand changes and technologies evolve"*. Áreas: Architecture selection, Compute and hardware, Data management, Networking and content delivery, Process and culture.
@@ -63,7 +63,7 @@ Os pilares **conflitam**, e o enunciado diz qual vence:
 | Frase no enunciado | Pilar vencedor |
 |---|---|
 | *"most cost-effective"* / *"lowest cost"* | **Cost Optimization** |
-| *"highly available"* / *"fault tolerant"* | **Reliability** |
+| *"highly available"* (altamente disponível) / *"fault tolerant"* | **Reliability** |
 | *"least operational overhead"* (menor esforço operacional) | **Operational Excellence** |
 | *"lowest latency"* / *"highest throughput"* | **Performance Efficiency** |
 | *"compliance"* / *"must not be accessible"* | **Security** |

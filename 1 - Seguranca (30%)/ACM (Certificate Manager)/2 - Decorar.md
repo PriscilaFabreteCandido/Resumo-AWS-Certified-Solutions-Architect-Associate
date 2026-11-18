@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 
 > [!warning] EC2 só com Nitro Enclaves
 > *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* (associar um certificado gerenciado pelo ACM diretamente a uma instância EC2 exige um Nitro Enclave)
-> Para servidor comum em EC2, a doc aponta o protocolo **ACME**. E certificados ACME *"cannot be used with AWS integrated services"*.
+> Para servidor comum em EC2, a doc aponta o protocolo **ACME**. E certificados ACME *"cannot be used with AWS integrated services"* (não pode ser usado com os serviços integrados da AWS).
 
 ## Renovação
 

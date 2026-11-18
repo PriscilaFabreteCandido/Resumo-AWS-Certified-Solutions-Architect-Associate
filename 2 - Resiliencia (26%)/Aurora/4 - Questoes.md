@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 > **C)** Adicionar read replicas
 > **D)** Migrar para RDS MySQL
 >
-> **Por que B**: *"best choice when your I/O spending is 25% or more"*.
+> **Por que B**: *"best choice when your I/O spending is 25% or more"* (melhor escolha quando seu gasto com I/O é de 25% ou mais).
 > **C errada**: **adiciona** custo de compute.
 
 > [!question]- Q6. Quanto tempo leva o failover de um cluster Aurora que tem **uma única** instância?
@@ -61,7 +61,7 @@ atualizado: 2026-11-08
 > **C)** **Menos de 10 minutos (a instância é recriada)** ✅
 > **D)** Não há failover
 >
-> **Por que C**: sem réplica, *"the primary instance is recreated in the same AZ... typically takes less than 10 minutes"*. Os dados estão seguros (6 cópias em 3 AZs), mas o serviço fica fora até a instância subir.
+> **Por que C**: sem réplica, *"the primary instance is recreated in the same AZ... typically takes less than 10 minutes"* (a instância primária é recriada na mesma AZ... normalmente leva menos de 10 minutos). Os dados estão seguros (6 cópias em 3 AZs), mas o serviço fica fora até a instância subir.
 > **D errada**: há failover — mas lento. É o argumento para ter ao menos uma réplica.
 
 ## ⚠️ Armadilhas
@@ -79,7 +79,7 @@ atualizado: 2026-11-08
 | Secrets Manager funciona com Global Database | *"Secrets Manager doesn't support Aurora Global Database"* (o Secrets Manager não oferece suporte ao Aurora Global Database) |
 | Serverless v2 sempre pausa | Só com mínimo **0 ACU** |
 | I/O-Optimized é sempre melhor | Só a partir de **25%** de I/O na fatura |
-| Aurora = Multi-AZ DB cluster do RDS | *"aren't the same as Aurora DB clusters"* |
+| Aurora = Multi-AZ DB cluster do RDS | *"aren't the same as Aurora DB clusters"* (não são a mesma coisa que clusters do Aurora) |
 
 ## Links
 

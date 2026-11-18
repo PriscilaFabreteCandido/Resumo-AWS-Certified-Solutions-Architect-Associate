@@ -57,11 +57,11 @@ Exemplo oficial: item de **3 KB** ÷ 4 KB = 0,75 → arredonda para **1 RCU**.
 | Quantidade | **20** por tabela | **5** por tabela |
 | Chave | simples **ou** composta | **sempre composta**, com a **mesma** partition key da tabela |
 | Criação | **na criação ou depois**; deletável | **só na criação**; não deletável |
-| Tamanho | *"no size restrictions"* | **10 GB** por valor de partition key |
-| Consistência | *"eventual consistency only"* | **eventual ou forte** |
+| Tamanho | *"no size restrictions"* (sem restrição de tamanho) | **10 GB** por valor de partition key |
+| Consistência | *"eventual consistency only"* (somente consistência eventual) | **eventual ou forte** |
 | Capacidade | **própria** | consome a da **tabela base** |
 | Atributo não projetado | **não** devolve | **busca na tabela** |
-| Escopo da query | *"across all partitions"* | *"over a single partition"* |
+| Escopo da query | *"across all partitions"* (em todas as partições) | *"over a single partition"* |
 
 Atributos projetados: **100** no total para todos os índices (projeção INCLUDE).
 

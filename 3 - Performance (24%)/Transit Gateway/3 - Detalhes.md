@@ -39,7 +39,7 @@ Resultado: produção e desenvolvimento **não se falam**, mas ambos alcançam o
 
 | Attachment | Rotas |
 |---|---|
-| **VPC** | **Estáticas.** *"With a VPC, you must create static routes to send traffic to the transit gateway"* |
+| **VPC** | **Estáticas.** *"With a VPC, you must create static routes to send traffic to the transit gateway"* (com uma VPC, você precisa criar rotas estáticas para enviar tráfego ao transit gateway) |
 | **Peering de TGW** | **Estáticas** |
 | **VPN** | **BGP** |
 | **Direct Connect gateway** | **BGP** |
@@ -95,7 +95,7 @@ A prova testa esse trade-off: **2 ou 3 VPCs** → peering é mais barato. **Deze
 | Alcançar S3/DynamoDB sem internet | **Gateway endpoint** |
 | Inspeção de tráfego | **Network Firewall** ou **GWLB** (que podem ser anexados ao desenho) |
 
-A doc do whitepaper de conectividade reforça: *"We recommend allocating a single, contiguous, non-overlapping CIDR block to be used by each VPC."*
+A doc do whitepaper de conectividade reforça: *"We recommend allocating a single, contiguous, non-overlapping CIDR block to be used by each VPC."* (recomendamos alocar, para cada VPC, um único bloco CIDR contíguo e sem sobreposição)
 
 ## Links
 

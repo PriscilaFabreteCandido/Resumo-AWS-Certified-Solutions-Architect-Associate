@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Pilot light não replica dados
 > **D)** Warm standby não precisa de DNS failover
 >
-> **Por que B**: a palavra da doc é *"fully functional"* para warm standby, contra *"switched off"* no pilot light.
+> **Por que B**: a palavra da doc é *"fully functional"* (totalmente funcional) para warm standby, contra *"switched off"* no pilot light.
 > **C errada**: pilot light **replica** os dados — é o que o define.
 
 > [!question]- Q3. O requisito é *"proteger contra a exclusão acidental ou maliciosa de objetos no S3"*.
@@ -49,7 +49,7 @@ atualizado: 2026-11-08
 > **C)** Pilot light na Europa
 > **D)** CloudFront com origem única
 >
-> **Por que B**: as duas Regiões **servem produção** — atende latência e DR ao mesmo tempo. A doc avisa que é *"the most complex and costly approach"*, mas o enunciado pediu zero.
+> **Por que B**: as duas Regiões **servem produção** — atende latência e DR ao mesmo tempo. A doc avisa que é *"the most complex and costly approach"* (a abordagem mais complexa e mais cara), mas o enunciado pediu zero.
 > **D errada**: CloudFront acelera conteúdo cacheável; não dá DR da aplicação nem do banco.
 
 > [!question]- Q6. O plano de DR prevê subir 150 instâncias na Região secundária. O que foi esquecido?
@@ -86,7 +86,7 @@ atualizado: 2026-11-08
 | RPO é tempo até voltar | **RPO = dado perdido**; **RTO = tempo até voltar** |
 | Replicação protege de exclusão acidental | **Propaga** a exclusão → **versionamento / Object Lock / backup** |
 | Pilot light mantém a aplicação ligada | Dados **ligados**, servidores **desligados** |
-| Warm standby é só pilot light maior | Warm standby é *"fully functional"* e **no ar** |
+| Warm standby é só pilot light maior | Warm standby é *"fully functional"* (totalmente funcional) e **no ar** |
 | Deep Archive serve para RTO curto | **12–48 h** para recuperar |
 | O plano de DR está pronto quando foi escrito | Só está pronto quando foi **testado**, e com as **quotas** conferidas na Região de DR |
 | Snapshot cifrado restaura em qualquer Região | A **chave KMS é regional** (ou use **multi-Region key**) |

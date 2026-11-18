@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** OpenSearch Service
 > **D)** EMR
 >
-> **Por que B**: *"analyze data directly in Amazon S3"*, serverless, *"you pay only for the queries you run"*.
+> **Por que B**: *"analyze data directly in Amazon S3"* (analisar dados diretamente no Amazon S3), serverless, *"you pay only for the queries you run"*.
 > **C errada**: OpenSearch é melhor para **busca textual** e dashboards contínuos — e exige domínio.
 
 > [!question]- Q3. Uma tabela tem 100.000 partições e o `MSCK REPAIR TABLE` demora demais.

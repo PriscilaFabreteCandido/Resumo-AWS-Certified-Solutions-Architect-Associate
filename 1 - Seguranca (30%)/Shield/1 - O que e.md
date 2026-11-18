@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 | | **Shield Standard** | **Shield Advanced** |
 |---|---|---|
-| Custo | *"provided automatically and at no extra charge when you use AWS"* | **Pago** (assinatura) |
+| Custo | *"provided automatically and at no extra charge when you use AWS"* (fornecido automaticamente e sem custo extra quando você usa a AWS) | **Pago** (assinatura) |
 | Camadas | 3 e 4, e vetores conhecidos na 7 | + **mitigação automática na camada 7** |
 | Visibilidade | Básica | *"advanced event visibility"* |
 | Suporte | — | **Shield Response Team (SRT)** e **engajamento proativo** |

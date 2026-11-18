@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 > **D)** Registro NS delegando para o CloudFront
 >
 > **Por que B**: alias é o único que funciona no **ápice** — *"you can create an alias record at the top node of a DNS namespace"* — e não é cobrado.
-> **A errada**: *"You can't create a CNAME record that has the same name as the hosted zone."*
+> **A errada**: *"You can't create a CNAME record that has the same name as the hosted zone."* (não é possível criar um registro CNAME com o mesmo nome da hosted zone)
 > **C errada**: CloudFront não publica IP fixo.
 
 > [!question]- Q2. Site em três regiões, servindo cada usuário pela região de menor latência, com failover automático.
@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Failover routing com três registros
 > **D)** Simple routing com os três IPs
 >
-> **Por que B**: latency escolhe *"the Region that provides the best latency"*, e com health check configura **ativo-ativo** (*"any routing policy... other than failover"*).
+> **Por que B**: latency escolhe *"the Region that provides the best latency"* (a Região que oferece a melhor latência), e com health check configura **ativo-ativo** (*"any routing policy... other than failover"*).
 > **A errada**: geolocation roteia por **localização**, não por latência medida.
 > **C errada**: failover é **ativo-passivo**.
 > **D errada**: *"they are not health checked"*.
@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** Multivalue answer
 > **D)** Failover routing
 >
-> **Por que B**: *"in proportions that you specify"* — é o mecanismo de canary e migração gradual.
+> **Por que B**: *"in proportions that you specify"* (nas proporções que você especificar) — é o mecanismo de canary e migração gradual.
 
 > [!question]- Q5. O endpoint a monitorar está numa subnet privada, sem IP público. Como fazer health check?
 > **A)** Endpoint health check pelo IP privado

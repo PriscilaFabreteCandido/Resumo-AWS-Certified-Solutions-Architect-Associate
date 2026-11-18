@@ -40,7 +40,7 @@ atualizado: 2026-11-08
 > **C)** Um gateway endpoint para o DAX
 > **D)** Um NAT gateway
 >
-> **Por que B**: o DAX é *"designed to run within an Amazon Virtual Private Cloud"* — é alcançável só de dentro da VPC.
+> **Por que B**: o DAX é *"designed to run within an Amazon Virtual Private Cloud"* (projetado para rodar dentro de uma Amazon Virtual Private Cloud) — é alcançável só de dentro da VPC.
 > **C errada**: gateway endpoint existe só para **S3 e DynamoDB**.
 
 > [!question]- Q5. Carga de **escrita intensa** com pouca leitura. DAX ajuda?

@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 > **C)** Rota para o internet gateway
 > **D)** Elastic IP nas instâncias
 >
-> **Por que B**: NACL é **stateless** — *"responses to that traffic are not automatically allowed"*. A resposta volta para uma porta efêmera da instância, não para a 443.
+> **Por que B**: NACL é **stateless** — *"responses to that traffic are not automatically allowed"* (as respostas a esse tráfego não são permitidas automaticamente). A resposta volta para uma porta efêmera da instância, não para a 443.
 > **A errada**: SG **já é** stateful.
 > **C errada**: o enunciado diz que as conexões **saem**, então a rota existe (via NAT).
 > **D errada**: instância privada não leva EIP; a saída é pelo NAT gateway.
@@ -64,7 +64,7 @@ atualizado: 2026-11-08
 > **C)** Internet gateway com NACL restritiva
 > **D)** NAT instance com IPv6
 >
-> **Por que B**: *"is for use with IPv6 traffic only. To enable outbound-only internet communication over IPv4, use a NAT gateway instead."*
+> **Por que B**: *"is for use with IPv6 traffic only. To enable outbound-only internet communication over IPv4, use a NAT gateway instead."* (serve apenas para tráfego IPv6; para permitir comunicação de saída pela internet em IPv4, use um NAT gateway)
 > **A errada**: NAT gateway é a resposta para **IPv4**.
 > **C errada**: IGW é bidirecional; depender de NACL para simular saída-somente é frágil.
 > **D errada**: não é o mecanismo suportado para IPv6 de saída.

@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Usar uma NACL no NAT gateway
 > **D)** Usar o Network Firewall no lugar do SG
 >
-> **Por que B**: *"You cannot associate security groups with NAT gateways."*
+> **Por que B**: *"You cannot associate security groups with NAT gateways."* (não é possível associar security groups a NAT gateways)
 > **C errada**: a NACL se associa à **subnet**, não ao gateway.
 > **D errada**: Network Firewall é a resposta para **inspeção** de saída, mas não é "usar security group".
 
@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 > **C)** Internet gateway com NACL restritiva
 > **D)** NAT instance com IPv6
 >
-> **Por que B**: *"is for use with IPv6 traffic only. To enable outbound-only internet communication over IPv4, use a NAT gateway instead."*
+> **Por que B**: *"is for use with IPv6 traffic only. To enable outbound-only internet communication over IPv4, use a NAT gateway instead."* (serve apenas para tráfego IPv6; para permitir comunicação de saída pela internet em IPv4, use um NAT gateway)
 
 > [!question]- Q5. Um time quer usar o NAT gateway também como bastion para acessar as instâncias privadas por SSH.
 > **A)** Configurar port forwarding no NAT gateway

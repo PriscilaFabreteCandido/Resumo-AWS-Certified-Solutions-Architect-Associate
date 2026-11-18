@@ -23,9 +23,9 @@ atualizado: 2026-11-08
 
 | Fato | Detalhe |
 |---|---|
-| Onde roda | Em **RA3**: *"a dedicated server fleet outside of the cluster"*. Em **RG** e **Serverless**: *"an integrated data lake query engine that runs on the cluster's own compute resources"* |
+| Onde roda | Em **RA3**: *"a dedicated server fleet outside of the cluster"* (uma frota de servidores dedicada, fora do cluster). Em **RG** e **Serverless**: *"an integrated data lake query engine that runs on the cluster's own compute resources"* (um motor de consulta de data lake integrado, que roda nos próprios recursos de computação do cluster) |
 | Catálogo | **AWS Glue Data Catalog**, catálogo do Athena, ou Hive metastore próprio |
-| Escala | *"can potentially use thousands of instances"* |
+| Escala | *"can potentially use thousands of instances"* (pode chegar a usar milhares de instâncias) |
 | Concorrência | Vários clusters podem consultar o **mesmo** dataset no S3 |
 | ⚠️ Limitação | **Não** suporta operações de **update** em tabelas externas |
 
@@ -37,7 +37,7 @@ atualizado: 2026-11-08
 |---|---|
 | Como funciona | *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila) |
 | Configuração | Por fila do **WLM** (*"Concurrency Scaling mode"* (modo Concurrency Scaling) = `auto`) |
-| Cobrança | *"only for the time they're actively running queries"* |
+| Cobrança | *"only for the time they're actively running queries"* (somente pelo tempo em que estão de fato executando consultas) |
 | Clusters adicionais padrão | **um** (controlado por `max_concurrency_scaling_clusters`) |
 | Operações de escrita suportadas | **COPY, INSERT, DELETE, UPDATE, CTAS, VACUUM** |
 | Node types exigidos | `rg.*` e `ra3.*` (lista na doc); **máx. 32** compute nodes |

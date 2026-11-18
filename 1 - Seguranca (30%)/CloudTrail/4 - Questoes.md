@@ -54,7 +54,7 @@ atualizado: 2026-11-08
 > **C)** MFA Delete
 > **D)** Glacier Deep Archive
 >
-> **Por que B**: só o modo **Compliance** impede o root — *"can't be overwritten or deleted by any user, including the root user"*.
+> **Por que B**: só o modo **Compliance** impede o root — *"can't be overwritten or deleted by any user, including the root user"* (não pode ser sobrescrito nem apagado por nenhum usuário, inclusive o usuário raiz).
 > **A errada**: quem edita a policy remove o Deny.
 > **C errada**: quem tem o MFA do root apaga.
 > **D errada**: classe de armazenamento é custo, não imutabilidade.

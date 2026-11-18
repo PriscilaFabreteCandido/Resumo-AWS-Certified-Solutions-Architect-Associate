@@ -37,7 +37,7 @@ A razão é a flexibilidade: a RI compromete-se com **configuração** (tipo, re
 
 **EC2 Instance Savings Plans** (até **72%**) dá mais desconto em troca de amarrar *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida), mantendo flexibilidade de **tamanho, SO e tenancy** dentro disso.
 
-**Database Savings Plans** (até **35%**) é o tipo que material antigo não menciona: cobre **Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS e OpenSearch**, *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"*.
+**Database Savings Plans** (até **35%**) é o tipo que material antigo não menciona: cobre **Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS e OpenSearch**, *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"* (independentemente de engine, família de instância, tamanho, Zona de Disponibilidade ou Região).
 
 ⚠️ Dois detalhes: *"The terms of the commitment can't be changed after purchase"*, e no EKS *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be"*.
 
@@ -64,11 +64,11 @@ E as regras: **não renovam** automaticamente, **não podem ser canceladas**. A 
 
 A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **dois minutos** de aviso. Antes disso pode vir o **rebalance recommendation**, sinalizando *"an elevated risk of interruption"*.
 
-A requisição é **one-time** ou **persistent** — a persistente *"automatically resubmits"* depois da interrupção.
+A requisição é **one-time** ou **persistent** — a persistente *"automatically resubmits"* (reenvia automaticamente) depois da interrupção.
 
 A doc **não publica** um percentual de desconto (só *"steep discounts"* (descontos expressivos)), e é explícita: *"Spot Instances are not covered by Savings Plans."* (instâncias Spot não são cobertas por Savings Plans)
 
-Casos de uso citados: *"data analysis, batch jobs, background processing, and optional tasks."*
+Casos de uso citados: *"data analysis, batch jobs, background processing, and optional tasks."* (análise de dados, jobs em lote, processamento em segundo plano e tarefas opcionais)
 
 **As estratégias de alocação** importam porque mudam a taxa de interrupção:
 

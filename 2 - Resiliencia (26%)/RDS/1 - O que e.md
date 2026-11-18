@@ -35,7 +35,7 @@ As citações que definem:
 
 ## A pegadinha nº 1 do RDS
 
-**O standby do Multi-AZ instance não aceita leitura.** *"You can't use a standby replica to serve read traffic."*
+**O standby do Multi-AZ instance não aceita leitura.** *"You can't use a standby replica to serve read traffic."* (não é possível usar uma réplica standby para atender tráfego de leitura)
 Escalar leitura = **read replica** (ou Multi-AZ **DB cluster**).
 
 ## Links

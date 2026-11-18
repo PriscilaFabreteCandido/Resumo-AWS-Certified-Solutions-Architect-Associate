@@ -50,7 +50,7 @@ São **quatro** tipos: *"Compute Savings Plans, Database Savings Plans, EC2 Inst
 - **Compute** (até **66%**): aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região), e cobre **Fargate e Lambda**. É a escolha quando a arquitetura pode mudar.
 - **EC2 Instance** (até **72%**): compromisso com *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida), flexível em tamanho, SO e tenancy dentro disso. Maior desconto, menor flexibilidade.
 
-Termos: **1 ou 3 anos**. Pagamento: All upfront, Partial upfront, No upfront. *"The terms of the commitment can't be changed after purchase."*
+Termos: **1 ou 3 anos**. Pagamento: All upfront, Partial upfront, No upfront. *"The terms of the commitment can't be changed after purchase."* (os termos do compromisso não podem ser alterados depois da compra)
 
 ### Reserved Instances
 
@@ -71,7 +71,7 @@ A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 need
 
 A requisição é **one-time** ou **persistent** — *"Amazon EC2 automatically resubmits a persistent Spot Instance request after the Spot Instance associated with the request is interrupted."*
 
-Casos de uso que a doc cita: *"data analysis, batch jobs, background processing, and optional tasks."*
+Casos de uso que a doc cita: *"data analysis, batch jobs, background processing, and optional tasks."* (análise de dados, jobs em lote, processamento em segundo plano e tarefas opcionais)
 
 ⚠️ *"Spot Instances are not covered by Savings Plans."* (instâncias Spot não são cobertas por Savings Plans)
 
@@ -96,11 +96,11 @@ Casos de uso que a doc cita: *"data analysis, batch jobs, background processing,
 
 ## 4. Placement groups
 
-*"Placement groups are optional"* e *"There is no charge for creating a placement group."* Uma instância pertence a **um** grupo; grupos não se fundem; **Dedicated Hosts não podem lançar em placement group**.
+*"Placement groups are optional"* e *"There is no charge for creating a placement group."* (não há cobrança para criar um placement group) Uma instância pertence a **um** grupo; grupos não se fundem; **Dedicated Hosts não podem lançar em placement group**.
 
 **Cluster** — *"Packs instances close together inside an Availability Zone."* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade) **Uma AZ só.** Fluxo único de **10 Gbps** dentro do grupo (5 Gbps fora, e 5 Gbps também para internet e Direct Connect). Recomendado usar o mesmo tipo de instância. Não disponível para T2, Mac1 e M7i-flex.
 
-**Spread** — *"a group of instances that are each placed on distinct hardware."* Pode abranger várias AZs na mesma região, *"but it supports a maximum of seven running instances in each Availability Zone"* (3 AZs = 21). Não suportado em Dedicated Instances.
+**Spread** — *"a group of instances that are each placed on distinct hardware."* (um grupo de instâncias em que cada uma fica num hardware distinto) Pode abranger várias AZs na mesma região, *"but it supports a maximum of seven running instances in each Availability Zone"* (3 AZs = 21). Não suportado em Dedicated Instances.
 
 **Partition** — *"Spreads your instances across logical partitions"* (distribui suas instâncias entre partições lógicas), cada partição com racks próprios. *"A partition placement group can have a maximum of seven partitions per Availability Zone"* (2 com Dedicated Instances). Casos citados: HDFS, HBase, Cassandra, Kafka, Hadoop.
 

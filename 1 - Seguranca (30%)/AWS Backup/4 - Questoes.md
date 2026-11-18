@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** MFA obrigatório no console
 > **D)** Backup em bucket S3 com versionamento
 >
-> **Por que B**: Vault Lock impede a exclusão *"including you"*, e a cópia cross-account tira o alvo do raio de ação da conta comprometida.
+> **Por que B**: Vault Lock impede a exclusão *"including you"* (inclusive você), e a cópia cross-account tira o alvo do raio de ação da conta comprometida.
 > **A errada**: SCP ajuda, mas não alcança a management account e pode ser alterada por quem controla a organização.
 > **C errada**: MFA protege o login, não o recurso.
 > **D errada**: versionamento sem Object Lock ainda permite exclusão de versão.
@@ -63,9 +63,9 @@ atualizado: 2026-11-08
 | Snapshot está preso à AZ | Snapshot é **regional**; o **volume** é zonal |
 | Restaurar snapshot é instantâneo | Volume fica disponível rápido, mas blocos vêm **sob demanda** (lazy load) |
 | Backup automático do RDS sobrevive à exclusão | **Não.** Só o **snapshot manual** |
-| PITR do DynamoDB restaura no lugar | *"always restores to a new table"* |
+| PITR do DynamoDB restaura no lugar | *"always restores to a new table"* (sempre restaura para uma tabela nova) |
 | AWS Backup cobre tudo | Lista grande, mas **não universal** |
-| Vault Lock pode ser revertido pelo dono | É WORM: *"including you"* |
+| Vault Lock pode ser revertido pelo dono | É WORM: *"including you"* (inclusive você) |
 | FSx for Lustre é sempre durável | **Scratch** não replica |
 
 ## Links

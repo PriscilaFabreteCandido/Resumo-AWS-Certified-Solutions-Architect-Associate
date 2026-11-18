@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Criar um LSI
 > **D)** Habilitar DAX
 >
-> **Por que B**: GSI permite query *"across all partitions"* por uma chave diferente — e pode ser criado numa tabela **existente**.
+> **Por que B**: GSI permite query *"across all partitions"* (em todas as partições) por uma chave diferente — e pode ser criado numa tabela **existente**.
 > **A errada**: paga mais pelo mesmo Scan ruim.
 > **C errada**: **LSI só na criação** da tabela, e exige a **mesma** partition key.
 > **D errada**: DAX cacheia o resultado, mas não corrige o padrão de acesso — o primeiro Scan continua lendo tudo.
@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** DAX em cada região
 > **D)** Aurora Global Database
 >
-> **Por que B**: *"multi-Region, and multi-active"* — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas).
+> **Por que B**: *"multi-Region, and multi-active"* (multi-Região e multi-ativo) — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas).
 > **A errada**: DynamoDB não tem read replica; e réplica de leitura não aceitaria escrita.
 > **D errada**: Aurora Global Database tem **1 primária escrevendo**.
 
@@ -71,7 +71,7 @@ atualizado: 2026-11-08
 > **C)** Criar um GSI com consistência forte
 > **D)** Habilitar DAX
 >
-> **Por que B**: *"Local secondary indexes are created at the same time that you create a table"*, e *"Queries on global secondary indexes support eventual consistency only"*.
+> **Por que B**: *"Local secondary indexes are created at the same time that you create a table"*, e *"Queries on global secondary indexes support eventual consistency only"* (consultas em índices secundários globais só oferecem consistência eventual).
 
 ## ⚠️ Armadilhas
 
@@ -80,12 +80,12 @@ atualizado: 2026-11-08
 | 1 RCU = 1 leitura | 1 leitura **forte** de 4 KB **ou 2 eventuais** |
 | O padrão da API é leitura forte | O padrão é **eventual** |
 | Posso adicionar LSI depois | **Não.** Só **GSI** |
-| GSI faz leitura forte | *"eventual consistency only"* |
+| GSI faz leitura forte | *"eventual consistency only"* (somente consistência eventual) |
 | GSI consome capacidade da tabela | Tem capacidade **própria**. **LSI** é que consome |
 | GSI devolve atributo não projetado | **Não.** **LSI** busca na tabela |
 | `FilterExpression` economiza RCU | É aplicado **depois** da leitura |
 | LSI não tem limite de tamanho | **10 GB** por valor de partition key |
-| PITR restaura no lugar | *"always restores to a new table"* |
+| PITR restaura no lugar | *"always restores to a new table"* (sempre restaura para uma tabela nova) |
 | PITR de 35 dias custa mais que de 7 | O preço vem do **tamanho** da tabela |
 | TTL apaga na hora | *"within a few days"* — filtre os expirados |
 | Global Tables é ativo-passivo | É **multi-ativo** |

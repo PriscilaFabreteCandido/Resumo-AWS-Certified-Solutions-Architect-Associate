@@ -7,7 +7,7 @@ atualizado: 2026-11-08
 
 > [!info] O que é esta pasta
 > Conceitos que **atravessam** os quatro domínios. Não são serviços: são as ideias que a prova usa para montar as alternativas.
-> O guia oficial diz, na primeira linha, que a prova *"validates a candidate's ability to design solutions based on the AWS Well-Architected Framework"*. É aqui que esse vocabulário mora.
+> O guia oficial diz, na primeira linha, que a prova *"validates a candidate's ability to design solutions based on the AWS Well-Architected Framework"* (valida a capacidade do candidato de projetar soluções com base no AWS Well-Architected Framework). É aqui que esse vocabulário mora.
 
 ## Por onde começar
 

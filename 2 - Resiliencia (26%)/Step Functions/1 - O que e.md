@@ -32,7 +32,7 @@ Com Step Functions, isso é **configuração** (ASL, Amazon States Language) e v
 
 > [!warning] A regra que decide
 > Passo **não idempotente** (cobrar cartão, subir cluster EMR) → **Standard**, porque é *exactly-once*.
-> A doc: Standard para *"long-running, auditable workflows"* e casos como *"starting an Amazon EMR cluster or processing payments"*; Express é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes).
+> A doc: Standard para *"long-running, auditable workflows"* (fluxos de trabalho longos e auditáveis) e casos como *"starting an Amazon EMR cluster or processing payments"* (iniciar um cluster do Amazon EMR ou processar pagamentos); Express é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes).
 >
 > ⚠️ O tipo de workflow é **imutável** depois de criado.
 

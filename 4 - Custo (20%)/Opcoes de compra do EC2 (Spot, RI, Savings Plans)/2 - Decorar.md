@@ -14,12 +14,12 @@ atualizado: 2026-11-08
 |---|---|---|---|
 | **Compute** | até **66%** | EC2 + **Fargate** + **Lambda** | *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região) |
 | **EC2 Instance** | até **72%** | Só EC2 | Amarrado a *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida); flexível em tamanho, SO e tenancy |
-| **Database** | até **35%** | Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS, OpenSearch | *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"* |
+| **Database** | até **35%** | Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS, OpenSearch | *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"* (independentemente de engine, família de instância, tamanho, Zona de Disponibilidade ou Região) |
 | **SageMaker AI** | até **64%** | SageMaker AI | *"regardless of your instance family, instance size, component, or AWS Region"* |
 
 Claim geral: *"You can save up to 72% on your AWS compute workloads."*
 Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfront**.
-⚠️ *"The terms of the commitment can't be changed after purchase."*
+⚠️ *"The terms of the commitment can't be changed after purchase."* (os termos do compromisso não podem ser alterados depois da compra)
 ⚠️ **EKS**: *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be."*
 
 ## Reserved Instances
@@ -43,9 +43,9 @@ Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfro
 | **Aviso de interrupção** | **2 minutos** — *"two-minute Spot Instance interruption notice"* |
 | Aviso antecipado | **Rebalance recommendation** — *"at an elevated risk of interruption"* |
 | O que a AWS faz | *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta) |
-| Tipos de requisição | **one-time** ou **persistent** (*"automatically resubmits"*) |
+| Tipos de requisição | **one-time** ou **persistent** (*"automatically resubmits"* (reenvia automaticamente)) |
 | ⚠️ Savings Plans | *"Spot Instances are not covered by Savings Plans"* (instâncias Spot não são cobertas por Savings Plans) |
-| Casos de uso citados | *"data analysis, batch jobs, background processing, and optional tasks"* |
+| Casos de uso citados | *"data analysis, batch jobs, background processing, and optional tasks"* (análise de dados, jobs em lote, processamento em segundo plano e tarefas opcionais) |
 | Histórico de preço | Últimos **3 meses**; página de preço atualizada *"every five minutes"* |
 | Desconto % | **A doc não publica** um número fixo (*"steep discounts"* (descontos expressivos)) |
 

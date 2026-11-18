@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 
 E o modo de operação:
 
-> *"You can perform one-time migrations or replicate ongoing changes to keep sources and targets in sync."*
+> *"You can perform one-time migrations or replicate ongoing changes to keep sources and targets in sync."* (você pode fazer migrações pontuais ou replicar as mudanças continuamente, mantendo origem e destino sincronizados)
 
 É essa replicação contínua que permite **downtime mínimo**: a carga inicial acontece com a origem funcionando, e você corta quando os dois estão sincronizados.
 
@@ -30,7 +30,7 @@ E o modo de operação:
 
 > *"AWS DMS supports fully heterogeneous data migrations between the supported engines."*
 
-Para a conversão: *"DMS Schema Conversion"* no console, que *"automatically assesses and converts your source schemas to a new target engine"*; ou *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC"*.
+Para a conversão: *"DMS Schema Conversion"* no console, que *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino); ou *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC"*.
 
 > [!warning] A divisão de trabalho
 > **DMS migra os dados. A conversão de schema é outra ferramenta** (DMS Schema Conversion ou AWS SCT). Alternativa que diz "o DMS converte o schema" está errada.

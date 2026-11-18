@@ -8,14 +8,14 @@ atualizado: 2026-11-08
 # Well-Architected Framework — O que é
 
 > [!important] É a base da prova inteira
-> O guia oficial diz, na primeira linha: a prova *"validates a candidate's ability to design solutions based on the AWS Well-Architected Framework"*.
+> O guia oficial diz, na primeira linha: a prova *"validates a candidate's ability to design solutions based on the AWS Well-Architected Framework"* (valida a capacidade do candidato de projetar soluções com base no AWS Well-Architected Framework).
 > E os quatro domínios **são** quatro pilares: **secure**, **resilient**, **high-performing**, **cost-optimized**.
 
 ## Os seis pilares (definições oficiais)
 
 | Pilar | Definição |
 |---|---|
-| **Operational Excellence** | *"a commitment to build software correctly while consistently delivering a great customer experience"* |
+| **Operational Excellence** | *"a commitment to build software correctly while consistently delivering a great customer experience"* (o compromisso de construir software corretamente, entregando de forma consistente uma ótima experiência ao cliente) |
 | **Security** | *"the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security"* |
 | **Reliability** | *"the ability of a workload to perform its intended function correctly and consistently when it's expected to"* |
 | **Performance Efficiency** | *"the ability to use cloud resources efficiently to meet performance requirements, and to maintain that efficiency as demand changes and technologies evolve"* |

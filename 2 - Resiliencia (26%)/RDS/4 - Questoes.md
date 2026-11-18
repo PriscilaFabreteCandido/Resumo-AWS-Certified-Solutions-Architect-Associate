@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 > **D)** Aumentar a instance class
 >
 > **Por que B**: são **dois requisitos distintos** — Multi-AZ resolve failover, read replica resolve leitura.
-> **A errada**: *"You can't use a standby replica to serve read traffic."* É a pegadinha central.
+> **A errada**: *"You can't use a standby replica to serve read traffic."* (não é possível usar uma réplica standby para atender tráfego de leitura) É a pegadinha central.
 > **C errada**: read replica **não** faz failover automático.
 > **D errada**: trata o sintoma, com teto e sem HA.
 > ⚠️ Se **Multi-AZ DB cluster** estiver entre as opções e o engine for MySQL/PostgreSQL, ele é a resposta mais elegante: os 2 readers atendem leitura **e** dão failover em < 35 s.
@@ -72,7 +72,7 @@ atualizado: 2026-11-08
 |---|---|
 | Standby do Multi-AZ lê | **Não lê** (no Multi-AZ *instance*) |
 | Multi-AZ escala leitura | Não. Escalar leitura = **read replica** ou **Multi-AZ cluster** |
-| Multi-AZ DB cluster é Aurora | *"aren't the same as Aurora DB clusters"* |
+| Multi-AZ DB cluster é Aurora | *"aren't the same as Aurora DB clusters"* (não são a mesma coisa que clusters do Aurora) |
 | Read replica é síncrona | **Assíncrona** |
 | Read replica faz failover automático | Promoção é **manual** |
 | Read replica tem autoscaling | *"RDS doesn't support autoscaling of read replicas"* (o RDS não oferece escalabilidade automática de réplicas de leitura) |

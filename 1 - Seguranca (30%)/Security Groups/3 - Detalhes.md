@@ -22,7 +22,7 @@ Três vantagens:
 2. **É menor privilégio real.** Liberar o CIDR da subnet autoriza **qualquer** recurso que exista ou venha a existir ali.
 3. **Documenta a intenção.** A regra diz "a camada de aplicação fala com o banco", não "a faixa 10.0.2.0/24 fala com o banco".
 
-A doc reconhece isso como diferencial: *"Security groups are more versatile than network ACLs, due to their ability to perform stateful packet filtering and create rules that reference other security groups."*
+A doc reconhece isso como diferencial: *"Security groups are more versatile than network ACLs, due to their ability to perform stateful packet filtering and create rules that reference other security groups."* (security groups são mais versáteis que network ACLs, por conseguirem filtrar pacotes de forma stateful e criar regras que referenciam outros security groups)
 
 > [!tip] Quando a questão oferece as duas opções
 > "Liberar o CIDR da subnet da aplicação" **versus** "liberar o security group da aplicação" → a segunda é a resposta.
@@ -37,7 +37,7 @@ E como não há deny, **não é possível criar exceção**: você não consegue
 
 ## 4. Quando usar NACL em vez de (ou além de) SG
 
-A recomendação oficial é clara: *"Use security groups as the primary mechanism"*, e a NACL *"provide[s] stateless, coarse-grain network control"*.
+A recomendação oficial é clara: *"Use security groups as the primary mechanism"* (use security groups como mecanismo principal), e a NACL *"provide[s] stateless, coarse-grain network control"* (oferece controle de rede stateless e de granularidade grossa).
 
 Use NACL quando:
 - Precisa **negar** um IP ou faixa específica

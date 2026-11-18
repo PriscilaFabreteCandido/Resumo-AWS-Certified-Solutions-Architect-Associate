@@ -15,7 +15,7 @@ Não existe appliance no caminho. Consequências:
 - **Sem custo de criação** nem de hora
 - **Sem gargalo de banda**: *"no... bandwidth bottleneck"*
 - **Sem ponto único de falha**: *"There is no single point of failure for communication"*
-- Dados na **mesma AZ são grátis**, *"even if it's between different accounts"*
+- Dados na **mesma AZ são grátis**, *"even if it's between different accounts"* (mesmo que seja entre contas diferentes)
 
 Isso faz do peering a opção **mais econômica** para poucas VPCs — e é exatamente o que a prova testa contra o TGW.
 
@@ -65,7 +65,7 @@ Esquecer o passo 3 num dos lados é a causa mais comum de "o peering está ativo
 
 ## 6. Cross-account e cross-Region
 
-Cross-account é suportado — e o detalhe de custo importa: dados na **mesma AZ** são grátis *"even if it's between different accounts"*.
+Cross-account é suportado — e o detalhe de custo importa: dados na **mesma AZ** são grátis *"even if it's between different accounts"* (mesmo que seja entre contas diferentes).
 
 Cross-Region também: *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)"*, e o tráfego *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
 

@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 > **C)** Compute Savings Plans
 > **D)** Spot com persistent request
 >
-> **Por que B**: *"Reserve capacity for your EC2 instances in a specific Availability Zone"*, sem compromisso de prazo.
+> **Por que B**: *"Reserve capacity for your EC2 instances in a specific Availability Zone"* (reserve capacidade para suas instâncias EC2 numa Zona de Disponibilidade específica), sem compromisso de prazo.
 > **A errada**: a RI **regional** é **só desconto** — não reserva capacidade.
 > **C errada**: Savings Plans é desconto, nunca capacidade.
 

@@ -25,7 +25,7 @@ Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps;
 | **Public VIF** | *"access all AWS public services using public IP addresses"* |
 | **Transit VIF** | *"access one or more Amazon VPC Transit Gateways associated with Direct Connect gateways"* |
 
-**Direct Connect gateway**: liga um private VIF a *"multiple virtual private gateways across any account and AWS Region"*. E: *"There are no additional charges to use a multi-account AWS Direct Connect gateway."*
+**Direct Connect gateway**: liga um private VIF a *"multiple virtual private gateways across any account and AWS Region"* (vários virtual private gateways, em qualquer conta e Região). E: *"There are no additional charges to use a multi-account AWS Direct Connect gateway."* (não há cobrança adicional para usar um Direct Connect gateway multi-conta)
 
 ## Requisitos técnicos
 
@@ -37,11 +37,11 @@ Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps;
 | **BFD** | Opcional, *"automatically enabled for each Direct Connect virtual interface... but does not take effect until you configure it on your router"* |
 | **MTU** | **1522 ou 9023 bytes** |
 | Transceivers | 1000BASE-LX (1 GbE), 10GBASE-LR (10 GbE), 100GBASE-LR4 (100 GbE), 400GBASE-LR4 (400 Gbps) |
-| **LAG** | Existe; a conexão *"must be on the same AWS device and must use the same bandwidth as the LAG"*. ⚠️ Máximo de conexões por LAG: **a doc lida não informa** |
+| **LAG** | Existe; a conexão *"must be on the same AWS device and must use the same bandwidth as the LAG"* (precisam estar no mesmo dispositivo da AWS e usar a mesma largura de banda do LAG). ⚠️ Máximo de conexões por LAG: **a doc lida não informa** |
 
 ## Cobrança
 
-> *"two billing elements: port hours and outbound data transfer."*
+> *"two billing elements: port hours and outbound data transfer."* (dois elementos de cobrança: horas de porta e transferência de dados de saída)
 
 ## HA em Direct Connect (ordem de robustez)
 

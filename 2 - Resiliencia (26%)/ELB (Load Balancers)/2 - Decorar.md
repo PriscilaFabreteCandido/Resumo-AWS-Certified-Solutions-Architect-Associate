@@ -36,7 +36,7 @@ O ALB, o NLB e o CLB podem ser alvo de **alias record** — e por isso funcionam
 
 ## Health check
 
-O ELB *"routes traffic only to the healthy targets"*. O health check é configurado no **target group** (protocolo, porta, caminho, intervalo, threshold).
+O ELB *"routes traffic only to the healthy targets"* (roteia o tráfego somente para os alvos saudáveis). O health check é configurado no **target group** (protocolo, porta, caminho, intervalo, threshold).
 
 ⚠️ No **Auto Scaling**, o health check do ELB **não vem ligado** — só o EC2 status check. Sem ativá-lo, o ASG não substitui instância cuja **aplicação** morreu.
 

@@ -26,7 +26,7 @@ Distinções que a prova explora:
 
 **Weighted** é o mecanismo de **canary** e de **migração gradual**: 95% para o ambiente antigo, 5% para o novo, e você vai mudando.
 
-**Multivalue answer × simple com vários IPs**: o simple devolve vários valores *"in random order"* mas **sem health check**. O multivalue devolve *"up to eight healthy records selected at random"* — ou seja, **com** health check. Para balanceamento rudimentar com detecção de falha, é multivalue.
+**Multivalue answer × simple com vários IPs**: o simple devolve vários valores *"in random order"* mas **sem health check**. O multivalue devolve *"up to eight healthy records selected at random"* (até oito registros saudáveis, escolhidos aleatoriamente) — ou seja, **com** health check. Para balanceamento rudimentar com detecção de falha, é multivalue.
 
 ## 2. Alias — por que sempre preferir
 

@@ -37,7 +37,7 @@ Ledger imutável     → QLDB
 
 ## Como estão na lista oficial
 
-Todos os quatro estão na lista de **serviços em escopo** da SAA-C03, na categoria **Database**: **Amazon DocumentDB**, **Amazon Keyspaces**, **Amazon Neptune** — e **Timestream** aparece em escopo via **AWS Backup** (*"Amazon Timestream for LiveAnalytics"*) e no domínio de custo (*"time series format"*).
+Todos os quatro estão na lista de **serviços em escopo** da SAA-C03, na categoria **Database**: **Amazon DocumentDB**, **Amazon Keyspaces**, **Amazon Neptune** — e **Timestream** aparece em escopo via **AWS Backup** (*"Amazon Timestream for LiveAnalytics"*) e no domínio de custo (*"time series format"* (formato de série temporal)).
 
 ## A frase do guia
 

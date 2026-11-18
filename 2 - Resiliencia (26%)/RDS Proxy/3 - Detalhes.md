@@ -23,7 +23,7 @@ Sem proxy, no failover a aplicação precisa:
 2. Resolver o DNS de novo — e aqui está o problema: o **cache de DNS** do cliente (ou da JVM) pode manter o IP antigo por minutos
 3. Reconectar
 
-Com proxy: ele *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases"*, e *"automatically connecting to a standby DB instance while preserving application connections"* — a conexão da aplicação com o **proxy** permanece aberta.
+Com proxy: ele *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases"*, e *"automatically connecting to a standby DB instance while preserving application connections"* (conectando automaticamente a uma instância standby, preservando as conexões da aplicação) — a conexão da aplicação com o **proxy** permanece aberta.
 
 Também ajuda em manutenção: reduz o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 
@@ -45,7 +45,7 @@ Ganhos:
 - O proxy aceita até **200 secrets**, ou seja, até 200 contas de usuário diferentes
 - Auditoria via IAM/CloudTrail
 
-⚠️ Para **SQL Server**, há limites: *"RDS Proxy doesn't support connections that use Active Directory"* e *"does not support end-to-end IAM authentication for RDS for SQL Server"*.
+⚠️ Para **SQL Server**, há limites: *"RDS Proxy doesn't support connections that use Active Directory"* (o RDS Proxy não oferece suporte a conexões que usam Active Directory) e *"does not support end-to-end IAM authentication for RDS for SQL Server"* (não oferece autenticação IAM ponta a ponta para o RDS for SQL Server).
 
 ## 4. Pinning — quando o proxy deixa de multiplexar
 

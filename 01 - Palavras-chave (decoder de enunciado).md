@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 |---|---|---|
 | **"least operational overhead" / "minimal management"** | Gerenciado / serverless | Mata qualquer resposta com EC2, instalar software, cron, script próprio |
 | **"most cost-effective" / "lowest cost"** | Custo é o critério, não performance | Mata Provisioned IOPS, instâncias maiores, Multi-AZ desnecessário |
-| **"highly available"** | ≥ 2 AZs | Mata tudo que é Single-AZ (One Zone-IA, FSx Single-AZ, 1 NAT GW) |
+| **"highly available"** (altamente disponível) | ≥ 2 AZs | Mata tudo que é Single-AZ (One Zone-IA, FSx Single-AZ, 1 NAT GW) |
 | **"fault tolerant" / "no single point of failure"** | Tolerar falha **sem perda** | Mais forte que HA: pede redundância ativa, não só failover |
 | **"without changing the application" / "legacy app"** | Nada de refatorar | Mata Lambda, DynamoDB, reescrita. Puxa ELB, EFS, RDS Proxy, Global Accelerator |
 | **"real time" vs "near real time"** | Streams vs Firehose | "real time" → Kinesis Data Streams. "near real time" / batch → Firehose |

@@ -48,11 +48,11 @@ Cada classe desce na lista e **pode pular etapas** — mas nunca sobe. O que é 
 
 | De | Pode ir para |
 |---|---|
-| **S3 Standard** | *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* — **todas** |
+| **S3 Standard** | *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* (o S3 Standard-IA, o S3 Intelligent-Tiering, o S3 One Zone-IA, o S3 Glacier Instant Retrieval, o S3 Glacier Flexible Retrieval ou o S3 Glacier Deep Archive) — **todas** |
 | **S3 Standard-IA** | *"the S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* |
 | **S3 Intelligent-Tiering** | depende do **access tier** — ver abaixo |
-| **S3 One Zone-IA** | *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* — **note que Glacier Instant Retrieval não está na lista** |
-| **S3 Glacier Instant Retrieval** | *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* |
+| **S3 One Zone-IA** | *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* (o S3 Glacier Flexible Retrieval ou o S3 Glacier Deep Archive) — **note que Glacier Instant Retrieval não está na lista** |
+| **S3 Glacier Instant Retrieval** | *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* (o S3 Glacier Flexible Retrieval ou o S3 Glacier Deep Archive) |
 | **S3 Glacier Flexible Retrieval** | **só** Deep Archive |
 | **S3 Glacier Deep Archive** | **nenhuma** |
 
@@ -76,7 +76,7 @@ O waterfall, portanto, vale **duas vezes**: entre classes, e dentro do Intellige
 
 E uma ressalva de replicação que vale anotar: *"For versioning enabled or versioning suspended buckets, you can't transition objects with a `Pending` or `Failed` replication status."*
 
-Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."*
+Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."* (não é possível usar uma regra de lifecycle do S3 para converter a classe de um objeto que está no S3 Glacier Deep Archive para qualquer outra classe)
 
 **Regra 2 — respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento) O exemplo da própria doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94** (4 + 90).
 
@@ -99,7 +99,7 @@ E atenção: *"you are charged a transition request for each object"* — mover 
 
 ## 3. Performance
 
-O S3 escala por **prefixo**: *"your application can achieve at least 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per partitioned Amazon S3 prefix"*, e *"There are no limits to the number of prefixes in a bucket"*.
+O S3 escala por **prefixo**: *"your application can achieve at least 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per partitioned Amazon S3 prefix"*, e *"There are no limits to the number of prefixes in a bucket"* (não há limite para a quantidade de prefixos num bucket).
 
 Consequência prática: 10 prefixos de leitura = **55.000 requisições por segundo**. Se a aplicação recebe **503 Slow Down**, a resposta é **distribuir as chaves em mais prefixos** e aplicar retry com backoff — não "pedir aumento de limite".
 
@@ -133,7 +133,7 @@ Pontos que a prova explora:
 - **Retention period** em modo **Governance** — quem tiver `s3:BypassGovernanceRetention` **e** enviar `x-amz-bypass-governance-retention:true` consegue apagar.
 - **Legal hold** — *"has no expiration date... remains in place until you explicitly remove it"*.
 
-**Block Public Access** tem quatro flags independentes e é avaliado assim: *"S3 applies the most restrictive combination"* entre access point, bucket e conta. Pode ser aplicado no nível de **organização** (as quatro juntas), conta, bucket ou access point. Não altera policies nem ACLs existentes — apenas neutraliza o efeito público delas.
+**Block Public Access** tem quatro flags independentes e é avaliado assim: *"S3 applies the most restrictive combination"* (o S3 aplica a combinação mais restritiva) entre access point, bucket e conta. Pode ser aplicado no nível de **organização** (as quatro juntas), conta, bucket ou access point. Não altera policies nem ACLs existentes — apenas neutraliza o efeito público delas.
 
 ## 6. Replicação
 

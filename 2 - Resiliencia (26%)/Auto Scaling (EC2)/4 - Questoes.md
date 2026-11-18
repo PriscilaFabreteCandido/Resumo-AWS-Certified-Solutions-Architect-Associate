@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 > **D)** O target group está com cross-zone desligado
 >
 > **Por que B**: o EC2 status check valida **hipervisor e SO**, não a aplicação. O ELB health check **precisa ser ativado**.
-> **A errada**: *"does not wait for the cooldown period to end before replacing the unhealthy instance"*.
+> **A errada**: *"does not wait for the cooldown period to end before replacing the unhealthy instance"* (não espera o período de cooldown terminar para substituir a instância não saudável).
 > **C errada**: grace period 0 faria o ASG checar **mais cedo**.
 > **D errada**: cross-zone afeta distribuição, não detecção.
 
@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Step scaling por CPU
 > **D)** Aumentar o desired capacity fixo
 >
-> **Por que B**: scheduled trata o padrão **conhecido**; predictive provisiona *"in advance of daily and weekly patterns"*; target tracking cobre o imprevisto.
+> **Por que B**: scheduled trata o padrão **conhecido**; predictive provisiona *"in advance of daily and weekly patterns"* (antecipando padrões diários e semanais); target tracking cobre o imprevisto.
 > **A errada**: a AWS recomenda **não usar** simple scaling.
 > **C errada**: reage **depois** do pico começar.
 > **D errada**: paga capacidade de pico 24 h.
@@ -75,7 +75,7 @@ atualizado: 2026-11-08
 | ASG respeita a política de terminação acima de tudo | **Equilíbrio entre AZs** tem precedência |
 | CPU é a métrica de escala | Para consumidor de fila, é a **profundidade da fila** |
 | O ASG nunca passa do máximo | No **rebalanceamento** pode exceder em **10%** |
-| Lifecycle hook impede interrupção de Spot | *"does not prevent an instance from terminating"* |
+| Lifecycle hook impede interrupção de Spot | *"does not prevent an instance from terminating"* (não impede que uma instância seja encerrada) |
 | Launch configuration e launch template são equivalentes | Launch **configuration** é legado: sem versionamento, sem mix de Spot/On-Demand |
 | ASG escala verticalmente | Escala **horizontalmente** (mais instâncias) |
 

@@ -25,7 +25,7 @@ Três funções, e a prova usa todas:
 |---|---|---|
 | **Ordem** | **Não garante**. *"best-effort ordering"* — pode chegar fora de ordem | **Estrita**, dentro do **message group** |
 | **Duplicação** | **Pode duplicar**: *"at-least-once message delivery"* | **Não duplica**: *"exactly-once message processing"* (janela de dedup de **5 min**) |
-| **Throughput** | *"nearly unlimited"* — sem teto prático | **300 TPS** por ação de API (**3.000 msg/s** com batch de 10); **high throughput** vai a 70.000 TPS em us-east-1/us-west-2/eu-west-1 |
+| **Throughput** | *"nearly unlimited"* (praticamente ilimitado) — sem teto prático | **300 TPS** por ação de API (**3.000 msg/s** com batch de 10); **high throughput** vai a 70.000 TPS em us-east-1/us-west-2/eu-west-1 |
 | **Nome da fila** | qualquer | **tem de terminar em `.fifo`** |
 | **Parâmetros obrigatórios** | nenhum | **`MessageGroupId`**; e `MessageDeduplicationId` (ou dedup por conteúdo) |
 | **Paralelismo do consumo** | total | **um message group é processado por um consumidor de cada vez** |
@@ -35,7 +35,7 @@ Três funções, e a prova usa todas:
 > [!important] Por que a ordem é "dentro do message group"
 > FIFO não serializa a fila inteira — serializa **cada `MessageGroupId`**. Mensagens de grupos diferentes são processadas **em paralelo** e sem relação de ordem entre si.
 > Na prática: use o **ID do pedido**, do **cliente** ou da **conta** como `MessageGroupId`. Assim os eventos de cada pedido ficam em ordem, sem estrangular o throughput total.
-> E é exatamente por isso que a doc recomenda, para escalar FIFO: *"increasing the number of message groups is recommended."*
+> E é exatamente por isso que a doc recomenda, para escalar FIFO: *"increasing the number of message groups is recommended."* (recomenda-se aumentar a quantidade de message groups)
 
 > [!warning] As três pegadinhas de Standard × FIFO
 > 1. **"Pode duplicar" não é defeito, é contrato.** Numa fila standard o consumidor **precisa ser idempotente** (checar se já processou, por um ID). Se o enunciado diz *"o processamento não pode ocorrer duas vezes"* e **não** fala de ordem, duas respostas são válidas: **FIFO** ou **standard + consumidor idempotente** — veja qual o enunciado permite.

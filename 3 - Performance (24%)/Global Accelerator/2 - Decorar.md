@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 
 | Tipo | O que faz | Endpoints |
 |---|---|---|
-| **Standard** | *"directs traffic over the AWS global network to endpoints in the nearest Region to the client"* | **NLB, ALB, EC2 instances, Elastic IP** |
+| **Standard** | *"directs traffic over the AWS global network to endpoints in the nearest Region to the client"* (direciona o tráfego pela rede global da AWS até endpoints na Região mais próxima do cliente) | **NLB, ALB, EC2 instances, Elastic IP** |
 | **Custom routing** | *"map one or more users to a specific destination among many destinations"* (mapear um ou mais usuários para um destino específico entre vários destinos) | **Só subnets de VPC**, roteando para IPs privados |
 
 ## A tabela de decisão

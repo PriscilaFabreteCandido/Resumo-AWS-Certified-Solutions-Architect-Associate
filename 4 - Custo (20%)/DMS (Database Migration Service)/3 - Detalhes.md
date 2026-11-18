@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 Migrar um banco de 4 TB com um `dump` e `restore` significa **parar a aplicação** pelo tempo da cópia mais o tempo da restauração — horas ou dias.
 
-O DMS resolve com **replicação contínua**: *"You can perform one-time migrations or replicate ongoing changes to keep sources and targets in sync."*
+O DMS resolve com **replicação contínua**: *"You can perform one-time migrations or replicate ongoing changes to keep sources and targets in sync."* (você pode fazer migrações pontuais ou replicar as mudanças continuamente, mantendo origem e destino sincronizados)
 
 O fluxo:
 
@@ -30,7 +30,7 @@ A janela de indisponibilidade cai de horas para **minutos**.
 **Heterogênea** — engines diferentes (Oracle → Aurora PostgreSQL, SQL Server → MySQL). A doc confirma: *"AWS DMS supports fully heterogeneous data migrations between the supported engines"*. Mas os **dados** são só metade do problema: tipos de coluna, procedures, triggers, funções, packages e sintaxe precisam ser **convertidos**.
 
 Para isso existem duas ferramentas:
-- **DMS Schema Conversion** (no console): *"automatically assesses and converts your source schemas to a new target engine"*
+- **DMS Schema Conversion** (no console): *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino)
 - **AWS SCT** (instalado localmente): *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC to convert your source schemas"*
 
 > [!important] A divisão que a prova cobra
@@ -54,7 +54,7 @@ Por isso "trocar o engine" aparece tanto em questões de **custo de banco**, nã
 | **Replication task** | Full load, full load + CDC, ou CDC only |
 | **Table mappings** | Quais tabelas migrar, com transformações (renomear, filtrar) |
 | **DMS Fleet Advisor** | **Descobre** o inventário de bancos no datacenter antes de migrar |
-| **Failover** | *"automatic failover"* com servidor de replicação de backup |
+| **Failover** | *"automatic failover"* (failover automático) com servidor de replicação de backup |
 
 Segurança: *"data at rest encrypted with AWS KMS"* e **SSL** para o dado em trânsito.
 

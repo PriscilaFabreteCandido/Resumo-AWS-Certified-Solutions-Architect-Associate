@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 | **Não concede** | *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) |
 | **Não afeta a management account** | *"SCPs don't affect users or roles in the management account. They affect only the member accounts."* |
 | **Não afeta service-linked role** | *"SCPs do not affect any service-linked role."* (SCPs não afetam nenhuma service-linked role) |
-| **Afeta o root das contas membro** | *"SCPs affect the root user of member accounts."* |
+| **Afeta o root das contas membro** | *"SCPs affect the root user of member accounts."* (SCPs afetam o usuário raiz das contas-membro) |
 | **Combina por interseção** | *"the boundary, the SCP, and the identity-based policy must all allow the action"* (o permissions boundary, a SCP e a policy de identidade precisam, todos, permitir a ação) |
 
 ## O que SCP não restringe

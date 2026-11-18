@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 
 | Item | Detalhe |
 |---|---|
-| AZs | *"supports up to 3 Availability Zones"* |
+| AZs | *"supports up to 3 Availability Zones"* (oferece suporte a até 3 Zonas de Disponibilidade) |
 | **MFTW** | Managed File Transfer Workflows: pós-processamento serverless (validar, descompactar, mover, notificar) |
 | Identidade | Service-managed, **Directory Service**, ou **custom identity provider** (Lambda/API Gateway) |
 | Endpoint | Público, ou **VPC** (interno, com IPs fixos) |

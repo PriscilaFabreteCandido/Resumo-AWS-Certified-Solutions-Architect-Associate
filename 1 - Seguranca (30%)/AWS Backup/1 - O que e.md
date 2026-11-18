@@ -29,7 +29,7 @@ Se é um serviço só e o mecanismo nativo basta (snapshot de EBS, PITR do Dynam
 
 | Feature | Citação |
 |---|---|
-| **Vault Lock** | *"prevent anyone (including you) from deleting backups or altering their retention period"* — modelo **WORM** |
+| **Vault Lock** | *"prevent anyone (including you) from deleting backups or altering their retention period"* (impedir que qualquer pessoa (inclusive você) apague backups ou altere o período de retenção) — modelo **WORM** |
 | **Cross-Region** | *"copy backups to multiple different AWS Regions on demand or automatically as part of a scheduled backup plan"* |
 | **Cross-account** | *"copy backups to multiple different AWS accounts inside your AWS Organizations management structure"* |
 

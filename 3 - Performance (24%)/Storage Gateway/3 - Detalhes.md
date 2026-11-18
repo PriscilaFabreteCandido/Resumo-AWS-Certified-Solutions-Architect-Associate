@@ -16,7 +16,7 @@ O Storage Gateway é o tradutor: expõe o protocolo que a aplicação espera, e 
 
 ## 2. S3 File Gateway — o mais cobrado
 
-Expõe **NFS** (v3, v4, v4.1) e **SMB** (2 e 3), e grava cada arquivo como **objeto no S3**. A doc: *"store and retrieve objects in Amazon S3 using industry-standard file protocols"* (armazenar e recuperar objetos no Amazon S3 usando protocolos de arquivo padrão de mercado), com *"low-latency access to data through transparent local caching"*.
+Expõe **NFS** (v3, v4, v4.1) e **SMB** (2 e 3), e grava cada arquivo como **objeto no S3**. A doc: *"store and retrieve objects in Amazon S3 using industry-standard file protocols"* (armazenar e recuperar objetos no Amazon S3 usando protocolos de arquivo padrão de mercado), com *"low-latency access to data through transparent local caching"* (acesso de baixa latência aos dados, por meio de cache local transparente).
 
 O que o torna poderoso é o **resultado**: o dado fica como **objeto**, então você pode aplicar **lifecycle** (mover para Glacier), consultar com **Athena**, processar com **Glue/EMR**, replicar com **CRR** — tudo sem que a aplicação on-premises saiba.
 
@@ -30,9 +30,9 @@ Expõe volumes **iSCSI**: *"cloud-backed storage volumes that you can mount as I
 
 A escolha entre os dois modos é sobre **onde vive o dado principal**:
 
-**Cached volumes** — *"You store your data in Amazon S3 and retain a copy of frequently accessed data subsets locally."* O storage local vira **cache**: você reduz drasticamente o hardware on-premises, ao custo de latência maior para dado frio.
+**Cached volumes** — *"You store your data in Amazon S3 and retain a copy of frequently accessed data subsets locally."* (você armazena seus dados no Amazon S3 e mantém localmente uma cópia dos subconjuntos acessados com frequência) O storage local vira **cache**: você reduz drasticamente o hardware on-premises, ao custo de latência maior para dado frio.
 
-**Stored volumes** — *"configure your on-premises gateway to store all your data locally. Then asynchronously back up point-in-time snapshots of this data to Amazon S3."* O dado **inteiro** fica local (latência total de disco local) e a AWS recebe **snapshots** — é backup offsite e DR, não redução de storage.
+**Stored volumes** — *"configure your on-premises gateway to store all your data locally. Then asynchronously back up point-in-time snapshots of this data to Amazon S3."* (configure seu gateway on-premises para guardar todos os dados localmente e, de forma assíncrona, fazer backup de snapshots pontuais desses dados no Amazon S3) O dado **inteiro** fica local (latência total de disco local) e a AWS recebe **snapshots** — é backup offsite e DR, não redução de storage.
 
 Os snapshots podem ser usados para criar **volumes EBS** — o que torna o Volume Gateway stored uma estratégia de **DR**: se o datacenter cai, você levanta na AWS a partir do snapshot.
 

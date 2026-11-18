@@ -37,7 +37,7 @@ atualizado: 2026-11-08
 | **Só o writer** | *"you can associate a proxy only with the writer DB instance, not a read replica"* |
 | **Não é público** | *"can't be publicly accessible"* (não pode ser acessível publicamente) |
 | **Mesma VPC** | O proxy fica na VPC do banco |
-| SQL Server | *"RDS Proxy doesn't support connections that use Active Directory"* e *"does not support end-to-end IAM authentication for RDS for SQL Server"* |
+| SQL Server | *"RDS Proxy doesn't support connections that use Active Directory"* (o RDS Proxy não oferece suporte a conexões que usam Active Directory) e *"does not support end-to-end IAM authentication for RDS for SQL Server"* (não oferece autenticação IAM ponta a ponta para o RDS for SQL Server) |
 
 ## Autenticação
 

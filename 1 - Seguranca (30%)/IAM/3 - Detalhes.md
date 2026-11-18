@@ -167,7 +167,7 @@ A página de boas práticas do IAM tem esta ordem — e os **dois primeiros** it
 | # | Título oficial |
 |---|---|
 | **1** | ***"Require human users to use federation with an identity provider to access AWS using temporary credentials"*** |
-| **2** | ***"Require workloads to use temporary credentials with IAM roles to access AWS"*** |
+| **2** | ***"Require workloads to use temporary credentials with IAM roles to access AWS"** (exija que as cargas de trabalho usem credenciais temporárias, com roles do IAM, para acessar a AWS)* |
 | 3 | *"Require multi-factor authentication (MFA)"* |
 | 4 | *"Update access keys when needed for use cases that require long-term credentials"* |
 | 5 | *"Follow best practices to protect your root user credentials"* |

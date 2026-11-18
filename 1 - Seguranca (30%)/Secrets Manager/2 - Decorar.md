@@ -11,7 +11,7 @@ atualizado: 2026-11-08
 | | **Secrets Manager** | **Parameter Store** |
 |---|---|---|
 | **Rotação de credencial** | **"Automatic, with native database integrations"** (automático, com integrações nativas ao banco) | **"None"** |
-| **Custo** | *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API) | *"Standard tier free; advanced tier and higher throughput billed"* |
+| **Custo** | *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API) | *"Standard tier free; advanced tier and higher throughput billed"* (camada Standard gratuita; camada Advanced e throughput maior são cobrados) |
 | Tamanho do valor | — | Standard **4 KB** · Advanced **8 KB** |
 | Quantidade | — | Standard **10.000** · Advanced **100.000** |
 | Replicação cross-Region | **Sim** | Não (cross-**account** só no Advanced) |

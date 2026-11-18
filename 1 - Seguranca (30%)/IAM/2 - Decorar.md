@@ -45,7 +45,7 @@ atualizado: 2026-11-08
 | Não afeta | Citação |
 |---|---|
 | **Conta de gerenciamento** | *"SCPs don't affect users or roles in the management account"* |
-| **Service-linked roles** | *"SCPs do not affect any service-linked role"* |
+| **Service-linked roles** | *"SCPs do not affect any service-linked role"* (SCPs não afetam nenhuma service-linked role) |
 | Principals **fora** da organização | — |
 
 E: *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) · *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* (um usuário sem nenhuma policy de permissão do IAM não tem acesso, mesmo que as SCPs aplicáveis liberem todos os serviços e todas as ações) · SCP **afeta o root das contas membro**.
@@ -94,7 +94,7 @@ Em política de **recurso** e **trust policy**, existe também o campo **`Princi
 **Resumo em três palavras: senha forte · MFA · nenhuma chave de acesso.**
 
 > [!warning] O que mudou na doc atual
-> O título oficial hoje é **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) — a orientação não é mais rotacionar, é **não criar**. E **MFA no root é exigência**, não recomendação: *"require MFA to be configured for their root user"*, com registro em até **14 dias** do primeiro login.
+> O título oficial hoje é **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) — a orientação não é mais rotacionar, é **não criar**. E **MFA no root é exigência**, não recomendação: *"require MFA to be configured for their root user"* (exigem que o MFA esteja configurado para o usuário raiz), com registro em até **14 dias** do primeiro login.
 > Na prova, *"não criar chave de acesso para o root"* é a resposta mais segura — ela vale nas duas versões.
 
 ### Tarefas que SÓ o root faz

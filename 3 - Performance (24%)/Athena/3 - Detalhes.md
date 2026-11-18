@@ -53,7 +53,7 @@ E as permissões: **Lake Formation** aplica controle fino (coluna, linha, célul
 | Melhor para | **Ad-hoc**, exploração, eventual | BI recorrente, joins, concorrência | **Código** Spark/Hadoop | Alcançar o S3 do Redshift |
 | Esforço | **Mínimo** | Médio | Alto | Médio |
 
-A doc do EMR ajuda a separar: use EMR *"if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"*. E: *"Amazon Athena supports many of the same data formats as Amazon EMR"* (o Amazon Athena oferece suporte a muitos dos mesmos formatos de dados do Amazon EMR) — Athena pode consultar o que o EMR processou.
+A doc do EMR ajuda a separar: use EMR *"if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"* (se você usa código próprio para processar e analisar conjuntos de dados extremamente grandes com frameworks recentes de big data, como Spark, Hadoop, Presto ou HBase). E: *"Amazon Athena supports many of the same data formats as Amazon EMR"* (o Amazon Athena oferece suporte a muitos dos mesmos formatos de dados do Amazon EMR) — Athena pode consultar o que o EMR processou.
 
 ## 5. Casos de uso canônicos
 

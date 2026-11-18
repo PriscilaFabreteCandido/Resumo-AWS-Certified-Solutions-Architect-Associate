@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 | **Spot Instances** | Capacidade sobrando, com desconto e **interrupção** |
 | **Dedicated Hosts** | *"Pay for a physical host... and bring your existing per-socket, per-core, or per-VM software licenses"* |
 | **Dedicated Instances** | *"Pay, by the hour, for instances that run on single-tenant hardware"* |
-| **Capacity Reservations** | *"Reserve capacity for your EC2 instances in a specific Availability Zone"* |
+| **Capacity Reservations** | *"Reserve capacity for your EC2 instances in a specific Availability Zone"* (reserve capacidade para suas instâncias EC2 numa Zona de Disponibilidade específica) |
 
 ## A orientação oficial
 

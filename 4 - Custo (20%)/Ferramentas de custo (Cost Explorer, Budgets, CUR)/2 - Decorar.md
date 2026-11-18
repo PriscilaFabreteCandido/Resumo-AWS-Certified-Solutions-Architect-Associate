@@ -12,8 +12,8 @@ atualizado: 2026-11-08
 |---|---|
 | **Histórico** | *"view data for up to the last 13 months"* |
 | **Forecast** | *"forecast how much you're likely to spend for the next 18 months"* |
-| Atualização | *"refreshes your cost data at least once every 24 hours"*; mês corrente *"in about 24 hours"* |
-| Recomendações | *"get recommendations for what Reserved Instances to purchase"* |
+| Atualização | *"refreshes your cost data at least once every 24 hours"*; mês corrente *"in about 24 hours"* (em cerca de 24 horas) |
+| Recomendações | *"get recommendations for what Reserved Instances to purchase"* (receber recomendações de quais Instâncias Reservadas comprar) |
 | **Custo da API** | *"Each paginated API request incurs a charge of $0.01"* (o console é grátis) |
 | Granularidade (hora/dia/mês) | **A doc não informa** nessa página |
 | Base de dados | A mesma do **CUR** |
@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| Notificação | *"to an Amazon SNS topic, to an email address, or to both"* |
+| Notificação | *"to an Amazon SNS topic, to an email address, or to both"* (para um tópico do Amazon SNS, para um endereço de e-mail, ou para ambos) |
 | Tipos de alerta | **Real** e **previsto** |
 | Atualização | *"up to three times a day"* (até três vezes por dia) |
 | **Budget actions** | Podem aplicar uma **policy IAM** |
@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 | Natureza | *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível) |
 | Destino | *"an Amazon S3 bucket that you own"* |
 | Formato | **CSV** — *"AWS updates the report in your bucket once a day"* |
-| Frequência | *"Update the report up to three times a day"*; *"at least once a day"* |
+| Frequência | *"Update the report up to three times a day"*; *"at least once a day"* (pelo menos uma vez por dia) |
 | **Granularidade** | **hora, dia ou mês** |
 | Integrações | *"Amazon Athena, Amazon Redshift, or Quick"* |
 

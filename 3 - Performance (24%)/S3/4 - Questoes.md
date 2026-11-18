@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Bucket policy com `Deny` em `s3:DeleteObject`
 > **D)** Glacier Deep Archive com lifecycle
 >
-> **Por que B**: só o modo Compliance impede o root — *"can't be overwritten or deleted by any user, including the root user"*.
+> **Por que B**: só o modo Compliance impede o root — *"can't be overwritten or deleted by any user, including the root user"* (não pode ser sobrescrito nem apagado por nenhum usuário, inclusive o usuário raiz).
 > **A errada**: quem tem o MFA do root apaga.
 > **C errada**: um administrador com poder de editar a policy remove o Deny.
 > **D errada**: classe de armazenamento é custo, não imutabilidade.
@@ -67,7 +67,7 @@ atualizado: 2026-11-08
 > **C)** Habilitar Transfer Acceleration
 > **D)** Migrar para o S3 Express One Zone
 >
-> **Por que B**: o limite é **por prefixo** (3.500 escritas/s), e *"There are no limits to the number of prefixes in a bucket"*.
+> **Por que B**: o limite é **por prefixo** (3.500 escritas/s), e *"There are no limits to the number of prefixes in a bucket"* (não há limite para a quantidade de prefixos num bucket).
 > **A errada**: não existe limite por bucket para aumentar.
 > **C errada**: acelera upload de longe; não muda a taxa por prefixo.
 > **D errada**: é a resposta para centenas de milhares de req/s com latência de 1 dígito de ms — exagero aqui, e muda a classe/custo.
@@ -98,7 +98,7 @@ atualizado: 2026-11-08
 > **C)** Duas: Standard → Glacier FR → Deep Archive
 > **D)** Não é possível pular classes
 >
-> **Por que B**: o texto oficial lista, para S3 Standard, *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* — **todas**. A cascata permite **pular etapas**; o que ela proíbe é **subir**.
+> **Por que B**: o texto oficial lista, para S3 Standard, *"the S3 Standard-IA, S3 Intelligent-Tiering, S3 One Zone-IA, S3 Glacier Instant Retrieval, S3 Glacier Flexible Retrieval, or S3 Glacier Deep Archive"* (o S3 Standard-IA, o S3 Intelligent-Tiering, o S3 One Zone-IA, o S3 Glacier Instant Retrieval, o S3 Glacier Flexible Retrieval ou o S3 Glacier Deep Archive) — **todas**. A cascata permite **pular etapas**; o que ela proíbe é **subir**.
 > ⚠️ Passar por classes intermediárias seria **mais caro**: cada transição cobra por objeto, e cada classe tem mínimo de dias.
 
 > [!question]- Q-lc 3. Uma regra manda objetos para **Glacier Instant Retrieval no dia 4** e para **Deep Archive no dia 20**. O que acontece?
@@ -108,7 +108,7 @@ atualizado: 2026-11-08
 > **D)** O objeto fica preso em Glacier IR
 >
 > **Por que B**: é o exemplo literal da doc — *"In this case the S3 Glacier Deep Archive transition must occur after at least 94 days."*
-> 💡 A doc acrescenta uma saída: *"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."*
+> 💡 A doc acrescenta uma saída: *"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."* (você pode usar duas regras para conseguir isso, mas paga as cobranças de duração mínima de armazenamento)
 
 > [!question]- Q-lc 4. Um objeto está no **Deep Archive Access tier** do Intelligent-Tiering. Para onde o lifecycle pode movê-lo?
 > **A)** Qualquer classe, como qualquer objeto em Intelligent-Tiering

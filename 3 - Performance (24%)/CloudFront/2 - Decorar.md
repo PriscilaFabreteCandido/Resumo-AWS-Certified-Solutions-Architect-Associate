@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 | Timeout de conexão | **10 s** (faixa 1-10) |
 | Tentativas de conexão | **3** (faixa 1-3) |
 | Timeout de resposta | **30 s** (faixa 1-120) |
-| Delay típico de failover | *"as long as 30 seconds (3 connection attempts of 10 seconds each)"* |
+| Delay típico de failover | *"as long as 30 seconds (3 connection attempts of 10 seconds each)"* (até 30 segundos (3 tentativas de conexão de 10 segundos cada)) |
 | **Geo restriction** | bloqueio por **país**; devolve **403**; precisão declarada **99,8%** |
 | Erro de certificado na origem | **502 Bad Gateway** |
 | Renovar certificado | *"at least 24 hours before the `NotAfter` value"* (pelo menos 24 horas antes do valor `NotAfter`) |
@@ -55,7 +55,7 @@ Com SSE-KMS: a **key policy** precisa liberar `kms:Decrypt`, `kms:Encrypt`, `kms
 | **Signed URL** | *"restrict access to individual files"*; cliente **não suporta cookie** |
 | **Signed cookie** | *"provide access to multiple restricted files"* (ex.: HLS); *"don't want to change your current URLs"* |
 
-> *"Signed URLs take precedence over signed cookies."* Recomendação: **trusted key groups**.
+> *"Signed URLs take precedence over signed cookies."* (URLs assinadas têm precedência sobre cookies assinados) Recomendação: **trusted key groups**.
 
 ## CloudFront Functions × Lambda@Edge
 

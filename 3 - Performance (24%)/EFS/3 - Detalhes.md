@@ -34,7 +34,7 @@ O **Bursting** é a armadilha: o baseline é **50 MiBps por TiB armazenado**. Um
 
 **General Purpose** é o padrão e tem a **menor latência por operação**. É o certo para quase tudo.
 
-**Max I/O** é *"previous generation performance type"*: mais throughput agregado, mas **latência maior por operação**. E tem duas restrições importantes: *"not supported for One Zone file systems or file systems that use Elastic throughput"*.
+**Max I/O** é *"previous generation performance type"* (tipo de performance da geração anterior): mais throughput agregado, mas **latência maior por operação**. E tem duas restrições importantes: *"not supported for One Zone file systems or file systems that use Elastic throughput"* (não é suportado em sistemas de arquivos One Zone nem nos que usam throughput Elastic).
 
 Consequência: se o enunciado menciona **Elastic** ou **One Zone**, Max I/O está fora.
 

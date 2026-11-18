@@ -23,7 +23,7 @@ E vale nos dois sentidos: para um ALB público receber HTTPS, a NebACL da subnet
 
 ## 2. Avaliação ordenada
 
-*"Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."*
+*"Rules are evaluated starting with the lowest numbered rule. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (as regras são avaliadas começando pela de menor número; assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la)
 
 Isso tem duas consequências:
 
@@ -57,7 +57,7 @@ A recomendação oficial é usar SG como mecanismo primário; a NACL entra para 
 | Defesa em camadas por compliance | Dois controles independentes |
 | Bloquear uma porta em toda uma camada | Uma regra, em vez de editar N security groups |
 
-A doc resume o papel: a NACL *"provide[s] stateless, coarse-grain network control"* — controle **grosseiro**. Granularidade fina é SG.
+A doc resume o papel: a NACL *"provide[s] stateless, coarse-grain network control"* (oferece controle de rede stateless e de granularidade grossa) — controle **grosseiro**. Granularidade fina é SG.
 
 ## 5. Limites e o que escapa do filtro
 
@@ -65,7 +65,7 @@ Avaliação só na **fronteira** da subnet: *"not as it is routed within a subne
 
 **Não** é possível referenciar prefix lists: *"You can't reference prefix lists in network ACL rules."* Isso importa para gateway endpoints — a doc do endpoint avisa que *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço, e você precisa listar os CIDRs na mão (ou liberar amplamente).
 
-**Não** passa pelo filtro: Route 53 Resolver (VPC+2) — *"use Route 53 Resolver DNS Firewall instead"* —, o **IMDS**, DHCP, Amazon Time Sync, ativação de licença Windows e metadados de task do ECS.
+**Não** passa pelo filtro: Route 53 Resolver (VPC+2) — *"use Route 53 Resolver DNS Firewall instead"* (use o Route 53 Resolver DNS Firewall em vez disso) —, o **IMDS**, DHCP, Amazon Time Sync, ativação de licença Windows e metadados de task do ECS.
 
 ## 6. Gestão em escala
 
