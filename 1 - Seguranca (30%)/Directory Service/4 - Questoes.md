@@ -46,6 +46,45 @@ atualizado: 2026-11-08
 > **C errada**: AD Connector exige um AD on-premises existente, que o enunciado não menciona.
 > **D errada**: atende, mas custa mais do que o necessário.
 
+> [!question]- Q5. A empresa tem AD on-premises e 20 contas AWS. Quer que os funcionários façam login no console com a identidade de rede, sem replicar usuários para a AWS.
+> **A)** Criar IAM users em cada conta e sincronizar senhas com o AD
+> **B)** **AD Connector ligando a AWS ao AD on-premises, integrado ao IAM Identity Center, com permission sets atribuídos por grupo do AD** ✅
+> **C)** Simple AD como fonte de identidade do Identity Center
+> **D)** AWS Managed Microsoft AD replicando os usuários do AD on-premises
+>
+> **Por que B**: é a cadeia padrão. O AD Connector é *"a directory gateway... without caching any information in the cloud"*, o Identity Center faz *"pass-through authentication to the source AD instance"*, e os permission sets atribuem acesso por grupo.
+> **C errada**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."*
+> **D errada**: atende, mas **replica** identidade para a AWS — o enunciado proibiu.
+
+> [!question]- Q6. Com AD Connector + Identity Center, o que fica armazenado na AWS?
+> **A)** Nada — o AD Connector não guarda informação na nuvem
+> **B)** **Metadados de usuário, grupo e participação no identity store do Identity Center; a senha, não** ✅
+> **C)** Uma réplica completa do AD, incluindo hashes de senha
+> **D)** Só o nome de usuário
+>
+> **Por que B**: são duas afirmações diferentes e as duas são oficiais. O **AD Connector** não faz cache — *"without caching any information in the cloud"*. Mas o **Identity Center** sincroniza metadados: *"synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."* A credencial é que nunca sai: *"No password information is synchronized to IAM Identity Center."*
+> **A errada**: é a leitura apressada da frase do AD Connector — vale para ele, não para o conjunto.
+
+> [!question]- Q7. A empresa tem **três florestas** de Active Directory e quer SSO nas contas AWS.
+> **A)** Um AD Connector para cada floresta, todos no Identity Center
+> **B)** **AWS Managed Microsoft AD com trust para as florestas** ✅
+> **C)** AD Connector apontando para a floresta raiz
+> **D)** Simple AD consolidando as três
+>
+> **Por que B**: a doc é literal — *"If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."*
+> **A errada**: *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* E a relação é 1-para-1 com **um domínio**.
+> **C errada**: *"AD Connector does not support Active Directory transitive trusts."*
+
+> [!question]- Q8. O requisito diz: *"o login nas contas AWS deve continuar funcionando mesmo se o enlace com o data center cair"*.
+> **A)** AD Connector com duas VPNs redundantes
+> **B)** **AWS Managed Microsoft AD** ✅
+> **C)** AD Connector com cache habilitado
+> **D)** Simple AD
+>
+> **Por que B**: o AD Connector **encaminha** tudo e não guarda cópia, então sem link não há autenticação. O Managed Microsoft AD é um AD **de verdade rodando na AWS** e sobrevive sozinho.
+> **C errada**: **não existe** cache no AD Connector — a definição é *"without caching any information in the cloud"*.
+> **A errada**: reduz a chance de queda, mas não remove a dependência.
+
 ## ⚠️ Armadilhas
 
 | Parece | É |
@@ -56,6 +95,11 @@ atualizado: 2026-11-08
 | Directory Service dá acesso à console AWS | Isso é **IAM Identity Center** (que pode usar o diretório como fonte) |
 | Qualquer opção serve para FSx for Windows | Precisa de AD real: Managed Microsoft AD ou o AD on-premises |
 | Cognito pode substituir o AD | Cognito é identidade de **usuário final de app** |
+| AD Connector não serve para SSO multi-conta | Serve **como fonte de identidade do Identity Center** — é a montagem padrão. O que ele não faz sozinho é atribuir acesso |
+| Com AD Connector nada é guardado na AWS | A **senha** não. O Identity Center sincroniza **metadados** de usuário e grupo |
+| AD Connector atende várias florestas | **1-para-1 com um domínio**; várias florestas → **Managed Microsoft AD** |
+| Dá para resetar a senha pelo portal da AWS | Com AD Connector o reset é **só dentro do AD** |
+| AD Connector funciona com o link caído | **Não tem cache** — sem conectividade, não autentica |
 
 ## Links
 

@@ -15,7 +15,8 @@ atualizado: 2026-11-08
 > **Por que B**: é o serviço de acesso federado de **pessoas** a múltiplas contas, citado nominalmente no guia.
 > **A errada**: 15 × N usuários para gerenciar e revogar.
 > **C errada**: funciona, mas você mantém roles e trust policies à mão em 14 contas.
-> **D errada**: AD Connector é proxy para apps AWS usarem o AD; não resolve atribuição multi-conta.
+> **D errada**: o erro está em **"em cada conta" com usuários IAM espelhados**. O AD Connector é um **gateway** para o AD, e um só, na conta de gerenciamento, é a forma correta de usá-lo — mas quem atribui acesso às 15 contas é o **Identity Center**, não ele.
+> ⚠️ Cuidado para não generalizar: **AD Connector + Identity Center é a montagem padrão** para SSO multi-conta com AD on-premises. Ver [[1 - Seguranca (30%)/Directory Service/3 - Detalhes|Directory Service - Detalhes]].
 
 > [!question]- Q2. Quando alguém sai da empresa, o acesso à AWS precisa cessar imediatamente, sem ação em cada conta.
 > **A)** Rotacionar as access keys
@@ -53,7 +54,7 @@ atualizado: 2026-11-08
 | Identity Center emite access key de longo prazo | Credencial **sempre temporária** (STS) |
 | Preciso criar roles em cada conta | O **permission set** é propagado automaticamente |
 | Identity Center é cobrado | **Sem cobrança adicional** |
-| AD Connector resolve SSO multi-conta | AD Connector é **proxy** para apps AWS usarem o AD |
+| AD Connector sozinho resolve SSO multi-conta | Ele é o **gateway** para o AD; quem atribui acesso às contas é o **Identity Center**. Juntos, são a montagem padrão |
 
 ## Links
 

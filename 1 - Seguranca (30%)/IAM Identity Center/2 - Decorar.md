@@ -19,7 +19,10 @@ atualizado: 2026-11-08
 ## Fontes de identidade suportadas
 
 1. **Diretório do próprio Identity Center** (para organizações pequenas, sem AD)
-2. **Active Directory** — AWS Managed Microsoft AD ou AD on-premises (via AD Connector / trust)
+2. **Active Directory** — AWS Managed Microsoft AD ou AD on-premises (via **AD Connector** ou **trust**)
+   - ⚠️ **Simple AD não serve**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."*
+   - Só **um** por vez: *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."*
+   - Tem de estar na conta de **gerenciamento** da Organization e na **mesma Região**
 3. **IdP externo** — Okta, Microsoft Entra ID, Ping, OneLogin, via **SAML 2.0** (autenticação) + **SCIM** (provisionamento automático de usuários e grupos)
 
 ## Permission set

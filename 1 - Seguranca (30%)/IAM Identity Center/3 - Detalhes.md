@@ -20,9 +20,11 @@ Identity Center centraliza: a identidade vive **num lugar** (seu diretório), o 
 
 | Situação | Identity source |
 |---|---|
-| Empresa já tem **Active Directory** on-premises | **AD Connector** ou **trust** com AWS Managed Microsoft AD |
+| Empresa já tem **Active Directory** on-premises | **AD Connector** (um domínio) ou **trust** com AWS Managed Microsoft AD (várias florestas). Em ambos: *"pass-through authentication to the source AD instance"*, e a senha **não** é sincronizada. |
 | Empresa usa **Okta / Entra ID / Ping** | **IdP externo** via SAML 2.0 + SCIM |
 | Empresa pequena, sem diretório | Diretório **do próprio Identity Center** |
+
+A cadeia completa **AD on-premises → AD Connector → Identity Center → permission sets**, com pré-requisitos e limites, está em [[1 - Seguranca (30%)/Directory Service/3 - Detalhes|Directory Service — Detalhes]], seção 3b.
 
 **SCIM** importa: sem ele, usuários e grupos têm de ser criados à mão no Identity Center. Com SCIM, o IdP provisiona e desprovisiona automaticamente — é o que fecha o ciclo do offboarding.
 
