@@ -61,7 +61,7 @@ As SCPs que aparecem em prova nessa estrutura:
 
 ## 4. Consolidated billing
 
-O dono da management account *"is responsible for paying for all usage, data, and resources used by the accounts in the organization"*, e a organização produz *"a single consolidated bill"*.
+O dono da management account *"is responsible for paying for all usage, data, and resources used by the accounts in the organization"*, e a organização produz *"a single consolidated bill"* (uma fatura única consolidada).
 
 Dois efeitos práticos de custo:
 - O uso **agregado** das contas atinge faixas de desconto por volume mais cedo

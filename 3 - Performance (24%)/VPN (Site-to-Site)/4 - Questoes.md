@@ -47,7 +47,7 @@ atualizado: 2026-11-08
 > **C)** Criar uma terceira conexão
 > **D)** Habilitar NAT traversal
 >
-> **Por que B**: com BGP as rotas são anunciadas e o failover é automático. E a doc exige: *"both the IPsec and the BGP sessions must be terminated on the same user gateway device"*.
+> **Por que B**: com BGP as rotas são anunciadas e o failover é automático. E a doc exige: *"both the IPsec and the BGP sessions must be terminated on the same user gateway device"* (as sessões IPsec e BGP precisam terminar no mesmo dispositivo de gateway do cliente).
 
 > [!question]- Q6. Três filiais precisam se comunicar entre si e com a VPC, sem links diretos entre elas.
 > **A)** Transit Gateway peering
@@ -67,7 +67,7 @@ atualizado: 2026-11-08
 | VPN dá banda previsível | Trafega pela **internet** |
 | VGW alcança várias VPCs | **Uma**. Várias = **Transit Gateway** |
 | IPv6 funciona no VGW | *"not supported for VPN connections on a virtual private gateway"* (não é suportado em conexões VPN sobre um virtual private gateway) |
-| VPN suporta Path MTU Discovery | *"does not support Path MTU Discovery"* |
+| VPN suporta Path MTU Discovery | *"does not support Path MTU Discovery"* (não oferece suporte a Path MTU Discovery) |
 | A AWS garante a redundância dos dois lados | O lado AWS vem redundante; o **seu** lado é sua responsabilidade |
 | Accelerated VPN aumenta a banda | Melhora **latência e estabilidade** |
 | Client VPN e Site-to-Site são o mesmo | Client VPN conecta **usuário**; Site-to-Site conecta **rede** |

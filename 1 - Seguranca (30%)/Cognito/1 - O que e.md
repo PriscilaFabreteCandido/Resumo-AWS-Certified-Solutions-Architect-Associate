@@ -22,9 +22,9 @@ atualizado: 2026-11-08
 | **User pool** | *"Who is this user?"* (quem é este usuário?) | **JWT** (ID, access e refresh token) |
 | **Identity pool** | *"What AWS resources may this user reach?"* (que recursos da AWS este usuário pode alcançar?) | **Credencial AWS temporária** |
 
-**User pool** — *"a user directory that draws from the OpenID Connect (OIDC) standard to authenticate users and issue JSON web tokens (JWTs) to your app or API."*
+**User pool** — *"a user directory that draws from the OpenID Connect (OIDC) standard to authenticate users and issue JSON web tokens (JWTs) to your app or API."* (um diretório de usuários que se apoia no padrão OpenID Connect (OIDC) para autenticar usuários e emitir tokens JWT para sua aplicação ou API)
 
-**Identity pool** — *"exchanges a trusted token... for temporary, limited-privilege AWS credentials so that your app can call services like Amazon S3 and Amazon DynamoDB."* E também: *"can issue limited-privilege credentials to guest users who haven't signed in."*
+**Identity pool** — *"exchanges a trusted token... for temporary, limited-privilege AWS credentials so that your app can call services like Amazon S3 and Amazon DynamoDB."* (troca um token confiável... por credenciais temporárias da AWS, de privilégio limitado, para que sua aplicação possa chamar serviços como Amazon S3 e DynamoDB) E também: *"can issue limited-privilege credentials to guest users who haven't signed in."* (pode emitir credenciais de privilégio limitado para usuários convidados que não fizeram login)
 
 > [!important] São independentes
 > User pool não exige identity pool, e vice-versa. O padrão combinado é: autentica no user pool → troca o JWT no identity pool → recebe credencial AWS.

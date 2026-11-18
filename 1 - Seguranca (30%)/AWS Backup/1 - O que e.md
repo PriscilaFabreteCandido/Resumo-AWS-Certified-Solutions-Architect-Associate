@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"a fully-managed service that makes it easy to centralize and automate data protection across AWS services, in the cloud, and on premises."*
+> *"a fully-managed service that makes it easy to centralize and automate data protection across AWS services, in the cloud, and on premises."* (um serviço totalmente gerenciado que facilita centralizar e automatizar a proteção de dados entre serviços da AWS, na nuvem e no on-premises)
 
 ## Quando é a resposta
 
@@ -30,7 +30,7 @@ Se é um serviço só e o mecanismo nativo basta (snapshot de EBS, PITR do Dynam
 | Feature | Citação |
 |---|---|
 | **Vault Lock** | *"prevent anyone (including you) from deleting backups or altering their retention period"* (impedir que qualquer pessoa (inclusive você) apague backups ou altere o período de retenção) — modelo **WORM** |
-| **Cross-Region** | *"copy backups to multiple different AWS Regions on demand or automatically as part of a scheduled backup plan"* |
+| **Cross-Region** | *"copy backups to multiple different AWS Regions on demand or automatically as part of a scheduled backup plan"* (copiar backups para várias Regiões diferentes, sob demanda ou automaticamente, como parte de um plano de backup agendado) |
 | **Cross-account** | *"copy backups to multiple different AWS accounts inside your AWS Organizations management structure"* |
 
 ## Links

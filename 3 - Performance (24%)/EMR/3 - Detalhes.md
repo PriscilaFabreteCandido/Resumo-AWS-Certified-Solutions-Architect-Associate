@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Quando o EMR vence o Glue e o Athena
 
-O critério está na doc: EMR para *"custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"*, com *"full control over the configuration of your clusters and the software installed on them"* (controle total sobre a configuração dos seus clusters e sobre o software instalado neles).
+O critério está na doc: EMR para *"custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"* (código próprio para processar e analisar conjuntos de dados extremamente grandes com frameworks recentes de big data, como Spark, Hadoop, Presto ou HBase), com *"full control over the configuration of your clusters and the software installed on them"* (controle total sobre a configuração dos seus clusters e sobre o software instalado neles).
 
 Traduzindo para os gatilhos que a prova usa:
 
@@ -30,7 +30,7 @@ Se o enunciado diz apenas "transformar dados" ou "ETL", sem nomear framework, a 
 
 **Task nodes** **só processam** — não guardam HDFS. É onde o Spot pertence: se um for interrompido, o framework redistribui a tarefa.
 
-A recomendação da doc confirma: *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo). E o ganho: *"as low as a tenth of on-demand pricing in some cases"*.
+A recomendação da doc confirma: *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo). E o ganho: *"as low as a tenth of on-demand pricing in some cases"* (em alguns casos, até um décimo do preço sob demanda).
 
 > [!important] O padrão de custo que a prova espera
 > **Master + core em On-Demand (ou Reserved); task nodes em Spot.**

@@ -62,7 +62,7 @@ atualizado: 2026-11-08
 | Session Manager loga tudo | **Não** loga sessões via port forwarding ou SSH |
 | Parameter Store rotaciona SecureString | **"None"** — não rotaciona |
 | Advanced tier pode voltar para Standard | *"Not downgradeable"* (não permite rebaixamento) |
-| Patch Manager faz upgrade de versão do SO | *"doesn't support upgrading major versions"* |
+| Patch Manager faz upgrade de versão do SO | *"doesn't support upgrading major versions"* (não oferece suporte a upgrade de versões maiores) |
 | A AWS testa os patches | *"AWS doesn't test patches before making them available"* (a AWS não testa os patches antes de disponibilizá-los) |
 | SSM funciona sem instance profile | Precisa de role com a policy do SSM |
 | Host Management do Quick Setup instala patches | **Só scan** |

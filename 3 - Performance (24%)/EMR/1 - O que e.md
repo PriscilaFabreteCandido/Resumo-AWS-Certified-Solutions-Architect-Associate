@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Amazon EMR — O que é
 
 > [!info] Em uma frase
-> *"a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark"* — com **controle total** do cluster.
+> *"a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark"* (uma plataforma de cluster gerenciada que simplifica a execução de frameworks de big data, como Apache Hadoop e Apache Spark) — com **controle total** do cluster.
 
 ## Quando é a resposta
 

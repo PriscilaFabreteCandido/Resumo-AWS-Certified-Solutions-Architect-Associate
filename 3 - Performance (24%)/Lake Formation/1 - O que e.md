@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"centrally govern, secure, and globally share data for analytics and machine learning."*
+> *"centrally govern, secure, and globally share data for analytics and machine learning."* (governar, proteger e compartilhar dados globalmente, de forma centralizada, para análise e machine learning)
 
 E o mecanismo:
 

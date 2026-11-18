@@ -32,7 +32,7 @@ O **Standard** é o tier padrão quando você não especifica.
 
 O Expedited pode ser **recusado** em períodos de alta demanda: *"Expedited retrievals might not be accepted during periods of high demand."* (recuperações Expedited podem não ser aceitas em períodos de alta demanda)
 
-Para garantir, você compra **provisioned capacity**, e cada unidade garante *"at least three Expedited retrievals can be performed every 5 minutes"* com até **300 MB/s**.
+Para garantir, você compra **provisioned capacity**, e cada unidade garante *"at least three Expedited retrievals can be performed every 5 minutes"* (pelo menos três recuperações Expedited podem ser feitas a cada 5 minutos) com até **300 MB/s**.
 
 ⚠️ Detalhe fino: aplica-se **só ao Glacier Flexible Retrieval** (porque Deep Archive não tem Expedited). E as unidades pertencem à **conta do requisitante**: *"the requester... should purchase the provisioned capacity unit, not the bucket owner"* (quem faz a requisição... é que deve comprar a unidade de capacidade provisionada, não o dono do bucket) — relevante em bucket com **Requester Pays**.
 

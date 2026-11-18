@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. O cluster volume
 
-*"Aurora synchronously replicates the data across Availability Zones to six storage nodes associated with your cluster volume."* (o Aurora replica os dados de forma síncrona entre Zonas de Disponibilidade, para seis nós de armazenamento associados ao volume do cluster) O volume *"consists of copies of the data across three Availability Zones in a single AWS Region"*.
+*"Aurora synchronously replicates the data across Availability Zones to six storage nodes associated with your cluster volume."* (o Aurora replica os dados de forma síncrona entre Zonas de Disponibilidade, para seis nós de armazenamento associados ao volume do cluster) O volume *"consists of copies of the data across three Availability Zones in a single AWS Region"* (consiste em cópias dos dados em três Zonas de Disponibilidade, dentro de uma mesma Região).
 
 Duas consequências que a prova explora:
 
@@ -70,7 +70,7 @@ Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` ace
 
 ## 5. Aurora Serverless v2
 
-*"an on-demand, autoscaling configuration... Capacity is adjusted automatically based on application demand. You're charged only for the resources that your DB clusters consume."*
+*"an on-demand, autoscaling configuration... Capacity is adjusted automatically based on application demand. You're charged only for the resources that your DB clusters consume."* (uma configuração sob demanda, com escala automática... a capacidade é ajustada conforme a demanda da aplicação, e você paga apenas pelos recursos que seus clusters consomem)
 
 **1 ACU ≈ 2 GiB** de memória. Mínimo **0,5 ACU**; com **0 ACU** o cluster **pausa automaticamente**.
 
@@ -84,7 +84,7 @@ Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling u
 
 | Configuração | Quando |
 |---|---|
-| **Aurora Standard** | *"best choice when your I/O spending is less than 25%"* da fatura |
+| **Aurora Standard** | *"best choice when your I/O spending is less than 25%"* (melhor escolha quando seu gasto com I/O é menor que 25%) da fatura |
 | **Aurora I/O-Optimized** | *"best choice when your I/O spending is 25% or more"* (melhor escolha quando seu gasto com I/O é de 25% ou mais) — sem cobrança por I/O |
 
 Troca de Standard para I/O-Optimized: *"once every 30 days"*.

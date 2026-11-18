@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 > **C)** Reserved Instances
 > **D)** Reduzir a memória das tasks pela metade
 >
-> **Por que B**: Compute Savings Plans *"covers Fargate and Lambda usage"* — desconto sem mudar a arquitetura.
+> **Por que B**: Compute Savings Plans *"covers Fargate and Lambda usage"* (cobre o uso de Fargate e Lambda) — desconto sem mudar a arquitetura.
 > **A errada**: Spot não serve para produção que não tolera interrupção (embora uma **parte** da capacidade possa ser Spot).
 > **C errada**: RI é para instâncias EC2.
 > **D errada**: pode degradar a aplicação.

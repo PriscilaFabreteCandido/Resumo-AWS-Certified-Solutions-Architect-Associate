@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 | **Reliability** | *"the ability of a workload to perform its intended function correctly and consistently when it's expected to"* |
 | **Performance Efficiency** | *"the ability to use cloud resources efficiently to meet performance requirements, and to maintain that efficiency as demand changes and technologies evolve"* |
 | **Cost Optimization** | *"the ability to run systems to deliver business value at the lowest price point"* |
-| **Sustainability** | *"focuses on environmental impacts, especially energy consumption and efficiency"* |
+| **Sustainability** | *"focuses on environmental impacts, especially energy consumption and efficiency"* (foca nos impactos ambientais, especialmente consumo e eficiência de energia) |
 
 Mnemônico: **O-S-R-P-C-S**.
 

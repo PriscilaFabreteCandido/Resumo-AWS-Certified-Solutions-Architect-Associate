@@ -64,7 +64,7 @@ A chave da pegadinha está nessa citação: **banco e storage ligados; servidore
 
 ### Warm standby
 
-> *"ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region"*
+> *"ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region"* (garantir que exista, em outra Região, uma cópia reduzida mas totalmente funcional do seu ambiente de produção)
 
 Diferença de uma palavra em relação ao pilot light: **functional**. O ambiente **está no ar**, só pequeno.
 

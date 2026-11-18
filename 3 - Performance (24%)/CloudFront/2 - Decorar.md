@@ -53,7 +53,7 @@ Com SSE-KMS: a **key policy** precisa liberar `kms:Decrypt`, `kms:Encrypt`, `kms
 | Use | Quando (texto oficial) |
 |---|---|
 | **Signed URL** | *"restrict access to individual files"*; cliente **não suporta cookie** |
-| **Signed cookie** | *"provide access to multiple restricted files"* (ex.: HLS); *"don't want to change your current URLs"* |
+| **Signed cookie** | *"provide access to multiple restricted files"* (ex.: HLS); *"don't want to change your current URLs"* (não quer mudar suas URLs atuais) |
 
 > *"Signed URLs take precedence over signed cookies."* (URLs assinadas têm precedência sobre cookies assinados) Recomendação: **trusted key groups**.
 

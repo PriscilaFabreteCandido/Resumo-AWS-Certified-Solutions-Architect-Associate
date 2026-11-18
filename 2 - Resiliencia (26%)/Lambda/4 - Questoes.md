@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Reserved concurrency
 > **D)** Migrar para Fargate
 >
-> **Por que B**: ambientes pré-inicializados, *"designed to make functions available with double-digit millisecond response times"*.
+> **Por que B**: ambientes pré-inicializados, *"designed to make functions available with double-digit millisecond response times"* (projetado para deixar as funções disponíveis com tempos de resposta de dezenas de milissegundos).
 > **A errada**: acelera a execução, mas não elimina a inicialização.
 > **C errada**: reserved **limita** concorrência; não pré-inicializa nada. É a troca mais comum da prova.
 > **D errada**: resolve, mas é mudança de arquitetura desnecessária.

@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Amazon Data Firehose — O que é
 
 > [!info] Em uma frase
-> *"a fully managed service for delivering real-time streaming data"* a destinos como S3, Redshift, OpenSearch e Splunk — **sem escrever código** e **sem gerenciar recursos**.
+> *"a fully managed service for delivering real-time streaming data"* (um serviço totalmente gerenciado para entregar dados de streaming em tempo real) a destinos como S3, Redshift, OpenSearch e Splunk — **sem escrever código** e **sem gerenciar recursos**.
 
 ## Definição oficial
 

@@ -25,7 +25,7 @@ Você pode reservar até *"Unreserved account concurrency value minus 100"* (o v
 
 **Provisioned concurrency** *"the number of pre-initialized execution environments... designed to make functions available with double-digit millisecond response times"* e *"incurs additional charges"* (gera cobranças adicionais). É o remédio para **cold start** em carga interativa.
 
-A doc nota que *"asynchronous workloads usually do not need it"* — processamento em background tolera o cold start.
+A doc nota que *"asynchronous workloads usually do not need it"* (cargas de trabalho assíncronas normalmente não precisam disso) — processamento em background tolera o cold start.
 
 ## 3. Cold start — o que realmente ajuda
 

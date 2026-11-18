@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** Transit VIF
 > **D)** Gateway endpoint
 >
-> **Por que B**: o **public VIF** alcança *"all AWS public services using public IP addresses"* sem internet. A alternativa moderna é **interface endpoint** do S3 alcançado pelo DX (IP privado).
+> **Por que B**: o **public VIF** alcança *"all AWS public services using public IP addresses"* (todos os serviços públicos da AWS, usando endereços IP públicos) sem internet. A alternativa moderna é **interface endpoint** do S3 alcançado pelo DX (IP privado).
 > **D errada**: **gateway endpoint funciona só de dentro da VPC** — não de on-premises.
 
 > [!question]- Q5. A empresa quer começar com 500 Mbps e entregar rápido.

@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 | **Layers** | **5** por função |
 | **Variáveis de ambiente** | **4 KB** no total |
 | **Resource policy** | 20 KB |
-| **Concorrência padrão** | **1.000** por região — *"can be increased up to: Tens of thousands"* |
+| **Concorrência padrão** | **1.000** por região — *"can be increased up to: Tens of thousands"* (pode ser aumentado até: dezenas de milhares) |
 | **Velocidade de escala** | **1.000** ambientes a cada **10 s**, por função |
 | **ENIs por VPC** | 3.000 (compartilhado com outros serviços) |
 
@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 |---|---|---|
 | O que faz | *"sets both the maximum and minimum number of concurrent instances"* (define, ao mesmo tempo, o número máximo e o mínimo de instâncias concorrentes) | *"the number of pre-initialized execution environments"* |
 | Custo | *"incurs no additional charges"* (não gera cobrança adicional) | *"incurs additional charges"* (gera cobranças adicionais) |
-| Resolve | **Cota garantida** e **estrangulamento** (valor **0** desliga a função) | **Cold start** — *"double-digit millisecond response times"* |
+| Resolve | **Cota garantida** e **estrangulamento** (valor **0** desliga a função) | **Cold start** — *"double-digit millisecond response times"* (tempos de resposta de dezenas de milissegundos) |
 | Limite | Até *"Unreserved account concurrency value minus 100"* (o valor de concorrência não reservada da conta, menos 100) | — |
 
 > [!warning] A troca mais comum da prova

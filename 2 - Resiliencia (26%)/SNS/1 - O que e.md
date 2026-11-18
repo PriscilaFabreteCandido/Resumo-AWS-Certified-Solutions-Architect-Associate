@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 > *"publishers send messages to a topic, which is a logical access point and communication channel."*
 
-E o fan-out: *"a message published to an SNS topic is replicated and pushed to multiple endpoints... This allows for parallel asynchronous processing."*
+E o fan-out: *"a message published to an SNS topic is replicated and pushed to multiple endpoints... This allows for parallel asynchronous processing."* (uma mensagem publicada num tópico SNS é replicada e enviada a vários endpoints... o que permite processamento assíncrono em paralelo)
 
 ## Tipos de assinante (lista oficial)
 

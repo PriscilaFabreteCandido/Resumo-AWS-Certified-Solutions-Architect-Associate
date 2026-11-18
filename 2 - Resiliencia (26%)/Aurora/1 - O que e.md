@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que o torna diferente do RDS
 
-A arquitetura separa **compute** de **storage**. O *cluster volume* é *"a virtual database storage volume that spans multiple Availability Zones, with each Availability Zone having a copy of the DB cluster data"*.
+A arquitetura separa **compute** de **storage**. O *cluster volume* é *"a virtual database storage volume that spans multiple Availability Zones, with each Availability Zone having a copy of the DB cluster data"* (um volume virtual de armazenamento que abrange várias Zonas de Disponibilidade, cada uma com uma cópia dos dados do cluster).
 
 Consequências:
 

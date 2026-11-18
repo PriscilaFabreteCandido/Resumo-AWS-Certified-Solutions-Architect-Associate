@@ -46,7 +46,7 @@ Versionamento: guarda as **100** versões mais recentes.
 
 | Fato | Detalhe |
 |---|---|
-| O que faz | *"automates the process of patching managed nodes with both security-related updates and other types of updates"* |
+| O que faz | *"automates the process of patching managed nodes with both security-related updates and other types of updates"* (automatiza o processo de aplicar patches nos nós gerenciados, tanto atualizações de segurança quanto outras) |
 | Modos | **Scan** (só relatório) ou **Scan and install** |
 | ⚠️ Limite | *"doesn't support upgrading major versions of operating systems"* (não oferece suporte a upgrade de versões maiores de sistema operacional) |
 | ⚠️ Teste | *"AWS doesn't test patches before making them available in Patch Manager"* (a AWS não testa os patches antes de disponibilizá-los no Patch Manager) |

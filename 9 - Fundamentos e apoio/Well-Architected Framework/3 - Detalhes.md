@@ -37,7 +37,7 @@ Na prova: serviço purpose-built, cache (CloudFront/ElastiCache/DAX), escala hor
 **Cost Optimization** — *"run systems to deliver business value at the lowest price point"*. Áreas incluem **Practice Cloud Financial Management** e **Optimize over time**.
 Na prova: classe/tipo correto, compromisso quando estável, desligar o ocioso, não pagar HA em dev.
 
-**Sustainability** — *"environmental impacts, especially energy consumption and efficiency"*. Áreas incluem **Region selection**.
+**Sustainability** — *"environmental impacts, especially energy consumption and efficiency"* (impactos ambientais, especialmente consumo e eficiência de energia). Áreas incluem **Region selection**.
 Na prova: raramente é a resposta sozinha, mas reforça rightsizing, serverless e gerenciado.
 
 ## 3. O princípio citado duas vezes

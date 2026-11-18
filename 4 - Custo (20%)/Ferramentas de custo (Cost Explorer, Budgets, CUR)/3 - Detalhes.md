@@ -18,7 +18,7 @@ A questão típica oferece as três e descreve **um** verbo. Se o enunciado diz 
 
 ## 2. Cost Explorer
 
-Mostra gasto e uso por serviço, conta, região, tag e tipo de uso, com **13 meses** de histórico e **18 meses** de forecast. Atualiza *"at least once every 24 hours"*, e o mês corrente aparece *"in about 24 hours"* (em cerca de 24 horas).
+Mostra gasto e uso por serviço, conta, região, tag e tipo de uso, com **13 meses** de histórico e **18 meses** de forecast. Atualiza *"at least once every 24 hours"* (pelo menos uma vez a cada 24 horas), e o mês corrente aparece *"in about 24 hours"* (em cerca de 24 horas).
 
 Também *"get recommendations for what Reserved Instances to purchase"* (receber recomendações de quais Instâncias Reservadas comprar) — baseadas no uso real.
 

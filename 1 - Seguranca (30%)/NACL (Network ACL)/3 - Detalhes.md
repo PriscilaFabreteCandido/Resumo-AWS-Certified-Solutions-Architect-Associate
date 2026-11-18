@@ -41,7 +41,7 @@ A regra `*` (asterisco) é o DENY final implícito, e *"You can't delete a rule 
 | Outbound | ALLOW tudo (regra 100) | **Só a regra `*` DENY** |
 | Efeito prático | Transparente | **Bloqueia tudo** até você escrever as regras |
 
-Você pode modificar a default *"by adding rules or removing the default numbered rules"*.
+Você pode modificar a default *"by adding rules or removing the default numbered rules"* (adicionando regras ou removendo as regras numeradas padrão).
 
 > [!important] O erro operacional mais comum
 > Criar uma NACL "para endurecer a segurança" e associá-la a uma subnet de produção. Como ela nasce só com o DENY implícito, **tudo para na hora**. Construa as regras primeiro, teste numa subnet isolada, e só depois associe.

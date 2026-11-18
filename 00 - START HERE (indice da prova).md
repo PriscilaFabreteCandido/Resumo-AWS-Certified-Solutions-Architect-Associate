@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 | Modelo de nota | **Compensatório** — não precisa passar em cada domínio, só no total |
 | Questão em branco | Conta como **errada**. *"Unanswered questions are scored as incorrect; there is no penalty for guessing."* (questões não respondidas contam como erradas; não há penalidade por chutar) |
 | Tipos de questão | *Multiple choice* (1 certa de 4) e *multiple response* (2+ certas de 5+) |
-| Experiência esperada | *"at least 1 year of hands-on experience designing cloud solutions"* |
+| Experiência esperada | *"at least 1 year of hands-on experience designing cloud solutions"* (pelo menos 1 ano de experiência prática projetando soluções em nuvem) |
 
 > [!warning] Em *multiple response* você só pontua acertando **todas** as corretas. Não existe nota parcial.
 > O guia oficial **não informa a duração** do exame. Confira no momento do agendamento.

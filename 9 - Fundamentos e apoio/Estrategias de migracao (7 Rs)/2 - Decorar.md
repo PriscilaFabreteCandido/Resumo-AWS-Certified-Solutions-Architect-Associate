@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 
 | Enunciado | R |
 |---|---|
-| *"lift and shift"*, *"as is"*, *"sem alterar a aplicação"*, *"o mais rápido possível"* | **Rehost** |
+| *"lift and shift"*, *"as is"* (como está), *"sem alterar a aplicação"*, *"o mais rápido possível"* | **Rehost** |
 | *"mover o ambiente VMware"*, *"sem adquirir hardware novo nem mudar operação"* | **Relocate** |
 | *"substituir pelo equivalente SaaS"*, *"deixar de manter o produto"* | **Repurchase** |
 | *"manter o mesmo engine, sem gerenciar servidores"*, *"reduzir sobrecarga operacional do banco"* | **Replatform** |

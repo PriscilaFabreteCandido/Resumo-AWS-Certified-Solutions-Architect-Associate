@@ -71,7 +71,7 @@ atualizado: 2026-11-08
 | Basta o attachment para o tráfego fluir | Precisa da rota na **route table da subnet** também |
 | Um TGW não segmenta | **Múltiplas route tables** criam domínios isolados |
 | MTU é o mesmo em todos os caminhos | **8.500** entre VPCs/DX/peering; **1.500** sobre VPN |
-| TGW inter-Region não é criptografado | *"automatically encrypted at the physical layer"* |
+| TGW inter-Region não é criptografado | *"automatically encrypted at the physical layer"* (criptografado automaticamente na camada física) |
 
 ## Links
 

@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 | Se deletar a origem | Réplicas **na mesma região** são **promovidas** automaticamente |
 | Billing | *"Read replicas are billed as standard DB instances"* (réplicas de leitura são cobradas como instâncias de banco comuns) |
 | Storage | Pode ter tipo diferente; aumento mínimo de **10%** |
-| Db2 standby / Oracle mounted | *"don't accept user connections"* — só DR cross-Region |
+| Db2 standby / Oracle mounted | *"don't accept user connections"* (não aceitam conexões de usuário) — só DR cross-Region |
 
 ## Backup
 

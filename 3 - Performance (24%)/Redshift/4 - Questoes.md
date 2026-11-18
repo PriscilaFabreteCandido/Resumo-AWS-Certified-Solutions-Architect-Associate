@@ -69,7 +69,7 @@ atualizado: 2026-11-08
 | Redshift serve para OLTP | É **OLAP**. Transação = RDS/Aurora/DynamoDB |
 | Redshift Spectrum dispensa cluster | É **feature do Redshift** — precisa de cluster ou workgroup Serverless |
 | Spectrum permite UPDATE em tabela externa | **Não suporta** update em externas |
-| Concurrency scaling é cobrado sempre | Só *"for the time they're actively running queries"* |
+| Concurrency scaling é cobrado sempre | Só *"for the time they're actively running queries"* (pelo tempo em que estão de fato executando consultas) |
 | Concurrency scaling funciona em qualquer cluster | **Não** em nó único, nem com interleaved sort key / temp table / UDF Python-Lambda |
 | Leader node sempre existe | Só com **2 ou mais** compute nodes |
 | Storage e compute escalam juntos | Com **RMS**, escalam **independentemente** |

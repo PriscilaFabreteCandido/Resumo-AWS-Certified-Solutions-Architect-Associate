@@ -21,9 +21,9 @@ Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps;
 
 | VIF | Alcança |
 |---|---|
-| **Private VIF** | *"access an Amazon Virtual Private Cloud (VPC) using private IP addresses"*. **Uma VPC por VIF** — ou **várias** via **Direct Connect gateway** |
-| **Public VIF** | *"access all AWS public services using public IP addresses"* |
-| **Transit VIF** | *"access one or more Amazon VPC Transit Gateways associated with Direct Connect gateways"* |
+| **Private VIF** | *"access an Amazon Virtual Private Cloud (VPC) using private IP addresses"* (acessar uma Amazon Virtual Private Cloud (VPC) usando endereços IP privados). **Uma VPC por VIF** — ou **várias** via **Direct Connect gateway** |
+| **Public VIF** | *"access all AWS public services using public IP addresses"* (acessar todos os serviços públicos da AWS usando endereços IP públicos) |
+| **Transit VIF** | *"access one or more Amazon VPC Transit Gateways associated with Direct Connect gateways"* (acessar um ou mais Transit Gateways associados a Direct Connect gateways) |
 
 **Direct Connect gateway**: liga um private VIF a *"multiple virtual private gateways across any account and AWS Region"* (vários virtual private gateways, em qualquer conta e Região). E: *"There are no additional charges to use a multi-account AWS Direct Connect gateway."* (não há cobrança adicional para usar um Direct Connect gateway multi-conta)
 
@@ -34,7 +34,7 @@ Detalhes das **hosted**: só parceiros qualificados criam 1, 2, 5, 10 e 25 Gbps;
 | Fibra | **monomodo** |
 | VLAN | **802.1Q** |
 | Roteamento | **BGP** com **MD5** |
-| **BFD** | Opcional, *"automatically enabled for each Direct Connect virtual interface... but does not take effect until you configure it on your router"* |
+| **BFD** | Opcional, *"automatically enabled for each Direct Connect virtual interface... but does not take effect until you configure it on your router"* (habilitado automaticamente em cada interface virtual do Direct Connect... mas só passa a valer quando você o configura no seu roteador) |
 | **MTU** | **1522 ou 9023 bytes** |
 | Transceivers | 1000BASE-LX (1 GbE), 10GBASE-LR (10 GbE), 100GBASE-LR4 (100 GbE), 400GBASE-LR4 (400 Gbps) |
 | **LAG** | Existe; a conexão *"must be on the same AWS device and must use the same bandwidth as the LAG"* (precisam estar no mesmo dispositivo da AWS e usar a mesma largura de banda do LAG). ⚠️ Máximo de conexões por LAG: **a doc lida não informa** |

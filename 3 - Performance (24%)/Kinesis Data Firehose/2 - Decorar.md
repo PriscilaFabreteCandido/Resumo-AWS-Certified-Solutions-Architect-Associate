@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| **Registro máximo** | *"as large as 1,000 KB"* |
+| **Registro máximo** | *"as large as 1,000 KB"* (de até 1.000 KB) |
 | Semântica | *"at-least-once"* — duplicatas possíveis, **exceto** em S3, Iceberg e Snowflake |
 | Buffer hints | aplicam-se *"on a shard or partition level"* |
 | Dynamic partitioning | usa nível de stream/tópico; **incompatível** com zero buffering |

@@ -41,7 +41,7 @@ Editções: **Standard** (até ~30.000 objetos) e **Enterprise** (até ~500.000 
 
 Nada é replicado para a AWS — a autenticação é **encaminhada** para o AD on-premises:
 
-> *"all of your directory data remains on your domain controllers. Directory Service does not replicate any of your directory data."*
+> *"all of your directory data remains on your domain controllers. Directory Service does not replicate any of your directory data."* (todos os seus dados de diretório permanecem nos seus domain controllers; o Directory Service não replica nenhum deles)
 
 Mecânica: *"AD Connector uses Kerberos for authentication and authorization of AWS applications. LDAP is only used for user and group object lookups (read operations)."* (o AD Connector usa Kerberos para autenticação e autorização das aplicações AWS; o LDAP só é usado para consultar objetos de usuário e grupo (operações de leitura))
 
@@ -101,7 +101,7 @@ O texto oficial de cada elo:
 | Limitação | Texto oficial | Consequência |
 |---|---|---|
 | **Um domínio só** | *"IAM Identity Center only has access to the users and groups of the single domain to which AD Connector attaches. If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."* (o IAM Identity Center só tem acesso aos usuários e grupos do único domínio ao qual o AD Connector se conecta; se você precisa atender vários domínios ou florestas, use o Directory Service for Microsoft Active Directory) | Várias florestas → **Managed Microsoft AD** com trust |
-| **Reset de senha** | *"any future user password resets must be done from within AD... users will not be able to reset their passwords from the AWS access portal."* | Se pedirem autoatendimento de senha pelo portal, não serve |
+| **Reset de senha** | *"any future user password resets must be done from within AD... users will not be able to reset their passwords from the AWS access portal."* (qualquer redefinição futura de senha precisa ser feita dentro do próprio AD... os usuários não conseguirão redefinir a senha pelo portal de acesso da AWS) | Se pedirem autoatendimento de senha pelo portal, não serve |
 | **Conta de gerenciamento** | *"make sure your AD Connector or directory in AWS Managed Microsoft AD in Directory Service resides within your AWS Organizations management account."* | E na **mesma Região** do Identity Center |
 | **Um por vez** | *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* (você pode conectar apenas um diretório do AD Connector ou um do AWS Managed Microsoft AD por vez) | — |
 | **Relação 1-para-1** | *"AD Connectors and your on-premises Active Directory domains have a 1-to-1 relationship."* (a relação entre AD Connectors e seus domínios de Active Directory on-premises é de um para um) | — |
@@ -115,7 +115,7 @@ O texto oficial de cada elo:
 
 ## 4. Simple AD
 
-Compatível com AD, implementado sobre **Samba 4**. Serve para *"a low-scale, low-cost directory"*.
+Compatível com AD, implementado sobre **Samba 4**. Serve para *"a low-scale, low-cost directory"* (um diretório de pequena escala e baixo custo).
 
 A lista do que **não** suporta é o que a prova cobra: *"multi-factor authentication (MFA), trust relationships, DNS dynamic update, schema extensions, communication over LDAPS, PowerShell AD cmdlets, or FSMO role transfer"*. E também *"not compatible with RDS SQL Server"* (não é compatível com o RDS SQL Server).
 

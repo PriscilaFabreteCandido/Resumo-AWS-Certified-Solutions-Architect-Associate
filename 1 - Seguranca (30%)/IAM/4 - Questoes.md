@@ -95,7 +95,7 @@ atualizado: 2026-11-08
 > **C)** Abrir um caso no AWS Support para apagar o bucket
 > **D)** Anexar uma policy de identidade com `Allow` em `s3:PutBucketPolicy`
 >
-> **Por que B**: a tarefa está na lista oficial das que **exigem** o root. Ele é a única identidade **sem deny implícito** — *"all requests are implicitly denied with the exception of the AWS account root user"*. Uma policy de recurso que nega todos vence qualquer `Allow` de identidade.
+> **Por que B**: a tarefa está na lista oficial das que **exigem** o root. Ele é a única identidade **sem deny implícito** — *"all requests are implicitly denied with the exception of the AWS account root user"* (todas as requisições são negadas implicitamente, com exceção do usuário raiz da conta AWS). Uma policy de recurso que nega todos vence qualquer `Allow` de identidade.
 > **D errada**: um `Deny` explícito na policy do recurso **sempre** vence um `Allow`.
 > 💡 Numa **AWS Organizations** com **centralized root access** habilitado, a conta de gerenciamento faz isso de forma centralizada, sem usar o root da conta-membro.
 

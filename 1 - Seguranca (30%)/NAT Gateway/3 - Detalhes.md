@@ -30,7 +30,7 @@ AZ-c: subnet pública (NAT-c)  ←  subnet privada C  (rota 0.0.0.0/0 -> NAT-c)
 
 Cada subnet privada tem a **sua própria route table** apontando para o NAT da **mesma AZ**. Isso dá dois ganhos: sobrevive à perda de uma AZ, e evita tráfego cross-AZ (que é cobrado).
 
-Existe também o **NAT gateway regional**, que *"automatically expands across Availability Zones based on your workload presence"* — mas ele *"do[es] not support private NAT"*, e a expansão pode levar *"up to 60 minutes"*.
+Existe também o **NAT gateway regional**, que *"automatically expands across Availability Zones based on your workload presence"* (se expande automaticamente entre Zonas de Disponibilidade conforme a presença da sua carga de trabalho) — mas ele *"do[es] not support private NAT"* (não oferece suporte a NAT privado), e a expansão pode levar *"up to 60 minutes"*.
 
 ## 3. Custo — a conta que a prova faz
 

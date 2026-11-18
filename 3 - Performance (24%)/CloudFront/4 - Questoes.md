@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** S3 Transfer Acceleration
 > **D)** Global Accelerator na frente do bucket
 >
-> **Por que B**: conteúdo estático global é o caso canônico de CDN — e *"data transfer from your origin to CloudFront is always free"* com origem S3.
+> **Por que B**: conteúdo estático global é o caso canônico de CDN — e *"data transfer from your origin to CloudFront is always free"* (a transferência da sua origem para o CloudFront é sempre gratuita) com origem S3.
 > **A errada**: triplica armazenamento e exige sincronização.
 > **C errada**: Transfer Acceleration é para **upload**.
 > **D errada**: Global Accelerator **não cacheia** — o ganho seria muito menor.

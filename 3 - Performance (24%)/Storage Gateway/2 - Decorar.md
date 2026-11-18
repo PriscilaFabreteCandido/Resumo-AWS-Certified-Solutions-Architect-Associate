@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 
 Deployment: VM em **VMware ESXi, Microsoft Hyper-V, KVM ou Nutanix AHV**, **hardware appliance**, **VMware Cloud on AWS**, ou **AMI no EC2**.
 
-Gateway no **EC2** serve *"for disaster recovery, data mirroring, and providing storage for applications hosted on Amazon EC2"*.
+Gateway no **EC2** serve *"for disaster recovery, data mirroring, and providing storage for applications hosted on Amazon EC2"* (para recuperação de desastre, espelhamento de dados e fornecimento de armazenamento a aplicações hospedadas no Amazon EC2).
 
 ## A distinção que mais cai
 

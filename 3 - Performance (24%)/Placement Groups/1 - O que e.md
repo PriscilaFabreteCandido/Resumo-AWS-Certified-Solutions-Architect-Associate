@@ -16,7 +16,7 @@ atualizado: 2026-11-08
 | Estratégia | O que faz | Limite |
 |---|---|---|
 | **Cluster** | *"Packs instances close together inside an Availability Zone"* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade) | **1 AZ só**; fluxo único **10 Gbps** no grupo (5 Gbps fora) |
-| **Spread** | *"a group of instances that are each placed on distinct hardware"* | **7 instâncias por AZ** |
+| **Spread** | *"a group of instances that are each placed on distinct hardware"* (um grupo de instâncias em que cada uma fica num hardware distinto) | **7 instâncias por AZ** |
 | **Partition** | *"Spreads your instances across logical partitions"* (racks próprios) | **7 partições por AZ** (2 com Dedicated Instances) |
 | **Precision time** | Acesso ao Amazon Time Sync aprimorado | Sem custo extra |
 

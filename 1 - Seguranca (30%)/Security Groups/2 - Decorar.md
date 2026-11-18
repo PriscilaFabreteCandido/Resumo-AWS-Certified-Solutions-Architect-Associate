@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 
 - **Não pode ser deletado** (erro `Client.CannotDelete`). Pode ser modificado.
 - As regras default **não** liberam tráfego vindo de internet gateway ou NAT gateway.
-- A AWS recomenda *"create security groups for specific resources... instead of using the default security group"*.
+- A AWS recomenda *"create security groups for specific resources... instead of using the default security group"* (crie security groups para recursos específicos... em vez de usar o security group padrão).
 
 ## Fatos para decorar
 
@@ -43,7 +43,7 @@ Amazon DNS (Route 53 Resolver, o VPC+2), DHCP, **metadados da instância (IMDS)*
 
 ## Boa prática citada na doc
 
-Para as portas **22 (SSH)** e **3389 (RDP)**: *"authorize only specific IP address ranges"*. E o alerta: *"If you specify 0.0.0.0/0 (IPv4) and ::/ (IPv6), this enables anyone to access your instances."* (se você especificar 0.0.0.0/0 (IPv4) e ::/ (IPv6), qualquer pessoa poderá acessar suas instâncias)
+Para as portas **22 (SSH)** e **3389 (RDP)**: *"authorize only specific IP address ranges"* (autorizar apenas faixas de endereço IP específicas). E o alerta: *"If you specify 0.0.0.0/0 (IPv4) and ::/ (IPv6), this enables anyone to access your instances."* (se você especificar 0.0.0.0/0 (IPv4) e ::/ (IPv6), qualquer pessoa poderá acessar suas instâncias)
 
 ## Links
 

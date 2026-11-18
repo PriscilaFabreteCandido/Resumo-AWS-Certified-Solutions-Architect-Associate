@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | Peça | O que é |
 |---|---|
-| **Backup plan** | *"backup policies known as backup plans"* — frequência, janela, retenção, transição para cold storage |
+| **Backup plan** | *"backup policies known as backup plans"* (políticas de backup chamadas de planos de backup) — frequência, janela, retenção, transição para cold storage |
 | **Backup vault** | Onde os backups ficam, *"which separates them safely from their source instances"* |
 | **Vault Lock** | **WORM**: *"prevent anyone (including you) from deleting backups or altering their retention period"* (impedir que qualquer pessoa (inclusive você) apague backups ou altere o período de retenção) |
 | **Backup Audit Manager** | Valida se os planos estão sendo cumpridos (evidência para auditor) |

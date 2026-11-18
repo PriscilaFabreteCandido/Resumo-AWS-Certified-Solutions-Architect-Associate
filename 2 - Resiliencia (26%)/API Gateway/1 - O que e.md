@@ -16,7 +16,7 @@ atualizado: 2026-11-08
 | Tipo | Para quê |
 |---|---|
 | **REST API** | Mais recursos: **cache**, **usage plans e API keys**, endpoint **privado**, **WAF**, X-Ray, validação de request, canary |
-| **HTTP API** | *"designed with minimal features so that they can be offered at a lower price"*. JWT authorizer nativo, deploy automático |
+| **HTTP API** | *"designed with minimal features so that they can be offered at a lower price"* (projetadas com o mínimo de recursos, para poderem ser oferecidas a um preço menor). JWT authorizer nativo, deploy automático |
 | **WebSocket API** | *"stateful, full-duplex communication"*, roteando pelo **conteúdo** da mensagem |
 
 ## Os três tipos de endpoint

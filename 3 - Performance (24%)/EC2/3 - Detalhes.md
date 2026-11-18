@@ -54,7 +54,7 @@ Termos: **1 ou 3 anos**. Pagamento: All upfront, Partial upfront, No upfront. *"
 
 ### Reserved Instances
 
-*"are not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account"*. O preço depende de **instance type, Region, tenancy e platform**.
+*"are not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account"* (não são instâncias físicas, e sim um desconto de faturamento aplicado ao uso de instâncias sob demanda na sua conta). O preço depende de **instance type, Region, tenancy e platform**.
 
 - **Standard**: *"provide the most significant discount, but can only be modified. Standard Reserved Instances can't be exchanged."*
 - **Convertible**: *"provide a lower discount... but can be exchanged for another Convertible Reserved Instance with different instance attributes."*
@@ -65,9 +65,9 @@ Não renovam automaticamente e **não podem ser canceladas**. A opção **No Upf
 
 ### Spot
 
-*"available for less than the On-Demand price"*, com *"steep discounts"* (descontos expressivos) — a doc não publica um percentual fixo.
+*"available for less than the On-Demand price"* (disponível por menos que o preço sob demanda), com *"steep discounts"* (descontos expressivos) — a doc não publica um percentual fixo.
 
-A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."*
+A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."* (um sinal de recomendação de rebalanceamento, para avisar que uma instância Spot está sob risco elevado de interrupção)
 
 A requisição é **one-time** ou **persistent** — *"Amazon EC2 automatically resubmits a persistent Spot Instance request after the Spot Instance associated with the request is interrupted."* (o Amazon EC2 reenvia automaticamente uma requisição Spot persistente depois que a instância associada a ela é interrompida)
 
@@ -87,7 +87,7 @@ Casos de uso que a doc cita: *"data analysis, batch jobs, background processing,
 
 | | **Dedicated Hosts** | **Dedicated Instances** |
 |---|---|---|
-| Você paga | *"a physical host that is fully dedicated to running your instances"* | *"by the hour, for instances that run on single-tenant hardware"* |
+| Você paga | *"a physical host that is fully dedicated to running your instances"* (um host físico totalmente dedicado a rodar as suas instâncias) | *"by the hour, for instances that run on single-tenant hardware"* (por hora, por instâncias que rodam em hardware de inquilino único) |
 | Licença própria | **Sim** — *"bring your existing per-socket, per-core, or per-VM software licenses"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM) | Não é o caso de uso |
 | Vê sockets e cores | **Sim**, e controla o placement | Não |
 | Placement group | **Não pode** | Pode (partition: máx. 2; spread: não suportado) |

@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** SNS fan-out
 > **D)** Kinesis Data Firehose
 >
-> **Por que B**: é o padrão citado na própria doc — *"DynamoDB stream → pipe → event bus → multiple targets"* (stream do DynamoDB → pipe → barramento de eventos → vários destinos). O Pipes faz *"advanced transformations and enrichment"*.
+> **Por que B**: é o padrão citado na própria doc — *"DynamoDB stream → pipe → event bus → multiple targets"* (stream do DynamoDB → pipe → barramento de eventos → vários destinos). O Pipes faz *"advanced transformations and enrichment"* (transformações avançadas e enriquecimento).
 > **A errada**: você reimplementa filtro, enriquecimento, retry e fan-out.
 
 ## ⚠️ Armadilhas

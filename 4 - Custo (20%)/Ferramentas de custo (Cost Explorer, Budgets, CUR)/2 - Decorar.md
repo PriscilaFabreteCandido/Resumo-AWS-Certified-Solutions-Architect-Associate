@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 | Item | Valor |
 |---|---|
 | Natureza | *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível) |
-| Destino | *"an Amazon S3 bucket that you own"* |
+| Destino | *"an Amazon S3 bucket that you own"* (um bucket do Amazon S3 que pertence a você) |
 | Formato | **CSV** — *"AWS updates the report in your bucket once a day"* (a AWS atualiza o relatório no seu bucket uma vez por dia) |
 | Frequência | *"Update the report up to three times a day"* (atualizar o relatório até três vezes por dia); *"at least once a day"* (pelo menos uma vez por dia) |
 | **Granularidade** | **hora, dia ou mês** |

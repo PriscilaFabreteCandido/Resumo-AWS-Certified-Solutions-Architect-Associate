@@ -40,7 +40,7 @@ atualizado: 2026-11-08
 > **C)** IAM policy com condição de tag
 > **D)** Workgroup separado no Athena
 >
-> **Por que B**: o Lake Formation dá controle *"at the column, row, and cell-levels"*, respeitado por *"Amazon Athena, Amazon Quick, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue"*.
+> **Por que B**: o Lake Formation dá controle *"at the column, row, and cell-levels"* (nos níveis de coluna, linha e célula), respeitado por *"Amazon Athena, Amazon Quick, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue"*.
 > **A errada**: S3 controla objeto/prefixo, não coluna.
 
 > [!question]- Q5. Limitar quanto cada equipe pode escanear por mês, com cobrança separada.

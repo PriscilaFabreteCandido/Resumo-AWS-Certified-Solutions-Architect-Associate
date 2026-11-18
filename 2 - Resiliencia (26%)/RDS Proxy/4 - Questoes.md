@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Multi-AZ DB cluster
 > **D)** Read replica promovida
 >
-> **Por que B**: *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66%"* e *"automatically connecting to a standby DB instance while preserving application connections"* (conectando automaticamente a uma instância standby, preservando as conexões da aplicação).
+> **Por que B**: *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66%"* (contorna os caches de DNS para reduzir o tempo de failover em até 66%) e *"automatically connecting to a standby DB instance while preserving application connections"* (conectando automaticamente a uma instância standby, preservando as conexões da aplicação).
 > **A errada**: o endpoint do Aurora não é gerenciado por você no Route 53, e o cache pode ser do cliente/JVM.
 
 > [!question]- Q3. O time quer apontar o RDS Proxy para as read replicas, para escalar leitura.
@@ -40,7 +40,7 @@ atualizado: 2026-11-08
 > **C)** Parameter Store `SecureString`
 > **D)** KMS
 >
-> **Por que B**: é a combinação documentada — *"enforce IAM authentication for clients connecting to the proxy, and the proxy can connect to databases using either IAM database authentication or credentials stored in AWS Secrets Manager"*.
+> **Por que B**: é a combinação documentada — *"enforce IAM authentication for clients connecting to the proxy, and the proxy can connect to databases using either IAM database authentication or credentials stored in AWS Secrets Manager"* (exigir autenticação IAM dos clientes que se conectam ao proxy, e o proxy pode se conectar aos bancos usando autenticação IAM de banco ou credenciais guardadas no AWS Secrets Manager).
 > **C errada**: Parameter Store não rotaciona (*"None"*).
 
 > [!question]- Q5. O proxy foi configurado, mas o número de conexões no banco não caiu.
@@ -60,7 +60,7 @@ atualizado: 2026-11-08
 | RDS Proxy pode ser público | *"can't be publicly accessible"* (não pode ser acessível publicamente) |
 | O proxy sempre multiplexa | **Pinning** desfaz o pool (statement > 16 KB, temp tables, variáveis de sessão) |
 | Suporta Oracle | A doc lida cita **MariaDB, SQL Server, MySQL, PostgreSQL** e Aurora. Oracle **não** é citado |
-| Suporta AD no SQL Server | *"doesn't support connections that use Active Directory"* |
+| Suporta AD no SQL Server | *"doesn't support connections that use Active Directory"* (não oferece suporte a conexões que usam Active Directory) |
 | Resolve escala de leitura | Resolve **conexões**. Leitura é read replica / reader endpoint |
 | Posso criar quantos proxies quiser | **20 por conta**; **200 secrets** por proxy |
 

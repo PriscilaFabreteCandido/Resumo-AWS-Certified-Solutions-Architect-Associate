@@ -26,7 +26,7 @@ Deployment: VM (**VMware ESXi, Hyper-V, KVM, Nutanix AHV**), **hardware applianc
 
 ## 3. Volume Gateway — bloco via iSCSI
 
-Expõe volumes **iSCSI**: *"cloud-backed storage volumes that you can mount as Internet Small Computer System Interface (iSCSI) devices from your on-premises application servers"*.
+Expõe volumes **iSCSI**: *"cloud-backed storage volumes that you can mount as Internet Small Computer System Interface (iSCSI) devices from your on-premises application servers"* (volumes de armazenamento sustentados pela nuvem, que você monta como dispositivos iSCSI a partir dos seus servidores de aplicação on-premises).
 
 A escolha entre os dois modos é sobre **onde vive o dado principal**:
 

@@ -56,7 +56,7 @@ Por isso "trocar o engine" aparece tanto em questões de **custo de banco**, nã
 | **DMS Fleet Advisor** | **Descobre** o inventário de bancos no datacenter antes de migrar |
 | **Failover** | *"automatic failover"* (failover automático) com servidor de replicação de backup |
 
-Segurança: *"data at rest encrypted with AWS KMS"* e **SSL** para o dado em trânsito.
+Segurança: *"data at rest encrypted with AWS KMS"* (dados em repouso criptografados com o AWS KMS) e **SSL** para o dado em trânsito.
 
 Dimensionar a **replication instance** importa: carga grande com muitas mudanças exige mais CPU e memória, e o CDC acumula se a instância não acompanhar.
 

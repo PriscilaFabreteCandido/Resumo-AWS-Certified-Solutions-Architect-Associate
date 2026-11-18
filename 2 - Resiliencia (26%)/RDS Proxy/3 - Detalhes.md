@@ -23,7 +23,7 @@ Sem proxy, no failover a aplicação precisa:
 2. Resolver o DNS de novo — e aqui está o problema: o **cache de DNS** do cliente (ou da JVM) pode manter o IP antigo por minutos
 3. Reconectar
 
-Com proxy: ele *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases"*, e *"automatically connecting to a standby DB instance while preserving application connections"* (conectando automaticamente a uma instância standby, preservando as conexões da aplicação) — a conexão da aplicação com o **proxy** permanece aberta.
+Com proxy: ele *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases"* (contorna os caches de DNS para reduzir o tempo de failover em até 66% em bancos Aurora Multi-AZ), e *"automatically connecting to a standby DB instance while preserving application connections"* (conectando automaticamente a uma instância standby, preservando as conexões da aplicação) — a conexão da aplicação com o **proxy** permanece aberta.
 
 Também ajuda em manutenção: reduz o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 

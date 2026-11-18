@@ -31,7 +31,7 @@ Esse padrão tem nome: **envelope encryption**.
 | **AWS owned** | Só o serviço AWS | **Sem custo** | Definida pelo serviço |
 
 > [!tip] Quando a resposta é **customer managed**
-> Quando o enunciado pede **auditar o uso da chave**, **controlar quem pode usá-la**, **compartilhar entre contas** ou **definir rotação própria**. A AWS owned key você *"cannot change their policies, you cannot audit activities on these keys, and you cannot delete them"*.
+> Quando o enunciado pede **auditar o uso da chave**, **controlar quem pode usá-la**, **compartilhar entre contas** ou **definir rotação própria**. A AWS owned key você *"cannot change their policies, you cannot audit activities on these keys, and you cannot delete them"* (não é possível alterar as policies delas, auditar as atividades nessas chaves, nem excluí-las).
 
 ## Onde aparece na prova
 

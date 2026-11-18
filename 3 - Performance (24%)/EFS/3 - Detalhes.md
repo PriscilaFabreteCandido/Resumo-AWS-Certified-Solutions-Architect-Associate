@@ -42,7 +42,7 @@ Consequência: se o enunciado menciona **Elastic** ou **One Zone**, Max I/O est�
 
 **Regional** replica entre AZs — sobrevive à perda de uma AZ. É o padrão para produção.
 
-**One Zone** fica numa AZ, custa menos, e *"always use the General Purpose performance mode"*. Não suporta Elastic nem Max I/O.
+**One Zone** fica numa AZ, custa menos, e *"always use the General Purpose performance mode"* (sempre usam o modo de performance General Purpose). Não suporta Elastic nem Max I/O.
 
 A lógica é a mesma do **S3 One Zone-IA**: só para dado **reproduzível** ou não crítico. Se o enunciado diz *highly available*, One Zone está errado.
 

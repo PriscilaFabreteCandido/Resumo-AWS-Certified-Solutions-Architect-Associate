@@ -146,7 +146,7 @@ atualizado: 2026-11-08
 > **C)** **AWS WAF no ALB, com regra de SQL injection e rate-based rule** ✅
 > **D)** Shield Advanced
 >
-> **Por que C**: WAF inspeciona **HTTP/HTTPS** e tem critério de SQL injection e XSS, além de **rate-based rules** que *"block or count web requests that... exceed a specified number of requests in a minute or in five minutes"*.
+> **Por que C**: WAF inspeciona **HTTP/HTTPS** e tem critério de SQL injection e XSS, além de **rate-based rules** que *"block or count web requests that... exceed a specified number of requests in a minute or in five minutes"* (bloquear ou contar requisições web que... ultrapassem um número definido de requisições em um ou em cinco minutos).
 > **A errada**: SG trabalha em porta/protocolo/IP, não no conteúdo da requisição.
 > **B errada**: NACL bloqueia um IP, mas não detecta SQL injection — e o atacante troca de IP.
 > **D errada**: Shield é **DDoS** (camada 3/4 e volumétrico na 7), não filtro de payload. O Shield Advanced até inclui WAF, mas a resposta mínima para o problema descrito é o WAF.
@@ -179,7 +179,7 @@ atualizado: 2026-11-08
 | KMS criptografa arquivos grandes | **4.096 bytes.** Acima disso, envelope encryption |
 | Rotação de chave recriptografa os dados | Não. A KMS guarda as versões antigas e usa a correta no decrypt |
 | ACM funciona em qualquer região para CloudFront | **us-east-1**, sempre |
-| Shield Standard precisa ser habilitado | Vem *"automatically and at no extra charge"* |
+| Shield Standard precisa ser habilitado | Vem *"automatically and at no extra charge"* (automaticamente e sem custo extra) |
 | Security Hub detecta ameaças | **Agrega** achados e avalia postura. Detecção é GuardDuty/Inspector/Macie |
 | Cognito user pool dá acesso ao S3 | User pool **autentica**; identity pool entrega **credencial AWS temporária** |
 

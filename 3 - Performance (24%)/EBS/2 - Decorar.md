@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 |---|---|
 | **io2 Block Express: latência** | *"under 500 microseconds for 16KiB I/O operations"* |
 | **Instância não-Nitro** | chega a **32.000 IOPS**, mesmo com volume provisionado acima |
-| gp2: throughput | *"between 128 MiB/s and 250 MiB/s, depending on the volume size"* |
+| gp2: throughput | *"between 128 MiB/s and 250 MiB/s, depending on the volume size"* (entre 128 MiB/s e 250 MiB/s, dependendo do tamanho do volume) |
 | io1 para 1.000 MiB/s | precisa de **64.000 IOPS** e instância **Nitro** |
 | Magnético (legado) | 1 GiB – 1 TiB, 40–200 IOPS, ~**100 IOPS** em média |
 | NVMe reservations | **io1 e io2 Block Express** (não gp2/gp3) |

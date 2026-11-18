@@ -26,7 +26,7 @@ Quando a aplicação **depende de Active Directory**, não quando você quer ape
 | Opção | O que é | Use quando |
 |---|---|---|
 | **AWS Managed Microsoft AD** | *"powered by an actual Microsoft Windows Server Active Directory (AD), managed by AWS in the AWS Cloud"* | Precisa de AD real na AWS, com trust para o AD on-premises |
-| **AD Connector** | *"a proxy service that provides an easy way to connect compatible AWS applications... to your existing on-premises Microsoft Active Directory"* | Quer usar o AD on-premises sem replicar usuários para a AWS |
+| **AD Connector** | *"a proxy service that provides an easy way to connect compatible AWS applications... to your existing on-premises Microsoft Active Directory"* (um serviço de proxy que oferece uma forma simples de conectar aplicações AWS compatíveis... ao seu Microsoft Active Directory on-premises já existente) | Quer usar o AD on-premises sem replicar usuários para a AWS |
 | **Simple AD** | *"a Microsoft Active Directory–compatible directory from AWS Directory Service that is powered by Samba 4"* (um diretório compatível com o Microsoft Active Directory, do AWS Directory Service, baseado em Samba 4) | Diretório *"low-scale, low-cost"* (de pequena escala e baixo custo), sem recursos avançados |
 
 ## As duas incompatibilidades que caem

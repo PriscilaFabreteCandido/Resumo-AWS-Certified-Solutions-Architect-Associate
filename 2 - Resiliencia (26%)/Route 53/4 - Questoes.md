@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Failover routing com três registros
 > **D)** Simple routing com os três IPs
 >
-> **Por que B**: latency escolhe *"the Region that provides the best latency"* (a Região que oferece a melhor latência), e com health check configura **ativo-ativo** (*"any routing policy... other than failover"*).
+> **Por que B**: latency escolhe *"the Region that provides the best latency"* (a Região que oferece a melhor latência), e com health check configura **ativo-ativo** (*"any routing policy... other than failover"* (qualquer política de roteamento... que não seja failover)).
 > **A errada**: geolocation roteia por **localização**, não por latência medida.
 > **C errada**: failover é **ativo-passivo**.
 > **D errada**: *"they are not health checked"*.
@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Geoproximity com bias
 > **D)** Weighted routing
 >
-> **Por que B**: geolocation roteia *"based on the location of your users"* — é a política para requisito legal/regulatório.
+> **Por que B**: geolocation roteia *"based on the location of your users"* (com base na localização dos seus usuários) — é a política para requisito legal/regulatório.
 > **A errada**: latência pode mandar um usuário europeu para outra região.
 > **C errada**: geoproximity parte da localização dos **recursos** e serve para **deslocar** carga, não para garantir origem.
 

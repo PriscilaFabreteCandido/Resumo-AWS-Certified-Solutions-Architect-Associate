@@ -70,12 +70,12 @@ atualizado: 2026-11-08
 |---|---|
 | Aurora tem 3 cópias | **6 cópias, em 3 AZs** |
 | As réplicas copiam os dados | Leem o **mesmo** cluster volume |
-| Cluster de 1 instância não é multi-AZ | *"a single DB instance is still a cluster"* — o storage já abrange 3 AZs |
+| Cluster de 1 instância não é multi-AZ | *"a single DB instance is still a cluster"* (uma única instância de banco ainda é um cluster) — o storage já abrange 3 AZs |
 | Failover é sempre < 60 s | **Sem réplica**, é **< 10 min** |
 | Instance endpoint sobrevive a failover | **Não redireciona**. Writer e reader sim |
 | Aurora Global Database é multi-master | **1 primária escreve**; write forwarding encaminha para ela |
 | Global Database tem RPO 0 sempre | **Switchover** = RPO 0. **Failover** de desastre = segundos |
-| Global Database suporta Auto Scaling nas secundárias | *"doesn't support Aurora Auto Scaling for secondary DB clusters"* |
+| Global Database suporta Auto Scaling nas secundárias | *"doesn't support Aurora Auto Scaling for secondary DB clusters"* (não oferece suporte a Aurora Auto Scaling nos clusters secundários) |
 | Secrets Manager funciona com Global Database | *"Secrets Manager doesn't support Aurora Global Database"* (o Secrets Manager não oferece suporte ao Aurora Global Database) |
 | Serverless v2 sempre pausa | Só com mínimo **0 ACU** |
 | I/O-Optimized é sempre melhor | Só a partir de **25%** de I/O na fatura |

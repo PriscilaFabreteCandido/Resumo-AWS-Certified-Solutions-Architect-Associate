@@ -16,8 +16,8 @@ atualizado: 2026-11-08
 | Opção | O que é |
 |---|---|
 | **On-Demand Instances** | Pago por segundo, sem compromisso |
-| **Savings Plans** | *"commitment to a consistent amount of usage, in USD per hour, for a term of 1 or 3 years"* |
-| **Reserved Instances** | *"commitment to a consistent instance configuration, including instance type and Region, for a term of 1 or 3 years"* |
+| **Savings Plans** | *"commitment to a consistent amount of usage, in USD per hour, for a term of 1 or 3 years"* (compromisso com um valor constante de uso, em dólares por hora, por um prazo de 1 ou 3 anos) |
+| **Reserved Instances** | *"commitment to a consistent instance configuration, including instance type and Region, for a term of 1 or 3 years"* (compromisso com uma configuração constante de instância, incluindo tipo e Região, por um prazo de 1 ou 3 anos) |
 | **Spot Instances** | Capacidade sobrando, com desconto e **interrupção** |
 | **Dedicated Hosts** | *"Pay for a physical host... and bring your existing per-socket, per-core, or per-VM software licenses"* (pague por um host físico... e traga suas licenças de software existentes, por soquete, por núcleo ou por VM) |
 | **Dedicated Instances** | *"Pay, by the hour, for instances that run on single-tenant hardware"* (pague por hora por instâncias que rodam em hardware de inquilino único) |

@@ -82,7 +82,7 @@ atualizado: 2026-11-08
 | CNAME pode apontar o ápice (example.com) | **Não pode.** *"You can't create a CNAME record that has the same name as the hosted zone."* (não é possível criar um registro CNAME com o mesmo nome da hosted zone) Use **alias**. |
 | Alias e CNAME custam igual | *"Route 53 doesn't charge for alias queries to AWS resources."* (o Route 53 não cobra por consultas de alias a recursos da AWS) CNAME é cobrado. |
 | Posso definir TTL no alias | Não, se apontar para recurso AWS: o Route 53 usa o TTL do recurso. |
-| Simple routing faz health check | **Não faz.** *"although you can specify multiple IP addresses, they are not health checked."* Para health check com múltiplos valores: **multivalue answer**. |
+| Simple routing faz health check | **Não faz.** *"although you can specify multiple IP addresses, they are not health checked."* (embora você possa indicar vários endereços IP, eles não passam por verificação de saúde) Para health check com múltiplos valores: **multivalue answer**. |
 | Latency routing escolhe o mais perto geograficamente | Escolhe a **menor latência medida**, que não é sempre o mais perto. Para geografia, é **geolocation**. |
 | Failover routing é ativo-ativo | **Ativo-passivo.** Ativo-ativo se faz com **qualquer outra** política (weighted, latency, multivalue). |
 
@@ -109,7 +109,7 @@ atualizado: 2026-11-08
 | Spread placement group aceita quantas instâncias eu quiser | **7 por AZ.** Partition: **7 partições por AZ**. |
 | Cluster placement group é multi-AZ | **Uma AZ só.** Partition e spread podem ser multi-AZ. |
 | ASG respeita a política de terminação acima de tudo | *"Maintaining Zonal balance takes precedence over the termination policy."* (manter o equilíbrio entre as zonas tem precedência sobre a política de encerramento) |
-| ASG espera o cooldown para trocar instância doente | **Não espera.** *"does not wait for the cooldown period to end before replacing the unhealthy instance."* |
+| ASG espera o cooldown para trocar instância doente | **Não espera.** *"does not wait for the cooldown period to end before replacing the unhealthy instance."* (não espera o período de cooldown terminar para substituir a instância não saudável) |
 | Grace period é sempre 300 s | **300 s no console, 0 s via CLI/SDK.** |
 | Health check do ELB vem ligado no ASG | **Não.** O padrão é só **EC2 status check**. ELB health check precisa ser ativado — pegadinha clássica: "a instância está UP para o ASG mas a aplicação morreu". |
 | Target tracking usa cooldown | Target tracking e step scaling usam **instance warmup**; cooldown é coisa de **simple scaling** (que a AWS recomenda não usar). |
@@ -129,7 +129,7 @@ atualizado: 2026-11-08
 | GSI devolve atributo não projetado | **Não.** GSI só devolve o que foi projetado. **LSI** busca o resto na tabela. |
 | DAX acelera leitura forte | **Não.** Leitura forte **passa direto** para o DynamoDB e **não é cacheada**. |
 | TTL do DynamoDB apaga na hora | *"within a few days of their expiration time"*. Itens expirados ainda aparecem em Scan/Query — filtre. |
-| PITR restaura a tabela no lugar | *"always restores to a new table."* |
+| PITR restaura a tabela no lugar | *"always restores to a new table."* (sempre restaura para uma tabela nova) |
 | ElastiCache Redis = Memcached | Redis: replicação, persistência, HA, estruturas de dados. Memcached: multithread, simples, sem replicação. |
 | Redshift é para OLTP | É **OLAP** (analítico). Para OLTP: RDS/Aurora/DynamoDB. |
 | Athena e Redshift Spectrum são a mesma coisa | Athena é **independente e serverless**. Spectrum é **feature do Redshift** (precisa de cluster ou Serverless workgroup). |

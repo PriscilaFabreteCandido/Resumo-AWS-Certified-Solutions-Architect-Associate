@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 | Endpoint | Para quê | Redireciona no failover? |
 |---|---|---|
 | **Cluster (writer)** | Escrita, DDL, DML, ETL | **Sim** |
-| **Reader** | Leitura, com *"connection-balancing among all the Aurora Replicas"* | **Sim** |
+| **Reader** | Leitura, com *"connection-balancing among all the Aurora Replicas"* (balanceamento de conexões entre todas as réplicas do Aurora) | **Sim** |
 | **Custom** | Subconjunto de instâncias (ex.: só as grandes, para relatório) | — |
 | **Instance** | Uma instância específica, para diagnóstico | **Não** |
 

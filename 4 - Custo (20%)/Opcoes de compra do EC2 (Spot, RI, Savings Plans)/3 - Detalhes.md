@@ -62,7 +62,7 @@ E as regras: **não renovam** automaticamente, **não podem ser canceladas**. A 
 
 ## 4. Spot — o contrato real
 
-A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **dois minutos** de aviso. Antes disso pode vir o **rebalance recommendation**, sinalizando *"an elevated risk of interruption"*.
+A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **dois minutos** de aviso. Antes disso pode vir o **rebalance recommendation**, sinalizando *"an elevated risk of interruption"* (um risco elevado de interrupção).
 
 A requisição é **one-time** ou **persistent** — a persistente *"automatically resubmits"* (reenvia automaticamente) depois da interrupção.
 
@@ -83,7 +83,7 @@ Casos de uso citados: *"data analysis, batch jobs, background processing, and op
 
 ## 5. Dedicated Hosts × Dedicated Instances — o gatilho de licença
 
-A doc do Dedicated Host: *"bring your existing per-socket, per-core, or per-VM software licenses to reduce costs"*. O Dedicated Instance é só *"instances that run on single-tenant hardware"*, por hora.
+A doc do Dedicated Host: *"bring your existing per-socket, per-core, or per-VM software licenses to reduce costs"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM, para reduzir custos). O Dedicated Instance é só *"instances that run on single-tenant hardware"*, por hora.
 
 | Gatilho no enunciado | Resposta |
 |---|---|

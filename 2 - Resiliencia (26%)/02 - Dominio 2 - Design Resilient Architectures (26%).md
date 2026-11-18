@@ -85,7 +85,7 @@ atualizado: 2026-11-08
 > | **Warm standby** | Cópia **reduzida mas funcional**, sempre ligada | Minutos | Médio |
 > | **Multi-site active/active** | Todas as regiões servindo tráfego | Quase zero | Mais alto |
 >
-> Citações: pilot light *"minimizes the ongoing cost of disaster recovery"* mas *"cannot process requests without additional action taken first"*. Warm standby *"can handle traffic (at reduced capacity levels) immediately"*. Active/active *"is the most complex and costly approach... but it can reduce your recovery time to near zero"*.
+> Citações: pilot light *"minimizes the ongoing cost of disaster recovery"* mas *"cannot process requests without additional action taken first"* (não consegue processar requisições sem que uma ação adicional seja tomada antes). Warm standby *"can handle traffic (at reduced capacity levels) immediately"* (consegue atender tráfego imediatamente (em capacidade reduzida)). Active/active *"is the most complex and costly approach... but it can reduce your recovery time to near zero"*.
 
 > [!question]- Qual a diferença entre "highly available" e "fault tolerant" para a prova?
 > **HA**: o sistema **volta rápido** depois de uma falha (failover de Multi-AZ, substituição de instância pelo ASG). Existe uma janela de indisponibilidade.

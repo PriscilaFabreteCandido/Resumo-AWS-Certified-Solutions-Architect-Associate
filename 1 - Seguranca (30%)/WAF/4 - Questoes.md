@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Shield Standard
 > **D)** Aumentar o Auto Scaling
 >
-> **Por que B**: rate-based rule bloqueia ou conta requisições que *"exceed a specified number of requests in a minute or in five minutes"*.
+> **Por que B**: rate-based rule bloqueia ou conta requisições que *"exceed a specified number of requests in a minute or in five minutes"* (ultrapassem um número definido de requisições em um ou em cinco minutos).
 > **A errada**: SG trabalha em porta/protocolo/IP, não em taxa de requisição.
 > **D errada**: trata o sintoma e aumenta o custo; não bloqueia o abuso.
 

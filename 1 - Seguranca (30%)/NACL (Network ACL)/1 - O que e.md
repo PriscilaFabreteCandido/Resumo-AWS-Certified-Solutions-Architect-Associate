@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que é, em palavras simples
 
-A NACL é a "portaria da subnet". A doc oficial: *"allows or denies specific inbound or outbound traffic at the subnet level."*
+A NACL é a "portaria da subnet". A doc oficial: *"allows or denies specific inbound or outbound traffic at the subnet level."* (permite ou nega tráfego específico de entrada ou saída no nível da subnet)
 
 Ela existe porque o security group tem duas limitações: não consegue **negar** nada, e protege o recurso, não a rede. A NACL cobre as duas.
 

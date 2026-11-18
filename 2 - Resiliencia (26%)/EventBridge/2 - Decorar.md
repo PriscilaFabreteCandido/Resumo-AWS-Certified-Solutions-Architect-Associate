@@ -31,7 +31,7 @@ A regra casa o **padrão** e envia para os **targets**. Diferente do SNS, o filt
 | | **EventBridge Scheduler** | Rule com `schedule expression` |
 |---|---|---|
 | Expressões | **cron** e **rate**, e **one-time** | cron e rate |
-| Escala | *"billions of one-time or recurring API actions without time limitations"* | — |
+| Escala | *"billions of one-time or recurring API actions without time limitations"* (bilhões de ações de API, pontuais ou recorrentes, sem limitação de tempo) | — |
 | Extras | **Flexible time window**, limite de retry, retenção de invocações falhas | — |
 | Use para | Agendamento em escala, e **atraso > 15 min** (o que SQS delay não faz) | Cron simples |
 
@@ -39,7 +39,7 @@ A regra casa o **padrão** e envia para os **targets**. Diferente do SNS, o filt
 
 | | **Event bus** | **Pipes** |
 |---|---|---|
-| Topologia | **muitos → muitos** | **ponto a ponto** (*"a single source... to a single target"*) |
+| Topologia | **muitos → muitos** | **ponto a ponto** (*"a single source... to a single target"* (de uma única origem... para um único destino)) |
 | Enriquecimento | Não | **Sim** (Lambda, Step Functions, API) |
 | Filtro | Event pattern | Sim |
 | Padrão citado na doc | — | **DynamoDB Stream → pipe → event bus → vários targets** |

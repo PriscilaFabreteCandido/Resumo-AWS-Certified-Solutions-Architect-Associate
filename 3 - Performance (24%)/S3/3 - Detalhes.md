@@ -113,7 +113,7 @@ Para centenas de milhares de requisições por segundo com latência de **único
 
 ## 4. Criptografia
 
-Desde 5 de janeiro de 2023, *"all new object uploads to Amazon S3 are automatically encrypted at no additional cost and with no impact on performance"* com **SSE-S3**. Ou seja: **não existe objeto novo sem criptografia no S3**.
+Desde 5 de janeiro de 2023, *"all new object uploads to Amazon S3 are automatically encrypted at no additional cost and with no impact on performance"* (todo upload novo de objeto para o Amazon S3 é criptografado automaticamente, sem custo adicional e sem impacto no desempenho) com **SSE-S3**. Ou seja: **não existe objeto novo sem criptografia no S3**.
 
 Pontos que a prova explora:
 
@@ -121,7 +121,7 @@ Pontos que a prova explora:
 - **Cross-account com SSE-KMS exige chave customer managed.** *"If you want to grant cross-account access to your S3 objects, use a customer managed key."* (se você quer conceder acesso entre contas aos seus objetos do S3, use uma customer managed key) Se você não especificar a chave, o S3 usa a AWS managed key `aws/s3`, que não pode ser compartilhada.
 - **Replicação preserva o tipo de criptografia da origem**: *"the replicas use the same type of encryption as the source objects. The default encryption settings of the destination bucket are not used."*
 - **Bucket de log de acesso precisa ser SSE-S3**: *"the bucket must use Amazon S3 managed keys (SSE-S3)"*.
-- **S3 Bucket Keys**: a KMS gera uma chave no nível do bucket, usada por um período limitado dentro do S3, o que *"decrease[s] the number of transactions from Amazon S3 to AWS KMS to reduce the cost of SSE-KMS"*.
+- **S3 Bucket Keys**: a KMS gera uma chave no nível do bucket, usada por um período limitado dentro do S3, o que *"decrease[s] the number of transactions from Amazon S3 to AWS KMS to reduce the cost of SSE-KMS"* (reduz o número de transações do Amazon S3 para o AWS KMS, diminuindo o custo do SSE-KMS).
 
 ## 5. Versionamento, Object Lock e Block Public Access
 
@@ -129,7 +129,7 @@ Pontos que a prova explora:
 
 **Object Lock** implementa WORM e *"works only in buckets that have S3 Versioning enabled"*. Dois mecanismos independentes:
 
-- **Retention period** em modo **Compliance** — *"can't be overwritten or deleted by any user, including the root user in your AWS account"*. O período não encurta. *"The only way to delete an object under the compliance mode before its retention date expires is to delete the associated AWS account."* (a única forma de apagar um objeto em modo compliance antes do fim da retenção é encerrar a conta AWS associada)
+- **Retention period** em modo **Compliance** — *"can't be overwritten or deleted by any user, including the root user in your AWS account"* (não pode ser sobrescrito nem apagado por nenhum usuário, inclusive o usuário raiz da sua conta). O período não encurta. *"The only way to delete an object under the compliance mode before its retention date expires is to delete the associated AWS account."* (a única forma de apagar um objeto em modo compliance antes do fim da retenção é encerrar a conta AWS associada)
 - **Retention period** em modo **Governance** — quem tiver `s3:BypassGovernanceRetention` **e** enviar `x-amz-bypass-governance-retention:true` consegue apagar.
 - **Legal hold** — *"has no expiration date... remains in place until you explicitly remove it"*.
 
@@ -137,7 +137,7 @@ Pontos que a prova explora:
 
 ## 6. Replicação
 
-*"automatic, asynchronous copying of objects across Amazon S3 buckets"* — **CRR** (regiões diferentes) e **SRR** (mesma região).
+*"automatic, asynchronous copying of objects across Amazon S3 buckets"* (cópia automática e assíncrona de objetos entre buckets do Amazon S3) — **CRR** (regiões diferentes) e **SRR** (mesma região).
 
 | Fato | Detalhe |
 |---|---|
@@ -158,7 +158,7 @@ Pontos que a prova explora:
 | **Access Points** | Endpoint nomeado por aplicação, com policy e BPA próprios. Evita bucket policy gigante |
 | **Bucket owner enforced** (Object Ownership) | Desativa ACLs. **Pré-requisito do OAC do CloudFront** |
 | **Requester Pays** | *"the requester pays the cost of the request and the data download"*; *"The bucket owner always pays the cost of storing data"* (o dono do bucket sempre paga o custo de armazenar os dados). ⚠️ **Proíbe acesso anônimo** |
-| **Storage Class Analysis** | *"analyze storage access patterns to help you decide when to transition"*. ⚠️ Só recomenda **Standard → Standard-IA**, e precisa de **30 dias ou mais** |
+| **Storage Class Analysis** | *"analyze storage access patterns to help you decide when to transition"* (analisar padrões de acesso ao armazenamento para ajudar você a decidir quando transicionar). ⚠️ Só recomenda **Standard → Standard-IA**, e precisa de **30 dias ou mais** |
 | **Storage Lens** | Painel de uso e atividade, com recomendações, em toda a organização |
 | **Site estático** | Website endpoint. ⚠️ Com CloudFront, vira *custom origin* e **não** aceita OAC/OAI |
 

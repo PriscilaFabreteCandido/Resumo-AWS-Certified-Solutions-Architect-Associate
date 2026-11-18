@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Amazon CloudFront — O que é
 
 > [!info] Em uma frase
-> CDN que *"delivers your content through a worldwide network of data centers called edge locations"* — **cacheia** na borda, reduz latência e tira carga da origem.
+> CDN que *"delivers your content through a worldwide network of data centers called edge locations"* (entrega seu conteúdo por uma rede mundial de data centers chamados edge locations) — **cacheia** na borda, reduz latência e tira carga da origem.
 
 ## O que ele faz, além de cachear
 
@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 
 ## Origens suportadas
 
-> *"an Amazon S3 bucket, a MediaPackage channel, or an HTTP server"* — e o HTTP server inclui **ALB**, **API Gateway**, **EC2** e servidores próprios.
+> *"an Amazon S3 bucket, a MediaPackage channel, or an HTTP server"* (um bucket do Amazon S3, um canal do MediaPackage ou um servidor HTTP) — e o HTTP server inclui **ALB**, **API Gateway**, **EC2** e servidores próprios.
 
 ## O fato de custo
 

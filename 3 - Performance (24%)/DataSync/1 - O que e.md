@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # AWS DataSync — O que é
 
 > [!info] Em uma frase
-> *"a secure, reliable, high-speed file transfer service that helps you quickly and easily transfer your file or object data to, from, and between AWS storage services."*
+> *"a secure, reliable, high-speed file transfer service that helps you quickly and easily transfer your file or object data to, from, and between AWS storage services."* (um serviço de transferência de arquivos seguro, confiável e de alta velocidade, que ajuda a mover dados de arquivo ou objeto para, a partir de, e entre os serviços de armazenamento da AWS)
 
 ## O verbo: **mover**
 

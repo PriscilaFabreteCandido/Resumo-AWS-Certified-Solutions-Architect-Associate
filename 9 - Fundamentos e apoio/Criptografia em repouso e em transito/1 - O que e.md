@@ -18,7 +18,7 @@ atualizado: 2026-11-08
 | Tecnologia | **AES-256** (padrão) | **TLS 1.2+** |
 | Serviço central | **AWS KMS** (e **CloudHSM** quando exigem FIPS 140-3 nível 3 / chave só sua) | **ACM** (certificados) |
 | Onde se configura | No serviço de armazenamento (S3, EBS, RDS, DynamoDB…) | No endpoint (ALB/NLB, CloudFront, API Gateway) |
-| Palavra no enunciado | *"encrypted at rest"* (criptografado em repouso), *"compliance"*, *"rotate keys"* | *"in transit"*, *"HTTPS"*, *"TLS"*, *"end-to-end encryption"* |
+| Palavra no enunciado | *"encrypted at rest"* (criptografado em repouso), *"compliance"*, *"rotate keys"* | *"in transit"*, *"HTTPS"*, *"TLS"*, *"end-to-end encryption"* (criptografia ponta a ponta) |
 
 ## O guia oficial cita
 

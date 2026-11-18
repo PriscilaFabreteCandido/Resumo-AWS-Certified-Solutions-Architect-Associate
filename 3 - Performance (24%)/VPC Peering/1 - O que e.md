@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # VPC Peering — O que é
 
 > [!info] Em uma frase
-> *"a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses"* — simples, barato e **não transitivo**.
+> *"a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses"* (uma conexão de rede entre duas VPCs que permite rotear tráfego entre elas usando endereços IPv4 ou IPv6 privados) — simples, barato e **não transitivo**.
 
 ## Como funciona
 

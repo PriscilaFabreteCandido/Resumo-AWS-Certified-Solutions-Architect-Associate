@@ -28,7 +28,7 @@ Combinado com cópia **cross-account**, forma a defesa contra ransomware que a p
 
 ## 3. Cross-Region e cross-account
 
-**Cross-Region**: *"copy backups to multiple different AWS Regions on demand or automatically as part of a scheduled backup plan."* É o mecanismo de **backup and restore** como estratégia de DR entre regiões — e a forma de atender requisito de "cópia fora da região primária".
+**Cross-Region**: *"copy backups to multiple different AWS Regions on demand or automatically as part of a scheduled backup plan."* (copiar backups para várias Regiões diferentes, sob demanda ou automaticamente, como parte de um plano de backup agendado) É o mecanismo de **backup and restore** como estratégia de DR entre regiões — e a forma de atender requisito de "cópia fora da região primária".
 
 **Cross-account**: *"copy backups to multiple different AWS accounts inside your AWS Organizations management structure."* Exige AWS Organizations. É o que tira o backup do raio de explosão da conta de produção.
 

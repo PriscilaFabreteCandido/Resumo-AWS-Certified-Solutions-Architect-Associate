@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Roteamento por conteúdo** | A regra olha dentro do JSON do evento: `{"detail":{"state":["FAILED"]}}` |
 | **Eventos dos serviços AWS** | "quando um snapshot de EBS terminar", "quando uma instância mudar de estado" — sem polling |
-| **Agendamento** | **EventBridge Scheduler**: cron e rate, *"billions of one-time or recurring API actions"* |
+| **Agendamento** | **EventBridge Scheduler**: cron e rate, *"billions of one-time or recurring API actions"* (bilhões de ações de API, pontuais ou recorrentes) |
 
 ## Os componentes
 
@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 | **Rule** | Padrão de evento (*event pattern*) + **targets** |
 | **Target** | Lambda, SQS, SNS, Step Functions, ECS task, API destination (HTTP), outro bus… |
 | **EventBridge Pipes** | *"intended for point-to-point integrations; each pipe receives events from a single source... to a single target"*, com filtro e **enriquecimento** |
-| **EventBridge Scheduler** | *"create schedules using cron and rate expressions for recurring patterns, or configure one-time invocations"* |
+| **EventBridge Scheduler** | *"create schedules using cron and rate expressions for recurring patterns, or configure one-time invocations"* (criar agendamentos com expressões cron e rate para padrões recorrentes, ou configurar invocações únicas) |
 | **Schema registry** | Descobre e versiona o schema dos eventos |
 
 ## SNS × EventBridge

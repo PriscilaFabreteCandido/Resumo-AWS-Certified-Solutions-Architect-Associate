@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 
 Tradução para a prova: o Redshift **consegue** fazer INSERT e DELETE, mas é **otimizado para analítico**. Se o enunciado descreve transação, é **RDS/Aurora/DynamoDB**.
 
-É baseado em **PostgreSQL** (*"based on open standard PostgreSQL"*) — o que explica a compatibilidade de driver e sintaxe.
+É baseado em **PostgreSQL** (*"based on open standard PostgreSQL"* (baseado no PostgreSQL, de padrão aberto)) — o que explica a compatibilidade de driver e sintaxe.
 
 ## A arquitetura
 

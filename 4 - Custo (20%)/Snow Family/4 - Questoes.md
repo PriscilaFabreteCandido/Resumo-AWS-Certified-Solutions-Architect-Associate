@@ -48,7 +48,7 @@ atualizado: 2026-11-08
 > **C)** 1 a 10, para capacidade
 > **D)** Não existe cluster
 >
-> **Por que B**: *"cluster Snowball Edge devices for local storage and compute jobs to achieve data durability across 3 to 16 devices"*.
+> **Por que B**: *"cluster Snowball Edge devices for local storage and compute jobs to achieve data durability across 3 to 16 devices"* (agrupar dispositivos Snowball Edge em cluster, para armazenamento e processamento local, obtendo durabilidade de dados entre 3 e 16 dispositivos).
 
 > [!question]- Q6. Um cliente novo precisa de transferência física segura de grande volume. O que a AWS recomenda?
 > **A)** Snowball Edge

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 Viewer → POP (edge location) → REGIONAL EDGE CACHE → Origem
 ```
 
-Os **POPs** são a primeira camada. Os **regional edge caches** ficam entre eles e a origem, com cache maior — *"bring more of your content closer to your viewers, even when the content is not popular enough to stay at a POP"*.
+Os **POPs** são a primeira camada. Os **regional edge caches** ficam entre eles e a origem, com cache maior — *"bring more of your content closer to your viewers, even when the content is not popular enough to stay at a POP"* (trazer mais conteúdo para perto dos seus visitantes, mesmo quando ele não é popular o bastante para permanecer num POP).
 
 O caminho é **pulado** em três casos:
 - Métodos **PUT, POST, PATCH, OPTIONS, DELETE** — *"go directly to the origin from the POPs"*
@@ -59,7 +59,7 @@ A configuração completa:
 
 E a exceção que também cai: *"If you want to require HTTPS between CloudFront and your origin, and you're using a load balancer in Elastic Load Balancing as your origin, you can request or import the certificate in any AWS Region."* (se você quer exigir HTTPS entre o CloudFront e a origem, e está usando um load balancer do Elastic Load Balancing como origem, pode solicitar ou importar o certificado em qualquer Região)
 
-Outros detalhes: formato **X.509 PEM**; chave privada de terceiro *"cannot be encrypted with a password"*; o SAN precisa casar o alternate domain name (exato ou wildcard no mesmo nível); certificado incompatível na origem devolve **502**; renove *"at least 24 hours before the `NotAfter` value"* (pelo menos 24 horas antes do valor `NotAfter`).
+Outros detalhes: formato **X.509 PEM**; chave privada de terceiro *"cannot be encrypted with a password"* (não pode ser criptografado com senha); o SAN precisa casar o alternate domain name (exato ou wildcard no mesmo nível); certificado incompatível na origem devolve **502**; renove *"at least 24 hours before the `NotAfter` value"* (pelo menos 24 horas antes do valor `NotAfter`).
 
 ## 5. Origin failover
 

@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Partition
 > **D)** Multi-AZ sem placement group
 >
-> **Por que B**: *"each placed on distinct hardware"* — é exatamente o caso de **poucas instâncias críticas**.
+> **Por que B**: *"each placed on distinct hardware"* (cada uma num hardware distinto) — é exatamente o caso de **poucas instâncias críticas**.
 > **D errada**: multi-AZ protege de falha de AZ, mas duas instâncias na mesma AZ ainda podem compartilhar hardware.
 
 > [!question]- Q4. Um ASG com spread placement group em 2 AZs não escala além de 14 instâncias.

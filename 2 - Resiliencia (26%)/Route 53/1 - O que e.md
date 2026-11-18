@@ -26,10 +26,10 @@ atualizado: 2026-11-08
 
 | Política | Uso |
 |---|---|
-| **Simple** | *"a single resource that performs a given function for your domain"*. ⚠️ **Não faz health check** |
+| **Simple** | *"a single resource that performs a given function for your domain"* (um único recurso que executa determinada função para o seu domínio). ⚠️ **Não faz health check** |
 | **Failover** | *"active-passive failover"* |
 | **Geolocation** | *"route traffic based on the location of your users"* |
-| **Geoproximity** | *"based on the location of your resources"*, com **bias** |
+| **Geoproximity** | *"based on the location of your resources"* (com base na localização dos seus recursos), com **bias** |
 | **Latency** | *"the Region that provides the best latency"* (a Região que oferece a melhor latência) |
 | **IP-based** | Por **faixa de IP** de origem |
 | **Multivalue answer** | *"up to eight healthy records selected at random"* (até oito registros saudáveis, escolhidos aleatoriamente) |

@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que é, em palavras simples
 
-É o cofre físico dedicado. A doc: *"AWS CloudHSM combines the benefits of the AWS cloud with the security of hardware security modules (HSMs)"* (o AWS CloudHSM combina os benefícios da nuvem AWS com a segurança dos módulos de segurança de hardware (HSMs)), dando *"complete control over high availability HSMs that are in the AWS Cloud"*.
+É o cofre físico dedicado. A doc: *"AWS CloudHSM combines the benefits of the AWS cloud with the security of hardware security modules (HSMs)"* (o AWS CloudHSM combina os benefícios da nuvem AWS com a segurança dos módulos de segurança de hardware (HSMs)), dando *"complete control over high availability HSMs that are in the AWS Cloud"* (controle completo sobre HSMs de alta disponibilidade que ficam na nuvem AWS).
 
 A diferença essencial em relação ao KMS está numa frase: *"Because your data plane is end-to-end (E2E) encrypted and not visible to AWS, you control your own user management (outside of IAM roles). The trade off for this control is you have more responsibility than if you used a managed AWS service."* (como seu plano de dados é criptografado ponta a ponta e não é visível para a AWS, você controla a própria gestão de usuários (fora das roles do IAM); em troca desse controle, você tem mais responsabilidade do que teria com um serviço gerenciado da AWS)
 

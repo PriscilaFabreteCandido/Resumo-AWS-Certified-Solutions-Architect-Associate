@@ -11,7 +11,7 @@ atualizado: 2026-11-08
 | Modo | Quando usar (critério oficial) |
 |---|---|
 | **Elastic** (recomendado) | *"average-to-peak ratio of 5% or less"* (razão entre média e pico de 5% ou menos) — carga irregular, com picos |
-| **Provisioned** | *"average-to-peak ratio of 5% or more"* — carga constante e previsível |
+| **Provisioned** | *"average-to-peak ratio of 5% or more"* (razão entre média e pico de 5% ou mais) — carga constante e previsível |
 | **Bursting** | Throughput *"that scales with the amount of storage"* |
 
 ## Modos de performance

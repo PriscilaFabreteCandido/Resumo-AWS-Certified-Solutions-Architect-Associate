@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Multi-AZ DB instance — só HA
 
-A AWS *"automatically provisions and maintains a synchronous standby replica in a different Availability Zone"*. O standby:
+A AWS *"automatically provisions and maintains a synchronous standby replica in a different Availability Zone"* (provisiona e mantém automaticamente uma réplica standby síncrona em outra Zona de Disponibilidade). O standby:
 
 - Recebe as escritas **sincronamente** (o commit espera o standby, o que **aumenta a latência de escrita**)
 - **Não aceita leitura**
@@ -20,7 +20,7 @@ Tecnologia de failover por engine: *"Multi-AZ deployments for MariaDB, MySQL, Or
 
 ## 2. Multi-AZ DB cluster — HA + leitura
 
-*"a semisynchronous, high availability deployment mode of Amazon RDS with two readable replica DB instances"* — 1 writer + 2 readers em **3 AZs**.
+*"a semisynchronous, high availability deployment mode of Amazon RDS with two readable replica DB instances"* (um modo de implantação semissíncrono e de alta disponibilidade do Amazon RDS, com duas réplicas legíveis) — 1 writer + 2 readers em **3 AZs**.
 
 Três vantagens sobre o Multi-AZ instance:
 

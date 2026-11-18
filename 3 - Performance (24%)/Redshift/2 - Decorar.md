@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 
 ## Concurrency scaling
 
-> *"automatically adds additional cluster capacity to process an increase in both read and write queries"*
+> *"automatically adds additional cluster capacity to process an increase in both read and write queries"* (adiciona automaticamente capacidade extra ao cluster para processar um aumento de consultas de leitura e de escrita)
 
 | Fato | Detalhe |
 |---|---|

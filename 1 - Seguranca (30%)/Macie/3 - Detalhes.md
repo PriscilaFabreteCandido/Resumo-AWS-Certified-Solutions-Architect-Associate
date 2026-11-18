@@ -32,7 +32,7 @@ EventBridge rule
 Lambda  →  aplica Block Public Access / move o objeto / notifica via SNS
 ```
 
-Isso é a *"automated protection against those risks"* da definição oficial.
+Isso é a *"automated protection against those risks"* (proteção automatizada contra esses riscos) da definição oficial.
 
 ## 4. Multi-conta
 

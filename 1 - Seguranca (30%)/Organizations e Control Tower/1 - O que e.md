@@ -29,7 +29,7 @@ A **conta** é o limite de isolamento mais forte da AWS. Separar não é sobre b
 | **SCP (service control policy)** | **Teto** de permissão. **Não concede nada** |
 | **RCP (resource control policy)** | Teto no lado do **recurso** |
 | **Consolidated billing** | *"Organizations provides you with a single consolidated bill"* (o Organizations entrega uma fatura única consolidada) |
-| **Control Tower** | *"apply pre-packaged governance rules for security, operations, and compliance for your AWS workloads"* |
+| **Control Tower** | *"apply pre-packaged governance rules for security, operations, and compliance for your AWS workloads"* (aplicar regras de governança prontas, de segurança, operação e conformidade, às suas cargas de trabalho) |
 
 ## A frase que resolve metade das questões de SCP
 

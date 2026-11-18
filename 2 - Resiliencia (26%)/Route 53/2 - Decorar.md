@@ -28,7 +28,7 @@ atualizado: 2026-11-08
 | CNAME no ápice | *"You can't create a CNAME record that has the same name as the hosted zone (the zone apex)."* (não é possível criar um registro CNAME com o mesmo nome da hosted zone (o zone apex)) |
 | Custo | *"Route 53 doesn't charge for alias queries to AWS resources."* (o Route 53 não cobra por consultas de alias a recursos da AWS) / *"Route 53 charges for CNAME queries."* (o Route 53 cobra por consultas a registros CNAME) |
 | TTL do alias | *"If an alias record points to an AWS resource, you can't set the time to live (TTL); Route 53 uses the default TTL for the resource."* (se um registro de alias aponta para um recurso da AWS, você não define o TTL: o Route 53 usa o TTL padrão daquele recurso) |
-| Simple sem health check | *"although you can specify multiple IP addresses, they are not health checked"* |
+| Simple sem health check | *"although you can specify multiple IP addresses, they are not health checked"* (embora você possa indicar vários endereços IP, eles não passam por verificação de saúde) |
 
 ## Health checks — os três tipos
 

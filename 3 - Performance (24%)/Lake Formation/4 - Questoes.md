@@ -57,7 +57,7 @@ atualizado: 2026-11-08
 > **C)** AWS Config
 > **D)** Glue crawler
 >
-> **Por que B**: Macie *"discovers sensitive data by using machine learning and pattern matching"* nos buckets S3.
+> **Por que B**: Macie *"discovers sensitive data by using machine learning and pattern matching"* (descobre dados sensíveis usando machine learning e correspondência de padrões) nos buckets S3.
 > **A errada**: Lake Formation **controla acesso**; não descobre conteúdo.
 > **D errada**: o crawler infere **schema**, não classifica conteúdo.
 
@@ -65,7 +65,7 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| Lake Formation substitui o IAM | *"augments the IAM permissions model"* |
+| Lake Formation substitui o IAM | *"augments the IAM permissions model"* (complementa o modelo de permissões do IAM) |
 | Lake Formation substitui o Glue Data Catalog | É a **camada de autorização** sobre ele |
 | Bucket policy consegue restringir coluna | **Não.** Só objeto/prefixo |
 | OpenSearch respeita Lake Formation | **Não está** na lista de engines |

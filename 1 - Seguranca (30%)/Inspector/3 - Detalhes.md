@@ -24,7 +24,7 @@ O último par é o padrão de **immutable infrastructure** citado no guia (*Task
 
 ## 2. Descoberta automática e varredura contínua
 
-Diferente de um scanner tradicional, o Inspector *"automatically discovers workloads and continually scans them"*. Em EC2 isso depende do **SSM Agent** (a instância precisa ser um managed node do Systems Manager) — o que é um pré-requisito que a prova às vezes esconde na alternativa.
+Diferente de um scanner tradicional, o Inspector *"automatically discovers workloads and continually scans them"* (descobre cargas de trabalho automaticamente e as examina continuamente). Em EC2 isso depende do **SSM Agent** (a instância precisa ser um managed node do Systems Manager) — o que é um pré-requisito que a prova às vezes esconde na alternativa.
 
 Para **ECR**, a varredura acontece no push da imagem e continuamente depois, conforme novas CVEs são publicadas. Isso importa: uma imagem que estava limpa ontem pode ter achado hoje, sem você fazer nada.
 

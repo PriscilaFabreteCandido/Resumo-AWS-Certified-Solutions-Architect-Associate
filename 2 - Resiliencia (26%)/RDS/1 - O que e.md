@@ -27,7 +27,7 @@ As citações que definem:
 
 > **Multi-AZ instance**: *"has one standby DB instance that provides failover support, but doesn't serve read traffic."*
 
-> **Multi-AZ cluster**: *"a writer DB instance and two reader DB instances in three separate Availability Zones in the same AWS Region"*, com failover *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
+> **Multi-AZ cluster**: *"a writer DB instance and two reader DB instances in three separate Availability Zones in the same AWS Region"* (uma instância de escrita e duas de leitura, em três Zonas de Disponibilidade distintas da mesma Região), com failover *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
 
 > **Read replica**: *"Amazon RDS copies them asynchronously to the read replica."* (o Amazon RDS os copia de forma assíncrona para a réplica de leitura)
 

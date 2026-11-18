@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # AWS Transit Gateway — O que é
 
 > [!info] Em uma frase
-> *"a network transit hub used to interconnect virtual private clouds (VPCs) and on-premises networks"* — com **roteamento transitivo**, que o VPC peering não tem.
+> *"a network transit hub used to interconnect virtual private clouds (VPCs) and on-premises networks"* (um hub de trânsito de rede usado para interligar VPCs e redes on-premises) — com **roteamento transitivo**, que o VPC peering não tem.
 
 ## O problema que resolve
 
@@ -34,7 +34,7 @@ O Transit Gateway é um **hub**: cada VPC tem **um** attachment, e o roteamento 
 |---|---|
 | **Attachments** | *"up to 5,000 attachments"* (whitepaper) |
 | **MTU** | **8.500 bytes** entre VPCs, DX, Connect e peering; **1.500** sobre VPN |
-| Cobrança | *"charged hourly for each attachment... and for the amount of traffic processed"* |
+| Cobrança | *"charged hourly for each attachment... and for the amount of traffic processed"* (cobrado por hora por cada attachment... e pelo volume de tráfego processado) |
 
 ## Links
 

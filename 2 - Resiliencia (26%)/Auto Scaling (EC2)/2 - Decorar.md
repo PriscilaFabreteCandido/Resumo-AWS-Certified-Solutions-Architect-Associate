@@ -50,7 +50,7 @@ Políticas predefinidas: `Default`, `AllocationStrategy`, `OldestLaunchTemplate`
 | Efeito | Bloqueia novas ações de escala | Ignora a instância nas métricas até estar pronta |
 | Padrão | **300 s** | Default instance warmup |
 
-Target tracking e step *"can initiate a scale-out activity immediately without waiting for the cooldown period to end"*.
+Target tracking e step *"can initiate a scale-out activity immediately without waiting for the cooldown period to end"* (consegue iniciar uma expansão imediatamente, sem esperar o fim do período de cooldown).
 
 ## Métrica de escala — não é sempre CPU
 
