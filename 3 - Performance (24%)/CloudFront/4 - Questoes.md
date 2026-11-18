@@ -69,7 +69,7 @@ atualizado: 2026-11-08
 > **C)** Usar OAI
 > **D)** Habilitar Block Public Access e OAC
 >
-> **Por que B**: *"you must set it up with CloudFront as a custom origin. That means you can't use OAC (or OAI)"*. Para origem privada, use o **REST endpoint**.
+> **Por que B**: *"you must set it up with CloudFront as a custom origin. That means you can't use OAC (or OAI)"* (você precisa configurá-lo no CloudFront como origem customizada, o que significa que não pode usar OAC (nem OAI)). Para origem privada, use o **REST endpoint**.
 
 ## ⚠️ Armadilhas
 

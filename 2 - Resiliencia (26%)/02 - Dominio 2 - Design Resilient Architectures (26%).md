@@ -90,7 +90,7 @@ atualizado: 2026-11-08
 > [!question]- Qual a diferença entre "highly available" e "fault tolerant" para a prova?
 > **HA**: o sistema **volta rápido** depois de uma falha (failover de Multi-AZ, substituição de instância pelo ASG). Existe uma janela de indisponibilidade.
 > **Fault tolerant**: o sistema **continua servindo** durante a falha, sem janela. Exige redundância **ativa** (N+1 em cada AZ, ativo-ativo entre regiões).
-> Quando o enunciado diz *"no interruption"* ou *"zero downtime"* (indisponibilidade zero), HA não basta.
+> Quando o enunciado diz *"no interruption"* (sem interrupção) ou *"zero downtime"* (indisponibilidade zero), HA não basta.
 
 > [!question]- Serviços regionais × zonais: quais são zonais?
 > **Zonais** (vivem numa AZ): subnet, instância EC2, volume EBS, NAT gateway zonal, RDS DB instance (individual), nó de ElastiCache, FSx Single-AZ, EFS One Zone.

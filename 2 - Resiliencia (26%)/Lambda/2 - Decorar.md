@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 
 | | **Reserved** | **Provisioned** |
 |---|---|---|
-| O que faz | *"sets both the maximum and minimum number of concurrent instances"* (define, ao mesmo tempo, o número máximo e o mínimo de instâncias concorrentes) | *"the number of pre-initialized execution environments"* |
+| O que faz | *"sets both the maximum and minimum number of concurrent instances"* (define, ao mesmo tempo, o número máximo e o mínimo de instâncias concorrentes) | *"the number of pre-initialized execution environments"* (a quantidade de ambientes de execução pré-inicializados) |
 | Custo | *"incurs no additional charges"* (não gera cobrança adicional) | *"incurs additional charges"* (gera cobranças adicionais) |
 | Resolve | **Cota garantida** e **estrangulamento** (valor **0** desliga a função) | **Cold start** — *"double-digit millisecond response times"* (tempos de resposta de dezenas de milissegundos) |
 | Limite | Até *"Unreserved account concurrency value minus 100"* (o valor de concorrência não reservada da conta, menos 100) | — |

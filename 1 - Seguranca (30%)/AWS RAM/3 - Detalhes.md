@@ -40,7 +40,7 @@ Numa arquitetura híbrida, o time de rede cria **outbound resolver rules** (enca
 
 Você cria um **resource share** com: os **recursos**, os **principals** (organização, OUs, contas, roles/users) e as **RAM managed permissions** (o que o participante pode fazer com o recurso).
 
-Dentro da organização: *"you can share resources with all the other accounts in the organization or only those accounts contained by one or more specified organizational units (OUs)"* — e isso requer que o sharing com Organizations esteja habilitado. Fora da organização, há convite.
+Dentro da organização: *"you can share resources with all the other accounts in the organization or only those accounts contained by one or more specified organizational units (OUs)"* (você pode compartilhar recursos com todas as outras contas da organização, ou apenas com as contas de uma ou mais unidades organizacionais (OUs) especificadas) — e isso requer que o sharing com Organizations esteja habilitado. Fora da organização, há convite.
 
 ## 5. O que o RAM não faz
 

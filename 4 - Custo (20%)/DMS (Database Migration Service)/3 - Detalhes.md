@@ -31,7 +31,7 @@ A janela de indisponibilidade cai de horas para **minutos**.
 
 Para isso existem duas ferramentas:
 - **DMS Schema Conversion** (no console): *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino)
-- **AWS SCT** (instalado localmente): *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC to convert your source schemas"*
+- **AWS SCT** (instalado localmente): *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC to convert your source schemas"* (você pode baixar o AWS Schema Conversion Tool (AWS SCT) para o seu computador para converter os schemas de origem)
 
 > [!important] A divisão que a prova cobra
 > **DMS = dados. Schema Conversion/SCT = schema.**

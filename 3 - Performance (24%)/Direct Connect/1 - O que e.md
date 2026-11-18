@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que ele entrega
 
-> *"you can create virtual interfaces directly to public AWS services... or to Amazon VPC, bypassing internet service providers in your network path."*
+> *"you can create virtual interfaces directly to public AWS services... or to Amazon VPC, bypassing internet service providers in your network path."* (você pode criar interfaces virtuais diretamente para serviços públicos da AWS... ou para a Amazon VPC, contornando os provedores de internet no seu caminho de rede)
 
 | Vantagem (whitepaper) | Detalhe |
 |---|---|

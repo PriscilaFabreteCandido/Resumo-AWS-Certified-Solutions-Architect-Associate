@@ -30,7 +30,7 @@ Duas consequências de prova:
 
 | | **VGW** | **Transit Gateway** |
 |---|---|---|
-| VPCs alcançadas | *"a single VPC"* | **Muitas** |
+| VPCs alcançadas | *"a single VPC"* (uma única VPC) | **Muitas** |
 | Large Bandwidth Tunnel | Não | **Sim** |
 | IPv6 | *"not supported for VPN connections on a virtual private gateway"* (não é suportado em conexões VPN sobre um virtual private gateway) | **Sim** (inclusive IP externo IPv6) |
 | ECMP com várias VPNs | — | **Sim** |
@@ -42,7 +42,7 @@ Regra: **uma VPC** → VGW basta. **Várias VPCs**, ou banda acima de 1,25 Gbps 
 
 **Estático**: você declara os prefixos de cada lado. Simples, mas o failover entre túneis não é automático nem rápido.
 
-**BGP (dinâmico)**: as rotas são anunciadas e o failover é automático. É o recomendado — e a doc avisa de um detalhe: *"when you use BGP, both the IPsec and the BGP sessions must be terminated on the same user gateway device."*
+**BGP (dinâmico)**: as rotas são anunciadas e o failover é automático. É o recomendado — e a doc avisa de um detalhe: *"when you use BGP, both the IPsec and the BGP sessions must be terminated on the same user gateway device."* (quando você usa BGP, as sessões IPsec e BGP precisam terminar no mesmo dispositivo de gateway do cliente)
 
 Com BGP você também controla preferência de caminho, o que é exatamente o que faz o padrão **DX primário + VPN backup** funcionar: você anuncia o prefixo com AS_PATH mais longo pela VPN, e ela só é usada se o DX cair.
 

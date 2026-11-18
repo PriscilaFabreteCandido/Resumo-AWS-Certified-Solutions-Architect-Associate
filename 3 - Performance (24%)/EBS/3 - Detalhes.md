@@ -23,7 +23,7 @@ Só quando o gp3 não basta:
 | > 80.000 IOPS ou > 2.000 MiB/s | **io2 Block Express** (256.000 IOPS, 4.000 MiB/s) |
 | Durabilidade de **99,999%** | **io2 Block Express** (0,001% de falha anual, contra 0,1–0,2% dos outros) |
 | **Multi-Attach** | **io1** ou **io2** |
-| Latência sub-milissegundo garantida | io2 Block Express: *"under 500 microseconds for 16KiB I/O"* |
+| Latência sub-milissegundo garantida | io2 Block Express: *"under 500 microseconds for 16KiB I/O"* (abaixo de 500 microssegundos para I/O de 16 KiB) |
 
 ⚠️ E a armadilha do tipo de instância: *"Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS."* (outros tipos de instância podem ser anexados a volumes provisionados com até 64.000 IOPS, mas alcançam no máximo 32.000 IOPS) Provisionar 100.000 IOPS numa instância antiga é pagar por algo que não se entrega.
 

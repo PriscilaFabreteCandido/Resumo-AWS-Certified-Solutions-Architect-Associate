@@ -65,7 +65,7 @@ A cascata também é restrita: *"Objects that are stored in the S3 Glacier Flexi
 | Objetos > 5 TB | até **300 MB/s** |
 | Exemplo oficial | *"a 50-terabyte S3 Glacier Flexible Retrieval object could take up to 48 hours"* (um objeto de 50 terabytes no S3 Glacier Flexible Retrieval pode levar até 48 horas) |
 
-Para restaurar **muitos** objetos de uma vez, use **S3 Batch Operations** com uma operação de restore — e note que o Standard com Batch Operations aparece na tabela como *"Minutes–5 hours"*.
+Para restaurar **muitos** objetos de uma vez, use **S3 Batch Operations** com uma operação de restore — e note que o Standard com Batch Operations aparece na tabela como *"Minutes–5 hours"* (de minutos a 5 horas).
 
 ## 7. Conformidade
 

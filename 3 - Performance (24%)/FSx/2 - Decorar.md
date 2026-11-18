@@ -34,7 +34,7 @@ atualizado: 2026-11-08
 | Serviço | Features citadas |
 |---|---|
 | **FSx for NetApp ONTAP** | Snapshots, **cloning**, replicação (**SnapMirror**), **tiering**, **SnapLock WORM**. Multi-AZ e Single-AZ |
-| **FSx for OpenZFS** | Três deployments: **Multi-AZ (HA)** e **Single-AZ (HA)** com failover *"typically completes within 60 seconds"*; **Single-AZ (non-HA)** com recuperação *"typically completes within 30 minutes"* |
+| **FSx for OpenZFS** | Três deployments: **Multi-AZ (HA)** e **Single-AZ (HA)** com failover *"typically completes within 60 seconds"* (normalmente se completa em até 60 segundos); **Single-AZ (non-HA)** com recuperação *"typically completes within 30 minutes"* (normalmente se completa em até 30 minutos) |
 
 ## EFS × FSx — quando cada um
 

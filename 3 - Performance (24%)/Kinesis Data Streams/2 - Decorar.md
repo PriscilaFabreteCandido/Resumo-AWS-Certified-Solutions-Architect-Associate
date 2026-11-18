@@ -10,11 +10,11 @@ atualizado: 2026-11-08
 
 | Operação | Limite |
 |---|---|
-| **Escrita** | *"up to 1 MB/sec or 1,000 records/sec"* |
-| **Leitura** | *"up to 2 MB/sec or 2,000 records/sec"* |
-| `GetRecords` | *"up to five read transactions per second"*; máx. 10.000 registros e 10 MB por chamada |
+| **Escrita** | *"up to 1 MB/sec or 1,000 records/sec"* (até 1 MB/s ou 1.000 registros/s) |
+| **Leitura** | *"up to 2 MB/sec or 2,000 records/sec"* (até 2 MB/s ou 2.000 registros/s) |
+| `GetRecords` | *"up to five read transactions per second"* (até cinco transações de leitura por segundo); máx. 10.000 registros e 10 MB por chamada |
 | `PutRecords` | até **500** registros, **10 MiB** por requisição |
-| **Registro máximo** | **1 MiB** (a doc também cita *"up to 10 MiB"* como limite de requisição) |
+| **Registro máximo** | **1 MiB** (a doc também cita *"up to 10 MiB"* (até 10 MiB) como limite de requisição) |
 
 ## Retenção
 
@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 
 | | **Compartilhado** | **Enhanced fan-out** |
 |---|---|---|
-| Throughput | *"Fixed at a total of 2 MB/sec per shard"* (fixo num total de 2 MB/s por shard) **dividido** entre todos | *"up to 2 MB of data per second per shard"* **por consumidor** |
+| Throughput | *"Fixed at a total of 2 MB/sec per shard"* (fixo num total de 2 MB/s por shard) **dividido** entre todos | *"up to 2 MB of data per second per shard"* (até 2 MB de dados por segundo por shard) **por consumidor** |
 | Latência (1 consumidor) | *"An average of around 200 ms"* (uma média de cerca de 200 ms) | *"Typically an average of 70 ms"* (normalmente uma média de 70 ms) |
 | Latência (5 consumidores) | *"around 1000 ms"* (cerca de 1000 ms) | *"70 ms whether you have one consumer or five"* (70 ms, tanto com um consumidor quanto com cinco) |
 | Entrega | Pull (`GetRecords`) | **Push** via HTTP/2 (`SubscribeToShard`) |

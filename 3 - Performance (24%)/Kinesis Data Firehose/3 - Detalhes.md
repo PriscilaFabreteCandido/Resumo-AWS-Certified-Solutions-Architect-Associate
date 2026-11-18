@@ -12,7 +12,7 @@ O Firehose acumula registros até atingir **tamanho** ou **tempo** — *"The fir
 
 Para S3: **1-128 MB** (padrão **5 MB**) e **0-900 s** (padrão **300 s**). Ou seja, com a configuração padrão, o dado chega no S3 em **até 5 minutos**.
 
-Isso é a diferença essencial com o **Kinesis Data Streams** (put-to-get *"typically less than 1 second"*): o Firehose é **near-real-time** por desenho.
+Isso é a diferença essencial com o **Kinesis Data Streams** (put-to-get *"typically less than 1 second"* (normalmente menos de 1 segundo)): o Firehose é **near-real-time** por desenho.
 
 Para baixar a latência, existe o **zero buffering**: *"Firehose will not buffer data and will deliver data within a few seconds"* (o Firehose não faz buffer dos dados e os entrega em poucos segundos). Mas há duas ressalvas documentadas:
 - *"only available for the application destinations and is not available for Amazon S3 backup destination"* (disponível apenas para os destinos de aplicação, não para o destino de backup no Amazon S3)
@@ -40,7 +40,7 @@ Importa porque explica dois efeitos: há um bucket S3 **intermediário** (que vo
 
 ## 4. Semântica de entrega
 
-> *"uses at-least-once semantics"* — duplicatas são possíveis, **exceto** nos destinos **S3**, **Iceberg** e **Snowflake**.
+> *"uses at-least-once semantics"* (usa semântica de pelo menos uma entrega) — duplicatas são possíveis, **exceto** nos destinos **S3**, **Iceberg** e **Snowflake**.
 
 Para HTTP endpoints e OpenSearch, o consumidor precisa tolerar duplicata.
 

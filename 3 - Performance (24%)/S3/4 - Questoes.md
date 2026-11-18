@@ -89,7 +89,7 @@ atualizado: 2026-11-08
 > **C)** One Zone-IA → Standard-IA → Glacier Instant Retrieval
 > **D)** One Zone-IA → Intelligent-Tiering, que arquiva sozinho
 >
-> **Por que B**: a doc lista, para One Zone-IA, apenas *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage classes"*. **Glacier Instant Retrieval não está na lista** — é a seta que falta no meio do waterfall.
+> **Por que B**: a doc lista, para One Zone-IA, apenas *"the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage classes"* (as classes S3 Glacier Flexible Retrieval ou S3 Glacier Deep Archive). **Glacier Instant Retrieval não está na lista** — é a seta que falta no meio do waterfall.
 > **C e D erradas**: o modelo é **cascata**, só desce. Não dá para subir de One Zone-IA para Standard-IA nem para Intelligent-Tiering.
 
 > [!question]- Q-lc 2. Objetos em **S3 Standard** devem ir para **Deep Archive** após 30 dias. Quantas transições a regra precisa?

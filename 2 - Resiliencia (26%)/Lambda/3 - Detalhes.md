@@ -23,7 +23,7 @@ O guia pede isso literalmente em **Task 3.2**: *"Selecting the appropriate resou
 
 Você pode reservar até *"Unreserved account concurrency value minus 100"* (o valor de concorrência não reservada da conta, menos 100) — a AWS mantém 100 de folga.
 
-**Provisioned concurrency** *"the number of pre-initialized execution environments... designed to make functions available with double-digit millisecond response times"* e *"incurs additional charges"* (gera cobranças adicionais). É o remédio para **cold start** em carga interativa.
+**Provisioned concurrency** *"the number of pre-initialized execution environments... designed to make functions available with double-digit millisecond response times"* (a quantidade de ambientes de execução pré-inicializados... projetada para deixar as funções disponíveis com tempos de resposta de dezenas de milissegundos) e *"incurs additional charges"* (gera cobranças adicionais). É o remédio para **cold start** em carga interativa.
 
 A doc nota que *"asynchronous workloads usually do not need it"* (cargas de trabalho assíncronas normalmente não precisam disso) — processamento em background tolera o cold start.
 

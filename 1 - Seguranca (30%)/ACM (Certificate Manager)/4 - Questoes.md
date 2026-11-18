@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 > **C)** Um, replicado automaticamente
 > **D)** Um por AZ
 >
-> **Por que B**: *"you must request or import a certificate for each region"* e *"You cannot copy a certificate between regions."* (não é possível copiar um certificado entre Regiões)
+> **Por que B**: *"you must request or import a certificate for each region"* (você precisa solicitar ou importar um certificado em cada Região) e *"You cannot copy a certificate between regions."* (não é possível copiar um certificado entre Regiões)
 > **A errada**: us-east-1 é regra do **CloudFront**, não do ELB.
 
 > [!question]- Q4. Qual mecanismo criptografa os dados **em trânsito** entre o cliente e a aplicação?

@@ -61,8 +61,8 @@ atualizado: 2026-11-08
 
 > [!warning] O limite de tamanho de objeto mudou — e a doc nao esta uniforme
 > Material de estudo antigo (e muitos simulados) dizem **5 TB**. As paginas oficiais hoje dizem:
-> - **qfacts**: tabela com *"Maximum object size | 48.8 TiB"*
-> - **upload-objects**: *"you can upload a single large object, up to 50 TB in size"*
+> - **qfacts**: tabela com *"Maximum object size | 48.8 TiB"* (tamanho máximo de objeto: 48,8 TiB)
+> - **upload-objects**: *"you can upload a single large object, up to 50 TB in size"* (você pode enviar um único objeto grande, de até 50 TB)
 >
 > Ou seja: **5 TB esta desatualizado**. Se a prova oferecer 5 TB como alternativa, provavelmente e o gabarito dela (a prova acompanha a doc com atraso) — mas saiba que **o numero atual e maior**. O que nao muda: **PUT simples ate 5 GB**, acima disso **multipart**.
 

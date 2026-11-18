@@ -8,11 +8,11 @@ atualizado: 2026-11-08
 
 ## 1. As políticas, e por que target tracking ganha
 
-**Target tracking** — você define a métrica e o alvo ("manter CPU média em 50%"), e o ASG calcula o resto. É a recomendada: *"we recommend target tracking over either simple scaling or step scaling."*
+**Target tracking** — você define a métrica e o alvo ("manter CPU média em 50%"), e o ASG calcula o resto. É a recomendada: *"we recommend target tracking over either simple scaling or step scaling."* (recomendamos target tracking em vez de simple scaling ou step scaling)
 
 **Step scaling** — degraus por faixa de alarme ("se CPU > 60%, +1; se > 80%, +3"). Útil quando a resposta precisa ser desproporcional ao desvio.
 
-**Simple scaling** — uma ação por alarme, com **cooldown** bloqueando a próxima. A AWS recomenda **não usar**: *"we recommend that you do not use simple scaling policies and scaling cooldowns."*
+**Simple scaling** — uma ação por alarme, com **cooldown** bloqueando a próxima. A AWS recomenda **não usar**: *"we recommend that you do not use simple scaling policies and scaling cooldowns."* (recomendamos que você não use políticas de simple scaling nem cooldowns de escala)
 
 **Scheduled** — para padrão de calendário conhecido. Também pode *"start scaling immediately without waiting for the cooldown period"* (começar a escalar imediatamente, sem esperar o período de cooldown).
 
@@ -27,7 +27,7 @@ O que acontece quando cada um falha:
 | Situação | Comportamento |
 |---|---|
 | Instância **não** está `running` (`stopping`, `stopped`, `shutting-down`, `terminated`) | Marcada Unhealthy e substituída **imediatamente** |
-| Status check **`impaired`** | **Não** marca imediatamente — *"waits a few minutes for AWS to fix the issue"* |
+| Status check **`impaired`** | **Não** marca imediatamente — *"waits a few minutes for AWS to fix the issue"* (espera alguns minutos para a AWS resolver o problema) |
 | Status check `insufficient-data` | **Não** marca Unhealthy |
 | **Scheduled event** (retirement) | Marcada Unhealthy e substituída; o shutdown começa no horário agendado |
 | **ELB ou VPC Lattice** reporta Unhealthy | Marcada na próxima checagem periódica e substituída, respeitando connection draining |
@@ -66,14 +66,14 @@ Pausam a instância num estado de espera para você executar algo antes de ela e
 
 Usos: baixar configuração, aquecer cache, registrar no ELB só depois do bootstrap, drenar conexões antes de terminar.
 
-⚠️ Com hook de launch, *"the health check grace period starts as soon as the instance reaches the InService state"*.
+⚠️ Com hook de launch, *"the health check grace period starts as soon as the instance reaches the InService state"* (o período de carência do health check começa assim que a instância chega ao estado InService).
 ⚠️ Em interrupção de **Spot**, o hook *"does not prevent an instance from terminating"* (não impede que uma instância seja encerrada) — use **Capacity Rebalancing**.
 
 ## 6. Launch template e immutable infrastructure
 
 **Launch template** (não launch configuration, que é legado) é versionado e permite misturar tipos de instância e **On-Demand com Spot** no mesmo ASG.
 
-**Instance refresh** substitui a fleet por uma nova versão do template, em lotes com percentual mínimo de saúde. É a materialização de *"Immutable infrastructure"*, citada no guia em **Task 2.2**: em vez de corrigir a instância, você gera a AMI nova e troca a fleet.
+**Instance refresh** substitui a fleet por uma nova versão do template, em lotes com percentual mínimo de saúde. É a materialização de *"Immutable infrastructure"* (infraestrutura imutável), citada no guia em **Task 2.2**: em vez de corrigir a instância, você gera a AMI nova e troca a fleet.
 
 ## 7. Warm pools e Standby
 

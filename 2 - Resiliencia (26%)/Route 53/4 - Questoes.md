@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Registro A com o IP da distribuição
 > **D)** Registro NS delegando para o CloudFront
 >
-> **Por que B**: alias é o único que funciona no **ápice** — *"you can create an alias record at the top node of a DNS namespace"* — e não é cobrado.
+> **Por que B**: alias é o único que funciona no **ápice** — *"you can create an alias record at the top node of a DNS namespace"* (você pode criar um registro de alias no nó raiz de um namespace DNS) — e não é cobrado.
 > **A errada**: *"You can't create a CNAME record that has the same name as the hosted zone."* (não é possível criar um registro CNAME com o mesmo nome da hosted zone)
 > **C errada**: CloudFront não publica IP fixo.
 
@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 > **Por que B**: latency escolhe *"the Region that provides the best latency"* (a Região que oferece a melhor latência), e com health check configura **ativo-ativo** (*"any routing policy... other than failover"* (qualquer política de roteamento... que não seja failover)).
 > **A errada**: geolocation roteia por **localização**, não por latência medida.
 > **C errada**: failover é **ativo-passivo**.
-> **D errada**: *"they are not health checked"*.
+> **D errada**: *"they are not health checked"* (eles não passam por verificação de saúde).
 
 > [!question]- Q3. Requisito de compliance: usuários da União Europeia devem ser atendidos **sempre** pela região de Frankfurt.
 > **A)** Latency-based routing

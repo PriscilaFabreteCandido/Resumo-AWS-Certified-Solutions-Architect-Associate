@@ -37,7 +37,7 @@ Consequências de prova:
 | Requisito do enunciado | Resposta |
 |---|---|
 | *"encrypted at rest"* (criptografado em repouso), sem mais nada | A opção **padrão** do serviço já serve |
-| *"we must control who can use the key"* | **Customer managed key** (tem **key policy**) |
+| *"we must control who can use the key"* (precisamos controlar quem pode usar a chave) | **Customer managed key** (tem **key policy**) |
 | *"audit every use of the key"* (auditar cada uso da chave) | **SSE-KMS** / CMK → **CloudTrail** registra cada `Decrypt` |
 | *"rotate keys annually"* | **AWS managed** já faz; CMK com rotação **habilitada** |
 | *"rotate on our own schedule"* (rotacionar no nosso próprio calendário) / *"revoke"* | **Customer managed key** |

@@ -74,7 +74,7 @@ Para a prova, o essencial é **EMR on EC2** com o padrão de Spot nos task nodes
 | **Lake Formation** | Respeita as permissões finas (EMR está na lista oficial) |
 | **FSx for Lustre** | Throughput de HPC para o dataset, com bucket S3 vinculado |
 | **Kinesis / MSK** | Fonte de streaming (Spark Streaming) |
-| **Athena** | Consulta o resultado — *"supports many of the same data formats as Amazon EMR"* |
+| **Athena** | Consulta o resultado — *"supports many of the same data formats as Amazon EMR"* (oferece suporte a muitos dos mesmos formatos de dados do Amazon EMR) |
 
 ## 6. Segurança
 

@@ -122,7 +122,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 |---|---|
 | Spot: aviso de interrupção | **2 minutos** |
 | Reserved Instances | **1 ou 3 anos**; All / Partial / No Upfront; **Standard** (maior desconto, só modificável) × **Convertible** (trocável) |
-| Savings Plans | *"up to 72%"*. Compute **até 66%** · EC2 Instance **até 72%** · SageMaker AI **até 64%** · Database **até 35%** |
+| Savings Plans | *"up to 72%"* (até 72%). Compute **até 66%** · EC2 Instance **até 72%** · SageMaker AI **até 64%** · Database **até 35%** |
 | Placement group — **partition** | máximo **7 partições por AZ** (2 com Dedicated Instances) |
 | Placement group — **spread** | máximo **7 instâncias por AZ** (3 AZs = 21) |
 | Placement group — **cluster** | 1 AZ só; fluxo único até **10 Gbps** dentro do grupo (5 Gbps fora) |

@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 > **C)** S3 File Gateway
 > **D)** DataSync
 >
-> **Por que B**: *"store all your data locally. Then asynchronously back up point-in-time snapshots of this data to Amazon S3"* — e os snapshots criam **volumes EBS** na AWS para DR.
+> **Por que B**: *"store all your data locally. Then asynchronously back up point-in-time snapshots of this data to Amazon S3"* (guardar todos os dados localmente e, de forma assíncrona, fazer backup de snapshots pontuais desses dados no Amazon S3) — e os snapshots criam **volumes EBS** na AWS para DR.
 
 > [!question]- Q5. Qual a diferença essencial entre DataSync e Storage Gateway?
 > **A)** DataSync é mais rápido

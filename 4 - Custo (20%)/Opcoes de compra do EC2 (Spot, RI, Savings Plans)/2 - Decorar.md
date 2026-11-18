@@ -30,7 +30,7 @@ Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfro
 | Atributos que definem o preço | **Instance type · Region · Tenancy · Platform** |
 | Termos | **1 ano** = 31.536.000 s (365 dias) · **3 anos** = 94.608.000 s (1.095 dias) |
 | Pagamento | **All Upfront · Partial Upfront · No Upfront** (este exige *"a successful billing history"* (um histórico de pagamentos em dia)) |
-| **Standard** | *"the most significant discount, but can only be modified. Standard Reserved Instances can't be exchanged."* |
+| **Standard** | *"the most significant discount, but can only be modified. Standard Reserved Instances can't be exchanged."* (o desconto mais expressivo, mas só podem ser modificadas; Instâncias Reservadas Standard não podem ser trocadas) |
 | **Convertible** | *"a lower discount... but can be exchanged for another Convertible Reserved Instance with different instance attributes"* (um desconto menor... mas pode ser trocada por outra Convertible Reserved Instance com atributos diferentes) |
 | Renovação | **Não** renovam automaticamente |
 | Cancelamento | **Não** pode cancelar |
@@ -40,13 +40,13 @@ Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfro
 
 | Item | Detalhe |
 |---|---|
-| **Aviso de interrupção** | **2 minutos** — *"two-minute Spot Instance interruption notice"* |
+| **Aviso de interrupção** | **2 minutos** — *"two-minute Spot Instance interruption notice"* (aviso de interrupção da instância Spot com dois minutos de antecedência) |
 | Aviso antecipado | **Rebalance recommendation** — *"at an elevated risk of interruption"* (sob risco elevado de interrupção) |
 | O que a AWS faz | *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta) |
 | Tipos de requisição | **one-time** ou **persistent** (*"automatically resubmits"* (reenvia automaticamente)) |
 | ⚠️ Savings Plans | *"Spot Instances are not covered by Savings Plans"* (instâncias Spot não são cobertas por Savings Plans) |
 | Casos de uso citados | *"data analysis, batch jobs, background processing, and optional tasks"* (análise de dados, jobs em lote, processamento em segundo plano e tarefas opcionais) |
-| Histórico de preço | Últimos **3 meses**; página de preço atualizada *"every five minutes"* |
+| Histórico de preço | Últimos **3 meses**; página de preço atualizada *"every five minutes"* (a cada cinco minutos) |
 | Desconto % | **A doc não publica** um número fixo (*"steep discounts"* (descontos expressivos)) |
 
 ## Estratégias de alocação (EC2 Fleet / Spot Fleet)

@@ -19,7 +19,7 @@ Consequências:
 
 | Característica | Detalhe |
 |---|---|
-| **Durabilidade** | *"six storage nodes"* em **3 AZs**, com replicação **síncrona** |
+| **Durabilidade** | *"six storage nodes"* (seis nós de armazenamento) em **3 AZs**, com replicação **síncrona** |
 | **Réplicas** | Até **15 Aurora Replicas**, que compartilham o **mesmo** storage (não copiam dados) |
 | **Storage elástico** | Cresce e **encolhe** automaticamente, até **128 TiB** (256 TiB em versões específicas) |
 | **Failover rápido** | *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30) com réplica |

@@ -35,7 +35,7 @@ A pessoa faz login num portal, escolhe a conta e o papel, e recebe credencial **
 | **Aplicação ou serviço** | **IAM role** (+ STS) |
 | **Usuário final** do seu app web/mobile | **Cognito** |
 
-O guia cita o serviço nominalmente em **Task 1.1** (*"AWS federated access and identity services (for example, IAM, AWS IAM Identity Center)"*) e em **Task 1.2**.
+O guia cita o serviço nominalmente em **Task 1.1** (*"AWS federated access and identity services (for example, IAM, AWS IAM Identity Center)"* (serviços de acesso federado e identidade da AWS (por exemplo, IAM e IAM Identity Center))) e em **Task 1.2**.
 
 ## Links
 

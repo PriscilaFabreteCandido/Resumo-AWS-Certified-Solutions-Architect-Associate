@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** AWS owned key
 > **D)** CloudHSM
 >
-> **Por que B**: AWS managed key tem rotação *"Required. Every year"*, **sem tarifa mensal**, e é visualizável pelo cliente.
+> **Por que B**: AWS managed key tem rotação *"Required. Every year"* (obrigatória; todo ano), **sem tarifa mensal**, e é visualizável pelo cliente.
 > **A errada**: atende, mas tem tarifa mensal — e o enunciado descarta os motivos que justificariam customer managed.
 > **C errada**: AWS owned key não é selecionável nem visualizável; é usada internamente por serviços.
 > **D errada**: esforço e custo desproporcionais.
@@ -75,7 +75,7 @@ atualizado: 2026-11-08
 | Rotação recriptografa os dados | **Não.** A KMS guarda as versões antigas |
 | Toda chave rotaciona automaticamente | Só **simétrica com material da KMS** |
 | AWS managed key pode ter rotação desligada | **Não.** É obrigatória e anual |
-| AWS owned key pode ser auditada | *"you cannot audit activities on these keys"* |
+| AWS owned key pode ser auditada | *"you cannot audit activities on these keys"* (você não consegue auditar as atividades nessas chaves) |
 | Policy IAM resolve acesso à chave | A **key policy** precisa liberar o principal |
 | Multi-Region key replica os dados | Replica a **chave** |
 | KMS criptografa em trânsito | Em trânsito é **TLS/ACM** |

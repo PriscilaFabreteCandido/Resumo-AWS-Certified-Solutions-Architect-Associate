@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Cluster** | *"3 to 16 devices"* (de 3 a 16 dispositivos), para durabilidade local |
 | **Protocolos** | *"NFSv3, NFSv4, NFSv4.1, Amazon S3 over HTTP or HTTPS"* (NFSv3, NFSv4, NFSv4.1, Amazon S3 sobre HTTP ou HTTPS) |
-| **Rede** | *"transfer speeds of up to 100 Gbit/second"* |
+| **Rede** | *"transfer speeds of up to 100 Gbit/second"* (velocidades de transferência de até 100 Gbit/s) |
 | Criptografia | KMS, no dispositivo |
 
 ## As datas
@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 | **Fim do suporte** (regiões comerciais) | **31/12/2026** |
 | GovCloud e ADC com jobs ativos | Não afetados |
 
-A própria AWS aponta as alternativas: *"AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."*
+A própria AWS aponta as alternativas: *"AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."* (o AWS DataSync para transferências online, o AWS Data Transfer Terminal para transferências físicas seguras, ou soluções de parceiros da AWS — e, para computação na borda, o AWS Outposts)
 
 ## A tabela de transferência
 

@@ -115,7 +115,7 @@ atualizado: 2026-11-08
 > **C)** Aplicar uma SCP negando `iam:*` ao root
 > **D)** Trocar a senha do root de cada conta a cada 90 dias
 >
-> **Por que B**: a doc recomenda — *"we recommend removing root user credentials from member accounts to help prevent unauthorized use"*. Sem credencial, a conta-membro não consegue nem fazer login no root nem recuperar a senha. Contas novas criadas na Organization já nascem **sem credencial de root**.
+> **Por que B**: a doc recomenda — *"we recommend removing root user credentials from member accounts to help prevent unauthorized use"* (recomendamos remover as credenciais de usuário raiz das contas-membro, para ajudar a evitar uso não autorizado). Sem credencial, a conta-membro não consegue nem fazer login no root nem recuperar a senha. Contas novas criadas na Organization já nascem **sem credencial de root**.
 > **A errada**: funciona, mas não escala e não remove o risco — só o mitiga.
 
 ## ⚠️ Armadilhas do IAM

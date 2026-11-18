@@ -16,10 +16,10 @@ atualizado: 2026-11-08
 | Pilar | Definição |
 |---|---|
 | **Operational Excellence** | *"a commitment to build software correctly while consistently delivering a great customer experience"* (o compromisso de construir software corretamente, entregando de forma consistente uma ótima experiência ao cliente) |
-| **Security** | *"the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security"* |
-| **Reliability** | *"the ability of a workload to perform its intended function correctly and consistently when it's expected to"* |
-| **Performance Efficiency** | *"the ability to use cloud resources efficiently to meet performance requirements, and to maintain that efficiency as demand changes and technologies evolve"* |
-| **Cost Optimization** | *"the ability to run systems to deliver business value at the lowest price point"* |
+| **Security** | *"the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security"* (a capacidade de proteger dados, sistemas e ativos, aproveitando as tecnologias de nuvem para melhorar sua segurança) |
+| **Reliability** | *"the ability of a workload to perform its intended function correctly and consistently when it's expected to"* (a capacidade de uma carga de trabalho executar sua função pretendida de forma correta e consistente, quando se espera que ela aconteça) |
+| **Performance Efficiency** | *"the ability to use cloud resources efficiently to meet performance requirements, and to maintain that efficiency as demand changes and technologies evolve"* (a capacidade de usar os recursos de nuvem com eficiência para atender aos requisitos de desempenho, e de manter essa eficiência conforme a demanda muda e as tecnologias evoluem) |
+| **Cost Optimization** | *"the ability to run systems to deliver business value at the lowest price point"* (a capacidade de operar sistemas que entregam valor de negócio ao menor custo possível) |
 | **Sustainability** | *"focuses on environmental impacts, especially energy consumption and efficiency"* (foca nos impactos ambientais, especialmente consumo e eficiência de energia) |
 
 Mnemônico: **O-S-R-P-C-S**.

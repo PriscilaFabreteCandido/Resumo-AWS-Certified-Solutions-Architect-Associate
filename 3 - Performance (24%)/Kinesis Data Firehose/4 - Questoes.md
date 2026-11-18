@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Migrar para Kinesis Data Streams
 > **D)** Aumentar o número de shards
 >
-> **Por que B**: *"you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds"*.
+> **Por que B**: *"you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds"* (você pode usar o hint de intervalo de buffer zero... o Firehose não faz buffer e entrega os dados em poucos segundos).
 > ⚠️ Mas note: zero buffering não vale para o **destino de backup no S3**, e intervalo abaixo de 60 s no S3 usa multipart upload, com *"some increase in S3 PUT API costs"* (algum aumento nos custos de requisições PUT do S3).
 > **C**: é a resposta se a exigência fosse **sub-segundo** ou replay.
 

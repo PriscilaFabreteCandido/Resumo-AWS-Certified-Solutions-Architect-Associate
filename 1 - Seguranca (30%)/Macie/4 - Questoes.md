@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **D)** SCP negando `s3:PutBucketPolicy`
 >
 > **Por que B**: é o padrão de resposta automatizada; o Macie **detecta e publica o achado**, a ação é sua.
-> **A errada**: Macie *"enables automated protection"* — habilita, via integração, não executa por conta própria.
+> **A errada**: Macie *"enables automated protection"* (permite proteção automatizada) — habilita, via integração, não executa por conta própria.
 > **C errada**: Config detectaria o bucket público, mas não o **PII** — o enunciado condiciona a ação ao dado sensível.
 > **D errada**: previne mudanças futuras, não corrige o bucket atual.
 

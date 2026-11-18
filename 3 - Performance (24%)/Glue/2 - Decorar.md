@@ -14,7 +14,7 @@ atualizado: 2026-11-08
 | **Crawler** | Descobre schema e partições **automaticamente** |
 | **Job** | ETL em **Spark** ou **Ray**, serverless |
 | **Glue Studio** | Interface **gráfica** para criar e monitorar jobs |
-| **DataBrew** | Preparação **visual** de dados, *"without writing any code"* |
+| **DataBrew** | Preparação **visual** de dados, *"without writing any code"* (sem escrever código) |
 | **Trigger** | **Agendado**, **on-demand** ou **por evento** |
 | **Streaming ETL** | Transforma dado **em trânsito** |
 

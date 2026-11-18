@@ -54,7 +54,7 @@ Backups copiados para outra Região; no desastre você **provisiona tudo** e res
 
 ### Pilot light
 
-> *"you replicate your data from one Region to another and provision a copy of your core workload infrastructure. Resources required to support data replication and backup, such as databases and object storage, are always on. Other elements, such as application servers, are loaded with application code and configurations, but are switched off..."*
+> *"you replicate your data from one Region to another and provision a copy of your core workload infrastructure. Resources required to support data replication and backup, such as databases and object storage, are always on. Other elements, such as application servers, are loaded with application code and configurations, but are switched off..."* (você replica os dados de uma Região para outra e provisiona uma cópia da infraestrutura central da carga de trabalho. Os recursos que sustentam a replicação e o backup, como bancos e armazenamento de objetos, ficam sempre ligados; os demais, como servidores de aplicação, ficam com código e configuração carregados, mas desligados...)
 
 A chave da pegadinha está nessa citação: **banco e storage ligados; servidores de aplicação desligados**.
 
@@ -74,12 +74,12 @@ Diferença de uma palavra em relação ao pilot light: **functional**. O ambient
 
 ### Multi-site active/active
 
-> *"you can run your workload simultaneously in multiple Regions... this is the most complex and costly approach"*
+> *"you can run your workload simultaneously in multiple Regions... this is the most complex and costly approach"* (você pode executar sua carga de trabalho simultaneamente em várias Regiões... essa é a abordagem mais complexa e mais cara)
 
 Ambas as Regiões **servem produção**.
 
 - **Peças**: **DynamoDB Global Tables** (escrita em ambas) ou Aurora Global Database com **write forwarding**, Route 53 latency-based ou **Global Accelerator**, replicação bidirecional.
-- **Dificuldade real**: **conflito de escrita** e consistência. Por isso a AWS chama de *"most complex"*.
+- **Dificuldade real**: **conflito de escrita** e consistência. Por isso a AWS chama de *"most complex"* (mais complexa).
 - **RPO/RTO**: quase zero.
 
 ## 4. Como a prova formula

@@ -25,7 +25,7 @@ Exemplo oficial: item de **3 KB** ÷ 4 KB = 0,75 → arredonda para **1 RCU**.
 | **Sort key** | **1 a 1024 bytes** |
 | Aninhamento | até **32 níveis** |
 | Tipos de chave | **string, number ou binary** (escalar) |
-| Itens por tabela | *"no limit"* |
+| Itens por tabela | *"no limit"* (sem limite) |
 
 ## Limites de operação
 

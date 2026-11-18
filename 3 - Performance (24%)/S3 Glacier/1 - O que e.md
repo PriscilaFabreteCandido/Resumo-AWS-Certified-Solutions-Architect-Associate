@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 | **Glacier Flexible Retrieval** | minutos a horas | **90** | **Sim** |
 | **Glacier Deep Archive** | horas | **180** | **Sim** |
 
-> *"S3 Glacier Instant Retrieval storage class are immediately available using `GET`"* (objetos na classe S3 Glacier Instant Retrieval ficam imediatamente disponíveis por `GET`), enquanto para Flexible Retrieval e Deep Archive *"you first need to retrieve data using the RestoreObject REST API"*.
+> *"S3 Glacier Instant Retrieval storage class are immediately available using `GET`"* (objetos na classe S3 Glacier Instant Retrieval ficam imediatamente disponíveis por `GET`), enquanto para Flexible Retrieval e Deep Archive *"you first need to retrieve data using the RestoreObject REST API"* (primeiro você precisa recuperar os dados usando a API REST RestoreObject).
 
 ## A tabela de restore (a mais cobrada do tema)
 

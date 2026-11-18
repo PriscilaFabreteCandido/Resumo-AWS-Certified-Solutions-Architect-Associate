@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| **io2 Block Express: latência** | *"under 500 microseconds for 16KiB I/O operations"* |
+| **io2 Block Express: latência** | *"under 500 microseconds for 16KiB I/O operations"* (abaixo de 500 microssegundos para operações de I/O de 16 KiB) |
 | **Instância não-Nitro** | chega a **32.000 IOPS**, mesmo com volume provisionado acima |
 | gp2: throughput | *"between 128 MiB/s and 250 MiB/s, depending on the volume size"* (entre 128 MiB/s e 250 MiB/s, dependendo do tamanho do volume) |
 | io1 para 1.000 MiB/s | precisa de **64.000 IOPS** e instância **Nitro** |

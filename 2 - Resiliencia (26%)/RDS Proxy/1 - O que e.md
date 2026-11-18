@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 > *"By using Amazon RDS Proxy, you can allow your applications to pool and share database connections to improve their ability to scale."* (com o Amazon RDS Proxy, suas aplicações podem agrupar e compartilhar conexões de banco, melhorando a capacidade de escalar)
 
-Cada conexão de banco consome memória no servidor. Aplicações serverless e em contêiner abrem conexões de forma explosiva: 1.000 Lambdas concorrentes = 1.000 tentativas de conexão. A doc descreve o sintoma: *"unpredictable surges in database traffic"* que causam *"oversubscribing connections or new connections being created at a fast rate"* (excesso de conexões ou criação de conexões novas num ritmo acelerado).
+Cada conexão de banco consome memória no servidor. Aplicações serverless e em contêiner abrem conexões de forma explosiva: 1.000 Lambdas concorrentes = 1.000 tentativas de conexão. A doc descreve o sintoma: *"unpredictable surges in database traffic"* (picos imprevisíveis de tráfego no banco) que causam *"oversubscribing connections or new connections being created at a fast rate"* (excesso de conexões ou criação de conexões novas num ritmo acelerado).
 
 O proxy enfileira ou estrangula: *"If connection requests exceed the limits you specify, RDS Proxy rejects application connections (that is, it sheds load)."* (se as requisições de conexão excederem os limites que você definiu, o RDS Proxy rejeita conexões da aplicação (ou seja, descarta carga))
 

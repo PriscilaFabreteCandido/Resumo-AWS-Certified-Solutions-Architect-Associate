@@ -39,7 +39,7 @@ atualizado: 2026-11-08
 > **C)** Compartilhada
 > **D)** Da AWS, se o bucket usava SSE-S3
 >
-> **Por que B**: configuração é sempre do cliente. A AWS oferece **Block Public Access** (recomendando *"turn on all four settings"*), **Config**, **Macie** e **Security Hub** — mas a decisão é sua.
+> **Por que B**: configuração é sempre do cliente. A AWS oferece **Block Public Access** (recomendando *"turn on all four settings"* (ative as quatro configurações)), **Config**, **Macie** e **Security Hub** — mas a decisão é sua.
 
 > [!question]- Q5. Qual destas tarefas é **sempre** do cliente, em qualquer serviço?
 > **A)** Patch do SO

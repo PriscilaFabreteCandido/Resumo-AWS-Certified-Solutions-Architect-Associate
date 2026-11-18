@@ -34,7 +34,7 @@ atualizado: 2026-11-08
 
 ## Cross-account: precisa dos DOIS lados
 
-> *"the requester in the trusted AccountA must have an identity-based policy... Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* E: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
+> *"the requester in the trusted AccountA must have an identity-based policy... Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* (quem requisita na Conta A (confiada) precisa de uma policy de identidade... Além disso, a policy de recurso na Conta B precisa permitir que o requisitante da Conta A acesse o recurso) E: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
 
 **Exceções que exigem Allow explícito ao principal, sempre:**
 - **Trust policy de role IAM**

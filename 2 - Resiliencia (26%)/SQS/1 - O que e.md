@@ -23,8 +23,8 @@ Três funções, e a prova usa todas:
 
 | | **Standard** (fila padrão) | **FIFO** |
 |---|---|---|
-| **Ordem** | **Não garante**. *"best-effort ordering"* — pode chegar fora de ordem | **Estrita**, dentro do **message group** |
-| **Duplicação** | **Pode duplicar**: *"at-least-once message delivery"* | **Não duplica**: *"exactly-once message processing"* (janela de dedup de **5 min**) |
+| **Ordem** | **Não garante**. *"best-effort ordering"* (ordenação por melhor esforço) — pode chegar fora de ordem | **Estrita**, dentro do **message group** |
+| **Duplicação** | **Pode duplicar**: *"at-least-once message delivery"* (entrega de mensagem pelo menos uma vez) | **Não duplica**: *"exactly-once message processing"* (janela de dedup de **5 min**) |
 | **Throughput** | *"nearly unlimited"* (praticamente ilimitado) — sem teto prático | **300 TPS** por ação de API (**3.000 msg/s** com batch de 10); **high throughput** vai a 70.000 TPS em us-east-1/us-west-2/eu-west-1 |
 | **Nome da fila** | qualquer | **tem de terminar em `.fifo`** |
 | **Parâmetros obrigatórios** | nenhum | **`MessageGroupId`**; e `MessageDeduplicationId` (ou dedup por conteúdo) |

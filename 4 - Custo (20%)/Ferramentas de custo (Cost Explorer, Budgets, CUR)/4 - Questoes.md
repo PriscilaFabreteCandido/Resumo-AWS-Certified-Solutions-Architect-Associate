@@ -62,7 +62,7 @@ atualizado: 2026-11-08
 > **C)** 6 meses e 6 meses
 > **D)** 24 meses e 12 meses
 >
-> **Por que B**: *"up to the last 13 months"* e *"the next 18 months"*.
+> **Por que B**: *"up to the last 13 months"* (até os últimos 13 meses) e *"the next 18 months"* (os próximos 18 meses).
 
 ## ⚠️ Armadilhas
 

@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 
 > *"collect and process large streams of data records in real time."* (coletar e processar grandes fluxos de registros de dados em tempo real)
 
-E a latência: *"the put-to-get delay is typically less than 1 second"*.
+E a latência: *"the put-to-get delay is typically less than 1 second"* (o atraso entre gravar e ler costuma ser inferior a 1 segundo).
 
 ## As três coisas que só ele faz
 

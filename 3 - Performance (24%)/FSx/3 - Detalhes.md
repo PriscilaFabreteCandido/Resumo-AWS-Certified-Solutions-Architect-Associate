@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. FSx for Windows File Server
 
-Fala **SMB** (*"supporting versions 2.0 to 3.1.1"*) e precisa de **Active Directory** — AWS Managed Microsoft AD, ou o AD on-premises via trust. É a ligação que a prova faz: a questão parece ser sobre FSx, mas a resposta completa inclui **Directory Service**.
+Fala **SMB** (*"supporting versions 2.0 to 3.1.1"* (com suporte às versões 2.0 a 3.1.1)) e precisa de **Active Directory** — AWS Managed Microsoft AD, ou o AD on-premises via trust. É a ligação que a prova faz: a questão parece ser sobre FSx, mas a resposta completa inclui **Directory Service**.
 
 | Item | Detalhe |
 |---|---|

@@ -60,7 +60,7 @@ atualizado: 2026-11-08
 | Lake Formation substitui o Glue Data Catalog | É a **camada de autorização** sobre ele |
 | Crawler atualiza só partições | Infere **schema** e registra partições |
 | `MSCK REPAIR` atualiza o schema | Atualiza **partições** |
-| Glue só faz batch | Há **streaming ETL** (*"transform streaming data in transit"*) |
+| Glue só faz batch | Há **streaming ETL** (*"transform streaming data in transit"* (transformar dados de streaming em trânsito)) |
 | Glue não tem interface gráfica | **Glue Studio** (jobs) e **DataBrew** (preparação visual) |
 | Glue cobra por TB | Cobra por **DPU-hora** |
 | EMR não usa o catálogo do Glue | **Pode** usá-lo como metastore |

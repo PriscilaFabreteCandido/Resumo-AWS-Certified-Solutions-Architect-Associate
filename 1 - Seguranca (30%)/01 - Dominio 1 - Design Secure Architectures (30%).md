@@ -101,7 +101,7 @@ atualizado: 2026-11-08
 > Regra de abertura: *"By default, all requests are implicitly denied with the exception of the AWS account root user."* (por padrão, todas as requisições são negadas implicitamente, com exceção do usuário raiz da conta AWS)
 
 > [!question]- Preciso dar acesso a um bucket da conta B para um role da conta A. O que configuro?
-> **Os dois lados.** *"the requester in the trusted AccountA must have an identity-based policy... Additionally, the resource-based policy in AccountB must allow the requester."*
+> **Os dois lados.** *"the requester in the trusted AccountA must have an identity-based policy... Additionally, the resource-based policy in AccountB must allow the requester."* (quem requisita na Conta A (confiada) precisa de uma policy de identidade... Além disso, a policy de recurso na Conta B precisa permitir esse requisitante)
 > A pegadinha é achar que a bucket policy sozinha resolve — isso só vale **dentro da mesma conta**.
 
 > [!question]- Diferença de uma frase entre GuardDuty, Inspector e Macie?

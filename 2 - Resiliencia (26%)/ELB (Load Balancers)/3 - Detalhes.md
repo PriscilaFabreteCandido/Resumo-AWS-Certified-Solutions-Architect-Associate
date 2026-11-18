@@ -31,7 +31,7 @@ Headers que ele adiciona: **`X-Forwarded-For`**, **`X-Forwarded-Proto`**, **`X-F
 
 O NLB *"functions at the fourth layer"* (opera na quarta camada). Não entende HTTP: roteia por **hash de fluxo**, e *"Each individual TCP connection is routed to a single target for the life of the connection."* (cada conexão TCP individual é roteada para um único alvo durante toda a vida da conexão)
 
-A característica decisiva é o **IP estático**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address."* (o Elastic Load Balancing cria uma interface de rede para cada Zona de Disponibilidade habilitada, e a usa para obter um endereço IP estático) E opcionalmente *"you can optionally associate one Elastic IP address with each network interface."*
+A característica decisiva é o **IP estático**: *"Elastic Load Balancing creates a network interface for each Availability Zone you enable, and uses it to get a static IP address."* (o Elastic Load Balancing cria uma interface de rede para cada Zona de Disponibilidade habilitada, e a usa para obter um endereço IP estático) E opcionalmente *"you can optionally associate one Elastic IP address with each network interface."* (opcionalmente, você pode associar um endereço IP elástico a cada interface de rede)
 
 Isso resolve dois problemas de prova:
 - Clientes que precisam **liberar IPs em firewall**
@@ -45,7 +45,7 @@ Preservação do IP de origem depende do **target type**: a doc diz *"The target
 
 O GWLB *"operates at the third layer... the network layer"* (opera na terceira camada... a camada de rede) e *"listens for all IP packets across all ports"* (escuta todos os pacotes IP, em todas as portas). Encapsula o tráfego em **GENEVE na porta 6081** e o entrega a um fleet de appliances (firewall, IDS/IPS de terceiro), que inspecionam e devolvem.
 
-Mantém **flow stickiness** *"to a specific target appliance using 5-tuple (default), 3-tuple, or 2-tuple"* — importante porque appliances de inspeção são *stateful*.
+Mantém **flow stickiness** *"to a specific target appliance using 5-tuple (default), 3-tuple, or 2-tuple"* (para um appliance de destino específico, usando 5-tuple (padrão), 3-tuple ou 2-tuple) — importante porque appliances de inspeção são *stateful*.
 
 O desenho é: subnet de workload → **GWLB endpoint** → GWLB → appliances → volta e segue para o destino.
 

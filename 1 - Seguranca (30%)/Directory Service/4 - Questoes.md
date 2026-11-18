@@ -62,7 +62,7 @@ atualizado: 2026-11-08
 > **C)** Uma réplica completa do AD, incluindo hashes de senha
 > **D)** Só o nome de usuário
 >
-> **Por que B**: são duas afirmações diferentes e as duas são oficiais. O **AD Connector** não faz cache — *"without caching any information in the cloud"* (sem fazer cache de nenhuma informação na nuvem). Mas o **Identity Center** sincroniza metadados: *"synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."* A credencial é que nunca sai: *"No password information is synchronized to IAM Identity Center."* (nenhuma informação de senha é sincronizada para o IAM Identity Center)
+> **Por que B**: são duas afirmações diferentes e as duas são oficiais. O **AD Connector** não faz cache — *"without caching any information in the cloud"* (sem fazer cache de nenhuma informação na nuvem). Mas o **Identity Center** sincroniza metadados: *"synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."* (sincronizar informações de usuário, grupo e participação do seu diretório de origem no Active Directory para o identity store do IAM Identity Center) A credencial é que nunca sai: *"No password information is synchronized to IAM Identity Center."* (nenhuma informação de senha é sincronizada para o IAM Identity Center)
 > **A errada**: é a leitura apressada da frase do AD Connector — vale para ele, não para o conjunto.
 
 > [!question]- Q7. A empresa tem **três florestas** de Active Directory e quer SSO nas contas AWS.

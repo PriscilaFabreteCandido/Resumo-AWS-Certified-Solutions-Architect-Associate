@@ -23,7 +23,7 @@ E o número que mais cai:
 
 | Endpoint | Alcança |
 |---|---|
-| **Virtual private gateway (VGW)** | *"the VPN endpoint on the Amazon side... that can be attached to a single VPC"* |
+| **Virtual private gateway (VGW)** | *"the VPN endpoint on the Amazon side... that can be attached to a single VPC"* (o endpoint de VPN do lado da Amazon... que pode ser anexado a uma única VPC) |
 | **Transit gateway** | *"A transit hub that can be used to interconnect multiple VPCs and on-premises networks, and as a VPN endpoint"* (um hub de trânsito que pode interligar várias VPCs e redes on-premises, e servir como endpoint de VPN) |
 
 ## VPN × Direct Connect

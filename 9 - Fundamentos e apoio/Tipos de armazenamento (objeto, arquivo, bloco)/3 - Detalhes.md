@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Por que a prova insiste nisso
 
-O guia oficial pede, em **Task 3.1**, *"Choose a storage service, access pattern, data pattern, and data transfer method"* (escolher o serviço de armazenamento, o padrão de acesso, o padrão de dados e o método de transferência), e lista entre os conhecimentos *"storage types with associated characteristics (for example, object, file, block)"*. Em **Task 4.2**, cobra *"cost-effective storage"*.
+O guia oficial pede, em **Task 3.1**, *"Choose a storage service, access pattern, data pattern, and data transfer method"* (escolher o serviço de armazenamento, o padrão de acesso, o padrão de dados e o método de transferência), e lista entre os conhecimentos *"storage types with associated characteristics (for example, object, file, block)"* (tipos de armazenamento e suas características (por exemplo, objeto, arquivo, bloco)). Em **Task 4.2**, cobra *"cost-effective storage"*.
 
 Na prática, a questão típica descreve um requisito e oferece S3, EBS, EFS e FSx como alternativas. Escolher errado o **tipo** torna a resposta impossível, por mais que o serviço seja bom.
 

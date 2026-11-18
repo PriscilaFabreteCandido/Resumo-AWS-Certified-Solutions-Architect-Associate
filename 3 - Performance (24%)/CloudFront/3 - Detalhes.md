@@ -49,9 +49,9 @@ A configuração completa:
 - Object Ownership em **Bucket owner enforced** (desativa ACLs)
 - Bucket policy com principal `cloudfront.amazonaws.com` e condição **`AWS:SourceArn`** (proteção contra confused deputy)
 - Com SSE-KMS: **key policy** liberando `kms:Decrypt`, `kms:Encrypt`, `kms:GenerateDataKey*`
-- Signing em `always` (*"Sign requests (recommended)"*)
+- Signing em `always` (*"Sign requests (recommended)"* (assinar as requisições (recomendado)))
 
-⚠️ Se o bucket é usado como **website endpoint** (para index documents e redirects), ele vira **custom origin** e *"you can't use OAC (or OAI)"*.
+⚠️ Se o bucket é usado como **website endpoint** (para index documents e redirects), ele vira **custom origin** e *"you can't use OAC (or OAI)"* (você não pode usar OAC (nem OAI)).
 
 ## 4. HTTPS e certificado
 
@@ -63,7 +63,7 @@ Outros detalhes: formato **X.509 PEM**; chave privada de terceiro *"cannot be en
 
 ## 5. Origin failover
 
-Um **origin group** tem *"two origins: a primary and a secondary"*. O failover dispara nos status **400, 403, 404, 416, 429, 500, 502, 503, 504** (você escolhe quais), e só para métodos **`GET`, `HEAD`, `OPTIONS`**.
+Um **origin group** tem *"two origins: a primary and a secondary"* (duas origens: uma primária e uma secundária). O failover dispara nos status **400, 403, 404, 416, 429, 500, 502, 503, 504** (você escolhe quais), e só para métodos **`GET`, `HEAD`, `OPTIONS`**.
 
 Timeouts: conexão **10 s** (1-10), **3** tentativas (1-3), resposta **30 s** (1-120). O delay típico é *"as long as 30 seconds (3 connection attempts of 10 seconds each)"* (até 30 segundos (3 tentativas de conexão de 10 segundos cada)).
 
@@ -71,11 +71,11 @@ Timeouts: conexão **10 s** (1-10), **3** tentativas (1-3), resposta **30 s** (1
 
 ## 6. Conteúdo restrito
 
-**Signed URL** para *"individual files"* ou cliente sem cookie. **Signed cookie** para *"multiple restricted files"* (HLS, área de assinante) sem mudar as URLs. *"Signed URLs take precedence over signed cookies."* (URLs assinadas têm precedência sobre cookies assinados)
+**Signed URL** para *"individual files"* (arquivos individuais) ou cliente sem cookie. **Signed cookie** para *"multiple restricted files"* (HLS, área de assinante) sem mudar as URLs. *"Signed URLs take precedence over signed cookies."* (URLs assinadas têm precedência sobre cookies assinados)
 
 A recomendação é **trusted key groups** (em vez de trusted signers legados).
 
-**Geo restriction** é por **país**, com allow list ou block list, devolve **403**, e usa *"a third-party database"* com precisão declarada de **99,8%**. Se a localização é desconhecida, *"CloudFront serves the content"* (o CloudFront serve o conteúdo).
+**Geo restriction** é por **país**, com allow list ou block list, devolve **403**, e usa *"a third-party database"* (um banco de dados de terceiros) com precisão declarada de **99,8%**. Se a localização é desconhecida, *"CloudFront serves the content"* (o CloudFront serve o conteúdo).
 
 Para controle mais fino (cidade, CEP), a doc indica serviço de geolocalização de terceiro + **signed URLs**.
 

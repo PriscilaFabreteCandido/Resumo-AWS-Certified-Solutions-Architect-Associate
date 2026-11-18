@@ -23,8 +23,8 @@ atualizado: 2026-11-08
 
 | Edição | Capacidade |
 |---|---|
-| **Standard** | *"up to 5,000 employees... up to 30,000* directory objects"* |
-| **Enterprise** | *"up to 500,000* directory objects"* |
+| **Standard** | *"up to 5,000 employees... up to 30,000* directory objects"* (até 5.000 funcionários... até 30.000 objetos de diretório) |
+| **Enterprise** | *"up to 500,000* directory objects"* (até 500.000 objetos de diretório) |
 
 Há também uma **Hybrid Edition** (estender um AD self-managed existente).
 

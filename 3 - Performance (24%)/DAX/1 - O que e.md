@@ -26,7 +26,7 @@ Dois caches independentes:
 
 **2. Leitura forte NÃO é cacheada.** *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."* (o DAX repassa a requisição ao DynamoDB, e os resultados vindos do DynamoDB não são armazenados em cache no DAX)
 
-**3. Roda na VPC.** *"designed to run within an Amazon Virtual Private Cloud (Amazon VPC) environment."*
+**3. Roda na VPC.** *"designed to run within an Amazon Virtual Private Cloud (Amazon VPC) environment."* (projetado para rodar dentro de um ambiente de Amazon Virtual Private Cloud (VPC))
 
 ## DAX × ElastiCache
 

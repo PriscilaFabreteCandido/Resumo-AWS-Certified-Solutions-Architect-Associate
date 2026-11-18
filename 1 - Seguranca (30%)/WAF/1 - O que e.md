@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que ele inspeciona
 
-> *"the HTTP and HTTPS requests that are forwarded to your protected web application resources."*
+> *"the HTTP and HTTPS requests that are forwarded to your protected web application resources."* (as requisições HTTP e HTTPS encaminhadas aos recursos da sua aplicação web protegida)
 
 Critérios disponíveis: **IP de origem**, **país**, valores de **header**, strings e **regex**, **tamanho** da requisição, **SQL injection** e **cross-site scripting**.
 

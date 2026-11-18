@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 > [!info] Qual prova é esta
 > **AWS Certified Solutions Architect – Associate**, código **SAA-C03**.
 > O guia oficial está na versão **1.1, publicada em 29/10/2026**. Não existe SAA-C04 anunciado pela AWS — se você vir "SAA-C04" em blog de terceiro, ignore: confira sempre a [página oficial do exame](https://aws.amazon.com/certification/certified-solutions-architect-associate/).
-> O que o exame valida, nas palavras da AWS: *"the ability to design solutions based on the AWS Well-Architected Framework"*.
+> O que o exame valida, nas palavras da AWS: *"the ability to design solutions based on the AWS Well-Architected Framework"* (a capacidade de projetar soluções com base no AWS Well-Architected Framework).
 
 ## Como a prova é montada
 

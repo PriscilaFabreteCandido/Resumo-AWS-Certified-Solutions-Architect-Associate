@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Pilot light não replica dados
 > **D)** Warm standby não precisa de DNS failover
 >
-> **Por que B**: a palavra da doc é *"fully functional"* (totalmente funcional) para warm standby, contra *"switched off"* no pilot light.
+> **Por que B**: a palavra da doc é *"fully functional"* (totalmente funcional) para warm standby, contra *"switched off"* (desligados) no pilot light.
 > **C errada**: pilot light **replica** os dados — é o que o define.
 
 > [!question]- Q3. O requisito é *"proteger contra a exclusão acidental ou maliciosa de objetos no S3"*.

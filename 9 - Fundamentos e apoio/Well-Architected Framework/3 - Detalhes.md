@@ -25,13 +25,13 @@ Por isso vale ler os seis pilares como **critérios de desempate**:
 **Operational Excellence** — *"a commitment to build software correctly while consistently delivering a great customer experience"* (o compromisso de construir software corretamente, entregando de forma consistente uma ótima experiência ao cliente). Áreas: Organization, Prepare, Operate, Evolve.
 Na prova: **IaC** (CloudFormation), automação (SSM Automation, EventBridge), observabilidade (CloudWatch, X-Ray), **immutable infrastructure** (AMI nova + instance refresh).
 
-**Security** — *"the ability to protect data, systems, and assets"*. Sete áreas, incluindo **Detection** e **Data protection**.
+**Security** — *"the ability to protect data, systems, and assets"* (a capacidade de proteger dados, sistemas e ativos). Sete áreas, incluindo **Detection** e **Data protection**.
 Na prova: é o domínio 1 inteiro — IAM, SCP, KMS, ACM, SG/NACL, WAF/Shield, GuardDuty/Macie/Inspector.
 
 **Reliability** — *"perform its intended function correctly and consistently when it's expected to"* (executar a função pretendida de forma correta e consistente, quando se espera que ela aconteça), incluindo *"the ability to operate and test the workload through its total lifecycle"* (a capacidade de operar e testar a carga de trabalho ao longo de todo o seu ciclo de vida). Áreas: Foundations, Workload architecture, Change management, **Failure management**.
 Na prova: Multi-AZ, desacoplamento, Auto Scaling, DR com RPO/RTO, **quota conferida no standby**.
 
-**Performance Efficiency** — *"use cloud resources efficiently... and to maintain that efficiency as demand changes and technologies evolve"*. Áreas: Architecture selection, Compute and hardware, Data management, Networking and content delivery, Process and culture.
+**Performance Efficiency** — *"use cloud resources efficiently... and to maintain that efficiency as demand changes and technologies evolve"* (usar os recursos de nuvem com eficiência... e manter essa eficiência conforme a demanda muda e as tecnologias evoluem). Áreas: Architecture selection, Compute and hardware, Data management, Networking and content delivery, Process and culture.
 Na prova: serviço purpose-built, cache (CloudFront/ElastiCache/DAX), escala horizontal, serverless.
 
 **Cost Optimization** — *"run systems to deliver business value at the lowest price point"* (operar sistemas que entregam valor de negócio ao menor custo possível). Áreas incluem **Practice Cloud Financial Management** e **Optimize over time**.

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Event history** (grátis, na console) | *"the past 90 days of management events in an AWS Region"* (os últimos 90 dias de eventos de gerenciamento numa Região) |
 | **CloudTrail Lake** — retenção estendida | *"up to 3,653 days (about 10 years)"* (até 3.653 dias (cerca de 10 anos)) |
-| **CloudTrail Lake** — retenção padrão | *"up to 2,557 days (about 7 years)"* |
+| **CloudTrail Lake** — retenção padrão | *"up to 2,557 days (about 7 years)"* (até 2.557 dias (cerca de 7 anos)) |
 | **Trail** em bucket S3 | Retenção que **você** definir (via lifecycle) |
 
 ## Tipos de evento

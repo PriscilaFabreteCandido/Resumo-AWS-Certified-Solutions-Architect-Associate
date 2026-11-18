@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** KMS com multi-Region key
 > **D)** Secrets Manager com chave própria
 >
-> **Por que B**: os três gatilhos juntos. *"single tenant"*, FIPS nível 3, *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS).
+> **Por que B**: os três gatilhos juntos. *"single tenant"* (inquilino único), FIPS nível 3, *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS).
 > **A e C erradas**: KMS é multi-tenant e gerenciado pela AWS.
 > **D errada**: Secrets Manager guarda secret, não é cofre de chave em HSM.
 

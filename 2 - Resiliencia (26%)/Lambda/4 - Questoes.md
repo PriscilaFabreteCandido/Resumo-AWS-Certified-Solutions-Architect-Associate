@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Provisioned concurrency
 > **D)** Dividir em duas funções
 >
-> **Por que B**: o custo é `memória × tempo`, e a CPU é proporcional à memória (1.769 MB ≈ 1 vCPU). É a skill *"the amount of Lambda memory"* do guia.
+> **Por que B**: o custo é `memória × tempo`, e a CPU é proporcional à memória (1.769 MB ≈ 1 vCPU). É a skill *"the amount of Lambda memory"* (a quantidade de memória do Lambda) do guia.
 > **A errada**: menos CPU → mais tempo → possivelmente **mais** custo.
 
 > [!question]- Q4. Mensagens da fila SQS estão sendo processadas em duplicidade pela Lambda. O processamento leva 100 s.

@@ -18,7 +18,7 @@ A doc diz: *"The allowed IPv4 CIDR block size for a subnet is between a `/28` ne
 - `10.0.0.3` — *"Reserved by AWS for future use"* (reservado pela AWS para uso futuro)
 - `10.0.0.255` — *"Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address."* (endereço de broadcast da rede; não oferecemos suporte a broadcast numa VPC, por isso reservamos esse endereço)
 
-Para **BYOIP**, a regra muda: *"you can use all of the IP addresses in the range, including the first address... and the last address."*
+Para **BYOIP**, a regra muda: *"you can use all of the IP addresses in the range, including the first address... and the last address."* (você pode usar todos os endereços IP da faixa, inclusive o primeiro... e o último)
 
 Em IPv6, as máscaras vão de **/44 a /64** em incrementos de /4; são reservados os quatro primeiros e o último endereço, mais `FE80::/10` (link-local) e `FE80:ec2::1` (router da VPC).
 
@@ -68,7 +68,7 @@ Destinos possíveis de uma rota: internet gateway, NAT gateway, egress-only IGW,
 
 **Internet Gateway** — entrada e saída. A instância precisa de IP público (ou Elastic IP) e a subnet precisa da rota.
 
-**NAT Gateway** — só saída, para subnets privadas. Fica numa subnet **pública** com Elastic IP. Escala *"up to 100 Gbps"*. É **zonal**: *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona) **Não aceita security group.** Não suporta port forwarding nem bastion.
+**NAT Gateway** — só saída, para subnets privadas. Fica numa subnet **pública** com Elastic IP. Escala *"up to 100 Gbps"* (até 100 Gbps). É **zonal**: *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona) **Não aceita security group.** Não suporta port forwarding nem bastion.
 
 **Egress-only Internet Gateway** — *"allows outbound communication over IPv6 from instances in your VPC to the internet, and prevents the internet from initiating an IPv6 connection with your instances"* (permite comunicação de saída em IPv6 das instâncias da sua VPC para a internet, e impede que a internet inicie uma conexão IPv6 com elas). É *"for use with IPv6 traffic only"* (serve apenas para tráfego IPv6), stateful, sem SG, e o gateway em si não é cobrado.
 

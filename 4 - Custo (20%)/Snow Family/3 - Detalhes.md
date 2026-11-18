@@ -54,7 +54,7 @@ Se o resultado não cabe no prazo **e** não dá para aumentar a banda em tempo 
 Recursos comuns:
 - **Cluster** de *"3 to 16 devices"* (de 3 a 16 dispositivos) — dá durabilidade ao dado **enquanto está no seu site**
 - Protocolos: *"NFSv3, NFSv4, NFSv4.1, Amazon S3 over HTTP or HTTPS"* (a API S3 é compatível com AWS CLI **1.16.14 ou anterior**)
-- Rede: *"up to 100 Gbit/second"*
+- Rede: *"up to 100 Gbit/second"* (até 100 Gbit/s)
 - Criptografia com **KMS**, feita no dispositivo
 
 ⚠️ As especificações de **Snowcone** e **Snowmobile** **não aparecem** na documentação atual que conferi.

@@ -46,7 +46,7 @@ O custom provider é o que permite cenários como "autenticar contra o banco de 
 
 O endpoint **VPC com EIP** é a resposta quando o parceiro exige **allowlist de IP** — requisito comum em integrações bancárias.
 
-Suporta *"up to 3 Availability Zones"*.
+Suporta *"up to 3 Availability Zones"* (até 3 Zonas de Disponibilidade).
 
 ## 5. Managed File Transfer Workflows (MFTW)
 

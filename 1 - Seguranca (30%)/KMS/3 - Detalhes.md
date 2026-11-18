@@ -37,7 +37,7 @@ Para ler: envia a data key criptografada para `Decrypt`, recebe a versão em tex
 
 **AWS managed key** — alias no formato `aws/{service-name}` (`aws/s3`, `aws/rds`, `aws/ebs`). *"Controlled by service; viewable by customer"* (controlado pelo serviço; visível para o cliente). *"AWS KMS manages rotation (annual)"* (o AWS KMS gerencia a rotação (anual)) e a rotação é *"Required. Every year (approximately 365 days)"* (obrigatória; todo ano (aproximadamente 365 dias)) — você **não** pode ligar nem desligar. **Sem tarifa mensal.** A doc nota que, desde 2021, novos serviços AWS não criam mais esse tipo (é legado).
 
-**AWS owned key** — *"Exclusively controlled and only viewable by the AWS service"* (controlado exclusivamente pelo serviço da AWS, e visível apenas para ele). *"Not viewable by the customer"* (não visível para o cliente) para fins de log. E o ponto decisivo: *"you cannot change their policies, you cannot audit activities on these keys, and you cannot delete them."* Sem custo.
+**AWS owned key** — *"Exclusively controlled and only viewable by the AWS service"* (controlado exclusivamente pelo serviço da AWS, e visível apenas para ele). *"Not viewable by the customer"* (não visível para o cliente) para fins de log. E o ponto decisivo: *"you cannot change their policies, you cannot audit activities on these keys, and you cannot delete them."* (você não consegue alterar as policies delas, auditar as atividades nessas chaves, nem excluí-las) Sem custo.
 
 > [!important] A regra de decisão
 > Precisa de **auditoria**, **controle de acesso próprio**, **compartilhamento cross-account** ou **rotação definida por você** → **customer managed key**.

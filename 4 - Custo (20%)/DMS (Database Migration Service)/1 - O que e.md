@@ -30,7 +30,7 @@ E o modo de operação:
 
 > *"AWS DMS supports fully heterogeneous data migrations between the supported engines."* (o AWS DMS suporta migrações de dados totalmente heterogêneas entre os engines compatíveis)
 
-Para a conversão: *"DMS Schema Conversion"* no console, que *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino); ou *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC"*.
+Para a conversão: *"DMS Schema Conversion"* no console, que *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino); ou *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC"* (você pode baixar o AWS Schema Conversion Tool (AWS SCT) para o seu computador).
 
 > [!warning] A divisão de trabalho
 > **DMS migra os dados. A conversão de schema é outra ferramenta** (DMS Schema Conversion ou AWS SCT). Alternativa que diz "o DMS converte o schema" está errada.

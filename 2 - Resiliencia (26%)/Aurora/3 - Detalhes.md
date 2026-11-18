@@ -35,7 +35,7 @@ Durante o failover em **Aurora MySQL**: *"Aurora restarts only the writer DB ins
 
 ⚠️ Nuance do reader endpoint: *"During a failover, the reader endpoint might direct connections to the new primary DB instance of a DB cluster for a short time after an Aurora Replica is promoted."* (durante um failover, o endpoint de leitura pode direcionar conexões para a nova instância primária do cluster por um curto período depois que uma réplica do Aurora é promovida)
 
-E uma dica operacional da própria doc: *"the fastest path to recovery is often to restart or to fail over to the same DB instance. Restarting is faster and involves less overhead than failover."*
+E uma dica operacional da própria doc: *"the fastest path to recovery is often to restart or to fail over to the same DB instance. Restarting is faster and involves less overhead than failover."* (o caminho mais rápido para a recuperação costuma ser reiniciar ou fazer failover para a mesma instância; reiniciar é mais rápido e tem menos sobrecarga que o failover)
 
 ## 3. Os endpoints — qual usar
 
@@ -49,7 +49,7 @@ E uma dica operacional da própria doc: *"the fastest path to recovery is often 
 
 ## 4. Aurora Global Database
 
-Estrutura: *"one primary AWS Region where your data is written, and up to 10 read-only secondary AWS Regions"* (uma Região primária, onde seus dados são gravados, e até 10 Regiões secundárias somente de leitura). O lag é *"typically under a second"* (normalmente abaixo de um segundo), com *"dedicated infrastructure"*.
+Estrutura: *"one primary AWS Region where your data is written, and up to 10 read-only secondary AWS Regions"* (uma Região primária, onde seus dados são gravados, e até 10 Regiões secundárias somente de leitura). O lag é *"typically under a second"* (normalmente abaixo de um segundo), com *"dedicated infrastructure"* (infraestrutura dedicada).
 
 Cada cluster secundário suporta **16** instâncias de leitura — *"rather than the usual limit of 15 for a single Aurora cluster"* (em vez do limite usual de 15 de um único cluster do Aurora), porque não precisa de writer.
 
@@ -57,7 +57,7 @@ Cada cluster secundário suporta **16** instâncias de leitura — *"rather than
 
 | Operação | Quando | RPO |
 |---|---|---|
-| **Switchover** (antes *"managed planned failover"*) | Operação **planejada** (rotação regional, teste de DR) | **0** — *"synchronizes secondary DB clusters with the primary before making any other changes"* (sincroniza os clusters secundários com o primário antes de fazer qualquer outra mudança) |
+| **Switchover** (antes *"managed planned failover"* (failover planejado e gerenciado)) | Operação **planejada** (rotação regional, teste de DR) | **0** — *"synchronizes secondary DB clusters with the primary before making any other changes"* (sincroniza os clusters secundários com o primário antes de fazer qualquer outra mudança) |
 | **Failover** | **Desastre** na região primária | *"a non-zero value measured in seconds"* (CLI exige `--allow-data-loss`) |
 
 RTO geral: *"can be in the order of minutes"* (pode ser da ordem de minutos). Em versões qualificadas, o switchover leva *"typically under 30 seconds"* (normalmente abaixo de 30 segundos).
@@ -74,7 +74,7 @@ Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` ace
 
 **1 ACU ≈ 2 GiB** de memória. Mínimo **0,5 ACU**; com **0 ACU** o cluster **pausa automaticamente**.
 
-A escala é fina e sem interrupção: *"Aurora serverless can add half an ACU when only a little more capacity is needed"* (o Aurora Serverless consegue adicionar meia ACU quando só um pouco mais de capacidade é necessário), *"Scaling can change capacity by as little as 0.5 ACUs, instead of doubling or halving"* (a escala pode variar a capacidade em apenas 0,5 ACU, em vez de dobrar ou reduzir pela metade), e *"Scaling typically happens with no pause in processing at all"* (a escala normalmente acontece sem nenhuma pausa no processamento) — inclusive *"while SQL statements are running and transactions are open"*.
+A escala é fina e sem interrupção: *"Aurora serverless can add half an ACU when only a little more capacity is needed"* (o Aurora Serverless consegue adicionar meia ACU quando só um pouco mais de capacidade é necessário), *"Scaling can change capacity by as little as 0.5 ACUs, instead of doubling or halving"* (a escala pode variar a capacidade em apenas 0,5 ACU, em vez de dobrar ou reduzir pela metade), e *"Scaling typically happens with no pause in processing at all"* (a escala normalmente acontece sem nenhuma pausa no processamento) — inclusive *"while SQL statements are running and transactions are open"* (enquanto instruções SQL estão em execução e transações estão abertas).
 
 Diferença estrutural com o provisionado: *"For a provisioned cluster, scaling up requires adding a whole new DB instance."* (num cluster provisionado, escalar para cima exige adicionar uma instância inteira nova) E a conversão é sem recriar: *"You can modify existing DB instances from provisioned to Aurora serverless or from Aurora serverless to provisioned."* (você pode modificar instâncias existentes de provisionadas para Aurora Serverless, e vice-versa)
 

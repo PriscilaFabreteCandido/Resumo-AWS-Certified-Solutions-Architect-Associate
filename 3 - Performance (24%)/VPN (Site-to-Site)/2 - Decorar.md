@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| **Túneis por conexão** | **2** — *"which you can simultaneously use for high availability"* |
+| **Túneis por conexão** | **2** — *"which you can simultaneously use for high availability"* (que você pode usar simultaneamente para alta disponibilidade) |
 | Banda **padrão** por túnel | **1,25 Gbps** |
 | **Large Bandwidth Tunnel** | **até 5 Gbps** por túnel — *"Available for VPN connections attached to Transit Gateway or Cloud WAN"* (disponível para conexões VPN anexadas a um Transit Gateway ou ao Cloud WAN) |
 | Criptografia | **IPsec**, **AES 256-bit**, **IKEv2** |
@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 | IPv6 externo no túnel | Só com **Transit Gateway** e Cloud WAN |
 | **Path MTU Discovery** | *"An Site-to-Site VPN connection does not support Path MTU Discovery"* (uma conexão Site-to-Site VPN não oferece suporte a Path MTU Discovery) |
 | MTU sobre VPN (via TGW) | **1.500 bytes** (contra 8.500 entre VPCs) |
-| BGP e IPsec | *"when you use BGP, both the IPsec and the BGP sessions must be terminated on the same user gateway device"* |
+| BGP e IPsec | *"when you use BGP, both the IPsec and the BGP sessions must be terminated on the same user gateway device"* (quando você usa BGP, as sessões IPsec e BGP precisam terminar no mesmo dispositivo de gateway do cliente) |
 
 ## Accelerated VPN
 

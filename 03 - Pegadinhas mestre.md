@@ -128,7 +128,7 @@ atualizado: 2026-11-08
 | GSI consome capacidade da tabela | GSI tem **capacidade própria**. **LSI** consome a da tabela base. |
 | GSI devolve atributo não projetado | **Não.** GSI só devolve o que foi projetado. **LSI** busca o resto na tabela. |
 | DAX acelera leitura forte | **Não.** Leitura forte **passa direto** para o DynamoDB e **não é cacheada**. |
-| TTL do DynamoDB apaga na hora | *"within a few days of their expiration time"*. Itens expirados ainda aparecem em Scan/Query — filtre. |
+| TTL do DynamoDB apaga na hora | *"within a few days of their expiration time"* (poucos dias depois do momento de expiração). Itens expirados ainda aparecem em Scan/Query — filtre. |
 | PITR restaura a tabela no lugar | *"always restores to a new table."* (sempre restaura para uma tabela nova) |
 | ElastiCache Redis = Memcached | Redis: replicação, persistência, HA, estruturas de dados. Memcached: multithread, simples, sem replicação. |
 | Redshift é para OLTP | É **OLAP** (analítico). Para OLTP: RDS/Aurora/DynamoDB. |

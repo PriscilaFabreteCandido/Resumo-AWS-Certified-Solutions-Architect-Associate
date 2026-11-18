@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-Título da página: **"AWS Security Hub Cloud Security Posture Management (AWS Security Hub CSPM)"**.
+Título da página: **"AWS Security Hub Cloud Security Posture Management (AWS Security Hub CSPM)"** (AWS Security Hub Cloud Security Posture Management (gestão de postura de segurança na nuvem)).
 
 > *"provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices."* (oferece uma visão abrangente da sua postura de segurança na AWS e ajuda a avaliar seu ambiente em relação a padrões e boas práticas do setor)
 

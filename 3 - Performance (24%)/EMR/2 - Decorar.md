@@ -37,7 +37,7 @@ A doc sobre Spot: *"Spot Instances can offer significant savings—as low as a t
 |---|---|---|
 | Onde | Discos dos core nodes | **S3** |
 | Persiste após o cluster | **Não** | **Sim** |
-| Citação | — | *"uses S3 as a data layer... so that you can separate your compute and storage"* |
+| Citação | — | *"uses S3 as a data layer... so that you can separate your compute and storage"* (usa o S3 como camada de dados... para que você separe computação de armazenamento) |
 
 ## EMR × Glue × Athena
 

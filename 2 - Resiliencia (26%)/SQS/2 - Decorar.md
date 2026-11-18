@@ -44,7 +44,7 @@ Recomendação da doc para escalar FIFO: *"increasing the number of message grou
 
 | Item | Detalhe |
 |---|---|
-| `maxReceiveCount` | *"the number of times a consumer can receive a message from a source queue before it is moved to a dead-letter queue"* |
+| `maxReceiveCount` | *"the number of times a consumer can receive a message from a source queue before it is moved to a dead-letter queue"* (o número de vezes que um consumidor pode receber uma mensagem da fila de origem antes que ela seja movida para a dead-letter queue) |
 | Mesma conta e região | **Obrigatório** |
 | Mesmo tipo | Fila FIFO → DLQ **FIFO** |
 | Boa prática | Retenção da DLQ **maior** que a da origem |

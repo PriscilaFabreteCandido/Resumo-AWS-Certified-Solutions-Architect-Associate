@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Cópias dos dados** | **6 cópias em 3 AZs**, replicação **síncrona** |
 | **Aurora Replicas** | até **15** |
-| **Volume do cluster** | até **128 TiB** (*"up to 256 tebibytes (TiB) for specific engine versions"*) |
+| **Volume do cluster** | até **128 TiB** (*"up to 256 tebibytes (TiB) for specific engine versions"* (até 256 tebibytes (TiB) em determinadas versões de engine)) |
 | **Failover com réplica** | *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30) |
 | **Failover sem réplica** | *"typically takes less than 10 minutes"* (recria a instância) |
 | **Prioridade de failover** | **tier 0** (maior) a **15** (menor) |
@@ -28,7 +28,7 @@ atualizado: 2026-11-08
 | Lag de replicação | *"typically under a second"* (normalmente abaixo de um segundo) |
 | Instâncias de leitura na secundária | **16** (vs 15 num cluster normal) |
 | **RTO** | *"can be in the order of minutes"* (pode ser da ordem de minutos) |
-| **RPO** | *"typically measured in seconds"* |
+| **RPO** | *"typically measured in seconds"* (normalmente medido em segundos) |
 | **Switchover** (planejado) | **RPO = 0** — *"synchronizes secondary DB clusters with the primary before making any other changes"* (sincroniza os clusters secundários com o primário antes de fazer qualquer outra mudança) |
 | Switchover em versões qualificadas | *"typically under 30 seconds"* (normalmente abaixo de 30 segundos) |
 | **Failover** (desastre) | RPO *"a non-zero value measured in seconds"* (um valor diferente de zero, medido em segundos); CLI exige `--allow-data-loss` |

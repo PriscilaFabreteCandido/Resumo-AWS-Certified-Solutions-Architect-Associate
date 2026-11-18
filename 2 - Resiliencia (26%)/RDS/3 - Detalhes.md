@@ -28,7 +28,7 @@ Três vantagens sobre o Multi-AZ instance:
 2. **Failover < 35 s**
 3. **Menor latência de escrita** — *"lower write latency when compared to Multi-AZ DB instance deployments"* (menor latência de escrita em comparação com implantações Multi-AZ de instância), porque o commit espera **um** reader, não todos
 
-O failover escolhe o reader *"with the most recent change record"*.
+O failover escolhe o reader *"with the most recent change record"* (com o registro de alteração mais recente).
 
 Restrições: engines **MySQL e PostgreSQL**, e classes de instância com NVMe local (db.m5d, db.m6gd, db.r6gd, db.r6id, db.x2iedn etc.).
 

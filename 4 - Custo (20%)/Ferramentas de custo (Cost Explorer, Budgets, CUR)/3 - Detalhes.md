@@ -47,7 +47,7 @@ Atualização: *"up to three times a day"* (até três vezes por dia) — não �
 
 ## 4. CUR — quando o painel não basta
 
-O CUR é *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível), publicado *"to an Amazon S3 bucket that you own"*, em **CSV**, com granularidade de **hora, dia ou mês**, atualizado *"at least once a day"* (até 3×).
+O CUR é *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível), publicado *"to an Amazon S3 bucket that you own"* (para um bucket do Amazon S3 que pertence a você), em **CSV**, com granularidade de **hora, dia ou mês**, atualizado *"at least once a day"* (até 3×).
 
 Use quando precisa de:
 - **Granularidade horária** por recurso

@@ -37,7 +37,7 @@ Roda *"open-source versions of Apache Kafka"* (versões open source do Apache Ka
 | Modo | Quando |
 |---|---|
 | **MSK Provisioned** | Você dimensiona brokers (Standard ou **Express**) — controle e custo previsível |
-| **MSK Serverless** | *"you only provision your Kafka server resources at a cluster level"* — sem dimensionar broker |
+| **MSK Serverless** | *"you only provision your Kafka server resources at a cluster level"* (você só provisiona os recursos do servidor Kafka no nível do cluster) — sem dimensionar broker |
 
 Componentes adicionais citados na doc: **MSK Connect** (roda conectores Kafka Connect gerenciados), **MSK Replicator** (replica entre clusters, inclusive cross-Region, útil para DR), e os controllers **KRaft** *"included at no additional cost"* (substituem o ZooKeeper).
 

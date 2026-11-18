@@ -58,7 +58,7 @@ atualizado: 2026-11-08
 > **C)** Windows Single-AZ
 > **D)** ONTAP Single-AZ
 >
-> **Por que B**: *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos); já o **Single-AZ (non-HA)** recupera em *"within 30 minutes"*.
+> **Por que B**: *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos); já o **Single-AZ (non-HA)** recupera em *"within 30 minutes"* (em até 30 minutos).
 
 ## ⚠️ Armadilhas
 

@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Snowmobile
 > **D)** Transfer Family
 >
-> **Por que B**: 20 TB em 1 Gbps cabe em ~2 dias — não há motivo para dispositivo físico, e a própria AWS aponta o DataSync para *"online transfers"*.
+> **Por que B**: 20 TB em 1 Gbps cabe em ~2 dias — não há motivo para dispositivo físico, e a própria AWS aponta o DataSync para *"online transfers"* (transferências online).
 
 > [!question]- Q3. Qual a capacidade usável do **Snowball Edge Storage Optimized**?
 > **A)** 80 TB

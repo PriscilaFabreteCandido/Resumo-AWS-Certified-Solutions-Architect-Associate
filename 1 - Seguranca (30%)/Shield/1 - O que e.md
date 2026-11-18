@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 |---|---|---|
 | Custo | *"provided automatically and at no extra charge when you use AWS"* (fornecido automaticamente e sem custo extra quando você usa a AWS) | **Pago** (assinatura) |
 | Camadas | 3 e 4, e vetores conhecidos na 7 | + **mitigação automática na camada 7** |
-| Visibilidade | Básica | *"advanced event visibility"* |
+| Visibilidade | Básica | *"advanced event visibility"* (visibilidade avançada de eventos) |
 | Suporte | — | **Shield Response Team (SRT)** e **engajamento proativo** |
 | Recursos protegidos | Todos | **EC2, ELB, CloudFront, Route 53 hosted zones, Global Accelerator (standard accelerators)** |
 

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Mitigação automática na camada 7** | Adiciona um rule group de **150 WCUs** no WAF |
 | **Shield Response Team (SRT)** | *"dedicated support from the Shield Response Team (SRT)"* (suporte dedicado da Shield Response Team (SRT)) |
-| **Engajamento proativo** | *"the SRT can proactively contact you"* e, com seu consentimento, aplica regras de WAF |
+| **Engajamento proativo** | *"the SRT can proactively contact you"* (a SRT pode entrar em contato com você proativamente) e, com seu consentimento, aplica regras de WAF |
 | Visibilidade de evento | Detalhada, com métricas e relatórios |
 | Cobertura de custo do WAF | Até **1.500 WCUs** e **50 bilhões** de requisições/mês |
 

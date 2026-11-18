@@ -67,7 +67,7 @@ Tempo ≈ Volume ÷ Banda útil
 
 Se o tempo calculado não cabe no prazo, a resposta é **Snow Family** (dispositivo físico).
 
-⚠️ E a nota importante: o suporte ao **Snowball** encerra em **31/12/2026**, e a própria doc já aponta: *"New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions."*
+⚠️ E a nota importante: o suporte ao **Snowball** encerra em **31/12/2026**, e a própria doc já aponta: *"New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions."* (novos clientes devem considerar o AWS DataSync para transferências online, o AWS Data Transfer Terminal para transferências físicas seguras, ou soluções de parceiros da AWS)
 
 ## 6. Padrões de arquitetura
 

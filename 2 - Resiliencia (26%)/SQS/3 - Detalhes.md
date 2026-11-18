@@ -20,13 +20,13 @@ Três formas de resolver:
 | **`ChangeMessageVisibility`** (heartbeat) | Duração variável — o consumidor estende enquanto trabalha |
 | **Consumidor idempotente** | Sempre, em fila **standard** |
 
-O limite máximo é **12 horas**, e a doc avisa: *"the visibility timeout has a maximum limit of 12 hours from when the message is first received. Extending the timeout doesn't reset this 12-hour limit."*
+O limite máximo é **12 horas**, e a doc avisa: *"the visibility timeout has a maximum limit of 12 hours from when the message is first received. Extending the timeout doesn't reset this 12-hour limit."* (o visibility timeout tem limite máximo de 12 horas a partir do primeiro recebimento da mensagem; estender o tempo não reinicia esse limite de 12 horas)
 
 `VisibilityTimeout=0` devolve a mensagem imediatamente — útil para liberar quando o consumidor detecta que não pode processar.
 
 ## 2. Standard × FIFO — o trade-off
 
-**Standard** é *at-least-once*: *"there's no absolute guarantee that a message won't be delivered more than once"*. Em troca, o throughput é praticamente ilimitado.
+**Standard** é *at-least-once*: *"there's no absolute guarantee that a message won't be delivered more than once"* (não há garantia absoluta de que uma mensagem não será entregue mais de uma vez). Em troca, o throughput é praticamente ilimitado.
 
 **FIFO** é *exactly-once* e ordenado — mas com teto: **300 TPS** por ação de API, ou **3.000 msg/s** com batch de 10 (*"The 3,000 messages per second represent 300 API calls, each with a batch of 10 messages"* (as 3.000 mensagens por segundo correspondem a 300 chamadas de API, cada uma com um lote de 10 mensagens)).
 
@@ -63,7 +63,7 @@ A DLQ recebe mensagens que falharam `maxReceiveCount` vezes. Serve para:
 - Investigar o porquê da falha
 - **Redrive** de volta para a origem depois de corrigir o bug
 
-Detalhe das filas standard: *"where maxReceiveCount is greater than 3, if a message is received 3 or more times without being deleted, SQS moves it to the back of the queue"* — para não bloquear o processamento das outras.
+Detalhe das filas standard: *"where maxReceiveCount is greater than 3, if a message is received 3 or more times without being deleted, SQS moves it to the back of the queue"* (quando o maxReceiveCount é maior que 3, se uma mensagem for recebida 3 ou mais vezes sem ser apagada, o SQS a move para o fim da fila) — para não bloquear o processamento das outras.
 
 ## 6. Escalar o consumidor
 

@@ -57,7 +57,7 @@ Para CloudFront, a doc avisa: renove ou reimporte *"at least 24 hours before the
 ## Wildcard e SAN
 
 - *"ACM wildcard certificates can protect an unlimited number of subdomains"* (`*.exemplo.com`).
-- Para alternate domain name no CloudFront: *"the SAN field must contain an exact match for the alternate domain name, or contain a wildcard at the same level"*.
+- Para alternate domain name no CloudFront: *"the SAN field must contain an exact match for the alternate domain name, or contain a wildcard at the same level"* (o campo SAN precisa conter uma correspondência exata do domínio alternativo, ou um curinga no mesmo nível).
 - Certificado da origem incompatível → CloudFront devolve **502 Bad Gateway**.
 
 ## Links

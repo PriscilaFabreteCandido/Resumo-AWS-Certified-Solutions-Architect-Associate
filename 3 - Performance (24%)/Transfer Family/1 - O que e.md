@@ -19,7 +19,7 @@ E o **SFTP** é *"version 3"*.
 
 ## Os backends
 
-> *"Amazon Simple Storage Service (Amazon S3) storage"* e *"Amazon Elastic File System (Amazon EFS) Network File System (NFS) file systems"*
+> *"Amazon Simple Storage Service (Amazon S3) storage"* (armazenamento no Amazon Simple Storage Service (Amazon S3)) e *"Amazon Elastic File System (Amazon EFS) Network File System (NFS) file systems"* (sistemas de arquivos NFS do Amazon Elastic File System (Amazon EFS))
 
 ## O gatilho de prova
 

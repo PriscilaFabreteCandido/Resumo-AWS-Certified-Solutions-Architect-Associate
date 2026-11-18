@@ -9,13 +9,13 @@ atualizado: 2026-11-08
 # Amazon Athena — O que é
 
 > [!info] Em uma frase
-> Consulta **SQL direto no S3**, **serverless**: *"there is no infrastructure to set up or manage, and you pay only for the queries you run"*.
+> Consulta **SQL direto no S3**, **serverless**: *"there is no infrastructure to set up or manage, and you pay only for the queries you run"* (não há infraestrutura para configurar ou gerenciar, e você paga apenas pelas consultas que executa).
 
 ## Definição oficial
 
 > *"Athena SQL and Apache Spark on Amazon Athena are serverless, so there is no infrastructure to set up or manage, and you pay only for the queries you run."* (o Athena SQL e o Apache Spark no Amazon Athena são serverless: não há infraestrutura para configurar ou gerenciar, e você paga apenas pelas consultas que executa)
 
-E o escopo: *"analyze data directly in Amazon S3"* (analisar dados diretamente no Amazon S3) com *"standard SQL"*.
+E o escopo: *"analyze data directly in Amazon S3"* (analisar dados diretamente no Amazon S3) com *"standard SQL"* (SQL padrão).
 
 ## O modelo de cobrança — e as três alavancas
 

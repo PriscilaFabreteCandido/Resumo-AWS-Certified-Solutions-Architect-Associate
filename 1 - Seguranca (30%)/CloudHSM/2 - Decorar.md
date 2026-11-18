@@ -16,7 +16,7 @@ atualizado: 2026-11-08
 | AWS vê o material? | Não vê, mas gerencia o serviço | *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS) |
 | Integração nativa com serviços AWS | **Sim**, quase todos | Via **custom key store** da KMS, ou direto na app |
 | Interfaces | API da AWS | **PKCS #11, JCE, CNG, KSP** |
-| Esforço operacional | Baixo | *"you have more responsibility"* |
+| Esforço operacional | Baixo | *"you have more responsibility"* (você tem mais responsabilidade) |
 
 ## Fatos para decorar
 
