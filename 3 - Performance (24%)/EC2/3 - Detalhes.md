@@ -37,18 +37,18 @@ Gatilhos de prova:
 - Qualquer coisa que precise sobreviver a um reboot ou a uma substituição de instância → **EBS**
 
 > [!warning] Instâncias não-Nitro limitam IOPS
-> A doc do EBS avisa: *"Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS."* Provisionar io2 Block Express com 100.000 IOPS numa instância antiga não entrega o que você pagou.
+> A doc do EBS avisa: *"Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS."* (outros tipos de instância podem ser anexados a volumes provisionados com até 64.000 IOPS, mas alcançam no máximo 32.000 IOPS) Provisionar io2 Block Express com 100.000 IOPS numa instância antiga não entrega o que você pagou.
 
 ## 3. Opções de compra, em detalhe
 
 ### Savings Plans (a AWS recomenda sobre RI)
 
-A documentação é explícita: *"We recommend Savings Plans over Reserved Instances."*
+A documentação é explícita: *"We recommend Savings Plans over Reserved Instances."* (recomendamos Savings Plans em vez de Instâncias Reservadas)
 
 São **quatro** tipos: *"Compute Savings Plans, Database Savings Plans, EC2 Instance Savings Plans, and SageMaker AI Savings Plans."*
 
-- **Compute** (até **66%**): aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"*, e cobre **Fargate e Lambda**. É a escolha quando a arquitetura pode mudar.
-- **EC2 Instance** (até **72%**): compromisso com *"a specific instance family in a chosen AWS Region"*, flexível em tamanho, SO e tenancy dentro disso. Maior desconto, menor flexibilidade.
+- **Compute** (até **66%**): aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região), e cobre **Fargate e Lambda**. É a escolha quando a arquitetura pode mudar.
+- **EC2 Instance** (até **72%**): compromisso com *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida), flexível em tamanho, SO e tenancy dentro disso. Maior desconto, menor flexibilidade.
 
 Termos: **1 ou 3 anos**. Pagamento: All upfront, Partial upfront, No upfront. *"The terms of the commitment can't be changed after purchase."*
 
@@ -59,27 +59,27 @@ Termos: **1 ou 3 anos**. Pagamento: All upfront, Partial upfront, No upfront. *"
 - **Standard**: *"provide the most significant discount, but can only be modified. Standard Reserved Instances can't be exchanged."*
 - **Convertible**: *"provide a lower discount... but can be exchanged for another Convertible Reserved Instance with different instance attributes."*
 
-Não renovam automaticamente e **não podem ser canceladas**. A opção **No Upfront** exige *"a successful billing history"*.
+Não renovam automaticamente e **não podem ser canceladas**. A opção **No Upfront** exige *"a successful billing history"* (um histórico de pagamentos em dia).
 
 **Zonal × regional**: só a RI **zonal** reserva capacidade. A regional é apenas desconto de billing. Para garantir capacidade sem compromisso longo, use **On-Demand Capacity Reservation**.
 
 ### Spot
 
-*"available for less than the On-Demand price"*, com *"steep discounts"* — a doc não publica um percentual fixo.
+*"available for less than the On-Demand price"*, com *"steep discounts"* (descontos expressivos) — a doc não publica um percentual fixo.
 
-A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"*, com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."*
+A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."*
 
 A requisição é **one-time** ou **persistent** — *"Amazon EC2 automatically resubmits a persistent Spot Instance request after the Spot Instance associated with the request is interrupted."*
 
 Casos de uso que a doc cita: *"data analysis, batch jobs, background processing, and optional tasks."*
 
-⚠️ *"Spot Instances are not covered by Savings Plans."*
+⚠️ *"Spot Instances are not covered by Savings Plans."* (instâncias Spot não são cobertas por Savings Plans)
 
 **Estratégias de alocação do EC2 Fleet / Spot Fleet**:
 - **price capacity optimized** — **recomendada**: pools com maior capacidade disponível, e entre eles o mais barato
 - **capacity optimized** — pools *"most likely to have the lowest chance of interruption in the near term"* (variante *prioritized* respeita sua ordem em best-effort)
 - **diversified** — espalha por todos os pools
-- **lowest price** — marcada *"(not recommended)"*: *"has the highest risk of interruption"*. É o **default da CLI**, por isso é distrator comum
+- **lowest price** — marcada *"(not recommended)"*: *"has the highest risk of interruption"* (tem o maior risco de interrupção). É o **default da CLI**, por isso é distrator comum
 
 **Capacity Rebalancing** lança o substituto **antes** da interrupção: `launch-before-terminate` (com `termination-delay` de **120 s a 7.200 s**) ou `launch`. Só em fleet tipo **maintain**, e **não pode ser alterado** depois de criado.
 
@@ -88,7 +88,7 @@ Casos de uso que a doc cita: *"data analysis, batch jobs, background processing,
 | | **Dedicated Hosts** | **Dedicated Instances** |
 |---|---|---|
 | Você paga | *"a physical host that is fully dedicated to running your instances"* | *"by the hour, for instances that run on single-tenant hardware"* |
-| Licença própria | **Sim** — *"bring your existing per-socket, per-core, or per-VM software licenses"* | Não é o caso de uso |
+| Licença própria | **Sim** — *"bring your existing per-socket, per-core, or per-VM software licenses"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM) | Não é o caso de uso |
 | Vê sockets e cores | **Sim**, e controla o placement | Não |
 | Placement group | **Não pode** | Pode (partition: máx. 2; spread: não suportado) |
 
@@ -98,11 +98,11 @@ Casos de uso que a doc cita: *"data analysis, batch jobs, background processing,
 
 *"Placement groups are optional"* e *"There is no charge for creating a placement group."* Uma instância pertence a **um** grupo; grupos não se fundem; **Dedicated Hosts não podem lançar em placement group**.
 
-**Cluster** — *"Packs instances close together inside an Availability Zone."* **Uma AZ só.** Fluxo único de **10 Gbps** dentro do grupo (5 Gbps fora, e 5 Gbps também para internet e Direct Connect). Recomendado usar o mesmo tipo de instância. Não disponível para T2, Mac1 e M7i-flex.
+**Cluster** — *"Packs instances close together inside an Availability Zone."* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade) **Uma AZ só.** Fluxo único de **10 Gbps** dentro do grupo (5 Gbps fora, e 5 Gbps também para internet e Direct Connect). Recomendado usar o mesmo tipo de instância. Não disponível para T2, Mac1 e M7i-flex.
 
 **Spread** — *"a group of instances that are each placed on distinct hardware."* Pode abranger várias AZs na mesma região, *"but it supports a maximum of seven running instances in each Availability Zone"* (3 AZs = 21). Não suportado em Dedicated Instances.
 
-**Partition** — *"Spreads your instances across logical partitions"*, cada partição com racks próprios. *"A partition placement group can have a maximum of seven partitions per Availability Zone"* (2 com Dedicated Instances). Casos citados: HDFS, HBase, Cassandra, Kafka, Hadoop.
+**Partition** — *"Spreads your instances across logical partitions"* (distribui suas instâncias entre partições lógicas), cada partição com racks próprios. *"A partition placement group can have a maximum of seven partitions per Availability Zone"* (2 com Dedicated Instances). Casos citados: HDFS, HBase, Cassandra, Kafka, Hadoop.
 
 **Precision time** — acesso ao Amazon Time Sync aprimorado, sem custo extra.
 

@@ -41,7 +41,7 @@ O STS resolve isso trocando "guardar um segredo" por "provar quem você é e rec
 E na conta de origem, o principal precisa de uma policy permitindo `sts:AssumeRole` naquele ARN.
 
 > [!important] Trust policy é exceção à regra da união
-> A doc do IAM diz que políticas de recurso podem conceder sozinhas no mesmo account, **mas**: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."*
+> A doc do IAM diz que políticas de recurso podem conceder sozinhas no mesmo account, **mas**: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."* (as trust policies de role do IAM e as key policies do KMS são exceções... elas precisam permitir o acesso explicitamente para os principais)
 > Ou seja: sem o principal listado na trust policy, não há `AssumeRole`, ponto.
 
 ## 3. Confused deputy — os dois padrões
@@ -59,7 +59,7 @@ E na conta de origem, o principal precisa de uma policy permitindo `sts:AssumeRo
 | Usuário final de app | **Cognito user pool** (autentica) → **identity pool** → `AssumeRoleWithWebIdentity` |
 | Workload fora da AWS (CI/CD, Kubernetes externo) | **OIDC provider** na conta → `AssumeRoleWithWebIdentity`, sem access key |
 
-O guia oficial lista como skill: *"Determining when to federate a directory service with IAM roles"* e *"Designing a role-based access control strategy (for example, AWS STS, role switching, cross-account access)"*.
+O guia oficial lista como skill: *"Determining when to federate a directory service with IAM roles"* (determinar quando federar um serviço de diretório com roles do IAM) e *"Designing a role-based access control strategy (for example, AWS STS, role switching, cross-account access)"*.
 
 ## 5. Sessão: duração e revogação
 

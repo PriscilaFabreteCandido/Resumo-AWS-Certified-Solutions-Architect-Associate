@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Scratch** | *"Data is not replicated and does not persist if a file server fails"* |
 | **Persistent** | *"data is replicated, and file servers are replaced if they fail"* |
-| **S3 vinculado** | *"transparently presents S3 objects as files"* |
+| **S3 vinculado** | *"transparently presents S3 objects as files"* (apresenta os objetos do S3 como arquivos, de forma transparente) |
 | Importação | Importa a listagem dos arquivos na criação; pode importar os novos depois |
 | Escrita de volta | *"makes it possible for you to write file system data back to S3"* |
 | Classes de storage | SSD, Intelligent-Tiering, HDD |

@@ -28,7 +28,7 @@ O NAT gateway vive numa subnet **pública** (com rota para o IGW) e tem um **Ela
 ## Os três fatos que mais caem
 
 1. **Não aceita security group.** *"You cannot associate security groups with NAT gateways."* Controle por **NACL** na subnet dele ou por **SG nos recursos atrás**.
-2. **É zonal.** *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* Um NAT só = ponto único de falha e tráfego cross-AZ cobrado.
+2. **É zonal.** *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona) Um NAT só = ponto único de falha e tráfego cross-AZ cobrado.
 3. **Cobra por hora + por GB processado.** É o vilão nº 1 de custo em laboratório e em arquitetura mal desenhada.
 
 ## IPv4 × IPv6

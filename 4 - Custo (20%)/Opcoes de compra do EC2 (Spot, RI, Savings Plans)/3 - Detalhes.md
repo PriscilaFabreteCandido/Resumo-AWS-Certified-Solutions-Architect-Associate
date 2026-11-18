@@ -29,13 +29,13 @@ A carga tolera INTERRUPÇÃO?
 
 ## 2. Savings Plans — por que a AWS os prefere
 
-> *"We recommend Savings Plans over Reserved Instances."*
+> *"We recommend Savings Plans over Reserved Instances."* (recomendamos Savings Plans em vez de Instâncias Reservadas)
 
 A razão é a flexibilidade: a RI compromete-se com **configuração** (tipo, região, tenancy, plataforma); o Savings Plan compromete-se com **valor por hora**.
 
-**Compute Savings Plans** (até **66%**) aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"*, e — o ponto que mais cai — cobre **Fargate e Lambda**. Isso significa que modernizar a arquitetura (EC2 → containers → serverless) **não desperdiça** o compromisso.
+**Compute Savings Plans** (até **66%**) aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região), e — o ponto que mais cai — cobre **Fargate e Lambda**. Isso significa que modernizar a arquitetura (EC2 → containers → serverless) **não desperdiça** o compromisso.
 
-**EC2 Instance Savings Plans** (até **72%**) dá mais desconto em troca de amarrar *"a specific instance family in a chosen AWS Region"*, mantendo flexibilidade de **tamanho, SO e tenancy** dentro disso.
+**EC2 Instance Savings Plans** (até **72%**) dá mais desconto em troca de amarrar *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida), mantendo flexibilidade de **tamanho, SO e tenancy** dentro disso.
 
 **Database Savings Plans** (até **35%**) é o tipo que material antigo não menciona: cobre **Aurora, RDS, DynamoDB, ElastiCache, DocumentDB, Timestream, Neptune, Keyspaces, DMS e OpenSearch**, *"regardless of engine, instance family, size, Availability Zone (AZ), or Region"*.
 
@@ -51,9 +51,9 @@ A RI *"not physical instances, but rather a billing discount applied to the use 
 |---|---|---|
 | Desconto | **Maior** | Menor |
 | Modificar | **Sim** | Sim |
-| **Trocar** | **"can't be exchanged"** | **Sim**, por outra Convertible |
+| **Trocar** | **"can't be exchanged"** (não podem ser trocadas) | **Sim**, por outra Convertible |
 
-E as regras: **não renovam** automaticamente, **não podem ser canceladas**. A opção **No Upfront** exige *"a successful billing history"*.
+E as regras: **não renovam** automaticamente, **não podem ser canceladas**. A opção **No Upfront** exige *"a successful billing history"* (um histórico de pagamentos em dia).
 
 > [!important] Zonal × regional — o ponto mais confundido
 > Só a RI **zonal** (atrelada a uma AZ específica) **reserva capacidade**.
@@ -62,11 +62,11 @@ E as regras: **não renovam** automaticamente, **não podem ser canceladas**. A 
 
 ## 4. Spot — o contrato real
 
-A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"*, com **dois minutos** de aviso. Antes disso pode vir o **rebalance recommendation**, sinalizando *"an elevated risk of interruption"*.
+A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **dois minutos** de aviso. Antes disso pode vir o **rebalance recommendation**, sinalizando *"an elevated risk of interruption"*.
 
 A requisição é **one-time** ou **persistent** — a persistente *"automatically resubmits"* depois da interrupção.
 
-A doc **não publica** um percentual de desconto (só *"steep discounts"*), e é explícita: *"Spot Instances are not covered by Savings Plans."*
+A doc **não publica** um percentual de desconto (só *"steep discounts"* (descontos expressivos)), e é explícita: *"Spot Instances are not covered by Savings Plans."* (instâncias Spot não são cobertas por Savings Plans)
 
 Casos de uso citados: *"data analysis, batch jobs, background processing, and optional tasks."*
 

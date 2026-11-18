@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Snow Family
 > **D)** Storage Gateway
 >
-> **Por que B**: *"high-speed file transfer service"* com *"automatic encryption and data integrity validation"* e arquitetura paralela multi-thread.
+> **Por que B**: *"high-speed file transfer service"* com *"automatic encryption and data integrity validation"* (criptografia automática e validação de integridade dos dados) e arquitetura paralela multi-thread.
 > **A errada**: sequencial, sem validação nem preservação de metadados.
 > **C errada**: 20 TB em 1 Gbps cabe em ~2 dias — não precisa de dispositivo físico.
 > **D errada**: Gateway é **acesso contínuo**, não migração.
@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 > **C)** Storage Gateway em modo cached
 > **D)** Snow Family
 >
-> **Por que B**: a doc cita arquivar para *"S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* — evita pagar Standard e a requisição de transição por objeto.
+> **Por que B**: a doc cita arquivar para *"S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* (S3 Glacier Flexible Retrieval ou S3 Glacier Deep Archive) — evita pagar Standard e a requisição de transição por objeto.
 > ⚠️ Atenção ao mínimo de **180 dias** e ao **overhead de 40 KB por objeto**.
 
 > [!question]- Q5. Sincronizar diariamente um compartilhamento NFS on-premises com um EFS.

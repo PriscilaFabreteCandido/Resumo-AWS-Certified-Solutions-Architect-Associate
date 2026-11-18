@@ -24,7 +24,7 @@ Com Step Functions, isso é **configuração** (ASL, Amazon States Language) e v
 | **Duração** | até **1 ano** | até **5 minutos** |
 | **Semântica** | **exactly-once** | **at-least-once** (assíncrono) / at-most-once (síncrono) |
 | **Taxa de execução** | 2.000/s | **100.000/s** |
-| **Transições de estado** | 4.000/s | *"Nearly unlimited"* |
+| **Transições de estado** | 4.000/s | *"Nearly unlimited"* (praticamente ilimitado) |
 | **Preço** | por **transição de estado** | por **número e duração** de execuções + memória |
 | **Histórico** | no Step Functions, **90 dias** | **CloudWatch Logs** |
 | `.sync` e `.waitForTaskToken` | **Sim** | **Não** (só Request Response) |
@@ -32,7 +32,7 @@ Com Step Functions, isso é **configuração** (ASL, Amazon States Language) e v
 
 > [!warning] A regra que decide
 > Passo **não idempotente** (cobrar cartão, subir cluster EMR) → **Standard**, porque é *exactly-once*.
-> A doc: Standard para *"long-running, auditable workflows"* e casos como *"starting an Amazon EMR cluster or processing payments"*; Express é *"better suited for orchestrating idempotent actions"*.
+> A doc: Standard para *"long-running, auditable workflows"* e casos como *"starting an Amazon EMR cluster or processing payments"*; Express é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes).
 >
 > ⚠️ O tipo de workflow é **imutável** depois de criado.
 

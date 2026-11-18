@@ -49,7 +49,7 @@ E uma dica operacional da própria doc: *"the fastest path to recovery is often 
 
 ## 4. Aurora Global Database
 
-Estrutura: *"one primary AWS Region where your data is written, and up to 10 read-only secondary AWS Regions"*. O lag é *"typically under a second"*, com *"dedicated infrastructure"*.
+Estrutura: *"one primary AWS Region where your data is written, and up to 10 read-only secondary AWS Regions"*. O lag é *"typically under a second"* (normalmente abaixo de um segundo), com *"dedicated infrastructure"*.
 
 Cada cluster secundário suporta **16** instâncias de leitura — *"rather than the usual limit of 15 for a single Aurora cluster"*, porque não precisa de writer.
 
@@ -64,7 +64,7 @@ RTO geral: *"can be in the order of minutes"*. Em versões qualificadas, o switc
 
 **Write forwarding**: *"secondary clusters in an Aurora global database forward SQL statements that perform write operations to the primary cluster."* Ou seja: **não é multi-master** — a escrita sempre acaba na primária.
 
-Limitações documentadas: sem **Aurora Auto Scaling** nas secundárias, sem **Backtrack**, não dá para parar/iniciar clusters individualmente, e *"Secrets Manager doesn't support Aurora Global Database"*.
+Limitações documentadas: sem **Aurora Auto Scaling** nas secundárias, sem **Backtrack**, não dá para parar/iniciar clusters individualmente, e *"Secrets Manager doesn't support Aurora Global Database"* (o Secrets Manager não oferece suporte ao Aurora Global Database).
 
 Para Aurora PostgreSQL há controle de RPO: o parâmetro `rds.global_db_rpo` aceita *"from 20 seconds to 2,147,483,647 seconds"* e **bloqueia a transação** se o lag das secundárias exceder o RPO definido.
 

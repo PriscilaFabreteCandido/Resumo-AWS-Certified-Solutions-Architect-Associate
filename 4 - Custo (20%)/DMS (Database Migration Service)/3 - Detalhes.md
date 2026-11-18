@@ -41,7 +41,7 @@ Para isso existem duas ferramentas:
 
 Esse é o ângulo do domínio 4. Sair de **Oracle** ou **SQL Server** para **Aurora PostgreSQL/MySQL** elimina a **licença** comercial — e isso costuma superar qualquer otimização de instância.
 
-O guia pede, em **Task 4.3**: *"Migrating database schemas and data to different locations and/or different database engines"*, e cita no Knowledge of *"Database engines with appropriate use cases (for example, heterogeneous migrations, homogeneous migrations)"*.
+O guia pede, em **Task 4.3**: *"Migrating database schemas and data to different locations and/or different database engines"* (migrar schemas e dados de banco para outros locais e/ou outros engines), e cita no Knowledge of *"Database engines with appropriate use cases (for example, heterogeneous migrations, homogeneous migrations)"*.
 
 Por isso "trocar o engine" aparece tanto em questões de **custo de banco**, não só de migração.
 

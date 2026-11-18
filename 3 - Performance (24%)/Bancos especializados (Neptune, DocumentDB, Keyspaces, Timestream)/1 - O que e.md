@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 
 ## O princípio que a prova testa
 
-O guia repete, duas vezes, a skill: **"Using purpose-built AWS services for workloads"** (em 2.1 e 2.2). E em **Task 4.3** pede *"Determining cost-effective AWS database types (for example, time series format, columnar format)"*.
+O guia repete, duas vezes, a skill: **"Using purpose-built AWS services for workloads"** (usar serviços da AWS feitos sob medida para cada carga de trabalho) (em 2.1 e 2.2). E em **Task 4.3** pede *"Determining cost-effective AWS database types (for example, time series format, columnar format)"* (determinar os tipos de banco da AWS mais econômicos (por exemplo, formato de série temporal, formato colunar)).
 
 Tradução: quando uma alternativa usa o serviço **feito para aquilo** e outra usa um banco genérico adaptado, a primeira é a resposta.
 

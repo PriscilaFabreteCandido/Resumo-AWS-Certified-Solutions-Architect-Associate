@@ -48,7 +48,7 @@ Usuário  ──login──>  USER POOL  ──JWT──>  IDENTITY POOL  ──
 
 ## Onde o guia cita
 
-**Task 1.2**, nominalmente: *"Security services with appropriate use cases (for example, Amazon Cognito, Amazon GuardDuty, Amazon Macie)"*.
+**Task 1.2**, nominalmente: *"Security services with appropriate use cases (for example, Amazon Cognito, Amazon GuardDuty, Amazon Macie)"* (serviços de segurança e seus casos de uso apropriados (por exemplo, Amazon Cognito, Amazon GuardDuty, Amazon Macie)).
 
 ## Links
 

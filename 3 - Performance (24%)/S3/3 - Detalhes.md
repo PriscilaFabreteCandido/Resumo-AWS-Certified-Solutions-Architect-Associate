@@ -27,7 +27,7 @@ A decisão depende de **três** perguntas, nesta ordem:
 - Não → nunca One Zone
 
 > [!warning] One Zone-IA é a armadilha mais frequente do S3
-> A documentação é explícita: *"Not resilient to the loss of the Availability Zone."* Se o enunciado disser **highly available**, **critical**, **compliance** ou **production**, One Zone-IA está errado — mesmo sendo o mais barato entre os IA.
+> A documentação é explícita: *"Not resilient to the loss of the Availability Zone."* (não é resiliente à perda da Zona de Disponibilidade) Se o enunciado disser **highly available**, **critical**, **compliance** ou **production**, One Zone-IA está errado — mesmo sendo o mais barato entre os IA.
 
 ### Quando Intelligent-Tiering **não** é econômico
 
@@ -39,7 +39,7 @@ A decisão depende de **três** perguntas, nesta ordem:
 
 O lifecycle move ou apaga objetos automaticamente por idade. Duas regras governam tudo:
 
-**Regra 1 — é um modelo cascata (waterfall), só de quente para frio.** A doc é explícita: *"Amazon S3 supports a waterfall model for transitioning between storage classes."*
+**Regra 1 — é um modelo cascata (waterfall), só de quente para frio.** A doc é explícita: *"Amazon S3 supports a waterfall model for transitioning between storage classes."* (o Amazon S3 adota um modelo em cascata para as transições entre classes de armazenamento)
 
 Cada classe desce na lista e **pode pular etapas** — mas nunca sobe. O que é permitido, classe por classe (texto oficial):
 
@@ -78,7 +78,7 @@ E uma ressalva de replicação que vale anotar: *"For versioning enabled or vers
 
 Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para Deep Archive: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class."* E de Deep Archive **não sai**: *"You cannot use an S3 Lifecycle configuration rule to convert the storage class of an object from S3 Glacier Deep Archive to any other storage class."*
 
-**Regra 2 — respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* O exemplo da própria doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94** (4 + 90).
+**Regra 2 — respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento) O exemplo da própria doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94** (4 + 90).
 
 ### Objetos pequenos
 
@@ -118,7 +118,7 @@ Desde 5 de janeiro de 2023, *"all new object uploads to Amazon S3 are automatica
 Pontos que a prova explora:
 
 - **Mudar o default do bucket não recriptografa o acervo.** Só vale para objetos novos. Para os antigos: **S3 Batch Operations (Copy)** ou `CopyObject`.
-- **Cross-account com SSE-KMS exige chave customer managed.** *"If you want to grant cross-account access to your S3 objects, use a customer managed key."* Se você não especificar a chave, o S3 usa a AWS managed key `aws/s3`, que não pode ser compartilhada.
+- **Cross-account com SSE-KMS exige chave customer managed.** *"If you want to grant cross-account access to your S3 objects, use a customer managed key."* (se você quer conceder acesso entre contas aos seus objetos do S3, use uma customer managed key) Se você não especificar a chave, o S3 usa a AWS managed key `aws/s3`, que não pode ser compartilhada.
 - **Replicação preserva o tipo de criptografia da origem**: *"the replicas use the same type of encryption as the source objects. The default encryption settings of the destination bucket are not used."*
 - **Bucket de log de acesso precisa ser SSE-S3**: *"the bucket must use Amazon S3 managed keys (SSE-S3)"*.
 - **S3 Bucket Keys**: a KMS gera uma chave no nível do bucket, usada por um período limitado dentro do S3, o que *"decrease[s] the number of transactions from Amazon S3 to AWS KMS to reduce the cost of SSE-KMS"*.
@@ -144,7 +144,7 @@ Pontos que a prova explora:
 | Versionamento | *"Both source and destination buckets must have versioning enabled"* |
 | Acervo existente | **Não** é replicado. Use **S3 Batch Replication** (que também recobre objetos que **falharam**) |
 | Bidirecional | Suportado, com *replica modification sync* para metadados |
-| SLA | **S3 RTC**: *"99.9 percent of those objects within 15 minutes"* |
+| SLA | **S3 RTC**: *"99.9 percent of those objects within 15 minutes"* (99,9% desses objetos em até 15 minutos) |
 | Object Lock | Se a origem tem, o destino **precisa** ter |
 | Destino | **Não** pode ser bucket com Requester Pays |
 

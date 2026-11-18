@@ -31,7 +31,7 @@ Quando a aplicação **depende de Active Directory**, não quando você quer ape
 
 ## As duas incompatibilidades que caem
 
-> **AD Connector**: *"AD Connector is not compatible with RDS SQL Server."*
+> **AD Connector**: *"AD Connector is not compatible with RDS SQL Server."* (o AD Connector não é compatível com o RDS SQL Server)
 
 > **Simple AD**: *"Simple AD does not support multi-factor authentication (MFA), trust relationships, DNS dynamic update, schema extensions, communication over LDAPS, PowerShell AD cmdlets, or FSMO role transfer. Simple AD is not compatible with RDS SQL Server."*
 

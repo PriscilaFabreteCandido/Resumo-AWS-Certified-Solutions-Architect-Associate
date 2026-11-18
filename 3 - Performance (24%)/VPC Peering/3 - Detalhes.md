@@ -67,7 +67,7 @@ Esquecer o passo 3 num dos lados é a causa mais comum de "o peering está ativo
 
 Cross-account é suportado — e o detalhe de custo importa: dados na **mesma AZ** são grátis *"even if it's between different accounts"*.
 
-Cross-Region também: *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)"*, e o tráfego *"is encrypted before leaving AWS facilities"*.
+Cross-Region também: *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)"*, e o tráfego *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
 
 ⚠️ Mas referência de **security group** entre VPCs pareadas tem restrições em cenário cross-region.
 

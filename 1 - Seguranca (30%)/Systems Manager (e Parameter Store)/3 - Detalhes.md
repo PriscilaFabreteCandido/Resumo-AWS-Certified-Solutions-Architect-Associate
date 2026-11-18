@@ -21,13 +21,13 @@ O Session Manager inverte: o **agente** na instância abre uma conexão **de sa�
 | Chave SSH distribuída | **Autenticação por IAM** |
 | Log de sessão artesanal | Log em **S3 / CloudWatch Logs**, auditoria no **CloudTrail** |
 
-Para instâncias **sem IP público e sem NAT**, a doc cita *"AWS PrivateLink support for managed nodes without public IP addresses"* — ou seja, **interface endpoints** do SSM (`ssm`, `ssmmessages`, `ec2messages`).
+Para instâncias **sem IP público e sem NAT**, a doc cita *"AWS PrivateLink support for managed nodes without public IP addresses"* (suporte a AWS PrivateLink para nós gerenciados sem endereço IP público) — ou seja, **interface endpoints** do SSM (`ssm`, `ssmmessages`, `ec2messages`).
 
-Também suporta **port forwarding** (túnel para um banco, por exemplo) — mas atenção: *"Logging isn't available for Session Manager sessions that connect through port forwarding or SSH"*.
+Também suporta **port forwarding** (túnel para um banco, por exemplo) — mas atenção: *"Logging isn't available for Session Manager sessions that connect through port forwarding or SSH"* (o registro em log não está disponível para sessões do Session Manager que conectam por port forwarding ou SSH).
 
 ## 2. Parameter Store — quando usar em vez do Secrets Manager
 
-A comparação oficial resume: Parameter Store **não rotaciona** (*"None"*), Secrets Manager rotaciona *"Automatic, with native database integrations"*. E o custo: Standard é **grátis**, Secrets Manager é *"Billed per secret per month and per API call"*.
+A comparação oficial resume: Parameter Store **não rotaciona** (*"None"*), Secrets Manager rotaciona *"Automatic, with native database integrations"* (automático, com integrações nativas ao banco). E o custo: Standard é **grátis**, Secrets Manager é *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API).
 
 Regra de decisão:
 

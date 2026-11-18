@@ -16,7 +16,7 @@ No modo **on-demand**, a AWS gerencia os shards: começa com **4 MB/s de escrita
 
 ## 2. O gargalo de leitura — e o enhanced fan-out
 
-No modo **compartilhado**, os **2 MB/s de leitura por shard** são **divididos** entre todos os consumidores. Com 4 aplicações lendo o mesmo stream, cada uma fica com ~500 KB/s — e a latência sobe: *"An average of around 200 ms"* com um consumidor, *"around 1000 ms"* com cinco.
+No modo **compartilhado**, os **2 MB/s de leitura por shard** são **divididos** entre todos os consumidores. Com 4 aplicações lendo o mesmo stream, cada uma fica com ~500 KB/s — e a latência sobe: *"An average of around 200 ms"* (uma média de cerca de 200 ms) com um consumidor, *"around 1000 ms"* com cinco.
 
 O **enhanced fan-out** resolve: *"it gets its own 2 MB/sec allotment of read throughput"* — cada consumidor registrado recebe **2 MB/s dedicados por shard**, com entrega **push** via HTTP/2 (`SubscribeToShard`) e latência *"typically an average of 70 ms whether you have one consumer or five"*.
 

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** DynamoDB com GSI
 > **D)** Athena sobre CSV no S3
 >
-> **Por que B**: data warehouse colunar, *"optimized for high-performance analysis and reporting of very large datasets"*, com WLM e concurrency scaling para a concorrência.
+> **Por que B**: data warehouse colunar, *"optimized for high-performance analysis and reporting of very large datasets"* (otimizado para análise e relatórios de alta performance sobre conjuntos de dados muito grandes), com WLM e concurrency scaling para a concorrência.
 > **A errada**: relacional por linha não escala para analítico em petabytes.
 > **C errada**: DynamoDB não faz join nem agregação.
 > **D errada**: Athena serve ad-hoc; para BI recorrente com 200 usuários e joins complexos, o Redshift é o indicado (e CSV ainda seria caro por TB escaneado).
@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Mudar o distribution style para EVEN
 > **D)** Migrar para Athena
 >
-> **Por que B**: *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"*, e você paga *"only for the time they're actively running queries"*.
+> **Por que B**: *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila), e você paga *"only for the time they're actively running queries"*.
 > **A errada**: paga capacidade de pico 24/7.
 
 > [!question]- Q3. Dados históricos de 3 anos estão no S3 e precisam ser consultados **junto** com os dados quentes do Redshift.

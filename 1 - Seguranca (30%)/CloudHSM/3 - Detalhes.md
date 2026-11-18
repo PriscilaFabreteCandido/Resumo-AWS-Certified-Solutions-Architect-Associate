@@ -38,7 +38,7 @@ A KMS permite criar um **custom key store** apoiado num cluster CloudHSM. Assim:
 
 ## 4. Interfaces e migração
 
-O CloudHSM expõe interfaces padrão de indústria: **PKCS #11**, **JCE** (Java), **CNG** e **KSP** (Windows). A doc: cargas que já usam essas interfaces *"can migrate to AWS CloudHSM with fewer changes"*.
+O CloudHSM expõe interfaces padrão de indústria: **PKCS #11**, **JCE** (Java), **CNG** e **KSP** (Windows). A doc: cargas que já usam essas interfaces *"can migrate to AWS CloudHSM with fewer changes"* (consegue migrar para o AWS CloudHSM com menos alterações).
 
 Casos típicos:
 - **Autoridade certificadora privada** própria (chave raiz num HSM)

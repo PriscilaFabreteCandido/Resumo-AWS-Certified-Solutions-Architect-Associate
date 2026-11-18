@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 
 ## Longest-prefix match (cai em prova)
 
-> *"If there is a route that sends all internet traffic (0.0.0.0/0) to an internet gateway, the endpoint route takes precedence for traffic destined for the service... in the current Region."*
+> *"If there is a route that sends all internet traffic (0.0.0.0/0) to an internet gateway, the endpoint route takes precedence for traffic destined for the service... in the current Region."* (se existir uma rota enviando todo o tráfego de internet (0.0.0.0/0) para um internet gateway, a rota do endpoint tem precedência para o tráfego destinado ao serviço... na Região atual)
 
 Tráfego para o serviço em **outra região** continua saindo pelo internet gateway.
 
@@ -28,8 +28,8 @@ Tráfego para o serviço em **outra região** continua saindo pelo internet gate
 
 | Fato | Detalhe |
 |---|---|
-| NACL | *"The network ACLs... must also allow traffic"* para os CIDRs do serviço |
-| Prefix list em NACL | *"You can't reference prefix lists in network ACL rules"* |
+| NACL | *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço |
+| Prefix list em NACL | *"You can't reference prefix lists in network ACL rules"* (não é possível referenciar prefix lists em regras de network ACL) |
 | Subnet sem a rota | Continua usando o endpoint **público** do serviço |
 | Rotas do gateway endpoint | A AWS as cria; você **não pode** modificar nem deletar diretamente |
 | Interface endpoint: ENI | *"For each subnet that you specify when you create a VPC endpoint, we create an endpoint network interface in the subnet"* |

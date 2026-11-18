@@ -95,7 +95,7 @@ atualizado: 2026-11-08
 
 
 > [!important] Task 3.5 é a mais subestimada da prova
-> Muita gente estuda SAA pensando em EC2, VPC e S3 e cai numa questão sobre **converter CSV para Parquet** ou **qual serviço transforma dado em trânsito**. O guia pede isso **literalmente**: *"Transforming data between formats (for example, .csv to .parquet)"*.
+> Muita gente estuda SAA pensando em EC2, VPC e S3 e cai numa questão sobre **converter CSV para Parquet** ou **qual serviço transforma dado em trânsito**. O guia pede isso **literalmente**: *"Transforming data between formats (for example, .csv to .parquet)"* (transformar dados entre formatos (por exemplo, de .csv para .parquet)).
 > O mínimo: **Kinesis Data Streams** (tempo real, shards, replay) · **Data Firehose** (entrega com buffer) · **Glue** (ETL serverless + Data Catalog + crawlers) · **Athena** (SQL direto no S3) · **EMR** (Spark/Hadoop com controle) · **Lake Formation** (permissão fina no data lake) · **Amazon Quick** (visualização) · **DataSync** e **Storage Gateway** (transferência).
 
 ---

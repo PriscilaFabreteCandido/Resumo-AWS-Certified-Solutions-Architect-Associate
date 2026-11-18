@@ -12,8 +12,8 @@ atualizado: 2026-11-08
 > **C)** EC2 Instance Savings Plans
 > **D)** Spot com capacity rebalancing
 >
-> **Por que B**: aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* e cobre Fargate e Lambda. É a opção que sobrevive à indecisão.
-> **A errada**: Standard RI *"can't be exchanged"* e amarra tipo e região por 3 anos.
+> **Por que B**: aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região) e cobre Fargate e Lambda. É a opção que sobrevive à indecisão.
+> **A errada**: Standard RI *"can't be exchanged"* (não podem ser trocadas) e amarra tipo e região por 3 anos.
 > **C errada**: amarra **família e região** — exatamente o que está em aberto.
 > **D errada**: produção 24/7 não tolera interrupção.
 
@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 > **Por que B**: trabalho idempotente e reiniciável é o caso de uso do Spot; *price capacity optimized* é a estratégia **recomendada**.
 > **A errada**: paga preço cheio sem necessidade.
 > **C errada**: compromisso de 1 ano para carga variável.
-> **D errada**: `lowest-price` está marcada *"(not recommended)"* e *"has the highest risk of interruption"* — é o default da CLI, por isso aparece tanto.
+> **D errada**: `lowest-price` está marcada *"(not recommended)"* e *"has the highest risk of interruption"* (tem o maior risco de interrupção) — é o default da CLI, por isso aparece tanto.
 
 > [!question]- Q3. Aplicação legada licenciada **por socket físico**. Como rodar na AWS atendendo o licenciamento?
 > **A)** Dedicated Instances
@@ -34,7 +34,7 @@ atualizado: 2026-11-08
 > **C)** Reserved Instances com tenancy dedicada
 > **D)** EC2 em cluster placement group
 >
-> **Por que B**: só o Dedicated Host expõe sockets e cores e permite *"bring your existing per-socket, per-core, or per-VM software licenses"*.
+> **Por que B**: só o Dedicated Host expõe sockets e cores e permite *"bring your existing per-socket, per-core, or per-VM software licenses"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM).
 > **A e C erradas**: dão hardware single-tenant, mas **sem** visibilidade de socket.
 > **D errada**: placement group é topologia de rede — e Dedicated Hosts nem podem entrar em um.
 
@@ -55,7 +55,7 @@ atualizado: 2026-11-08
 > **C)** **Partition** ✅
 > **D)** Nenhum; basta distribuir em 3 AZs
 >
-> **Por que C**: partition é a estratégia desenhada para *"HDFS, HBase, Cassandra, Kafka, Hadoop"* — cada partição tem racks próprios.
+> **Por que C**: partition é a estratégia desenhada para *"HDFS, HBase, Cassandra, Kafka, Hadoop"* (HDFS, HBase, Cassandra, Kafka, Hadoop) — cada partição tem racks próprios.
 > **A errada**: concentra no mesmo bloco de hardware.
 > **B errada**: garante hardware distinto por instância, mas o teto de 7 por AZ e a falta de noção de grupo de réplicas não casam com o Cassandra.
 > **D errada**: ajuda, mas sem noção de rack dentro da AZ.
@@ -99,7 +99,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | Spot avisa 5 minutos antes | **2 minutos** |
-| Savings Plans cobre Spot | *"Spot Instances are not covered by Savings Plans"* |
+| Savings Plans cobre Spot | *"Spot Instances are not covered by Savings Plans"* (instâncias Spot não são cobertas por Savings Plans) |
 | Savings Plans tem 3 tipos | **Quatro** (Compute, Database, EC2 Instance, SageMaker AI) |
 | Compute SP dá o maior desconto | **EC2 Instance SP** chega a 72%; Compute vai a 66% com mais flexibilidade |
 | RI reserva capacidade | Só a **zonal** |

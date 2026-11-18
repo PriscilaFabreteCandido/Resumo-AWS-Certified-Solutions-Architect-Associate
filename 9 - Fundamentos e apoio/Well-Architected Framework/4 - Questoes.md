@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 > **C)** DynamoDB com sort key de timestamp
 > **D)** S3 com Athena
 >
-> **Por que B**: é o princípio *"Using purpose-built AWS services for workloads"*, citado **duas vezes** no guia. O guia também pede, em Task 4.3, *"cost-effective AWS database types (for example, time series format...)"*.
+> **Por que B**: é o princípio *"Using purpose-built AWS services for workloads"* (usar serviços da AWS feitos sob medida para cada carga de trabalho), citado **duas vezes** no guia. O guia também pede, em Task 4.3, *"cost-effective AWS database types (for example, time series format...)"*.
 > **A errada**: relacional genérico adaptado — funciona, custa mais e escala pior.
 
 > [!question]- Q3. O enunciado diz *"com o menor esforço operacional"*. Qual pilar está em jogo, e o que isso elimina?

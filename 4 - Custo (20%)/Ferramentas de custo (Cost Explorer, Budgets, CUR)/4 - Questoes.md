@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** AWS Budgets
 > **D)** API do Cost Explorer
 >
-> **Por que B**: o CUR é *"the most comprehensive set of cost and usage data available"*, com granularidade de **hora**, preparado para *"integration with Amazon Athena, Amazon Redshift, or Quick"*.
+> **Por que B**: o CUR é *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível), com granularidade de **hora**, preparado para *"integration with Amazon Athena, Amazon Redshift, or Quick"*.
 > **A errada**: painel não faz join com dado externo.
 > **D errada**: cobra **US$ 0,01** por requisição paginada e não entrega o detalhe do CUR.
 
@@ -75,9 +75,9 @@ atualizado: 2026-11-08
 | Cost Explorer é cobrado | O console é grátis; a **API** custa **US$ 0,01** por requisição paginada |
 | Tag aplicada já aparece no relatório | Precisa ser **ativada** no Billing — e não é retroativo |
 | Budgets tem 2 tipos | **Seis** (cost, usage, RI utilization/coverage, SP utilization/coverage) |
-| Budgets atualiza em tempo real | *"up to three times a day"* |
+| Budgets atualiza em tempo real | *"up to three times a day"* (até três vezes por dia) |
 | Budgets impede o gasto | **Alerta** (e com budget action aplica policy). Impedir é **SCP** |
-| Organizations é pago | *"offered at no additional charge"* |
+| Organizations é pago | *"offered at no additional charge"* (oferecido sem cobrança adicional) |
 | Compute Optimizer mostra o gasto | **Recomenda rightsizing**; gasto é Cost Explorer |
 
 ## Links

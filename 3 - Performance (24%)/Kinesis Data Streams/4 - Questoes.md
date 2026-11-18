@@ -60,7 +60,7 @@ atualizado: 2026-11-08
 > **C)** SQS
 > **D)** Firehose
 >
-> **Por que B**: roda *"open-source versions of Apache Kafka"*, então funciona *"without requiring changes to application code"*.
+> **Por que B**: roda *"open-source versions of Apache Kafka"* (versões open source do Apache Kafka), então funciona *"without requiring changes to application code"* (sem exigir mudanças no código da aplicação).
 
 ## ⚠️ Armadilhas
 

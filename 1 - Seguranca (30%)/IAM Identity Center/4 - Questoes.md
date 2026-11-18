@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Uma conta AWS por projeto
 > **D)** SCP por OU
 >
-> **Por que B**: é a skill *"Designing a flexible authorization model"* — um permission set atende N times.
+> **Por que B**: é a skill *"Designing a flexible authorization model"* (projetar um modelo de autorização flexível) — um permission set atende N times.
 > **A errada**: é o que o enunciado quer evitar.
 > **C errada**: funciona (isolamento forte), mas é desproporcional se o requisito é só visibilidade por projeto.
 

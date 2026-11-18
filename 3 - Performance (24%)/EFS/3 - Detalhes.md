@@ -51,8 +51,8 @@ A lógica é a mesma do **S3 One Zone-IA**: só para dado **reproduzível** ou n
 | Classe | Latência | Custo |
 |---|---|---|
 | **EFS Standard** | ~1 ms leitura / ~2,7 ms escrita | Maior |
-| **EFS Infrequent Access (IA)** | *"tens of milliseconds"* | Menor |
-| **EFS Archive** | *"tens of milliseconds"* | Menor ainda |
+| **EFS Infrequent Access (IA)** | *"tens of milliseconds"* (dezenas de milissegundos) | Menor |
+| **EFS Archive** | *"tens of milliseconds"* (dezenas de milissegundos) | Menor ainda |
 
 O **lifecycle management** move arquivos automaticamente conforme o tempo sem acesso. É a alavanca de custo principal do EFS — equivalente ao lifecycle do S3.
 

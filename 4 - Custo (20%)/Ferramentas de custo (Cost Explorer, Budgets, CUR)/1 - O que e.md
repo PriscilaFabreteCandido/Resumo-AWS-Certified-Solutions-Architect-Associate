@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 |---|---|---|
 | **Cost Explorer** | **Visualizar e prever** | Painel de gasto: **13 meses** de histórico, **18 meses** de forecast |
 | **AWS Budgets** | **Alertar e agir** | **6 tipos** de budget, atualizado **até 3×/dia** |
-| **Cost and Usage Report (CUR)** | **Exportar o dado bruto** | *"the most comprehensive set of cost and usage data available"*, num bucket S3 seu |
+| **Cost and Usage Report (CUR)** | **Exportar o dado bruto** | *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível), num bucket S3 seu |
 
 ## A regra que decide
 

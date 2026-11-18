@@ -29,7 +29,7 @@ atualizado: 2026-11-08
 
 ## O número para decorar
 
-> *"API Gateway has a default throttle limit of 10,000 requests per second, whereas Lambda has a default concurrency limit of 1,000."*
+> *"API Gateway has a default throttle limit of 10,000 requests per second, whereas Lambda has a default concurrency limit of 1,000."* (o API Gateway tem limite padrão de throttling de 10.000 requisições por segundo, enquanto o Lambda tem limite padrão de concorrência de 1.000)
 
 ## Links
 

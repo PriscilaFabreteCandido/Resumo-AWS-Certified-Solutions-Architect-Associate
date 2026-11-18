@@ -18,14 +18,14 @@ atualizado: 2026-11-08
 | Vantagem (whitepaper) | Detalhe |
 |---|---|
 | *"More predictable network performance"* | Banda e latência consistentes |
-| *"Reduced bandwidth costs"* | Egress por GB mais barato que pela internet |
+| *"Reduced bandwidth costs"* (custos de banda reduzidos) | Egress por GB mais barato que pela internet |
 | *"Supports BGP peering and routing policies"* | Roteamento dinâmico |
 
 Limitação: *"Might require additional telecom and hosting provider relationships or new network circuits to be provisioned."*
 
 ## ⚠️ O fato que mais cai: não é criptografado por padrão
 
-A documentação do Direct Connect **não afirma** que o tráfego é criptografado. Para criptografar, o padrão é **IPsec VPN sobre o DX** — o whitepaper descreve essa opção como *"IPsec VPN connection over private lines"*.
+A documentação do Direct Connect **não afirma** que o tráfego é criptografado. Para criptografar, o padrão é **IPsec VPN sobre o DX** — o whitepaper descreve essa opção como *"IPsec VPN connection over private lines"* (conexão VPN IPsec sobre linhas privadas).
 
 | Requisito | Resposta |
 |---|---|

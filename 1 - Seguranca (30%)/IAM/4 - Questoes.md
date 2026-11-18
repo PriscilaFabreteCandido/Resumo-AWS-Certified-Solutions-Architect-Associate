@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Sim, se o bucket for da mesma conta
 > **D)** Depende da ordem de avaliação
 >
-> **Por que B**: *"the boundary, the SCP, and the identity-based policy must all allow the action"*. E o inverso também: *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."*
+> **Por que B**: *"the boundary, the SCP, and the identity-based policy must all allow the action"* (o permissions boundary, a SCP e a policy de identidade precisam, todos, permitir a ação). E o inverso também: *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* (um usuário sem nenhuma policy de permissão do IAM não tem acesso, mesmo que as SCPs aplicáveis liberem todos os serviços e todas as ações)
 
 > [!question]- Q2. Compliance exige que **nenhuma** conta possa desabilitar o CloudTrail, nem o root dela. Qual solução?
 > **A)** Policy IAM com `Deny` em `cloudtrail:StopLogging` em todos os usuários
@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** **As duas: policy no role (conta A) e bucket policy (conta B)** ✅
 > **D)** Uma SCP na organização
 >
-> **Por que C**: *"AWS allows the request only if both account policy evaluations allow the request."*
+> **Por que C**: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
 > **A errada**: política de recurso sozinha só basta **dentro da mesma conta**.
 > **D errada**: SCP não concede nada.
 
@@ -86,7 +86,7 @@ atualizado: 2026-11-08
 > **D)** **Habilitar MFA na conta do usuário raiz** ✅
 > **E)** **Não criar chave de acesso para o root; se já existir, excluí-la** ✅
 >
-> **Por que C é a errada**: a orientação é **não criar** a chave. O título oficial atual é literal — *"Don't create access keys for the root user"* — e guardar credencial de longo prazo em bucket, criptografada ou não, é exatamente o anti-padrão.
+> **Por que C é a errada**: a orientação é **não criar** a chave. O título oficial atual é literal — *"Don't create access keys for the root user"* (não crie chaves de acesso para o usuário raiz) — e guardar credencial de longo prazo em bucket, criptografada ou não, é exatamente o anti-padrão.
 > ⚠️ Material antigo acrescenta *"se precisar manter a chave, altere-a regularmente"*. A doc atual **não dá orientação de rotação** para chave de root: ela diz para não criar.
 
 > [!question]- Q-root 2. Uma bucket policy foi gravada negando **todos os principais**. Nem o administrador consegue corrigi-la. O que fazer?
@@ -122,7 +122,7 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| SCP concede permissão | *"No permissions are granted by an SCP."* É teto |
+| SCP concede permissão | *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) É teto |
 | SCP alcança a conta de gerenciamento | **Não alcança** |
 | SCP limita service-linked role | *"SCPs do not affect any service-linked role"* |
 | Bucket policy resolve cross-account sozinha | Só **na mesma conta**. Cross-account exige os dois lados |

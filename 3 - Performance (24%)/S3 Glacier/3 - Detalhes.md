@@ -52,7 +52,7 @@ Os mínimos de armazenamento são cobrados **integralmente** mesmo se você apag
 | Glacier Flexible Retrieval | **90 dias** |
 | Glacier Deep Archive | **180 dias** |
 
-E a regra de transição: *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* O exemplo da doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94**.
+E a regra de transição: *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento) O exemplo da doc: objeto que foi para Glacier IR no dia 4 só pode ir para Deep Archive no dia **94**.
 
 A cascata também é restrita: *"Objects that are stored in the S3 Glacier Flexible Retrieval storage class can only be transitioned to the S3 Glacier Deep Archive storage class"*, e de Deep Archive **não sai** por lifecycle.
 

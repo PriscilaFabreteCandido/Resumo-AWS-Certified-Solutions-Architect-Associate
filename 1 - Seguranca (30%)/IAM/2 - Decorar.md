@@ -20,9 +20,9 @@ atualizado: 2026-11-08
 
 ## As duas frases que resolvem metade das questões
 
-> *"An explicit deny overrides an explicit allow."*
+> *"An explicit deny overrides an explicit allow."* (um deny explícito prevalece sobre um allow explícito)
 
-> *"By default, all requests are implicitly denied with the exception of the AWS account root user, which has full access."*
+> *"By default, all requests are implicitly denied with the exception of the AWS account root user, which has full access."* (por padrão, todas as requisições são negadas implicitamente, com exceção do usuário raiz da conta AWS, que tem acesso total)
 
 ## União × interseção
 
@@ -34,7 +34,7 @@ atualizado: 2026-11-08
 
 ## Cross-account: precisa dos DOIS lados
 
-> *"the requester in the trusted AccountA must have an identity-based policy... Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* E: *"AWS allows the request only if both account policy evaluations allow the request."*
+> *"the requester in the trusted AccountA must have an identity-based policy... Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* E: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
 
 **Exceções que exigem Allow explícito ao principal, sempre:**
 - **Trust policy de role IAM**
@@ -48,7 +48,7 @@ atualizado: 2026-11-08
 | **Service-linked roles** | *"SCPs do not affect any service-linked role"* |
 | Principals **fora** da organização | — |
 
-E: *"No permissions are granted by an SCP."* · *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* · SCP **afeta o root das contas membro**.
+E: *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) · *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* (um usuário sem nenhuma policy de permissão do IAM não tem acesso, mesmo que as SCPs aplicáveis liberem todos os serviços e todas as ações) · SCP **afeta o root das contas membro**.
 
 ## Estrutura de uma política
 
@@ -94,7 +94,7 @@ Em política de **recurso** e **trust policy**, existe também o campo **`Princi
 **Resumo em três palavras: senha forte · MFA · nenhuma chave de acesso.**
 
 > [!warning] O que mudou na doc atual
-> O título oficial hoje é **"Don't create access keys for the root user"** — a orientação não é mais rotacionar, é **não criar**. E **MFA no root é exigência**, não recomendação: *"require MFA to be configured for their root user"*, com registro em até **14 dias** do primeiro login.
+> O título oficial hoje é **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) — a orientação não é mais rotacionar, é **não criar**. E **MFA no root é exigência**, não recomendação: *"require MFA to be configured for their root user"*, com registro em até **14 dias** do primeiro login.
 > Na prova, *"não criar chave de acesso para o root"* é a resposta mais segura — ela vale nas duas versões.
 
 ### Tarefas que SÓ o root faz

@@ -24,8 +24,8 @@ Por algoritmo assimétrico, o limite é **menor** ainda: RSA_2048 com OAEP SHA-2
 | **Assimétrica, HMAC, custom key store** | **Só manual** |
 | On-demand (`RotateKeyOnDemand`) | Simétrica `AWS_KMS` e simétrica `EXTERNAL` (importada) |
 
-**Rotação NÃO recriptografa os dados**: *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."*
-E o decrypt usa a versão correta: *"AWS KMS uses the same version of the key material that was used to encrypt it."*
+**Rotação NÃO recriptografa os dados**: *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."* (a rotação de chave não tem efeito sobre os dados que a chave do KMS protege: ela não rotaciona as data keys geradas por essa chave nem recriptografa nenhum dado protegido por ela)
+E o decrypt usa a versão correta: *"AWS KMS uses the same version of the key material that was used to encrypt it."* (o AWS KMS usa a mesma versão do material de chave que foi usada para criptografar)
 
 ## Controle de acesso — três camadas
 
@@ -36,7 +36,7 @@ E o decrypt usa a versão correta: *"AWS KMS uses the same version of the key ma
 | **Grant** | Delegação **temporária e granular** (usada por serviços AWS internamente) |
 
 > [!warning] Key policy é exceção à regra da união
-> A doc do IAM: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."*
+> A doc do IAM: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."* (as trust policies de role do IAM e as key policies do KMS são exceções... elas precisam permitir o acesso explicitamente para os principais)
 > Sem o principal na key policy, **nenhuma** policy IAM resolve. É a causa nº 1 de `AccessDeniedException` em KMS.
 
 ## Simétrica × assimétrica

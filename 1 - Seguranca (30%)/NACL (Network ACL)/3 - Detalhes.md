@@ -27,7 +27,7 @@ E vale nos dois sentidos: para um ALB público receber HTTPS, a NebACL da subnet
 
 Isso tem duas consequências:
 
-**Deny específico antes de allow amplo.** A doc recomenda: *"Be sure to give the deny rule a lower number than the rule that allows the wider range of port traffic."*
+**Deny específico antes de allow amplo.** A doc recomenda: *"Be sure to give the deny rule a lower number than the rule that allows the wider range of port traffic."* (dê à regra de deny um número menor que o da regra que permite a faixa mais ampla de portas)
 
 **Deixe espaço entre os números.** *"increments (for example, increments of 10 or 100)"* — assim você insere regras depois sem renumerar tudo.
 
@@ -63,7 +63,7 @@ A doc resume o papel: a NACL *"provide[s] stateless, coarse-grain network contro
 
 Avaliação só na **fronteira** da subnet: *"not as it is routed within a subnet"*. Duas instâncias na mesma subnet não são filtradas pela NACL (mas são pelos SGs).
 
-**Não** é possível referenciar prefix lists: *"You can't reference prefix lists in network ACL rules."* Isso importa para gateway endpoints — a doc do endpoint avisa que *"The network ACLs... must also allow traffic"* para os CIDRs do serviço, e você precisa listar os CIDRs na mão (ou liberar amplamente).
+**Não** é possível referenciar prefix lists: *"You can't reference prefix lists in network ACL rules."* Isso importa para gateway endpoints — a doc do endpoint avisa que *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço, e você precisa listar os CIDRs na mão (ou liberar amplamente).
 
 **Não** passa pelo filtro: Route 53 Resolver (VPC+2) — *"use Route 53 Resolver DNS Firewall instead"* —, o **IMDS**, DHCP, Amazon Time Sync, ativação de licença Windows e metadados de task do ECS.
 

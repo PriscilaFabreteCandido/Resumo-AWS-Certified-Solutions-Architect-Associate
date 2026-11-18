@@ -24,7 +24,7 @@ Consultas **federadas** (fora do S3): *"rounded up to the nearest megabyte with 
 > *"restrict the amount of data scanned by each query, thus improving performance and reducing cost."*
 > *"If you query a partitioned table and specify the partition in the `WHERE` clause, Athena scans the data only from that partition."*
 
-**Partition projection**: *"can significantly reduce query runtimes"* — útil quando há muitas partições e o `MSCK REPAIR` fica lento.
+**Partition projection**: *"can significantly reduce query runtimes"* (pode reduzir significativamente o tempo de execução das consultas) — útil quando há muitas partições e o `MSCK REPAIR` fica lento.
 
 ## Formatos
 
@@ -38,7 +38,7 @@ A doc: *"Athena can read only the column that is relevant for the query being ru
 
 | Com | Para quê |
 |---|---|
-| **AWS Glue Data Catalog** | *"Athena integrates with the AWS Glue Data Catalog"* — o metadado das tabelas |
+| **AWS Glue Data Catalog** | *"Athena integrates with the AWS Glue Data Catalog"* (o Athena se integra ao AWS Glue Data Catalog) — o metadado das tabelas |
 | **Glue crawlers** | Descobrem o schema automaticamente |
 | **Lake Formation** | **Respeita** as permissões finas (coluna, linha, célula) |
 | **Amazon Quick** | Visualização |

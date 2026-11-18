@@ -69,7 +69,7 @@ atualizado: 2026-11-08
 | Lambda roda até 5 minutos | **15 minutos (900 s)** |
 | Memória máxima é 3 GB | **10.240 MB** |
 | Reserved concurrency evita cold start | **Provisioned** evita. Reserved limita cota |
-| Reserved concurrency custa a mais | *"incurs no additional charges"* |
+| Reserved concurrency custa a mais | *"incurs no additional charges"* (não gera cobrança adicional) |
 | Mais memória sempre custa mais | Pode custar **menos**, se o tempo cair |
 | Payload de 10 MB cabe síncrono | **6 MB** síncrono, **1 MB** assíncrono |
 | Lambda não roda em VPC | Roda — e aí consome ENIs e perde acesso à internet |

@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Migrar para Redshift Spectrum
 > **D)** Aumentar o workgroup
 >
-> **Por que B**: a partition projection calcula os prefixos a partir de um **padrão**, sem consultar o catálogo — *"can significantly reduce query runtimes"*.
+> **Por que B**: a partition projection calcula os prefixos a partir de um **padrão**, sem consultar o catálogo — *"can significantly reduce query runtimes"* (pode reduzir significativamente o tempo de execução das consultas).
 
 > [!question]- Q4. Analistas de um time devem ver apenas **algumas colunas** de uma tabela do data lake, e a restrição deve valer no Athena **e** no Redshift Spectrum.
 > **A)** Bucket policy por prefixo

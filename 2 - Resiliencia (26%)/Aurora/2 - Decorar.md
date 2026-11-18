@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 | **Cópias dos dados** | **6 cópias em 3 AZs**, replicação **síncrona** |
 | **Aurora Replicas** | até **15** |
 | **Volume do cluster** | até **128 TiB** (*"up to 256 tebibytes (TiB) for specific engine versions"*) |
-| **Failover com réplica** | *"less than 60 seconds, and often less than 30 seconds"* |
+| **Failover com réplica** | *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30) |
 | **Failover sem réplica** | *"typically takes less than 10 minutes"* (recria a instância) |
 | **Prioridade de failover** | **tier 0** (maior) a **15** (menor) |
 | Empate de prioridade | promove a **maior** instância; se empatar de novo, arbitrária |
@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 | Item | Valor |
 |---|---|
 | Regiões | 1 primária + **até 10 secundárias** |
-| Lag de replicação | *"typically under a second"* |
+| Lag de replicação | *"typically under a second"* (normalmente abaixo de um segundo) |
 | Instâncias de leitura na secundária | **16** (vs 15 num cluster normal) |
 | **RTO** | *"can be in the order of minutes"* |
 | **RPO** | *"typically measured in seconds"* |

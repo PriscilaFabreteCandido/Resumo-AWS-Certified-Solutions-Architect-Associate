@@ -22,7 +22,7 @@ As três alavancas, com os números do exemplo oficial (3 TB, US$ 5/TB):
 
 E a quarta, multiplicativa: **particionamento**. Com partição por data e `WHERE dt='2026-11-01'`, *"Athena scans the data only from that partition"* — o que pode reduzir outra ordem de magnitude.
 
-É por isso que o guia pede, em **Task 3.5**: *"Transforming data between formats (for example, .csv to .parquet)"*.
+É por isso que o guia pede, em **Task 3.5**: *"Transforming data between formats (for example, .csv to .parquet)"* (transformar dados entre formatos (por exemplo, de .csv para .parquet)).
 
 ## 2. Particionamento e partition projection
 
@@ -34,7 +34,7 @@ s3://bucket/logs/year=2026/month=11/day=01/arquivo.parquet
 
 Com `WHERE year=2026 AND month=11`, o Athena lê **só** aquele prefixo.
 
-Quando há **muitas** partições, descobri-las (via `MSCK REPAIR TABLE` ou crawler) fica lento. Aí entra a **partition projection**: você descreve o **padrão** das partições (faixa de datas, lista de valores) e o Athena calcula os prefixos sem consultar o catálogo — *"can significantly reduce query runtimes"*.
+Quando há **muitas** partições, descobri-las (via `MSCK REPAIR TABLE` ou crawler) fica lento. Aí entra a **partition projection**: você descreve o **padrão** das partições (faixa de datas, lista de valores) e o Athena calcula os prefixos sem consultar o catálogo — *"can significantly reduce query runtimes"* (pode reduzir significativamente o tempo de execução das consultas).
 
 ## 3. O catálogo compartilhado
 
@@ -53,7 +53,7 @@ E as permissões: **Lake Formation** aplica controle fino (coluna, linha, célul
 | Melhor para | **Ad-hoc**, exploração, eventual | BI recorrente, joins, concorrência | **Código** Spark/Hadoop | Alcançar o S3 do Redshift |
 | Esforço | **Mínimo** | Médio | Alto | Médio |
 
-A doc do EMR ajuda a separar: use EMR *"if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"*. E: *"Amazon Athena supports many of the same data formats as Amazon EMR"* — Athena pode consultar o que o EMR processou.
+A doc do EMR ajuda a separar: use EMR *"if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"*. E: *"Amazon Athena supports many of the same data formats as Amazon EMR"* (o Amazon Athena oferece suporte a muitos dos mesmos formatos de dados do Amazon EMR) — Athena pode consultar o que o EMR processou.
 
 ## 5. Casos de uso canônicos
 

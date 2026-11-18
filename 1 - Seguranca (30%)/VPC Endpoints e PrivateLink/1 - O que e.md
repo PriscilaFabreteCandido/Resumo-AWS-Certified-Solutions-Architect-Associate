@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 
 ## A frase que decide a questão
 
-> *"There is no additional charge for using gateway endpoints."*
+> *"There is no additional charge for using gateway endpoints."* (não há cobrança adicional pelo uso de gateway endpoints)
 
 E a distinção estrutural: *"Gateway endpoints do not use AWS PrivateLink, unlike the other types of VPC endpoints."*
 

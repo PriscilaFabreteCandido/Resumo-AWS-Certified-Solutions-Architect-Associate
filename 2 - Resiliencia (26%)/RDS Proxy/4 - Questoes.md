@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Adicionar read replicas
 > **D)** Reserved concurrency na Lambda
 >
-> **Por que B**: *"allow your applications to pool and share database connections"*, com load shedding no excesso. Bônus: reduz o failover *"by up to 66%"*.
+> **Por que B**: *"allow your applications to pool and share database connections"*, com load shedding no excesso. Bônus: reduz o failover *"by up to 66%"* (em até 66%).
 > **A errada**: conexões consomem memória do banco; só adia o problema.
 > **C errada**: ajuda em leitura, não no esgotamento de conexões.
 > **D errada**: limita a aplicação em vez de resolver.
@@ -50,14 +50,14 @@ atualizado: 2026-11-08
 > **D)** Falta um read replica
 >
 > **Por que B**: no pinning o proxy deixa de multiplexar e dedica uma conexão de banco por sessão da aplicação.
-> **C errada**: o proxy *"can't be publicly accessible"* — e isso não teria relação.
+> **C errada**: o proxy *"can't be publicly accessible"* (não pode ser acessível publicamente) — e isso não teria relação.
 
 ## ⚠️ Armadilhas
 
 | Parece | É |
 |---|---|
 | RDS Proxy funciona com read replica | **Só com o writer** |
-| RDS Proxy pode ser público | *"can't be publicly accessible"* |
+| RDS Proxy pode ser público | *"can't be publicly accessible"* (não pode ser acessível publicamente) |
 | O proxy sempre multiplexa | **Pinning** desfaz o pool (statement > 16 KB, temp tables, variáveis de sessão) |
 | Suporta Oracle | A doc lida cita **MariaDB, SQL Server, MySQL, PostgreSQL** e Aurora. Oracle **não** é citado |
 | Suporta AD no SQL Server | *"doesn't support connections that use Active Directory"* |

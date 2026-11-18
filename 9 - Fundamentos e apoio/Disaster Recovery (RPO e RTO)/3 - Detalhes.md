@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 
 ### Backup and restore
 
-> *"Backup and restore is a suitable approach for mitigating against data loss or corruption."*
+> *"Backup and restore is a suitable approach for mitigating against data loss or corruption."* (backup e restore é uma abordagem adequada para mitigar perda ou corrupção de dados)
 
 Backups copiados para outra Região; no desastre você **provisiona tudo** e restaura.
 

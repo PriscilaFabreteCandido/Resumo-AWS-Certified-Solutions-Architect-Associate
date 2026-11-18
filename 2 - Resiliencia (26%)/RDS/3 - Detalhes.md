@@ -14,7 +14,7 @@ A AWS *"automatically provisions and maintains a synchronous standby replica in 
 - **Não aceita leitura**
 - Assume automaticamente se a primária falhar (o endpoint é o mesmo — o DNS passa a apontar para o novo primário)
 
-⚠️ A doc **não informa** um tempo típico de failover para o Multi-AZ **instance**. Se a questão pedir número, o número documentado é o do **cluster**: *"typically under 35 seconds"*.
+⚠️ A doc **não informa** um tempo típico de failover para o Multi-AZ **instance**. Se a questão pedir número, o número documentado é o do **cluster**: *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
 
 Tecnologia de failover por engine: *"Multi-AZ deployments for MariaDB, MySQL, Oracle, PostgreSQL, and RDS Custom for SQL Server DB instances use the Amazon failover technology. Microsoft SQL Server DB instances use SQL Server Database Mirroring (DBM) or Always On Availability Groups (AGs)."*
 
@@ -32,7 +32,7 @@ O failover escolhe o reader *"with the most recent change record"*.
 
 Restrições: engines **MySQL e PostgreSQL**, e classes de instância com NVMe local (db.m5d, db.m6gd, db.r6gd, db.r6id, db.x2iedn etc.).
 
-⚠️ E a frase que impede a confusão: *"Multi-AZ DB clusters aren't the same as Aurora DB clusters."*
+⚠️ E a frase que impede a confusão: *"Multi-AZ DB clusters aren't the same as Aurora DB clusters."* (clusters de banco Multi-AZ não são a mesma coisa que clusters do Aurora)
 
 ## 3. Read replica — escala e DR
 
@@ -45,7 +45,7 @@ Replicação **assíncrona**, o que significa **lag**. Consequências:
 A doc é explícita sobre a diferença: *"Replication with the standby replica is synchronous. Unlike a read replica, a standby replica can't serve read traffic."*
 
 Pontos operacionais:
-- *"RDS doesn't support autoscaling of read replicas"* — você adiciona e remove manualmente (ou automatiza)
+- *"RDS doesn't support autoscaling of read replicas"* (o RDS não oferece escalabilidade automática de réplicas de leitura) — você adiciona e remove manualmente (ou automatiza)
 - **Cascata** só em MariaDB, MySQL e certas versões de PostgreSQL. *"For RDS for Db2, RDS for Oracle, and RDS for SQL Server, you can't create a read replica from an existing read replica."*
 - Deletar a origem **promove** as réplicas da mesma região a instâncias autônomas
 - Transferência de dados de replicação **na mesma região** é grátis; cross-Region é cobrada

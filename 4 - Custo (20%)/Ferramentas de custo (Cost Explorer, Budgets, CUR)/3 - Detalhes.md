@@ -43,11 +43,11 @@ Alertas vão *"to an Amazon SNS topic, to an email address, or to both"*, tanto 
 
 **Budget actions** podem aplicar uma **policy IAM** — por exemplo, negar `ec2:RunInstances` ao atingir 100% do orçamento.
 
-Atualização: *"up to three times a day"* — não é tempo real.
+Atualização: *"up to three times a day"* (até três vezes por dia) — não é tempo real.
 
 ## 4. CUR — quando o painel não basta
 
-O CUR é *"the most comprehensive set of cost and usage data available"*, publicado *"to an Amazon S3 bucket that you own"*, em **CSV**, com granularidade de **hora, dia ou mês**, atualizado *"at least once a day"* (até 3×).
+O CUR é *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível), publicado *"to an Amazon S3 bucket that you own"*, em **CSV**, com granularidade de **hora, dia ou mês**, atualizado *"at least once a day"* (até 3×).
 
 Use quando precisa de:
 - **Granularidade horária** por recurso
@@ -73,9 +73,9 @@ E a alternativa de arquitetura: quando os times precisam de isolamento forte (n�
 
 ## 6. Organizations — consolidated billing
 
-> *"Organizations provides you with a single consolidated bill"*, e *"The owner of the management account is responsible for paying for all usage, data, and resources used by the accounts in the organization."*
+> *"Organizations provides you with a single consolidated bill"* (o Organizations entrega uma fatura única consolidada), e *"The owner of the management account is responsible for paying for all usage, data, and resources used by the accounts in the organization."*
 
-O serviço é *"offered at no additional charge"*.
+O serviço é *"offered at no additional charge"* (oferecido sem cobrança adicional).
 
 Dois efeitos de custo (muito citados, embora as páginas lidas não os detalhem): o uso **agregado** atinge faixas de desconto por volume mais cedo, e **Savings Plans / RIs** podem ser compartilhados entre contas da organização.
 

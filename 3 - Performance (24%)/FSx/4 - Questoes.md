@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** EBS io2 Block Express com Multi-Attach
 > **D)** S3 montado com cliente FUSE
 >
-> **Por que B**: Lustre é o FS de HPC/ML da AWS, com latência sub-ms, e *"transparently presents S3 objects as files"*.
+> **Por que B**: Lustre é o FS de HPC/ML da AWS, com latência sub-ms, e *"transparently presents S3 objects as files"* (apresenta os objetos do S3 como arquivos, de forma transparente).
 > **A errada**: EFS escala bem, mas Lustre é o posicionado para *"machine learning, high performance computing (HPC), video processing"*.
 > **C errada**: Multi-Attach é limitado a poucas instâncias **na mesma AZ** e não é FS compartilhado POSIX.
 
@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Migrar para HDD
 > **D)** Criar um segundo scratch
 >
-> **Por que B**: *"Data is not replicated and does not persist if a file server fails."* O padrão é processar em scratch e persistir no **S3**.
+> **Por que B**: *"Data is not replicated and does not persist if a file server fails."* (os dados não são replicados e não persistem se um servidor de arquivos falhar) O padrão é processar em scratch e persistir no **S3**.
 
 > [!question]- Q4. Clientes Linux (NFS) e Windows (SMB) precisam acessar os **mesmos** arquivos, com snapshots e clones.
 > **A)** EFS + FSx for Windows em paralelo
@@ -50,7 +50,7 @@ atualizado: 2026-11-08
 > **C)** **FSx for OpenZFS** ✅
 > **D)** FSx for Lustre
 >
-> **Por que C**: *"easy to move data to AWS from on-premises ZFS or other Linux-based file servers"*.
+> **Por que C**: *"easy to move data to AWS from on-premises ZFS or other Linux-based file servers"* (facilita mover dados para a AWS a partir de servidores de arquivos ZFS ou outros baseados em Linux, on-premises).
 
 > [!question]- Q6. Qual FSx tem failover documentado em ~60 segundos?
 > **A)** Lustre Persistent
@@ -58,7 +58,7 @@ atualizado: 2026-11-08
 > **C)** Windows Single-AZ
 > **D)** ONTAP Single-AZ
 >
-> **Por que B**: *"Failover typically completes within 60 seconds"*; já o **Single-AZ (non-HA)** recupera em *"within 30 minutes"*.
+> **Por que B**: *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos); já o **Single-AZ (non-HA)** recupera em *"within 30 minutes"*.
 
 ## ⚠️ Armadilhas
 

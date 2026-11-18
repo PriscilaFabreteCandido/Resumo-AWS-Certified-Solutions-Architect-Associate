@@ -60,7 +60,7 @@ Três princípios nesse desenho:
 
 Cada subnet está associada a **uma** route table (a *main* se você não associar outra). As rotas usam **longest-prefix match**: a rota mais específica ganha.
 
-Isso explica o comportamento do gateway endpoint: *"If there is a route that sends all internet traffic (0.0.0.0/0) to an internet gateway, the endpoint route takes precedence for traffic destined for the service... in the current Region."* Tráfego para o serviço em **outra região** continua saindo pelo IGW.
+Isso explica o comportamento do gateway endpoint: *"If there is a route that sends all internet traffic (0.0.0.0/0) to an internet gateway, the endpoint route takes precedence for traffic destined for the service... in the current Region."* (se existir uma rota enviando todo o tráfego de internet (0.0.0.0/0) para um internet gateway, a rota do endpoint tem precedência para o tráfego destinado ao serviço... na Região atual) Tráfego para o serviço em **outra região** continua saindo pelo IGW.
 
 Destinos possíveis de uma rota: internet gateway, NAT gateway, egress-only IGW, virtual private gateway, transit gateway, peering connection, VPC endpoint (via prefix list), ENI, Gateway Load Balancer endpoint, local (sempre presente, para a própria VPC).
 
@@ -68,7 +68,7 @@ Destinos possíveis de uma rota: internet gateway, NAT gateway, egress-only IGW,
 
 **Internet Gateway** — entrada e saída. A instância precisa de IP público (ou Elastic IP) e a subnet precisa da rota.
 
-**NAT Gateway** — só saída, para subnets privadas. Fica numa subnet **pública** com Elastic IP. Escala *"up to 100 Gbps"*. É **zonal**: *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* **Não aceita security group.** Não suporta port forwarding nem bastion.
+**NAT Gateway** — só saída, para subnets privadas. Fica numa subnet **pública** com Elastic IP. Escala *"up to 100 Gbps"*. É **zonal**: *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona) **Não aceita security group.** Não suporta port forwarding nem bastion.
 
 **Egress-only Internet Gateway** — *"allows outbound communication over IPv6 from instances in your VPC to the internet, and prevents the internet from initiating an IPv6 connection with your instances"*. É *"for use with IPv6 traffic only"*, stateful, sem SG, e o gateway em si não é cobrado.
 

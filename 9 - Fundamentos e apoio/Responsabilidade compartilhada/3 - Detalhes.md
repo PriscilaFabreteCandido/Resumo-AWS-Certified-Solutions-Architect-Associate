@@ -54,7 +54,7 @@ Exemplos concretos:
 
 **Forma 1 — atribuição direta.** *"Quem é responsável por aplicar patches no sistema operacional de uma instância EC2?"* → **você**. Note que uma AMI da AWS **não** transfere a responsabilidade contínua; a AWS oferece a **ferramenta** (SSM Patch Manager), não o serviço de patch.
 
-**Forma 2 — escolha de serviço.** *"least operational overhead"* é, no fundo, "empurre a fronteira". A hierarquia:
+**Forma 2 — escolha de serviço.** *"least operational overhead"* (menor esforço operacional) é, no fundo, "empurre a fronteira". A hierarquia:
 
 ```
 serverless gerenciado  >  gerenciado com instância  >  você gerencia a instância

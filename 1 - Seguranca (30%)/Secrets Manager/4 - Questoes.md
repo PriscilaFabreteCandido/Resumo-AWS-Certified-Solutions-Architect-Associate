@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** Habilitar rotação
 > **D)** Criar um VPC endpoint
 >
-> **Por que B**: o secret é criptografado com KMS, e a key policy é exceção que *"must explicitly allow access for principals"*.
+> **Por que B**: o secret é criptografado com KMS, e a key policy é exceção que *"must explicitly allow access for principals"* (precisam permitir o acesso explicitamente para os principais).
 > ⚠️ E se o secret estiver usando a **AWS managed key** `aws/secretsmanager`, o compartilhamento cross-account **não é possível** — precisa de customer managed key.
 
 ## ⚠️ Armadilhas
@@ -55,7 +55,7 @@ atualizado: 2026-11-08
 | KMS rotaciona senha de banco | KMS rotaciona **chave**, não credencial |
 | Secret cross-account só precisa de resource policy | Precisa também da **key policy** do KMS — e de **customer managed key** |
 | Rotação sempre causa downtime | **Alternating users** evita |
-| Secrets Manager funciona com Aurora Global Database | *"Secrets Manager doesn't support Aurora Global Database"* |
+| Secrets Manager funciona com Aurora Global Database | *"Secrets Manager doesn't support Aurora Global Database"* (o Secrets Manager não oferece suporte ao Aurora Global Database) |
 
 ## Links
 

@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 > **C)** PrivateLink
 > **D)** VPN entre as VPCs
 >
-> **Por que B**: *"There is no charge to create a VPC peering connection"*, e dados na **mesma AZ são grátis**.
+> **Por que B**: *"There is no charge to create a VPC peering connection"* (não há cobrança para criar uma conexão de VPC peering), e dados na **mesma AZ são grátis**.
 > **A errada**: cobra **por attachment/hora + por GB**.
 
 > [!question]- Q3. Para economizar, o time quer que 20 contas usem o **NAT gateway** de uma VPC central, via peering.

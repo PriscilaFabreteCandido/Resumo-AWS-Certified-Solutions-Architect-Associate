@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** A NACL bloqueou
 > **D)** O Elastic IP foi liberado
 >
-> **Por que B**: o NAT gateway é **zonal** — *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."*
+> **Por que B**: o NAT gateway é **zonal** — *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona)
 > **A errada**: o internet gateway é regional e redundante.
 
 > [!question]- Q4. Instâncias em subnet privada precisam de saída **IPv6** para a internet, sem aceitar conexões de entrada.

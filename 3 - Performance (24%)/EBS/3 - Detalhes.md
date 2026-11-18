@@ -25,7 +25,7 @@ Só quando o gp3 não basta:
 | **Multi-Attach** | **io1** ou **io2** |
 | Latência sub-milissegundo garantida | io2 Block Express: *"under 500 microseconds for 16KiB I/O"* |
 
-⚠️ E a armadilha do tipo de instância: *"Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS."* Provisionar 100.000 IOPS numa instância antiga é pagar por algo que não se entrega.
+⚠️ E a armadilha do tipo de instância: *"Other instance types can be attached to volumes provisioned with up to 64,000 IOPS, but can achieve up to 32,000 IOPS."* (outros tipos de instância podem ser anexados a volumes provisionados com até 64.000 IOPS, mas alcançam no máximo 32.000 IOPS) Provisionar 100.000 IOPS numa instância antiga é pagar por algo que não se entrega.
 
 ## 3. HDD — st1 e sc1
 

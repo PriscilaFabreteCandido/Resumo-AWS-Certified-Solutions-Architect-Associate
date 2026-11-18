@@ -47,7 +47,7 @@ Grace period curto demais → o ASG mata instâncias que ainda estão inicializa
 A **ordem padrão** começa pela AZ com mais instâncias, depois pela configuração mais antiga, e por fim pela mais próxima da próxima hora de cobrança (a doc nota que *"most EC2 usage is now billed per second, so this optimization provides less benefit"*).
 
 Duas regras que sobrepõem a política:
-- *"Maintaining Zonal balance takes precedence over the termination policy."*
+- *"Maintaining Zonal balance takes precedence over the termination policy."* (manter o equilíbrio entre as zonas tem precedência sobre a política de encerramento)
 - Instância **unhealthy** salta a avaliação e é substituída direto.
 
 No **rebalanceamento**, o ASG *"launches new instances before terminating the old ones"*, e pode exceder o máximo em **10%** (ou uma instância) temporariamente.

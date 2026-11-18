@@ -35,7 +35,7 @@ Esse padrão tem nome: **envelope encryption**.
 
 ## Onde aparece na prova
 
-Em **Task 1.3**, citado nominalmente: *"Encrypting data at rest (for example, AWS KMS)"*, *"Implementing access policies for encryption keys"* e *"Rotating encryption keys and renewing certificates"*.
+Em **Task 1.3**, citado nominalmente: *"Encrypting data at rest (for example, AWS KMS)"* (criptografar dados em repouso (por exemplo, com o AWS KMS)), *"Implementing access policies for encryption keys"* e *"Rotating encryption keys and renewing certificates"*.
 
 ## Links
 

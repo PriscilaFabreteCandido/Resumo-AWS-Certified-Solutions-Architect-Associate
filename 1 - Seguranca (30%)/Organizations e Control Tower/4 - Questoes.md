@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 > **C)** Sim, se o bucket for da mesma conta
 > **D)** Depende da ordem de avaliação
 >
-> **Por que B**: *"the boundary, the SCP, and the identity-based policy must all allow the action"*.
+> **Por que B**: *"the boundary, the SCP, and the identity-based policy must all allow the action"* (o permissions boundary, a SCP e a policy de identidade precisam, todos, permitir a ação).
 
 > [!question]- Q3. Garantir que nenhuma das 30 contas crie recursos fora de `us-east-1` e `sa-east-1`.
 > **A)** AWS Budgets por região
@@ -61,11 +61,11 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| SCP concede permissão | *"No permissions are granted by an SCP."* |
+| SCP concede permissão | *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) |
 | SCP protege a management account | **Não afeta** a management account |
-| SCP limita service-linked role | *"SCPs do not affect any service-linked role."* |
+| SCP limita service-linked role | *"SCPs do not affect any service-linked role."* (SCPs não afetam nenhuma service-linked role) |
 | SCP não alcança o root | Alcança o root das **contas membro** |
-| Organizations é pago | *"offered at no additional charge"* |
+| Organizations é pago | *"offered at no additional charge"* (oferecido sem cobrança adicional) |
 | Config previne | Config **detecta e remedia**. Prevenir é **SCP** |
 | Control Tower substitui o Organizations | É construído **sobre** ele |
 | RAM compartilha permissão | RAM compartilha **recurso**; permissão é IAM/SCP |

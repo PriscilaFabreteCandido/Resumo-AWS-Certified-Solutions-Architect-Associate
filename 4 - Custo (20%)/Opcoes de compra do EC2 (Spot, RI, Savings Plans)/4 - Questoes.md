@@ -12,8 +12,8 @@ atualizado: 2026-11-08
 > **C)** EC2 Instance Savings Plans
 > **D)** Spot com capacity rebalancing
 >
-> **Por que B**: aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* e **cobre Fargate e Lambda** — sobrevive a toda essa indecisão.
-> **A errada**: Standard RI *"can't be exchanged"* e amarra tipo e região por 3 anos.
+> **Por que B**: aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região) e **cobre Fargate e Lambda** — sobrevive a toda essa indecisão.
+> **A errada**: Standard RI *"can't be exchanged"* (não podem ser trocadas) e amarra tipo e região por 3 anos.
 > **C errada**: amarra **família e região**, justamente o que está em aberto.
 > **D errada**: produção 24/7 não tolera interrupção.
 
@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **D)** Spot Fleet com `lowest price`
 >
 > **Por que B**: trabalho idempotente e reiniciável é o caso de uso do Spot; *price capacity optimized* é a estratégia **recomendada**.
-> **D errada**: `lowest-price` é **"(not recommended)"** e *"has the highest risk of interruption"* — mas é o **default da CLI**, por isso aparece tanto.
+> **D errada**: `lowest-price` é **"(not recommended)"** e *"has the highest risk of interruption"* (tem o maior risco de interrupção) — mas é o **default da CLI**, por isso aparece tanto.
 
 > [!question]- Q4. A empresa precisa **garantir capacidade** numa AZ específica para um evento, sem assumir compromisso de 1 ou 3 anos.
 > **A)** Reserved Instance regional
@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** RI com tenancy dedicada
 > **D)** Cluster placement group
 >
-> **Por que B**: só o Dedicated Host expõe sockets e cores e permite *"bring your existing per-socket, per-core, or per-VM software licenses"*.
+> **Por que B**: só o Dedicated Host expõe sockets e cores e permite *"bring your existing per-socket, per-core, or per-VM software licenses"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM).
 > **A e C erradas**: dão hardware single-tenant, **sem** visibilidade de socket.
 
 > [!question]- Q6. Ambientes de desenvolvimento rodam 24/7 em on-demand, mas são usados de 8h às 19h em dias úteis.
@@ -80,14 +80,14 @@ atualizado: 2026-11-08
 |---|---|
 | Savings Plans tem 3 tipos | **Quatro**: Compute, **Database**, EC2 Instance, SageMaker AI |
 | Compute SP dá o maior desconto | **EC2 Instance SP** chega a **72%**; Compute vai a 66% com mais flexibilidade |
-| Savings Plans cobre Spot | *"Spot Instances are not covered by Savings Plans"* |
+| Savings Plans cobre Spot | *"Spot Instances are not covered by Savings Plans"* (instâncias Spot não são cobertas por Savings Plans) |
 | Savings Plans cobre os encargos do EKS | *"EKS charges will not be covered... but the underlying EC2 instances will be"* |
 | RI reserva capacidade | Só a **zonal**. A regional é **desconto** |
 | RI pode ser cancelada | **Não.** Standard: modificar ou vender. Convertible: trocar |
 | Convertible dá mais desconto | Dá **menos** |
 | Spot avisa 5 minutos antes | **2 minutos** |
 | `lowest-price` é a melhor estratégia de Spot | **"(not recommended)"** — e é o default da CLI |
-| A doc publica o desconto do Spot | Só *"steep discounts"* |
+| A doc publica o desconto do Spot | Só *"steep discounts"* (descontos expressivos) |
 | Dedicated Host = Dedicated Instance | Host = **licença por socket/core** e controle do hardware |
 | Dedicated Host entra em placement group | **Não pode** |
 | Comprometer-se é sempre bom | Primeiro **rightsizing**, depois compra |

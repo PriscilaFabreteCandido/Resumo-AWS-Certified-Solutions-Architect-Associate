@@ -17,13 +17,13 @@ atualizado: 2026-11-08
 
 Cada conexão de banco consome memória no servidor. Aplicações serverless e em contêiner abrem conexões de forma explosiva: 1.000 Lambdas concorrentes = 1.000 tentativas de conexão. A doc descreve o sintoma: *"unpredictable surges in database traffic"* que causam *"oversubscribing connections or new connections being created at a fast rate"*.
 
-O proxy enfileira ou estrangula: *"If connection requests exceed the limits you specify, RDS Proxy rejects application connections (that is, it sheds load)."*
+O proxy enfileira ou estrangula: *"If connection requests exceed the limits you specify, RDS Proxy rejects application connections (that is, it sheds load)."* (se as requisições de conexão excederem os limites que você definiu, o RDS Proxy rejeita conexões da aplicação (ou seja, descarta carga))
 
 ## O segundo benefício: failover
 
 > *"RDS Proxy makes applications more resilient to database failures by automatically connecting to a standby DB instance while preserving application connections."*
 
-E o número: reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"* (porque *"bypasses Domain Name System (DNS) caches"*), e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"*.
+E o número: reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"* (porque *"bypasses Domain Name System (DNS) caches"*), e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 
 ## O gatilho de prova
 

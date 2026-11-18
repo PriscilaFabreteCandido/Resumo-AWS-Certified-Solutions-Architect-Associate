@@ -40,7 +40,7 @@ Três funções, e a prova usa todas:
 > [!warning] As três pegadinhas de Standard × FIFO
 > 1. **"Pode duplicar" não é defeito, é contrato.** Numa fila standard o consumidor **precisa ser idempotente** (checar se já processou, por um ID). Se o enunciado diz *"o processamento não pode ocorrer duas vezes"* e **não** fala de ordem, duas respostas são válidas: **FIFO** ou **standard + consumidor idempotente** — veja qual o enunciado permite.
 > 2. **FIFO não é para volume alto sem planejamento.** 300 TPS por ação é pouco. Se o enunciado dá um volume grande **e** pede ordem, a resposta envolve **muitos message groups** (ou high throughput mode).
-> 3. **DLQ em fila FIFO quebra a ordem.** A doc avisa: *"Don't use a dead-letter queue with a FIFO queue if you don't want to break the exact order."*
+> 3. **DLQ em fila FIFO quebra a ordem.** A doc avisa: *"Don't use a dead-letter queue with a FIFO queue if you don't want to break the exact order."* (não use dead-letter queue com fila FIFO se você não quiser quebrar a ordem exata)
 
 ### Como escolher, em uma pergunta
 

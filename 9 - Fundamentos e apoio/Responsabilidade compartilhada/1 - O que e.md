@@ -33,7 +33,7 @@ O pilar de Segurança do Well-Architected:
 | **RDS** | **AWS** | **AWS** | Usuários, schema, parameter group, criptografia, dados |
 | **Lambda / S3 / DynamoDB** | **AWS** | **AWS** | **Dados, IAM, configuração** |
 
-Quanto mais gerenciado o serviço, **menos** cabe a você — e é por isso que *"least operational overhead"* é, no fundo, "empurre a fronteira para a AWS".
+Quanto mais gerenciado o serviço, **menos** cabe a você — e é por isso que *"least operational overhead"* (menor esforço operacional) é, no fundo, "empurre a fronteira para a AWS".
 
 ## Links
 

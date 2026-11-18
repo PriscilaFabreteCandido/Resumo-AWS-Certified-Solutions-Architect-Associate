@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** **Direct Connect + IPsec VPN sobre a conexão Direct Connect** ✅
 > **D)** Transit Gateway com peering inter-region
 >
-> **Por que C**: o DX dá banda previsível fora da internet; a documentação **não afirma** criptografia por padrão, então a camada IPsec atende esse requisito. O whitepaper descreve a opção: *"IPsec VPN connection over private lines"*.
+> **Por que C**: o DX dá banda previsível fora da internet; a documentação **não afirma** criptografia por padrão, então a camada IPsec atende esse requisito. O whitepaper descreve a opção: *"IPsec VPN connection over private lines"* (conexão VPN IPsec sobre linhas privadas).
 > **A errada**: criptografada, mas trafega **pela internet**, com banda não previsível.
 > **B errada**: resolve banda, não criptografia.
 > **D errada**: TGW é topologia **dentro** da AWS.
@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 > **C)** Dedicated de 10 Gbps
 > **D)** VPN
 >
-> **Por que B**: hosted vai de **50 Mbps a 25 Gbps**, é provisionada pelo **parceiro** e entrega muito mais rápido. Dedicated começa em **1 Gbps** e leva *"up to 72 business hours"* só para a porta.
+> **Por que B**: hosted vai de **50 Mbps a 25 Gbps**, é provisionada pelo **parceiro** e entrega muito mais rápido. Dedicated começa em **1 Gbps** e leva *"up to 72 business hours"* (até 72 horas úteis) só para a porta.
 
 ## ⚠️ Armadilhas
 
@@ -64,8 +64,8 @@ atualizado: 2026-11-08
 | Dedicated começa em 50 Mbps | **Dedicated: 1/10/100/400 Gbps.** Hosted: 50 Mbps a 25 Gbps |
 | Um private VIF alcança várias VPCs | **Uma** por VIF — várias só via **DX gateway** |
 | Gateway endpoint funciona de on-premises | **Não.** Só de dentro da VPC. Use **interface endpoint** |
-| DX sempre aumenta o custo | O **egress por GB é menor**: *"Reduced bandwidth costs"* |
-| DX gateway multi-conta é cobrado | *"no additional charges"* |
+| DX sempre aumenta o custo | O **egress por GB é menor**: *"Reduced bandwidth costs"* (custos de banda reduzidos) |
+| DX gateway multi-conta é cobrado | *"no additional charges"* (sem cobranças adicionais) |
 | Posso aumentar a velocidade da dedicated | Exige **nova conexão** |
 
 ## Links

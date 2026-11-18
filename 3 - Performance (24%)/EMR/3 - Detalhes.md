@@ -30,7 +30,7 @@ Se o enunciado diz apenas "transformar dados" ou "ETL", sem nomear framework, a 
 
 **Task nodes** **só processam** — não guardam HDFS. É onde o Spot pertence: se um for interrompido, o framework redistribui a tarefa.
 
-A recomendação da doc confirma: *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"*. E o ganho: *"as low as a tenth of on-demand pricing in some cases"*.
+A recomendação da doc confirma: *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo). E o ganho: *"as low as a tenth of on-demand pricing in some cases"*.
 
 > [!important] O padrão de custo que a prova espera
 > **Master + core em On-Demand (ou Reserved); task nodes em Spot.**
@@ -39,7 +39,7 @@ A recomendação da doc confirma: *"use On-Demand Instances in one group for gua
 
 **HDFS** vive nos discos dos core nodes: rápido, mas **morre com o cluster**.
 
-**EMRFS** usa o **S3**: *"EMRFS uses S3 as a data layer... so that you can separate your compute and storage."*
+**EMRFS** usa o **S3**: *"EMRFS uses S3 as a data layer... so that you can separate your compute and storage."* (o EMRFS usa o S3 como camada de dados... para que você separe computação de armazenamento)
 
 Essa separação habilita o padrão mais econômico do EMR:
 
@@ -49,7 +49,7 @@ S3 (entrada)  →  CLUSTER TRANSIENTE  →  S3 (saída)
                   e se autodestrói)
 ```
 
-> *"If you configure your cluster to be automatically terminated, it is terminated after all the steps complete. This is referred to as a transient cluster."*
+> *"If you configure your cluster to be automatically terminated, it is terminated after all the steps complete. This is referred to as a transient cluster."* (se você configurar o cluster para ser encerrado automaticamente, ele é encerrado depois que todas as etapas terminam — é o que se chama de cluster transiente)
 
 Você paga **só o tempo de processamento**. O HDFS, nesse desenho, serve apenas como **scratch intermediário** entre etapas.
 

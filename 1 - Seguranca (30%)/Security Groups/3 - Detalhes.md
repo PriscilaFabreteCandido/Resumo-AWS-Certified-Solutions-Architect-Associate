@@ -29,7 +29,7 @@ A doc reconhece isso como diferencial: *"Security groups are more versatile than
 
 ## 3. Como as regras são avaliadas
 
-O SG *"Evaluates all rules before deciding whether to allow traffic"*. Não existe ordem nem numeração. Se **qualquer** regra permite, o tráfego passa.
+O SG *"Evaluates all rules before deciding whether to allow traffic"* (avalia todas as regras antes de decidir se permite o tráfego). Não existe ordem nem numeração. Se **qualquer** regra permite, o tráfego passa.
 
 Com vários SGs no mesmo recurso, a permissão é a **união** de todas as regras de todos os SGs.
 

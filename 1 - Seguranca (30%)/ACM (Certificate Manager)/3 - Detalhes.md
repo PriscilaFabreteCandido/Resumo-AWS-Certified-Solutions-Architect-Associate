@@ -14,7 +14,7 @@ atualizado: 2026-11-08
 | **Trafegando** pela rede | **TLS**, com certificado do **ACM** |
 
 O guia oficial separa as duas skills em **Task 1.3**:
-- *"Encrypting data at rest (for example, AWS KMS)"*
+- *"Encrypting data at rest (for example, AWS KMS)"* (criptografar dados em repouso (por exemplo, com o AWS KMS))
 - *"Encrypting data in transit (for example, AWS Certificate Manager [ACM] using TLS)"*
 
 Se a alternativa oferece "usar KMS para criptografar em trânsito", está errada.
@@ -29,7 +29,7 @@ A exceção importante é o **CloudFront**, que é global e lê certificados ape
 
 E o contraexemplo, igualmente importante:
 
-> *"If you want to require HTTPS between CloudFront and your origin, and you're using a load balancer in Elastic Load Balancing as your origin, you can request or import the certificate in any AWS Region."*
+> *"If you want to require HTTPS between CloudFront and your origin, and you're using a load balancer in Elastic Load Balancing as your origin, you can request or import the certificate in any AWS Region."* (se você quer exigir HTTPS entre o CloudFront e a origem, e está usando um load balancer do Elastic Load Balancing como origem, pode solicitar ou importar o certificado em qualquer Região)
 
 Ou seja: **viewer ↔ CloudFront** exige us-east-1; **CloudFront ↔ ELB** aceita qualquer região.
 

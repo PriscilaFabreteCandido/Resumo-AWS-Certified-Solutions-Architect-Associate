@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** **Gateway endpoint para o S3** ✅
 > **D)** Internet gateway com rota restrita
 >
-> **Por que C**: *"There is no additional charge for using gateway endpoints."*
+> **Por que C**: *"There is no additional charge for using gateway endpoints."* (não há cobrança adicional pelo uso de gateway endpoints)
 > **A errada**: funciona, mas NAT gateway cobra **por hora + por GB**.
 > **B errada**: funciona, mas é **cobrado** por hora e por GB. Justifica-se quando o acesso vem de **on-premises**.
 > **D errada**: coloca a subnet na internet.

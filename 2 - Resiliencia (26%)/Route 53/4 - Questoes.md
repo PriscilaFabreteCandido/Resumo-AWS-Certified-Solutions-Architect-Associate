@@ -60,7 +60,7 @@ atualizado: 2026-11-08
 > **C)** Multivalue answer
 > **D)** Mais health checks
 >
-> **Por que B**: DNS depende de TTL e de cache do resolver. O Global Accelerator *"reacts instantly to changes in health or configuration"*, e o cliente mantém o mesmo IP.
+> **Por que B**: DNS depende de TTL e de cache do resolver. O Global Accelerator *"reacts instantly to changes in health or configuration"* (reage instantaneamente a mudanças de saúde ou configuração), e o cliente mantém o mesmo IP.
 > **A errada**: TTL baixo ajuda, mas resolvers não respeitam TTL zero de forma confiável, e aumenta muito o volume de consultas.
 
 ## ⚠️ Armadilhas

@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Amazon Redshift — O que é
 
 > [!info] Em uma frase
-> **Data warehouse** colunar para análise de grandes volumes: *"optimized for high-performance analysis and reporting of very large datasets"*.
+> **Data warehouse** colunar para análise de grandes volumes: *"optimized for high-performance analysis and reporting of very large datasets"* (otimizado para análise e relatórios de alta performance sobre conjuntos de dados muito grandes).
 
 ## OLAP, não OLTP
 
@@ -23,7 +23,7 @@ Tradução para a prova: o Redshift **consegue** fazer INSERT e DELETE, mas é *
 
 | Componente | Papel |
 |---|---|
-| **Leader node** | Coordena. Existe *"If a cluster is provisioned with two or more compute nodes"* |
+| **Leader node** | Coordena. Existe *"If a cluster is provisioned with two or more compute nodes"* (se um cluster é provisionado com dois ou mais nós de computação) |
 | **Compute nodes** | Fazem o trabalho, divididos em **node slices** |
 | **Redshift Managed Storage (RMS)** | *"scale your storage to petabytes using Amazon S3 storage"*, com cache local em SSD. **Compute e storage escalam independentemente** |
 

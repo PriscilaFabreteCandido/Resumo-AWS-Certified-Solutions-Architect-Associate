@@ -53,7 +53,7 @@ exemplo.com (A, alias)
 
 O Route 53 *"includes only the healthy primary resources"* nas respostas; quando o primário falha no health check, passa a responder com o secundário.
 
-⚠️ O failover por DNS **não é instantâneo**: depende do **TTL** e do cache dos resolvers. Se o requisito é failover em segundos, a resposta é **AWS Global Accelerator** (IP anycast, *"reacts instantly to changes in health or configuration"*) ou **CloudFront origin failover**.
+⚠️ O failover por DNS **não é instantâneo**: depende do **TTL** e do cache dos resolvers. Se o requisito é failover em segundos, a resposta é **AWS Global Accelerator** (IP anycast, *"reacts instantly to changes in health or configuration"* (reage instantaneamente a mudanças de saúde ou configuração)) ou **CloudFront origin failover**.
 
 Para **ativo-ativo**, use latency, weighted ou multivalue com health checks em todos os endpoints.
 

@@ -62,7 +62,7 @@ Detalhe de custo: *"The configured maximum recovery period doesn't impact the pr
 
 **TTL** é *"a cost-effective method for deleting items that are no longer relevant"*. O atributo precisa ser **Number** em epoch de **segundos**; a exclusão ocorre *"within a few days after their expiration"*, e a primeira exclusão **não consome WCU**. ⚠️ Itens expirados mas não apagados **ainda aparecem** — *"Use filter expressions to remove expired items from Scan and Query results."*
 
-**Global Tables** é *"multi-Region, and multi-active"* — *"Any global table replica can serve reads and writes"*. Dois modos: **MREC** (eventual, **padrão**) e **MRSC** (forte). Resolução de conflito **last-writer-wins**. E: *"You cannot change a global table's consistency mode after creation."*
+**Global Tables** é *"multi-Region, and multi-active"* — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas). Dois modos: **MREC** (eventual, **padrão**) e **MRSC** (forte). Resolução de conflito **last-writer-wins**. E: *"You cannot change a global table's consistency mode after creation."*
 
 ## 6. Performance e cache
 

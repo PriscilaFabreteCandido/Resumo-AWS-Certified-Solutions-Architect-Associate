@@ -60,7 +60,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | SNS guarda a mensagem | **Push**, não armazena. Durabilidade vem da **fila** |
-| DLQ do SNS pode ser Lambda ou outro tópico | *"A dead-letter queue is an Amazon SQS queue"* |
+| DLQ do SNS pode ser Lambda ou outro tópico | *"A dead-letter queue is an Amazon SQS queue"* (uma dead-letter queue é uma fila do Amazon SQS) |
 | DLQ é por tópico | É por **subscription** |
 | Mensagem do SNS é 1 MiB como no SQS | SNS: **256 KiB**. SQS: 1 MiB |
 | SNS tem retry infinito para HTTP | Para HTTP a política é **sua**; para SQS/Lambda são 100.015 tentativas em 23 dias |

@@ -38,7 +38,7 @@ E o diferencial:
 | Sobrevive ao cluster | **Não** | **Sim** |
 | Para quê | Dado intermediário, scratch | Dado de entrada e saída |
 
-> *"EMRFS uses S3 as a data layer... so that you can separate your compute and storage."*
+> *"EMRFS uses S3 as a data layer... so that you can separate your compute and storage."* (o EMRFS usa o S3 como camada de dados... para que você separe computação de armazenamento)
 
 Separar compute de storage é o que permite **cluster transiente** — e é a resposta de custo.
 

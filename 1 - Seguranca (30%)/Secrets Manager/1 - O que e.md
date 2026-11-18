@@ -22,7 +22,7 @@ A tabela oficial da doc do Parameter Store coloca assim:
 | Credential rotation | |
 |---|---|
 | **Parameter Store** | **"None"** |
-| **Secrets Manager** | **"Automatic, with native database integrations"** |
+| **Secrets Manager** | **"Automatic, with native database integrations"** (automático, com integrações nativas ao banco) |
 
 ## Quando é a resposta
 

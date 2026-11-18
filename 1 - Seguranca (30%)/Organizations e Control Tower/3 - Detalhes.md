@@ -16,7 +16,7 @@ permissão efetiva = IAM policy  ∩  SCP  ∩  permissions boundary  ∩  sessi
 
 Duas consequências que viram questão:
 
-**Caso 1 — SCP liberando tudo, IAM vazio.** Resultado: **nenhum acesso**. *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."*
+**Caso 1 — SCP liberando tudo, IAM vazio.** Resultado: **nenhum acesso**. *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* (um usuário sem nenhuma policy de permissão do IAM não tem acesso, mesmo que as SCPs aplicáveis liberem todos os serviços e todas as ações)
 
 **Caso 2 — IAM com `s3:*`, SCP só permitindo EC2.** Resultado: **nenhum acesso ao S3**.
 

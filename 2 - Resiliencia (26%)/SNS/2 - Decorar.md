@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 
 | Fato | Detalhe |
 |---|---|
-| Tipo | *"A dead-letter queue is an Amazon SQS queue"* |
+| Tipo | *"A dead-letter queue is an Amazon SQS queue"* (uma dead-letter queue é uma fila do Amazon SQS) |
 | Escopo | Mesma **conta e região** |
 | Granularidade | Por **subscription**, não por tópico |
 | Tópico FIFO | DLQ precisa ser fila **FIFO** |

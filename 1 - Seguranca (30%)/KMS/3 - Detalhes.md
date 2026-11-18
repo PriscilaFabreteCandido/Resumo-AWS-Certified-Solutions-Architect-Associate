@@ -42,7 +42,7 @@ Para ler: envia a data key criptografada para `Decrypt`, recebe a versão em tex
 > [!important] A regra de decisão
 > Precisa de **auditoria**, **controle de acesso próprio**, **compartilhamento cross-account** ou **rotação definida por você** → **customer managed key**.
 > Caso contrário, a AWS managed key resolve e não tem tarifa mensal.
-> Para **S3 cross-account com SSE-KMS**, a doc do S3 é explícita: *"If you want to grant cross-account access to your S3 objects, use a customer managed key."*
+> Para **S3 cross-account com SSE-KMS**, a doc do S3 é explícita: *"If you want to grant cross-account access to your S3 objects, use a customer managed key."* (se você quer conceder acesso entre contas aos seus objetos do S3, use uma customer managed key)
 
 ## 3. Rotação
 
@@ -52,7 +52,7 @@ Não suportam rotação automática (só manual): **assimétricas**, **HMAC** e 
 
 Dois pontos que a prova explora:
 
-**Rotação não toca nos dados.** *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."* A KMS retém **todas** as versões do material: *"AWS KMS retains all key material for a KMS key with AWS_KMS origin, even if key rotation is disabled. AWS KMS deletes key material only when you delete the KMS key."*
+**Rotação não toca nos dados.** *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."* (a rotação de chave não tem efeito sobre os dados que a chave do KMS protege: ela não rotaciona as data keys geradas por essa chave nem recriptografa nenhum dado protegido por ela) A KMS retém **todas** as versões do material: *"AWS KMS retains all key material for a KMS key with AWS_KMS origin, even if key rotation is disabled. AWS KMS deletes key material only when you delete the KMS key."*
 
 **O decrypt escolhe a versão certa automaticamente.** *"When you use the rotated KMS key to decrypt ciphertext, AWS KMS uses the same version of the key material that was used to encrypt it."*
 
@@ -60,7 +60,7 @@ Monitoramento: evento **"KMS CMK Rotation"** no EventBridge e **`RotateKey`** no
 
 ## 4. Controle de acesso
 
-**Key policy** é obrigatória e é a base. Diferente de uma bucket policy, ela **não** funciona por união com a policy de identidade: a doc do IAM classifica key policy do KMS como exceção que *"must explicitly allow access for principals"*.
+**Key policy** é obrigatória e é a base. Diferente de uma bucket policy, ela **não** funciona por união com a policy de identidade: a doc do IAM classifica key policy do KMS como exceção que *"must explicitly allow access for principals"* (precisam permitir o acesso explicitamente para os principais).
 
 O erro prático mais comum: criar um snapshot de EBS ou uma AMI criptografada com chave da conta A, compartilhar com a conta B, e a conta B não conseguir usar — porque a **key policy** não libera a conta B.
 
@@ -84,7 +84,7 @@ Pontos de prova: a rotação é *"shared property"* e se configura **só na chav
 | HSM **single-tenant**, FIPS 140-3 nível 3, eu gerencio os usuários | **CloudHSM** |
 | Certificado **TLS** para HTTPS | **ACM** |
 
-A própria doc do CloudHSM diz: *"If you want a managed service for creating and controlling your encryption keys but you don't want or need to operate your own HSMs, consider using AWS Key Management Service."*
+A própria doc do CloudHSM diz: *"If you want a managed service for creating and controlling your encryption keys but you don't want or need to operate your own HSMs, consider using AWS Key Management Service."* (se você quer um serviço gerenciado para criar e controlar suas chaves de criptografia, mas não quer nem precisa operar os próprios HSMs, considere usar o AWS Key Management Service)
 
 E lembre: **KMS = em repouso. ACM/TLS = em trânsito.** Essa confusão é explorada direto.
 

@@ -30,11 +30,11 @@ Para baixar a latência, existe o **zero buffering**: *"Firehose will not buffer
 
 A conversão para **Parquet** com **particionamento** é o que torna o dado barato de consultar depois: no exemplo oficial de preço do Athena, 3 TB de texto (US$ 15) vira **US$ 1,25** em Parquet lendo uma coluna.
 
-Esse é exatamente o skill do guia: *"Transforming data between formats (for example, .csv to .parquet)"*.
+Esse é exatamente o skill do guia: *"Transforming data between formats (for example, .csv to .parquet)"* (transformar dados entre formatos (por exemplo, de .csv para .parquet)).
 
 ## 3. O caminho para o Redshift
 
-> *"streaming data is delivered to your S3 bucket first. Amazon Data Firehose then issues an Amazon Redshift COPY command."*
+> *"streaming data is delivered to your S3 bucket first. Amazon Data Firehose then issues an Amazon Redshift COPY command."* (os dados de streaming são entregues primeiro ao seu bucket S3; em seguida o Amazon Data Firehose emite um comando COPY do Amazon Redshift)
 
 Importa porque explica dois efeitos: há um bucket S3 **intermediário** (que você configura), e a carga no Redshift usa `COPY` (a forma eficiente, paralela entre slices).
 

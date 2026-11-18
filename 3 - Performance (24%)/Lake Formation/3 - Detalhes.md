@@ -14,11 +14,11 @@ Com **IAM e bucket policy**, o controle é por **objeto ou prefixo** — ou voc�
 
 A saída artesanal seria criar **cópias** do dado por público (um bucket só com as colunas permitidas), o que duplica storage, cria defasagem e multiplica o esforço.
 
-O Lake Formation resolve na camada de **autorização da consulta**: *"enforced using granular controls at the column, row, and cell-levels"*. O dado fica **num** lugar, e cada consulta vê só o que pode.
+O Lake Formation resolve na camada de **autorização da consulta**: *"enforced using granular controls at the column, row, and cell-levels"* (aplicado por controles granulares no nível de coluna, linha e célula). O dado fica **num** lugar, e cada consulta vê só o que pode.
 
 ## 2. Como funciona
 
-> *"Lake Formation provides its own permissions model that augments the IAM permissions model."*
+> *"Lake Formation provides its own permissions model that augments the IAM permissions model."* (o Lake Formation tem um modelo de permissões próprio, que complementa o do IAM)
 
 O modelo é de banco de dados — *"a grant or revoke mechanism"*:
 
@@ -60,7 +60,7 @@ A doc chama isso de *"Attribute-based access control"*. Tabela nova marcada com 
 | Consulta | **Athena / Spectrum / EMR** | SQL e código |
 | Visualização | **Amazon Quick** | Dashboard |
 
-A doc do Glue descreve o Lake Formation como *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* — fica claro que um guarda o metadado e o outro governa o acesso a ele.
+A doc do Glue descreve o Lake Formation como *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* (uma camada de autorização que oferece controle de acesso granular aos recursos do AWS Glue Data Catalog) — fica claro que um guarda o metadado e o outro governa o acesso a ele.
 
 ## 5. Cross-account e modo híbrido
 

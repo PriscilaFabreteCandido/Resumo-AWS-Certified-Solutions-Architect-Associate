@@ -38,7 +38,7 @@ A doc do Direct Connect **não afirma** criptografia por padrão. O tráfego é 
 |---|---|
 | Fora da internet, banda previsível | **DX** |
 | **Criptografado** | **Site-to-Site VPN** (IPsec) |
-| **Os dois** | **IPsec VPN sobre DX** — o whitepaper chama de *"IPsec VPN connection over private lines"* |
+| **Os dois** | **IPsec VPN sobre DX** — o whitepaper chama de *"IPsec VPN connection over private lines"* (conexão VPN IPsec sobre linhas privadas) |
 | Criptografia na camada 2 | **MACsec** (em conexões suportadas) |
 
 Em prova, "banda previsível **e** criptografado" é sempre **DX + VPN**.
@@ -62,7 +62,7 @@ O padrão **DX + VPN** é o mais citado em prova por ser o mais econômico: o DX
 
 > *"two billing elements: port hours and outbound data transfer."*
 
-A alavanca de custo: o **egress** pelo DX tem tarifa **por GB menor** que pela internet. O whitepaper lista *"Reduced bandwidth costs"* entre as vantagens. A partir de certo volume constante de saída para on-premises, o DX **se paga** — abaixo disso, a VPN é mais econômica (sem port hours).
+A alavanca de custo: o **egress** pelo DX tem tarifa **por GB menor** que pela internet. O whitepaper lista *"Reduced bandwidth costs"* (custos de banda reduzidos) entre as vantagens. A partir de certo volume constante de saída para on-premises, o DX **se paga** — abaixo disso, a VPN é mais econômica (sem port hours).
 
 E não esqueça: **Direct Connect gateway multi-conta não tem custo adicional**.
 

@@ -17,11 +17,11 @@ atualizado: 2026-11-08
 
 E o mecanismo:
 
-> *"Lake Formation provides its own permissions model that augments the IAM permissions model."*
+> *"Lake Formation provides its own permissions model that augments the IAM permissions model."* (o Lake Formation tem um modelo de permissões próprio, que complementa o do IAM)
 
 Com granularidade:
 
-> *"enforced using granular controls at the column, row, and cell-levels"*
+> *"enforced using granular controls at the column, row, and cell-levels"* (aplicado por controles granulares no nível de coluna, linha e célula)
 
 ## O que ele adiciona sobre o Glue
 
@@ -29,7 +29,7 @@ Com granularidade:
 |---|---|
 | **S3** | Onde o dado está |
 | **Glue Data Catalog** | O **metadado** (tabelas, schemas, partições) |
-| **Lake Formation** | **Quem pode ver o quê** dentro do catálogo — *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* |
+| **Lake Formation** | **Quem pode ver o quê** dentro do catálogo — *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* (uma camada de autorização que oferece controle de acesso granular aos recursos do AWS Glue Data Catalog) |
 
 ## Os engines que respeitam suas permissões (lista oficial)
 

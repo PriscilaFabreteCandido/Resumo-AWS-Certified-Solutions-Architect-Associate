@@ -20,8 +20,8 @@ atualizado: 2026-11-08
 
 1. **Diretório do próprio Identity Center** (para organizações pequenas, sem AD)
 2. **Active Directory** — AWS Managed Microsoft AD ou AD on-premises (via **AD Connector** ou **trust**)
-   - ⚠️ **Simple AD não serve**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."*
-   - Só **um** por vez: *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."*
+   - ⚠️ **Simple AD não serve**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4)
+   - Só **um** por vez: *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* (você pode conectar apenas um diretório do AD Connector ou um do AWS Managed Microsoft AD por vez)
    - Tem de estar na conta de **gerenciamento** da Organization e na **mesma Região**
 3. **IdP externo** — Okta, Microsoft Entra ID, Ping, OneLogin, via **SAML 2.0** (autenticação) + **SCIM** (provisionamento automático de usuários e grupos)
 

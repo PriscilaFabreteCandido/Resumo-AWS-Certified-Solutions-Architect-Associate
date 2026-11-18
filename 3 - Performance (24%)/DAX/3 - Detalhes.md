@@ -33,7 +33,7 @@ Por isso o DAX é para carga **read-heavy**. Em carga de escrita intensa com pou
 
 ## 4. A limitação que mais cai: leitura forte
 
-> *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."*
+> *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."* (o DAX repassa a requisição ao DynamoDB, e os resultados vindos do DynamoDB não são armazenados em cache no DAX)
 
 Se a aplicação faz leitura **fortemente consistente**, o DAX não ajuda **nada** — a requisição vai direto ao DynamoDB.
 

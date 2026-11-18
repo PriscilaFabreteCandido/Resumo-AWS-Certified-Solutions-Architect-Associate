@@ -16,7 +16,7 @@ O guia pede isso literalmente em **Task 3.2**: *"Selecting the appropriate resou
 
 ## 2. Concorrência — reserved × provisioned
 
-**Reserved concurrency** *"sets both the maximum and minimum number of concurrent instances"* e *"incurs no additional charges"*. Dois usos:
+**Reserved concurrency** *"sets both the maximum and minimum number of concurrent instances"* e *"incurs no additional charges"* (não gera cobrança adicional). Dois usos:
 
 - **Garantir cota**: reservar 200 para a função crítica, para que outras funções não consumam toda a cota da conta
 - **Estrangular**: reserved = **0** desliga a função; um valor baixo protege um backend frágil (um RDS, uma API de terceiro com rate limit)

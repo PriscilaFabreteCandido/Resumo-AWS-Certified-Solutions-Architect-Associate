@@ -14,7 +14,7 @@ Aplicações **serverless** pioram isso: cada ambiente de execução Lambda abre
 
 O proxy mantém um **pool quente** de conexões reais ao banco e multiplexa as conexões da aplicação sobre ele. Para a aplicação, nada muda além do endpoint.
 
-E quando o limite é atingido, o proxy **protege o banco**: *"If connection requests exceed the limits you specify, RDS Proxy rejects application connections (that is, it sheds load)."* Melhor rejeitar na borda que derrubar o banco.
+E quando o limite é atingido, o proxy **protege o banco**: *"If connection requests exceed the limits you specify, RDS Proxy rejects application connections (that is, it sheds load)."* (se as requisições de conexão excederem os limites que você definiu, o RDS Proxy rejeita conexões da aplicação (ou seja, descarta carga)) Melhor rejeitar na borda que derrubar o banco.
 
 ## 2. Failover mais rápido
 
@@ -25,7 +25,7 @@ Sem proxy, no failover a aplicação precisa:
 
 Com proxy: ele *"bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases"*, e *"automatically connecting to a standby DB instance while preserving application connections"* — a conexão da aplicação com o **proxy** permanece aberta.
 
-Também ajuda em manutenção: reduz o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"*.
+Também ajuda em manutenção: reduz o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 
 ## 3. Segurança — eliminando a senha da aplicação
 

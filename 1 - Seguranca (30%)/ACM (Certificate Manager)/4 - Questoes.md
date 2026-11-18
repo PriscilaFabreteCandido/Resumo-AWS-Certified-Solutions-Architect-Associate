@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Sim, via Systems Manager
 > **D)** Não, de forma alguma
 >
-> **Por que B**: *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* O desenho normal é terminar TLS no balanceador.
+> **Por que B**: *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* (associar um certificado gerenciado pelo ACM diretamente a uma instância EC2 exige um Nitro Enclave) O desenho normal é terminar TLS no balanceador.
 > **D errada**: é possível, com Nitro Enclaves (ou ACME para certificado público no servidor).
 
 > [!question]- Q3. Uma empresa precisa de HTTPS em ALBs de três regiões, com o mesmo domínio. Quantos certificados?

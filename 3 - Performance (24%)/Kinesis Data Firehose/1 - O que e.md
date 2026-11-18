@@ -32,7 +32,7 @@ E ele pode **transformar** os dados antes de entregar (formato, compressão, Lam
 | **HTTP endpoint** customizado |
 | Parceiros: Datadog, Dynatrace, LogicMonitor, MongoDB, New Relic, Coralogix, Elastic |
 
-⚠️ Para **Redshift**: *"streaming data is delivered to your S3 bucket first. Amazon Data Firehose then issues an Amazon Redshift COPY command."*
+⚠️ Para **Redshift**: *"streaming data is delivered to your S3 bucket first. Amazon Data Firehose then issues an Amazon Redshift COPY command."* (os dados de streaming são entregues primeiro ao seu bucket S3; em seguida o Amazon Data Firehose emite um comando COPY do Amazon Redshift)
 
 ## Streams × Firehose
 

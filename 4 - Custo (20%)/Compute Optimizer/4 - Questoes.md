@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Instalar o CloudWatch agent
 > **D)** Usar o Trusted Advisor
 >
-> **Por que B**: a janela padrão é *"the last 14 days"* — um pico mensal pode ficar fora. Com 93 dias, ele entra na análise.
+> **Por que B**: a janela padrão é *"the last 14 days"* (os últimos 14 dias) — um pico mensal pode ficar fora. Com 93 dias, ele entra na análise.
 > **C**: também melhora a qualidade (memória), mas não resolve a **janela**.
 
 > [!question]- Q3. As recomendações para uma aplicação **memory-bound** parecem agressivas demais.

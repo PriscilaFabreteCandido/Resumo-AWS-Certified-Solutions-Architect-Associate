@@ -54,7 +54,7 @@ Faixas usuais: Linux **32768-60999** · Windows Server 2008+ **49152-65535** · 
 
 ## Ordem importa: deny precisa vir antes
 
-A doc: *"Be sure to give the deny rule a lower number than the rule that allows the wider range of port traffic."*
+A doc: *"Be sure to give the deny rule a lower number than the rule that allows the wider range of port traffic."* (dê à regra de deny um número menor que o da regra que permite a faixa mais ampla de portas)
 
 ```
 # CERTO
@@ -71,7 +71,7 @@ A doc: *"Be sure to give the deny rule a lower number than the rule that allows 
 - **Route 53 Resolver / DNS da VPC (VPC+2)** → use **Route 53 Resolver DNS Firewall**
 - **IMDS** (metadados da instância) → use **IMDSv2**
 - DHCP, Amazon Time Sync, ativação de licença Windows, metadados de task do ECS
-- E: *"You can't reference prefix lists in network ACL rules"*
+- E: *"You can't reference prefix lists in network ACL rules"* (não é possível referenciar prefix lists em regras de network ACL)
 
 ## Links
 

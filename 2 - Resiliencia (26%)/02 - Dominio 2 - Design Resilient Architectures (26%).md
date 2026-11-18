@@ -139,7 +139,7 @@ atualizado: 2026-11-08
 > **C)** Adicionar read replicas
 > **D)** Reserved concurrency na Lambda
 >
-> **Por que B**: RDS Proxy existe para isso — *"allow your applications to pool and share database connections"*, e faz load shedding quando passa do limite. Bônus: reduz o tempo de failover *"by up to 66%"* no Aurora Multi-AZ.
+> **Por que B**: RDS Proxy existe para isso — *"allow your applications to pool and share database connections"*, e faz load shedding quando passa do limite. Bônus: reduz o tempo de failover *"by up to 66%"* (em até 66%) no Aurora Multi-AZ.
 > **A errada**: empurra o problema; conexões consomem memória do banco.
 > **C errada**: ajuda em leitura, não no esgotamento de conexões de escrita.
 > **D errada**: estrangula a aplicação em vez de resolver. É mitigação, não solução — e o guia pede desenho correto.

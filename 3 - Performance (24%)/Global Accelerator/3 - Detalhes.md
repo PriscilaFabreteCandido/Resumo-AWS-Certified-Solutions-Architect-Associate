@@ -35,7 +35,7 @@ Há **BYOIP** para IPv4, se você precisa usar a sua própria faixa.
 
 ## 3. Failover — por que é mais rápido que DNS
 
-O accelerator *"reacts instantly to changes in health or configuration"*. O cliente mantém a conexão com o **mesmo IP**; o Global Accelerator simplesmente passa a entregar o tráfego a outro endpoint.
+O accelerator *"reacts instantly to changes in health or configuration"* (reage instantaneamente a mudanças de saúde ou configuração). O cliente mantém a conexão com o **mesmo IP**; o Global Accelerator simplesmente passa a entregar o tráfego a outro endpoint.
 
 Compare com **Route 53 failover**: o cliente só muda de destino quando o cache DNS expira (o TTL) **e** o resolver consulta de novo. Resolvers que ignoram TTL baixo pioram isso.
 
@@ -55,7 +55,7 @@ Você configura **endpoint groups** por região, com:
 - **Traffic dial** — percentual do tráfego para aquele grupo (migração gradual, teste)
 - **Endpoint weight** — distribuição dentro do grupo
 
-**Custom routing accelerator** *"map one or more users to a specific destination among many destinations"*, e *"only support Amazon VPC subnet endpoint types and route traffic to private IP addresses in that subnet"*.
+**Custom routing accelerator** *"map one or more users to a specific destination among many destinations"* (mapear um ou mais usuários para um destino específico entre vários destinos), e *"only support Amazon VPC subnet endpoint types and route traffic to private IP addresses in that subnet"*.
 
 Caso de uso: multiplayer de jogos e VoIP, onde cada sessão precisa ir para uma **instância específica** (a sala, a partida), não para qualquer instância saudável.
 

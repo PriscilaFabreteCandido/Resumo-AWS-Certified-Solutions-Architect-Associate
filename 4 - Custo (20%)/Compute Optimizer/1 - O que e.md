@@ -27,7 +27,7 @@ Ele **não aplica** nada. Gera recomendações que você avalia e executa.
 
 | Modo | Período |
 |---|---|
-| Padrão | *"the last 14 days"* |
+| Padrão | *"the last 14 days"* (os últimos 14 dias) |
 | **Enhanced infrastructure metrics** | **93 dias** |
 
 > [!warning] Por que a janela importa

@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 |---|---|
 | Notificação | *"to an Amazon SNS topic, to an email address, or to both"* |
 | Tipos de alerta | **Real** e **previsto** |
-| Atualização | *"up to three times a day"* |
+| Atualização | *"up to three times a day"* (até três vezes por dia) |
 | **Budget actions** | Podem aplicar uma **policy IAM** |
 | Base de custo | blended, unblended, net unblended, **amortized**, net amortized |
 
@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| Natureza | *"the most comprehensive set of cost and usage data available"* |
+| Natureza | *"the most comprehensive set of cost and usage data available"* (o conjunto mais completo de dados de custo e uso disponível) |
 | Destino | *"an Amazon S3 bucket that you own"* |
 | Formato | **CSV** — *"AWS updates the report in your bucket once a day"* |
 | Frequência | *"Update the report up to three times a day"*; *"at least once a day"* |
@@ -52,7 +52,7 @@ atualizado: 2026-11-08
 
 | Item | Citação |
 |---|---|
-| Fatura única | *"Organizations provides you with a single consolidated bill"* |
+| Fatura única | *"Organizations provides you with a single consolidated bill"* (o Organizations entrega uma fatura única consolidada) |
 | Quem paga | *"The owner of the management account is responsible for paying for all usage"* |
 | Custo do serviço | *"AWS Organizations is offered at no additional charge"* |
 | Tags | *"You can use cost allocation tags in individual AWS accounts... this allocation will be visible in the consolidated bill"* |

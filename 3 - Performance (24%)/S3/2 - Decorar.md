@@ -51,7 +51,7 @@ Cobra **monitoramento por objeto**, **sem** taxa de retrieval. Objeto **< 128 KB
 
 ## Lifecycle — o modelo cascata (waterfall)
 
-> *"Amazon S3 supports a waterfall model for transitioning between storage classes."*
+> *"Amazon S3 supports a waterfall model for transitioning between storage classes."* (o Amazon S3 adota um modelo em cascata para as transições entre classes de armazenamento)
 
 A regra visual: **cada classe só desce**, nunca sobe. E ela pode pular etapas — Standard vai **direto** para Deep Archive se você quiser.
 
@@ -101,7 +101,7 @@ Ou seja: quanto mais frio o tier interno, **menos destinos** restam. O waterfall
 
 ### As duas regras que invalidam uma regra de lifecycle
 
-**1. Respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."*
+**1. Respeita o mínimo da classe atual.** *"You can't create a single Lifecycle rule that transitions objects from one storage class to another before the minimum storage duration period has passed."* (não é possível criar uma única regra de lifecycle que transicione objetos de uma classe para outra antes de cumprido o período mínimo de armazenamento)
 O exemplo da própria doc: Glacier IR (mínimo **90 dias**) no dia 4 → Deep Archive só a partir do dia **94**.
 *"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."*
 
@@ -154,7 +154,7 @@ Para forçar: filtro `ObjectSizeGreaterThan` / `ObjectSizeLessThan`, ou o header
 | Legal hold | **Não expira**. Removido manualmente |
 | Block Public Access | **4 flags**: `BlockPublicAcls`, `IgnorePublicAcls`, `BlockPublicPolicy`, `RestrictPublicBuckets`. **Vence a bucket policy** |
 | Replicação | **Assíncrona**. Versionamento **nos dois** buckets. **Não** replica o acervo antigo (use **Batch Replication**) |
-| S3 RTC | *"99.9 percent of those objects within 15 minutes"* |
+| S3 RTC | *"99.9 percent of those objects within 15 minutes"* (99,9% desses objetos em até 15 minutos) |
 | Overhead de arquivo (Glacier FR/Deep Archive) | **40 KB** por objeto: 32 KB na taxa do Glacier + 8 KB na do Standard |
 
 ## Links

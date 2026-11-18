@@ -73,7 +73,7 @@ atualizado: 2026-11-08
 | NACL nova já libera tudo | Começa **só com `*` DENY**. Só a **default** vem liberada |
 | Uma subnet pode ter 2 NACLs | **Uma** por vez (mas uma NACL cobre várias subnets) |
 | NACL filtra tráfego dentro da subnet | Só na **fronteira** da subnet |
-| NACL aceita prefix list | *"You can't reference prefix lists in network ACL rules"* |
+| NACL aceita prefix list | *"You can't reference prefix lists in network ACL rules"* (não é possível referenciar prefix lists em regras de network ACL) |
 | NACL bloqueia o DNS da VPC e o IMDS | **Não bloqueia** nenhum dos dois |
 | NACL substitui o security group | A recomendação é *"Use security groups as the primary mechanism"*; NACL é controle **grosseiro** |
 | Posso deletar a regra `*` | **Não pode** |

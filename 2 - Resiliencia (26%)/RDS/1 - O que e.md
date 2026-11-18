@@ -27,11 +27,11 @@ As citações que definem:
 
 > **Multi-AZ instance**: *"has one standby DB instance that provides failover support, but doesn't serve read traffic."*
 
-> **Multi-AZ cluster**: *"a writer DB instance and two reader DB instances in three separate Availability Zones in the same AWS Region"*, com failover *"typically under 35 seconds"*.
+> **Multi-AZ cluster**: *"a writer DB instance and two reader DB instances in three separate Availability Zones in the same AWS Region"*, com failover *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
 
 > **Read replica**: *"Amazon RDS copies them asynchronously to the read replica."*
 
-> ⚠️ *"Multi-AZ DB clusters aren't the same as Aurora DB clusters."*
+> ⚠️ *"Multi-AZ DB clusters aren't the same as Aurora DB clusters."* (clusters de banco Multi-AZ não são a mesma coisa que clusters do Aurora)
 
 ## A pegadinha nº 1 do RDS
 

@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 > **C)** Aurora com 15 réplicas
 > **D)** Read replica cross-Region promovida manualmente
 >
-> **Por que B**: 1 writer + 2 readers **legíveis** em 3 AZs, failover *"typically under 35 seconds"*, e menor latência de escrita.
+> **Por que B**: 1 writer + 2 readers **legíveis** em 3 AZs, failover *"typically under 35 seconds"* (normalmente abaixo de 35 segundos), e menor latência de escrita.
 > **A errada**: funciona, mas o standby não lê e o tempo de failover não é documentado.
 > **C errada**: Aurora é outra arquitetura — resposta válida se o enunciado aceitar migrar, mas *"Multi-AZ DB clusters aren't the same as Aurora DB clusters"*.
 > **D errada**: promoção manual, RTO alto.
@@ -75,7 +75,7 @@ atualizado: 2026-11-08
 | Multi-AZ DB cluster é Aurora | *"aren't the same as Aurora DB clusters"* |
 | Read replica é síncrona | **Assíncrona** |
 | Read replica faz failover automático | Promoção é **manual** |
-| Read replica tem autoscaling | *"RDS doesn't support autoscaling of read replicas"* |
+| Read replica tem autoscaling | *"RDS doesn't support autoscaling of read replicas"* (o RDS não oferece escalabilidade automática de réplicas de leitura) |
 | Qualquer engine permite réplica de réplica | **Db2, Oracle e SQL Server não** |
 | Backup automático sobrevive à exclusão | **Só o snapshot manual** |
 | Instância parada não custa nada | O **storage continua cobrando** |

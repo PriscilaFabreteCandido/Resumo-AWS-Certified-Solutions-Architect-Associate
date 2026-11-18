@@ -14,8 +14,8 @@ atualizado: 2026-11-08
 | **Secrets do Secrets Manager por proxy** | **200** (*"thus limiting connections to up to 200 different user accounts"*) |
 | Endpoints adicionais por proxy | até **20** |
 | AZs do endpoint padrão | *"only two Availability Zones"* |
-| Redução do tempo de failover (Aurora Multi-AZ) | *"by up to 66%"* |
-| Downtime de upgrade minor (Multi-AZ DB cluster) | *"one second or less"* |
+| Redução do tempo de failover (Aurora Multi-AZ) | *"by up to 66%"* (em até 66%) |
+| Downtime de upgrade minor (Multi-AZ DB cluster) | *"one second or less"* (um segundo ou menos) |
 | Statement que fixa a sessão (*pinning*) | maior que **16 KB** |
 
 ## Portas
@@ -35,7 +35,7 @@ atualizado: 2026-11-08
 | Restrição | Detalhe |
 |---|---|
 | **Só o writer** | *"you can associate a proxy only with the writer DB instance, not a read replica"* |
-| **Não é público** | *"can't be publicly accessible"* |
+| **Não é público** | *"can't be publicly accessible"* (não pode ser acessível publicamente) |
 | **Mesma VPC** | O proxy fica na VPC do banco |
 | SQL Server | *"RDS Proxy doesn't support connections that use Active Directory"* e *"does not support end-to-end IAM authentication for RDS for SQL Server"* |
 

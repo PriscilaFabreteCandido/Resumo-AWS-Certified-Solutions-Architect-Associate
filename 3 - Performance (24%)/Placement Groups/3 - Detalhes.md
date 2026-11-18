@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Cluster — juntar para reduzir latência
 
-*"Packs instances close together inside an Availability Zone."* As instâncias ficam no mesmo bloco de hardware de baixa latência, o que habilita **10 Gbps de fluxo único** dentro do grupo (contra 5 Gbps fora).
+*"Packs instances close together inside an Availability Zone."* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade) As instâncias ficam no mesmo bloco de hardware de baixa latência, o que habilita **10 Gbps de fluxo único** dentro do grupo (contra 5 Gbps fora).
 
 Para que isso rende: **HPC com MPI**, simulação, cálculo de risco, qualquer coisa em que os nós conversam intensamente entre si.
 
@@ -32,7 +32,7 @@ E: **não é suportado com Dedicated Instances**. Host-level spread existe **só
 
 ## 3. Partition — separar em grupos com noção de rack
 
-*"Spreads your instances across logical partitions"*, e cada partição tem **seu próprio conjunto de racks**. Instâncias de partições diferentes não compartilham rack.
+*"Spreads your instances across logical partitions"* (distribui suas instâncias entre partições lógicas), e cada partição tem **seu próprio conjunto de racks**. Instâncias de partições diferentes não compartilham rack.
 
 Limite: *"A partition placement group can have a maximum of seven partitions per Availability Zone"* (e **2** com Dedicated Instances).
 

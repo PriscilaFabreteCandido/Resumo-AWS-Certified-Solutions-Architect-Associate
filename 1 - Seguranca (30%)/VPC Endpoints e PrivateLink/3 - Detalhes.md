@@ -16,7 +16,7 @@ Três pontos de atenção:
 
 **Escopo regional.** Pela regra de longest-prefix match, tráfego para o S3 **da região atual** vai pelo endpoint; para o S3 de **outra região**, sai pelo internet gateway.
 
-**NACL precisa permitir.** *"The network ACLs... must also allow traffic"* para os CIDRs do serviço. E como *"You can't reference prefix lists in network ACL rules"*, você precisa listar os CIDRs ou liberar amplamente.
+**NACL precisa permitir.** *"The network ACLs... must also allow traffic"* (as network ACLs... também precisam permitir o tráfego) para os CIDRs do serviço. E como *"You can't reference prefix lists in network ACL rules"* (não é possível referenciar prefix lists em regras de network ACL), você precisa listar os CIDRs ou liberar amplamente.
 
 **Só de dentro da VPC.** Se o acesso vem de **on-premises** via Direct Connect ou VPN, o gateway endpoint não serve — use **interface endpoint**.
 

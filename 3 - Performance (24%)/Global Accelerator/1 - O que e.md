@@ -23,7 +23,7 @@ E os IPs: *"Global Accelerator provides you with static IP addresses... The stat
 |---|---|
 | **IP estático** | Clientes precisam liberar IPs em firewall; o IP não muda ao trocar de região |
 | **TCP e UDP** | Jogos, VoIP, MQTT, qualquer coisa que não seja HTTP |
-| **Failover regional quase instantâneo** | *"reacts instantly to changes in health or configuration"* — sem depender de TTL de DNS |
+| **Failover regional quase instantâneo** | *"reacts instantly to changes in health or configuration"* (reage instantaneamente a mudanças de saúde ou configuração) — sem depender de TTL de DNS |
 
 ## CloudFront × Global Accelerator — a comparação central
 

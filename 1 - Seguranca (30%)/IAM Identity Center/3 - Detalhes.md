@@ -45,7 +45,7 @@ Em questão de "menor esforço operacional" com várias contas, **Identity Cente
 
 O Identity Center pode propagar atributos do diretório (departamento, projeto, centro de custo) como **tags de sessão**. As políticas então usam condições como `aws:PrincipalTag/Projeto` para liberar só os recursos com a tag correspondente.
 
-Efeito: **um** permission set atende N times, em vez de um por time. É a resposta quando o enunciado fala de "modelo de autorização flexível" — que é literalmente a skill *"Designing a flexible authorization model"* da **Task 1.1**.
+Efeito: **um** permission set atende N times, em vez de um por time. É a resposta quando o enunciado fala de "modelo de autorização flexível" — que é literalmente a skill *"Designing a flexible authorization model"* (projetar um modelo de autorização flexível) da **Task 1.1**.
 
 ## 5. O que ele não é
 

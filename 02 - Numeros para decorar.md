@@ -43,8 +43,8 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 > Glacier **Instant** Retrieval não precisa de restore: é `GET` direto, em milissegundos.
 
 > [!question]- Failover: RDS Multi-AZ cluster, Aurora com réplica, Aurora sem réplica?
-> Multi-AZ **DB cluster**: *"typically under 35 seconds"*.
-> Aurora **com** Aurora Replica: *"less than 60 seconds, and often less than 30 seconds"*.
+> Multi-AZ **DB cluster**: *"typically under 35 seconds"* (normalmente abaixo de 35 segundos).
+> Aurora **com** Aurora Replica: *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30).
 > Aurora **sem** réplica: recria a instância, *"typically takes less than 10 minutes"*.
 > Multi-AZ **DB instance**: a doc da AWS **não informa** um tempo típico.
 
@@ -66,7 +66,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 | Latência típica | 100-200 ms para objeto pequeno |
 | Intelligent-Tiering (transições automáticas) | Infrequent Access após **30** dias sem acesso · Archive Instant Access após **90** · Archive Access (opt-in) **mín. 90** · Deep Archive Access (opt-in) **mín. 180** |
 | Lifecycle: objeto pequeno | Objetos **< 128 KB** não transicionam por padrão (desde set/2024) |
-| S3 Replication Time Control | *"99.9 percent of those objects within 15 minutes"* |
+| S3 Replication Time Control | *"99.9 percent of those objects within 15 minutes"* (99,9% desses objetos em até 15 minutos) |
 | Versionamento | 3 estados: Unversioned (padrão) · Enabled · Suspended. **Enabled nunca volta a Unversioned** |
 
 > [!warning] Caminho de transição do lifecycle é "cascata", de quente para frio
@@ -145,12 +145,12 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 | Item | Valor |
 |---|---|
 | RDS Multi-AZ **instance** | 1 standby, **síncrono**, **não lê**; tempo de failover: a doc não informa |
-| RDS Multi-AZ **DB cluster** | 1 writer + **2 readers**, **3 AZs**, **semi-síncrono**, failover *"typically under 35 seconds"* |
+| RDS Multi-AZ **DB cluster** | 1 writer + **2 readers**, **3 AZs**, **semi-síncrono**, failover *"typically under 35 seconds"* (normalmente abaixo de 35 segundos) |
 | Read replica | **assíncrona**; pode ser cross-Region; pode ser promovida; aumento de storage mínimo de **10%** |
 | Aurora: cópias | **6 cópias em 3 AZs** (volume até **128 TiB**, com até **256 TiB** em versões específicas) |
 | Aurora: réplicas | até **15** Aurora Replicas; prioridade de failover **tier 0 (maior) a 15 (menor)** |
 | Aurora: failover | com réplica **< 60 s, frequentemente < 30 s**; sem réplica **< 10 min** |
-| Aurora Global Database | 1 região primária + **até 10 secundárias**; lag *"typically under a second"*; **RPO em segundos, RTO em minutos**; *switchover* planejado = **RPO 0**; cluster secundário suporta **16** readers |
+| Aurora Global Database | 1 região primária + **até 10 secundárias**; lag *"typically under a second"* (normalmente abaixo de um segundo); **RPO em segundos, RTO em minutos**; *switchover* planejado = **RPO 0**; cluster secundário suporta **16** readers |
 | Aurora Serverless v2 | **1 ACU ≈ 2 GiB** de memória; mínimo **0,5 ACU** (ou **0 ACU** para pausar); escala em passos de **0,5 ACU**; cobrado **por segundo** |
 | Aurora I/O-Optimized | vale a pena quando I/O é **≥ 25%** da fatura; troca permitida a cada **30 dias** |
 | DynamoDB: item | **400 KB** (nome + valor do atributo contam) |
@@ -164,7 +164,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 | DynamoDB: PITR | **1 a 35 dias**; restaura **sempre para uma tabela nova**; `LatestRestorableDateTime` ≈ **5 min** atrás |
 | DynamoDB Streams | registros vivem **24 horas** |
 | DAX: TTL do item cache | **5 minutos** por padrão |
-| RDS Proxy | **20** proxies por conta; **200** secrets por proxy; reduz tempo de failover *"by up to 66%"* para Aurora Multi-AZ |
+| RDS Proxy | **20** proxies por conta; **200** secrets por proxy; reduz tempo de failover *"by up to 66%"* (em até 66%) para Aurora Multi-AZ |
 
 ## 7. Mensageria
 
@@ -231,7 +231,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 | **MFA no root: prazo de registro** | **14 dias** do primeiro login no console. *"Users must register MFA within 14 days of their first sign-in attempt"* |
 | KMS: espera para excluir uma chave | **7 a 30 dias** (padrão **30**). Irreversível ao fim |
 | IAM: boas práticas oficiais | **14** itens; as duas primeiras são **federação para pessoas** e **role para workloads** |
-| Boas práticas do root | **9** itens; a nº 4 é **"Don't create access keys for the root user"** |
+| Boas práticas do root | **9** itens; a nº 4 é **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) |
 
 ## 10. CloudFront
 
@@ -273,7 +273,7 @@ fonte: docs.aws.amazon.com, conferido em 08/11/2026
 | Multi-AZ do RDS serve para escalar leitura | **Não.** O standby do Multi-AZ *instance* **não aceita leitura**. Para ler, use read replica (ou Multi-AZ **DB cluster**, cujos 2 readers leem). |
 | Read replica é síncrona | **Assíncrona.** O síncrono é o standby do Multi-AZ. |
 | Aurora tem 3 cópias | **6 cópias, em 3 AZs.** |
-| Gateway endpoint custa dinheiro | **Não.** *"There is no additional charge for using gateway endpoints."* Interface endpoint (PrivateLink) é que é cobrado. |
+| Gateway endpoint custa dinheiro | **Não.** *"There is no additional charge for using gateway endpoints."* (não há cobrança adicional pelo uso de gateway endpoints) Interface endpoint (PrivateLink) é que é cobrado. |
 | DynamoDB: 1 RCU = 1 leitura | 1 RCU = **1 leitura forte** de até 4 KB **ou 2 leituras eventuais**. O padrão da API é **eventual**. |
 | Posso adicionar LSI depois | **Não.** LSI só na criação da tabela. **GSI** pode ser adicionado e removido depois. |
 | Spot avisa 5 minutos antes | **2 minutos.** |

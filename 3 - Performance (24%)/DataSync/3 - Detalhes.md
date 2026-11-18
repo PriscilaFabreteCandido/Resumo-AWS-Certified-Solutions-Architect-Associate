@@ -33,8 +33,8 @@ atualizado: 2026-11-08
 
 | Recurso | Por quê importa |
 |---|---|
-| *"automatic encryption and data integrity validation"* | Garante que o que chegou é igual ao que saiu, sem você escrever verificação |
-| *"purpose-built network protocol and a parallel, multi-threaded architecture"* | Satura o link; um `aws s3 sync` sequencial não |
+| *"automatic encryption and data integrity validation"* (criptografia automática e validação de integridade dos dados) | Garante que o que chegou é igual ao que saiu, sem você escrever verificação |
+| *"purpose-built network protocol and a parallel, multi-threaded architecture"* (protocolo de rede feito sob medida e arquitetura paralela, multithread) | Satura o link; um `aws s3 sync` sequencial não |
 | **Preservação de metadados** | Permissões, timestamps, propriedade (importante em NFS/SMB) |
 | **Transferência incremental** | Nas execuções seguintes, só o que mudou |
 | **Agendamento** | Sincronização recorrente sem cron próprio |
@@ -44,7 +44,7 @@ atualizado: 2026-11-08
 
 ## 4. Direto para classe de arquivo
 
-A doc cita, entre os casos de uso, arquivar dado frio para *"S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"*.
+A doc cita, entre os casos de uso, arquivar dado frio para *"S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* (S3 Glacier Flexible Retrieval ou S3 Glacier Deep Archive).
 
 Isso é relevante para custo: em vez de copiar para o S3 Standard e depois esperar o lifecycle mover (pagando Standard no intervalo e uma requisição de transição por objeto), o DataSync grava **direto** na classe de arquivo.
 

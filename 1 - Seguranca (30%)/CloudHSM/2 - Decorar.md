@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 | Tenancy | Multi-tenant gerenciado | *"general purpose, single tenant"* |
 | FIPS | — | **140-2 ou 140-3 nível 3** (em FIPS mode) |
 | Gestão de usuários | **IAM** | **Você**, fora do IAM |
-| AWS vê o material? | Não vê, mas gerencia o serviço | *"E2E encryption is not visible to AWS"* |
+| AWS vê o material? | Não vê, mas gerencia o serviço | *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS) |
 | Integração nativa com serviços AWS | **Sim**, quase todos | Via **custom key store** da KMS, ou direto na app |
 | Interfaces | API da AWS | **PKCS #11, JCE, CNG, KSP** |
 | Esforço operacional | Baixo | *"you have more responsibility"* |
@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 
 Da própria doc do CloudHSM:
 
-> *"If you want a managed service for creating and controlling your encryption keys but you don't want or need to operate your own HSMs, consider using AWS Key Management Service."*
+> *"If you want a managed service for creating and controlling your encryption keys but you don't want or need to operate your own HSMs, consider using AWS Key Management Service."* (se você quer um serviço gerenciado para criar e controlar suas chaves de criptografia, mas não quer nem precisa operar os próprios HSMs, considere usar o AWS Key Management Service)
 
 Tradução para a prova: **sem gatilho explícito de HSM dedicado/FIPS nível 3, escolha KMS.**
 

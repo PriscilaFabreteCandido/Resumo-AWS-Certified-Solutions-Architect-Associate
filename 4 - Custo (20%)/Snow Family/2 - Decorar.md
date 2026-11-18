@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | Dispositivo | Storage | Compute |
 |---|---|---|
-| **Snowball Edge Storage Optimized 210 TB** | *"210 TB usable (for object and NFS data transfer)"*, NVMe | **104 vCPUs**, **416 GB** de RAM |
+| **Snowball Edge Storage Optimized 210 TB** | *"210 TB usable (for object and NFS data transfer)"* (210 TB utilizáveis (para transferência de objetos e NFS)), NVMe | **104 vCPUs**, **416 GB** de RAM |
 | **Snowball Edge Compute Optimized** | **28 TB** NVMe SSD para as instâncias | *"up to 104 vCPUs, 416 GB of memory"* (512 GB físicos, 416 GB utilizáveis) |
 
 ⚠️ **Snowcone** e **Snowmobile**: as especificações **não aparecem** na documentação atual que conferi — coerente com a descontinuação.
@@ -19,8 +19,8 @@ atualizado: 2026-11-08
 
 | Item | Valor |
 |---|---|
-| **Cluster** | *"3 to 16 devices"*, para durabilidade local |
-| **Protocolos** | *"NFSv3, NFSv4, NFSv4.1, Amazon S3 over HTTP or HTTPS"* |
+| **Cluster** | *"3 to 16 devices"* (de 3 a 16 dispositivos), para durabilidade local |
+| **Protocolos** | *"NFSv3, NFSv4, NFSv4.1, Amazon S3 over HTTP or HTTPS"* (NFSv3, NFSv4, NFSv4.1, Amazon S3 sobre HTTP ou HTTPS) |
 | **Rede** | *"transfer speeds of up to 100 Gbit/second"* |
 | Criptografia | KMS, no dispositivo |
 

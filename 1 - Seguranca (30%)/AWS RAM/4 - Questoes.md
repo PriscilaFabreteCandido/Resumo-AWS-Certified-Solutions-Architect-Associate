@@ -48,7 +48,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | RAM compartilha permissão | RAM compartilha **recurso**; permissão é IAM/SCP |
-| RAM é cobrado | *"no additional charges"* |
+| RAM é cobrado | *"no additional charges"* (sem cobranças adicionais) |
 | A conta participante pode alterar a VPC compartilhada | **Não.** Só lançar recursos nas subnets |
 | Posso compartilhar bucket S3 via RAM | **Não.** Use bucket policy |
 | Compartilhar dentro da organização exige convite | **Não** (exige o sharing com Organizations ativado). Fora dela, **sim** |

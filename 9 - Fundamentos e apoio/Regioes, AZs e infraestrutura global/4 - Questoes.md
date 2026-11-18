@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** 500 km
 > **D)** Não há limite definido
 >
-> **Por que B**: *"AZs are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100 km (60 miles) of each other."*
+> **Por que B**: *"AZs are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100 km (60 miles) of each other."* (as AZs são separadas fisicamente por uma distância significativa, de muitos quilômetros, de qualquer outra AZ — embora todas fiquem a até 100 km (60 milhas) umas das outras)
 > É esse teto que permite **replicação sincrônica** (RDS Multi-AZ, Aurora) sem latência inviável.
 
 > [!question]- Q2. Um volume EBS está em `us-east-1a`. A instância que precisa dele está em `us-east-1b`.

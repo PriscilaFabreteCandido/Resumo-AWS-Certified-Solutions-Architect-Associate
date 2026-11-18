@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 
 ## O princípio mais rentável da prova
 
-> **"Using purpose-built AWS services for workloads"** — citado **duas vezes** no guia (Task 2.1 e Task 2.2).
+> **"Using purpose-built AWS services for workloads"** (usar serviços da AWS feitos sob medida para cada carga de trabalho) — citado **duas vezes** no guia (Task 2.1 e Task 2.2).
 
 Quando uma alternativa usa o serviço **feito para aquilo** e outra usa um serviço genérico adaptado, a primeira é a resposta.
 

@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 | | **Reserved** | **Provisioned** |
 |---|---|---|
 | O que faz | *"sets both the maximum and minimum number of concurrent instances"* | *"the number of pre-initialized execution environments"* |
-| Custo | *"incurs no additional charges"* | *"incurs additional charges"* |
+| Custo | *"incurs no additional charges"* (não gera cobrança adicional) | *"incurs additional charges"* |
 | Resolve | **Cota garantida** e **estrangulamento** (valor **0** desliga a função) | **Cold start** — *"double-digit millisecond response times"* |
 | Limite | Até *"Unreserved account concurrency value minus 100"* | — |
 
@@ -48,7 +48,7 @@ atualizado: 2026-11-08
 
 ## Comparação citada na doc
 
-> *"API Gateway has a default throttle limit of 10,000 requests per second, whereas Lambda has a default concurrency limit of 1,000."*
+> *"API Gateway has a default throttle limit of 10,000 requests per second, whereas Lambda has a default concurrency limit of 1,000."* (o API Gateway tem limite padrão de throttling de 10.000 requisições por segundo, enquanto o Lambda tem limite padrão de concorrência de 1.000)
 
 ## Links
 

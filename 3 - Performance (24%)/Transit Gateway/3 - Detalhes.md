@@ -21,8 +21,8 @@ Cada uma com route tables de ambos os lados para manter. É insustentável — e
 
 ## 2. Route tables — o mecanismo de segmentação
 
-> *"A transit gateway has a default route table and can optionally have additional route tables."*
-> *"Each attachment is associated with exactly one route table. Each route table can be associated with zero to many attachments."*
+> *"A transit gateway has a default route table and can optionally have additional route tables."* (um transit gateway tem uma route table padrão e, opcionalmente, pode ter outras)
+> *"Each attachment is associated with exactly one route table. Each route table can be associated with zero to many attachments."* (cada attachment está associado a exatamente uma route table; cada route table pode estar associada a nenhum ou a vários attachments)
 
 Isso é mais poderoso do que parece. Com **route tables separadas**, você cria **domínios de roteamento isolados** no mesmo TGW:
 

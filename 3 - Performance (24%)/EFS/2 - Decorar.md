@@ -18,7 +18,7 @@ atualizado: 2026-11-08
 
 | Modo | Detalhe |
 |---|---|
-| **General Purpose** | **Padrão**, menor latência por operação. *"One Zone file systems always use the General Purpose performance mode"* |
+| **General Purpose** | **Padrão**, menor latência por operação. *"One Zone file systems always use the General Purpose performance mode"* (sistemas de arquivos One Zone sempre usam o modo de performance General Purpose) |
 | **Max I/O** | *"previous generation performance type"*; **não** suportado em One Zone nem com **Elastic** |
 
 ## Latência
@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 | Classe | Primeiro byte |
 |---|---|
 | **EFS Standard** | **~1 ms** leitura / **~2,7 ms** escrita |
-| **EFS IA** e **EFS Archive** | *"tens of milliseconds"* |
+| **EFS IA** e **EFS Archive** | *"tens of milliseconds"* (dezenas de milissegundos) |
 
 One Zone: ~1 ms leitura / **~1,6 ms** escrita.
 

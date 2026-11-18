@@ -53,7 +53,7 @@ atualizado: 2026-11-08
 > **C)** Falta copiar o snapshot para a região da outra conta
 > **D)** Falta habilitar criptografia por padrão
 >
-> **Por que B**: key policy é exceção que *"must explicitly allow access for principals"*; e a **AWS managed key não é compartilhável**.
+> **Por que B**: key policy é exceção que *"must explicitly allow access for principals"* (precisam permitir o acesso explicitamente para os principais); e a **AWS managed key não é compartilhável**.
 
 > [!question]- Q6. Depois de restaurar um volume de snapshot, a primeira leitura está lenta.
 > **A)** O volume está com IOPS baixo

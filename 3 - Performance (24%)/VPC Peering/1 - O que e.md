@@ -23,13 +23,13 @@ Ou seja: não há appliance, não há gargalo de banda, não há ponto único de
 |---|---|
 | **Não é transitivo** | A↔B e B↔C **não** dá A↔C |
 | **CIDR não pode sobrepor** | Impede a conexão |
-| **Criação grátis** | *"There is no charge to create a VPC peering connection"* |
+| **Criação grátis** | *"There is no charge to create a VPC peering connection"* (não há cobrança para criar uma conexão de VPC peering) |
 
 ## Escopo
 
 > *"The VPCs can be in different Regions (also known as an inter-Region VPC peering connection)."*
 
-Cross-account e cross-Region são suportados. Tráfego inter-Region *"is encrypted before leaving AWS facilities"*.
+Cross-account e cross-Region são suportados. Tráfego inter-Region *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
 
 ## Links
 

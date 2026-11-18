@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|---|---|
 | **Transitivo** | **Sim** (hub) | **Não** | — (não roteia rede) |
 | **CIDR sobreposto** | Não resolve | **Impede** | **Irrelevante** |
-| Escala | *"up to 5,000 attachments"* | 1:1, cresce em O(n²) | 1 serviço por endpoint |
+| Escala | *"up to 5,000 attachments"* (até 5.000 attachments) | 1:1, cresce em O(n²) | 1 serviço por endpoint |
 | Cross-Region | **Sim** (peering de TGW) | **Sim** | **Sim** |
 | Cross-account | Sim (via **RAM**) | Sim | Sim |
 | **Custo** | **por attachment/hora + por GB** | **Criação grátis**; dados na **mesma AZ grátis** | por hora e por GB |
@@ -20,8 +20,8 @@ atualizado: 2026-11-08
 
 ## Route tables
 
-> *"A transit gateway has a default route table and can optionally have additional route tables."*
-> *"Each attachment is associated with exactly one route table. Each route table can be associated with zero to many attachments."*
+> *"A transit gateway has a default route table and can optionally have additional route tables."* (um transit gateway tem uma route table padrão e, opcionalmente, pode ter outras)
+> *"Each attachment is associated with exactly one route table. Each route table can be associated with zero to many attachments."* (cada attachment está associado a exatamente uma route table; cada route table pode estar associada a nenhum ou a vários attachments)
 
 Isso é o mecanismo de **segmentação**: route tables diferentes criam domínios de roteamento isolados (produção não fala com desenvolvimento, mesmo ambos anexados ao TGW).
 

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** FSx for Windows File Server
 > **D)** Volume Gateway em modo cached
 >
-> **Por que B**: *"store and retrieve objects in Amazon S3 using industry-standard file protocols"* — a aplicação vê SMB, o Athena vê objetos.
+> **Por que B**: *"store and retrieve objects in Amazon S3 using industry-standard file protocols"* (armazenar e recuperar objetos no Amazon S3 usando protocolos de arquivo padrão de mercado) — a aplicação vê SMB, o Athena vê objetos.
 > **A errada**: copia, mas o storage local continua sendo a fonte de verdade, com defasagem.
 > **C errada**: FSx guarda num file system, **não** como objeto no S3 — o Athena não consultaria.
 > **D errada**: Volume Gateway é **iSCSI** (bloco), não objeto consultável.

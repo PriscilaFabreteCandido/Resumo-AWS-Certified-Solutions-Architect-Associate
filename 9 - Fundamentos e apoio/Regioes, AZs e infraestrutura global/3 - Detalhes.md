@@ -35,7 +35,7 @@ Como escolher (o que a prova cobra):
 
 E a geografia:
 
-> *"AZs are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100 km (60 miles) of each other."*
+> *"AZs are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100 km (60 miles) of each other."* (as AZs são separadas fisicamente por uma distância significativa, de muitos quilômetros, de qualquer outra AZ — embora todas fiquem a até 100 km (60 milhas) umas das outras)
 
 Três consequências diretas:
 

@@ -12,11 +12,11 @@ Num banco **por linha** (OLTP), ler uma coluna de 500 milhões de registros sign
 
 Para analítico — `SUM`, `AVG`, `GROUP BY` sobre bilhões de linhas e poucas colunas — isso muda a ordem de magnitude. É a mesma lógica que faz o **Parquet** ser mais barato no Athena.
 
-A doc resume o posicionamento: *"optimized for high-performance analysis and reporting of very large datasets"* — mesmo tendo *"OLTP functions such as inserting and deleting data"*.
+A doc resume o posicionamento: *"optimized for high-performance analysis and reporting of very large datasets"* (otimizado para análise e relatórios de alta performance sobre conjuntos de dados muito grandes) — mesmo tendo *"OLTP functions such as inserting and deleting data"*.
 
 ## 2. Arquitetura e Redshift Managed Storage
 
-**Leader node** recebe a query, monta o plano e distribui — e existe *"If a cluster is provisioned with two or more compute nodes"*. **Compute nodes** executam, divididos em **node slices** (o número depende do tamanho do nó).
+**Leader node** recebe a query, monta o plano e distribui — e existe *"If a cluster is provisioned with two or more compute nodes"* (se um cluster é provisionado com dois ou mais nós de computação). **Compute nodes** executam, divididos em **node slices** (o número depende do tamanho do nó).
 
 **Redshift Managed Storage** é o que torna o Redshift moderno: *"scale your storage to petabytes using Amazon S3 storage"*, com cache local em SSD. O efeito prático é que **compute e storage escalam independentemente** — você dimensiona nós pela carga de query, não pelo volume de dados.
 
@@ -34,11 +34,11 @@ O catálogo vem do **Glue Data Catalog** (ou do catálogo do Athena, ou de um Hi
 
 ## 4. Concurrency scaling
 
-Quando muitas queries chegam juntas, elas entram em **fila** no WLM. O concurrency scaling resolve isso: *"automatically adds additional cluster capacity"*, e *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"*.
+Quando muitas queries chegam juntas, elas entram em **fila** no WLM. O concurrency scaling resolve isso: *"automatically adds additional cluster capacity"*, e *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila).
 
 Cobrança: *"You're charged for concurrency-scaling clusters only for the time they're actively running queries."*
 
-Configuração: por **fila do WLM**, com *"Concurrency Scaling mode"* em `auto`. O padrão é **um** cluster adicional (`max_concurrency_scaling_clusters`).
+Configuração: por **fila do WLM**, com *"Concurrency Scaling mode"* (modo Concurrency Scaling) em `auto`. O padrão é **um** cluster adicional (`max_concurrency_scaling_clusters`).
 
 Suporta escrita: **COPY, INSERT, DELETE, UPDATE, CTAS, VACUUM**.
 

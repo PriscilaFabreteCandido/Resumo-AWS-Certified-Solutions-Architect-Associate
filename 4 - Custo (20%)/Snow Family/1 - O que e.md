@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **Dispositivos físicos** que a AWS envia para você copiar os dados localmente e devolver — para quando o **link de rede não dá conta** do volume no prazo.
 
 > [!warning] Fim de suporte anunciado
-> A doc do Snowball Edge avisa: *"AWS Snowball Edge is no longer available to new customers. New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."*
+> A doc do Snowball Edge avisa: *"AWS Snowball Edge is no longer available to new customers. New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."* (o AWS Snowball Edge não está mais disponível para novos clientes; novos clientes devem considerar o AWS DataSync para transferências online, o AWS Data Transfer Terminal para transferências físicas seguras, ou soluções de parceiros da AWS — e, para computação na borda, o AWS Outposts)
 >
 > E: *"On December 31, 2026, AWS will discontinue support for AWS Snowball devices in all AWS commercial Regions."*
 >

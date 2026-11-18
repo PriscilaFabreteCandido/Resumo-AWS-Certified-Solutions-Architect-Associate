@@ -32,7 +32,7 @@ Consequência de prova: Amazon MQ tem **mais esforço operacional** e **menos es
 
 ## 3. Amazon MSK — detalhes
 
-Roda *"open-source versions of Apache Kafka"*, o que garante compatibilidade de clientes, conectores e ferramentas.
+Roda *"open-source versions of Apache Kafka"* (versões open source do Apache Kafka), o que garante compatibilidade de clientes, conectores e ferramentas.
 
 | Modo | Quando |
 |---|---|

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** 4, um por AZ
 > **D)** Depende do tipo de customer gateway
 >
-> **Por que B**: *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."*
+> **Por que B**: *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."* (cada conexão VPN inclui dois túneis, que você pode usar simultaneamente para alta disponibilidade)
 
 > [!question]- Q2. A empresa precisa de conectividade híbrida **criptografada** em poucas horas, para uma migração temporária.
 > **A)** Direct Connect hosted de 1 Gbps
@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 > **D)** Transit Gateway
 >
 > **Por que B**: IPsec nativo, monta em horas, sem compromisso de porta.
-> **A e C erradas**: DX leva semanas (*"up to 72 business hours"* só para a porta, mais o circuito).
+> **A e C erradas**: DX leva semanas (*"up to 72 business hours"* (até 72 horas úteis) só para a porta, mais o circuito).
 > **D errada**: TGW é topologia dentro da AWS; não conecta on-premises por si.
 
 > [!question]- Q3. O tráfego precisa passar de 1,25 Gbps por túnel.

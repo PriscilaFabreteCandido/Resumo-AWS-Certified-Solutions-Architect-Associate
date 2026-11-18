@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** KMS com multi-Region key
 > **D)** Secrets Manager com chave própria
 >
-> **Por que B**: três gatilhos juntos — *"general purpose, single tenant"*, FIPS nível 3, e *"E2E encryption is not visible to AWS"*.
+> **Por que B**: três gatilhos juntos — *"general purpose, single tenant"*, FIPS nível 3, e *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS).
 > **A e C erradas**: KMS é multi-tenant e gerenciado pela AWS. Customer managed dá controle de **política**, não de hardware dedicado.
 > **D errada**: Secrets Manager guarda secret de aplicação, não é cofre de chave em HSM.
 
@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Falta habilitar criptografia por padrão na conta B
 > **D)** A chave precisa ser multi-Region
 >
-> **Por que B**: key policy é exceção à regra da união — *"must explicitly allow access for principals"*. Sem a conta B na key policy, nenhuma policy IAM dela resolve.
+> **Por que B**: key policy é exceção à regra da união — *"must explicitly allow access for principals"* (precisam permitir o acesso explicitamente para os principais). Sem a conta B na key policy, nenhuma policy IAM dela resolve.
 > **A errada**: pode ser compartilhado, desde que criptografado com **customer managed key** (AWS managed key não é compartilhável).
 > **D errada**: multi-Region resolve **regiões**, não contas.
 
@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** **Nada: a KMS mantém as versões antigas e usa a correta no decrypt** ✅
 > **D)** Precisam ser migrados para uma chave nova
 >
-> **Por que C**: *"Key rotation has no effect on the data that the KMS key protects"* e *"AWS KMS uses the same version of the key material that was used to encrypt it."*
+> **Por que C**: *"Key rotation has no effect on the data that the KMS key protects"* e *"AWS KMS uses the same version of the key material that was used to encrypt it."* (o AWS KMS usa a mesma versão do material de chave que foi usada para criptografar)
 
 > [!question]- Q5. Um time precisa de uma chave para criptografar objetos no S3, com rotação anual, **sem tarifa mensal de chave**, e não precisa auditar o uso nem compartilhar entre contas.
 > **A)** Customer managed key com rotação habilitada

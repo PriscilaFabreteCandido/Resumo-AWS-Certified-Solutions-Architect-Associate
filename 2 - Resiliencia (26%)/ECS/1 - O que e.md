@@ -18,7 +18,7 @@ atualizado: 2026-11-08
 | **Task definition** | *"The blueprint for the application"* — JSON com imagem, portas, volumes, parâmetros |
 | **Cluster** | *"The infrastructure your application runs on"* |
 | **Task** | *"An application such as a batch job that performs work, and then stops"* |
-| **Service** | *"A long running stateless application"* — o scheduler mantém o *desired count*, substituindo tasks que falham |
+| **Service** | *"A long running stateless application"* (uma aplicação sem estado, de execução longa) — o scheduler mantém o *desired count*, substituindo tasks que falham |
 | **Capacity provider** | Liga o service à capacidade (Fargate, Fargate Spot, ASG de EC2) |
 
 ## As opções de capacidade

@@ -32,9 +32,9 @@ A distinção que decide a questão:
 
 ## O que ele faz por você
 
-> *"automatic encryption and data integrity validation"*
+> *"automatic encryption and data integrity validation"* (criptografia automática e validação de integridade dos dados)
 
-E a arquitetura: *"purpose-built network protocol and a parallel, multi-threaded architecture"* — é otimizado para transferência, não um `rsync` genérico.
+E a arquitetura: *"purpose-built network protocol and a parallel, multi-threaded architecture"* (protocolo de rede feito sob medida e arquitetura paralela, multithread) — é otimizado para transferência, não um `rsync` genérico.
 
 Suporta **VPC endpoints**, para transferir sem passar pela internet.
 

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** **Gateway endpoint para o S3** ✅
 > **D)** Internet gateway com rota restrita
 >
-> **Por que C**: *"There is no additional charge for using gateway endpoints."*
+> **Por que C**: *"There is no additional charge for using gateway endpoints."* (não há cobrança adicional pelo uso de gateway endpoints)
 > **A errada**: NAT gateway cobra por hora **e por GB**.
 > **B errada**: funciona, mas é **cobrado**.
 > **D errada**: coloca a subnet na internet.
@@ -66,7 +66,7 @@ atualizado: 2026-11-08
 | Interface endpoint usa rota | Usa **ENI + DNS** |
 | Gateway endpoint aceita security group | Não é ENI; não aceita |
 | Endpoint resolve tráfego para outra região | Só para o serviço **da região atual** |
-| NACL pode referenciar prefix list | *"You can't reference prefix lists in network ACL rules"* |
+| NACL pode referenciar prefix list | *"You can't reference prefix lists in network ACL rules"* (não é possível referenciar prefix lists em regras de network ACL) |
 | PrivateLink conecta redes | Expõe **um serviço**; não roteia a rede |
 | Transit Gateway resolve CIDR sobreposto | Não resolve. **PrivateLink** contorna |
 

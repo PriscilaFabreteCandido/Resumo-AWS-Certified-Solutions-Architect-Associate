@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 12. AWS Network Firewall (inspeção TLS)
 
 > [!warning] EC2 só com Nitro Enclaves
-> *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."*
+> *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* (associar um certificado gerenciado pelo ACM diretamente a uma instância EC2 exige um Nitro Enclave)
 > Para servidor comum em EC2, a doc aponta o protocolo **ACME**. E certificados ACME *"cannot be used with AWS integrated services"*.
 
 ## Renovação
@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 | Emitido pela ACM, validado por **e-mail** | Requer ação |
 | **Importado** | **Você** renova e reimporta |
 
-Para CloudFront, a doc avisa: renove ou reimporte *"at least 24 hours before the `NotAfter` value"*.
+Para CloudFront, a doc avisa: renove ou reimporte *"at least 24 hours before the `NotAfter` value"* (pelo menos 24 horas antes do valor `NotAfter`).
 
 ## Importação
 

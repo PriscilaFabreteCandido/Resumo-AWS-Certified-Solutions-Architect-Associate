@@ -35,8 +35,8 @@ atualizado: 2026-11-08
 
 | Fato | Detalhe |
 |---|---|
-| Como funciona | *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* |
-| Configuração | Por fila do **WLM** (*"Concurrency Scaling mode"* = `auto`) |
+| Como funciona | *"eligible queries are sent to the concurrency-scaling cluster instead of waiting in a queue"* (as consultas elegíveis são enviadas ao cluster de concurrency scaling em vez de esperar numa fila) |
+| Configuração | Por fila do **WLM** (*"Concurrency Scaling mode"* (modo Concurrency Scaling) = `auto`) |
 | Cobrança | *"only for the time they're actively running queries"* |
 | Clusters adicionais padrão | **um** (controlado por `max_concurrency_scaling_clusters`) |
 | Operações de escrita suportadas | **COPY, INSERT, DELETE, UPDATE, CTAS, VACUUM** |

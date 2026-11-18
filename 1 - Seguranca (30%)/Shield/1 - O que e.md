@@ -29,7 +29,7 @@ atualizado: 2026-11-08
 | **4 — protocolo de transporte** | **TCP SYN flood** |
 | **7 — aplicação** | Flood de requisições web |
 
-A doc: *"AWS automatically mitigates network and transport layer (layer 3 and layer 4) DDoS attacks"* — isso é o **Standard**, para todo mundo.
+A doc: *"AWS automatically mitigates network and transport layer (layer 3 and layer 4) DDoS attacks"* (a AWS mitiga automaticamente ataques DDoS nas camadas de rede e transporte (camadas 3 e 4)) — isso é o **Standard**, para todo mundo.
 
 ## Links
 

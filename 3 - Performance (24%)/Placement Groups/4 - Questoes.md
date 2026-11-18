@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Partition placement group
 > **D)** Instâncias em AZs diferentes atrás de um NLB
 >
-> **Por que B**: *"Packs instances close together inside an Availability Zone"*, com 10 Gbps de fluxo único; EFA é o adaptador para MPI.
+> **Por que B**: *"Packs instances close together inside an Availability Zone"* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade), com 10 Gbps de fluxo único; EFA é o adaptador para MPI.
 > **A errada**: spread **separa** (o oposto) e limita a **7 por AZ** — 40 nós não cabem.
 > **C errada**: partition separa em racks; serve para dado distribuído, não latência mínima.
 > **D errada**: tráfego entre AZs adiciona latência; NLB não participa de MPI.
@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** **Partition** ✅
 > **D)** Nenhum; basta distribuir em 3 AZs
 >
-> **Por que C**: partition é a estratégia para *"HDFS, HBase, Cassandra, Kafka, Hadoop"* — cada partição tem racks próprios.
+> **Por que C**: partition é a estratégia para *"HDFS, HBase, Cassandra, Kafka, Hadoop"* (HDFS, HBase, Cassandra, Kafka, Hadoop) — cada partição tem racks próprios.
 > **A errada**: concentra no mesmo bloco de hardware.
 > **B errada**: separa instância por instância, limita a 7 por AZ, e não tem noção de grupo de réplicas.
 

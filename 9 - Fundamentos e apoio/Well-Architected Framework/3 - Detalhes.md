@@ -42,7 +42,7 @@ Na prova: raramente é a resposta sozinha, mas reforça rightsizing, serverless 
 
 ## 3. O princípio citado duas vezes
 
-> **"Using purpose-built AWS services for workloads"** — skill repetida em **Task 2.1** e **Task 2.2**.
+> **"Using purpose-built AWS services for workloads"** (usar serviços da AWS feitos sob medida para cada carga de trabalho) — skill repetida em **Task 2.1** e **Task 2.2**.
 
 É o princípio mais rentável da prova. Exemplos:
 
@@ -64,7 +64,7 @@ Os pilares **conflitam**, e o enunciado diz qual vence:
 |---|---|
 | *"most cost-effective"* / *"lowest cost"* | **Cost Optimization** |
 | *"highly available"* / *"fault tolerant"* | **Reliability** |
-| *"least operational overhead"* | **Operational Excellence** |
+| *"least operational overhead"* (menor esforço operacional) | **Operational Excellence** |
 | *"lowest latency"* / *"highest throughput"* | **Performance Efficiency** |
 | *"compliance"* / *"must not be accessible"* | **Security** |
 

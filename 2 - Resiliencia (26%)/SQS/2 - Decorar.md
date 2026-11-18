@@ -49,7 +49,7 @@ Recomendação da doc para escalar FIFO: *"increasing the number of message grou
 | Mesmo tipo | Fila FIFO → DLQ **FIFO** |
 | Boa prática | Retenção da DLQ **maior** que a da origem |
 | Redrive allow policy | allow all (padrão), **byQueue** (até 10 ARNs) ou denyAll |
-| ⚠️ FIFO | *"Don't use a dead-letter queue with a FIFO queue if you don't want to break the exact order."* |
+| ⚠️ FIFO | *"Don't use a dead-letter queue with a FIFO queue if you don't want to break the exact order."* (não use dead-letter queue com fila FIFO se você não quiser quebrar a ordem exata) |
 
 ## Short × long polling
 

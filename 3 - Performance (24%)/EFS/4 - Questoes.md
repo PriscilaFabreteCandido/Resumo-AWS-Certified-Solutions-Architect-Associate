@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 > **C)** Migrar para Provisioned primeiro
 > **D)** Criar um segundo mount target
 >
-> **Por que B**: *"One Zone file systems always use the General Purpose performance mode"* e Max I/O é *"not supported for One Zone file systems or file systems that use Elastic throughput"*.
+> **Por que B**: *"One Zone file systems always use the General Purpose performance mode"* (sistemas de arquivos One Zone sempre usam o modo de performance General Purpose) e Max I/O é *"not supported for One Zone file systems or file systems that use Elastic throughput"*.
 
 > [!question]- Q5. As instâncias não conseguem montar o EFS.
 > **A)** Falta um Elastic IP

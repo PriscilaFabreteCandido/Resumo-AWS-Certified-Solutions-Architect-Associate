@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** **Task nodes** ✅
 > **D)** Nenhum
 >
-> **Por que C**: task nodes **só processam**. A doc recomenda *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"*.
+> **Por que C**: task nodes **só processam**. A doc recomenda *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo).
 
 > [!question]- Q3. O cluster precisa de uma versão específica do **HBase** e de bibliotecas próprias.
 > **A)** Glue job com Ray
@@ -39,7 +39,7 @@ atualizado: 2026-11-08
 > **C)** É obrigatório no EMR
 > **D)** Permite usar Spot no master
 >
-> **Por que B**: *"EMRFS uses S3 as a data layer... so that you can separate your compute and storage."* É o que habilita o cluster transiente.
+> **Por que B**: *"EMRFS uses S3 as a data layer... so that you can separate your compute and storage."* (o EMRFS usa o S3 como camada de dados... para que você separe computação de armazenamento) É o que habilita o cluster transiente.
 > **A errada**: HDFS local costuma ser mais rápido — por isso serve de **scratch** intermediário.
 
 > [!question]- Q5. ETL rotineiro de CSV para Parquet, sem framework específico, com o menor esforço operacional.
@@ -56,7 +56,7 @@ atualizado: 2026-11-08
 > **C)** HDFS nos core nodes
 > **D)** EFS com throughput Elastic
 >
-> **Por que B**: Lustre é o file system de HPC, e *"transparently presents S3 objects as files"* — o dataset fica no S3 e o cluster lê com throughput extremo.
+> **Por que B**: Lustre é o file system de HPC, e *"transparently presents S3 objects as files"* (apresenta os objetos do S3 como arquivos, de forma transparente) — o dataset fica no S3 e o cluster lê com throughput extremo.
 > **C errada**: exigiria copiar 100 TB para o HDFS primeiro.
 
 ## ⚠️ Armadilhas

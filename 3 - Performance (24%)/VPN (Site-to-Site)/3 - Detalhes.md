@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Os dois túneis — e o que a AWS garante
 
-Toda conexão vem com **dois túneis**, cada um terminando num endpoint diferente do lado da AWS: *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."*
+Toda conexão vem com **dois túneis**, cada um terminando num endpoint diferente do lado da AWS: *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."* (cada conexão VPN inclui dois túneis, que você pode usar simultaneamente para alta disponibilidade)
 
 A AWS descreve o serviço como *"AWS-managed VPN endpoint that includes automated redundancy and failover built into the AWS side"* — ou seja, a redundância do **lado AWS** vem pronta.
 
@@ -19,7 +19,7 @@ Mas o **seu** lado é sua responsabilidade: *"The virtual private gateway also s
 | Configuração | Banda por túnel |
 |---|---|
 | **Padrão** | **1,25 Gbps** |
-| **Large Bandwidth Tunnel** | **até 5 Gbps** — *"Available for VPN connections attached to Transit Gateway or Cloud WAN"* |
+| **Large Bandwidth Tunnel** | **até 5 Gbps** — *"Available for VPN connections attached to Transit Gateway or Cloud WAN"* (disponível para conexões VPN anexadas a um Transit Gateway ou ao Cloud WAN) |
 
 Duas consequências de prova:
 

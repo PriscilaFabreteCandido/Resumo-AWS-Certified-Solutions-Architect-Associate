@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** KMS com multi-Region key
 > **D)** Secrets Manager com chave própria
 >
-> **Por que B**: os três gatilhos juntos. *"single tenant"*, FIPS nível 3, *"E2E encryption is not visible to AWS"*.
+> **Por que B**: os três gatilhos juntos. *"single tenant"*, FIPS nível 3, *"E2E encryption is not visible to AWS"* (a criptografia ponta a ponta não é visível para a AWS).
 > **A e C erradas**: KMS é multi-tenant e gerenciado pela AWS.
 > **D errada**: Secrets Manager guarda secret, não é cofre de chave em HSM.
 
@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Secrets Manager
 > **D)** KMS com envelope encryption
 >
-> **Por que B**: a doc diz que cargas com essas interfaces *"can migrate to AWS CloudHSM with fewer changes"*.
+> **Por que B**: a doc diz que cargas com essas interfaces *"can migrate to AWS CloudHSM with fewer changes"* (consegue migrar para o AWS CloudHSM com menos alterações).
 > **A e D erradas**: exigem reescrever a camada de criptografia.
 
 > [!question]- Q4. Sem requisito de HSM dedicado nem FIPS, qual serviço a AWS recomenda para criar e controlar chaves?
@@ -42,7 +42,7 @@ atualizado: 2026-11-08
 > **C)** Parameter Store com SecureString
 > **D)** CloudHSM com custom key store
 >
-> **Por que B**: citação direta — *"If you want a managed service for creating and controlling your encryption keys but you don't want or need to operate your own HSMs, consider using AWS Key Management Service."*
+> **Por que B**: citação direta — *"If you want a managed service for creating and controlling your encryption keys but you don't want or need to operate your own HSMs, consider using AWS Key Management Service."* (se você quer um serviço gerenciado para criar e controlar suas chaves de criptografia, mas não quer nem precisa operar os próprios HSMs, considere usar o AWS Key Management Service)
 
 ## ⚠️ Armadilhas
 

@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 > **C)** Athena
 > **D)** Glue crawler
 >
-> **Por que B**: *"A visual data preparation tool... without writing any code"*.
+> **Por que B**: *"A visual data preparation tool... without writing any code"* (uma ferramenta visual de preparação de dados... sem escrever código).
 
 > [!question]- Q5. Athena, Redshift Spectrum e EMR precisam compartilhar a **mesma** definição de tabelas.
 > **A)** Um bucket de metadados em JSON

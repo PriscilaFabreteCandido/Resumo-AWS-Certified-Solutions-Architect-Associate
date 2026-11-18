@@ -61,7 +61,7 @@ atualizado: 2026-11-08
 > **C)** Sim, se o cooldown estiver ativo
 > **D)** Sim, sempre que houver proteção de scale-in
 >
-> **Por que B**: *"Maintaining Zonal balance takes precedence over the termination policy."*
+> **Por que B**: *"Maintaining Zonal balance takes precedence over the termination policy."* (manter o equilíbrio entre as zonas tem precedência sobre a política de encerramento)
 
 ## ⚠️ Armadilhas
 

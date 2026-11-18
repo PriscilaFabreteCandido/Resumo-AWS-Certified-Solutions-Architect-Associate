@@ -15,7 +15,7 @@ atualizado: 2026-11-08
 > **Por que B**: faça a conta — 80 TB em 100 Mbps passa de **70 dias**. Link insuficiente é o gatilho.
 > **A errada**: o DataSync é limitado pelo link.
 > **C errada**: acelera, mas não cria banda.
-> **D errada**: provisionar DX leva *"up to 72 business hours"* só para a porta, mais o circuito do parceiro — não cabe em 2 semanas.
+> **D errada**: provisionar DX leva *"up to 72 business hours"* (até 72 horas úteis) só para a porta, mais o circuito do parceiro — não cabe em 2 semanas.
 
 > [!question]- Q2. 20 TB para o S3, com link de 1 Gbps disponível e sem prazo apertado.
 > **A)** Snowball Edge
@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 > **C)** 100 TB
 > **D)** 28 TB
 >
-> **Por que B**: *"210 TB usable (for object and NFS data transfer)"*.
+> **Por que B**: *"210 TB usable (for object and NFS data transfer)"* (210 TB utilizáveis (para transferência de objetos e NFS)).
 > **D errada**: **28 TB** é o NVMe SSD do **Compute Optimized**, dedicado às instâncias.
 
 > [!question]- Q4. Uma plataforma de petróleo precisa processar dados localmente, sem conectividade confiável, de forma permanente.

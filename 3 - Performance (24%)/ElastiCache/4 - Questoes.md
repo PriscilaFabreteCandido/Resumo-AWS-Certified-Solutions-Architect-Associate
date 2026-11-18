@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Multi-AZ
 > **D)** Mudar para io2
 >
-> **Por que B**: cache costuma custar menos que subir instância ou adicionar réplicas — e o guia lista *"Caching strategies"* também em **Task 4.3 (custo)**.
+> **Por que B**: cache costuma custar menos que subir instância ou adicionar réplicas — e o guia lista *"Caching strategies"* (estratégias de cache) também em **Task 4.3 (custo)**.
 > **C errada**: Multi-AZ é **HA**, e o standby **não lê**.
 
 > [!question]- Q4. O dataset do cache não cabe num único nó e a escrita precisa escalar.

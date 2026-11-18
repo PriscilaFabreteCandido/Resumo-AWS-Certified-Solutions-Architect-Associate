@@ -60,7 +60,7 @@ O Secrets Manager replica o secret para outras regiões, mantendo as réplicas s
 
 ## 6. Custo — por que não usar para tudo
 
-Secrets Manager é *"Billed per secret per month and per API call"*. Para 2.000 parâmetros de configuração (endpoints, flags, nomes de bucket), isso é desperdício: o **Parameter Store Standard** guarda 10.000 parâmetros de até 4 KB **sem cobrança adicional**.
+Secrets Manager é *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API). Para 2.000 parâmetros de configuração (endpoints, flags, nomes de bucket), isso é desperdício: o **Parameter Store Standard** guarda 10.000 parâmetros de até 4 KB **sem cobrança adicional**.
 
 Regra prática:
 

@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 | Fato | Citação |
 |---|---|
 | **Write-through** | *"The operation is successful only if the data is successfully written to **both** the table and to DAX."* |
-| **Leitura forte passa direto** | *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."* |
+| **Leitura forte passa direto** | *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."* (o DAX repassa a requisição ao DynamoDB, e os resultados vindos do DynamoDB não são armazenados em cache no DAX) |
 | **Na VPC** | *"designed to run within an Amazon Virtual Private Cloud (Amazon VPC) environment"* |
 
 ## O que o DAX NÃO faz

@@ -26,9 +26,9 @@ atualizado: 2026-11-08
 | **Crawler** | *"automatically infer schema information and integrate it into your AWS Glue Data Catalog"* |
 | **Job** | O ETL (Spark ou Ray) |
 | **Glue Studio** | *"a graphical interface that makes it easy to create, run, and monitor data integration jobs"* |
-| **DataBrew** | *"A visual data preparation tool... without writing any code"* |
+| **DataBrew** | *"A visual data preparation tool... without writing any code"* (uma ferramenta visual de preparação de dados... sem escrever código) |
 | **Trigger** | Agendado, on-demand ou **por evento** |
-| **Streaming ETL** | *"Clean and transform streaming data in transit"* |
+| **Streaming ETL** | *"Clean and transform streaming data in transit"* (limpar e transformar dados de streaming em trânsito) |
 
 Conecta a *"more than 70 diverse data sources"*.
 

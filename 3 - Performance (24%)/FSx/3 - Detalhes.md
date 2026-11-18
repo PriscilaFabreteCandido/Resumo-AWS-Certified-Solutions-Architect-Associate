@@ -56,14 +56,14 @@ Gatilho de prova: o enunciado menciona **NetApp**, **ONTAP**, **SnapMirror**, ou
 
 ## 4. FSx for OpenZFS
 
-Fala **NFS** (v3, v4.0, 4.1, 4.2) e é posicionado para *"easy to move data to AWS from on-premises ZFS or other Linux-based file servers"*.
+Fala **NFS** (v3, v4.0, 4.1, 4.2) e é posicionado para *"easy to move data to AWS from on-premises ZFS or other Linux-based file servers"* (facilita mover dados para a AWS a partir de servidores de arquivos ZFS ou outros baseados em Linux, on-premises).
 
 Três deployments, com tempos documentados:
 
 | Deployment | Failover/recuperação |
 |---|---|
-| **Multi-AZ (HA)** | *"Failover typically completes within 60 seconds"* |
-| **Single-AZ (HA)** | *"Failover typically completes within 60 seconds"* |
+| **Multi-AZ (HA)** | *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos) |
+| **Single-AZ (HA)** | *"Failover typically completes within 60 seconds"* (o failover normalmente se completa em até 60 segundos) |
 | **Single-AZ (non-HA)** | *"Recovery typically completes within 30 minutes"* |
 
 ## 5. FSx × EFS — a decisão

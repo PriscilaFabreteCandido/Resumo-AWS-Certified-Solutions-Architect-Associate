@@ -20,7 +20,7 @@ A terceira fase segue esta ordem:
 
 **4. Resource-based policy.** Aqui está a sutileza mais testada: para principal do **mesmo account** (usuário IAM, sessão de role, sessão de usuário federado), a política de recurso **pode permitir sozinha**, mesmo com deny **implícito** na política de identidade. *"For most resources, you only need an explicit Allow for the principal in either an identity-based policy or a resource-based policy to grant access."*
 
-Mas há exceção: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."*
+Mas há exceção: *"IAM role trust policies and KMS key policies are exceptions... they must explicitly allow access for principals."* (as trust policies de role do IAM e as key policies do KMS são exceções... elas precisam permitir o acesso explicitamente para os principais)
 
 **5. Identity-based policy.** *"If there are no identity-based policies or no statements... that allow the requested action, then the request is implicitly denied."*
 
@@ -32,7 +32,7 @@ Mas há exceção: *"IAM role trust policies and KMS key policies are exceptions
 
 Dentro do **mesmo** account, identity-based e resource-based se **somam**: *"The resulting permissions are the union of the permissions of the two types."*
 
-**Cross-account é diferente.** A doc é explícita: *"For cross-account requests, the requester in the trusted AccountA must have an identity-based policy. That policy must allow them to make a request to the resource in the trusting AccountB. Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* E conclui: *"AWS allows the request only if both account policy evaluations allow the request."*
+**Cross-account é diferente.** A doc é explícita: *"For cross-account requests, the requester in the trusted AccountA must have an identity-based policy. That policy must allow them to make a request to the resource in the trusting AccountB. Additionally, the resource-based policy in AccountB must allow the requester in AccountA to access the resource."* E conclui: *"AWS allows the request only if both account policy evaluations allow the request."* (a AWS permite a requisição somente se as avaliações de policy das duas contas permitirem)
 
 > [!warning] A pegadinha
 > "Dar acesso a um bucket de outra conta" **não** se resolve só com bucket policy. O role na conta de origem também precisa da permissão. A exceção é a **trust policy de role** (que é o que permite a outra conta *assumir* a role) e a **key policy do KMS**.
@@ -48,7 +48,7 @@ Para serviços que não são IAM nem KMS, a doc acrescenta: *"Resource-based pol
 | Usuário do Active Directory corporativo | **Federação** — IAM Identity Center (recomendado) ou SAML 2.0 → assume role |
 | Usuário final de app mobile/web | **Cognito identity pool** → credencial temporária |
 
-O guia oficial lista como skill: *"Determining when to federate a directory service with IAM roles"*.
+O guia oficial lista como skill: *"Determining when to federate a directory service with IAM roles"* (determinar quando federar um serviço de diretório com roles do IAM).
 
 ### Confused deputy
 
@@ -64,11 +64,11 @@ As três **limitam** e nunca concedem. A diferença é o escopo:
 | **Permissions boundary** | um usuário ou role | **Delegação segura**: permitir que um time crie roles, mas sem escapar de um teto |
 | **Session policy** | uma sessão específica | Reduzir a permissão de uma sessão temporária |
 
-Combinadas, a permissão efetiva é a **interseção**: a doc diz que, com boundary e SCP presentes, *"the boundary, the SCP, and the identity-based policy must all allow the action"*.
+Combinadas, a permissão efetiva é a **interseção**: a doc diz que, com boundary e SCP presentes, *"the boundary, the SCP, and the identity-based policy must all allow the action"* (o permissions boundary, a SCP e a policy de identidade precisam, todos, permitir a ação).
 
 ## 5. Boas práticas que a prova cobra
 
-O guia lista como skill: *"Applying AWS security best practices to IAM users and root users (for example, multi-factor authentication [MFA])"*.
+O guia lista como skill: *"Applying AWS security best practices to IAM users and root users (for example, multi-factor authentication [MFA])"* (aplicar as boas práticas de segurança da AWS a usuários do IAM e ao usuário raiz (por exemplo, autenticação multifator [MFA])).
 
 | Prática | Por quê |
 |---|---|
@@ -85,7 +85,7 @@ O guia lista como skill: *"Applying AWS security best practices to IAM users and
 ## 5b. Usuário raiz (root) — as boas práticas
 
 É o tema que a prova cobra de forma mais literal, porque o guia oficial lista como skill:
-*"Applying AWS security best practices to IAM users and root users (for example, multi-factor authentication [MFA])"*.
+*"Applying AWS security best practices to IAM users and root users (for example, multi-factor authentication [MFA])"* (aplicar as boas práticas de segurança da AWS a usuários do IAM e ao usuário raiz (por exemplo, autenticação multifator [MFA])).
 
 ### A lista clássica (a que mais aparece em prova e em material de estudo)
 
@@ -107,7 +107,7 @@ A página oficial de boas práticas do root hoje tem **nove** recomendações, n
 | 1 | *"Secure your root user credentials to prevent unauthorized use"* |
 | 2 | *"Use a strong root user password to help protect access"* |
 | 3 | *"Secure your root user sign-in with multi-factor authentication (MFA)"* |
-| 4 | **"Don't create access keys for the root user"** |
+| 4 | **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) |
 | 5 | *"Use multi-person approval for root user sign-in wherever possible"* |
 | 6 | *"Use a group email address for root user credentials"* |
 | 7 | *"Restrict access to account recovery mechanisms"* |
@@ -115,7 +115,7 @@ A página oficial de boas práticas do root hoje tem **nove** recomendações, n
 | 9 | *"Monitor access and usage"* |
 
 > [!warning] Três pontos em que a lista clássica está desatualizada
-> **1. Chave de acesso do root: a orientação não é mais "rotacionar", é "não criar".** O título atual é literal — *"Don't create access keys for the root user"* — e o texto diz: *"We strongly recommend that you do not create access keys for your root user because the root user has full access to all AWS services and resources in the account, including billing information."* Para acesso programático, a doc hoje aponta para o comando `aws login` com as credenciais do root, **não** para criar chaves. **A doc atual não dá nenhuma orientação de rotação para chaves de root.**
+> **1. Chave de acesso do root: a orientação não é mais "rotacionar", é "não criar".** O título atual é literal — *"Don't create access keys for the root user"* (não crie chaves de acesso para o usuário raiz) — e o texto diz: *"We strongly recommend that you do not create access keys for your root user because the root user has full access to all AWS services and resources in the account, including billing information."* Para acesso programático, a doc hoje aponta para o comando `aws login` com as credenciais do root, **não** para criar chaves. **A doc atual não dá nenhuma orientação de rotação para chaves de root.**
 >
 > **2. A frase "não criptografe as chaves nem as salve no S3" não existe mais** nas páginas atuais de boas práticas do IAM nem do root. Ela vem de material antigo. A ideia por trás continua certa (credencial de longo prazo não se guarda em bucket), mas não cite como texto oficial.
 >

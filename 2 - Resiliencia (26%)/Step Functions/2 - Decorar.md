@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 | Duração máxima | **1 ano** | **5 minutos** |
 | Semântica | **exactly-once** | **at-least-once** (async) / at-most-once (sync) |
 | Execuções/s | 2.000 | **100.000** |
-| Transições/s | 4.000 | *"Nearly unlimited"* |
+| Transições/s | 4.000 | *"Nearly unlimited"* (praticamente ilimitado) |
 | Cobrança | por **transição de estado** | por **nº e duração** de execuções + memória |
 | Histórico | Step Functions, **90 dias** | **CloudWatch Logs** |
 | `.sync` (run a job) | **✅** | ❌ |

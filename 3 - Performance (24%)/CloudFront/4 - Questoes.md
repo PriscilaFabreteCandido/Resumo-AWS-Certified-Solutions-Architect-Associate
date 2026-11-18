@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 > **D)** Presigned URL gerada no backend
 >
 > **Por que B**: **SSE-KMS** é uma das capacidades que **só o OAC** tem.
-> **A errada**: OAI é *"legacy, not recommended"* e não suporta SSE-KMS.
+> **A errada**: OAI é *"legacy, not recommended"* (geração antiga, não recomendado) e não suporta SSE-KMS.
 > ⚠️ Lembre também: Object Ownership em **Bucket owner enforced** e condição `AWS:SourceArn` na bucket policy.
 
 > [!question]- Q3. O certificado foi importado em `sa-east-1` e não aparece na console do CloudFront.
@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** ALB com regras de redirect
 > **D)** Lambda no origin request
 >
-> **Por que B**: Functions roda em **submilissegundo** e escala para *"millions of requests per second"*; Lambda@Edge para em *"10,000 requests per second per Region"*.
+> **Por que B**: Functions roda em **submilissegundo** e escala para *"millions of requests per second"* (milhões de requisições por segundo); Lambda@Edge para em *"10,000 requests per second per Region"* (10.000 requisições por segundo por Região).
 > ⚠️ Mas Functions **não** tem acesso a rede nem ao body — se precisasse chamar uma API, seria Lambda@Edge.
 
 > [!question]- Q6. Bloquear o país X **exceto** para o caminho `/status`.

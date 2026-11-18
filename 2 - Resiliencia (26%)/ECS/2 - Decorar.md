@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | | **Task** | **Service** |
 |---|---|---|
-| Natureza | *"performs work, and then stops"* | *"A long running stateless application"* |
+| Natureza | *"performs work, and then stops"* | *"A long running stateless application"* (uma aplicação sem estado, de execução longa) |
 | Scheduler | Roda uma vez | Mantém o **desired count**, substitui o que falha |
 | Integra com ELB | Não | **Sim** (target group) |
 | Auto scaling | Não | **Sim** (Service Auto Scaling) |

@@ -42,11 +42,11 @@ Os jobs rodam sobre *"the Apache Spark–based serverless ETL engine"*, e també
 Formas de criar:
 - **Glue Studio** — *"a graphical interface that makes it easy to create, run, and monitor data integration jobs"*
 - **Script** (PySpark ou Scala)
-- **DataBrew** — *"A visual data preparation tool... without writing any code"*, para limpeza e normalização
+- **DataBrew** — *"A visual data preparation tool... without writing any code"* (uma ferramenta visual de preparação de dados... sem escrever código), para limpeza e normalização
 
 **Triggers**: agendado, on-demand ou **por evento** — o que permite encadear jobs e reagir à chegada de dados.
 
-**Streaming ETL**: *"Clean and transform streaming data in transit"* — consome Kinesis ou MSK e transforma no caminho.
+**Streaming ETL**: *"Clean and transform streaming data in transit"* (limpar e transformar dados de streaming em trânsito) — consome Kinesis ou MSK e transforma no caminho.
 
 ## 4. Glue × EMR — a decisão
 
@@ -85,11 +85,11 @@ Fontes  ──Firehose/DMS/DataSync──►  S3 (raw)
                       (permissão por coluna, linha, célula)
 ```
 
-A transformação **CSV → Parquet** no job do Glue é o que torna a consulta barata depois — o skill literal do guia: *"Transforming data between formats (for example, .csv to .parquet)"*.
+A transformação **CSV → Parquet** no job do Glue é o que torna a consulta barata depois — o skill literal do guia: *"Transforming data between formats (for example, .csv to .parquet)"* (transformar dados entre formatos (por exemplo, de .csv para .parquet)).
 
 ## 6. Lake Formation sobre o Glue
 
-A doc do Glue descreve o Lake Formation como *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"*.
+A doc do Glue descreve o Lake Formation como *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* (uma camada de autorização que oferece controle de acesso granular aos recursos do AWS Glue Data Catalog).
 
 Ou seja: o **Glue** guarda o metadado; o **Lake Formation** controla **quem vê o quê** dentro dele, com granularidade de **coluna, linha e célula** — algo que IAM e bucket policy não fazem.
 

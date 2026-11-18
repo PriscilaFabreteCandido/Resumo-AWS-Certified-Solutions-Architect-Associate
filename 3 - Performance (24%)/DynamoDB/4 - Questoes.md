@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** DAX em cada região
 > **D)** Aurora Global Database
 >
-> **Por que B**: *"multi-Region, and multi-active"* — *"Any global table replica can serve reads and writes"*.
+> **Por que B**: *"multi-Region, and multi-active"* — *"Any global table replica can serve reads and writes"* (qualquer réplica de uma global table pode atender leituras e escritas).
 > **A errada**: DynamoDB não tem read replica; e réplica de leitura não aceitaria escrita.
 > **D errada**: Aurora Global Database tem **1 primária escrevendo**.
 

@@ -20,7 +20,7 @@ Além da semântica, o Standard dá:
 
 ## 2. Express — para volume alto e idempotente
 
-Express é *"better suited for orchestrating idempotent actions"*: ingestão de IoT, processamento de stream, backend mobile. Até **100.000 execuções/s** e transições *"nearly unlimited"*.
+Express é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes): ingestão de IoT, processamento de stream, backend mobile. Até **100.000 execuções/s** e transições *"nearly unlimited"*.
 
 O preço muda de modelo: Standard cobra por **transição de estado** (caro em workflow com muitos passos e muitas execuções); Express cobra por **número e duração** de execuções mais memória (barato em alto volume, curto).
 

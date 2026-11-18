@@ -43,7 +43,7 @@ O **OAC** é o mecanismo atual para que o bucket seja acessível **só** pelo Cl
 2. **SSE-KMS**
 3. *"Dynamic requests (PUT and DELETE) to Amazon S3"*
 
-O **OAI** é *"legacy, not recommended"* e não suporta nada disso (nem regiões lançadas após jan/2023).
+O **OAI** é *"legacy, not recommended"* (geração antiga, não recomendado) e não suporta nada disso (nem regiões lançadas após jan/2023).
 
 A configuração completa:
 - Object Ownership em **Bucket owner enforced** (desativa ACLs)
@@ -57,9 +57,9 @@ A configuração completa:
 
 > *"To use a certificate in AWS Certificate Manager (ACM) to require HTTPS between viewers and CloudFront, make sure you request (or import) the certificate in the US East (N. Virginia) Region (`us-east-1`)."*
 
-E a exceção que também cai: *"If you want to require HTTPS between CloudFront and your origin, and you're using a load balancer in Elastic Load Balancing as your origin, you can request or import the certificate in any AWS Region."*
+E a exceção que também cai: *"If you want to require HTTPS between CloudFront and your origin, and you're using a load balancer in Elastic Load Balancing as your origin, you can request or import the certificate in any AWS Region."* (se você quer exigir HTTPS entre o CloudFront e a origem, e está usando um load balancer do Elastic Load Balancing como origem, pode solicitar ou importar o certificado em qualquer Região)
 
-Outros detalhes: formato **X.509 PEM**; chave privada de terceiro *"cannot be encrypted with a password"*; o SAN precisa casar o alternate domain name (exato ou wildcard no mesmo nível); certificado incompatível na origem devolve **502**; renove *"at least 24 hours before the `NotAfter` value"*.
+Outros detalhes: formato **X.509 PEM**; chave privada de terceiro *"cannot be encrypted with a password"*; o SAN precisa casar o alternate domain name (exato ou wildcard no mesmo nível); certificado incompatível na origem devolve **502**; renove *"at least 24 hours before the `NotAfter` value"* (pelo menos 24 horas antes do valor `NotAfter`).
 
 ## 5. Origin failover
 
@@ -86,7 +86,7 @@ Geo restriction do CloudFront × **WAF geo match**: a primeira vale para a **dis
 | | **CloudFront Functions** | **Lambda@Edge** |
 |---|---|---|
 | Use para | Reescrever URL, manipular header, redirect, A/B test, normalizar cache key | Chamar API, ler o body, autenticação complexa, transformação pesada |
-| Escala | *"millions of requests per second"* | *"10,000 requests per second per Region"* |
+| Escala | *"millions of requests per second"* (milhões de requisições por segundo) | *"10,000 requests per second per Region"* (10.000 requisições por segundo por Região) |
 
 Functions roda em **submilissegundo** com **2 MB** de memória e **10 KB** de código, **sem** acesso a rede ou ao body. Lambda@Edge vai até **30 s**, tem rede e body, e roda nos **4** triggers.
 

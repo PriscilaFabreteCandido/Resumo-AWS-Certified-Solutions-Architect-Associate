@@ -22,10 +22,10 @@ atualizado: 2026-11-08
 
 | Serviço | Como usa |
 |---|---|
-| **Athena** | *"Athena integrates with the AWS Glue Data Catalog"* |
+| **Athena** | *"Athena integrates with the AWS Glue Data Catalog"* (o Athena se integra ao AWS Glue Data Catalog) |
 | **Redshift Spectrum** | Tabelas externas vêm do catálogo |
 | **EMR** | Metastore |
-| **Lake Formation** | *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* |
+| **Lake Formation** | *"an authorization layer that provides fine-grained access control to resources in the AWS Glue Data Catalog"* (uma camada de autorização que oferece controle de acesso granular aos recursos do AWS Glue Data Catalog) |
 | **Firehose** | Usa o schema do catálogo para converter em **Parquet/ORC** |
 
 Um catálogo, todos os engines.

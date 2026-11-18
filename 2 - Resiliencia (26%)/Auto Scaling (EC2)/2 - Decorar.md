@@ -37,7 +37,7 @@ atualizado: 2026-11-08
    - instâncias com a **versão mais antiga** do template atual
 3. A mais próxima da **próxima hora de cobrança** (se empatar, aleatória)
 
-> *"Maintaining Zonal balance takes precedence over the termination policy."*
+> *"Maintaining Zonal balance takes precedence over the termination policy."* (manter o equilíbrio entre as zonas tem precedência sobre a política de encerramento)
 > Instância marcada **unhealthy** é substituída **sem esperar cooldown**.
 
 Políticas predefinidas: `Default`, `AllocationStrategy`, `OldestLaunchTemplate`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `NewestInstance`, `OldestInstance`.

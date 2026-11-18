@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## A granularidade — o diferencial
 
-> *"enforced using granular controls at the column, row, and cell-levels"*
+> *"enforced using granular controls at the column, row, and cell-levels"* (aplicado por controles granulares no nível de coluna, linha e célula)
 
 | Controle | Consegue restringir por **coluna**? | Por **linha**? |
 |---|---|---|
@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 
 ## O modelo de permissão
 
-> *"Lake Formation provides its own permissions model that augments the IAM permissions model."*
+> *"Lake Formation provides its own permissions model that augments the IAM permissions model."* (o Lake Formation tem um modelo de permissões próprio, que complementa o do IAM)
 
 Com mecanismo de *"a grant or revoke mechanism"* — estilo banco de dados (`GRANT SELECT ON tabela TO role`), em vez de JSON de policy.
 

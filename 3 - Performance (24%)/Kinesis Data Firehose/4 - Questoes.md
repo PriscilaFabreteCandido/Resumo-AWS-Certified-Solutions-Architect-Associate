@@ -41,7 +41,7 @@ atualizado: 2026-11-08
 > **C)** Usa o Glue para carregar
 > **D)** Usa Redshift Spectrum
 >
-> **Por que B**: *"streaming data is delivered to your S3 bucket first. Amazon Data Firehose then issues an Amazon Redshift COPY command."*
+> **Por que B**: *"streaming data is delivered to your S3 bucket first. Amazon Data Firehose then issues an Amazon Redshift COPY command."* (os dados de streaming são entregues primeiro ao seu bucket S3; em seguida o Amazon Data Firehose emite um comando COPY do Amazon Redshift)
 
 > [!question]- Q5. Qual destes **não** é destino nativo do Firehose?
 > **A)** Amazon OpenSearch Service

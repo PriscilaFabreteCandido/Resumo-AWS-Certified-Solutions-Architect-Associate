@@ -13,8 +13,8 @@ atualizado: 2026-11-08
 > **D)** Cognito user pool federado por SAML
 >
 > **Por que C**: é AD real, suporta trust, e é a única opção compatível com RDS SQL Server.
-> **A errada**: *"AD Connector is not compatible with RDS SQL Server."*
-> **B errada**: Simple AD também é *"not compatible with RDS SQL Server"* e não suporta trust.
+> **A errada**: *"AD Connector is not compatible with RDS SQL Server."* (o AD Connector não é compatível com o RDS SQL Server)
+> **B errada**: Simple AD também é *"not compatible with RDS SQL Server"* (não é compatível com o RDS SQL Server) e não suporta trust.
 > **D errada**: Cognito é identidade de **usuário final de app**.
 
 > [!question]- Q2. Um compartilhamento **FSx for Windows File Server** precisa autenticar usuários do AD corporativo.
@@ -53,7 +53,7 @@ atualizado: 2026-11-08
 > **D)** AWS Managed Microsoft AD replicando os usuários do AD on-premises
 >
 > **Por que B**: é a cadeia padrão. O AD Connector é *"a directory gateway... without caching any information in the cloud"*, o Identity Center faz *"pass-through authentication to the source AD instance"*, e os permission sets atribuem acesso por grupo.
-> **C errada**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."*
+> **C errada**: *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4)
 > **D errada**: atende, mas **replica** identidade para a AWS — o enunciado proibiu.
 
 > [!question]- Q6. Com AD Connector + Identity Center, o que fica armazenado na AWS?
@@ -62,7 +62,7 @@ atualizado: 2026-11-08
 > **C)** Uma réplica completa do AD, incluindo hashes de senha
 > **D)** Só o nome de usuário
 >
-> **Por que B**: são duas afirmações diferentes e as duas são oficiais. O **AD Connector** não faz cache — *"without caching any information in the cloud"*. Mas o **Identity Center** sincroniza metadados: *"synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."* A credencial é que nunca sai: *"No password information is synchronized to IAM Identity Center."*
+> **Por que B**: são duas afirmações diferentes e as duas são oficiais. O **AD Connector** não faz cache — *"without caching any information in the cloud"* (sem fazer cache de nenhuma informação na nuvem). Mas o **Identity Center** sincroniza metadados: *"synchronize user, group, and membership information from your source directory in Active Directory to the IAM Identity Center identity store."* A credencial é que nunca sai: *"No password information is synchronized to IAM Identity Center."*
 > **A errada**: é a leitura apressada da frase do AD Connector — vale para ele, não para o conjunto.
 
 > [!question]- Q7. A empresa tem **três florestas** de Active Directory e quer SSO nas contas AWS.
@@ -71,9 +71,9 @@ atualizado: 2026-11-08
 > **C)** AD Connector apontando para a floresta raiz
 > **D)** Simple AD consolidando as três
 >
-> **Por que B**: a doc é literal — *"If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."*
-> **A errada**: *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* E a relação é 1-para-1 com **um domínio**.
-> **C errada**: *"AD Connector does not support Active Directory transitive trusts."*
+> **Por que B**: a doc é literal — *"If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."* (se você precisa atender vários domínios ou florestas, use o Directory Service for Microsoft Active Directory)
+> **A errada**: *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* (você pode conectar apenas um diretório do AD Connector ou um do AWS Managed Microsoft AD por vez) E a relação é 1-para-1 com **um domínio**.
+> **C errada**: *"AD Connector does not support Active Directory transitive trusts."* (o AD Connector não oferece suporte a trusts transitivos do Active Directory)
 
 > [!question]- Q8. O requisito diz: *"o login nas contas AWS deve continuar funcionando mesmo se o enlace com o data center cair"*.
 > **A)** AD Connector com duas VPNs redundantes
@@ -82,7 +82,7 @@ atualizado: 2026-11-08
 > **D)** Simple AD
 >
 > **Por que B**: o AD Connector **encaminha** tudo e não guarda cópia, então sem link não há autenticação. O Managed Microsoft AD é um AD **de verdade rodando na AWS** e sobrevive sozinho.
-> **C errada**: **não existe** cache no AD Connector — a definição é *"without caching any information in the cloud"*.
+> **C errada**: **não existe** cache no AD Connector — a definição é *"without caching any information in the cloud"* (sem fazer cache de nenhuma informação na nuvem).
 > **A errada**: reduz a chance de queda, mas não remove a dependência.
 
 ## ⚠️ Armadilhas
@@ -90,7 +90,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | AD Connector guarda usuários na AWS | É **proxy**; os usuários ficam on-premises |
-| AD Connector serve RDS SQL Server | *"not compatible with RDS SQL Server"* |
+| AD Connector serve RDS SQL Server | *"not compatible with RDS SQL Server"* (não é compatível com o RDS SQL Server) |
 | Simple AD é "Managed AD mais barato" | Não suporta MFA, trust, LDAPS, schema extension nem RDS SQL Server |
 | Directory Service dá acesso à console AWS | Isso é **IAM Identity Center** (que pode usar o diretório como fonte) |
 | Qualquer opção serve para FSx for Windows | Precisa de AD real: Managed Microsoft AD ou o AD on-premises |

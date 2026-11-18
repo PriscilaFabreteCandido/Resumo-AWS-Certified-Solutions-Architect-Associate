@@ -78,7 +78,7 @@ atualizado: 2026-11-08
 > **C)** Bucket público com geo restriction
 > **D)** Presigned URL gerada pelo backend
 >
-> **Por que B**: a doc lista **SSE-KMS** como capacidade que **só o OAC** tem (OAI é *"legacy, not recommended"*).
+> **Por que B**: a doc lista **SSE-KMS** como capacidade que **só o OAC** tem (OAI é *"legacy, not recommended"* (geração antiga, não recomendado)).
 > **A errada**: OAI não suporta SSE-KMS nem regiões novas.
 > **C errada**: viola o requisito.
 > **D errada**: dá acesso direto ao S3, não "via CloudFront".

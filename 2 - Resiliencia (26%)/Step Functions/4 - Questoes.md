@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Lambda com event source mapping
 > **D)** Kinesis Data Firehose
 >
-> **Por que B**: Express chega a **100.000 execuções/s**, é *"better suited for orchestrating idempotent actions"*, e o modelo de preço por execução/duração é muito mais barato nesse volume que o Standard (por transição de estado).
+> **Por que B**: Express chega a **100.000 execuções/s**, é *"better suited for orchestrating idempotent actions"* (mais adequado para orquestrar ações idempotentes), e o modelo de preço por execução/duração é muito mais barato nesse volume que o Standard (por transição de estado).
 > **A errada**: 2.000 execuções/s de teto, e o custo por transição explodiria.
 
 > [!question]- Q3. Um workflow precisa pausar e esperar a **aprovação de um gerente** antes de continuar.

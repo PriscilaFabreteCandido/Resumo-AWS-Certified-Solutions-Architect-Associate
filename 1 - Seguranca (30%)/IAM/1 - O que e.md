@@ -18,9 +18,9 @@ IAM tem dois lados:
 - **Identidades** — quem está chamando: **usuário**, **grupo**, **role**.
 - **Políticas** — documentos JSON que dizem o que é permitido ou negado.
 
-A regra de abertura é a mais importante: *"By default, all requests are implicitly denied with the exception of the AWS account root user, which has full access."* Tudo começa **negado**. Você precisa de um `Allow` explícito em algum lugar.
+A regra de abertura é a mais importante: *"By default, all requests are implicitly denied with the exception of the AWS account root user, which has full access."* (por padrão, todas as requisições são negadas implicitamente, com exceção do usuário raiz da conta AWS, que tem acesso total) Tudo começa **negado**. Você precisa de um `Allow` explícito em algum lugar.
 
-E a regra de fechamento: *"An explicit deny overrides an explicit allow."* Um `Deny` em qualquer política mata a requisição, e nada o reverte.
+E a regra de fechamento: *"An explicit deny overrides an explicit allow."* (um deny explícito prevalece sobre um allow explícito) Um `Deny` em qualquer política mata a requisição, e nada o reverte.
 
 ## As identidades
 

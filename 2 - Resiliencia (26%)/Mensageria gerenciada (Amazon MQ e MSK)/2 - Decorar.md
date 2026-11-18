@@ -36,8 +36,8 @@ atualizado: 2026-11-08
 | Modos | **Provisioned** (brokers Standard / **Express**) e **Serverless** |
 | MSK Serverless | *"MSK manages the broker nodes... you only provision your Kafka server resources at a cluster level"* |
 | Extras | **MSK Connect** (conectores), **MSK Replicator** (replicação entre clusters) |
-| Controllers | **KRaft** *"included at no additional cost"* |
-| Compatibilidade | *"without requiring changes to application code"* |
+| Controllers | **KRaft** *"included at no additional cost"* (incluído sem custo adicional) |
+| Compatibilidade | *"without requiring changes to application code"* (sem exigir mudanças no código da aplicação) |
 
 ## MSK × Kinesis Data Streams
 

@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 A documentação do Snowball Edge abre com:
 
-> *"AWS Snowball Edge is no longer available to new customers. New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."*
+> *"AWS Snowball Edge is no longer available to new customers. New customers should explore AWS DataSync for online transfers, AWS Data Transfer Terminal for secure physical transfers, or AWS Partner solutions. For edge computing, explore AWS Outposts."* (o AWS Snowball Edge não está mais disponível para novos clientes; novos clientes devem considerar o AWS DataSync para transferências online, o AWS Data Transfer Terminal para transferências físicas seguras, ou soluções de parceiros da AWS — e, para computação na borda, o AWS Outposts)
 
 E a página do produto:
 
@@ -47,12 +47,12 @@ Se o resultado não cabe no prazo **e** não dá para aumentar a banda em tempo 
 
 ## 3. Os dispositivos — o que a doc informa
 
-**Snowball Edge Storage Optimized 210 TB**: *"210 TB usable (for object and NFS data transfer)"* em NVMe, com **104 vCPUs** e **416 GB** de RAM utilizável.
+**Snowball Edge Storage Optimized 210 TB**: *"210 TB usable (for object and NFS data transfer)"* (210 TB utilizáveis (para transferência de objetos e NFS)) em NVMe, com **104 vCPUs** e **416 GB** de RAM utilizável.
 
 **Snowball Edge Compute Optimized**: *"up to 104 vCPUs, 416 GB of memory, and 28 TB of dedicated NVMe SSD for compute instances"* (a tabela lista 512 GB físicos, com 416 GB utilizáveis).
 
 Recursos comuns:
-- **Cluster** de *"3 to 16 devices"* — dá durabilidade ao dado **enquanto está no seu site**
+- **Cluster** de *"3 to 16 devices"* (de 3 a 16 dispositivos) — dá durabilidade ao dado **enquanto está no seu site**
 - Protocolos: *"NFSv3, NFSv4, NFSv4.1, Amazon S3 over HTTP or HTTPS"* (a API S3 é compatível com AWS CLI **1.16.14 ou anterior**)
 - Rede: *"up to 100 Gbit/second"*
 - Criptografia com **KMS**, feita no dispositivo

@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 > **C)** Amazon MQ
 > **D)** SNS com fan-out
 >
-> **Por que B**: roda *"open-source versions of Apache Kafka"*, então os clientes funcionam *"without requiring changes to application code"* — e o **MSK Connect** roda os conectores.
+> **Por que B**: roda *"open-source versions of Apache Kafka"* (versões open source do Apache Kafka), então os clientes funcionam *"without requiring changes to application code"* (sem exigir mudanças no código da aplicação) — e o **MSK Connect** roda os conectores.
 > **A errada**: Kinesis tem API própria; os conectores não funcionariam.
 
 > [!question]- Q3. Uma aplicação **nova** precisa de fila com buffer e retry, com escala praticamente ilimitada e menor esforço operacional.
@@ -61,7 +61,7 @@ atualizado: 2026-11-08
 | Amazon MQ é serverless | **Não.** Você escolhe tipo de broker e storage |
 | Amazon MQ escala como o SQS | Escala **verticalmente** ou por *network of brokers* |
 | MSK só existe provisionado | Há **MSK Serverless** |
-| MSK ainda depende do ZooKeeper | Usa **KRaft**, *"included at no additional cost"* |
+| MSK ainda depende do ZooKeeper | Usa **KRaft**, *"included at no additional cost"* (incluído sem custo adicional) |
 | MQTT em prova aponta para IoT Core | **Todos os serviços de IoT estão fora de escopo** na SAA-C03 |
 
 ## Links

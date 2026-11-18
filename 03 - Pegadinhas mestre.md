@@ -28,7 +28,7 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| One Zone-IA é só "IA mais barato" | É **1 AZ**. *"Not resilient to the loss of the Availability Zone."* Só para dado **reproduzível**. |
+| One Zone-IA é só "IA mais barato" | É **1 AZ**. *"Not resilient to the loss of the Availability Zone."* (não é resiliente à perda da Zona de Disponibilidade) Só para dado **reproduzível**. |
 | Intelligent-Tiering é sempre a resposta mais barata | Cobra **taxa de monitoramento por objeto**. Para padrão de acesso **conhecido**, classe fixa é mais barata. E objeto **< 128 KB nunca sai** do Frequent Access. |
 | Glacier Deep Archive tem Expedited | **Não tem.** Standard até 12 h, Bulk até 48 h. |
 | Lifecycle pode mover qualquer classe para qualquer classe | É **cascata (waterfall), só de quente para frio**. Glacier FR → só Deep Archive. De Deep Archive **não sai**. |
@@ -53,7 +53,7 @@ atualizado: 2026-11-08
 | gp3 é só "gp2 mais novo" | gp3 desacopla IOPS e throughput do tamanho (80.000 IOPS / 2.000 MiB/s contra 16.000 / 250). |
 | EBS é replicado entre AZs | **Não.** Um volume vive em **uma AZ**. Snapshot é que é regional. |
 | Snapshot é incremental mas restaurar é instantâneo | É incremental, mas o volume restaurado **carrega blocos sob demanda** (lazy load) — primeira leitura é mais lenta. |
-| FSx for Lustre sempre é durável | **Scratch** não replica: *"Data is not replicated and does not persist if a file server fails."* Para durabilidade, **Persistent**. |
+| FSx for Lustre sempre é durável | **Scratch** não replica: *"Data is not replicated and does not persist if a file server fails."* (os dados não são replicados e não persistem se um servidor de arquivos falhar) Para durabilidade, **Persistent**. |
 | FSx for Windows é Linux também | É **SMB**. Para NFS/Linux: EFS, FSx for OpenZFS ou FSx for ONTAP. |
 
 ## 3. VPC e rede
@@ -102,13 +102,13 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | Spot Instance perde dados sem aviso | Tem aviso de **2 minutos** (e *rebalance recommendation* antes disso). |
-| Spot cobre Savings Plans | *"Spot Instances are not covered by Savings Plans."* |
+| Spot cobre Savings Plans | *"Spot Instances are not covered by Savings Plans."* (instâncias Spot não são cobertas por Savings Plans) |
 | Dedicated Host = Dedicated Instance | **Host**: você paga o servidor físico e traz **licença per-socket/per-core**. **Instance**: hardware single-tenant cobrado **por hora**, sem visibilidade do host. |
 | Reserved Instance reserva capacidade sempre | Só a **zonal**. RI **regional** é só desconto de billing. Para garantir capacidade: **Capacity Reservation**. |
 | Savings Plans tem 3 tipos | **Quatro**: Compute, **Database**, EC2 Instance e SageMaker AI. |
 | Spread placement group aceita quantas instâncias eu quiser | **7 por AZ.** Partition: **7 partições por AZ**. |
 | Cluster placement group é multi-AZ | **Uma AZ só.** Partition e spread podem ser multi-AZ. |
-| ASG respeita a política de terminação acima de tudo | *"Maintaining Zonal balance takes precedence over the termination policy."* |
+| ASG respeita a política de terminação acima de tudo | *"Maintaining Zonal balance takes precedence over the termination policy."* (manter o equilíbrio entre as zonas tem precedência sobre a política de encerramento) |
 | ASG espera o cooldown para trocar instância doente | **Não espera.** *"does not wait for the cooldown period to end before replacing the unhealthy instance."* |
 | Grace period é sempre 300 s | **300 s no console, 0 s via CLI/SDK.** |
 | Health check do ELB vem ligado no ASG | **Não.** O padrão é só **EC2 status check**. ELB health check precisa ser ativado — pegadinha clássica: "a instância está UP para o ASG mas a aplicação morreu". |
@@ -119,7 +119,7 @@ atualizado: 2026-11-08
 | Parece | É |
 |---|---|
 | Multi-AZ escala leitura | **Não.** Standby não lê. |
-| Multi-AZ DB cluster = Aurora cluster | *"Multi-AZ DB clusters aren't the same as Aurora DB clusters."* |
+| Multi-AZ DB cluster = Aurora cluster | *"Multi-AZ DB clusters aren't the same as Aurora DB clusters."* (clusters de banco Multi-AZ não são a mesma coisa que clusters do Aurora) |
 | Read replica é um backup | Não é backup. É cópia **assíncrona** para leitura (promovível, isso sim, como DR). |
 | Aurora Serverless v2 pausa automaticamente | Só se o mínimo for **0 ACU**. Com 0,5 ACU, fica sempre ligado. |
 | Aurora Global Database é multi-master | É **1 primária escrevendo + até 10 secundárias só leitura**. Escrita de secundária só com **write forwarding** (que encaminha para a primária). |
@@ -153,9 +153,9 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| SCP concede permissão | *"No permissions are granted by an SCP."* É **teto**, não concessão. |
+| SCP concede permissão | *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) É **teto**, não concessão. |
 | SCP afeta a conta de gerenciamento | *"SCPs don't affect users or roles in the management account."* |
-| SCP afeta service-linked role | *"SCPs do not affect any service-linked role."* |
+| SCP afeta service-linked role | *"SCPs do not affect any service-linked role."* (SCPs não afetam nenhuma service-linked role) |
 | Policy de recurso sozinha resolve cross-account | Em **cross-account** precisa dos **dois lados**: policy de identidade na conta A **e** policy de recurso na conta B. Exceções: **trust policy de role** e **key policy do KMS**, que precisam liberar o principal explicitamente. |
 | Permissions boundary concede acesso | Boundary é **interseção**, nunca concessão. |
 | Deny implícito e deny explícito são iguais | Deny **explícito** não pode ser revertido por nada. Deny **implícito** (ausência de allow) pode ser resolvido por uma policy de recurso no mesmo account. |
@@ -163,14 +163,14 @@ atualizado: 2026-11-08
 | Rotação do KMS recriptografa os dados | *"It does not rotate the data keys that the KMS key generated or re-encrypt any data."* |
 | Posso rotacionar chave assimétrica automaticamente | **Não.** Só simétrica com material gerado pela KMS. |
 | CloudHSM e KMS são equivalentes | CloudHSM é **single-tenant**, **FIPS nível 3**, você gerencia usuários e as chaves não são visíveis à AWS. KMS é gerenciado e integrado com os serviços. |
-| ACM emite certificado para EC2 | Só com **Nitro Enclaves**. *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* |
+| ACM emite certificado para EC2 | Só com **Nitro Enclaves**. *"Associating an ACM-managed certificate directly with an Amazon EC2 instance requires a Nitro Enclave."* (associar um certificado gerenciado pelo ACM diretamente a uma instância EC2 exige um Nitro Enclave) |
 | Certificado ACM funciona em qualquer região | É **regional**, não copia entre regiões — e para **CloudFront tem que ser us-east-1**. |
 | GuardDuty escaneia vulnerabilidade | GuardDuty detecta **ameaça/comportamento** (CloudTrail + VPC Flow + DNS). **Vulnerabilidade/CVE é Inspector.** **PII no S3 é Macie.** |
 | Security Hub detecta ameaça | Security Hub **agrega e avalia postura**. Quem detecta é GuardDuty/Inspector/Macie. Quem **investiga** é Detective. |
 | Shield Standard precisa ser contratado | *"provided automatically and at no extra charge."* |
 | Cognito user pool dá acesso ao S3 | **User pool autentica** (emite JWT). Quem troca token por **credencial AWS** é o **identity pool**. |
 | Secrets Manager e Parameter Store são iguais | **Secrets Manager**: rotação automática nativa, cobrado por secret. **Parameter Store**: sem rotação, tier Standard **grátis**. |
-| Rotacionar regularmente a chave de acesso do root é boa prática | A doc atual diz **"Don't create access keys for the root user"** — não criar. A rotação só aparece em material antigo |
+| Rotacionar regularmente a chave de acesso do root é boa prática | A doc atual diz **"Don't create access keys for the root user"** (não crie chaves de acesso para o usuário raiz) — não criar. A rotação só aparece em material antigo |
 | MFA no root é recomendação | É **exigência**: *"require MFA to be configured for their root user"*, registro em até **14 dias** |
 | Um `Allow` de administrador destrava uma bucket policy que nega todos | **Não** — `Deny` explícito vence. Só o **root** (sem deny implícito) ou o **centralized root access** resolvem |
 | Guardar access key criptografada no S3 resolve | Continua sendo **credencial de longo prazo**. A resposta é **IAM role** |

@@ -18,11 +18,11 @@ atualizado: 2026-11-08
 | **Core** | Processa **e guarda HDFS** | ⚠️ **Evite** (perder HDFS arrisca o dado) |
 | **Task** | **Só processa** | ✅ **Sim — é o lugar do Spot** |
 
-A doc sobre Spot: *"Spot Instances can offer significant savings—as low as a tenth of on-demand pricing in some cases"*, e recomenda *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"*.
+A doc sobre Spot: *"Spot Instances can offer significant savings—as low as a tenth of on-demand pricing in some cases"*, e recomenda *"use On-Demand Instances in one group for guaranteed processing power together with Spot Instances in another group"* (use instâncias sob demanda num grupo, para poder de processamento garantido, junto com instâncias Spot em outro grupo).
 
 ## Cluster transiente × long-running
 
-> *"If you configure your cluster to be automatically terminated, it is terminated after all the steps complete. This is referred to as a transient cluster."*
+> *"If you configure your cluster to be automatically terminated, it is terminated after all the steps complete. This is referred to as a transient cluster."* (se você configurar o cluster para ser encerrado automaticamente, ele é encerrado depois que todas as etapas terminam — é o que se chama de cluster transiente)
 
 | | **Transiente** | **Long-running** |
 |---|---|---|
@@ -49,7 +49,7 @@ A doc sobre Spot: *"Spot Instances can offer significant savings—as low as a t
 | Spot | **Sim** (task nodes) | — | — |
 | Cobrança | Instâncias | DPU-hora | **TB escaneado** |
 
-Nota da doc: *"Amazon Athena supports many of the same data formats as Amazon EMR"* — o Athena consulta o que o EMR processou.
+Nota da doc: *"Amazon Athena supports many of the same data formats as Amazon EMR"* (o Amazon Athena oferece suporte a muitos dos mesmos formatos de dados do Amazon EMR) — o Athena consulta o que o EMR processou.
 
 ## Links
 

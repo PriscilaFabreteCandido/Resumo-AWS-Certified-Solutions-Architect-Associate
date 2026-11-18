@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** PrivateLink entre todas as VPCs
 > **D)** VPN entre cada VPC e o datacenter
 >
-> **Por que B**: é o *"network transit hub used to interconnect VPCs and on-premises networks"*, com roteamento transitivo e *"up to 5,000 attachments"*.
+> **Por que B**: é o *"network transit hub used to interconnect VPCs and on-premises networks"*, com roteamento transitivo e *"up to 5,000 attachments"* (até 5.000 attachments).
 > **A errada**: peering **não é transitivo** e 50 VPCs em malha = **1.225** conexões.
 > **C errada**: PrivateLink expõe **serviço**, não conecta redes inteiras.
 > **D errada**: 50 VPNs para gerenciar, e as VPCs não se falariam.
@@ -49,7 +49,7 @@ atualizado: 2026-11-08
 > **C)** PrivateLink
 > **D)** VPN entre as VPCs
 >
-> **Por que B**: *"There is no charge to create a VPC peering connection"* e dados na **mesma AZ são grátis**. O TGW cobra **por attachment/hora + por GB**.
+> **Por que B**: *"There is no charge to create a VPC peering connection"* (não há cobrança para criar uma conexão de VPC peering) e dados na **mesma AZ são grátis**. O TGW cobra **por attachment/hora + por GB**.
 
 > [!question]- Q6. O time de rede deve governar a topologia, mas cada conta anexa a sua própria VPC.
 > **A)** Um TGW por conta, com peering

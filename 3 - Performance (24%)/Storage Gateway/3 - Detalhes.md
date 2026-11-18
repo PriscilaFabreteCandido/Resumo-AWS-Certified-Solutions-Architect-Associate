@@ -16,7 +16,7 @@ O Storage Gateway é o tradutor: expõe o protocolo que a aplicação espera, e 
 
 ## 2. S3 File Gateway — o mais cobrado
 
-Expõe **NFS** (v3, v4, v4.1) e **SMB** (2 e 3), e grava cada arquivo como **objeto no S3**. A doc: *"store and retrieve objects in Amazon S3 using industry-standard file protocols"*, com *"low-latency access to data through transparent local caching"*.
+Expõe **NFS** (v3, v4, v4.1) e **SMB** (2 e 3), e grava cada arquivo como **objeto no S3**. A doc: *"store and retrieve objects in Amazon S3 using industry-standard file protocols"* (armazenar e recuperar objetos no Amazon S3 usando protocolos de arquivo padrão de mercado), com *"low-latency access to data through transparent local caching"*.
 
 O que o torna poderoso é o **resultado**: o dado fica como **objeto**, então você pode aplicar **lifecycle** (mover para Glacier), consultar com **Athena**, processar com **Glue/EMR**, replicar com **CRR** — tudo sem que a aplicação on-premises saiba.
 

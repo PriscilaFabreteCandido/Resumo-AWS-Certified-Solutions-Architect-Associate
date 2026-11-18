@@ -41,9 +41,9 @@ Todos os quatro estão na lista de **serviços em escopo** da SAA-C03, na catego
 
 ## A frase do guia
 
-> **"Using purpose-built AWS services for workloads"** — citada **duas vezes** (Task 2.1 e Task 2.2).
+> **"Using purpose-built AWS services for workloads"** (usar serviços da AWS feitos sob medida para cada carga de trabalho) — citada **duas vezes** (Task 2.1 e Task 2.2).
 
-> **"Determining cost-effective AWS database types (for example, time series format, columnar format)"** — Task 4.3.
+> **"Determining cost-effective AWS database types (for example, time series format, columnar format)"** (determinar os tipos de banco da AWS mais econômicos (por exemplo, formato de série temporal, formato colunar)) — Task 4.3.
 
 ## Links
 

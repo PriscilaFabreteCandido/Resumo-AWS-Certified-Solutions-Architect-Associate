@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 
 > *"If you can't make a commitment to a specific instance configuration, but you can commit to a usage amount, purchase Savings Plans to reduce your On-Demand Instance costs. If you require a capacity reservation, purchase Reserved Instances or Capacity Reservations for a specific Availability Zone. Capacity Blocks can be used to reserve a cluster of GPU instances. Spot Instances are a cost-effective choice if you can be flexible about when your applications run and if they can be interrupted. Dedicated Hosts or Dedicated Instances can help you address compliance requirements and reduce costs by using your existing server-bound software licenses."*
 
-E a recomendação: **"We recommend Savings Plans over Reserved Instances."**
+E a recomendação: **"We recommend Savings Plans over Reserved Instances."** (recomendamos Savings Plans em vez de Instâncias Reservadas)
 
 ## Links
 

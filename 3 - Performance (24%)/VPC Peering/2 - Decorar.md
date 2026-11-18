@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Não transitivo** | A↔B e B↔C **não** dá A↔C |
 | **CIDR sobreposto impede** | Não há NAT no peering |
-| **Criação grátis** | *"There is no charge to create a VPC peering connection"* |
+| **Criação grátis** | *"There is no charge to create a VPC peering connection"* (não há cobrança para criar uma conexão de VPC peering) |
 
 ## Custo (citação oficial)
 
@@ -59,7 +59,7 @@ Fórmula: **N(N-1)/2**. É a razão de existir do Transit Gateway.
 ## Fatos adicionais
 
 - **Security group** de uma VPC **pode referenciar** o SG da VPC pareada (mesma região; cross-region com restrições) — mantém o padrão SG-para-SG.
-- Inter-Region: tráfego *"is encrypted before leaving AWS facilities"*.
+- Inter-Region: tráfego *"is encrypted before leaving AWS facilities"* (é criptografado antes de sair das instalações da AWS).
 - Não há gateway nem hardware: *"There is no single point of failure for communication or a bandwidth bottleneck."*
 - É preciso **aceitar** a solicitação de peering e **criar rotas nas duas** VPCs.
 

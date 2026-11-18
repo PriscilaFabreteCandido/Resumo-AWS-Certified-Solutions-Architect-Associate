@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Reserved Instances para o RDS Oracle
 > **D)** Aurora I/O-Optimized
 >
-> **Por que B**: eliminar a **licença comercial** costuma superar qualquer otimização de instância. O guia cita, em Task 4.3, *"Migrating database schemas and data to different locations and/or different database engines"*.
+> **Por que B**: eliminar a **licença comercial** costuma superar qualquer otimização de instância. O guia cita, em Task 4.3, *"Migrating database schemas and data to different locations and/or different database engines"* (migrar schemas e dados de banco para outros locais e/ou outros engines).
 > **C errada**: dá desconto, mas a licença continua.
 
 > [!question]- Q4. Antes de migrar, o time precisa descobrir quais bancos existem no datacenter e seus tamanhos.

@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** Route 53 com failover routing
 > **D)** NLB em cada região com latency routing
 >
-> **Por que B**: dois IPv4 **anycast**, suporte a **UDP**, e *"reacts instantly to changes in health or configuration"*.
+> **Por que B**: dois IPv4 **anycast**, suporte a **UDP**, e *"reacts instantly to changes in health or configuration"* (reage instantaneamente a mudanças de saúde ou configuração).
 > **A errada**: CloudFront é HTTP/HTTPS.
 > **C errada**: DNS depende de **TTL** e cache do resolver — não garante "segundos", e o IP muda.
 > **D errada**: os IPs dos NLBs são por AZ/região; o cliente teria que liberar todos, e o failover ainda dependeria de DNS.
@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** ALB com sticky sessions
 > **D)** NLB com flow hash
 >
-> **Por que B**: *"map one or more users to a specific destination among many destinations"*, roteando para **IPs privados** de subnets de VPC.
+> **Por que B**: *"map one or more users to a specific destination among many destinations"* (mapear um ou mais usuários para um destino específico entre vários destinos), roteando para **IPs privados** de subnets de VPC.
 > **A errada**: standard manda para qualquer endpoint saudável do grupo.
 
 > [!question]- Q6. Migrar 10% do tráfego para a nova região antes de completar a mudança.

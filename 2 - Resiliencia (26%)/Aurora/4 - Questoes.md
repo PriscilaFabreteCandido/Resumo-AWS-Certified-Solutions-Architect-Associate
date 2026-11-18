@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** RDS Multi-AZ DB cluster
 > **D)** Read replicas cross-Region do RDS MySQL
 >
-> **Por que B**: lag *"typically under a second"*, **RPO em segundos**, **RTO em minutos**, leitura local em até 10 regiões secundárias.
+> **Por que B**: lag *"typically under a second"* (normalmente abaixo de um segundo), **RPO em segundos**, **RTO em minutos**, leitura local em até 10 regiões secundárias.
 > **A errada**: réplicas na mesma região não resolvem latência global nem DR regional.
 > **C errada**: Multi-AZ DB cluster é **intra-região**.
 > **D errada**: funciona, mas a promoção é manual e o lag é menos previsível.
@@ -76,7 +76,7 @@ atualizado: 2026-11-08
 | Aurora Global Database é multi-master | **1 primária escreve**; write forwarding encaminha para ela |
 | Global Database tem RPO 0 sempre | **Switchover** = RPO 0. **Failover** de desastre = segundos |
 | Global Database suporta Auto Scaling nas secundárias | *"doesn't support Aurora Auto Scaling for secondary DB clusters"* |
-| Secrets Manager funciona com Global Database | *"Secrets Manager doesn't support Aurora Global Database"* |
+| Secrets Manager funciona com Global Database | *"Secrets Manager doesn't support Aurora Global Database"* (o Secrets Manager não oferece suporte ao Aurora Global Database) |
 | Serverless v2 sempre pausa | Só com mínimo **0 ACU** |
 | I/O-Optimized é sempre melhor | Só a partir de **25%** de I/O na fatura |
 | Aurora = Multi-AZ DB cluster do RDS | *"aren't the same as Aurora DB clusters"* |

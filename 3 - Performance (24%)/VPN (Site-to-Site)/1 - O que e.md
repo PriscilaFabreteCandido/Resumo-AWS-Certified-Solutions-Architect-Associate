@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 
 E o número que mais cai:
 
-> *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."*
+> *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."* (cada conexão VPN inclui dois túneis, que você pode usar simultaneamente para alta disponibilidade)
 
 ## Os dois endpoints do lado AWS
 

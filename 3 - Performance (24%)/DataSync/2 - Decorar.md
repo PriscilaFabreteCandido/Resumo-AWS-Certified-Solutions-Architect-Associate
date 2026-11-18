@@ -27,13 +27,13 @@ atualizado: 2026-11-08
 
 | Recurso | Citação |
 |---|---|
-| Criptografia e integridade | *"automatic encryption and data integrity validation"* |
-| Performance | *"purpose-built network protocol and a parallel, multi-threaded architecture"* |
+| Criptografia e integridade | *"automatic encryption and data integrity validation"* (criptografia automática e validação de integridade dos dados) |
+| Performance | *"purpose-built network protocol and a parallel, multi-threaded architecture"* (protocolo de rede feito sob medida e arquitetura paralela, multithread) |
 | Rede privada | **VPC endpoints** suportados |
 
 ## Caso de uso de custo citado
 
-> Arquivar dado frio para *"S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"*
+> Arquivar dado frio para *"S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive"* (S3 Glacier Flexible Retrieval ou S3 Glacier Deep Archive)
 
 Ou seja: o DataSync pode mover **direto** para classe de arquivo, sem passar pelo Standard.
 

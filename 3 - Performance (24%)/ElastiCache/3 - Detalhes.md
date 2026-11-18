@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Por que cache é resposta de **custo**, não só de performance
 
-O guia lista *"Caching strategies"* não apenas em **Task 3.3** (performance de banco) mas também em **Task 4.3** (**custo** de banco). A razão: uma instância de ElastiCache frequentemente custa **menos** que subir a instance class do banco ou adicionar read replicas — e entrega latência melhor.
+O guia lista *"Caching strategies"* (estratégias de cache) não apenas em **Task 3.3** (performance de banco) mas também em **Task 4.3** (**custo** de banco). A razão: uma instância de ElastiCache frequentemente custa **menos** que subir a instance class do banco ou adicionar read replicas — e entrega latência melhor.
 
 O raciocínio de prova: carga **read-heavy** com dados repetidos → cache. Carga de **escrita** ou leitura sempre diferente → cache não ajuda; aí é réplica ou instância maior.
 

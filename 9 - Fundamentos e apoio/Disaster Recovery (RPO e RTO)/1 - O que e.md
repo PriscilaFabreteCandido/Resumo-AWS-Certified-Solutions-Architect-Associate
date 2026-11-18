@@ -36,7 +36,7 @@ RTO = tempo de INDISPONIBILIDADE aceitável (ex.: "de volta em 1 hora")
 
 As definições da AWS:
 
-> **Backup and restore** — *"Backup and restore is a suitable approach for mitigating against data loss or corruption."*
+> **Backup and restore** — *"Backup and restore is a suitable approach for mitigating against data loss or corruption."* (backup e restore é uma abordagem adequada para mitigar perda ou corrupção de dados)
 
 > **Pilot light** — *"With the pilot light approach, you replicate your data from one Region to another and provision a copy of your core workload infrastructure. Resources required to support data replication and backup, such as databases and object storage, are always on. Other elements, such as application servers, are loaded with application code and configurations, but are switched off and are only used during testing or when disaster recovery failover is invoked."*
 

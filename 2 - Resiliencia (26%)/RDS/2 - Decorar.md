@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 | Número máximo | **A doc não informa** um número |
 | Cross-Region | **Suportado** |
 | Promoção | Pode ser promovida a instância autônoma (estratégia de DR) |
-| Autoscaling | *"RDS doesn't support autoscaling of read replicas"* |
+| Autoscaling | *"RDS doesn't support autoscaling of read replicas"* (o RDS não oferece escalabilidade automática de réplicas de leitura) |
 | **Cascata** (réplica de réplica) | MariaDB, MySQL e **certas versões** de PostgreSQL: **sim**. **Db2, Oracle e SQL Server: não** |
 | Replicação circular | **Não** suportada |
 | Se deletar a origem | Réplicas **na mesma região** são **promovidas** automaticamente |
@@ -46,7 +46,7 @@ Multi-AZ DB cluster: *"RDS creates a storage volume snapshot of your DB cluster,
 
 ## RDS Proxy — o número
 
-Reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"*, e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"*.
+Reduz o tempo de failover *"by up to 66% for Aurora Multi-AZ databases"*, e o downtime de upgrade de minor version de Multi-AZ DB cluster a *"one second or less"* (um segundo ou menos).
 
 ## Links
 

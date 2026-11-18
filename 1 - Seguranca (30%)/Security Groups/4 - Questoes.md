@@ -34,7 +34,7 @@ atualizado: 2026-11-08
 > **C)** Depende da ordem de associação
 > **D)** Só se os dois liberarem
 >
-> **Por que B**: o SG *"Evaluates all rules before deciding whether to allow traffic"*, e múltiplos SGs se somam. SG não tem deny, então um SG vazio não restringe nada.
+> **Por que B**: o SG *"Evaluates all rules before deciding whether to allow traffic"* (avalia todas as regras antes de decidir se permite o tráfego), e múltiplos SGs se somam. SG não tem deny, então um SG vazio não restringe nada.
 > **C errada**: não existe ordem em SG.
 
 > [!question]- Q4. Por que não é necessário liberar portas efêmeras no security group?

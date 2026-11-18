@@ -86,8 +86,8 @@ atualizado: 2026-11-08
 ## 🧠 Teste-se primeiro
 
 > [!question]- Um usuário tem policy IAM que permite `s3:*`, mas a SCP da OU dele só permite EC2. Ele acessa o S3?
-> **Não.** A permissão efetiva é a **interseção**: a SCP é um teto. *"the boundary, the SCP, and the identity-based policy must all allow the action"*.
-> E o contrário também vale: SCP permitindo tudo + IAM sem nada = **nenhum acesso**. *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."*
+> **Não.** A permissão efetiva é a **interseção**: a SCP é um teto. *"the boundary, the SCP, and the identity-based policy must all allow the action"* (o permissions boundary, a SCP e a policy de identidade precisam, todos, permitir a ação).
+> E o contrário também vale: SCP permitindo tudo + IAM sem nada = **nenhum acesso**. *"A user without any IAM permission policies has no access, even if the applicable SCPs allow all services and all actions."* (um usuário sem nenhuma policy de permissão do IAM não tem acesso, mesmo que as SCPs aplicáveis liberem todos os serviços e todas as ações)
 
 > [!question]- Qual é a ordem de avaliação de uma requisição no IAM?
 > 1. **Deny explícito** em qualquer política → **nega e para**
@@ -135,7 +135,7 @@ atualizado: 2026-11-08
 > **C)** **Gateway endpoint para o S3** ✅
 > **D)** Internet gateway com rota restrita
 >
-> **Por que C**: gateway endpoint é a opção para S3/DynamoDB e *"There is no additional charge for using gateway endpoints."* O tráfego não passa por internet gateway nem NAT.
+> **Por que C**: gateway endpoint é a opção para S3/DynamoDB e *"There is no additional charge for using gateway endpoints."* (não há cobrança adicional pelo uso de gateway endpoints) O tráfego não passa por internet gateway nem NAT.
 > **A errada**: funciona, mas NAT gateway cobra **por hora + por GB**. É a resposta errada mais atraente da prova.
 > **B errada**: funciona, mas interface endpoint é **cobrado por hora e por GB**. Só se justifica quando o acesso vem de **on-premises** ou de outra VPC.
 > **D errada**: coloca a subnet na internet, violando o requisito.
@@ -157,7 +157,7 @@ atualizado: 2026-11-08
 > **C)** KMS com chave customer managed
 > **D)** IAM database authentication
 >
-> **Por que B**: a própria doc do Parameter Store diz, na comparação: credential rotation em Parameter Store = **"None"**; em Secrets Manager = **"Automatic, with native database integrations"**.
+> **Por que B**: a própria doc do Parameter Store diz, na comparação: credential rotation em Parameter Store = **"None"**; em Secrets Manager = **"Automatic, with native database integrations"** (automático, com integrações nativas ao banco).
 > **A errada**: Parameter Store (inclusive SecureString) **não rotaciona**. É grátis no tier Standard — o distrator é "menor custo".
 > **C errada**: KMS guarda **chave de criptografia**, não secret de aplicação.
 > **D errada**: boa prática, mas muda a forma de autenticar (token IAM) e não é "rotação de secret".
@@ -170,9 +170,9 @@ atualizado: 2026-11-08
 
 | Parece | É |
 |---|---|
-| SCP concede permissão | É **teto**. *"No permissions are granted by an SCP."* |
+| SCP concede permissão | É **teto**. *"No permissions are granted by an SCP."* (uma SCP não concede permissão nenhuma) |
 | SCP alcança a conta de gerenciamento | **Não alcança.** Só contas membro |
-| SCP limita service-linked role | *"SCPs do not affect any service-linked role."* |
+| SCP limita service-linked role | *"SCPs do not affect any service-linked role."* (SCPs não afetam nenhuma service-linked role) |
 | Bucket policy resolve cross-account sozinha | Só **dentro da mesma conta**. Cross-account exige os dois lados |
 | Permissions boundary dá permissão | É **interseção**, nunca concessão |
 | MFA é só para usuários | A boa prática oficial inclui o **root user**. Guarde o root com MFA e não use |

@@ -24,8 +24,8 @@ Versionamento: guarda as **100** versões mais recentes.
 
 | | **Parameter Store** | **Secrets Manager** |
 |---|---|---|
-| **Rotação de credencial** | **"None"** | **"Automatic, with native database integrations"** |
-| **Custo** | *"Standard tier free; advanced tier and higher throughput billed"* | *"Billed per secret per month and per API call"* |
+| **Rotação de credencial** | **"None"** | **"Automatic, with native database integrations"** (automático, com integrações nativas ao banco) |
+| **Custo** | *"Standard tier free; advanced tier and higher throughput billed"* | *"Billed per secret per month and per API call"* (cobrado por segredo por mês e por chamada de API) |
 
 > Recomendação oficial: *"For secrets such as database credentials, API keys, or tokens, we recommend AWS Secrets Manager."*
 
@@ -38,8 +38,8 @@ Versionamento: guarda as **100** versões mais recentes.
 | Chave SSH | **Não precisa** |
 | Criptografia | **TLS 1.2** (+ chave KMS opcional) |
 | Log | CloudTrail, S3, CloudWatch Logs, EventBridge/SNS |
-| ⚠️ Limitação de log | *"Logging isn't available for Session Manager sessions that connect through port forwarding or SSH"* |
-| Sem IP público | *"AWS PrivateLink support for managed nodes without public IP addresses"* |
+| ⚠️ Limitação de log | *"Logging isn't available for Session Manager sessions that connect through port forwarding or SSH"* (o registro em log não está disponível para sessões do Session Manager que conectam por port forwarding ou SSH) |
+| Sem IP público | *"AWS PrivateLink support for managed nodes without public IP addresses"* (suporte a AWS PrivateLink para nós gerenciados sem endereço IP público) |
 | SOs | Windows, Linux, macOS, EC2 e **não-EC2** (híbrido, multicloud, edge) |
 
 ## Patch Manager

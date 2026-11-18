@@ -31,7 +31,7 @@ atualizado: 2026-11-08
 > **C)** **As duas: a trust policy na conta B deve listar o principal da conta A, e o role na conta A deve ter `sts:AssumeRole` naquele ARN** ✅
 > **D)** A SCP da organização
 >
-> **Por que C**: são dois documentos independentes, e a trust policy é exceção à regra da união — *"must explicitly allow access for principals"*.
+> **Por que C**: são dois documentos independentes, e a trust policy é exceção à regra da união — *"must explicitly allow access for principals"* (precisam permitir o acesso explicitamente para os principais).
 > **D errada**: pode ser causa adicional (SCP é um teto), mas o que o enunciado descreve se resolve nos dois documentos. Se a SCP negasse, nenhuma das duas políticas ajudaria.
 
 > [!question]- Q4. Como invalidar imediatamente todas as sessões temporárias já emitidas para uma role comprometida?

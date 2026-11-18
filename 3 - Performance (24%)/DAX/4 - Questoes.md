@@ -24,7 +24,7 @@ atualizado: 2026-11-08
 > **C)** Sim, se o TTL for zero
 > **D)** Sim, com réplicas de leitura no cluster
 >
-> **Por que B**: *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."*
+> **Por que B**: *"DAX passes the request through to DynamoDB. The results from DynamoDB are not cached in DAX."* (o DAX repassa a requisição ao DynamoDB, e os resultados vindos do DynamoDB não são armazenados em cache no DAX)
 
 > [!question]- Q3. Depois de uma escrita, uma consulta `Query` pelo DAX devolve o resultado antigo.
 > **A)** O write-through falhou

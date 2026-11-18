@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 
 ## S3 File Gateway — o que decora
 
-> *"store and retrieve objects in Amazon S3 using industry-standard file protocols"*
+> *"store and retrieve objects in Amazon S3 using industry-standard file protocols"* (armazenar e recuperar objetos no Amazon S3 usando protocolos de arquivo padrão de mercado)
 > *"low-latency access to data through transparent local caching"*
 
 Deployment: VM em **VMware ESXi, Microsoft Hyper-V, KVM ou Nutanix AHV**, **hardware appliance**, **VMware Cloud on AWS**, ou **AMI no EC2**.

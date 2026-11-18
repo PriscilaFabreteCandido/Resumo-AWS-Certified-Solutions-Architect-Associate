@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Túneis por conexão** | **2** — *"which you can simultaneously use for high availability"* |
 | Banda **padrão** por túnel | **1,25 Gbps** |
-| **Large Bandwidth Tunnel** | **até 5 Gbps** por túnel — *"Available for VPN connections attached to Transit Gateway or Cloud WAN"* |
+| **Large Bandwidth Tunnel** | **até 5 Gbps** por túnel — *"Available for VPN connections attached to Transit Gateway or Cloud WAN"* (disponível para conexões VPN anexadas a um Transit Gateway ou ao Cloud WAN) |
 | Criptografia | **IPsec**, **AES 256-bit**, **IKEv2** |
 | NAT traversal | Suportado |
 | Roteamento | **estático** ou **dinâmico (BGP)** |

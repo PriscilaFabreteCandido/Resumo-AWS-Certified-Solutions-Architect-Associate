@@ -32,7 +32,7 @@ Há também uma **Hybrid Edition** (estender um AD self-managed existente).
 
 > **RDS for SQL Server com Windows Authentication → somente AWS Managed Microsoft AD.**
 
-As duas outras opções dizem literalmente *"not compatible with RDS SQL Server"*.
+As duas outras opções dizem literalmente *"not compatible with RDS SQL Server"* (não é compatível com o RDS SQL Server).
 
 ## A cadeia AD Connector → Identity Center → permission sets
 
@@ -47,7 +47,7 @@ AD on-premises  ──VPN/DX──►  AD Connector  ──►  IAM Identity Cen
 | Peça | O que faz |
 |---|---|
 | **AD on-premises** | Guarda usuários, grupos e **senhas** |
-| **AD Connector** | **Encaminha** as requisições. *"without caching any information in the cloud"* |
+| **AD Connector** | **Encaminha** as requisições. *"without caching any information in the cloud"* (sem fazer cache de nenhuma informação na nuvem) |
 | **IAM Identity Center** | Autentica **pass-through** no AD e atribui acesso nas contas |
 | **Permission set** | Traduz **grupo do AD** em permissão nas contas AWS |
 
@@ -67,11 +67,11 @@ Resultado: login com o usuário de rede, **credencial temporária**, zero usuár
 
 | Se o enunciado disser | Resposta muda para |
 |---|---|
-| **Vários domínios ou florestas** | **Managed Microsoft AD** (*"If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."*) |
+| **Vários domínios ou florestas** | **Managed Microsoft AD** (*"If you need to support multiple domains or forests, use Directory Service for Microsoft Active Directory."* (se você precisa atender vários domínios ou florestas, use o Directory Service for Microsoft Active Directory)) |
 | **Reset de senha pelo portal da AWS** | Não dá com AD Connector — reset só **dentro do AD** |
 | **Login precisa funcionar com o link caído** | **Managed Microsoft AD** (AD Connector não tem cache) |
 | **RDS SQL Server com Windows Auth** | **Managed Microsoft AD** |
-| Diretório **Simple AD** | *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* |
+| Diretório **Simple AD** | *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4) |
 
 > [!warning] "Sem cache na nuvem" vale para a SENHA
 > O Identity Center **sincroniza metadados** (usuário, grupo, participação) para o **identity store** dele. O que nunca sai do domain controller é a **credencial**.

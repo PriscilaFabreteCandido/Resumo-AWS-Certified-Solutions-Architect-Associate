@@ -22,7 +22,7 @@ Consequências:
 | **Durabilidade** | *"six storage nodes"* em **3 AZs**, com replicação **síncrona** |
 | **Réplicas** | Até **15 Aurora Replicas**, que compartilham o **mesmo** storage (não copiam dados) |
 | **Storage elástico** | Cresce e **encolhe** automaticamente, até **128 TiB** (256 TiB em versões específicas) |
-| **Failover rápido** | *"less than 60 seconds, and often less than 30 seconds"* com réplica |
+| **Failover rápido** | *"less than 60 seconds, and often less than 30 seconds"* (menos de 60 segundos, e frequentemente menos de 30) com réplica |
 | **Multi-AZ por desenho** | *"an Aurora configuration with only a single DB instance is still a cluster"* |
 
 ## As variantes
