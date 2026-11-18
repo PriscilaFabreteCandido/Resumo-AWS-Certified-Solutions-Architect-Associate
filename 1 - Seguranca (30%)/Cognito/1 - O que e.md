@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"Amazon Cognito is an identity platform for web and mobile apps. It's a user directory, an authentication server, and an authorization service for OAuth 2.0 access tokens and AWS credentials."*
+> *"Amazon Cognito is an identity platform for web and mobile apps. It's a user directory, an authentication server, and an authorization service for OAuth 2.0 access tokens and AWS credentials."* (o Amazon Cognito é uma plataforma de identidade para aplicações web e móveis: é um diretório de usuários, um servidor de autenticação e um serviço de autorização para tokens de acesso OAuth 2.0 e credenciais da AWS)
 
 ## As duas peças — e a pergunta que cada uma responde
 

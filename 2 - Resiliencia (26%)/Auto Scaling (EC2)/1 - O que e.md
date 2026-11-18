@@ -29,7 +29,7 @@ atualizado: 2026-11-08
 
 ## A recomendação oficial
 
-> *"As a best practice, we recommend that you do not use simple scaling policies and scaling cooldowns. A target tracking scaling policy or a step scaling policy is better for scaling performance... we recommend target tracking over either simple scaling or step scaling."*
+> *"As a best practice, we recommend that you do not use simple scaling policies and scaling cooldowns. A target tracking scaling policy or a step scaling policy is better for scaling performance... we recommend target tracking over either simple scaling or step scaling."* (como boa prática, recomendamos não usar políticas de simple scaling nem cooldowns; uma política de target tracking ou de step scaling tem desempenho melhor... recomendamos target tracking em vez de simple scaling ou step scaling)
 
 **Target tracking é quase sempre a resposta.**
 

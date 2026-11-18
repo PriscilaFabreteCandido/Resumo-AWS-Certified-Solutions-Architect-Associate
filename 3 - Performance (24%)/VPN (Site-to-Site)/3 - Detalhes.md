@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 Toda conexão vem com **dois túneis**, cada um terminando num endpoint diferente do lado da AWS: *"Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability."* (cada conexão VPN inclui dois túneis, que você pode usar simultaneamente para alta disponibilidade)
 
-A AWS descreve o serviço como *"AWS-managed VPN endpoint that includes automated redundancy and failover built into the AWS side"* — ou seja, a redundância do **lado AWS** vem pronta.
+A AWS descreve o serviço como *"AWS-managed VPN endpoint that includes automated redundancy and failover built into the AWS side"* (um endpoint de VPN gerenciado pela AWS, com redundância e failover automáticos embutidos no lado da AWS) — ou seja, a redundância do **lado AWS** vem pronta.
 
 Mas o **seu** lado é sua responsabilidade: *"The virtual private gateway also supports and encourages multiple user gateway connections so that you can implement redundancy and failover on your side."* (o virtual private gateway também suporta, e incentiva, múltiplas conexões de gateway do cliente, para que você implemente redundância e failover do seu lado) Um único roteador on-premises continua sendo ponto único de falha.
 

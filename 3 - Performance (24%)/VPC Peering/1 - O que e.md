@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Como funciona
 
-> *"AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it is neither a gateway nor a VPN connection, and does not rely on a separate piece of physical hardware. There is no single point of failure for communication or a bandwidth bottleneck."*
+> *"AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it is neither a gateway nor a VPN connection, and does not rely on a separate piece of physical hardware. There is no single point of failure for communication or a bandwidth bottleneck."* (a AWS usa a infraestrutura existente da VPC para criar uma conexão de peering; ela não é um gateway nem uma conexão VPN, e não depende de hardware físico separado. Não há ponto único de falha na comunicação nem gargalo de banda)
 
 Ou seja: não há appliance, não há gargalo de banda, não há ponto único de falha. É roteamento na própria infraestrutura.
 

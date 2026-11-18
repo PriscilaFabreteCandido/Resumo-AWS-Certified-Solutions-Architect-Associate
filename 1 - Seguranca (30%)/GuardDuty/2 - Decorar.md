@@ -37,7 +37,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"Amazon GuardDuty is a threat detection service that continuously monitors, analyzes, and processes AWS data sources and logs in your AWS environment."*
+> *"Amazon GuardDuty is a threat detection service that continuously monitors, analyzes, and processes AWS data sources and logs in your AWS environment."* (o Amazon GuardDuty é um serviço de detecção de ameaças que monitora, analisa e processa continuamente fontes de dados e logs da AWS no seu ambiente)
 
 Usa **threat intelligence feeds** e **modelos de machine learning**.
 

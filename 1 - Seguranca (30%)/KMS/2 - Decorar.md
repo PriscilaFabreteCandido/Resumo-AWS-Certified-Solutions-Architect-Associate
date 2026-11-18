@@ -58,7 +58,7 @@ Tipos assimétricos: **RSA** (cifrar **ou** assinar, não ambos) · **ECC** (ass
 | **Multi-Region key** | ID com prefixo **`mrk-`**. Rotação configurada **só na primária** |
 | **Encryption context** | Par chave-valor no AAD. Só em simétrica. *"strongly recommended"* (fortemente recomendado) |
 | **Alias** | `aws/<serviço>` para AWS managed; `alias/meu-nome` para as suas |
-| **Deleção** | Tem período de espera (agendamento). *"AWS KMS deletes key material only when you delete the KMS key"* |
+| **Deleção** | Tem período de espera (agendamento). *"AWS KMS deletes key material only when you delete the KMS key"* (o AWS KMS só apaga o material de chave quando você apaga a própria chave do KMS) |
 | **Custom key store** | KMS usando **CloudHSM** ou HSM externo como backing |
 
 ## Links

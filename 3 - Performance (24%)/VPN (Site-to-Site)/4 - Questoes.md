@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 > **C)** Aumentar o MTU
 > **D)** Accelerated VPN
 >
-> **Por que B**: *"A tunnel configuration that supports up to 5 Gbps bandwidth per tunnel, compared to the standard 1.25 Gbps. Available for VPN connections attached to Transit Gateway or Cloud WAN."*
+> **Por que B**: *"A tunnel configuration that supports up to 5 Gbps bandwidth per tunnel, compared to the standard 1.25 Gbps. Available for VPN connections attached to Transit Gateway or Cloud WAN."* (uma configuração de túnel que suporta até 5 Gbps por túnel, contra os 1,25 Gbps padrão; disponível para conexões VPN anexadas a Transit Gateway ou Cloud WAN)
 > **D errada**: Accelerated VPN melhora **latência e estabilidade**, não o teto de banda por túnel.
 
 > [!question]- Q4. Uma VPN ligada a um **virtual private gateway** precisa transportar **IPv6**.

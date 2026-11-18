@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past..."*
+> *"AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past..."* (o AWS Config oferece uma visão detalhada da configuração dos recursos AWS na sua conta, incluindo como eles se relacionam entre si e como estavam configurados no passado...)
 
 ## A pergunta que ele responde
 

@@ -40,7 +40,7 @@ Isso é o mecanismo de **segmentação**: route tables diferentes criam domínio
 |---|---|
 | Attachments | *"up to 5,000"* |
 | MTU | **8.500** (VPC, DX, Connect, peering) · **1.500** (VPN) |
-| Inter-Region peering | *"All network traffic between AWS data centers is automatically encrypted at the physical layer"* |
+| Inter-Region peering | *"All network traffic between AWS data centers is automatically encrypted at the physical layer"* (todo o tráfego de rede entre data centers da AWS é criptografado automaticamente na camada física) |
 | Cobrança | **por attachment/hora + por GB processado** |
 | Compartilhamento | Via **AWS RAM** (uma conta de rede governa, as outras anexam) |
 | Encryption control | Feature opcional que **exige** criptografia em trânsito nas VPCs anexadas |

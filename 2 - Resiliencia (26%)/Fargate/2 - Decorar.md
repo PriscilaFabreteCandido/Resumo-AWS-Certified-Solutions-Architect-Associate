@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 | Opção | Quem gerencia as instâncias |
 |---|---|
-| **AWS Fargate** (serverless) | **A AWS.** *"you don't need to manage servers, handle capacity planning, or isolate container workloads for security"* |
+| **AWS Fargate** (serverless) | **A AWS.** *"you don't need to manage servers, handle capacity planning, or isolate container workloads for security"* (você não precisa gerenciar servidores, planejar capacidade nem isolar cargas de contêiner por segurança) |
 | **Amazon ECS Managed Instances** | A AWS gerencia provisionamento, patch e escala das instâncias EC2 |
 | **Amazon EC2 instances** | **Você**: *"You choose the instance type, the number of instances, and manage the capacity"* (você escolhe o tipo de instância, a quantidade, e gerencia a capacidade) |
 | **Amazon ECS Anywhere** | Seus servidores/VMs **on-premises** |

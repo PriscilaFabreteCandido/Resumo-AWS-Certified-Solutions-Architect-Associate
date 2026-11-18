@@ -19,7 +19,7 @@ atualizado: 2026-11-08
 
 ## Redshift Spectrum
 
-> *"you can efficiently query and retrieve structured and semi-structured data from files in Amazon S3 without having to load the data into Amazon Redshift tables."*
+> *"you can efficiently query and retrieve structured and semi-structured data from files in Amazon S3 without having to load the data into Amazon Redshift tables."* (você consulta e recupera com eficiência dados estruturados e semiestruturados de arquivos no Amazon S3, sem precisar carregá-los em tabelas do Amazon Redshift)
 
 | Fato | Detalhe |
 |---|---|

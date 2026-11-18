@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # Ferramentas de custo — O que é
 
 > [!important] Garantia de questão
-> Estas ferramentas aparecem nos **quatro** task statements do domínio 4, com a mesma redação: *"AWS cost management tools with appropriate use cases (for example, AWS Cost Explorer, AWS Budgets, AWS Cost and Usage Report)"*.
+> Estas ferramentas aparecem nos **quatro** task statements do domínio 4, com a mesma redação: *"AWS cost management tools with appropriate use cases (for example, AWS Cost Explorer, AWS Budgets, AWS Cost and Usage Report)"* (ferramentas de gestão de custo da AWS e seus casos de uso apropriados (por exemplo, AWS Cost Explorer, AWS Budgets, AWS Cost and Usage Report)).
 
 ## As três, com seus verbos
 

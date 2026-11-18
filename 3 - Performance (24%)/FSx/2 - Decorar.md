@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 
 | Item | Detalhe |
 |---|---|
-| **Scratch** | *"Data is not replicated and does not persist if a file server fails"* |
+| **Scratch** | *"Data is not replicated and does not persist if a file server fails"* (os dados não são replicados e não persistem se um servidor de arquivos falhar) |
 | **Persistent** | *"data is replicated, and file servers are replaced if they fail"* |
 | **S3 vinculado** | *"transparently presents S3 objects as files"* (apresenta os objetos do S3 como arquivos, de forma transparente) |
 | Importação | Importa a listagem dos arquivos na criação; pode importar os novos depois |

@@ -49,7 +49,7 @@ Para registro **alias**, em vez de anexar health check você liga **Evaluate Tar
 | **Ativo-passivo** | Política **failover** (primary + secondary) |
 | **Ativo-ativo** | *"using any routing policy (or combination of routing policies) other than failover"* — weighted, latency, multivalue, geolocation |
 
-⚠️ Em weighted usado como passivo: *"All the records with nonzero weights must be unhealthy before Route 53 starts to respond to DNS queries using records that have weights of zero."*
+⚠️ Em weighted usado como passivo: *"All the records with nonzero weights must be unhealthy before Route 53 starts to respond to DNS queries using records that have weights of zero."* (todos os registros com peso diferente de zero precisam estar não saudáveis antes que o Route 53 passe a responder consultas usando registros de peso zero)
 
 ## Hosted zone pública × privada
 

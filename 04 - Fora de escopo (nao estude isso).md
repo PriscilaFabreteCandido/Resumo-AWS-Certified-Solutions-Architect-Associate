@@ -58,7 +58,7 @@ Fora de escopo, por categoria oficial:
 | **Removidos** da lista fora de escopo | AWS DeepComposer · Amazon DevOps Guru · Amazon Elastic Inference · Amazon Managed Blockchain · Amazon Sumerian |
 
 > [!note] Sair da lista de "fora de escopo" não significa entrar em escopo
-> A lista de fora-de-escopo exclui, nas palavras da AWS, *"AWS offerings that are entirely unrelated to the target job roles"*. Serviços descontinuados simplesmente saem das duas listas. Nenhum desses cinco entrou na lista em escopo.
+> A lista de fora-de-escopo exclui, nas palavras da AWS, *"AWS offerings that are entirely unrelated to the target job roles"* (ofertas da AWS totalmente sem relação com os cargos-alvo). Serviços descontinuados simplesmente saem das duas listas. Nenhum desses cinco entrou na lista em escopo.
 
 ## Serviços em escopo que valem pouco (não zere, mas não invista)
 

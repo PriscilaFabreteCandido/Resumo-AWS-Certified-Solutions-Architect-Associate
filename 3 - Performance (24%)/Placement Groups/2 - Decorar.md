@@ -30,7 +30,7 @@ atualizado: 2026-11-08
 ## Spread — a conta
 
 **7 instâncias por AZ.** Com 3 AZs: **21 instâncias** no máximo.
-A doc: *"A rack-level spread placement group can span multiple Availability Zones in the same Region, but it supports a maximum of seven running instances in each Availability Zone."*
+A doc: *"A rack-level spread placement group can span multiple Availability Zones in the same Region, but it supports a maximum of seven running instances in each Availability Zone."* (um spread placement group em nível de rack pode abranger várias Zonas de Disponibilidade na mesma Região, mas suporta no máximo sete instâncias em execução em cada uma)
 Host-level spread existe **só em Outposts**.
 
 ## Restrições gerais (decore)

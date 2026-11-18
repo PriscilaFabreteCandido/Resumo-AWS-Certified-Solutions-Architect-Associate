@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## Savings Plans — são **quatro** tipos
 
-> *"AWS offers four types of Savings Plans: Compute Savings Plans, Database Savings Plans, EC2 Instance Savings Plans, and SageMaker AI Savings Plans."*
+> *"AWS offers four types of Savings Plans: Compute Savings Plans, Database Savings Plans, EC2 Instance Savings Plans, and SageMaker AI Savings Plans."* (a AWS oferece quatro tipos de Savings Plans: Compute, Database, EC2 Instance e SageMaker AI)
 
 | Tipo | Desconto | Cobre | Flexibilidade |
 |---|---|---|---|
@@ -20,7 +20,7 @@ atualizado: 2026-11-08
 Claim geral: *"You can save up to 72% on your AWS compute workloads."*
 Termos: **1 ou 3 anos**. Pagamento: **All upfront · Partial upfront · No upfront**.
 ⚠️ *"The terms of the commitment can't be changed after purchase."* (os termos do compromisso não podem ser alterados depois da compra)
-⚠️ **EKS**: *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be."*
+⚠️ **EKS**: *"Amazon EKS charges will not be covered by Savings Plans, but the underlying EC2 instances will be."* (as cobranças do Amazon EKS não são cobertas por Savings Plans, mas as instâncias EC2 subjacentes são)
 
 ## Reserved Instances
 

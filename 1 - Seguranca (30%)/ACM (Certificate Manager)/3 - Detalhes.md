@@ -53,7 +53,7 @@ A validação por **DNS** é a preferida porque habilita a **renovação gerenci
 
 ## 5. AWS Private CA
 
-Para certificados **internos** (serviço a serviço, mTLS, dispositivos), o ACM entrega certificados assinados pela sua **AWS Private CA**. A doc nota que *"Certificates signed by AWS Private CA can be exported"* — diferente dos públicos emitidos pela ACM, cuja chave privada não sai.
+Para certificados **internos** (serviço a serviço, mTLS, dispositivos), o ACM entrega certificados assinados pela sua **AWS Private CA**. A doc nota que *"Certificates signed by AWS Private CA can be exported"* (certificados assinados pelo AWS Private CA podem ser exportados) — diferente dos públicos emitidos pela ACM, cuja chave privada não sai.
 
 Casos típicos de prova: **mutual TLS** no API Gateway, autenticação de cliente em ALB/NLB, e certificados para workloads que não podem confiar numa CA pública.
 

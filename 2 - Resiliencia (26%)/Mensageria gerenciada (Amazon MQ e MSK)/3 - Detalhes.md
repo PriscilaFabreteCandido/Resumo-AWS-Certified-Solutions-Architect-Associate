@@ -20,7 +20,7 @@ Amazon MQ e MSK resolvem isso: você move a aplicação para a AWS **sem mexer n
 
 Suporta **ActiveMQ** e **RabbitMQ**, com os protocolos **AMQP 0-9-1, MQTT, STOMP, OpenWire e JMS**.
 
-A tabela oficial da doc do SQS mostra por que ele é diferente: é o único dos três que suporta **síncrono**, **filas**, **pub/sub** **e** é um **broker**. A frase da doc do SQS sobre o SQS, por contraste: *"Amazon SQS... processes messages through a single subscriber typically."*
+A tabela oficial da doc do SQS mostra por que ele é diferente: é o único dos três que suporta **síncrono**, **filas**, **pub/sub** **e** é um **broker**. A frase da doc do SQS sobre o SQS, por contraste: *"Amazon SQS... processes messages through a single subscriber typically."* (o Amazon SQS... normalmente processa mensagens por meio de um único assinante)
 
 Características operacionais:
 - **Single-instance** (dev) ou **active/standby** em duas AZs (produção)

@@ -50,7 +50,7 @@ Formas de criar:
 
 ## 4. Glue × EMR — a decisão
 
-A doc do EMR dá o critério: use EMR *"if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"* (se você usa código próprio para processar e analisar conjuntos de dados extremamente grandes com frameworks recentes de big data, como Spark, Hadoop, Presto ou HBase), e porque *"Amazon EMR gives you full control over the configuration of your clusters and the software installed on them"*.
+A doc do EMR dá o critério: use EMR *"if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase"* (se você usa código próprio para processar e analisar conjuntos de dados extremamente grandes com frameworks recentes de big data, como Spark, Hadoop, Presto ou HBase), e porque *"Amazon EMR gives you full control over the configuration of your clusters and the software installed on them"* (o Amazon EMR dá a você controle total sobre a configuração dos clusters e sobre o software instalado neles).
 
 | Pergunta | Resposta |
 |---|---|

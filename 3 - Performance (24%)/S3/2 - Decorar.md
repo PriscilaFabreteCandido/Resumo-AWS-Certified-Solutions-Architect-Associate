@@ -105,7 +105,7 @@ Ou seja: quanto mais frio o tier interno, **menos destinos** restam. O waterfall
 O exemplo da própria doc: Glacier IR (mínimo **90 dias**) no dia 4 → Deep Archive só a partir do dia **94**.
 *"You can specify two rules to accomplish this, but you pay the minimum duration storage charges."* (você pode usar duas regras para conseguir isso, mas paga as cobranças de duração mínima de armazenamento)
 
-**2. Objeto menor que 128 KB não transiciona por padrão.** *"Amazon S3 applies a default behavior to S3 Lifecycle configurations that prevents objects smaller than 128 KB from being transitioned to any storage class."* O motivo é econômico: *"you are charged a transition request for each object"*.
+**2. Objeto menor que 128 KB não transiciona por padrão.** *"Amazon S3 applies a default behavior to S3 Lifecycle configurations that prevents objects smaller than 128 KB from being transitioned to any storage class."* (o Amazon S3 aplica às configurações de lifecycle um comportamento padrão que impede objetos menores que 128 KB de serem transicionados para qualquer classe de armazenamento) O motivo é econômico: *"you are charged a transition request for each object"* (você é cobrado por uma requisição de transição para cada objeto).
 Para forçar: filtro `ObjectSizeGreaterThan` / `ObjectSizeLessThan`, ou o header `x-amz-transition-default-minimum-object-size`.
 ⚠️ Antes de **setembro de 2024** o padrão permitia objetos < 128 KB irem para **Glacier FR e Deep Archive**. Configurações antigas mantêm o comportamento velho até serem modificadas.
 

@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## OLAP, não OLTP
 
-> *"Although it provides the same functionality as a typical RDBMS, including online transaction processing (OLTP) functions such as inserting and deleting data, Amazon Redshift is optimized for high-performance analysis and reporting of very large datasets."*
+> *"Although it provides the same functionality as a typical RDBMS, including online transaction processing (OLTP) functions such as inserting and deleting data, Amazon Redshift is optimized for high-performance analysis and reporting of very large datasets."* (embora ofereça a mesma funcionalidade de um banco relacional comum, incluindo funções de processamento transacional (OLTP) como inserir e apagar dados, o Amazon Redshift é otimizado para análise e relatórios de alta performance sobre conjuntos de dados muito grandes)
 
 Tradução para a prova: o Redshift **consegue** fazer INSERT e DELETE, mas é **otimizado para analítico**. Se o enunciado descreve transação, é **RDS/Aurora/DynamoDB**.
 

@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## O que é, em palavras simples
 
-Um security group é uma lista de "quem pode falar comigo e em qual porta". A doc oficial: *"A security group controls the traffic that is allowed to reach and leave the resources that it is associated with."* Ele *"acts as a virtual firewall"*.
+Um security group é uma lista de "quem pode falar comigo e em qual porta". A doc oficial: *"A security group controls the traffic that is allowed to reach and leave the resources that it is associated with."* (um security group controla o tráfego que pode chegar e sair dos recursos aos quais está associado) Ele *"acts as a virtual firewall"*.
 
 Duas propriedades definem tudo:
 

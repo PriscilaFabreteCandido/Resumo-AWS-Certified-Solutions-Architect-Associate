@@ -14,7 +14,7 @@ Uso típico de prova: *"o auditor pediu evidência de que o provedor de nuvem é
 
 O que o Artifact **não** faz: dizer se **o seu** ambiente está conforme. Isso é **Config** (recursos), **Security Hub** (postura) e **Audit Manager** (evidência).
 
-Esse par aparece em **Task 1.3** como skill: *"Aligning AWS technologies to meet compliance requirements"*.
+Esse par aparece em **Task 1.3** como skill: *"Aligning AWS technologies to meet compliance requirements"* (alinhar as tecnologias da AWS para atender a requisitos de conformidade).
 
 ## 2. Trusted Advisor — recomendação, não ação
 

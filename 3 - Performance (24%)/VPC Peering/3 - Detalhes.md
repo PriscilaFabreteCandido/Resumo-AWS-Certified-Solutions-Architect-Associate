@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. Por que ele é tão barato
 
-> *"AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it is neither a gateway nor a VPN connection, and does not rely on a separate piece of physical hardware."*
+> *"AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it is neither a gateway nor a VPN connection, and does not rely on a separate piece of physical hardware."* (a AWS usa a infraestrutura existente da VPC para criar uma conexão de peering; ela não é um gateway nem uma conexão VPN, e não depende de nenhum hardware físico separado)
 
 Não existe appliance no caminho. Consequências:
 

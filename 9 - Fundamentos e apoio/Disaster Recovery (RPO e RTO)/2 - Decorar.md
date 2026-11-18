@@ -22,7 +22,7 @@ atualizado: 2026-11-08
 | *"RTO de 24 horas"*, *"menor custo possível"* | **Backup and restore** |
 | *"RTO de 10 a 30 minutos"*, *"não queremos pagar servidores ociosos"* | **Pilot light** |
 | *"RTO de minutos"*, *"pode servir tráfego degradado"* | **Warm standby** |
-| *"zero downtime"*, *"RPO e RTO próximos de zero"*, *"usuários em duas Regiões"* | **Multi-site active/active** |
+| *"zero downtime"* (indisponibilidade zero), *"RPO e RTO próximos de zero"*, *"usuários em duas Regiões"* | **Multi-site active/active** |
 | *"proteger contra corrupção/exclusão acidental de dados"* | **Backup** (+ **versionamento**, **Object Lock**) |
 | *"a mais econômica que atende o RTO de X"* | A **menos** robusta que ainda cabe em X |
 

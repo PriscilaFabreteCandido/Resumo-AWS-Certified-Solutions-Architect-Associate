@@ -28,7 +28,7 @@ E o modo de operação:
 | **Homogênea** (mesmo engine) | Oracle on-prem → RDS Oracle | **DMS** |
 | **Heterogênea** (engine diferente) | Oracle → Aurora PostgreSQL | **DMS + conversão de schema** |
 
-> *"AWS DMS supports fully heterogeneous data migrations between the supported engines."*
+> *"AWS DMS supports fully heterogeneous data migrations between the supported engines."* (o AWS DMS suporta migrações de dados totalmente heterogêneas entre os engines compatíveis)
 
 Para a conversão: *"DMS Schema Conversion"* no console, que *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino); ou *"you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC"*.
 

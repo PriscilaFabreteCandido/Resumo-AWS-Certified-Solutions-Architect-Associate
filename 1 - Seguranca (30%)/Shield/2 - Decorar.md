@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 
 ## Billing numa organização
 
-> *"AWS bills the Shield Advanced subscriptions against the payer account for the organization."*
+> *"AWS bills the Shield Advanced subscriptions against the payer account for the organization."* (a AWS cobra as assinaturas do Shield Advanced na conta pagadora da organização)
 
 ## Gatilhos no enunciado
 

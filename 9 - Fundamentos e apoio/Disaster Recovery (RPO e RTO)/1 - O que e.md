@@ -42,7 +42,7 @@ As definições da AWS:
 
 > **Warm standby** — *"The warm standby approach involves ensuring that there is a scaled down, but fully functional, copy of your production environment in another Region."*
 
-> **Multi-site active/active** — *"...you can run your workload simultaneously in multiple Regions... this is the most complex and costly approach to disaster recovery."*
+> **Multi-site active/active** — *"...you can run your workload simultaneously in multiple Regions... this is the most complex and costly approach to disaster recovery."* (...você pode executar sua carga de trabalho simultaneamente em várias Regiões... essa é a abordagem mais complexa e mais cara de recuperação de desastre)
 
 ## A regra de ouro da prova
 

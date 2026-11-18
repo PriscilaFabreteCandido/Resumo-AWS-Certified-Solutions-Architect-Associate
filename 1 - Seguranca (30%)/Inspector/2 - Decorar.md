@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"Amazon Inspector is a vulnerability management service that automatically discovers workloads and continually scans them for software vulnerabilities and unintended network exposure."*
+> *"Amazon Inspector is a vulnerability management service that automatically discovers workloads and continually scans them for software vulnerabilities and unintended network exposure."* (o Amazon Inspector é um serviço de gestão de vulnerabilidades que descobre cargas de trabalho automaticamente e as examina continuamente em busca de vulnerabilidades de software e exposição de rede não intencional)
 
 ## O que ele varre
 

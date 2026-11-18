@@ -22,7 +22,7 @@ A doc resume o posicionamento: *"optimized for high-performance analysis and rep
 
 ## 3. Spectrum — alcançar o data lake
 
-> *"you can efficiently query and retrieve structured and semi-structured data from files in Amazon S3 without having to load the data into Amazon Redshift tables."*
+> *"you can efficiently query and retrieve structured and semi-structured data from files in Amazon S3 without having to load the data into Amazon Redshift tables."* (você consulta e recupera com eficiência dados estruturados e semiestruturados de arquivos no Amazon S3, sem precisar carregá-los em tabelas do Amazon Redshift)
 
 O desenho típico: dados **quentes** carregados em tabelas do Redshift; dados **históricos** ficam no S3 e são consultados por **tabelas externas** via Spectrum. A query pode fazer **join** entre as duas.
 

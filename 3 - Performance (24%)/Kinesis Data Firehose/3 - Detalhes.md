@@ -16,7 +16,7 @@ Isso é a diferença essencial com o **Kinesis Data Streams** (put-to-get *"typi
 
 Para baixar a latência, existe o **zero buffering**: *"Firehose will not buffer data and will deliver data within a few seconds"*. Mas há duas ressalvas documentadas:
 - *"only available for the application destinations and is not available for Amazon S3 backup destination"*
-- Com intervalo menor que 60 s no S3, usa **multipart upload** e *"you will see some increase in S3 PUT API costs"*
+- Com intervalo menor que 60 s no S3, usa **multipart upload** e *"you will see some increase in S3 PUT API costs"* (você verá algum aumento nos custos de requisições PUT do S3)
 
 ## 2. Transformação — o que o Firehose faz por você
 

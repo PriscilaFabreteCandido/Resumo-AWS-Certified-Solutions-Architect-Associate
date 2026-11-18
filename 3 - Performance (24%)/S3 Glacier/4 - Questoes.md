@@ -33,7 +33,7 @@ atualizado: 2026-11-08
 > **C)** Deep Archive
 > **D)** Standard-IA
 >
-> **Por que B**: *"Data in this storage class is available for real-time access"* — `GET` direto, sem restore.
+> **Por que B**: *"Data in this storage class is available for real-time access"* (os dados nessa classe de armazenamento ficam disponíveis para acesso em tempo real) — `GET` direto, sem restore.
 > **A errada**: Expedited leva **1-5 minutos**, não milissegundos.
 > **D errada**: funciona, mas custa mais para dado acessado ~1x por trimestre.
 

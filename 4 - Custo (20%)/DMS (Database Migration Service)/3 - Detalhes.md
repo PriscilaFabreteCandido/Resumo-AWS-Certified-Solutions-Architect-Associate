@@ -27,7 +27,7 @@ A janela de indisponibilidade cai de horas para **minutos**.
 
 **Homogênea** — mesmo engine (Oracle → RDS Oracle, MySQL → Aurora MySQL). O schema é compatível; o DMS sozinho resolve.
 
-**Heterogênea** — engines diferentes (Oracle → Aurora PostgreSQL, SQL Server → MySQL). A doc confirma: *"AWS DMS supports fully heterogeneous data migrations between the supported engines"*. Mas os **dados** são só metade do problema: tipos de coluna, procedures, triggers, funções, packages e sintaxe precisam ser **convertidos**.
+**Heterogênea** — engines diferentes (Oracle → Aurora PostgreSQL, SQL Server → MySQL). A doc confirma: *"AWS DMS supports fully heterogeneous data migrations between the supported engines"* (o AWS DMS suporta migrações de dados totalmente heterogêneas entre os engines compatíveis). Mas os **dados** são só metade do problema: tipos de coluna, procedures, triggers, funções, packages e sintaxe precisam ser **convertidos**.
 
 Para isso existem duas ferramentas:
 - **DMS Schema Conversion** (no console): *"automatically assesses and converts your source schemas to a new target engine"* (avalia e converte automaticamente os schemas de origem para um novo engine de destino)
@@ -41,7 +41,7 @@ Para isso existem duas ferramentas:
 
 Esse é o ângulo do domínio 4. Sair de **Oracle** ou **SQL Server** para **Aurora PostgreSQL/MySQL** elimina a **licença** comercial — e isso costuma superar qualquer otimização de instância.
 
-O guia pede, em **Task 4.3**: *"Migrating database schemas and data to different locations and/or different database engines"* (migrar schemas e dados de banco para outros locais e/ou outros engines), e cita no Knowledge of *"Database engines with appropriate use cases (for example, heterogeneous migrations, homogeneous migrations)"*.
+O guia pede, em **Task 4.3**: *"Migrating database schemas and data to different locations and/or different database engines"* (migrar schemas e dados de banco para outros locais e/ou outros engines), e cita no Knowledge of *"Database engines with appropriate use cases (for example, heterogeneous migrations, homogeneous migrations)"* (engines de banco de dados e seus casos de uso apropriados (por exemplo, migrações heterogêneas e homogêneas)).
 
 Por isso "trocar o engine" aparece tanto em questões de **custo de banco**, não só de migração.
 

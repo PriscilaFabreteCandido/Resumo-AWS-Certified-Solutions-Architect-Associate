@@ -72,7 +72,7 @@ Regra prática:
 
 ## 7. Alternativa que elimina o secret
 
-Em vez de rotacionar a senha, você pode **não ter senha**: **IAM database authentication** (RDS/Aurora) gera um token de 15 minutos a partir das credenciais IAM. O guia cita *"Application configuration and credentials security"* em Task 1.2, e essa é a opção mais forte quando a aplicação pode ser alterada.
+Em vez de rotacionar a senha, você pode **não ter senha**: **IAM database authentication** (RDS/Aurora) gera um token de 15 minutos a partir das credenciais IAM. O guia cita *"Application configuration and credentials security"* (segurança da configuração e das credenciais da aplicação) em Task 1.2, e essa é a opção mais forte quando a aplicação pode ser alterada.
 
 O Secrets Manager continua sendo a resposta quando a aplicação **não** pode mudar o método de autenticação.
 

@@ -85,7 +85,7 @@ Casos que a prova explora:
 |---|---|
 | *"se uma AZ falhar"* | **Multi-AZ** |
 | *"se a Região ficar indisponível"* | **Multi-Region** |
-| *"disaster recovery"* com RPO/RTO baixos | **Multi-Region** |
+| *"disaster recovery"* (recuperação de desastre) com RPO/RTO baixos | **Multi-Region** |
 | *"usuários no mundo inteiro, menor latência de leitura"* | **CloudFront**, **réplica/global table** |
 | *"dados não podem sair do país"* | **Uma Região** específica (ou Outposts) |
 | *"alta disponibilidade"* sem citar Região | **Multi-AZ** (mais barato, atende) |

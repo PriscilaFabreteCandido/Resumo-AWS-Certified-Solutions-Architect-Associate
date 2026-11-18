@@ -22,13 +22,13 @@ Casos citados: *"business applications, home directories, web serving, content m
 
 ## 2. FSx for Lustre — e a integração com S3
 
-Lustre é o file system paralelo de HPC. A doc posiciona para *"workloads where speed matters, such as machine learning, high performance computing (HPC), video processing, and financial modeling"*, com latência sub-milissegundo.
+Lustre é o file system paralelo de HPC. A doc posiciona para *"workloads where speed matters, such as machine learning, high performance computing (HPC), video processing, and financial modeling"* (cargas de trabalho em que a velocidade importa, como machine learning, computação de alto desempenho (HPC), processamento de vídeo e modelagem financeira), com latência sub-milissegundo.
 
 **A integração com S3 é o diferencial de prova:**
 
 > *"When linked to an Amazon S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files."*
 
-> *"Amazon FSx imports listings of all existing files in your S3 bucket at file system creation. Amazon FSx can also import listings of files added to the data repository after the file system is created."*
+> *"Amazon FSx imports listings of all existing files in your S3 bucket at file system creation. Amazon FSx can also import listings of files added to the data repository after the file system is created."* (o Amazon FSx importa a listagem de todos os arquivos já existentes no seu bucket S3 na criação do sistema de arquivos, e também pode importar a listagem de arquivos adicionados ao repositório depois disso)
 
 > *"The file system also makes it possible for you to write file system data back to S3."*
 

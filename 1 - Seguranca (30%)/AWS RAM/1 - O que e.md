@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"AWS Resource Access Manager (AWS RAM) helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs), and with AWS Identity and Access Management (IAM) roles and users for supported resource types."*
+> *"AWS Resource Access Manager (AWS RAM) helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs), and with AWS Identity and Access Management (IAM) roles and users for supported resource types."* (o AWS Resource Access Manager (AWS RAM) ajuda a compartilhar recursos com segurança entre contas AWS, dentro da sua organização ou de unidades organizacionais (OUs), e com roles e usuários do IAM, para os tipos de recurso compatíveis)
 
 ## A distinção que define o serviço
 

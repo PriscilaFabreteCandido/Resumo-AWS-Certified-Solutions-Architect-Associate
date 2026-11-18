@@ -20,7 +20,7 @@ As três alavancas, com os números do exemplo oficial (3 TB, US$ 5/TB):
 | **GZIP 3:1** | 1 TB | **US$ 5** | 67% |
 | **Parquet 3:1 + 1 de 4 colunas** | 0,25 TB | **US$ 1,25** | **92%** |
 
-E a quarta, multiplicativa: **particionamento**. Com partição por data e `WHERE dt='2026-11-01'`, *"Athena scans the data only from that partition"* — o que pode reduzir outra ordem de magnitude.
+E a quarta, multiplicativa: **particionamento**. Com partição por data e `WHERE dt='2026-11-01'`, *"Athena scans the data only from that partition"* (o Athena varre apenas os dados daquela partição) — o que pode reduzir outra ordem de magnitude.
 
 É por isso que o guia pede, em **Task 3.5**: *"Transforming data between formats (for example, .csv to .parquet)"* (transformar dados entre formatos (por exemplo, de .csv para .parquet)).
 
@@ -38,7 +38,7 @@ Quando há **muitas** partições, descobri-las (via `MSCK REPAIR TABLE` ou craw
 
 ## 3. O catálogo compartilhado
 
-> *"Athena integrates with the AWS Glue Data Catalog."*
+> *"Athena integrates with the AWS Glue Data Catalog."* (o Athena se integra ao AWS Glue Data Catalog)
 
 Esse catálogo é o mesmo usado por **Redshift Spectrum**, **EMR** e **Glue** — então **um** metadado serve o data lake inteiro. Os **crawlers** do Glue descobrem o schema e as partições automaticamente.
 

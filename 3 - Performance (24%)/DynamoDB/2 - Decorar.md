@@ -72,7 +72,7 @@ Atributos projetados: **100** no total para todos os índices (projeção INCLUD
 | **Streams** | registros vivem **24 horas**; 2 leitores simultâneos por shard |
 | **PITR** | **1 a 35 dias**; restaura **sempre em tabela nova**; `LatestRestorableDateTime` ≈ **5 min** atrás |
 | Tabela deletada | backup de sistema por **35 dias**, sem custo |
-| **TTL** | atributo **Number** em epoch de **segundos**; apaga *"within a few days"*; 1ª exclusão **não consome WCU** |
+| **TTL** | atributo **Number** em epoch de **segundos**; apaga *"within a few days"* (dentro de poucos dias); 1ª exclusão **não consome WCU** |
 | **Global Tables** | **multi-ativo**. **MREC** (eventual, padrão) ou **MRSC** (forte). **Last-writer-wins**. Modo **não muda** depois |
 | **DAX** | cache em memória, **na VPC** |
 

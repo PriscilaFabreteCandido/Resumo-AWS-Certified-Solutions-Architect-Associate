@@ -27,7 +27,7 @@ atualizado: 2026-11-08
 > **C)** NACL não bloqueia por IP de origem
 > **D)** Falta a regra de outbound
 >
-> **Por que B**: *"As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* O DENY precisa ser, por exemplo, a regra **50**.
+> **Por que B**: *"As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la) O DENY precisa ser, por exemplo, a regra **50**.
 > **C errada**: NACL bloqueia por IP de origem — é justamente o que SG não faz.
 
 > [!question]- Q3. Um time criou uma NACL nova e a associou à subnet de produção. Todo o tráfego parou. Por quê?

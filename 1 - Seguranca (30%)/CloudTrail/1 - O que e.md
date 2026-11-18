@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail."*
+> *"AWS CloudTrail is an AWS service that helps you enable operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail."* (o AWS CloudTrail é um serviço que ajuda a habilitar auditoria operacional e de risco, governança e conformidade da sua conta AWS; ações tomadas por um usuário, uma role ou um serviço da AWS são registradas como eventos no CloudTrail)
 
 ## A pergunta que ele responde
 

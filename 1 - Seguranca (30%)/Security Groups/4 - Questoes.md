@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 > **D)** Security group com `0.0.0.0/0` exceto aquele IP
 >
 > **Por que B**: SG **não tem deny**. A NACL tem, e avalia *"in ascending order until a match for the traffic is found"* — por isso o deny precisa ter número **menor**.
-> **A errada**: *"Allow rules only"*.
+> **A errada**: *"Allow rules only"* (somente regras de allow).
 > **C errada**: não há o que remover; o IP nunca foi listado individualmente.
 > **D errada**: SG não permite exceção — não existe "exceto".
 > ⚠️ Se o ataque for na camada 7 (SQL injection, flood HTTP), a resposta vira **AWS WAF**.

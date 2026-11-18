@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 > *"To meet lower latencies of real-time use cases, you can use zero buffering interval hint... Firehose will not buffer data and will deliver data within a few seconds."*
 
 ⚠️ Zero buffering *"is only available for the application destinations and is not available for Amazon S3 backup destination"*.
-⚠️ Para S3 com intervalo **menor que 60 s**, o Firehose usa **multipart upload** — *"you will see some increase in S3 PUT API costs"*.
+⚠️ Para S3 com intervalo **menor que 60 s**, o Firehose usa **multipart upload** — *"you will see some increase in S3 PUT API costs"* (você verá algum aumento nos custos de requisições PUT do S3).
 
 ## Outros números
 

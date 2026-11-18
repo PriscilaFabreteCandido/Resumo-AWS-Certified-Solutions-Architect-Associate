@@ -52,7 +52,7 @@ Esquecer o primeiro é o erro mais comum: o attachment existe, o TGW sabe rotear
 
 ## 4. Inter-Region e criptografia
 
-O peering entre TGWs de regiões diferentes usa a infraestrutura global da AWS, e: *"All network traffic between AWS data centers is automatically encrypted at the physical layer."*
+O peering entre TGWs de regiões diferentes usa a infraestrutura global da AWS, e: *"All network traffic between AWS data centers is automatically encrypted at the physical layer."* (todo o tráfego de rede entre data centers da AWS é criptografado automaticamente na camada física)
 
 Há também um controle opcional de **encryption control**, que **exige** criptografia em trânsito para as VPCs anexadas — útil para requisito de compliance.
 

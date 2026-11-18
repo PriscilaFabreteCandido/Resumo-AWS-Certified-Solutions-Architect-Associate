@@ -10,7 +10,7 @@ atualizado: 2026-11-08
 
 O pilar de Segurança resume o benefício:
 
-> *"Because AWS physically secures the infrastructure that supports our cloud services, as an AWS customer you can focus on using services to accomplish your goals."*
+> *"Because AWS physically secures the infrastructure that supports our cloud services, as an AWS customer you can focus on using services to accomplish your goals."* (como a AWS protege fisicamente a infraestrutura que sustenta nossos serviços de nuvem, você, como cliente, pode se concentrar em usar os serviços para atingir seus objetivos)
 
 Você não audita data center, não troca disco, não configura roteador de borda. Em troca, **tudo o que você configura é seu problema** — e a maioria dos incidentes de segurança em nuvem vem de configuração do cliente, não de falha do provedor.
 

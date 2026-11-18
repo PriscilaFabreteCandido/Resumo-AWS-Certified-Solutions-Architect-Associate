@@ -45,7 +45,7 @@ Gatilhos de prova:
 
 A documentação é explícita: *"We recommend Savings Plans over Reserved Instances."* (recomendamos Savings Plans em vez de Instâncias Reservadas)
 
-São **quatro** tipos: *"Compute Savings Plans, Database Savings Plans, EC2 Instance Savings Plans, and SageMaker AI Savings Plans."*
+São **quatro** tipos: *"Compute Savings Plans, Database Savings Plans, EC2 Instance Savings Plans, and SageMaker AI Savings Plans."* (Compute Savings Plans, Database Savings Plans, EC2 Instance Savings Plans e SageMaker AI Savings Plans)
 
 - **Compute** (até **66%**): aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região), e cobre **Fargate e Lambda**. É a escolha quando a arquitetura pode mudar.
 - **EC2 Instance** (até **72%**): compromisso com *"a specific instance family in a chosen AWS Region"* (uma família de instâncias específica, numa Região escolhida), flexível em tamanho, SO e tenancy dentro disso. Maior desconto, menor flexibilidade.
@@ -69,7 +69,7 @@ Não renovam automaticamente e **não podem ser canceladas**. A opção **No Upf
 
 A EC2 *"terminates, stops, or hibernates your Spot Instance when Amazon EC2 needs the capacity back"* (encerra, para ou hiberna sua instância Spot quando o Amazon EC2 precisa da capacidade de volta), com **aviso de dois minutos**: *"gives the instance a two-minute warning before it is interrupted."* Antes disso pode vir o **rebalance recommendation**: *"an instance rebalance recommendation signal to notify you that a Spot Instance is at an elevated risk of interruption."*
 
-A requisição é **one-time** ou **persistent** — *"Amazon EC2 automatically resubmits a persistent Spot Instance request after the Spot Instance associated with the request is interrupted."*
+A requisição é **one-time** ou **persistent** — *"Amazon EC2 automatically resubmits a persistent Spot Instance request after the Spot Instance associated with the request is interrupted."* (o Amazon EC2 reenvia automaticamente uma requisição Spot persistente depois que a instância associada a ela é interrompida)
 
 Casos de uso que a doc cita: *"data analysis, batch jobs, background processing, and optional tasks."* (análise de dados, jobs em lote, processamento em segundo plano e tarefas opcionais)
 

@@ -67,7 +67,7 @@ Um **origin group** tem *"two origins: a primary and a secondary"*. O failover d
 
 Timeouts: conexão **10 s** (1-10), **3** tentativas (1-3), resposta **30 s** (1-120). O delay típico é *"as long as 30 seconds (3 connection attempts of 10 seconds each)"* (até 30 segundos (3 tentativas de conexão de 10 segundos cada)).
 
-⚠️ E não é sticky: *"CloudFront routes all incoming requests to the primary origin, even when a previous request failed over."*
+⚠️ E não é sticky: *"CloudFront routes all incoming requests to the primary origin, even when a previous request failed over."* (o CloudFront roteia todas as requisições que chegam para a origem primária, mesmo quando uma requisição anterior sofreu failover)
 
 ## 6. Conteúdo restrito
 
@@ -75,7 +75,7 @@ Timeouts: conexão **10 s** (1-10), **3** tentativas (1-3), resposta **30 s** (1
 
 A recomendação é **trusted key groups** (em vez de trusted signers legados).
 
-**Geo restriction** é por **país**, com allow list ou block list, devolve **403**, e usa *"a third-party database"* com precisão declarada de **99,8%**. Se a localização é desconhecida, *"CloudFront serves the content"*.
+**Geo restriction** é por **país**, com allow list ou block list, devolve **403**, e usa *"a third-party database"* com precisão declarada de **99,8%**. Se a localização é desconhecida, *"CloudFront serves the content"* (o CloudFront serve o conteúdo).
 
 Para controle mais fino (cidade, CEP), a doc indica serviço de geolocalização de terceiro + **signed URLs**.
 

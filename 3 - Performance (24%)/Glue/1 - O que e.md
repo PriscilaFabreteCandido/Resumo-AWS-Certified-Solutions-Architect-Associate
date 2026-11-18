@@ -9,7 +9,7 @@ atualizado: 2026-11-08
 # AWS Glue — O que é
 
 > [!info] Em uma frase
-> *"AWS Glue is a serverless data integration service"* — faz **ETL** sem cluster, e mantém o **Data Catalog**, o metadado central do data lake.
+> *"AWS Glue is a serverless data integration service"* (o AWS Glue é um serviço serverless de integração de dados) — faz **ETL** sem cluster, e mantém o **Data Catalog**, o metadado central do data lake.
 
 ## As duas funções
 

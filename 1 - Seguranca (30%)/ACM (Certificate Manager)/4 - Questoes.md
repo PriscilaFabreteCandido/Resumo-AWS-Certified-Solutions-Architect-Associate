@@ -40,7 +40,7 @@ atualizado: 2026-11-08
 > **C)** SSE-KMS
 > **D)** CloudHSM
 >
-> **Por que B**: o guia separa as skills — em repouso é KMS, em trânsito é *"ACM using TLS"*.
+> **Por que B**: o guia separa as skills — em repouso é KMS, em trânsito é *"ACM using TLS"* (ACM, usando TLS).
 > **A, C e D erradas**: todas tratam de dado **em repouso** (ou de gestão de chave).
 
 > [!question]- Q5. O certificado importado no ALB vai expirar em 10 dias e ninguém foi avisado. Como evitar isso no futuro?

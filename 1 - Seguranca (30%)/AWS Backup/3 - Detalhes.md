@@ -55,7 +55,7 @@ Cria **frameworks** de controle ("todo recurso com tag `env=prod` deve ter backu
 | **Warm standby** | Complementa |
 | **Multi-site active/active** | Complementa |
 
-O whitepaper de DR lembra que, em qualquer estratégia, *"you should always deploy using infrastructure as code (IaC)"* — backup sem IaC deixa você com os dados e sem o ambiente.
+O whitepaper de DR lembra que, em qualquer estratégia, *"you should always deploy using infrastructure as code (IaC)"* (você deve sempre implantar usando infraestrutura como código (IaC)) — backup sem IaC deixa você com os dados e sem o ambiente.
 
 ## 7. O que o AWS Backup NÃO cobre
 

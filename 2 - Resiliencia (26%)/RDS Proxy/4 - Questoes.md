@@ -32,7 +32,7 @@ atualizado: 2026-11-08
 > **C)** Usar um endpoint adicional do proxy
 > **D)** Habilitar read-only no proxy
 >
-> **Por que B**: *"you can associate a proxy only with the writer DB instance, not a read replica."*
+> **Por que B**: *"you can associate a proxy only with the writer DB instance, not a read replica."* (você só pode associar um proxy à instância de escrita, não a uma réplica de leitura)
 
 > [!question]- Q4. Como eliminar a senha do banco da aplicação, mantendo rotação automática?
 > **A)** Hardcode com rotação manual

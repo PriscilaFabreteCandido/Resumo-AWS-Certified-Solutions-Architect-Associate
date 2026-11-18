@@ -19,7 +19,7 @@ A doc dá o critério:
 
 E o diferencial:
 
-> *"Amazon EMR gives you full control over the configuration of your clusters and the software installed on them."*
+> *"Amazon EMR gives you full control over the configuration of your clusters and the software installed on them."* (o Amazon EMR dá a você controle total sobre a configuração dos clusters e sobre o software instalado neles)
 
 | Enunciado | Resposta |
 |---|---|

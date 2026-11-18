@@ -26,7 +26,7 @@ atualizado: 2026-11-08
 
 ## Regional edge caches
 
-> *"CloudFront also has regional edge caches that bring more of your content closer to your viewers, even when the content is not popular enough to stay at a POP."*
+> *"CloudFront also has regional edge caches that bring more of your content closer to your viewers, even when the content is not popular enough to stay at a POP."* (o CloudFront também tem regional edge caches, que trazem mais conteúdo para perto dos seus visitantes, mesmo quando ele não é popular o bastante para permanecer num POP)
 
 Ficam **entre a origem e os POPs**, com cache maior. **Não** passam por eles:
 

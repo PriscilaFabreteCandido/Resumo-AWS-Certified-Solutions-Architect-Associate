@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Por que a prova se importa
 
-O whitepaper de DR é explícito: *"you should always deploy using infrastructure as code (IaC)"*. Sem IaC, a estratégia de **backup and restore** não cumpre o RTO — você tem os dados e não tem o ambiente.
+O whitepaper de DR é explícito: *"you should always deploy using infrastructure as code (IaC)"* (você deve sempre implantar usando infraestrutura como código (IaC)). Sem IaC, a estratégia de **backup and restore** não cumpre o RTO — você tem os dados e não tem o ambiente.
 
 E o pilar de **Operational Excellence** do Well-Architected se apoia nisso: ambiente reproduzível, versionado e revisável.
 

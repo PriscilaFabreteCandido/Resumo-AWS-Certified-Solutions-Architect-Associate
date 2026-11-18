@@ -17,7 +17,7 @@ atualizado: 2026-11-08
 |---|---|
 | **Task definition** | *"The blueprint for the application"* — JSON com imagem, portas, volumes, parâmetros |
 | **Cluster** | *"The infrastructure your application runs on"* |
-| **Task** | *"An application such as a batch job that performs work, and then stops"* |
+| **Task** | *"An application such as a batch job that performs work, and then stops"* (uma aplicação como um job em lote, que faz o trabalho e depois para) |
 | **Service** | *"A long running stateless application"* (uma aplicação sem estado, de execução longa) — o scheduler mantém o *desired count*, substituindo tasks que falham |
 | **Capacity provider** | Liga o service à capacidade (Fargate, Fargate Spot, ASG de EC2) |
 
@@ -25,7 +25,7 @@ atualizado: 2026-11-08
 
 | Opção | Quem gerencia as instâncias |
 |---|---|
-| **AWS Fargate** | **A AWS** — *"you don't need to manage servers, handle capacity planning, or isolate container workloads for security"* |
+| **AWS Fargate** | **A AWS** — *"you don't need to manage servers, handle capacity planning, or isolate container workloads for security"* (você não precisa gerenciar servidores, planejar capacidade nem isolar cargas de contêiner por segurança) |
 | **ECS Managed Instances** | A AWS gerencia provisionamento, patch e escala das EC2 |
 | **Amazon EC2 instances** | **Você** — *"You choose the instance type, the number of instances, and manage the capacity"* (você escolhe o tipo de instância, a quantidade, e gerencia a capacidade) |
 | **ECS Anywhere** | Seus servidores/VMs **on-premises** |

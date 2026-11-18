@@ -47,7 +47,7 @@ Concessões:
    LF-Tag (classificacao=confidencial)                 → role "dpo"
 ```
 
-A doc chama isso de *"Attribute-based access control"*. Tabela nova marcada com as tags certas **já nasce** com as permissões corretas.
+A doc chama isso de *"Attribute-based access control"* (controle de acesso baseado em atributos). Tabela nova marcada com as tags certas **já nasce** com as permissões corretas.
 
 ## 4. A pilha completa, e quem faz o quê
 

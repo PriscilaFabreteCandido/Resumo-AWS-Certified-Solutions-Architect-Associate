@@ -119,7 +119,7 @@ A página oficial de boas práticas do root hoje tem **nove** recomendações, n
 >
 > **2. A frase "não criptografe as chaves nem as salve no S3" não existe mais** nas páginas atuais de boas práticas do IAM nem do root. Ela vem de material antigo. A ideia por trás continua certa (credencial de longo prazo não se guarda em bucket), mas não cite como texto oficial.
 >
-> **3. MFA no root deixou de ser recomendação e passou a ser exigência.** A doc diz: *"All AWS account types (standalone, management, and member accounts) require MFA to be configured for their root user. Users must register MFA within 14 days of their first sign-in attempt to access the AWS Management Console if MFA is not already enabled."*
+> **3. MFA no root deixou de ser recomendação e passou a ser exigência.** A doc diz: *"All AWS account types (standalone, management, and member accounts) require MFA to be configured for their root user. Users must register MFA within 14 days of their first sign-in attempt to access the AWS Management Console if MFA is not already enabled."* (todos os tipos de conta AWS (avulsa, de gerenciamento e membro) exigem MFA configurado para o usuário raiz; se o MFA ainda não estiver habilitado, o usuário precisa registrá-lo em até 14 dias da primeira tentativa de login no console)
 >
 > Na prova, se a alternativa disser *"rotacionar regularmente a chave de acesso do root"*, ela provavelmente é tratada como aceitável (a prova acompanha a doc com atraso) — mas **"não criar chave de acesso para o root"** é sempre a resposta mais correta, nas duas versões.
 
@@ -171,7 +171,7 @@ A página de boas práticas do IAM tem esta ordem — e os **dois primeiros** it
 | 3 | *"Require multi-factor authentication (MFA)"* |
 | 4 | *"Update access keys when needed for use cases that require long-term credentials"* |
 | 5 | *"Follow best practices to protect your root user credentials"* |
-| 6 | *"Apply least-privilege permissions"* |
+| 6 | *"Apply least-privilege permissions"* (aplique permissões de menor privilégio) |
 | 7 | *"Get started with AWS managed policies and move toward least-privilege permissions"* |
 | 8 | *"Use IAM Access Analyzer to generate least-privilege policies based on access activity"* |
 | 9 | *"Regularly review and remove unused users, roles, permissions, policies, and credentials"* |

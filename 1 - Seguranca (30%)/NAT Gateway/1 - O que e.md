@@ -38,7 +38,7 @@ O NAT gateway vive numa subnet **pública** (com rota para o IGW) e tem um **Ela
 | **IPv4** | **NAT gateway** |
 | **IPv6** | **Egress-only internet gateway** |
 
-A doc: *"A NAT gateway is for use with IPv4 or IPv6 traffic (using DNS64 and NAT64). Another option for enabling outbound-only internet communication over IPv6 is using an egress-only internet gateway."*
+A doc: *"A NAT gateway is for use with IPv4 or IPv6 traffic (using DNS64 and NAT64). Another option for enabling outbound-only internet communication over IPv6 is using an egress-only internet gateway."* (um NAT gateway serve para tráfego IPv4 ou IPv6 (usando DNS64 e NAT64); outra opção para permitir comunicação de internet só de saída em IPv6 é um egress-only internet gateway)
 
 ## Links
 

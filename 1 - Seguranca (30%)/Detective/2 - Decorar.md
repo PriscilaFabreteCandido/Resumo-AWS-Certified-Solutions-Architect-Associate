@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"Amazon Detective helps you analyze, investigate, and quickly identify the root cause of security findings or suspicious activities."*
+> *"Amazon Detective helps you analyze, investigate, and quickly identify the root cause of security findings or suspicious activities."* (o Amazon Detective ajuda a analisar, investigar e identificar rapidamente a causa raiz de achados de segurança ou atividades suspeitas)
 
 ## Fonte de dados e retenção
 

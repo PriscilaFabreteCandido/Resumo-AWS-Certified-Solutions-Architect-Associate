@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 > **C)** Instance endpoint de cada uma, com balanceamento no app
 > **D)** Cluster endpoint com hint de leitura
 >
-> **Por que B**: *"Connect to different subsets of DB instances... useful when you have different instance capacities and configurations."*
+> **Por que B**: *"Connect to different subsets of DB instances... useful when you have different instance capacities and configurations."* (conectar a subconjuntos diferentes de instâncias... útil quando você tem capacidades e configurações diferentes)
 > **A errada**: balanceia entre **todas** as réplicas.
 > **C errada**: instance endpoint **não** redireciona no failover.
 > **D errada**: cluster endpoint é o **writer**.
@@ -43,7 +43,7 @@ atualizado: 2026-11-08
 > **C)** Promover uma read replica
 > **D)** Restaurar um snapshot na outra região
 >
-> **Por que B**: *"Because this feature synchronizes secondary DB clusters with the primary before making any other changes, RPO is 0 (no data loss)."*
+> **Por que B**: *"Because this feature synchronizes secondary DB clusters with the primary before making any other changes, RPO is 0 (no data loss)."* (como esse recurso sincroniza os clusters secundários com o primário antes de qualquer outra mudança, o RPO é 0 (sem perda de dados))
 > **A errada**: é para **desastre**, e o próprio nome do parâmetro admite perda.
 
 > [!question]- Q5. Um cluster Aurora de produção tem I/O representando 40% da fatura.

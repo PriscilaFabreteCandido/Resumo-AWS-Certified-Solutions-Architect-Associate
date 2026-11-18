@@ -65,7 +65,7 @@ atualizado: 2026-11-08
 
 
 > [!tip] Duas pistas escondidas nessa lista
-> **"AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"** — serviços de IA caem aqui, no domínio de **resiliência**, como "use o serviço gerenciado em vez de construir". Saiba a frase de uma linha de Comprehend (NLP, sentimento, entidades), Polly (texto → voz), Transcribe (voz → texto), Translate, Rekognition (imagem/vídeo), Textract (documento → texto estruturado), Lex (chatbot).
+> **"AWS managed services with appropriate use cases (for example, Amazon Comprehend, Amazon Polly)"** (serviços gerenciados da AWS e seus casos de uso apropriados (por exemplo, Amazon Comprehend, Amazon Polly)) — serviços de IA caem aqui, no domínio de **resiliência**, como "use o serviço gerenciado em vez de construir". Saiba a frase de uma linha de Comprehend (NLP, sentimento, entidades), Polly (texto → voz), Transcribe (voz → texto), Translate, Rekognition (imagem/vídeo), Textract (documento → texto estruturado), Lex (chatbot).
 > **"Service quotas and throttling"** — a prova pergunta sobre **aumentar quota antes do evento** e sobre configurar quota no ambiente de **standby** (o guia diz literalmente: *"how to configure the service quotas for a workload in a standby environment"*). Isso é pegadinha de DR: o standby precisa ter quota suficiente **antes** do desastre.
 
 ---
@@ -90,7 +90,7 @@ atualizado: 2026-11-08
 > [!question]- Qual a diferença entre "highly available" e "fault tolerant" para a prova?
 > **HA**: o sistema **volta rápido** depois de uma falha (failover de Multi-AZ, substituição de instância pelo ASG). Existe uma janela de indisponibilidade.
 > **Fault tolerant**: o sistema **continua servindo** durante a falha, sem janela. Exige redundância **ativa** (N+1 em cada AZ, ativo-ativo entre regiões).
-> Quando o enunciado diz *"no interruption"* ou *"zero downtime"*, HA não basta.
+> Quando o enunciado diz *"no interruption"* ou *"zero downtime"* (indisponibilidade zero), HA não basta.
 
 > [!question]- Serviços regionais × zonais: quais são zonais?
 > **Zonais** (vivem numa AZ): subnet, instância EC2, volume EBS, NAT gateway zonal, RDS DB instance (individual), nó de ElastiCache, FSx Single-AZ, EFS One Zone.

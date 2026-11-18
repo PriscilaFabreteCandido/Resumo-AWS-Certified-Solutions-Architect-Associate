@@ -8,7 +8,7 @@ atualizado: 2026-11-08
 
 ## 1. As três classes, e por que existem três
 
-**Glacier Instant Retrieval** é o "arquivo quente": custo de arquivamento, mas acesso em **milissegundos**, sem restore. A doc: *"Data in this storage class is available for real-time access."*
+**Glacier Instant Retrieval** é o "arquivo quente": custo de arquivamento, mas acesso em **milissegundos**, sem restore. A doc: *"Data in this storage class is available for real-time access."* (os dados nessa classe de armazenamento ficam disponíveis para acesso em tempo real)
 Caso de uso: imagens médicas, mídia, backups que podem ser requisitados a qualquer momento mas raramente são.
 
 **Glacier Flexible Retrieval** troca latência por preço: precisa de `RestoreObject` e entrega em **minutos a horas**. Mas oferece **Expedited (1-5 min)** quando você precisa de pressa, e **Bulk grátis** quando não.

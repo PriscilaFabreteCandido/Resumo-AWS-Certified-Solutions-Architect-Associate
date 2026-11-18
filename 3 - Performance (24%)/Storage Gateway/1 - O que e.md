@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Os quatro tipos (texto oficial)
 
-> *"AWS Storage Gateway offers file-based (S3 File Gateway and FSx File Gateway), volume-based (Volume Gateway), and tape-based (Tape Gateway) storage solutions."*
+> *"AWS Storage Gateway offers file-based (S3 File Gateway and FSx File Gateway), volume-based (Volume Gateway), and tape-based (Tape Gateway) storage solutions."* (o AWS Storage Gateway oferece soluções baseadas em arquivo (S3 File Gateway e FSx File Gateway), em volume (Volume Gateway) e em fita (Tape Gateway))
 
 | Gateway | Protocolo | Dado vai para |
 |---|---|---|

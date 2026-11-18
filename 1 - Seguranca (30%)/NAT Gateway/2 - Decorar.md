@@ -34,7 +34,7 @@ Recomendação oficial: *"We recommend that you use NAT gateways because they pr
 
 ## Um NAT ou um por AZ?
 
-O guia pede literalmente: *"Configuring appropriate NAT gateway types for a network (for example, a single shared NAT gateway compared with NAT gateways for each Availability Zone)"*.
+O guia pede literalmente: *"Configuring appropriate NAT gateway types for a network (for example, a single shared NAT gateway compared with NAT gateways for each Availability Zone)"* (configurar os tipos apropriados de NAT gateway para uma rede (por exemplo, um único NAT gateway compartilhado em comparação com um por Zona de Disponibilidade)).
 
 | Escolha | Prós | Contras |
 |---|---|---|

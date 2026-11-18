@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"Athena SQL and Apache Spark on Amazon Athena are serverless, so there is no infrastructure to set up or manage, and you pay only for the queries you run."*
+> *"Athena SQL and Apache Spark on Amazon Athena are serverless, so there is no infrastructure to set up or manage, and you pay only for the queries you run."* (o Athena SQL e o Apache Spark no Amazon Athena são serverless: não há infraestrutura para configurar ou gerenciar, e você paga apenas pelas consultas que executa)
 
 E o escopo: *"analyze data directly in Amazon S3"* (analisar dados diretamente no Amazon S3) com *"standard SQL"*.
 
@@ -31,7 +31,7 @@ Athena cobra por **TB escaneado** (o exemplo oficial usa **US$ 5/TB**). As três
 
 ## Formatos suportados
 
-> *"CSV, JSON, or columnar data formats such as Apache Parquet and Apache ORC"*
+> *"CSV, JSON, or columnar data formats such as Apache Parquet and Apache ORC"* (CSV, JSON ou formatos colunares como Apache Parquet e Apache ORC)
 
 ## Athena × as alternativas
 

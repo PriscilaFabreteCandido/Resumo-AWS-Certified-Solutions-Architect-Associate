@@ -35,7 +35,7 @@ Para ler: envia a data key criptografada para `Decrypt`, recebe a versão em tex
 
 **Customer managed key** — *"Exclusively controlled by the customer"*. Você define key policy, IAM, grants, rotação, localização regional e deleção. Tem tarifa mensal **mais** tarifa por uso. Rotação automática é **opcional**.
 
-**AWS managed key** — alias no formato `aws/{service-name}` (`aws/s3`, `aws/rds`, `aws/ebs`). *"Controlled by service; viewable by customer"*. *"AWS KMS manages rotation (annual)"* e a rotação é *"Required. Every year (approximately 365 days)"* — você **não** pode ligar nem desligar. **Sem tarifa mensal.** A doc nota que, desde 2021, novos serviços AWS não criam mais esse tipo (é legado).
+**AWS managed key** — alias no formato `aws/{service-name}` (`aws/s3`, `aws/rds`, `aws/ebs`). *"Controlled by service; viewable by customer"* (controlado pelo serviço; visível para o cliente). *"AWS KMS manages rotation (annual)"* (o AWS KMS gerencia a rotação (anual)) e a rotação é *"Required. Every year (approximately 365 days)"* — você **não** pode ligar nem desligar. **Sem tarifa mensal.** A doc nota que, desde 2021, novos serviços AWS não criam mais esse tipo (é legado).
 
 **AWS owned key** — *"Exclusively controlled and only viewable by the AWS service"*. *"Not viewable by the customer"* para fins de log. E o ponto decisivo: *"you cannot change their policies, you cannot audit activities on these keys, and you cannot delete them."* Sem custo.
 
@@ -52,7 +52,7 @@ Não suportam rotação automática (só manual): **assimétricas**, **HMAC** e 
 
 Dois pontos que a prova explora:
 
-**Rotação não toca nos dados.** *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."* (a rotação de chave não tem efeito sobre os dados que a chave do KMS protege: ela não rotaciona as data keys geradas por essa chave nem recriptografa nenhum dado protegido por ela) A KMS retém **todas** as versões do material: *"AWS KMS retains all key material for a KMS key with AWS_KMS origin, even if key rotation is disabled. AWS KMS deletes key material only when you delete the KMS key."*
+**Rotação não toca nos dados.** *"Key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key."* (a rotação de chave não tem efeito sobre os dados que a chave do KMS protege: ela não rotaciona as data keys geradas por essa chave nem recriptografa nenhum dado protegido por ela) A KMS retém **todas** as versões do material: *"AWS KMS retains all key material for a KMS key with AWS_KMS origin, even if key rotation is disabled. AWS KMS deletes key material only when you delete the KMS key."* (o AWS KMS mantém todo o material de chave de uma chave com origem AWS_KMS, mesmo que a rotação esteja desabilitada; ele só apaga o material quando você apaga a chave)
 
 **O decrypt escolhe a versão certa automaticamente.** *"When you use the rotated KMS key to decrypt ciphertext, AWS KMS uses the same version of the key material that was used to encrypt it."*
 

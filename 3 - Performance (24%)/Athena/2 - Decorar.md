@@ -32,7 +32,7 @@ Consultas **federadas** (fora do S3): *"rounded up to the nearest megabyte with 
 |---|---|
 | CSV, JSON, Parquet, ORC | **Parquet** e **ORC** (colunar) |
 
-A doc: *"Athena can read only the column that is relevant for the query being run."*
+A doc: *"Athena can read only the column that is relevant for the query being run."* (o Athena consegue ler apenas a coluna relevante para a consulta em execução)
 
 ## Integrações
 

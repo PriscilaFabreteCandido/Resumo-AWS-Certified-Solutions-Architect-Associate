@@ -23,7 +23,7 @@ atualizado: 2026-11-08
 |---|---|
 | **IPv6 no virtual private gateway** | *"IPv6 traffic is not supported for VPN connections on a virtual private gateway"* |
 | IPv6 externo no túnel | Só com **Transit Gateway** e Cloud WAN |
-| **Path MTU Discovery** | *"An Site-to-Site VPN connection does not support Path MTU Discovery"* |
+| **Path MTU Discovery** | *"An Site-to-Site VPN connection does not support Path MTU Discovery"* (uma conexão Site-to-Site VPN não oferece suporte a Path MTU Discovery) |
 | MTU sobre VPN (via TGW) | **1.500 bytes** (contra 8.500 entre VPCs) |
 | BGP e IPsec | *"when you use BGP, both the IPsec and the BGP sessions must be terminated on the same user gateway device"* |
 

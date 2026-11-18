@@ -21,7 +21,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"Amazon Macie is a data security service that discovers sensitive data by using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks."*
+> *"Amazon Macie is a data security service that discovers sensitive data by using machine learning and pattern matching, provides visibility into data security risks, and enables automated protection against those risks."* (o Amazon Macie é um serviço de segurança de dados que descobre dados sensíveis usando machine learning e correspondência de padrões, dá visibilidade sobre riscos de segurança de dados e permite proteção automatizada contra esses riscos)
 
 ## O que o Macie faz, em três linhas
 
@@ -42,7 +42,7 @@ Identificadores gerenciados (CPF e equivalentes por país, cartão de crédito, 
 ## Onde o guia cita
 
 **Task 1.2**, nominalmente: *"Security services with appropriate use cases (for example, Amazon Cognito, Amazon GuardDuty, Amazon Macie)"* (serviços de segurança e seus casos de uso apropriados (por exemplo, Amazon Cognito, Amazon GuardDuty, Amazon Macie)).
-E se conecta a **Task 1.3**: *"Data retention and classification"*.
+E se conecta a **Task 1.3**: *"Data retention and classification"* (retenção e classificação de dados).
 
 ## Links
 

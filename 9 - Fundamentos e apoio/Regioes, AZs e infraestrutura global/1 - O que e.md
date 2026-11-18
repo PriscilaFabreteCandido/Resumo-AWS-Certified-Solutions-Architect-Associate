@@ -29,11 +29,11 @@ Fora das Regiões:
 
 > *"Each AWS Region consists of multiple, isolated, and physically separate AZs within a geographic area."*
 
-> *"An Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region."*
+> *"An Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region."* (uma Zona de Disponibilidade (AZ) é um ou mais data centers distintos, com energia, rede e conectividade redundantes, dentro de uma Região)
 
 Sobre a distância entre AZs:
 
-> *"All AZs in an AWS Region are interconnected with high-bandwidth, low-latency networking, over fully redundant, dedicated metro fiber... All traffic between AZs is encrypted. ... AZs are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100 km (60 miles) of each other."*
+> *"All AZs in an AWS Region are interconnected with high-bandwidth, low-latency networking, over fully redundant, dedicated metro fiber... All traffic between AZs is encrypted. ... AZs are physically separated by a meaningful distance, many kilometers, from any other AZ, although all are within 100 km (60 miles) of each other."* (todas as AZs de uma Região são interligadas por rede de alta largura de banda e baixa latência, sobre fibra metropolitana dedicada e totalmente redundante... Todo o tráfego entre AZs é criptografado... As AZs são separadas fisicamente por uma distância significativa, de muitos quilômetros, embora todas fiquem a até 100 km (60 milhas) umas das outras)
 
 ## O que isso significa na prova
 
@@ -47,7 +47,7 @@ Sobre a distância entre AZs:
 | Processar no local, no seu data center | **Outposts** |
 
 > [!warning] A pegadinha nº 1
-> **Multi-AZ ≠ Multi-Region.** Multi-AZ protege contra falha de data center ou de AZ — não contra um evento regional. Se o enunciado fala em *"another AWS Region"*, *"regional outage"* (indisponibilidade regional) ou *"disaster recovery"*, Multi-AZ **não** é a resposta.
+> **Multi-AZ ≠ Multi-Region.** Multi-AZ protege contra falha de data center ou de AZ — não contra um evento regional. Se o enunciado fala em *"another AWS Region"*, *"regional outage"* (indisponibilidade regional) ou *"disaster recovery"* (recuperação de desastre), Multi-AZ **não** é a resposta.
 
 ## Links
 

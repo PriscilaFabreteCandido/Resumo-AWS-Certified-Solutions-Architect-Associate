@@ -37,13 +37,13 @@ Editções: **Standard** (até ~30.000 objetos) e **Enterprise** (até ~500.000 
 
 É **gateway**, não diretório. A definição oficial vale decorar:
 
-> *"AD Connector is a directory gateway with which you can redirect directory requests to your on-premises Microsoft Active Directory **without caching any information in the cloud**."*
+> *"AD Connector is a directory gateway with which you can redirect directory requests to your on-premises Microsoft Active Directory **without caching any information in the cloud**."* (o AD Connector é um gateway de diretório com o qual você redireciona requisições de diretório ao seu Microsoft Active Directory on-premises, **sem fazer cache de nenhuma informação na nuvem**)
 
 Nada é replicado para a AWS — a autenticação é **encaminhada** para o AD on-premises:
 
 > *"all of your directory data remains on your domain controllers. Directory Service does not replicate any of your directory data."*
 
-Mecânica: *"AD Connector uses Kerberos for authentication and authorization of AWS applications. LDAP is only used for user and group object lookups (read operations)."*
+Mecânica: *"AD Connector uses Kerberos for authentication and authorization of AWS applications. LDAP is only used for user and group object lookups (read operations)."* (o AD Connector usa Kerberos para autenticação e autorização das aplicações AWS; o LDAP só é usado para consultar objetos de usuário e grupo (operações de leitura))
 
 **A favor**: nenhuma credencial sai do datacenter; é a opção de menor impacto para quem tem requisito de residência de identidade.
 
@@ -87,7 +87,7 @@ O texto oficial de cada elo:
 | Identity Center aceita AD self-managed | *"With AWS IAM Identity Center, you can connect a self-managed directory in Active Directory (AD) or a directory in AWS Managed Microsoft AD by using AWS Directory Service."* |
 | Como autentica | *"IAM Identity Center uses the connection provided by Directory Service to perform pass-through authentication to the source AD instance."* |
 | A senha não é sincronizada | *"No password information is synchronized to IAM Identity Center, because user authentication takes place directly from the source directory in Active Directory."* |
-| Atribuição por grupo | *"After connecting your corporate directory to IAM Identity Center, you can then grant your AD users or groups access to AWS accounts, applications, or both."* |
+| Atribuição por grupo | *"After connecting your corporate directory to IAM Identity Center, you can then grant your AD users or groups access to AWS accounts, applications, or both."* (depois de conectar seu diretório corporativo ao IAM Identity Center, você pode conceder aos usuários ou grupos do AD acesso a contas AWS, a aplicações, ou a ambos) |
 
 **O resultado**: a pessoa entra com o usuário de rede de sempre e recebe **credencial temporária** nas contas que o grupo dela permite. Sem usuário IAM, sem access key, e o desligamento no AD corta o acesso à AWS automaticamente.
 
@@ -104,8 +104,8 @@ O texto oficial de cada elo:
 | **Reset de senha** | *"any future user password resets must be done from within AD... users will not be able to reset their passwords from the AWS access portal."* | Se pedirem autoatendimento de senha pelo portal, não serve |
 | **Conta de gerenciamento** | *"make sure your AD Connector or directory in AWS Managed Microsoft AD in Directory Service resides within your AWS Organizations management account."* | E na **mesma Região** do Identity Center |
 | **Um por vez** | *"You can connect only one AD Connector directory or one directory in AWS Managed Microsoft AD at a time."* (você pode conectar apenas um diretório do AD Connector ou um do AWS Managed Microsoft AD por vez) | — |
-| **Relação 1-para-1** | *"AD Connectors and your on-premises Active Directory domains have a 1-to-1 relationship."* | — |
-| **Não compartilha** | *"AD Connector cannot be shared with other AWS accounts."* e *"is also not multi-VPC aware"* | Apps como WorkSpaces têm de estar na **mesma VPC** |
+| **Relação 1-para-1** | *"AD Connectors and your on-premises Active Directory domains have a 1-to-1 relationship."* (a relação entre AD Connectors e seus domínios de Active Directory on-premises é de um para um) | — |
+| **Não compartilha** | *"AD Connector cannot be shared with other AWS accounts."* (o AD Connector não pode ser compartilhado com outras contas AWS) e *"is also not multi-VPC aware"* | Apps como WorkSpaces têm de estar na **mesma VPC** |
 | **Trusts transitivos** | *"AD Connector does not support Active Directory transitive trusts."* (o AD Connector não oferece suporte a trusts transitivos do Active Directory) | — |
 | **Simple AD não serve** | *"IAM Identity Center does not work with SAMBA4-based Simple AD directories."* (o IAM Identity Center não funciona com diretórios Simple AD, baseados em SAMBA4) | — |
 

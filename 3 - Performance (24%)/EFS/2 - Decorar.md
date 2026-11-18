@@ -60,7 +60,7 @@ O limite de **1.500 MiBps** por cliente exige `amazon-efs-utils` v2.0+ ou o **EF
 
 ## Cobrança e restrições
 
-- Cada requisição NFS conta como *"4 kilobyte (KB) of throughput, or its actual request and response size, whichever is larger"*. **Não** há cobrança separada de IOPS.
+- Cada requisição NFS conta como *"4 kilobyte (KB) of throughput, or its actual request and response size, whichever is larger"* (4 kilobytes (KB) de throughput, ou o tamanho real da requisição e da resposta, o que for maior). **Não** há cobrança separada de IOPS.
 - Leituras são medidas a **1/3** da taxa das escritas.
 - Após mudar para **Provisioned** (ou alterar o valor), você fica **24 horas** sem poder voltar para Elastic/Bursting nem reduzir o valor.
 

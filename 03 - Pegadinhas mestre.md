@@ -36,7 +36,7 @@ atualizado: 2026-11-08
 | One Zone-IA transiciona para Glacier Instant Retrieval | **Não.** Só **Glacier FR** e **Deep Archive** — é a seta que falta no meio do diagrama. |
 | Posso mover para Deep Archive no dia 10 depois de ter ido para Glacier IR no dia 4 | **Não.** O mínimo de 90 dias do Glacier IR vale: só a partir do dia **94**. |
 | Replicação replica o que já estava no bucket | **Não.** CRR/SRR replica só objetos **novos**. Para o acervo existente: **S3 Batch Replication**. |
-| Replicação precisa de versionamento só na origem | **Nos dois.** *"Both source and destination buckets must have versioning enabled."* |
+| Replicação precisa de versionamento só na origem | **Nos dois.** *"Both source and destination buckets must have versioning enabled."* (os buckets de origem e de destino precisam ter versionamento habilitado) |
 | Object Lock protege até do root | Só no modo **Compliance**. No modo **Governance**, quem tem `s3:BypassGovernanceRetention` apaga. |
 | Habilitar versionamento é reversível | Pode **suspender**, mas **nunca volta** ao estado unversioned. |
 | Mudar a criptografia padrão do bucket recriptografa o que já existe | **Não.** Só vale para objetos **novos**. Para os antigos: S3 Batch Operations (Copy). |
@@ -133,7 +133,7 @@ atualizado: 2026-11-08
 | ElastiCache Redis = Memcached | Redis: replicação, persistência, HA, estruturas de dados. Memcached: multithread, simples, sem replicação. |
 | Redshift é para OLTP | É **OLAP** (analítico). Para OLTP: RDS/Aurora/DynamoDB. |
 | Athena e Redshift Spectrum são a mesma coisa | Athena é **independente e serverless**. Spectrum é **feature do Redshift** (precisa de cluster ou Serverless workgroup). |
-| RDS Proxy funciona com read replica | *"you can associate a proxy only with the writer DB instance, not a read replica."* |
+| RDS Proxy funciona com read replica | *"you can associate a proxy only with the writer DB instance, not a read replica."* (você só pode associar um proxy à instância de escrita, não a uma réplica de leitura) |
 
 ## 8. Mensageria
 
@@ -142,7 +142,7 @@ atualizado: 2026-11-08
 | SQS garante ordem | **Standard não garante** (é *at-least-once*, pode duplicar e desordenar). Ordem = **FIFO**. |
 | SQS entrega para vários consumidores | SQS = **um consumidor processa cada mensagem**. Para N consumidores: **SNS → várias SQS** (fan-out). |
 | SNS guarda a mensagem se o consumidor estiver fora | SNS é **push**: se não entregar, tenta e desiste (ou manda para DLQ). Para durabilidade: **SNS → SQS**. |
-| DLQ do SNS pode ser qualquer coisa | *"A dead-letter queue is an Amazon SQS queue."* Mesma conta e região. Tópico FIFO exige fila FIFO. |
+| DLQ do SNS pode ser qualquer coisa | *"A dead-letter queue is an Amazon SQS queue."* (uma dead-letter queue é uma fila do Amazon SQS) Mesma conta e região. Tópico FIFO exige fila FIFO. |
 | Aumentar visibility timeout resolve mensagem duplicada | Reduz reprocessamento, mas a aplicação ainda precisa ser **idempotente** em fila standard. |
 | Long polling custa mais | Custa **menos** (menos respostas vazias). |
 | EventBridge substitui SNS sempre | EventBridge roteia por **conteúdo do evento** e integra com serviços AWS; SNS é fan-out barato e de alto throughput para e-mail/SMS/push/HTTP. |

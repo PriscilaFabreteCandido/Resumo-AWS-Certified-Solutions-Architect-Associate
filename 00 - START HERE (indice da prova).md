@@ -32,10 +32,10 @@ atualizado: 2026-11-08
 
 | # | Domínio | Peso | Pasta / MOC |
 |---|---|---|---|
-| 1 | **Design Secure Architectures** | **30%** | [[1 - Seguranca (30%)/01 - Dominio 1 - Design Secure Architectures (30%)|Dominio 1 - Seguranca (30%)]] |
-| 2 | **Design Resilient Architectures** | **26%** | [[2 - Resiliencia (26%)/02 - Dominio 2 - Design Resilient Architectures (26%)|Dominio 2 - Resiliencia (26%)]] |
-| 3 | **Design High-Performing Architectures** | **24%** | [[3 - Performance (24%)/03 - Dominio 3 - Design High-Performing Architectures (24%)|Dominio 3 - Performance (24%)]] |
-| 4 | **Design Cost-Optimized Architectures** | **20%** | [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)|Dominio 4 - Custo (20%)]] |
+| 1 | **Design Secure Architectures** | **30%** | [[1 - Seguranca (30%)/01 - Dominio 1 - Design Secure Architectures (30%)\|Dominio 1 - Seguranca (30%)]] |
+| 2 | **Design Resilient Architectures** | **26%** | [[2 - Resiliencia (26%)/02 - Dominio 2 - Design Resilient Architectures (26%)\|Dominio 2 - Resiliencia (26%)]] |
+| 3 | **Design High-Performing Architectures** | **24%** | [[3 - Performance (24%)/03 - Dominio 3 - Design High-Performing Architectures (24%)\|Dominio 3 - Performance (24%)]] |
+| 4 | **Design Cost-Optimized Architectures** | **20%** | [[4 - Custo (20%)/04 - Dominio 4 - Design Cost-Optimized Architectures (20%)\|Dominio 4 - Custo (20%)]] |
 
 Traduzindo em questões pontuadas (sobre as 50 que valem nota):
 

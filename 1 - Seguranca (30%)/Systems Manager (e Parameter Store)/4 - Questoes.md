@@ -12,7 +12,7 @@ atualizado: 2026-11-08
 > **C)** EC2 Instance Connect
 > **D)** VPN cliente para a subnet privada
 >
-> **Por que B**: resolve os três requisitos — *"without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* — e os endpoints evitam depender de internet.
+> **Por que B**: resolve os três requisitos — *"without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* (sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH) — e os endpoints evitam depender de internet.
 > **A errada**: mantém porta 22, chave e NAT.
 > **C errada**: Instance Connect ainda usa SSH na 22.
 > **D errada**: dá rede, mas não elimina SSH, chave nem bastion, e não registra a sessão.
@@ -63,7 +63,7 @@ atualizado: 2026-11-08
 | Parameter Store rotaciona SecureString | **"None"** — não rotaciona |
 | Advanced tier pode voltar para Standard | *"Not downgradeable"* |
 | Patch Manager faz upgrade de versão do SO | *"doesn't support upgrading major versions"* |
-| A AWS testa os patches | *"AWS doesn't test patches before making them available"* |
+| A AWS testa os patches | *"AWS doesn't test patches before making them available"* (a AWS não testa os patches antes de disponibilizá-los) |
 | SSM funciona sem instance profile | Precisa de role com a policy do SSM |
 | Host Management do Quick Setup instala patches | **Só scan** |
 

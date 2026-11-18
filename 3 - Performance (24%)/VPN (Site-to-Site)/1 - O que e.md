@@ -13,7 +13,7 @@ atualizado: 2026-11-08
 
 ## Definição oficial
 
-> *"AWS-managed VPN endpoint that includes automated redundancy and failover built into the AWS side of the VPN connection."*
+> *"AWS-managed VPN endpoint that includes automated redundancy and failover built into the AWS side of the VPN connection."* (um endpoint de VPN gerenciado pela AWS, com redundância e failover automáticos embutidos no lado da AWS da conexão)
 
 E o número que mais cai:
 
@@ -24,7 +24,7 @@ E o número que mais cai:
 | Endpoint | Alcança |
 |---|---|
 | **Virtual private gateway (VGW)** | *"the VPN endpoint on the Amazon side... that can be attached to a single VPC"* |
-| **Transit gateway** | *"A transit hub that can be used to interconnect multiple VPCs and on-premises networks, and as a VPN endpoint"* |
+| **Transit gateway** | *"A transit hub that can be used to interconnect multiple VPCs and on-premises networks, and as a VPN endpoint"* (um hub de trânsito que pode interligar várias VPCs e redes on-premises, e servir como endpoint de VPN) |
 
 ## VPN × Direct Connect
 

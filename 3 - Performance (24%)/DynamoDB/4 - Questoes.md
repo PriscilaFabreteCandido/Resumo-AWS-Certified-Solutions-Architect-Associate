@@ -87,7 +87,7 @@ atualizado: 2026-11-08
 | LSI não tem limite de tamanho | **10 GB** por valor de partition key |
 | PITR restaura no lugar | *"always restores to a new table"* (sempre restaura para uma tabela nova) |
 | PITR de 35 dias custa mais que de 7 | O preço vem do **tamanho** da tabela |
-| TTL apaga na hora | *"within a few days"* — filtre os expirados |
+| TTL apaga na hora | *"within a few days"* (dentro de poucos dias) — filtre os expirados |
 | Global Tables é ativo-passivo | É **multi-ativo** |
 | Posso mudar MREC para MRSC depois | *"You cannot change a global table's consistency mode after creation"* |
 | Item de 1 MB cabe | **400 KB** |

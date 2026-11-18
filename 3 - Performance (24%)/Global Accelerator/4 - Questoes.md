@@ -70,7 +70,7 @@ atualizado: 2026-11-08
 | Global Accelerator é um CDN | **Não cacheia** |
 | Serve conteúdo estático melhor que o CloudFront | Para estático repetido, **CloudFront** (cache + egress mais barato) |
 | CloudFront serve UDP | HTTP/HTTPS só |
-| Os IPs podem ser recuperados após deletar | *"Deleting an accelerator loses its static IPs"* |
+| Os IPs podem ser recuperados após deletar | *"Deleting an accelerator loses its static IPs"* (excluir um accelerator faz perder seus IPs estáticos) |
 | Failover por DNS é equivalente | DNS depende de **TTL** e cache; o accelerator reage *"instantly"* |
 | Standard accelerator roteia para IP privado | Isso é o **custom routing** |
 | Só existe um tipo de accelerator | **Standard** e **custom routing** |

@@ -29,7 +29,7 @@ Isso resolve dois problemas que nem DNS nem ELB resolvem:
 
 **Cache de DNS.** Um cliente que cacheou o IP antigo continua funcionando, porque o IP não muda — só o destino por trás dele.
 
-⚠️ Mas: *"Deleting an accelerator loses its static IPs."* Planeje.
+⚠️ Mas: *"Deleting an accelerator loses its static IPs."* (excluir um accelerator faz perder seus IPs estáticos) Planeje.
 
 Há **BYOIP** para IPv4, se você precisa usar a sua própria faixa.
 

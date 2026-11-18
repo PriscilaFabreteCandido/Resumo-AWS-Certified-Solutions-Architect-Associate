@@ -51,7 +51,7 @@ atualizado: 2026-11-08
 > **C)** Só com user pool
 > **D)** Só com IAM user anônimo
 >
-> **Por que B**: *"An identity pool can also issue limited-privilege credentials to guest users who haven't signed in."*
+> **Por que B**: *"An identity pool can also issue limited-privilege credentials to guest users who haven't signed in."* (um identity pool também pode emitir credenciais de privilégio limitado para usuários convidados que não fizeram login)
 
 ## ⚠️ Armadilhas
 

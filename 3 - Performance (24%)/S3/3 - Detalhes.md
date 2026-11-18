@@ -84,7 +84,7 @@ Fechando a regra 1 — Glacier Flexible Retrieval transiciona **apenas** para De
 
 Desde setembro de 2024, *"Objects smaller than 128 KB will not transition by default to any storage class"*. Para forçar, use filtro de tamanho (`ObjectSizeGreaterThan` / `ObjectSizeLessThan`) ou o header `x-amz-transition-default-minimum-object-size`.
 
-E atenção: *"you are charged a transition request for each object"* — mover milhões de objetos minúsculos pode custar mais do que a economia.
+E atenção: *"you are charged a transition request for each object"* (você é cobrado por uma requisição de transição para cada objeto) — mover milhões de objetos minúsculos pode custar mais do que a economia.
 
 ### Ações esquecidas que economizam muito
 
@@ -125,7 +125,7 @@ Pontos que a prova explora:
 
 ## 5. Versionamento, Object Lock e Block Public Access
 
-**Versionamento** tem três estados: Unversioned (padrão), Enabled e Suspended. A regra crítica: *"After you version-enable a bucket, it can never return to an unversioned state. But you can suspend versioning."* Objetos anteriores ficam com version ID `null`. Um `DELETE` simples insere um **delete marker** em vez de apagar.
+**Versionamento** tem três estados: Unversioned (padrão), Enabled e Suspended. A regra crítica: *"After you version-enable a bucket, it can never return to an unversioned state. But you can suspend versioning."* (depois que você habilita o versionamento num bucket, ele nunca volta ao estado sem versionamento — mas você pode suspendê-lo) Objetos anteriores ficam com version ID `null`. Um `DELETE` simples insere um **delete marker** em vez de apagar.
 
 **Object Lock** implementa WORM e *"works only in buckets that have S3 Versioning enabled"*. Dois mecanismos independentes:
 
@@ -141,7 +141,7 @@ Pontos que a prova explora:
 
 | Fato | Detalhe |
 |---|---|
-| Versionamento | *"Both source and destination buckets must have versioning enabled"* |
+| Versionamento | *"Both source and destination buckets must have versioning enabled"* (os buckets de origem e de destino precisam ter versionamento habilitado) |
 | Acervo existente | **Não** é replicado. Use **S3 Batch Replication** (que também recobre objetos que **falharam**) |
 | Bidirecional | Suportado, com *replica modification sync* para metadados |
 | SLA | **S3 RTC**: *"99.9 percent of those objects within 15 minutes"* (99,9% desses objetos em até 15 minutos) |
