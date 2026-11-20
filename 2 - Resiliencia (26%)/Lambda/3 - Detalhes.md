@@ -60,6 +60,20 @@ Para fontes de **poll** (SQS, Kinesis, DynamoDB Streams, MSK, Amazon MQ), o Lamb
 
 ⚠️ Com SQS, o **visibility timeout da fila** deve ser maior que o **timeout da função** — senão a mensagem reaparece e é processada em duplicidade.
 
+### Como a Lambda consome um stream sem estourar os 15 minutos
+
+O limite de 15 min vale para **cada invocação**, não para o processamento inteiro. A função não fica ligada esperando dados:
+
+1. O stream é ligado à função por um **event source mapping**.
+2. O **serviço Lambda** lê os shards continuamente. Isso é gerenciado pela AWS, sem código seu.
+3. Quando há registros, ele monta um **lote** (ex.: 100 registros) e invoca a função.
+4. A função processa o lote (milissegundos) e termina.
+5. O serviço invoca de novo com o próximo lote.
+
+São **muitas invocações curtas em sequência**. **Ordem**: por padrão, uma invocação por shard por vez; o lote 2 só roda depois do lote 1. **Escala**: mais shards = mais invocações em paralelo; o *parallelization factor* (até 10 por shard) mantém a ordem por partition key.
+
+⚠️ O limite de 15 min só elimina a Lambda quando **uma única tarefa** é longa (transcodificar vídeo de horas, ETL pesado). Para eventos pequenos em fluxo, a Lambda é a resposta típica. Exemplo: [[3 - Performance (24%)/Kinesis Data Streams/4 - Questoes|Kinesis — Q7 (ranking de jogo)]].
+
 ## 6. Tratamento de erro
 
 | Invocação | Retry | Destino de falha |

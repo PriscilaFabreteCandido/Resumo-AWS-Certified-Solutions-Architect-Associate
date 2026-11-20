@@ -92,23 +92,28 @@ Apoio: [[05 - Plano de estudo (e como praticar sem levar susto na fatura)]]
 
 ## 📖 Como estudar com estas notas
 
-Toda nota segue a mesma ordem, desenhada para você **recuperar** a informação em vez de reler:
+Cada pasta de serviço tem cinco notas, e cada uma tem um papel diferente:
 
-| Seção | O que fazer |
-|---|---|
-| **🧩 Em 30 segundos** | O essencial absoluto. Na véspera, leia **só isso** em todas as notas. |
-| **🧠 Teste-se primeiro** | Perguntas dobráveis. Responda de cabeça, **depois** clique. Não abra antes. |
-| **Conteúdo** | Blocos curtos, com os números e as citações oficiais. |
-| **❓ Questões de prova** | Alternativas A-D dobráveis, com **por que cada errada está errada**. |
-| **⚠️ Armadilhas** | A tabela "parece × é". |
+| Nota | Para quê | Como usar |
+|---|---|---|
+| **1 - O que e** | O serviço em uma frase e onde cai na prova | Ler na 1ª passada |
+| **2 - Decorar** | Números e tabelas | Ler na 1ª passada; depois, revisar **pelos flashcards** |
+| **3 - Detalhes** | Explicação longa, com citações oficiais | Consultar quando errar algo |
+| **4 - Questoes** | Questões A–D; a resposta fica **recolhida** | Escolher a letra **antes** de abrir a resposta |
+| **5 - Flashcards** | Os números da Decorar em pergunta e resposta | Revisados pelo plugin, no dia que ele marcar |
 
-> [!tip] A rotina que rende mais
-> **1ª passada**: leia a nota inteira, uma vez.
-> **Depois**: volte só no *Teste-se primeiro* e nas *Questões*, sem reler o conteúdo. Se errar, aí sim abra a seção.
-> Reler nota já lida é a forma menos eficiente de estudar; se testar é a mais eficiente.
+Além disso: [[06 - Simulados/Simulado geral 01|06 - Simulados]] (questões **misturadas**, sem dizer o serviço) e [[07 - Flashcards - Pegadinhas]].
+
+> [!tip] O fluxo que rende mais
+> 1. **Ler** `1 - O que e` e `2 - Decorar` uma vez.
+> 2. **Questões** da pasta: escolha a letra de cabeça, só então abra a resposta. Errou? Volte ao `3 - Detalhes` daquele ponto.
+> 3. **Flashcards** todo dia, só os que o plugin marcar (15–20 min).
+> 4. **Simulados mistos** toda semana: é aqui que você treina a escolher **entre** serviços, como na prova.
+>
+> Reler nota já lida é a forma menos eficiente de estudar; testar a memória é a mais eficiente. A agenda está em [[05 - Plano de estudo (e como praticar sem levar susto na fatura)]].
 
 > [!warning] Os callouts dobráveis precisam ser clicados
-> Se as perguntas aparecerem já abertas, o tema do Obsidian não suporta callouts recolhíveis. Troque para o tema padrão (Configurações → Aparência).
+> Se as respostas aparecerem já abertas, o tema do Obsidian não suporta callouts recolhíveis. Troque para o tema padrão (Configurações → Aparência).
 
 ## Fontes oficiais
 

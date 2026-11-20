@@ -6,60 +6,78 @@ atualizado: 2026-11-08
 
 # ElastiCache — Questões
 
-> [!question]- Q1. Um jogo precisa de ranking em tempo real, com ordenação por pontuação e failover automático.
-> **A)** **ElastiCache for Redis** ✅
+> [!question] Q1. Um jogo precisa de ranking em tempo real, com ordenação por pontuação e failover automático.
+> **A)** ElastiCache for Redis
 > **B)** ElastiCache for Memcached
 > **C)** DynamoDB com GSI
 > **D)** DAX
 >
-> **Por que A**: **sorted set** é estrutura nativa do Redis, que também dá replicação e failover automático.
-> **B errada**: Memcached é só chave-valor, **sem** replicação e **sem** estruturas de dados.
-> **C errada**: funciona, mas sem a semântica de ranking em memória; latência maior e modelagem mais complexa.
-> **D errada**: DAX acelera DynamoDB; não oferece estrutura de dados.
+> > [!success]- Resposta
+> > **Resposta: A**
+> >
+> > **Por que A**: **sorted set** é estrutura nativa do Redis, que também dá replicação e failover automático.
+> > **B errada**: Memcached é só chave-valor, **sem** replicação e **sem** estruturas de dados.
+> > **C errada**: funciona, mas sem a semântica de ranking em memória; latência maior e modelagem mais complexa.
+> > **D errada**: DAX acelera DynamoDB; não oferece estrutura de dados.
 
-> [!question]- Q2. A aplicação guarda sessão em disco local e, ao escalar, usuários são deslogados.
+> [!question] Q2. A aplicação guarda sessão em disco local e, ao escalar, usuários são deslogados.
 > **A)** Habilitar sticky sessions no ALB
-> **B)** **Mover a sessão para o ElastiCache for Redis (ou DynamoDB), tornando a aplicação stateless** ✅
+> **B)** Mover a sessão para o ElastiCache for Redis (ou DynamoDB), tornando a aplicação stateless
 > **C)** Usar EFS para o diretório de sessão
 > **D)** Reduzir o scale-in do ASG
 >
-> **Por que B**: é a resposta arquitetural — stateless permite escala horizontal e substituição de instância.
-> **A errada**: sticky session mitiga, mas prejudica a distribuição e quebra quando a instância morre.
-> **C errada**: funciona tecnicamente, mas sessão em file system compartilhado é mais lento e frágil que cache em memória.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: é a resposta arquitetural — stateless permite escala horizontal e substituição de instância.
+> > **A errada**: sticky session mitiga, mas prejudica a distribuição e quebra quando a instância morre.
+> > **C errada**: funciona tecnicamente, mas sessão em file system compartilhado é mais lento e frágil que cache em memória.
 
-> [!question]- Q3. O RDS está com CPU alta por consultas de leitura repetidas, e a empresa quer reduzir **custo**.
+> [!question] Q3. O RDS está com CPU alta por consultas de leitura repetidas, e a empresa quer reduzir **custo**.
 > **A)** Aumentar a instance class
-> **B)** **ElastiCache na frente do banco, com lazy loading e TTL** ✅
+> **B)** ElastiCache na frente do banco, com lazy loading e TTL
 > **C)** Multi-AZ
 > **D)** Mudar para io2
 >
-> **Por que B**: cache costuma custar menos que subir instância ou adicionar réplicas — e o guia lista *"Caching strategies"* (estratégias de cache) também em **Task 4.3 (custo)**.
-> **C errada**: Multi-AZ é **HA**, e o standby **não lê**.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: cache costuma custar menos que subir instância ou adicionar réplicas — e o guia lista *"Caching strategies"* (estratégias de cache) também em **Task 4.3 (custo)**.
+> > **C errada**: Multi-AZ é **HA**, e o standby **não lê**.
 
-> [!question]- Q4. O dataset do cache não cabe num único nó e a escrita precisa escalar.
+> [!question] Q4. O dataset do cache não cabe num único nó e a escrita precisa escalar.
 > **A)** Cluster mode disabled com réplicas
-> **B)** **Redis com cluster mode enabled (sharding)** ✅
+> **B)** Redis com cluster mode enabled (sharding)
 > **C)** Memcached com um nó grande
 > **D)** DAX
 >
-> **Por que B**: cluster mode particiona os dados em **shards**, escalando memória **e** escrita.
-> **A errada**: réplicas escalam **leitura**, não memória nem escrita.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: cluster mode particiona os dados em **shards**, escalando memória **e** escrita.
+> > **A errada**: réplicas escalam **leitura**, não memória nem escrita.
 
-> [!question]- Q5. Um cache simples, descartável, que precisa aproveitar bem um nó com muitas vCPUs.
+> [!question] Q5. Um cache simples, descartável, que precisa aproveitar bem um nó com muitas vCPUs.
 > **A)** Redis cluster mode enabled
-> **B)** **Memcached** ✅
+> **B)** Memcached
 > **C)** DAX
 > **D)** CloudFront
 >
-> **Por que B**: Memcached é **multithread** e simples; o enunciado dispensa replicação, persistência e estruturas de dados.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: Memcached é **multithread** e simples; o enunciado dispensa replicação, persistência e estruturas de dados.
 
-> [!question]- Q6. Depois de atualizar um registro no banco, a aplicação continua lendo o valor antigo do cache.
+> [!question] Q6. Depois de atualizar um registro no banco, a aplicação continua lendo o valor antigo do cache.
 > **A)** O cache falhou
-> **B)** **É lazy loading sem invalidação: reduza o TTL, ou invalide a chave na escrita, ou use write-through** ✅
+> **B)** É lazy loading sem invalidação: reduza o TTL, ou invalide a chave na escrita, ou use write-through
 > **C)** Falta habilitar Multi-AZ
 > **D)** Falta criptografia em trânsito
 >
-> **Por que B**: é o trade-off conhecido do cache-aside — e o **TTL** é o controle principal.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: é o trade-off conhecido do cache-aside — e o **TTL** é o controle principal.
 
 ## ⚠️ Armadilhas
 

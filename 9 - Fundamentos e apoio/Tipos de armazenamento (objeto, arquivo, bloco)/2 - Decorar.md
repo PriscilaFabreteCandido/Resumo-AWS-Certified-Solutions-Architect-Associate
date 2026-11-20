@@ -52,8 +52,8 @@ atualizado: 2026-11-08
 | Upload pela **console** | até **160 GB** |
 | Multipart recomendado a partir de | **100 MB**; **obrigatório** acima de 5 GB |
 | Multipart: partes | **5 MiB a 5 GiB**, até **10.000** partes |
-| Tamanho máximo de volume EBS (gp3/gp2) | **16 TiB** |
-| gp3: baseline | **3.000 IOPS / 125 MiB/s**, até **16.000 IOPS / 1.000 MiB/s** |
+| Tamanho máximo de volume EBS | gp3 **64 TiB** · gp2 **16 TiB** |
+| gp3: baseline | **3.000 IOPS / 125 MiB/s**, até **80.000 IOPS / 2.000 MiB/s** (gp2: 16.000 IOPS / 250 MiB/s) |
 | io2 Block Express | até **256.000 IOPS**, **4.000 MiB/s**, **64 TiB** |
 | EBS Multi-Attach | até **16** instâncias, mesma AZ |
 | EFS | **petabyte-scale**, elástico, sem provisionar |

@@ -14,21 +14,35 @@ atualizado: 2026-11-08
 
 ---
 
+## Antes de começar: instale o plugin de flashcards (5 min)
+
+1. Obsidian → **Configurações → Plugins da comunidade** → ative os plugins da comunidade, se ainda não estiverem ativos.
+2. **Procurar** → `Spaced Repetition` (autor: Stephen Mwangi) → **Instalar** → **Ativar**.
+3. Nas opções do plugin, confira se a tag de flashcards é `#flashcards` (é o padrão).
+4. Clique no ícone de cartas na barra lateral: aparece o deck `saa-c03`, com subdecks por domínio e o deck `pegadinhas`.
+
+> [!note] O plugin guarda o agendamento de cada card num comentário `<!--SR:...-->` dentro do próprio arquivo `5 - Flashcards`. É normal esses arquivos mudarem depois de cada revisão.
+
 ## Roteiro de 6 semanas
 
-| Semana | Foco | Notas |
-|---|---|---|
-| **1** | Fundamentos: Well-Architected, responsabilidade compartilhada, regiões/AZs, IAM | [[9 - Fundamentos e apoio/Well-Architected Framework/1 - O que e\|Well-Architected Framework]], [[1 - Seguranca (30%)/IAM/1 - O que e\|IAM]] |
-| **2** | Segurança: KMS/ACM, rede segura, WAF/Shield, detecção | pasta `1 - Seguranca (30%)` |
-| **3** | Resiliência: ELB + Auto Scaling + Route 53, desacoplamento, DR | pasta `2 - Resiliencia (26%)` |
-| **4** | Bancos: RDS, Aurora, DynamoDB, ElastiCache, Redshift | notas de banco nas pastas 2 e 3 |
-| **5** | Performance: armazenamento, borda, ingestão de dados | pasta `3 - Performance (24%)` |
-| **6** | Custo + revisão das 3 notas transversais + simulados | pasta `4 - Custo (20%)` |
+| Semana | Conteúdo novo | Questões e simulados da semana | Notas |
+|---|---|---|---|
+| **1** | Fundamentos: Well-Architected, responsabilidade compartilhada, regiões/AZs, IAM | Questões das pastas estudadas | [[9 - Fundamentos e apoio/Well-Architected Framework/1 - O que e\|Well-Architected Framework]], [[1 - Seguranca (30%)/IAM/1 - O que e\|IAM]] |
+| **2** | Segurança: KMS/ACM, rede segura, WAF/Shield, detecção | [[06 - Simulados/Simulado - Fundamentos\|Simulado Fundamentos]] | pasta `1 - Seguranca (30%)` |
+| **3** | Resiliência: ELB + Auto Scaling + Route 53, desacoplamento, DR | [[06 - Simulados/Simulado - Dominio 1 (Seguranca)\|Simulado Domínio 1]] (metade) | pasta `2 - Resiliencia (26%)` |
+| **4** | Bancos: RDS, Aurora, DynamoDB, ElastiCache, Redshift | Resto do Domínio 1 + metade do [[06 - Simulados/Simulado - Dominio 2 (Resiliencia)\|Domínio 2]] + [[06 - Simulados/Simulado geral 01\|Geral 01]] | notas de banco nas pastas 2 e 3 |
+| **5** | Performance: armazenamento, borda, ingestão de dados | Resto do Domínio 2 + [[06 - Simulados/Simulado geral 02\|Geral 02]] completo, cronometrado | pasta `3 - Performance (24%)` |
+| **6** | Custo + revisão das 3 notas transversais | [[06 - Simulados/Simulado - Dominio 3 (Performance)\|Domínio 3]], [[06 - Simulados/Simulado - Dominio 4 (Custo)\|Domínio 4]] + Gerais 03 a 05 | pasta `4 - Custo (20%)` |
 
-> [!tip] Como estudar cada nota
-> **1ª passada**: leia a nota inteira, uma vez. Não faça resumo do resumo.
-> **A partir da 2ª**: abra só *🧠 Teste-se primeiro* e *❓ Questões de prova*. Responda de cabeça **antes** de clicar. Se errar, aí sim volte ao conteúdo daquele ponto.
-> Isso é teste de recuperação: é a diferença entre reconhecer a resposta e saber a resposta.
+> [!important] A rotina diária (vale para todas as semanas)
+> 1. **15–20 min de flashcards**: só os que o plugin marcar para hoje, **antes** do conteúdo novo. É a revisão espaçada: o plugin traz de volta o que você está perto de esquecer (1, 3, 7, 14 dias...).
+> 2. **Conteúdo novo**: leia `1 - O que e` e `2 - Decorar` do serviço do dia.
+> 3. **Questões da pasta** (`4 - Questoes`): escolha a letra de cabeça, só então abra a resposta. Errou? Volte ao `3 - Detalhes` daquele ponto.
+> 4. **Cards novos**: revise os flashcards do serviço que acabou de estudar, para eles entrarem na agenda.
+
+> [!tip] Por que os simulados misturam os serviços
+> Nas questões da pasta, você já sabe o assunto antes de ler. Na prova, não: a dificuldade é **identificar qual serviço** o enunciado pede. Os simulados em [[06 - Simulados/Simulado geral 01|06 - Simulados]] treinam exatamente isso: o nome do serviço só aparece depois da resposta.
+> Nos simulados gerais, faça as 65 questões de uma vez, cronometrado, e só confira as respostas no final.
 
 ## A técnica que mais ajuda nesta prova específica
 

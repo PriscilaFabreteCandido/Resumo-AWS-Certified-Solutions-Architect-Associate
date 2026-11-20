@@ -6,57 +6,75 @@ atualizado: 2026-11-08
 
 # Compute Optimizer — Questões
 
-> [!question]- Q1. A empresa quer saber se as 400 instâncias EC2 estão superdimensionadas, com base no uso real.
+> [!question] Q1. A empresa quer saber se as 400 instâncias EC2 estão superdimensionadas, com base no uso real.
 > **A)** Trusted Advisor
-> **B)** **AWS Compute Optimizer** ✅
+> **B)** AWS Compute Optimizer
 > **C)** Cost Explorer
 > **D)** CloudWatch dashboards
 >
-> **Por que B**: *"analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing recommendations and identify idle resources."* (analisa a configuração e as métricas de uso dos seus recursos AWS para dar recomendações de dimensionamento e identificar recursos ociosos)
-> **A errada**: Trusted Advisor sinaliza instância ociosa, mas o rightsizing por utilização com recomendação de tipo é do Compute Optimizer.
-> **C errada**: Cost Explorer mostra **gasto**, não adequação de tamanho.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: *"analyzes your AWS resources' configuration and utilization metrics to provide you with rightsizing recommendations and identify idle resources."* (analisa a configuração e as métricas de uso dos seus recursos AWS para dar recomendações de dimensionamento e identificar recursos ociosos)
+> > **A errada**: Trusted Advisor sinaliza instância ociosa, mas o rightsizing por utilização com recomendação de tipo é do Compute Optimizer.
+> > **C errada**: Cost Explorer mostra **gasto**, não adequação de tamanho.
 
-> [!question]- Q2. As recomendações sugerem reduzir instâncias que, no fechamento mensal, ficam no limite. O que fazer?
+> [!question] Q2. As recomendações sugerem reduzir instâncias que, no fechamento mensal, ficam no limite. O que fazer?
 > **A)** Ignorar as recomendações
-> **B)** **Habilitar enhanced infrastructure metrics, que estende a janela de 14 para 93 dias** ✅
+> **B)** Habilitar enhanced infrastructure metrics, que estende a janela de 14 para 93 dias
 > **C)** Instalar o CloudWatch agent
 > **D)** Usar o Trusted Advisor
 >
-> **Por que B**: a janela padrão é *"the last 14 days"* (os últimos 14 dias) — um pico mensal pode ficar fora. Com 93 dias, ele entra na análise.
-> **C**: também melhora a qualidade (memória), mas não resolve a **janela**.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: a janela padrão é *"the last 14 days"* (os últimos 14 dias) — um pico mensal pode ficar fora. Com 93 dias, ele entra na análise.
+> > **C**: também melhora a qualidade (memória), mas não resolve a **janela**.
 
-> [!question]- Q3. As recomendações para uma aplicação **memory-bound** parecem agressivas demais.
+> [!question] Q3. As recomendações para uma aplicação **memory-bound** parecem agressivas demais.
 > **A)** A janela é curta
-> **B)** **Falta o CloudWatch agent publicando a métrica de memória — o hipervisor não a expõe** ✅
+> **B)** Falta o CloudWatch agent publicando a métrica de memória — o hipervisor não a expõe
 > **C)** Falta habilitar detailed monitoring
 > **D)** O Compute Optimizer não cobre EC2
 >
-> **Por que B**: sem memória nas métricas, o Optimizer decide olhando CPU.
-> **C errada**: detailed monitoring muda a **frequência** (5 → 1 min), não adiciona métricas de SO.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: sem memória nas métricas, o Optimizer decide olhando CPU.
+> > **C errada**: detailed monitoring muda a **frequência** (5 → 1 min), não adiciona métricas de SO.
 
-> [!question]- Q4. Qual a ordem correta para otimizar o custo de uma fleet estável?
+> [!question] Q4. Qual a ordem correta para otimizar o custo de uma fleet estável?
 > **A)** Comprar Savings Plans e depois fazer rightsizing
-> **B)** **Rightsizing → desligar o ocioso → auto scaling → comprometer com Savings Plans** ✅
+> **B)** Rightsizing → desligar o ocioso → auto scaling → comprometer com Savings Plans
 > **C)** Migrar tudo para Spot
 > **D)** Comprar Reserved Instances de 3 anos
 >
-> **Por que B**: comprometer-se com capacidade **superdimensionada** congela o desperdício por 1-3 anos.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: comprometer-se com capacidade **superdimensionada** congela o desperdício por 1-3 anos.
 
-> [!question]- Q5. O Compute Optimizer aplica automaticamente o novo tipo de instância?
+> [!question] Q5. O Compute Optimizer aplica automaticamente o novo tipo de instância?
 > **A)** Sim, se autorizado
-> **B)** **Não: ele só recomenda. A troca é sua (launch template + instance refresh)** ✅
+> **B)** Não: ele só recomenda. A troca é sua (launch template + instance refresh)
 > **C)** Sim, via Systems Manager
 > **D)** Sim, em Auto Scaling groups
 >
-> **Por que B**: o verbo é **recomendar**.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: o verbo é **recomendar**.
 
-> [!question]- Q6. Além de EC2, o que mais o Compute Optimizer analisa?
+> [!question] Q6. Além de EC2, o que mais o Compute Optimizer analisa?
 > **A)** Só EC2
-> **B)** **Auto Scaling groups, volumes EBS, funções Lambda e serviços ECS no Fargate** ✅
+> **B)** Auto Scaling groups, volumes EBS, funções Lambda e serviços ECS no Fargate
 > **C)** Apenas EC2 e RDS
 > **D)** Todos os serviços da AWS
 >
-> **Por que B**: inclui o rightsizing de **memória do Lambda**, que tem efeito direto no custo.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: inclui o rightsizing de **memória do Lambda**, que tem efeito direto no custo.
 
 ## ⚠️ Armadilhas
 

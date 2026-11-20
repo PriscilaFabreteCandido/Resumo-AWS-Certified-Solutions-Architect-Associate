@@ -6,56 +6,71 @@ atualizado: 2026-11-08
 
 # Bancos especializados — Questões
 
-> [!question]- Q1. Identificar conexões suspeitas entre contas, dispositivos e endereços, percorrendo até 5 níveis de relacionamento, com baixa latência.
+> [!question] Q1. Identificar conexões suspeitas entre contas, dispositivos e endereços, percorrendo até 5 níveis de relacionamento, com baixa latência.
 > **A)** RDS PostgreSQL com CTEs recursivas
 > **B)** DynamoDB com GSI
-> **C)** **Amazon Neptune** ✅
+> **C)** Amazon Neptune
 > **D)** Redshift
 >
-> **Por que C**: percorrer arestas é a operação nativa de um banco de **grafo**.
-> **A errada**: funciona, mas o custo cresce exponencialmente com a profundidade.
-> **B errada**: DynamoDB não percorre grafo.
-> **D errada**: Redshift é analítico, não baixa latência transacional.
+> > [!success]- Resposta
+> > **Resposta: C**
+> >
+> > **Por que C**: percorrer arestas é a operação nativa de um banco de **grafo**.
+> > **A errada**: funciona, mas o custo cresce exponencialmente com a profundidade.
+> > **B errada**: DynamoDB não percorre grafo.
+> > **D errada**: Redshift é analítico, não baixa latência transacional.
 
-> [!question]- Q2. Armazenar métricas de 50.000 sensores, consultadas por janela de tempo, com dados recentes acessados muito mais que os antigos.
+> [!question] Q2. Armazenar métricas de 50.000 sensores, consultadas por janela de tempo, com dados recentes acessados muito mais que os antigos.
 > **A)** RDS PostgreSQL com índice no timestamp
-> **B)** **Amazon Timestream** ✅
+> **B)** Amazon Timestream
 > **C)** DynamoDB com sort key de timestamp
 > **D)** S3 com Athena
 >
-> **Por que B**: série temporal é o caso de uso — storage em camadas e funções de série temporal nativas. O guia cita *"time series format"* (formato de série temporal) em Task 4.3.
-> **A errada**: relacional genérico fica caro e lento nesse volume.
-> **C errada**: é um padrão real, mas sem compressão de série temporal nem funções de janela.
-> **D errada**: bom para análise em lote, não para consulta operacional.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: série temporal é o caso de uso — storage em camadas e funções de série temporal nativas. O guia cita *"time series format"* (formato de série temporal) em Task 4.3.
+> > **A errada**: relacional genérico fica caro e lento nesse volume.
+> > **C errada**: é um padrão real, mas sem compressão de série temporal nem funções de janela.
+> > **D errada**: bom para análise em lote, não para consulta operacional.
 
-> [!question]- Q3. Migrar uma aplicação que usa **MongoDB** para a AWS, sem reescrever o código de acesso a dados.
+> [!question] Q3. Migrar uma aplicação que usa **MongoDB** para a AWS, sem reescrever o código de acesso a dados.
 > **A)** DynamoDB
-> **B)** **Amazon DocumentDB** ✅
+> **B)** Amazon DocumentDB
 > **C)** RDS PostgreSQL com JSONB
 > **D)** Keyspaces
 >
-> **Por que B**: compatível com a **API do MongoDB** — drivers e queries continuam funcionando.
-> **A errada**: DynamoDB tem API própria; exigiria reescrever.
-> **D errada**: Keyspaces é **Cassandra**.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: compatível com a **API do MongoDB** — drivers e queries continuam funcionando.
+> > **A errada**: DynamoDB tem API própria; exigiria reescrever.
+> > **D errada**: Keyspaces é **Cassandra**.
 
-> [!question]- Q4. Uma aplicação usa **Cassandra** e o time não quer mais gerenciar o cluster.
+> [!question] Q4. Uma aplicação usa **Cassandra** e o time não quer mais gerenciar o cluster.
 > **A)** Cassandra em EC2 com Auto Scaling
 > **B)** DocumentDB
-> **C)** **Amazon Keyspaces** ✅
+> **C)** Amazon Keyspaces
 > **D)** DynamoDB
 >
-> **Por que C**: compatível com **CQL**, e serverless — elimina anéis, compaction e reparo.
-> **A errada**: mantém todo o esforço operacional.
-> **D errada**: resolveria o modelo, mas exigiria reescrever a camada de acesso.
+> > [!success]- Resposta
+> > **Resposta: C**
+> >
+> > **Por que C**: compatível com **CQL**, e serverless — elimina anéis, compaction e reparo.
+> > **A errada**: mantém todo o esforço operacional.
+> > **D errada**: resolveria o modelo, mas exigiria reescrever a camada de acesso.
 
-> [!question]- Q5. Uma aplicação **nova** precisa guardar documentos JSON, com escala imprevisível e menor esforço operacional.
+> [!question] Q5. Uma aplicação **nova** precisa guardar documentos JSON, com escala imprevisível e menor esforço operacional.
 > **A)** DocumentDB
-> **B)** **DynamoDB** ✅
+> **B)** DynamoDB
 > **C)** RDS com JSONB
 > **D)** Neptune
 >
-> **Por que B**: aplicação **nova** não tem restrição de API — DynamoDB é serverless, escala sozinho e sai mais barato.
-> **A errada**: DocumentDB existe para quem **já tem** MongoDB; aqui adiciona cluster para gerenciar.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: aplicação **nova** não tem restrição de API — DynamoDB é serverless, escala sozinho e sai mais barato.
+> > **A errada**: DocumentDB existe para quem **já tem** MongoDB; aqui adiciona cluster para gerenciar.
 
 ## ⚠️ Armadilhas
 

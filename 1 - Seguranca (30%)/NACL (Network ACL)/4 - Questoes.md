@@ -6,62 +6,80 @@ atualizado: 2026-11-08
 
 # NACL — Questões
 
-> [!question]- Q1. Instâncias privadas iniciam HTTPS para a internet, mas as respostas não chegam. A NACL tem só `outbound ALLOW TCP 443`. O que falta?
+> [!question] Q1. Instâncias privadas iniciam HTTPS para a internet, mas as respostas não chegam. A NACL tem só `outbound ALLOW TCP 443`. O que falta?
 > **A)** Mudar o SG para stateful
-> **B)** **`inbound ALLOW TCP 1024-65535`** ✅
+> **B)** `inbound ALLOW TCP 1024-65535`
 > **C)** Rota para o internet gateway
 > **D)** Elastic IP nas instâncias
 >
-> **Por que B**: NACL é stateless — *"responses to that traffic are not automatically allowed"* (as respostas a esse tráfego não são permitidas automaticamente). A resposta HTTPS volta para uma **porta efêmera** da instância.
-> **A errada**: SG **já é** stateful.
-> **C errada**: o enunciado diz que as conexões **saem**, então a rota existe.
-> **D errada**: instância privada não usa EIP.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: NACL é stateless — *"responses to that traffic are not automatically allowed"* (as respostas a esse tráfego não são permitidas automaticamente). A resposta HTTPS volta para uma **porta efêmera** da instância.
+> > **A errada**: SG **já é** stateful.
+> > **C errada**: o enunciado diz que as conexões **saem**, então a rota existe.
+> > **D errada**: instância privada não usa EIP.
 
-> [!question]- Q2. Esta NACL deveria bloquear `203.0.113.7`, mas o IP continua acessando. Por quê?
+> [!question] Q2. Esta NACL deveria bloquear `203.0.113.7`, mas o IP continua acessando. Por quê?
 > ```
 > 100  ALLOW  TCP 443  de 0.0.0.0/0
 > 200  DENY   TCP 443  de 203.0.113.7/32
 > ```
 > **A)** Falta aplicar a NACL na subnet
-> **B)** **A regra 100 casa primeiro e a avaliação para; o DENY precisa ter número menor** ✅
+> **B)** A regra 100 casa primeiro e a avaliação para; o DENY precisa ter número menor
 > **C)** NACL não bloqueia por IP de origem
 > **D)** Falta a regra de outbound
 >
-> **Por que B**: *"As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la) O DENY precisa ser, por exemplo, a regra **50**.
-> **C errada**: NACL bloqueia por IP de origem — é justamente o que SG não faz.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: *"As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it."* (assim que uma regra casa com o tráfego, ela é aplicada, independentemente de qualquer regra de número maior que possa contradizê-la) O DENY precisa ser, por exemplo, a regra **50**.
+> > **C errada**: NACL bloqueia por IP de origem — é justamente o que SG não faz.
 
-> [!question]- Q3. Um time criou uma NACL nova e a associou à subnet de produção. Todo o tráfego parou. Por quê?
+> [!question] Q3. Um time criou uma NACL nova e a associou à subnet de produção. Todo o tráfego parou. Por quê?
 > **A)** A NACL foi associada a mais de uma subnet
-> **B)** **Uma NACL criada pelo usuário começa apenas com a regra `*` DENY; nada é permitido até você escrever as regras** ✅
+> **B)** Uma NACL criada pelo usuário começa apenas com a regra `*` DENY; nada é permitido até você escrever as regras
 > **C)** A NACL conflitou com os security groups
 > **D)** Faltou reiniciar as instâncias
 >
-> **Por que B**: só a NACL **default** nasce com ALLOW tudo. A customizada nasce fechada.
-> **C errada**: SG e NACL são avaliados de forma independente; não "conflitam" — ambos precisam permitir.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: só a NACL **default** nasce com ALLOW tudo. A customizada nasce fechada.
+> > **C errada**: SG e NACL são avaliados de forma independente; não "conflitam" — ambos precisam permitir.
 
-> [!question]- Q4. Qual a diferença de escopo entre SG e NACL?
+> [!question] Q4. Qual a diferença de escopo entre SG e NACL?
 > **A)** SG é por VPC, NACL é por região
-> **B)** **SG é por recurso (instance level); NACL é por subnet (subnet level)** ✅
+> **B)** SG é por recurso (instance level); NACL é por subnet (subnet level)
 > **C)** SG é por subnet, NACL é por instância
 > **D)** Ambos são por subnet
 >
-> **Por que B**: é a primeira linha da tabela oficial de comparação.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: é a primeira linha da tabela oficial de comparação.
 
-> [!question]- Q5. Duas instâncias estão na **mesma** subnet. A NACL nega todo tráfego na porta 3306. Elas conseguem se comunicar nessa porta?
+> [!question] Q5. Duas instâncias estão na **mesma** subnet. A NACL nega todo tráfego na porta 3306. Elas conseguem se comunicar nessa porta?
 > **A)** Não, a NACL bloqueia
-> **B)** **Sim: a NACL só avalia o tráfego que entra e sai da subnet** ✅
+> **B)** Sim: a NACL só avalia o tráfego que entra e sai da subnet
 > **C)** Depende da ordem das regras
 > **D)** Só se estiverem no mesmo SG
 >
-> **Por que B**: *"We evaluate the network ACL rules when traffic enters and leaves the subnet, not as it is routed within a subnet."* (avaliamos as regras da network ACL quando o tráfego entra e sai da subnet, não enquanto ele é roteado dentro dela) Quem controla aí é o **security group**.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: *"We evaluate the network ACL rules when traffic enters and leaves the subnet, not as it is routed within a subnet."* (avaliamos as regras da network ACL quando o tráfego entra e sai da subnet, não enquanto ele é roteado dentro dela) Quem controla aí é o **security group**.
 
-> [!question]- Q6. É possível bloquear as consultas DNS da VPC usando NACL?
+> [!question] Q6. É possível bloquear as consultas DNS da VPC usando NACL?
 > **A)** Sim, negando a porta 53
-> **B)** **Não: o tráfego do Route 53 Resolver (VPC+2) não passa pela NACL; use Route 53 Resolver DNS Firewall** ✅
+> **B)** Não: o tráfego do Route 53 Resolver (VPC+2) não passa pela NACL; use Route 53 Resolver DNS Firewall
 > **C)** Sim, negando o IP VPC+2
 > **D)** Só com security group
 >
-> **Por que B**: a doc lista explicitamente que as requisições DNS do Resolver não são filtradas e indica *"use Route 53 Resolver DNS Firewall instead"* (use o Route 53 Resolver DNS Firewall em vez disso).
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: a doc lista explicitamente que as requisições DNS do Resolver não são filtradas e indica *"use Route 53 Resolver DNS Firewall instead"* (use o Route 53 Resolver DNS Firewall em vez disso).
 
 ## ⚠️ Armadilhas
 

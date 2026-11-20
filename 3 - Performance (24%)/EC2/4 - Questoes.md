@@ -6,93 +6,117 @@ atualizado: 2026-11-08
 
 # Amazon EC2 — Questões
 
-> [!question]- Q1. Carga de produção 24/7 em m6i. O time ainda não decidiu se migra para Graviton nem para outra região. Qual compra?
+> [!question] Q1. Carga de produção 24/7 em m6i. O time ainda não decidiu se migra para Graviton nem para outra região. Qual compra?
 > **A)** Reserved Instances Standard de 3 anos
-> **B)** **Compute Savings Plans** ✅
+> **B)** Compute Savings Plans
 > **C)** EC2 Instance Savings Plans
 > **D)** Spot com capacity rebalancing
 >
-> **Por que B**: aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região) e cobre Fargate e Lambda. É a opção que sobrevive à indecisão.
-> **A errada**: Standard RI *"can't be exchanged"* (não podem ser trocadas) e amarra tipo e região por 3 anos.
-> **C errada**: amarra **família e região** — exatamente o que está em aberto.
-> **D errada**: produção 24/7 não tolera interrupção.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: aplica-se *"regardless of instance family, instance size, OS, tenancy, or AWS Region"* (independentemente de família, tamanho de instância, sistema operacional, tenancy ou Região) e cobre Fargate e Lambda. É a opção que sobrevive à indecisão.
+> > **A errada**: Standard RI *"can't be exchanged"* (não podem ser trocadas) e amarra tipo e região por 3 anos.
+> > **C errada**: amarra **família e região** — exatamente o que está em aberto.
+> > **D errada**: produção 24/7 não tolera interrupção.
 
-> [!question]- Q2. Pipeline de renderização: milhares de frames independentes, pode reiniciar um frame perdido, custo é prioridade.
+> [!question] Q2. Pipeline de renderização: milhares de frames independentes, pode reiniciar um frame perdido, custo é prioridade.
 > **A)** On-Demand com Auto Scaling
-> **B)** **Spot via EC2 Fleet com `price capacity optimized` e capacity rebalancing** ✅
+> **B)** Spot via EC2 Fleet com `price capacity optimized` e capacity rebalancing
 > **C)** Reserved Instances de 1 ano
 > **D)** Spot Fleet com `lowest price`
 >
-> **Por que B**: trabalho idempotente e reiniciável é o caso de uso do Spot; *price capacity optimized* é a estratégia **recomendada**.
-> **A errada**: paga preço cheio sem necessidade.
-> **C errada**: compromisso de 1 ano para carga variável.
-> **D errada**: `lowest-price` está marcada *"(not recommended)"* e *"has the highest risk of interruption"* (tem o maior risco de interrupção) — é o default da CLI, por isso aparece tanto.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: trabalho idempotente e reiniciável é o caso de uso do Spot; *price capacity optimized* é a estratégia **recomendada**.
+> > **A errada**: paga preço cheio sem necessidade.
+> > **C errada**: compromisso de 1 ano para carga variável.
+> > **D errada**: `lowest-price` está marcada *"(not recommended)"* e *"has the highest risk of interruption"* (tem o maior risco de interrupção) — é o default da CLI, por isso aparece tanto.
 
-> [!question]- Q3. Aplicação legada licenciada **por socket físico**. Como rodar na AWS atendendo o licenciamento?
+> [!question] Q3. Aplicação legada licenciada **por socket físico**. Como rodar na AWS atendendo o licenciamento?
 > **A)** Dedicated Instances
-> **B)** **Dedicated Hosts, integrados ao AWS License Manager** ✅
+> **B)** Dedicated Hosts, integrados ao AWS License Manager
 > **C)** Reserved Instances com tenancy dedicada
 > **D)** EC2 em cluster placement group
 >
-> **Por que B**: só o Dedicated Host expõe sockets e cores e permite *"bring your existing per-socket, per-core, or per-VM software licenses"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM).
-> **A e C erradas**: dão hardware single-tenant, mas **sem** visibilidade de socket.
-> **D errada**: placement group é topologia de rede — e Dedicated Hosts nem podem entrar em um.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: só o Dedicated Host expõe sockets e cores e permite *"bring your existing per-socket, per-core, or per-VM software licenses"* (traga suas licenças de software existentes, por soquete, por núcleo ou por VM).
+> > **A e C erradas**: dão hardware single-tenant, mas **sem** visibilidade de socket.
+> > **D errada**: placement group é topologia de rede — e Dedicated Hosts nem podem entrar em um.
 
-> [!question]- Q4. Simulação HPC com MPI, 40 nós, menor latência possível entre eles.
+> [!question] Q4. Simulação HPC com MPI, 40 nós, menor latência possível entre eles.
 > **A)** Spread placement group em 3 AZs
-> **B)** **Cluster placement group numa AZ, mesmo tipo de instância, com EFA** ✅
+> **B)** Cluster placement group numa AZ, mesmo tipo de instância, com EFA
 > **C)** Partition placement group
 > **D)** Instâncias em AZs diferentes atrás de um NLB
 >
-> **Por que B**: cluster *"packs instances close together inside an Availability Zone"* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade), com 10 Gbps de fluxo único; EFA é o adaptador para MPI.
-> **A errada**: spread **distribui** (o oposto) e limita a 7 por AZ.
-> **C errada**: partition separa em racks — serve para dado distribuído, não para latência mínima.
-> **D errada**: tráfego entre AZs adiciona latência; NLB não participa de comunicação MPI.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: cluster *"packs instances close together inside an Availability Zone"* (agrupa as instâncias próximas umas das outras dentro de uma Zona de Disponibilidade), com 10 Gbps de fluxo único; EFA é o adaptador para MPI.
+> > **A errada**: spread **distribui** (o oposto) e limita a 7 por AZ.
+> > **C errada**: partition separa em racks — serve para dado distribuído, não para latência mínima.
+> > **D errada**: tráfego entre AZs adiciona latência; NLB não participa de comunicação MPI.
 
-> [!question]- Q5. Cluster Cassandra de 12 nós: a falha de um rack não pode derrubar mais que uma fração dos nós.
+> [!question] Q5. Cluster Cassandra de 12 nós: a falha de um rack não pode derrubar mais que uma fração dos nós.
 > **A)** Cluster
 > **B)** Spread
-> **C)** **Partition** ✅
+> **C)** Partition
 > **D)** Nenhum; basta distribuir em 3 AZs
 >
-> **Por que C**: partition é a estratégia desenhada para *"HDFS, HBase, Cassandra, Kafka, Hadoop"* (HDFS, HBase, Cassandra, Kafka, Hadoop) — cada partição tem racks próprios.
-> **A errada**: concentra no mesmo bloco de hardware.
-> **B errada**: garante hardware distinto por instância, mas o teto de 7 por AZ e a falta de noção de grupo de réplicas não casam com o Cassandra.
-> **D errada**: ajuda, mas sem noção de rack dentro da AZ.
+> > [!success]- Resposta
+> > **Resposta: C**
+> >
+> > **Por que C**: partition é a estratégia desenhada para *"HDFS, HBase, Cassandra, Kafka, Hadoop"* (HDFS, HBase, Cassandra, Kafka, Hadoop) — cada partição tem racks próprios.
+> > **A errada**: concentra no mesmo bloco de hardware.
+> > **B errada**: garante hardware distinto por instância, mas o teto de 7 por AZ e a falta de noção de grupo de réplicas não casam com o Cassandra.
+> > **D errada**: ajuda, mas sem noção de rack dentro da AZ.
 
-> [!question]- Q6. Uma aplicação em t3.medium fica lenta após ~20 minutos de carga constante. O que corrigir?
+> [!question] Q6. Uma aplicação em t3.medium fica lenta após ~20 minutos de carga constante. O que corrigir?
 > **A)** Aumentar o volume EBS
-> **B)** **Migrar para uma família não-burstable (M ou C) dimensionada para a carga sustentada** ✅
+> **B)** Migrar para uma família não-burstable (M ou C) dimensionada para a carga sustentada
 > **C)** Habilitar enhanced networking
 > **D)** Mudar para instance store
 >
-> **Por que B**: a família T é burstable — esgota créditos de CPU sob carga constante acima do baseline.
-> **A errada**: o gargalo é CPU, não disco.
-> **C errada**: enhanced networking afeta rede.
-> **D errada**: afeta I/O local.
-> ⚠️ Alternativa paliativa real: ligar o modo *unlimited* do T — mas aí você paga o excedente, e a prova prefere a família correta.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: a família T é burstable — esgota créditos de CPU sob carga constante acima do baseline.
+> > **A errada**: o gargalo é CPU, não disco.
+> > **C errada**: enhanced networking afeta rede.
+> > **D errada**: afeta I/O local.
+> > ⚠️ Alternativa paliativa real: ligar o modo *unlimited* do T — mas aí você paga o excedente, e a prova prefere a família correta.
 
-> [!question]- Q7. Processamento de vídeo precisa de disco local de altíssimo IOPS para arquivos temporários.
+> [!question] Q7. Processamento de vídeo precisa de disco local de altíssimo IOPS para arquivos temporários.
 > **A)** EBS io2 Block Express
-> **B)** **Instance store NVMe** ✅
+> **B)** Instance store NVMe
 > **C)** EFS com throughput Provisioned
 > **D)** EBS gp3 com 16.000 IOPS
 >
-> **Por que B**: dado **temporário** com IOPS máximo é o caso do instance store — anexado ao host, sem latência de rede e sem custo de volume.
-> **A errada**: IOPS alto, mas é volume de rede pago; desnecessário para scratch.
-> **C errada**: EFS é compartilhado via rede, latência maior.
-> **D errada**: menos IOPS e custo de volume para dado descartável.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: dado **temporário** com IOPS máximo é o caso do instance store — anexado ao host, sem latência de rede e sem custo de volume.
+> > **A errada**: IOPS alto, mas é volume de rede pago; desnecessário para scratch.
+> > **C errada**: EFS é compartilhado via rede, latência maior.
+> > **D errada**: menos IOPS e custo de volume para dado descartável.
 
-> [!question]- Q8. Auditoria exige acabar com bastion hosts e chaves SSH, com registro das sessões administrativas em instâncias privadas sem internet.
+> [!question] Q8. Auditoria exige acabar com bastion hosts e chaves SSH, com registro das sessões administrativas em instâncias privadas sem internet.
 > **A)** NAT gateway + SSH com chave rotacionada por Lambda
-> **B)** **SSM Session Manager com interface endpoints do Systems Manager na VPC e log em S3/CloudWatch Logs** ✅
+> **B)** SSM Session Manager com interface endpoints do Systems Manager na VPC e log em S3/CloudWatch Logs
 > **C)** EC2 Instance Connect
 > **D)** VPN cliente para a subnet privada
 >
-> **Por que B**: resolve os três requisitos — sem porta aberta, sem chave, com log. Os endpoints evitam depender de internet.
-> **A errada**: mantém porta 22, chave e NAT.
-> **C errada**: Instance Connect ainda usa SSH na 22.
-> **D errada**: dá rede, mas não elimina SSH, chave nem bastion.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: resolve os três requisitos — sem porta aberta, sem chave, com log. Os endpoints evitam depender de internet.
+> > **A errada**: mantém porta 22, chave e NAT.
+> > **C errada**: Instance Connect ainda usa SSH na 22.
+> > **D errada**: dá rede, mas não elimina SSH, chave nem bastion.
 
 ## ⚠️ Armadilhas do EC2
 

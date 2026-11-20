@@ -6,52 +6,67 @@ atualizado: 2026-11-08
 
 # OpenSearch Service — Questões
 
-> [!question]- Q1. Um catálogo de produtos no DynamoDB precisa de busca por texto livre, com relevância e autocomplete.
+> [!question] Q1. Um catálogo de produtos no DynamoDB precisa de busca por texto livre, com relevância e autocomplete.
 > **A)** Scan com FilterExpression
 > **B)** GSI com o nome do produto como chave
-> **C)** **DynamoDB Streams → Lambda → OpenSearch Service, com a busca no OpenSearch** ✅
+> **C)** DynamoDB Streams → Lambda → OpenSearch Service, com a busca no OpenSearch
 > **D)** Athena sobre um export do DynamoDB
 >
-> **Por que C**: busca textual com relevância exige **índice invertido**. O padrão é manter o DynamoDB como fonte de verdade e materializar o índice de busca.
-> **A errada**: Scan lê tudo e você paga por tudo; e não faz relevância.
-> **B errada**: GSI casa valor **exato** ou prefixo via sort key — não faz busca textual.
-> **D errada**: Athena é analítico em lote, não busca interativa.
+> > [!success]- Resposta
+> > **Resposta: C**
+> >
+> > **Por que C**: busca textual com relevância exige **índice invertido**. O padrão é manter o DynamoDB como fonte de verdade e materializar o índice de busca.
+> > **A errada**: Scan lê tudo e você paga por tudo; e não faz relevância.
+> > **B errada**: GSI casa valor **exato** ou prefixo via sort key — não faz busca textual.
+> > **D errada**: Athena é analítico em lote, não busca interativa.
 
-> [!question]- Q2. Centralizar logs de 40 serviços e permitir busca por texto livre com dashboards, para o time de operações.
+> [!question] Q2. Centralizar logs de 40 serviços e permitir busca por texto livre com dashboards, para o time de operações.
 > **A)** CloudWatch Logs Insights
-> **B)** **OpenSearch Service (alimentado por Firehose ou subscription filter), com OpenSearch Dashboards** ✅
+> **B)** OpenSearch Service (alimentado por Firehose ou subscription filter), com OpenSearch Dashboards
 > **C)** S3 com Athena
 > **D)** CloudTrail Lake
 >
-> **Por que B**: busca textual forte + dashboards ricos é o caso de uso.
-> **A errada**: resolve consulta pontual; não é plataforma de busca e dashboards.
-> **D errada**: CloudTrail Lake é para **chamadas de API**.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: busca textual forte + dashboards ricos é o caso de uso.
+> > **A errada**: resolve consulta pontual; não é plataforma de busca e dashboards.
+> > **D errada**: CloudTrail Lake é para **chamadas de API**.
 
-> [!question]- Q3. A retenção de log em OpenSearch precisa chegar a 1 ano, com o menor custo.
+> [!question] Q3. A retenção de log em OpenSearch precisa chegar a 1 ano, com o menor custo.
 > **A)** Aumentar os nós de dados
-> **B)** **Index State Management movendo índices de hot para UltraWarm e cold** ✅
+> **B)** Index State Management movendo índices de hot para UltraWarm e cold
 > **C)** Reduzir a retenção para 30 dias
 > **D)** Mudar para Serverless
 >
-> **Por que B**: UltraWarm usa **S3** com cache e custa muito menos que hot; o ISM automatiza a transição.
-> **C errada**: descumpre o requisito.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: UltraWarm usa **S3** com cache e custa muito menos que hot; o ISM automatiza a transição.
+> > **C errada**: descumpre o requisito.
 
-> [!question]- Q4. Ingerir um stream de logs e disponibilizá-lo para busca, com o menor esforço operacional.
+> [!question] Q4. Ingerir um stream de logs e disponibilizá-lo para busca, com o menor esforço operacional.
 > **A)** Lambda lendo o stream e indexando
-> **B)** **Kinesis Data Firehose com destino OpenSearch Service** ✅
+> **B)** Kinesis Data Firehose com destino OpenSearch Service
 > **C)** EMR com Spark Streaming
 > **D)** CloudWatch Logs
 >
-> **Por que B**: OpenSearch é **destino nativo** do Firehose — sem código.
-> **A errada**: você escreve e opera o consumidor, com retry e backpressure.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: OpenSearch é **destino nativo** do Firehose — sem código.
+> > **A errada**: você escreve e opera o consumidor, com retry e backpressure.
 
-> [!question]- Q5. Qual destes **não** respeita as permissões do Lake Formation?
+> [!question] Q5. Qual destes **não** respeita as permissões do Lake Formation?
 > **A)** Athena
 > **B)** Redshift Spectrum
 > **C)** EMR
-> **D)** **OpenSearch Service** ✅
-> 
-> **Por que D**: a lista oficial é *"Amazon Athena, Amazon Quick, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue"*.
+> **D)** OpenSearch Service
+>
+> > [!success]- Resposta
+> > **Resposta: D**
+> >
+> > **Por que D**: a lista oficial é *"Amazon Athena, Amazon Quick, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue"*.
 
 ## ⚠️ Armadilhas
 

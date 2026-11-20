@@ -7,14 +7,23 @@ Resumo de estudo para a prova **AWS Certified Solutions Architect – Associate*
 
 ## Estrutura
 
-Cada serviço é uma pasta com **quatro notas**:
+Cada serviço é uma pasta com **cinco notas**:
 
 | Nota | Para quê |
 |---|---|
 | **1 - O que e** | O serviço em uma frase, para que serve, e onde cai na prova |
 | **2 - Decorar** | Só número e tabela. É a nota da véspera |
 | **3 - Detalhes** | A explicação longa, com as citações oficiais |
-| **4 - Questoes** | Questões A–D com **o porquê de cada alternativa errada**, e a tabela de armadilhas |
+| **4 - Questoes** | Questões A–D com a resposta **recolhida**, **o porquê de cada alternativa errada** e a tabela de armadilhas |
+| **5 - Flashcards** | Os números da Decorar em pergunta e resposta, para o plugin [Spaced Repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition) |
+
+Além das pastas de serviço:
+
+| Pasta / nota | Para quê |
+|---|---|
+| **06 - Simulados** | Questões **misturadas** de vários serviços: um simulado por domínio e 5 simulados gerais de 65 questões. Geradas por `scripts/gerar-simulados.mjs` |
+| **07 - Flashcards - Pegadinhas** | As tabelas "parece × é" das pegadinhas em formato de flashcard |
+| **scripts/** | `esconder-respostas.mjs` (deixa a resposta recolhida nas questões novas) e `gerar-simulados.mjs` (refaz os simulados). Rode com `node scripts/<nome>.mjs` na raiz do vault |
 
 ```
 1 - Seguranca (30%)/
@@ -58,6 +67,8 @@ git clone https://github.com/PriscilaFabreteCandido/Resumo-AWS-Certified-Solutio
 - [03 - Pegadinhas mestre](03%20-%20Pegadinhas%20mestre.md)
 - [04 - Fora de escopo (nao estude isso)](04%20-%20Fora%20de%20escopo%20%28nao%20estude%20isso%29.md)
 - [05 - Plano de estudo (e como praticar sem levar susto na fatura)](05%20-%20Plano%20de%20estudo%20%28e%20como%20praticar%20sem%20levar%20susto%20na%20fatura%29.md)
+- [06 - Simulados](06%20-%20Simulados/Simulado%20geral%2001.md)
+- [07 - Flashcards - Pegadinhas](07%20-%20Flashcards%20-%20Pegadinhas.md)
 - [README](README.md)
 
 ## Progresso
@@ -73,7 +84,7 @@ git clone https://github.com/PriscilaFabreteCandido/Resumo-AWS-Certified-Solutio
 
 ## Índice por domínio
 
-Cada pasta tem as **4 notas**: `1 - O que e`, `2 - Decorar`, `3 - Detalhes`, `4 - Questoes`.
+Cada pasta tem as **5 notas**: `1 - O que e`, `2 - Decorar`, `3 - Detalhes`, `4 - Questoes`, `5 - Flashcards`.
 
 ### Domínio 1 — Segurança (30%)
 

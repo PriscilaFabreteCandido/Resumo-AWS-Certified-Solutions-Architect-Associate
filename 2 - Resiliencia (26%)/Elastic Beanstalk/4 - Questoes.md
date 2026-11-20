@@ -6,53 +6,68 @@ atualizado: 2026-11-08
 
 # Elastic Beanstalk — Questões
 
-> [!question]- Q1. Deploy com **zero downtime** e **rollback rápido** se a versão nova falhar.
+> [!question] Q1. Deploy com **zero downtime** e **rollback rápido** se a versão nova falhar.
 > **A)** All at once
 > **B)** Rolling
-> **C)** **Immutable** ✅
+> **C)** Immutable
 > **D)** Rolling with additional batch
 >
-> **Por que C**: sobe uma fleet nova completa e só move o tráfego depois de validar; o rollback descarta a fleet nova.
-> **A errada**: tem **downtime**.
-> **B errada**: sem downtime, mas com **capacidade reduzida** e versões mistas em caso de falha no meio.
-> **D errada**: mantém a capacidade, mas o rollback ainda é um redeploy.
-> ⚠️ **Blue/green com swap de CNAME** é igualmente válido — e dá o rollback mais rápido (swap de volta).
+> > [!success]- Resposta
+> > **Resposta: C**
+> >
+> > **Por que C**: sobe uma fleet nova completa e só move o tráfego depois de validar; o rollback descarta a fleet nova.
+> > **A errada**: tem **downtime**.
+> > **B errada**: sem downtime, mas com **capacidade reduzida** e versões mistas em caso de falha no meio.
+> > **D errada**: mantém a capacidade, mas o rollback ainda é um redeploy.
+> > ⚠️ **Blue/green com swap de CNAME** é igualmente válido — e dá o rollback mais rápido (swap de volta).
 
-> [!question]- Q2. O environment de produção foi apagado por engano e o banco RDS foi junto. Como evitar?
+> [!question] Q2. O environment de produção foi apagado por engano e o banco RDS foi junto. Como evitar?
 > **A)** Snapshot diário
-> **B)** **Criar o RDS fora do environment e passar o endpoint por variável de ambiente** ✅
+> **B)** Criar o RDS fora do environment e passar o endpoint por variável de ambiente
 > **C)** Usar Multi-AZ
 > **D)** Habilitar termination protection no environment
 >
-> **Por que B**: RDS criado **dentro** do environment compartilha o ciclo de vida dele.
-> **A errada**: ajuda a recuperar, mas não evita.
-> **D errada**: reduz o risco de acidente, mas o acoplamento permanece.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: RDS criado **dentro** do environment compartilha o ciclo de vida dele.
+> > **A errada**: ajuda a recuperar, mas não evita.
+> > **D errada**: reduz o risco de acidente, mas o acoplamento permanece.
 
-> [!question]- Q3. Avaliar a versão nova com **10% do tráfego real** antes de completar o deploy.
+> [!question] Q3. Avaliar a versão nova com **10% do tráfego real** antes de completar o deploy.
 > **A)** Immutable
-> **B)** **Traffic splitting** ✅
+> **B)** Traffic splitting
 > **C)** Rolling
 > **D)** All at once
 >
-> **Por que B**: traffic splitting envia uma **porcentagem** do tráfego para a fleet nova (canary).
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: traffic splitting envia uma **porcentagem** do tráfego para a fleet nova (canary).
 
-> [!question]- Q4. Uma aplicação web precisa de processamento assíncrono de tarefas longas, desacoplado do front-end.
+> [!question] Q4. Uma aplicação web precisa de processamento assíncrono de tarefas longas, desacoplado do front-end.
 > **A)** Um único environment com threads de background
-> **B)** **Web server environment publicando numa fila + worker environment consumindo** ✅
+> **B)** Web server environment publicando numa fila + worker environment consumindo
 > **C)** All at once deploy
 > **D)** Lambda com 15 minutos
 >
-> **Por que B**: o **worker environment** provisiona a fila SQS e o daemon que entrega as mensagens à aplicação.
-> **D errada**: pode servir, mas muda a arquitetura e tem teto de 15 min.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: o **worker environment** provisiona a fila SQS e o daemon que entrega as mensagens à aplicação.
+> > **D errada**: pode servir, mas muda a arquitetura e tem teto de 15 min.
 
-> [!question]- Q5. Criar um alarme do CloudWatch e uma fila SQS junto com o environment, versionados com o código.
+> [!question] Q5. Criar um alarme do CloudWatch e uma fila SQS junto com o environment, versionados com o código.
 > **A)** Console do Beanstalk
-> **B)** **Arquivos `.config` em `.ebextensions/`** ✅
+> **B)** Arquivos `.config` em `.ebextensions/`
 > **C)** Saved configuration
 > **D)** CloudFormation separado
 >
-> **Por que B**: `.ebextensions` permite criar recursos adicionais com sintaxe CloudFormation, versionados junto ao código.
-> **C errada**: saved configuration guarda **opções**, não recursos novos.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: `.ebextensions` permite criar recursos adicionais com sintaxe CloudFormation, versionados junto ao código.
+> > **C errada**: saved configuration guarda **opções**, não recursos novos.
 
 ## ⚠️ Armadilhas
 

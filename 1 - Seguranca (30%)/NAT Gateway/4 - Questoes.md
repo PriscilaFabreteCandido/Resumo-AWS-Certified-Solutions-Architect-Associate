@@ -6,52 +6,67 @@ atualizado: 2026-11-08
 
 # NAT Gateway — Questões
 
-> [!question]- Q1. Uma aplicação em 3 AZs usa **um** NAT gateway e envia 50 TB/mês para um bucket S3 na mesma região. Qual mudança reduz mais o custo?
+> [!question] Q1. Uma aplicação em 3 AZs usa **um** NAT gateway e envia 50 TB/mês para um bucket S3 na mesma região. Qual mudança reduz mais o custo?
 > **A)** Criar um NAT gateway por AZ
-> **B)** **Gateway endpoint para o S3 nas route tables das subnets privadas** ✅
+> **B)** Gateway endpoint para o S3 nas route tables das subnets privadas
 > **C)** Substituir o NAT gateway por NAT instances
 > **D)** Habilitar Transfer Acceleration no bucket
 >
-> **Por que B**: elimina os 50 TB do GB processado do NAT **e** o cross-AZ, sem custo adicional de endpoint.
-> **A errada**: corta o cross-AZ, mas você continua pagando por GB no NAT.
-> **C errada**: troca uma cobrança por outra e adiciona esforço de HA e patch.
-> **D errada**: **adiciona** custo, e é para upload de fora da AWS.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: elimina os 50 TB do GB processado do NAT **e** o cross-AZ, sem custo adicional de endpoint.
+> > **A errada**: corta o cross-AZ, mas você continua pagando por GB no NAT.
+> > **C errada**: troca uma cobrança por outra e adiciona esforço de HA e patch.
+> > **D errada**: **adiciona** custo, e é para upload de fora da AWS.
 
-> [!question]- Q2. Como restringir o tráfego que sai pelo NAT gateway usando security group?
+> [!question] Q2. Como restringir o tráfego que sai pelo NAT gateway usando security group?
 > **A)** Associar um SG ao NAT gateway
-> **B)** **Não é possível: aplique o SG nos recursos atrás do NAT, ou uma NACL na subnet dele** ✅
+> **B)** Não é possível: aplique o SG nos recursos atrás do NAT, ou uma NACL na subnet dele
 > **C)** Usar uma NACL no NAT gateway
 > **D)** Usar o Network Firewall no lugar do SG
 >
-> **Por que B**: *"You cannot associate security groups with NAT gateways."* (não é possível associar security groups a NAT gateways)
-> **C errada**: a NACL se associa à **subnet**, não ao gateway.
-> **D errada**: Network Firewall é a resposta para **inspeção** de saída, mas não é "usar security group".
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: *"You cannot associate security groups with NAT gateways."* (não é possível associar security groups a NAT gateways)
+> > **C errada**: a NACL se associa à **subnet**, não ao gateway.
+> > **D errada**: Network Firewall é a resposta para **inspeção** de saída, mas não é "usar security group".
 
-> [!question]- Q3. Após a perda de uma AZ, instâncias privadas de outra AZ perderam acesso à internet. Por quê?
+> [!question] Q3. Após a perda de uma AZ, instâncias privadas de outra AZ perderam acesso à internet. Por quê?
 > **A)** O internet gateway falhou
-> **B)** **Havia um único NAT gateway, que vivia na AZ que caiu** ✅
+> **B)** Havia um único NAT gateway, que vivia na AZ que caiu
 > **C)** A NACL bloqueou
 > **D)** O Elastic IP foi liberado
 >
-> **Por que B**: o NAT gateway é **zonal** — *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona)
-> **A errada**: o internet gateway é regional e redundante.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: o NAT gateway é **zonal** — *"Create a NAT gateway in each Availability Zone to ensure zone-independent architecture."* (crie um NAT gateway em cada Zona de Disponibilidade para garantir uma arquitetura independente de zona)
+> > **A errada**: o internet gateway é regional e redundante.
 
-> [!question]- Q4. Instâncias em subnet privada precisam de saída **IPv6** para a internet, sem aceitar conexões de entrada.
+> [!question] Q4. Instâncias em subnet privada precisam de saída **IPv6** para a internet, sem aceitar conexões de entrada.
 > **A)** NAT gateway
-> **B)** **Egress-only internet gateway** ✅
+> **B)** Egress-only internet gateway
 > **C)** Internet gateway com NACL restritiva
 > **D)** NAT instance com IPv6
 >
-> **Por que B**: *"is for use with IPv6 traffic only. To enable outbound-only internet communication over IPv4, use a NAT gateway instead."* (serve apenas para tráfego IPv6; para permitir comunicação de saída pela internet em IPv4, use um NAT gateway)
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: *"is for use with IPv6 traffic only. To enable outbound-only internet communication over IPv4, use a NAT gateway instead."* (serve apenas para tráfego IPv6; para permitir comunicação de saída pela internet em IPv4, use um NAT gateway)
 
-> [!question]- Q5. Um time quer usar o NAT gateway também como bastion para acessar as instâncias privadas por SSH.
+> [!question] Q5. Um time quer usar o NAT gateway também como bastion para acessar as instâncias privadas por SSH.
 > **A)** Configurar port forwarding no NAT gateway
-> **B)** **Não é suportado; use SSM Session Manager (ou um bastion dedicado)** ✅
+> **B)** Não é suportado; use SSM Session Manager (ou um bastion dedicado)
 > **C)** Associar um Elastic IP adicional
 > **D)** Usar NAT instance em modo bastion
 >
-> **Por que B**: a tabela oficial marca **bastion** e **port forwarding** como *"Not supported"* (não suportado) no NAT gateway. A solução moderna é Session Manager, *"without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* (sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH).
-> **D errada**: funciona tecnicamente (NAT instance suporta bastion), mas é a resposta pior — você volta a gerenciar HA, patch e chave SSH.
+> > [!success]- Resposta
+> > **Resposta: B**
+> >
+> > **Por que B**: a tabela oficial marca **bastion** e **port forwarding** como *"Not supported"* (não suportado) no NAT gateway. A solução moderna é Session Manager, *"without the need to open inbound ports, maintain bastion hosts, or manage SSH keys"* (sem precisar abrir portas de entrada, manter bastion hosts ou gerenciar chaves SSH).
+> > **D errada**: funciona tecnicamente (NAT instance suporta bastion), mas é a resposta pior — você volta a gerenciar HA, patch e chave SSH.
 
 ## ⚠️ Armadilhas
 
